@@ -102,30 +102,64 @@ div p:last-of-type {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1em;
-  font-family: "eina_semiboldregular", sans-serif;
-  margin: 0;
-  font-weight: 600;
-  color: #315844;
-}
-h1 span, h2 span, h3 span, h4 span, h5 span, h6 span {
+span {
   font-family: "reckless_medium, serif";
   font-weight: 500;
 }
 
-h1 {
-  line-height: 0.8em;
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1em;
+  font-family: "eina_semiboldregular", sans-serif;
+  margin: 0;
+  margin-bottom: 3vw;
+  font-weight: 600;
+  color: #315844;
 }
 
 .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-  color: #fff;
+  color: #FAF6F0;
 }
 .dark p {
   color: #FAF6F0;
 }
 
+h1 {
+  line-height: 0.8em;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+.intro-size {
+  font-size: 25px;
+}
+
+.header-intro {
+  font-size: 40px;
+  font-family: "eina_semiboldregular", sans-serif;
+}
+
 @media (min-width: 48em) {
+  h1 {
+    font-size: 8vw;
+  }
+  h1.lg {
+    font-size: 10.5vw;
+  }
+  h2 {
+    font-size: 7vw;
+  }
+  h3 {
+    font-size: 3.5vw;
+  }
+}
+@media (min-width: 64em) {
   h1 {
     font-size: 6vw;
   }
@@ -138,16 +172,16 @@ h1 {
   h3 {
     font-size: 3.5vw;
   }
-  .intro-size {
-    font-size: 2.5vw;
-  }
 }
 @media (min-width: 85.375em) {
   h3 {
     font-size: 2.2vw;
   }
   .intro-size {
-    font-size: 1.9vw;
+    font-size: 2.2vw;
+  }
+  .header-intro {
+    font-size: 2.5vw;
   }
 }
 .bg-cover {
@@ -380,6 +414,46 @@ svg {
 
 .align-items-stretch {
   align-items: stretch;
+}
+
+.bg-green-dark {
+  background-color: #315844;
+}
+
+.bg-grren-light {
+  background-color: #BAE2A6;
+}
+
+.bg-yellow {
+  background-color: #EFC334;
+}
+
+.bg-yellow-light {
+  background-color: #EBE198;
+}
+
+.bg-lime {
+  background-color: #D3E84C;
+}
+
+.bg-purple-dark {
+  background-color: #272641;
+}
+
+.bg-purple-light {
+  background-color: #8885D8;
+}
+
+.bg-orange {
+  background-color: #DB6B34;
+}
+
+.bg-blue-dark {
+  background-color: #253C40;
+}
+
+.bg-blue-light {
+  background-color: #6AC4D1;
 }
 
 /*# sourceMappingURL=styles.css.map */

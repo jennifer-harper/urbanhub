@@ -6,33 +6,38 @@
 
 {% block content %} 
   {% for entry in page %} 
-  <h1 class="lg">hello ambitious <span>home 135px</span></h1>
-  <h1>hello H1 95px </h1>
-  <h2>hello H2 80px</h2>
-  <h3>Hello H3 30px</h3>
 
-<div class="intro-size"><p>Intro size</p></div>
-<div><p>Sentence</p> <a href="">Link</a></div>
-<div class="dark"><p>Sentence Dark</p> <a href="">Link</a></div>
+    <div class="pad-all">
+      <h1 class="lg">hello ambitious <span>home 135px</span></h1>
+      <h1>hello H1 95px </h1>
+      <h2>hello H2 80px</h2>
+      <h3>Hello H3 30px</h3>
 
-
-
-  {% include '_partials/button' %}
-  {% embed '_partials/button' %}
-    {% block class %}purple{% endblock %}
-  {% endembed %} 
-
-  {% embed '_partials/button' %}
-    {% block class %}blue {% endblock %}
-  {% endembed %} 
-
-  {% embed '_partials/button' %}
-    {% block class %}yellow {% endblock %}
-  {% endembed %} 
+      <div class="intro-size"><p>Intro size</p></div>
+      <div class="header-intro"><p>Intro size</p></div>
+      <div><p>Sentence</p> <a href="">Link</a></div>
+      <div class="dark"><p>Sentence Dark</p> <a href="">Link</a></div>
 
 
-  {% embed '_partials/button' %}
-    {% block class %}lime{% endblock %}
-  {% endembed %} 
+
+      {% include '_partials/button' %}
+      {% embed '_partials/button' %}
+        {% block class %}purple{% endblock %}
+      {% endembed %} 
+
+      {% embed '_partials/button' %}
+        {% block class %}blue {% endblock %}
+      {% endembed %} 
+
+      {% embed '_partials/button' %}
+        {% block class %}yellow {% endblock %}
+      {% endembed %} 
+
+
+      {% embed '_partials/button' %}
+        {% block class %}lime{% endblock %}
+      {% endembed %}     
+    </div>
+
   {% endfor %} 
 {% endblock %}

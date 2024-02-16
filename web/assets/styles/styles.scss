@@ -131,7 +131,6 @@ a {
   color: $green-light;
   @include transition;
   text-decoration: none;
-  // white-space: nowrap;
   // &:hover,
   // &:focus {
   //   color: darken($base-accent-color, 10%);
@@ -152,26 +151,25 @@ div{
   }
 }
 
+
+
+span{
+  font-family: $serif-feature;
+  font-weight: 500;
+}
+
 h1,h2,h3,h4,h5,h6 {
 	line-height: $base-font-size;
   font-family: $header-font;
-  margin: 0;
+  margin:0;
+  margin-bottom: $md;
   font-weight:600;
   color:$green-dark;
-  span{
-    font-family: $serif-feature;
-    font-weight: 500;
-  }
 }
-
-h1{
-  line-height: $base-font-size*0.8;
-}
-
 
 .dark{
   h1,h2,h3,h4,h5,h6{
-    color:$white
+    color:$light;
   }
   p{
     color:$light;
@@ -179,13 +177,50 @@ h1{
 }
 
 
+h1{
+  line-height: $base-font-size*0.8;
+  font-size: 60px;
+}
+h2{ 
+  font-size: 50px;
+}
+
+h3{
+  font-size: 35px;
+}
+
+//intros
+.intro-size {
+  font-size:25px;
+}
+.header-intro {
+  font-size:40px;
+  font-family: $header-font;
+}
+
 
 
 @media #{$mq-small} {
   h1{
-    font-size:$base; 
+    font-size:8vw; 
     &.lg{
-      font-size:calc($base + 2.5vw); 
+      font-size:calc(8vw + 2.5vw); 
+    }
+  }
+  h2{
+    font-size: 7vw;
+  }
+  h3{
+    font-size: 3.5vw;
+  }
+
+}
+
+@media #{$mq-medium} {
+  h1{
+    font-size:6vw; 
+    &.lg{
+      font-size:calc(6vw + 2.5vw); 
     }
   }
   h2{
@@ -194,9 +229,7 @@ h1{
   h3{
     font-size: 3.5vw;
   }
-  .intro-size{
-    font-size:2.5vw
-  }
+
 }
 
 
@@ -205,7 +238,10 @@ h1{
     font-size: 2.2vw;
   }
   .intro-size{
-    font-size:1.9vw
+    font-size:2.2vw;
+  }
+  .header-intro{
+    font-size:2.5vw;
   }
 }
 
@@ -310,15 +346,6 @@ svg {
     }
   }
 
-  // &:hover a{
-  //     // background-color: lighten($base-accent-color, 10%);
-  //     @include transition;
-    
-  //   p{
-  //     margin-right: $base-font-size*1.2;
-  //     @include transition;
-  //   }
-  // }
 }
 
 //-------Padding-----------//
@@ -432,8 +459,36 @@ svg {
 }
 
 
+//-------Colors-----------//
 
-
-
-
+.bg-green-dark{
+  background-color: $green-dark;
+}
+.bg-grren-light{
+  background-color: $green-light;
+}
+.bg-yellow{
+  background-color: $yellow;
+}
+.bg-yellow-light{
+  background-color: $yellow-light;
+}
+.bg-lime{
+  background-color: $lime;
+}
+.bg-purple-dark{
+  background-color: $purple-dark;
+}
+.bg-purple-light{
+  background-color: $purple-light;
+}
+.bg-orange{
+  background-color: $orange;
+}
+.bg-blue-dark{
+  background-color: $blue-dark;
+}
+.bg-blue-light{
+  background-color: $blue-light;
+}
 
