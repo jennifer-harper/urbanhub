@@ -1,0 +1,34 @@
+dateModified: 1708030947
+email:
+  fromEmail: jennifer@ambitious.co.nz
+  fromName: urbanhub
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  hardDisk:
+    hasUrls: true
+    name: 'Hard Disk'
+    settings:
+      path: '@webroot/uploads/images'
+    type: craft\fs\Local
+    url: '@web/uploads/images'
+meta:
+  __names__:
+    2c308d3a-8354-44d8-aa18-c4ec048de789: Home # Home
+    8e40aeeb-55f0-4320-9a85-9ea2d246361b: urbanhub # urbanhub
+    2995eac9-2c30-433a-bd61-0390ff903010: urbanhub # urbanhub
+    250485d5-f50f-4a7f-a221-1fc9dc7dbb3a: Images # Images
+    b9b1a6d2-d5a8-4791-8722-91479f5bf9ae: 'Meta Description' # Meta Description
+    c406e842-e9ae-4fa0-9851-a74a6f9cedf2: Home # Home
+    d9af3e55-e89f-473c-a29a-abe18acebc79: Common # Common
+system:
+  edition: solo
+  live: true
+  name: urbanhub
+  schemaVersion: 4.5.3.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

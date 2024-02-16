@@ -1,0 +1,64 @@
+$header-font: 'eina_semiboldregular', sans-serif;
+$body-font: "commuters-sans", sans-serif;
+$serif-feature:"reckless_medium, serif";
+
+$xs:20px;
+$sm:40px;
+$md:3vw;
+$base:6vw;
+$lg:8vw;
+$xlg:15vw;
+$xxl:20vw;
+
+
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-figma:94em;
+$bp-xlarge: 100em; 
+$bp-xxlarge: 126em; // 2016px
+
+// Media Queries
+$mq-small: "(min-width: #{$bp-small})";
+$mq-medium: "(min-width: #{$bp-medium})";
+$mq-large: "(min-width: #{$bp-large})";
+$mq-figma: "(min-width: #{$bp-figma})";
+$mq-xlarge: "(min-width: #{$bp-xlarge})";
+$mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+$mq-retina: "(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)";
+
+// Font-Size
+$base-font-size: 1em;
+
+// Line-Height
+$base-line-height: 1.57;
+$header-line-height: .95;
+
+// Spacing
+$base-spacing: $base-font-size;
+
+
+$white:#fff;
+$light-grey:#f3f4f6;
+$light:#FAF6F0;
+
+
+$green-dark:#315844;
+$green-light:#BAE2A6;
+$yellow:#EFC334;
+$yellow-light:#EBE198;
+$brown:#582F07;
+$orange:#DB6B34;
+$lime:#D3E84C;
+$blue-dark:#253C40;
+$blue-light:#6AC4D1;
+$purple-dark:#272641;
+$purple-light:#8885D8;
+
+
+// Base
+$base-bkgd:$light;
+$base-font:$green-dark;
+
+
+

@@ -1,0 +1,19 @@
+columnSuffix: slkwiskq
+contentColumnType: text
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: metaDescription
+instructions: null
+name: 'Meta Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
