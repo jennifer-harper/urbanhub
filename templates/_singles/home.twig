@@ -7,14 +7,40 @@
 {% block content %} 
   {% for entry in page %} 
 
+<div class="flex-wrap">
+  <div class="pad-all border-right border-green half"> 
+    <p class="header-intro">Urban <span>Office</span></p>
+    <h1>Space to <span>grow</span></h1>
+    <p class="intro-text">Our serviced offices are <span>furnished</span> and <span>ready</span> for <span>your arrival</span>.</p>
+
+    <div class="flex-wrap align-items-btm pad-top-btm no-btm">
+      <div class="pad-sides no-left">
+        <p>What’s more they’re flexible too. Move in at a moment’s notice, gain flexibility with a month-to-month lease and scale your space as your business or your project requirements change.</p>
+      </div>
+      <div>
+        {% include '_partials/button' %}
+      </div>
+    </div>
+  </div>
+
+  <div class="pad-all half">
+
+  </div>
+</div>
+
+
+
+
+
+
     <div class="pad-all">
       <h1 class="lg">hello ambitious <span>home 135px</span></h1>
       <h1>hello H1 95px </h1>
       <h2>hello H2 80px</h2>
       <h3>Hello H3 30px</h3>
 
-      <div class="intro-size"><p>Intro size</p></div>
-      <div class="header-intro"><p>Intro size</p></div>
+      <div ><p class="intro-text">Intro text</p></div>
+      <div><p class="header-intro">Header intro</p></div>
       <div><p>Sentence</p> <a href="">Link</a></div>
       <div class="dark"><p>Sentence Dark</p> <a href="">Link</a></div>
 

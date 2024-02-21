@@ -64,7 +64,7 @@ body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
-  background-color: white;
+  background-color: #FAF6F0;
   color: #315844;
   font-family: "commuters-sans", sans-serif;
   font-weight: 400;
@@ -98,13 +98,14 @@ ul {
 div p {
   margin: 0 0 1em;
 }
-div p:last-of-type {
-  margin: 0;
+div p:not(.header-intro):last-of-type {
+  margin-bottom: 0;
 }
 
-span {
+h1 span, h2 span, h3 span, p span {
   font-family: "reckless_medium, serif";
   font-weight: 500;
+  white-space: nowrap;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -136,13 +137,15 @@ h3 {
   font-size: 35px;
 }
 
-.intro-size {
+.intro-text {
   font-size: 25px;
+  line-height: 1.1em;
 }
 
 .header-intro {
   font-size: 40px;
   font-family: "eina_semiboldregular", sans-serif;
+  margin-bottom: 0.3em;
 }
 
 @media (min-width: 48em) {
@@ -177,11 +180,11 @@ h3 {
   h3 {
     font-size: 2.2vw;
   }
-  .intro-size {
-    font-size: 2.2vw;
+  .intro-text {
+    font-size: 1.6vw;
   }
   .header-intro {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 }
 .bg-cover {
@@ -210,7 +213,7 @@ svg {
   display: flex;
   background-color: #315844;
   align-items: center;
-  border-radius: 6vw;
+  border-radius: 4vw;
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
@@ -223,10 +226,11 @@ svg {
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
+  white-space: nowrap;
 }
 .btn a div {
   background-color: #BAE2A6;
-  border-radius: 6vw;
+  border-radius: 4vw;
   padding: 0.2em 1em;
 }
 .btn a div svg {
@@ -277,17 +281,17 @@ svg {
 }
 
 .pad-all {
-  padding: 6vw;
+  padding: 4vw;
 }
 @media (min-width: 48em) {
   .pad-all {
-    padding: 6vw;
+    padding: 4vw;
   }
 }
 
 .pad-sides {
-  padding-left: 6vw;
-  padding-right: 6vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 @media (min-width: 64em) {
   .pad-sides.no-left {
@@ -299,16 +303,24 @@ svg {
 }
 
 .pad-top-btm {
-  padding-top: 6vw;
-  padding-bottom: 6vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
 }
 @media (min-width: 64em) {
   .pad-top-btm.no-top {
     padding-top: 0;
   }
-  .pad-top-btm.no-bottom {
+  .pad-top-btm.no-btm {
     padding-bottom: 0;
   }
+}
+
+.border-right {
+  border-right: 1px solid;
+}
+
+.border-green {
+  border-color: #315844;
 }
 
 .flex-wrap {

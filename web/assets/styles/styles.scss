@@ -107,7 +107,7 @@ body {
   height: 100%;
   margin: 0;
   overflow-x: hidden; 
-  background-color:white;
+  background-color:$light;
 	color: $base-font;
   font-family: $body-font;
   font-weight: 400;
@@ -146,17 +146,18 @@ div{
   p {
     margin: 0 0 $base-spacing;
   }
-  p:last-of-type{
-    margin:0;
+  p:not(.header-intro):last-of-type{
+    margin-bottom:0;
   }
 }
 
-
-
-span{
+h1 span, h2 span, h3 span, p span{
   font-family: $serif-feature;
   font-weight: 500;
+  white-space: nowrap;
 }
+
+
 
 h1,h2,h3,h4,h5,h6 {
 	line-height: $base-font-size;
@@ -190,12 +191,14 @@ h3{
 }
 
 //intros
-.intro-size {
+.intro-text {
   font-size:25px;
+  line-height:1.1em
 }
 .header-intro {
   font-size:40px;
   font-family: $header-font;
+  margin-bottom: calc(1em * .3);
 }
 
 
@@ -237,11 +240,11 @@ h3{
   h3{
     font-size: 2.2vw;
   }
-  .intro-size{
-    font-size:2.2vw;
+  .intro-text{
+    font-size:1.6vw;
   }
   .header-intro{
-    font-size:2.5vw;
+    font-size:2vw;
   }
 }
 
@@ -280,6 +283,7 @@ svg {
       line-height: 1em;
       margin: 0 $base-font-size*0.8;
       @include transition;
+      white-space: nowrap;
     }
     div{
       background-color: $green-light;
@@ -376,11 +380,21 @@ svg {
     &.no-top{
       padding-top:0
     }
-    &.no-bottom{
+    &.no-btm{
       padding-bottom:0
     }
   }
 }
+
+//-------borders-----------//
+
+.border-right{
+  border-right:1px solid 
+}
+.border-green{
+  border-color:$green-dark
+}
+
 
 //-------Flex-----------//
 .flex-wrap{
