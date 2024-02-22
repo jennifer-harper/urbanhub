@@ -46,6 +46,72 @@ fieldLayouts:
         name: Content
         uid: 9a27e01d-23a1-46f7-b29b-a1daf1187f14
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c1bf7809-a0ec-476f-84d4-9d9bb2f451f4 # Page Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: acc955d3-824f-421a-8c9b-e3c4a3c936fb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 368e19da-aed2-4692-949d-976508166279 # Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7026ee6-da06-4f35-936c-ab7927d0d353
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d199f8b1-8c10-441f-8951-d2f10491a634 # Page Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e89d462-7386-4524-91a9-3abfd34e458c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c093fd38-7d2d-4d3d-b514-a314fa8fd189 # Page Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ef38e85-d3af-4225-94d1-2ef3a1456c07
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ebd46ca-c085-422f-8b65-a2d7dbbe6d94
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Section One'
+        uid: 74bb6db2-2ec9-4e2d-bdbf-5c1c0cb6ee85
+        userCondition: null
 handle: home
 hasTitleField: false
 name: Home

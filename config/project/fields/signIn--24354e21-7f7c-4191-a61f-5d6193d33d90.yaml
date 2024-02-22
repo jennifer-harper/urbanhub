@@ -1,0 +1,14 @@
+columnSuffix: fenfnivz
+contentColumnType: string(255)
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: signIn
+instructions: null
+name: 'Sign In'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

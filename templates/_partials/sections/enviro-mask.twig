@@ -1,0 +1,25 @@
+<div class="flex-wrap border-btm border-green">
+
+    <div class="half bg-yellow mask-wrapper">
+        {# {% include '_partials/masks/right-mask.twig' %} #}
+        <img class="mask" src="uploads/images/picture4-small-crop.webp" alt="">
+         {# {% include '_partials/masks/bottom-mask.twig' %} #}
+    </div>
+
+    <div class="pad-all half"> 
+        {% if entry.pageTitle %}
+            {{entry.pageTitle}}
+        {% endif %}
+        {% if entry.pageName %}
+            <div class="header-intro">
+                {{entry.pageName}}
+            </div>
+        {% endif %}
+
+        {% if entry.pageIntro %}
+            <div class="intro-text">
+                {{entry.pageIntro}}
+            </div>
+        {% endif %}
+    </div>
+</div>

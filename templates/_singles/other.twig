@@ -1,0 +1,11 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "other" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('other').all() %} 
+{% set buttonClass = "purple" %}
+
+{% block content %} 
+{% for entry in page %} 
+{% endfor %} 
+{% endblock %}

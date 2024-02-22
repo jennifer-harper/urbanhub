@@ -93,7 +93,9 @@
 
 
 
-
+*{
+  box-sizing: border-box;
+}
 
 
 ::-webkit-scrollbar {
@@ -108,7 +110,7 @@ body {
   margin: 0;
   overflow-x: hidden; 
   background-color:$light;
-	color: $base-font;
+    color: $base-font;
   font-family: $body-font;
   font-weight: 400;
   font-size: $base-font-size;
@@ -128,7 +130,7 @@ body {
 //-------HEADINGS AND TYPE-----------//
 
 a {
-  color: $green-light;
+  color: $green-dark;
   @include transition;
   text-decoration: none;
   // &:hover,
@@ -149,12 +151,14 @@ div{
   p:not(.header-intro):last-of-type{
     margin-bottom:0;
   }
+
 }
 
-h1 span, h2 span, h3 span, p span{
+h1 i, h2 i, h3 i, p i{
   font-family: $serif-feature;
   font-weight: 500;
   white-space: nowrap;
+  font-style: normal;
 }
 
 
@@ -259,6 +263,12 @@ h3{
 img {
   width:100%;
   max-width: 100%;
+  &.max-80{
+    max-width: 80%;
+  }
+  &.max-75{
+    max-width: 75%;
+  }
 }
 
 svg {
@@ -266,124 +276,46 @@ svg {
   z-index: 1;
 }
 
-//-------Buttons-----------//
-.btn{
-  display: flex;
-  margin-top: 50px;
-  a{
-    padding: $base-font-size*.5;
-    display: flex;
-    background-color: $green-dark;
-    align-items: center;
-    border-radius: $base;
-    @include transition;
-    p{
-      color:$light;
-      font-weight:500;
-      line-height: 1em;
-      margin: 0 $base-font-size*0.8;
-      @include transition;
-      white-space: nowrap;
-    }
-    div{
-      background-color: $green-light;
-      border-radius: $base;
-      padding: $base-font-size*.2 $base-font-size*1;
-      svg{
-        fill: $green-dark;
-        width: $base-font-size*1.6;
-      }
-    }
-  }
 
-  &.purple{
-    a{
-      background-color: $purple-dark;
-      div{
-        background-color: $yellow;
-        svg{
-          fill:$purple-dark
-        }
-      }
-    }
-  }
-
-  &.blue{
-    a{
-      background-color: $blue-dark;
-      div{
-        background-color: $blue-light;
-        svg{
-          fill:$blue-dark
-        }
-      }
-    }
-  }
-
-  &.yellow{
-    a{
-      background-color: $yellow-light;
-      p{
-        color:$orange;
-      }
-      div{
-        background-color: $orange;
-        svg{
-          fill:$yellow-light;
-        }
-      }
-    }
-  }
-
-  &.lime{
-    a{
-      background-color: $lime;
-      p{
-        color:$green-dark;
-      }
-      div{
-        background-color: $green-dark;
-        svg{
-          fill:$lime;
-        }
-      }
-    }
-  }
-
-}
 
 //-------Padding-----------//
 .pad-all{
   padding:$base;
-  @media #{$mq-small}{
-    padding:$base;
+  padding:$base;
+  &.lg{
+    padding:$lg;
   }
 }
 
 .pad-sides{
   padding-left:$base;
   padding-right:$base;
-  @media #{$mq-medium} {
-    &.no-left{
-      padding-left:0
-    }
-    &.no-right{
-      padding-right:0
-    }
+  &.no-left{
+    padding-left:0
   }
+  &.no-right{
+    padding-right:0
+  }
+  &.sides-lg{
+    padding-right:$lg;
+    padding-left:$lg;
+  }
+
 }
 
 .pad-top-btm{
   padding-top:$base;
   padding-bottom:$base;
-  @media #{$mq-medium} {
     &.no-top{
       padding-top:0
     }
     &.no-btm{
       padding-bottom:0
     }
-  }
+    &.top-btm-lg{
+      padding-top:$lg;
+      padding-bottom:$lg;
+    }
 }
 
 //-------borders-----------//
@@ -391,6 +323,12 @@ svg {
 .border-right{
   border-right:1px solid 
 }
+
+.border-btm{
+  border-bottom:1px solid
+}
+
+
 .border-green{
   border-color:$green-dark
 }
@@ -408,10 +346,14 @@ svg {
   @media #{$mq-medium} {
     flex-direction:row;
     .half{
+        position: relative;
       flex:1;
       flex-basis: 50%;
       &.grow-vis{
         flex-basis: 65%;
+      }
+      &.mask-size{
+        flex-basis: 52%;
       }
     }
     .third{
@@ -429,9 +371,9 @@ svg {
 .align-items-btm,
 .align-items-center,
 .align-items-stretch,
-.align-content-center,
-.align-content-right,
-.align-content-space-btwn{
+.align-cont-center,
+.align-cont-right,
+.align-cont-space-btwn{
   display: flex;
   &.row{
     flex-direction: row;
@@ -473,6 +415,120 @@ svg {
 }
 
 
+
+
+//-------Buttons-----------//
+.btn{
+    display: flex;
+    margin-top: 50px;
+    a{
+      padding: $base-font-size*.5;
+      display: flex;
+      background-color: $green-dark;
+      align-items: center;
+      border-radius: $base;
+      @include transition;
+      p{
+        color:$light;
+        font-weight:500;
+        line-height: 1em;
+        margin: 0 $base-font-size*0.8;
+        @include transition;
+        white-space: nowrap;
+        text-transform: capitalize;
+      }
+      div{
+        background-color: $green-light;
+        border-radius: $base;
+        padding: $base-font-size*.2 $base-font-size*1;
+        svg{
+          fill: $green-dark;
+          width: $base-font-size*1.6;
+        }
+      }
+    }
+    &.no-marg-top{
+      margin-top: 0px;
+    }
+    &.green-lime{
+      a{
+        div{
+          background-color: $lime;
+        }
+      }
+    }
+  
+    &.purple{
+      a{
+        background-color: $purple-dark;
+        div{
+          background-color: $yellow;
+          svg{
+            fill:$purple-dark
+          }
+        }
+      }
+    }
+  
+    &.blue{
+      a{
+        background-color: $blue-dark;
+        div{
+          background-color: $blue-light;
+          svg{
+            fill:$blue-dark
+          }
+        }
+      }
+    }
+  
+    &.yellow{
+      a{
+        background-color: $yellow-light;
+        p{
+          color:$orange;
+        }
+        div{
+          background-color: $orange;
+          svg{
+            fill:$yellow-light;
+          }
+        }
+      }
+    }
+  
+    &.orange{
+      a{
+        background-color: $orange;
+        p{
+          color:$yellow-light;
+        }
+        div{
+          background-color: $yellow-light;
+          svg{
+            fill:$orange;
+          }
+        }
+      }
+    }
+  
+    &.lime{
+      a{
+        background-color: $lime;
+        p{
+          color:$green-dark;
+        }
+        div{
+          background-color: $green-dark;
+          svg{
+            fill:$lime;
+          }
+        }
+      }
+    }
+  
+  }
+
 //-------Colors-----------//
 
 .bg-green-dark{
@@ -506,3 +562,57 @@ svg {
   background-color: $blue-light;
 }
 
+
+//-------Themes-----------//
+
+.orangeTheme{
+    h1,h2,h3,p, a{
+        color:$orange;  
+    }
+    .dark{
+       p, a{
+            color:$light;  
+        }
+    }
+    .bg-orange{
+        h1,h2,h3,p, a{
+            color:$yellow-light;  
+        } 
+    }
+}
+
+
+//-------Image masks-----------//
+// .mask{
+//     mask: url(../../uploads/images/svg-frame.svg) no-repeat ;
+//     display: block;
+//     object-fit: cover;
+
+//   }
+
+.right-mask,
+.bottom-mask{
+    position:absolute;
+    fill:$light;
+}
+
+.bottom-mask{
+    width:100%;
+    bottom:0;
+    left:0;
+}
+
+.right-mask{
+    height:100%;
+    right:0;
+    bottom:0;
+}
+
+.mask-wrapper{
+    overflow: hidden;
+    img{
+
+        height: 100%;
+        object-fit: cover 
+    }
+}

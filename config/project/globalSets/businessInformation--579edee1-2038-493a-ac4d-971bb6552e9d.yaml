@@ -1,0 +1,24 @@
+fieldLayouts:
+  17c2f844-a2c1-4f90-a5e6-0c4129a72c40:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 24354e21-7f7c-4191-a61f-5d6193d33d90 # Sign In
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c8464bb-3089-46ee-9330-435765358ab0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Information
+        uid: 8d5fdb9f-d972-4ad9-9b52-30f1bbdbe3be
+        userCondition: null
+handle: businessInformation
+name: 'Business Information'
+sortOrder: 1

@@ -14,8 +14,8 @@
 
 
   
-<body {{ attr(bodyAttributes ?? {}) }}>
-  {# {% include '_partials/nav.twig' %} #}
+<body {{ attr(bodyAttributes ?? {}) }} >
+  {% include '_partials/nav.twig' %}
   {% block content %}
   {% endblock %}
 

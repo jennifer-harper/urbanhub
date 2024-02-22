@@ -1,0 +1,10 @@
+headingLevels:
+  - 1
+name: 'Title h1'
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - sourceEditing

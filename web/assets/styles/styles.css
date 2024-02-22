@@ -53,6 +53,10 @@
   font-weight: normal;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+}
+
 ::-webkit-scrollbar {
   width: 0; /* Remove scrollbar space */
   background: transparent; /* Optional: just make scrollbar invisible */
@@ -83,7 +87,7 @@ body {
 }
 
 a {
-  color: #BAE2A6;
+  color: #315844;
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
@@ -102,10 +106,11 @@ div p:not(.header-intro):last-of-type {
   margin-bottom: 0;
 }
 
-h1 span, h2 span, h3 span, p span {
+h1 i, h2 i, h3 i, p i {
   font-family: "reckless_medium, serif";
   font-weight: 500;
   white-space: nowrap;
+  font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -198,125 +203,62 @@ img {
   width: 100%;
   max-width: 100%;
 }
+img.max-80 {
+  max-width: 80%;
+}
+img.max-75 {
+  max-width: 75%;
+}
 
 svg {
   overflow: visible !important;
   z-index: 1;
 }
 
-.btn {
-  display: flex;
-  margin-top: 50px;
-}
-.btn a {
-  padding: 0.5em;
-  display: flex;
-  background-color: #315844;
-  align-items: center;
-  border-radius: 4vw;
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in;
-}
-.btn a p {
-  color: #FAF6F0;
-  font-weight: 500;
-  line-height: 1em;
-  margin: 0 0.8em;
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in;
-  white-space: nowrap;
-}
-.btn a div {
-  background-color: #BAE2A6;
-  border-radius: 4vw;
-  padding: 0.2em 1em;
-}
-.btn a div svg {
-  fill: #315844;
-  width: 1.6em;
-}
-.btn.purple a {
-  background-color: #272641;
-}
-.btn.purple a div {
-  background-color: #EFC334;
-}
-.btn.purple a div svg {
-  fill: #272641;
-}
-.btn.blue a {
-  background-color: #253C40;
-}
-.btn.blue a div {
-  background-color: #6AC4D1;
-}
-.btn.blue a div svg {
-  fill: #253C40;
-}
-.btn.yellow a {
-  background-color: #EBE198;
-}
-.btn.yellow a p {
-  color: #DB6B34;
-}
-.btn.yellow a div {
-  background-color: #DB6B34;
-}
-.btn.yellow a div svg {
-  fill: #EBE198;
-}
-.btn.lime a {
-  background-color: #D3E84C;
-}
-.btn.lime a p {
-  color: #315844;
-}
-.btn.lime a div {
-  background-color: #315844;
-}
-.btn.lime a div svg {
-  fill: #D3E84C;
-}
-
 .pad-all {
   padding: 4vw;
+  padding: 4vw;
 }
-@media (min-width: 48em) {
-  .pad-all {
-    padding: 4vw;
-  }
+.pad-all.lg {
+  padding: 8vw;
 }
 
 .pad-sides {
   padding-left: 4vw;
   padding-right: 4vw;
 }
-@media (min-width: 64em) {
-  .pad-sides.no-left {
-    padding-left: 0;
-  }
-  .pad-sides.no-right {
-    padding-right: 0;
-  }
+.pad-sides.no-left {
+  padding-left: 0;
+}
+.pad-sides.no-right {
+  padding-right: 0;
+}
+.pad-sides.sides-lg {
+  padding-right: 8vw;
+  padding-left: 8vw;
 }
 
 .pad-top-btm {
   padding-top: 4vw;
   padding-bottom: 4vw;
 }
-@media (min-width: 64em) {
-  .pad-top-btm.no-top {
-    padding-top: 0;
-  }
-  .pad-top-btm.no-btm {
-    padding-bottom: 0;
-  }
+.pad-top-btm.no-top {
+  padding-top: 0;
+}
+.pad-top-btm.no-btm {
+  padding-bottom: 0;
+}
+.pad-top-btm.top-btm-lg {
+  padding-top: 8vw;
+  padding-bottom: 8vw;
 }
 
 .border-right {
   border-right: 1px solid;
+}
+
+.border-btm {
+  border-bottom: 1px solid;
 }
 
 .border-green {
@@ -336,11 +278,15 @@ svg {
     flex-direction: row;
   }
   .flex-wrap .half {
+    position: relative;
     flex: 1;
     flex-basis: 50%;
   }
   .flex-wrap .half.grow-vis {
     flex-basis: 65%;
+  }
+  .flex-wrap .half.mask-size {
+    flex-basis: 52%;
   }
   .flex-wrap .third {
     flex: 1;
@@ -356,9 +302,9 @@ svg {
 .align-items-btm,
 .align-items-center,
 .align-items-stretch,
-.align-content-center,
-.align-content-right,
-.align-content-space-btwn {
+.align-cont-center,
+.align-cont-right,
+.align-cont-space-btwn {
   display: flex;
 }
 .just-cont-center.row,
@@ -369,9 +315,9 @@ svg {
 .align-items-btm.row,
 .align-items-center.row,
 .align-items-stretch.row,
-.align-content-center.row,
-.align-content-right.row,
-.align-content-space-btwn.row {
+.align-cont-center.row,
+.align-cont-right.row,
+.align-cont-space-btwn.row {
   flex-direction: row;
 }
 .just-cont-center.col,
@@ -382,9 +328,9 @@ svg {
 .align-items-btm.col,
 .align-items-center.col,
 .align-items-stretch.col,
-.align-content-center.col,
-.align-content-right.col,
-.align-content-space-btwn.col {
+.align-cont-center.col,
+.align-cont-right.col,
+.align-cont-space-btwn.col {
   flex-direction: column;
 }
 
@@ -428,6 +374,101 @@ svg {
   align-items: stretch;
 }
 
+.btn {
+  display: flex;
+  margin-top: 50px;
+}
+.btn a {
+  padding: 0.5em;
+  display: flex;
+  background-color: #315844;
+  align-items: center;
+  border-radius: 4vw;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+.btn a p {
+  color: #FAF6F0;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0 0.8em;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+  white-space: nowrap;
+  text-transform: capitalize;
+}
+.btn a div {
+  background-color: #BAE2A6;
+  border-radius: 4vw;
+  padding: 0.2em 1em;
+}
+.btn a div svg {
+  fill: #315844;
+  width: 1.6em;
+}
+.btn.no-marg-top {
+  margin-top: 0px;
+}
+.btn.green-lime a div {
+  background-color: #D3E84C;
+}
+.btn.purple a {
+  background-color: #272641;
+}
+.btn.purple a div {
+  background-color: #EFC334;
+}
+.btn.purple a div svg {
+  fill: #272641;
+}
+.btn.blue a {
+  background-color: #253C40;
+}
+.btn.blue a div {
+  background-color: #6AC4D1;
+}
+.btn.blue a div svg {
+  fill: #253C40;
+}
+.btn.yellow a {
+  background-color: #EBE198;
+}
+.btn.yellow a p {
+  color: #DB6B34;
+}
+.btn.yellow a div {
+  background-color: #DB6B34;
+}
+.btn.yellow a div svg {
+  fill: #EBE198;
+}
+.btn.orange a {
+  background-color: #DB6B34;
+}
+.btn.orange a p {
+  color: #EBE198;
+}
+.btn.orange a div {
+  background-color: #EBE198;
+}
+.btn.orange a div svg {
+  fill: #DB6B34;
+}
+.btn.lime a {
+  background-color: #D3E84C;
+}
+.btn.lime a p {
+  color: #315844;
+}
+.btn.lime a div {
+  background-color: #315844;
+}
+.btn.lime a div svg {
+  fill: #D3E84C;
+}
+
 .bg-green-dark {
   background-color: #315844;
 }
@@ -466,6 +507,42 @@ svg {
 
 .bg-blue-light {
   background-color: #6AC4D1;
+}
+
+.orangeTheme h1, .orangeTheme h2, .orangeTheme h3, .orangeTheme p, .orangeTheme a {
+  color: #DB6B34;
+}
+.orangeTheme .dark p, .orangeTheme .dark a {
+  color: #FAF6F0;
+}
+.orangeTheme .bg-orange h1, .orangeTheme .bg-orange h2, .orangeTheme .bg-orange h3, .orangeTheme .bg-orange p, .orangeTheme .bg-orange a {
+  color: #EBE198;
+}
+
+.right-mask,
+.bottom-mask {
+  position: absolute;
+  fill: #FAF6F0;
+}
+
+.bottom-mask {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.right-mask {
+  height: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.mask-wrapper {
+  overflow: hidden;
+}
+.mask-wrapper img {
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=styles.css.map */

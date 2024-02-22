@@ -1,0 +1,42 @@
+<div class="flex-wrap border-btm border-green">
+    <div class="pad-all border-right  border-green half align-cont-space-btwn col"> 
+        <div class="">
+            {% if entry.pageName %}
+                <div class="header-intro">
+                    {{entry.pageName}}
+                </div>
+            {% endif %}
+            {% if entry.pageTitle %}
+                {{entry.pageTitle}}
+            {% endif %}
+            {% if entry.pageIntro %}
+                <div class="intro-text">
+                    {{entry.pageIntro}}
+                </div>
+            {% endif %}
+        </div>
+        <div class="flex-wrap align-items-btm pad-top-btm no-btm">
+            <div class="pad-sides no-left">
+                {% if entry.pageIntroParagraph %}
+                    {{entry.pageIntroParagraph }}
+                {% endif %}
+            </div>
+            <div>
+                {% for block in entry.button %}
+                    {% if block.type == 'groupFields' %}
+                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                        {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                        {% embed '_partials/button' %}
+                            {% block class %}{{buttonClass}}{% endblock %}
+                            {% block title %}{{buttonText}} {% endblock %}
+                            {% block url %}{{buttonPageLink}} {% endblock %}
+                        {% endembed %} 
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="pad-top-btm pad-sides half just-cont-center">
+        <img class="max-75" src="uploads/images/illustration5-doorplant-neon.svg" alt="">
+    </div>
+</div>
