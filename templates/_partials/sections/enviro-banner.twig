@@ -1,0 +1,24 @@
+ <div class="pad-all ">
+    <div class="flex-wrap border-all border-color">
+        <div class="half pad-all">
+            {% if entry.heading2 %}
+                {{entry.heading2}}
+            {% endif %}
+        </div>
+
+        <div class="pad-all half"> 
+            {% if entry.introParagraph2 %}
+                <div class="intro-text">
+                    {{entry.introParagraph2}}
+                </div>
+            {% endif %}
+
+            {% if entry.paragraph2 %}
+                <div class="">
+                    {{entry.paragraph2}}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+

@@ -1,14 +1,14 @@
-columnSuffix: mouoncdu
+columnSuffix: ayaqapcw
 contentColumnType: text
-fieldGroup: efebdbd4-c2aa-4fa3-af50-e6aaf0e04fdf # Heros
-handle: pageName
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: heading
 instructions: null
-name: 'Page Name'
+name: Heading
 searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
-  ckeConfig: 2d4fd05a-7931-4151-ac2a-8e3011088cd5 # Simple
+  ckeConfig: 33cfdfc6-431e-464c-917f-25271d27922c # Title H2
   columnType: text
   defaultTransform: null
   enableSourceEditingForNonAdmins: false

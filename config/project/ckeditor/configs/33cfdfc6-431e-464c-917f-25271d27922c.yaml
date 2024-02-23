@@ -1,0 +1,9 @@
+headingLevels:
+  - 2
+name: 'Title H2'
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link

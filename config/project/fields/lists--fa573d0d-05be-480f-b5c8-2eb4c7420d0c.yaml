@@ -1,13 +1,13 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: e39a23c1-ef67-42ee-b725-b0d5d9a96f76 # matrix
-handle: button
+handle: lists
 instructions: null
-name: Button
+name: Lists
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_button}}'
-  maxBlocks: 1
+  contentTable: '{{%matrixcontent_lists}}'
+  maxBlocks: null
   minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all

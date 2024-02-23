@@ -1,6 +1,6 @@
 columnSuffix: fenfnivz
 contentColumnType: string(255)
-fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+fieldGroup: 952787c6-7c0b-46f8-9b75-93ef54023e32 # Admin
 handle: signIn
 instructions: null
 name: 'Sign In'

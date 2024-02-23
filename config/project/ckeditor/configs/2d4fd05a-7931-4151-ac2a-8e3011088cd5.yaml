@@ -1,9 +1,4 @@
-headingLevels:
-  - 2
-  - 3
-  - 4
-  - 5
-  - 6
+headingLevels: false
 name: Simple
 toolbar:
   - heading

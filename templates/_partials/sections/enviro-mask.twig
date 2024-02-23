@@ -1,25 +1,39 @@
-<div class="flex-wrap border-btm border-green">
+<div class="flex-wrap">
+    {% set image2 = entry.image2.one() ?? 'uploads/images/picture4-small-crop.webp' %}
 
-    <div class="half bg-yellow mask-wrapper">
-        {# {% include '_partials/masks/right-mask.twig' %} #}
-        <img class="mask" src="uploads/images/picture4-small-crop.webp" alt="">
-         {# {% include '_partials/masks/bottom-mask.twig' %} #}
+    <div class="half bg-yellow mask-wrapper" 
+    style="background-image:url({{ image2.getUrl() }})">
+        {% include '_partials/masks/right-mask.twig' %}
+        {% include '_partials/masks/bottom-mask.twig' %}
     </div>
 
     <div class="pad-all half"> 
-        {% if entry.pageTitle %}
-            {{entry.pageTitle}}
+        {% if entry.heading %}
+            {{entry.heading}}
         {% endif %}
-        {% if entry.pageName %}
-            <div class="header-intro">
-                {{entry.pageName}}
+        {% if entry.introParagraph %}
+            <div class="intro-text">
+                {{entry.introParagraph}}
             </div>
         {% endif %}
 
-        {% if entry.pageIntro %}
-            <div class="intro-text">
-                {{entry.pageIntro}}
+        {% if entry.paragraph %}
+            <div class="">
+                {{entry.paragraph}}
             </div>
         {% endif %}
+
+        <div class="flex-wrap inner">
+            <ul class="underline-list">
+                {% for block in entry.lists %}
+                    {% if block.type == 'groupFields' %}
+                        {% if block.listPoint %}
+                            <li>{{block.listPoint}}</li>
+                        {% endif %}
+                    {% endif %}                           
+                {% endfor %}
+            </ul>
+            {% include '_partials/svgs/little-star.twig' %}
+        </div>
     </div>
 </div>

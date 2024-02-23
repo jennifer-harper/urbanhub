@@ -142,15 +142,24 @@ a {
 ul {
   padding: 0;
   list-style: none;
+  margin-top:40px;
+  margin-bottom:0;
+  li{
+    padding: $base-font-size 0;
+  }
+  &.underline-list li{
+    border-bottom: 1px solid;
+  }
 }
 
 div{
   p {
     margin: 0 0 $base-spacing;
   }
-  p:not(.header-intro):last-of-type{
-    margin-bottom:0;
+  .no-btm-marg{
+    margin-bottom: 0;
   }
+
 
 }
 
@@ -164,12 +173,15 @@ h1 i, h2 i, h3 i, p i{
 
 
 h1,h2,h3,h4,h5,h6 {
-	line-height: $base-font-size;
-  font-family: $header-font;
-  margin:0;
-  margin-bottom: $md;
-  font-weight:600;
-  color:$green-dark;
+    line-height: $base-font-size;
+    font-family: $header-font;
+    margin:0;
+    margin-bottom: $sm;
+    font-weight:600;
+    color:$green-dark;
+    @media #{$mq-xxlarge} {
+        margin-bottom: $md;
+    }
 }
 
 .dark{
@@ -181,13 +193,25 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
+.text-center{
+    text-align: center;
+    @media #{$mq-medium}{
+        &.max-title{
+            max-width:67%;
+            margin-left: auto;
+            margin-right:auto;
+        }
+    }
+}
 
+//-------font size-----------//
 h1{
   line-height: $base-font-size*0.8;
-  font-size: 60px;
+  font-size: 70px;
 }
+
 h2{ 
-  font-size: 50px;
+  font-size: 44px;
 }
 
 h3{
@@ -197,10 +221,11 @@ h3{
 //intros
 .intro-text {
   font-size:25px;
-  line-height:1.1em
+  line-height:1.18em
 }
+
 .header-intro {
-  font-size:40px;
+  font-size:30px;
   font-family: $header-font;
   margin-bottom: calc(1em * .3);
 }
@@ -263,6 +288,7 @@ h3{
 img {
   width:100%;
   max-width: 100%;
+  margin: 0 auto;
   &.max-80{
     max-width: 80%;
   }
@@ -276,16 +302,30 @@ svg {
   z-index: 1;
 }
 
+.little-star{
+    margin-left:auto;
+    @media #{$mq-medium}{
+        padding-left:$base;
+    }
+}
+
 
 
 //-------Padding-----------//
 .pad-all{
   padding:$base;
-  padding:$base;
   &.lg{
     padding:$lg;
   }
+  &.sm{
+    padding:calc($md/1.3);
+  }
+  &.for-sm{
+    padding: calc($base - ($md/1.3))
+    }
 }
+
+
 
 .pad-sides{
   padding-left:$base;
@@ -328,92 +368,123 @@ svg {
   border-bottom:1px solid
 }
 
-
-.border-green{
-  border-color:$green-dark
+.border-top{
+    border-top: 1px solid;
 }
+.border-left{
+    border-left: 1px solid;
+}
+
+.border-all{
+    border:1px solid  
+}
+
 
 
 //-------Flex-----------//
 .flex-wrap{
-  display: flex;
-  flex-direction:column;
-  &.wrap{
-    flex-wrap: wrap;
-    flex-direction:row;
-  }
-
-  @media #{$mq-medium} {
-    flex-direction:row;
-    .half{
-        position: relative;
-      flex:1;
-      flex-basis: 50%;
-      &.grow-vis{
-        flex-basis: 65%;
-      }
-      &.mask-size{
-        flex-basis: 52%;
-      }
+    display: flex;
+    flex-direction:column;
+    &.wrap{
+        flex-wrap: wrap;
+        flex-direction:row;
     }
-    .third{
-      flex:1;
-      flex-basis: 33.33%;
+
+    .align-cont-center,
+    .just-cont-center{
+        display: flex;
+        &.row{
+            flex-direction: row;
+        }
+        &.col{
+            flex-direction: column;
+        }
     }
-  }
-}
 
-.just-cont-center,
-.just-cont-right,
-.just-cont-space-btwn,
-.align-items-center,
-.align-items-top,
-.align-items-btm,
-.align-items-center,
-.align-items-stretch,
-.align-cont-center,
-.align-cont-right,
-.align-cont-space-btwn{
-  display: flex;
-  &.row{
-    flex-direction: row;
-  }
-  &.col{
-    flex-direction: column;
-  }
-}
+    .just-cont-center{
+        justify-content: center;
+    }
 
-.align-cont-center{
-  align-content: center;
-}
-.align-cont-right{
-  align-content: right;
-}
-.align-cont-space-btwn{
-  justify-content: space-between;
-}
-.just-cont-center{
-  justify-content: center;
-}
-.just-cont-right{
-  justify-content: right;
-}
-.just-cont-space-btwn{
-  justify-content: space-between;
-}
-.align-items-top{
-  align-items: flex-start;
-}
-.align-items-btm{
-  align-items: flex-end;
-}
-.align-items-center{
-  align-items: center;
-}
-.align-items-stretch{
-  align-items: stretch;
-}
+    .align-cont-center{
+        align-content: center;
+    }
 
+    @media #{$mq-medium} {
+        flex-direction:row;
+
+        .inner{
+            flex-direction: column;
+        }
+        .half{
+            position: relative;
+            flex:1;
+            flex-basis: 50%;
+            &.grow-vis{
+                flex-basis: 65%;
+            }
+            &.mask-size{
+                flex-basis: 52%;
+            }
+        }
+
+        .third{
+            flex:1;
+            flex-basis: 33.33%;
+        }
+
+        .just-cont-right,
+        .just-cont-space-btwn,
+        .align-items-center,
+        .align-items-top,
+        .align-items-btm,
+        .align-items-center,
+        .align-items-stretch,
+        .align-cont-center,
+        .align-cont-right,
+        .align-cont-space-btwn{
+            display: flex;
+            &.row{
+                flex-direction: row;
+            }
+            &.col{
+                flex-direction: column;
+            }
+        }
+
+
+        .align-cont-right{
+            align-content: right;
+        }
+        .align-cont-space-btwn{
+            justify-content: space-between;
+        }
+        .just-cont-right{
+            justify-content: right;
+        }
+        .just-cont-space-btwn{
+            justify-content: space-between;
+        }
+        .align-items-top{
+            align-items: flex-start;
+        }
+        .align-items-btm{
+            align-items: flex-end;
+        }
+        .align-items-center{
+            align-items: center;
+        }
+        .align-items-stretch{
+            align-items: stretch;
+        }
+    }
+
+    @media #{$mq-large} {
+        .inner{
+            flex-direction: row;
+            align-items: flex-end;
+        }
+    }
+}
 
 
 
@@ -422,12 +493,15 @@ svg {
     display: flex;
     margin-top: 50px;
     a{
-      padding: $base-font-size*.5;
-      display: flex;
-      background-color: $green-dark;
-      align-items: center;
-      border-radius: $base;
-      @include transition;
+        padding: $base-font-size*.5;
+        display: flex;
+        background-color: $green-dark;
+        align-items: center;
+        border-radius: 50px;
+        @include transition;
+        @media #{$mq-xxlarge} {
+            border-radius: $md;
+        }
       p{
         color:$light;
         font-weight:500;
@@ -566,29 +640,39 @@ svg {
 //-------Themes-----------//
 
 .orangeTheme{
-    h1,h2,h3,p, a{
+    h1,h2,h3,p, a, li{
         color:$orange;  
-    }
-    .dark{
-       p, a{
-            color:$light;  
-        }
     }
     .bg-orange{
         h1,h2,h3,p, a{
             color:$yellow-light;  
         } 
     }
+    .underline-list li{
+        border-color:$orange
+    }
+    .little-star{
+        fill: $orange;
+    }
+    .border-color{
+        border-color:$orange;
+    }
+    .border-color-other{
+        border-color:$yellow-light;
+    }
+}
+
+.orangeTheme {
+    .dark{
+        p, a, li{
+             color:$light;  
+        }
+     }
 }
 
 
 //-------Image masks-----------//
-// .mask{
-//     mask: url(../../uploads/images/svg-frame.svg) no-repeat ;
-//     display: block;
-//     object-fit: cover;
 
-//   }
 
 .right-mask,
 .bottom-mask{
@@ -598,21 +682,22 @@ svg {
 
 .bottom-mask{
     width:100%;
-    bottom:0;
-    left:0;
+    bottom:-1px;
+    left:-1px;
 }
 
 .right-mask{
     height:100%;
-    right:0;
-    bottom:0;
+    right:0px;
+    bottom:-1px;
 }
 
 .mask-wrapper{
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
-    img{
-
-        height: 100%;
-        object-fit: cover 
-    }
+    min-height:80vh;
 }
+

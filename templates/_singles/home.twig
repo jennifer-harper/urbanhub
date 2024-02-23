@@ -11,9 +11,10 @@
   {% for entry in page %} 
     {% include '_partials/hero/environment.twig' %}
     {% include '_partials/sections/enviro-mask.twig' %}
-
-
-
+    {% include '_partials/sections/enviro-banner.twig' %}
+    {% embed '_partials/sections/enviro-contrast.twig' %}
+    {% block class %} bg-orange {% endblock %}
+    {% endembed %}
 
 
     <div class="pad-all bg-yellow-light">

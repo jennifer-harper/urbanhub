@@ -69,7 +69,7 @@ fields:
       maxRelations: 1
       minRelations: null
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       sources: '*'
       targetSiteId: null
       validateRelatedElements: false

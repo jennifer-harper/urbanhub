@@ -1,4 +1,4 @@
-dateModified: 1708560418
+dateModified: 1708653625
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -13,18 +13,29 @@ fs:
     url: '@web/uploads/images'
 meta:
   __names__:
+    1c0594f9-f13e-4001-b05e-ef49fc7b0cf6: 'List Point' # List Point
     2c308d3a-8354-44d8-aa18-c4ec048de789: Home # Home
     2d4fd05a-7931-4151-ac2a-8e3011088cd5: Simple # Simple
+    2ee914a2-b05d-4c31-a59b-9919788305a7: Image # Image
+    3e1bb40d-9000-497a-9b75-2f18c808ddd9: Paragraph # Paragraph
     4d78f48b-07fe-4864-8d7a-6d1e73752704: Other # Other
+    5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd: Paragraph # Paragraph
     5fe4741c-ddf0-4203-8a3a-507126d173ca: 'Group Fields' # Group Fields
     8e40aeeb-55f0-4320-9a85-9ea2d246361b: urbanhub # urbanhub
+    33cfdfc6-431e-464c-917f-25271d27922c: 'Title H2' # Title H2
+    54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
+    83c78d90-8c41-4ef1-a2ef-1c5110162342: Image # Image
     368e19da-aed2-4692-949d-976508166279: 'Page Title' # Page Title
     579edee1-2038-493a-ac4d-971bb6552e9d: 'Business Information' # Business Information
     2995eac9-2c30-433a-bd61-0390ff903010: urbanhub # urbanhub
+    4299af30-f9c7-48d6-922c-045249174b4a: Heading # Heading
+    5978cdef-8681-4576-a979-1eb00326e5ea: 'Group Fields' # Group Fields
     6221ad00-05cc-4298-9ace-e6d2b6303c91: 'Button text' # Button text
     24354e21-7f7c-4191-a61f-5d6193d33d90: 'Sign In' # Sign In
     250485d5-f50f-4a7f-a221-1fc9dc7dbb3a: Images # Images
     491730e4-5d8e-4d79-889a-57fe300b420c: 'Button Page Link' # Button Page Link
+    952787c6-7c0b-46f8-9b75-93ef54023e32: Admin # Admin
+    4673650a-aadd-4dc5-966e-7a5dba8f1d55: Heading # Heading
     a72e886d-5deb-4c6e-9dea-5a690a3f141b: 'Title h1' # Title h1
     b9b1a6d2-d5a8-4791-8722-91479f5bf9ae: 'Meta Description' # Meta Description
     c093fd38-7d2d-4d3d-b514-a314fa8fd189: 'Page Intro Paragraph' # Page Intro Paragraph
@@ -34,7 +45,10 @@ meta:
     d9af3e55-e89f-473c-a29a-abe18acebc79: Common # Common
     d199f8b1-8c10-441f-8951-d2f10491a634: 'Page Intro' # Page Intro
     de84809e-27c8-44de-8294-bf2d5eec3aaa: Button # Button
+    e5b61af4-7baa-4d4d-8814-6dc66d180fe1: 'Intro Paragraph' # Intro Paragraph
     e39a23c1-ef67-42ee-b725-b0d5d9a96f76: matrix # matrix
+    efebdbd4-c2aa-4fa3-af50-e6aaf0e04fdf: Heros # Heros
+    fa573d0d-05be-480f-b5c8-2eb4c7420d0c: Lists # Lists
 plugins:
   ckeditor:
     edition: standard

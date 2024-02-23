@@ -1,9 +1,9 @@
-columnSuffix: mouoncdu
+columnSuffix: xznuwfab
 contentColumnType: text
-fieldGroup: efebdbd4-c2aa-4fa3-af50-e6aaf0e04fdf # Heros
-handle: pageName
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: paragraph2
 instructions: null
-name: 'Page Name'
+name: Paragraph
 searchable: false
 settings:
   availableTransforms: ''
