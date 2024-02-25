@@ -23,7 +23,7 @@
             </div>
         {% endif %}
 
-        <div class="flex-wrap inner">
+        <div class="flex-wrap inner just-cont-space-btwn">
             <ul class="underline-list">
                 {% for block in entry.lists %}
                     {% if block.type == 'groupFields' %}
@@ -33,7 +33,9 @@
                     {% endif %}                           
                 {% endfor %}
             </ul>
+            <div class="flex-wrap">
             {% include '_partials/svgs/little-star.twig' %}
+            </div>
         </div>
     </div>
 </div>

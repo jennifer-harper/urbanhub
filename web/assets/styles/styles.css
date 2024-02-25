@@ -106,11 +106,16 @@ ul li {
 ul.underline-list li {
   border-bottom: 1px solid;
 }
+@media (min-width: 85.375em) {
+  ul.underline-list {
+    max-width: 80%;
+  }
+}
 
 div p {
   margin: 0 0 1em;
 }
-div .no-btm-marg {
+div.no-btm-marg p {
   margin-bottom: 0;
 }
 
@@ -242,11 +247,8 @@ svg {
 
 .little-star {
   margin-left: auto;
-}
-@media (min-width: 64em) {
-  .little-star {
-    padding-left: 5vw;
-  }
+  margin-top: 3vw;
+  margin-left: auto;
 }
 
 .pad-all {
@@ -266,15 +268,19 @@ svg {
   padding-left: 5vw;
   padding-right: 5vw;
 }
+.pad-sides.sides-sm {
+  padding-right: 2.3076923077vw;
+  padding-left: 2.3076923077vw;
+}
+.pad-sides.sides-lg {
+  padding-right: 8vw;
+  padding-left: 8vw;
+}
 .pad-sides.no-left {
   padding-left: 0;
 }
 .pad-sides.no-right {
   padding-right: 0;
-}
-.pad-sides.sides-lg {
-  padding-right: 8vw;
-  padding-left: 8vw;
 }
 
 .pad-top-btm {
@@ -583,12 +589,11 @@ svg {
 .orangeTheme .border-color {
   border-color: #DB6B34;
 }
-.orangeTheme .border-color-other {
+.orangeTheme .border-color-contrast {
   border-color: #EBE198;
 }
-
-.orangeTheme .dark p, .orangeTheme .dark a, .orangeTheme .dark li {
-  color: #FAF6F0;
+.orangeTheme .border-color-contrast .little-star {
+  fill: #EBE198;
 }
 
 .right-mask,

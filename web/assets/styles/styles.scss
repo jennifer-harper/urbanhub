@@ -147,8 +147,13 @@ ul {
   li{
     padding: $base-font-size 0;
   }
-  &.underline-list li{
-    border-bottom: 1px solid;
+  &.underline-list{
+    li{
+        border-bottom: 1px solid;
+      }
+      @media #{$mq-large}{
+        max-width:80%;
+      }
   }
 }
 
@@ -156,8 +161,10 @@ div{
   p {
     margin: 0 0 $base-spacing;
   }
-  .no-btm-marg{
-    margin-bottom: 0;
+  &.no-btm-marg{
+    p{
+        margin-bottom: 0;
+    }
   }
 
 
@@ -304,9 +311,9 @@ svg {
 
 .little-star{
     margin-left:auto;
-    @media #{$mq-medium}{
-        padding-left:$base;
-    }
+    margin-top: $md;
+    margin-left:auto
+
 }
 
 
@@ -330,16 +337,21 @@ svg {
 .pad-sides{
   padding-left:$base;
   padding-right:$base;
+  &.sides-sm{
+    padding-right:calc($md/1.3);
+    padding-left:calc($md/1.3);
+  }
+  &.sides-lg{
+    padding-right:$lg;
+    padding-left:$lg;
+}
   &.no-left{
     padding-left:0
   }
   &.no-right{
     padding-right:0
   }
-  &.sides-lg{
-    padding-right:$lg;
-    padding-left:$lg;
-  }
+
 
 }
 
@@ -657,18 +669,25 @@ svg {
     .border-color{
         border-color:$orange;
     }
-    .border-color-other{
+    .border-color-contrast{
         border-color:$yellow-light;
+        .little-star{
+            fill: $yellow-light;
+        }
     }
 }
 
-.orangeTheme {
-    .dark{
-        p, a, li{
-             color:$light;  
-        }
-     }
-}
+
+
+
+
+// .orangeTheme {
+//     .dark{
+//         p, a, li{
+//              color:$light;  
+//         }
+//      }
+// }
 
 
 //-------Image masks-----------//
