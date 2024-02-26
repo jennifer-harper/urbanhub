@@ -105,6 +105,7 @@ ul li {
 }
 ul.underline-list li {
   border-bottom: 1px solid;
+  border-color: #315844;
 }
 @media (min-width: 85.375em) {
   ul.underline-list {
@@ -263,6 +264,18 @@ svg {
 }
 .pad-all.for-sm {
   padding: 2.6923076923vw;
+}
+.pad-all.no-top {
+  padding-top: 0;
+}
+.pad-all.no-bottom {
+  padding-top: 0;
+}
+.pad-all.no-left {
+  padding-left: 0;
+}
+.pad-all.no-right {
+  padding-right: 0;
 }
 
 .pad-sides {
@@ -587,6 +600,62 @@ svg {
 
 .addons .little-star {
   margin-left: 3vw;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.slider-btn-wrapper {
+  position: relative;
+}
+
+.slider-environments h3 {
+  font-size: 25px;
+  margin-bottom: 0;
+}
+@media (min-width: 85.375em) {
+  .slider-environments h3 {
+    font-size: 1.6vw;
+  }
+}
+.slider-environments img {
+  margin-top: 40px;
+}
+@media (min-width: 64em) {
+  .slider-environments img {
+    margin-top: 0;
+  }
+}
+.slider-environments .price-title {
+  margin-top: 3vw;
+}
+.slider-environments .price-title .no-wrap {
+  font-size: 1.2em;
+  white-space: nowrap;
+}
+.slider-environments .price-title .price {
+  font-weight: 600;
+  font-size: 40px;
+}
+@media (min-width: 48em) {
+  .slider-environments .price-title .price {
+    font-size: 6.5vw;
+  }
+}
+@media (min-width: 64em) {
+  .slider-environments .price-title .price {
+    font-size: 4.5vw;
+  }
+}
+.slider-environments .underline-list {
+  max-width: 100%;
+}
+@media (min-width: 85.375em) {
+  .slider-environments .underline-list {
+    font-size: 0.8em;
+    column-count: 2;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

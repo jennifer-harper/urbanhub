@@ -1,0 +1,35 @@
+columnSuffix: kiyhkyyj
+contentColumnType: char
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: dollarSign
+instructions: null
+name: 'Dollar Sign'
+searchable: false
+settings:
+  columnType: null
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - $
+        -
+          - value
+          - $
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - 'Blank '
+        -
+          - value
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

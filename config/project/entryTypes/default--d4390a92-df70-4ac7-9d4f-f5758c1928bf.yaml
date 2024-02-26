@@ -45,6 +45,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 4086dd2d-a840-4155-b992-eecd835319cc # Dollar Sign
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b9a8d649-1d77-4efd-83e0-0ba89fff5f4f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: eb88e673-2a3d-4557-aeea-9fd63d7d74fc # Space Price
             instructions: null
             label: null

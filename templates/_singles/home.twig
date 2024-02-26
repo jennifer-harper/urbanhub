@@ -7,6 +7,11 @@
 {% set buttonClass = "orange" %}
 {% set buttonClassContrast = "yellow" %}
 
+{% block head %} 
+  {{ parent() }}
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+{% endblock %}
+
 {% block content %} 
   {% for entry in page %} 
     {% include '_partials/hero/environment.twig' %}
@@ -62,4 +67,10 @@
         {% endembed %}
     </div>
   {% endfor %} 
+{% endblock %}
+
+{% block scripts %}
+{{ parent() }}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script  type="module" src="/assets/js/sliders.js"></script>
 {% endblock %}

@@ -150,6 +150,7 @@ ul {
   &.underline-list{
     li{
         border-bottom: 1px solid;
+        border-color:$green-dark;
       }
       @media #{$mq-large}{
         max-width:70%;
@@ -321,14 +322,26 @@ svg {
 //-------Padding-----------//
 .pad-all{
   padding:$base;
-  &.lg{
-    padding:$lg;
-  }
-  &.sm{
-    padding:calc($md/1.3);
-  }
-  &.for-sm{
-    padding: calc($base - ($md/1.3))
+    &.lg{
+        padding:$lg;
+    }
+    &.sm{
+        padding:calc($md/1.3);
+    }
+    &.for-sm{
+        padding: calc($base - ($md/1.3))
+    }
+    &.no-top{
+        padding-top:0
+    }
+    &.no-bottom{
+        padding-top:0
+    }
+    &.no-left{
+        padding-left:0
+    }
+    &.no-right{
+        padding-right:0
     }
 }
 
@@ -458,7 +471,7 @@ svg {
     justify-content: space-between;
 }
 .center-style{
-    display: flex;;
+    display: flex;
     justify-content: center;
 }
 
@@ -703,3 +716,51 @@ svg {
         margin-left:$md;
     }
   }
+
+    //-------slider urban environments-----------//
+    .swiper-slide{
+        height:auto;
+    }
+    .slider-btn-wrapper{
+        position: relative;
+    }
+
+    .slider-environments{
+        h3{
+        font-size:25px;
+        margin-bottom: 0;
+        @media #{$mq-large} {
+                font-size:1.6vw;
+            }
+        }
+        img{
+            margin-top:$sm;
+            @media #{$mq-medium}{
+                margin-top:0;
+            }
+        }
+        .price-title{
+            margin-top:$md;
+            .no-wrap{
+                font-size:$base-font-size*1.2;
+                white-space: nowrap;
+            }
+            .price{
+                font-weight: 600;
+                font-size:40px;
+                @media #{$mq-small}{
+                    font-size:6.5vw;
+                }
+                @media #{$mq-medium}{
+                    font-size:4.5vw;
+                }
+            }
+        }
+        .underline-list{
+            max-width:100%;
+            @media #{$mq-large}{
+                font-size:$base-font-size*.8;
+                column-count: 2;
+            }
+        }
+    }

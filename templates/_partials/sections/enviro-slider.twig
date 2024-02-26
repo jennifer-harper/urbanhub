@@ -1,23 +1,52 @@
-
-{% set slider = craft.entries().section('urbanEnvironmentsSlider').all() %}
-{% for slide in slider %}
-    {% set sliderImage = slide.sliderImage.one() %}
-    <div>
-        {{slide.spaceType[0]}}
-        {{slide.spaceType[0].url}}
-        {{slide.spacePrice}}
-        {{slide.priceQuantity}}
-        {{slide.spaceDescription}}
-        {% if sliderImage %}
-            <img class="max-75" src="{{ sliderImage.url }}" alt="{{ sliderImage.title }}">
-        {% endif %}
-
-        {% for block in slide.spaceSellingPoints %}
-            {% if block.type == 'groupFields' %}
-                {% if block.sellingPoints %}
-                    <li>{{block.sellingPoints}}</li>
-                {% endif %}
+<div class="swiper slider-environments">
+    <div class="swiper-wrapper">
+        {% set slider = craft.entries().section('urbanEnvironmentsSlider').all() %}
+        {% for slide in slider %}
+            {% if entry.title != slide.spaceType[0] %}
+                <div class="swiper-slide border-right border-color no-border-mobile">
+                   <div class="pad-all">
+                        <div class="flex-wrap">
+                            <div class="half">
+                                <h3>{{slide.spaceType[0]}}</h3>
+                                <div class="price-title">                
+                                    <p>
+                                        <span class="sign">{{slide.dollarSign}}</span>
+                                        <span class="price">{{slide.spacePrice}}</span>
+                                        <span class="no-wrap"><i>/{{slide.priceQuantity}}</i></span>
+                                    </p> 
+                                </div>
+                                <p> {{slide.spaceDescription}}</p>
+                                {% set buttonText = slide.buttonText ?? 'Find out more' %}
+                                {% set buttonPageLink = slide.spaceType[0].url ?? '/contact-us' %}
+                                {% embed '_partials/button' %}
+                                    {% block class %}{{buttonClass}}{% endblock %}
+                                    {% block title %}{{buttonText}} {% endblock %}
+                                    {% block url %}{{buttonPageLink}} {% endblock %}
+                                {% endembed %} 
+                            </div>
+                            <div class="half center-style pad-sides no-right">
+                                {% set sliderImage = slide.sliderImage.one() %}
+                                {% if sliderImage %}
+                                    <img class="" src="{{ sliderImage.url }}" alt="{{ sliderImage.title }}">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="underline-list">
+                                {% for block in slide.spaceSellingPoints %}
+                                    {% if block.type == 'groupFields' %}
+                                        {% if block.sellingPoints %}
+                                            <li>{{block.sellingPoints}}</li>
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             {% endif %}
         {% endfor %}
     </div>
-{% endfor %}
+</div>
+
+
