@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 820e4067-5880-4edb-9cba-20c3597f35ba # Enviro Slider
+handle: spaceSellingPoints
+instructions: null
+name: 'Space Selling Points'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_spacesellingpoints}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

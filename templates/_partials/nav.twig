@@ -1,9 +1,10 @@
-<div class="flex-wrap just-cont-space-btwn align-items-center">
-    <div>
+<div class="flex-wrap">
+    <div class="flex-wrap">
+    <p><a href="/">Home</a></p>
         <p><a href="/other">Other</a></p>
     </div>
     {% embed '_partials/button' %}
-        {% block class %}{{buttonClass}} no-marg-top {% endblock %}
+        {% block class %} no-marg-top {% endblock %}
         {% block title %}Sign In {% endblock %}
         {% block url %}{{businessInformation.signIn}} target="_blank" {% endblock %}
     {% endembed %} 

@@ -1,0 +1,24 @@
+columnSuffix: nudfjmil
+contentColumnType: string
+fieldGroup: 820e4067-5880-4edb-9cba-20c3597f35ba # Enviro Slider
+handle: spaceType
+instructions: null
+name: 'Space Type'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  selectionLabel: null
+  showSiteMenu: true
+  sources:
+    - singles
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Entries

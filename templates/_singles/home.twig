@@ -13,11 +13,17 @@
     {% include '_partials/sections/enviro-mask.twig' %}
     {% include '_partials/sections/enviro-banner.twig' %}
     {% embed '_partials/sections/enviro-contrast.twig' %}
-    {% block class %} bg-orange {% endblock %}
+        {% block class %} bg-orange {% endblock %}
+        {% block colCount %} third {% endblock %}
+    {% endembed %}
+    {% embed '_partials/sections/enviro-contrast-btm.twig' %}
+        {% block class %} bg-orange addons{% endblock %}
+        {% block colCount %} half {% endblock %}
     {% endembed %}
 
+    {% include '_partials/sections/enviro-slider.twig' %}
 
-    <div class="pad-all bg-yellow-light">
+    <div class="pad-all ">
         <h1 class="lg">hello ambitious <span>home 135px</span></h1>
         <h1>hello H1 95px </h1>
         <h2>hello H2 80px</h2>
@@ -34,26 +40,26 @@
 
 
      <div class="pad-all">
-     {% include '_partials/button' %}
+        {% include '_partials/button' %}
 
-      {% embed '_partials/button' %}
-        {% block class %}{{buttonClassContrast}}{% endblock %}
-      {% endembed %} 
+        {% embed '_partials/button' %}
+            {% block class %}{{buttonClassContrast}}{% endblock %}
+        {% endembed %} 
 
-      {% embed '_partials/button' %}
-        {% block class %}purple{% endblock %}
-      {% endembed %} 
+        {% embed '_partials/button' %}
+            {% block class %}purple{% endblock %}
+        {% endembed %} 
 
-      {% embed '_partials/button' %}
-        {% block class %}blue {% endblock %}
-      {% endembed %} 
+        {% embed '_partials/button' %}
+            {% block class %}blue {% endblock %}
+        {% endembed %} 
 
-      {% embed '_partials/button' %}
-        {% block class %}yellow {% endblock %}
-      {% endembed %} 
-      {% embed '_partials/button' %}
-        {% block class %}lime{% endblock %}
-      {% endembed %}
+        {% embed '_partials/button' %}
+            {% block class %}yellow {% endblock %}
+        {% endembed %} 
+        {% embed '_partials/button' %}
+            {% block class %}lime{% endblock %}
+        {% endembed %}
     </div>
   {% endfor %} 
 {% endblock %}

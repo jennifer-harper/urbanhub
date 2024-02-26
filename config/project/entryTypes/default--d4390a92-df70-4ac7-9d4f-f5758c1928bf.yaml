@@ -1,0 +1,59 @@
+fieldLayouts:
+  e016bd52-c0d5-420c-8325-26afc5817a98:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cce0b71c-d1cf-4c1f-b82f-7cbfbb5838b4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b5908f86-11d8-49a9-b0fc-1dc187009d66 # Space Type
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aa29f89d-bbc8-4029-898b-14608196eb4e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 5a03c41e-c6f8-4eed-941a-a12c9f8c463a
+        userCondition: null
+handle: default
+hasTitleField: false
+name: Default
+section: 7d73696a-27d3-438f-84cd-2d5fd1e9c0d5 # Urban Environments Slider
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{myCustomField}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

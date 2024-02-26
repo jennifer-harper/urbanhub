@@ -1,0 +1,47 @@
+fieldLayouts:
+  9e11494d-7449-4f46-a37d-fb51b5f0c5a6:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4d4c59bb-8701-4c60-b0fe-8359d9e5887e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f822c080-2ee6-4938-aba5-1571faa158be
+        userCondition: null
+handle: urbanDesk
+hasTitleField: false
+name: 'Urban Desk'
+section: 910635d5-1696-4b6e-995f-1141ec5da6c0 # Urban Desk
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

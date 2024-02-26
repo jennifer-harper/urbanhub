@@ -1,5 +1,5 @@
-<div class="flex-wrap border-btm border-color hero-environment">
-    <div class="pad-all border-right border-color half align-cont-space-btwn col"> 
+<div class="flex-wrap border-btm border-color no-border-mobile hero-environment">
+    <div class="pad-all border-right no-border-mobile border-color half"> 
         <div class="">
             {% if entry.pageName %}
                 <div class="header-intro">
@@ -16,7 +16,7 @@
             {% endif %}
         </div>
         <div class="flex-wrap inner pad-top-btm no-btm">
-            <div class="pad-sides sides-sm no-left">
+            <div class="pad-sides sides-sm no-left no-btm-marg">
                 {% if entry.pageIntroParagraph %}
                     {{entry.pageIntroParagraph }}
                 {% endif %}
@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div class="pad-top-btm pad-sides half just-cont-center">
+    <div class="pad-top-btm pad-sides half center-style">
     {% set image = entry.image.one() %}
         {% if image %}
             <img class="max-75" src="{{image.url()}}" alt="{{image.alt}}">

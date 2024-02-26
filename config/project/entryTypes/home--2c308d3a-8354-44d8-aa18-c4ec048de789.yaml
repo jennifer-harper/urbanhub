@@ -221,6 +221,36 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            elementCondition: null
+            fieldUid: 8dedadfc-4af6-49f2-95bd-efef33a55b64 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19df8bd9-d1b5-4bad-81a9-257faa630760
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b4eebaf7-1d9d-4bca-81c1-b507952d4369 # Grid Add-ons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4734e0c0-b0d9-4d50-b520-8e96d903aac1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Section
+        uid: 1256774e-8c3a-46a0-8e77-767ebbd971c6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
