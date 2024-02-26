@@ -1,0 +1,15 @@
+   
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "home" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('home').all() %} 
+
+{% set buttonClass = "green" %}
+{% set buttonClassContrast = "lime" %}
+
+{% block content %} 
+    {% for entry in page %} 
+        {% include '_partials/sections/enviro-slider.twig' %}
+    {% endfor %} 
+{% endblock %}

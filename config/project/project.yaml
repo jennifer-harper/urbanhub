@@ -1,4 +1,4 @@
-dateModified: 1708919620
+dateModified: 1708980105
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -14,30 +14,31 @@ fs:
 meta:
   __names__:
     0c1682a4-44ac-44b0-b754-6d11996cf9fb: 'Paragraph ' # Paragraph 
-    000d9077-2303-446e-b493-b672513247cc: 'Urban Desk' # Urban Desk
+    000d9077-2303-446e-b493-b672513247cc: UrbanDesk # UrbanDesk
     1c0594f9-f13e-4001-b05e-ef49fc7b0cf6: 'List Point' # List Point
     2c308d3a-8354-44d8-aa18-c4ec048de789: Home # Home
     2d4fd05a-7931-4151-ac2a-8e3011088cd5: Simple # Simple
     2ee914a2-b05d-4c31-a59b-9919788305a7: Image # Image
     3e1bb40d-9000-497a-9b75-2f18c808ddd9: Paragraph # Paragraph
     3ee36c75-6798-4bd2-8772-cbaf669e7981: 'Space Selling Points' # Space Selling Points
-    4c8bceef-38e6-4299-9198-ae6c832a644c: 'Price Quanity' # Price Quanity
+    4c8bceef-38e6-4299-9198-ae6c832a644c: 'Price Quantity' # Price Quantity
     4d78f48b-07fe-4864-8d7a-6d1e73752704: Other # Other
     5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd: Paragraph # Paragraph
     5fe4741c-ddf0-4203-8a3a-507126d173ca: 'Group Fields' # Group Fields
-    7a8a0776-f56b-445a-b99d-2ccaeb899a53: 'Urban Office' # Urban Office
+    7a8a0776-f56b-445a-b99d-2ccaeb899a53: UrbanOffice # UrbanOffice
     7d73696a-27d3-438f-84cd-2d5fd1e9c0d5: 'Urban Environments Slider' # Urban Environments Slider
     8dedadfc-4af6-49f2-95bd-efef33a55b64: Heading # Heading
     8e40aeeb-55f0-4320-9a85-9ea2d246361b: urbanhub # urbanhub
     33cfdfc6-431e-464c-917f-25271d27922c: 'Title H2' # Title H2
     41f1a3d3-a8fd-4e2a-ac05-b194f3063080: 'Selling Points' # Selling Points
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
-    55a2395c-c1e1-44dc-ab10-3eb438f40eaf: 'Urban Office' # Urban Office
+    55a2395c-c1e1-44dc-ab10-3eb438f40eaf: UrbanOffice # UrbanOffice
     75c33b8a-3fbb-4031-9b40-b95976dc12ba: 'Sub Heading' # Sub Heading
-    75fe64f6-ab16-4d2c-9322-e1bb839f4845: 'Urban Suite' # Urban Suite
+    75fe64f6-ab16-4d2c-9322-e1bb839f4845: UrbanSuite # UrbanSuite
     82f704c3-36ac-4f0d-b835-560746906020: 'Button Text' # Button Text
     83c78d90-8c41-4ef1-a2ef-1c5110162342: Image # Image
-    319d4674-6b0e-4027-abdc-23a8fe7bcf1f: 'Urban Suite' # Urban Suite
+    94ae2f64-db35-47c0-907e-b853e95b3ce5: Heading # Heading
+    319d4674-6b0e-4027-abdc-23a8fe7bcf1f: UrbanSuite # UrbanSuite
     368e19da-aed2-4692-949d-976508166279: 'Page Title' # Page Title
     579edee1-2038-493a-ac4d-971bb6552e9d: 'Business Information' # Business Information
     820e4067-5880-4edb-9cba-20c3597f35ba: 'Enviro Slider' # Enviro Slider
@@ -51,7 +52,7 @@ meta:
     250485d5-f50f-4a7f-a221-1fc9dc7dbb3a: Images # Images
     491730e4-5d8e-4d79-889a-57fe300b420c: 'Button Page Link' # Button Page Link
     800848a8-f09b-4adb-b0d0-76339d6195c8: 'Group Fields' # Group Fields
-    910635d5-1696-4b6e-995f-1141ec5da6c0: 'Urban Desk' # Urban Desk
+    910635d5-1696-4b6e-995f-1141ec5da6c0: UrbanDesk # UrbanDesk
     952787c6-7c0b-46f8-9b75-93ef54023e32: Admin # Admin
     4673650a-aadd-4dc5-966e-7a5dba8f1d55: Heading # Heading
     50516315-9cd3-4843-8f18-397e1d59c811: 'Group Fields' # Group Fields

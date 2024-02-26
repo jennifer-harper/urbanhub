@@ -1,9 +1,9 @@
 columnSuffix: gtgjaxia
 contentColumnType: text
 fieldGroup: 820e4067-5880-4edb-9cba-20c3597f35ba # Enviro Slider
-handle: priceQuanity
+handle: priceQuantity
 instructions: null
-name: 'Price Quanity'
+name: 'Price Quantity'
 searchable: false
 settings:
   byteLimit: null

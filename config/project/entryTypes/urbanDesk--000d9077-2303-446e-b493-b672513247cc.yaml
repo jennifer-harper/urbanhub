@@ -36,8 +36,8 @@ fieldLayouts:
         userCondition: null
 handle: urbanDesk
 hasTitleField: false
-name: 'Urban Desk'
-section: 910635d5-1696-4b6e-995f-1141ec5da6c0 # Urban Desk
+name: UrbanDesk
+section: 910635d5-1696-4b6e-995f-1141ec5da6c0 # UrbanDesk
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

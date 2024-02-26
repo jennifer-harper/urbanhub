@@ -1,24 +1,23 @@
 
-    <div class="flex-wrap pad-all heading-btn-wrapper">
-        <div class="half">
-        {% if entry.heading4 %}
-            {{entry.heading4}}
-        {% endif %}
-        </div>
-        <div class="half flex-wrap ">
-            {% embed '_partials/button' %}
-                {% block class %}{{buttonClassContrast }} col no-marg-top {% endblock %}
-                 {% block title %}View Building Facilities {% endblock %}
-            {% endembed %} 
-        </div>
-    </div>
-
-
-    {% set slider = craft.entries().section('urbanEnvironmentsSlider').all() %}
-    {% for slide in slider %}
+{% set slider = craft.entries().section('urbanEnvironmentsSlider').all() %}
+{% for slide in slider %}
+    {% set sliderImage = slide.sliderImage.one() %}
     <div>
         {{slide.spaceType[0]}}
         {{slide.spaceType[0].url}}
-    </div>
+        {{slide.spacePrice}}
+        {{slide.priceQuantity}}
+        {{slide.spaceDescription}}
+        {% if sliderImage %}
+            <img class="max-75" src="{{ sliderImage.url }}" alt="{{ sliderImage.title }}">
+        {% endif %}
 
+        {% for block in slide.spaceSellingPoints %}
+            {% if block.type == 'groupFields' %}
+                {% if block.sellingPoints %}
+                    <li>{{block.sellingPoints}}</li>
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+    </div>
 {% endfor %}

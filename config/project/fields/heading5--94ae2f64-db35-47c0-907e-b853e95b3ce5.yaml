@@ -1,14 +1,14 @@
-columnSuffix: eimfnplm
+columnSuffix: viiaimdg
 contentColumnType: text
-fieldGroup: 820e4067-5880-4edb-9cba-20c3597f35ba # Enviro Slider
-handle: spaceDescription
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: heading5
 instructions: null
-name: 'Space Description'
+name: Heading
 searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
-  ckeConfig: 2d4fd05a-7931-4151-ac2a-8e3011088cd5 # Simple
+  ckeConfig: 33cfdfc6-431e-464c-917f-25271d27922c # Title H2
   columnType: text
   defaultTransform: null
   enableSourceEditingForNonAdmins: false

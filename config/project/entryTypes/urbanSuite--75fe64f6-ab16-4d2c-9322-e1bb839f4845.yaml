@@ -36,8 +36,8 @@ fieldLayouts:
         userCondition: null
 handle: urbanSuite
 hasTitleField: false
-name: 'Urban Suite'
-section: 319d4674-6b0e-4027-abdc-23a8fe7bcf1f # Urban Suite
+name: UrbanSuite
+section: 319d4674-6b0e-4027-abdc-23a8fe7bcf1f # UrbanSuite
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

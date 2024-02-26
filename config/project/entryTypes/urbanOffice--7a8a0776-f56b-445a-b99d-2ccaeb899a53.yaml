@@ -36,8 +36,8 @@ fieldLayouts:
         userCondition: null
 handle: urbanOffice
 hasTitleField: false
-name: 'Urban Office'
-section: 55a2395c-c1e1-44dc-ab10-3eb438f40eaf # Urban Office
+name: UrbanOffice
+section: 55a2395c-c1e1-44dc-ab10-3eb438f40eaf # UrbanOffice
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

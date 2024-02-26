@@ -251,6 +251,32 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            elementCondition: null
+            fieldUid: 94ae2f64-db35-47c0-907e-b853e95b3ce5 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 81db900d-e0df-4b99-8040-db23fdedf35d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'To edit slider content go to Channels - Urban Environment Slider'
+            type: craft\fieldlayoutelements\Tip
+            uid: 20d2bdcf-8a80-484b-aa60-a8aa9a92e0a6
+            userCondition: null
+        name: Section
+        uid: de256b03-6493-4e2a-ba5e-0c5b27239399
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
             autocapitalize: true
             autocomplete: false
             autocorrect: true
