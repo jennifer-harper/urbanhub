@@ -19,7 +19,9 @@
   {% block content %}
   {% endblock %}
 
-  {# {% include '_partials/footer.twig' %} #}
+    {% embed '_partials/footer/footer-banner.twig' %}
+        {% block class %} {{main}}{% endblock %}
+    {% endembed %}
   
   {% block scripts %}
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>

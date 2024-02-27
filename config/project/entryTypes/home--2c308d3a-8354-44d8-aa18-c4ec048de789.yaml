@@ -84,6 +84,36 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 56985cf3-1250-417e-ba85-9ff5472ba6bf # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c2b6399f-d420-4bcf-a7d7-31ade42bffeb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c6883bfd-18a2-4828-9c01-a69a1e1f7c0b # USPs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c336fd8f-7c7f-4196-a606-277a1eceef0c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Section
+        uid: e62444a8-40ae-4258-9670-75336017433c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 83c78d90-8c41-4ef1-a2ef-1c5110162342 # Image
             instructions: null
             label: null

@@ -308,6 +308,7 @@ img {
 svg {
   overflow: visible !important;
   z-index: 1;
+  fill:$green-dark;
 }
 
 .little-star{
@@ -315,6 +316,23 @@ svg {
     margin-top: $md;
     margin-left:auto;
     fill:$green-dark
+}
+.tick{
+    fill:$lime;
+    margin-right:$base-font-size*.3;
+}
+
+.star-banner-wrapper{
+    overflow:hidden;
+    position: relative;
+    .star-banner{
+        width:107%;
+        margin-left:-3.5%;
+        margin-bottom: -9%;
+        .light{
+            fill:$light;
+        }
+    }
 }
 
 
@@ -420,6 +438,12 @@ svg {
         flex-wrap: wrap;
         flex-direction:row;
     }
+    &.row{
+        flex-direction:row; 
+    }
+
+
+
 
     @media #{$mq-medium} {
         flex-direction:row;
@@ -445,7 +469,9 @@ svg {
             flex-basis: 33.33%;
         }
 
-
+        &.just-cont-space-btw{
+            justify-content: space-between;
+        }
     }
 
     @media #{$mq-large} {
@@ -467,9 +493,7 @@ svg {
     align-items: flex-end; 
 }
 
-.just-cont-space-btw{
-    justify-content: space-between;
-}
+
 .center-style{
     display: flex;
     justify-content: center;
@@ -549,6 +573,21 @@ svg {
         }
       }
     }
+
+    &.blue-light{
+        a{
+          background-color: $blue-light;
+          p{
+            color:$blue-dark;
+          }
+          div{
+            background-color: $blue-dark;
+            svg{
+              fill:$blue-light
+            }
+          }
+        }
+      }
   
     &.yellow{
       a{
@@ -634,33 +673,7 @@ svg {
 }
 
 
-//-------Themes-----------//
 
-.orangeTheme{
-    h1,h2,h3,p, a, li{
-        color:$orange;  
-    }
-    .bg-orange{
-        h1,h2,h3,p, a{
-            color:$yellow-light;  
-        } 
-    }
-    .underline-list li{
-        border-color:$orange
-    }
-    .little-star{
-        fill: $orange;
-    }
-    .border-color{
-        border-color:$orange;
-    }
-    .border-color-contrast{
-        border-color:$yellow-light;
-        .little-star{
-            fill: $yellow-light;
-        }
-    }
-}
 
 
 
@@ -717,15 +730,39 @@ svg {
     }
   }
 
-    //-------slider urban environments-----------//
+    //-------sliders-----------//
     .swiper-slide{
         height:auto;
     }
+
     .slider-btn-wrapper{
         position: relative;
+        display: flex;
+        .swiper-button-prev:after,
+        .swiper-button-next:after{
+            content: '';
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next{
+            position: relative;
+            background-color: $green-dark;
+            border-radius: $base;
+            padding: $base-font-size*.7 $base-font-size*1;
+            width: unset;
+            height: inherit;
+            svg{
+                fill:$green-light;
+                width: $base-font-size*1.6;
+            }
+        }
+
+        .swiper-button-next{
+            transform: rotate(180deg);
+        }
     }
 
-    .slider-environments{
+    .slider-urban-solutions{
         h3{
         font-size:25px;
         margin-bottom: 0;
@@ -740,7 +777,7 @@ svg {
             }
         }
         .price-title{
-            margin-top:$md;
+            margin-top:10px;
             .no-wrap{
                 font-size:$base-font-size*1.2;
                 white-space: nowrap;
@@ -748,6 +785,8 @@ svg {
             .price{
                 font-weight: 600;
                 font-size:40px;
+                line-height: 1em;
+                font-family:$header-font;
                 @media #{$mq-small}{
                     font-size:6.5vw;
                 }
@@ -764,3 +803,106 @@ svg {
             }
         }
     }
+
+
+
+//-------Themes-----------//
+.footer-banner{
+    &.bg-green-dark{
+        h2{
+            color:$green-light
+        }
+    }
+}
+
+.orangeTheme{
+    h1,h2,h3,p, a, li{
+        color:$orange;  
+    }
+
+    .bg-orange{
+        h1,h2,h3,p, a{
+            color:$yellow-light;  
+        } 
+    }
+    .underline-list li{
+        border-color:$orange
+    }
+    .slider-btn-wrapper {
+        .swiper-button-prev,
+        .swiper-button-next{
+            background-color: $orange;
+            svg{
+                fill:$yellow-light;
+            }
+        }
+    }
+
+    .tick{
+        fill:$yellow-light;
+    }
+
+    .little-star{
+        fill: $orange;
+    }
+    .star-banner{
+        .contrast{
+            fill:$yellow-light;
+        }
+    }
+    .border-color{
+        border-color:$orange;
+    }
+    .border-color-contrast{
+        border-color:$yellow-light;
+        .little-star{
+            fill: $yellow-light;
+        }
+    }
+}
+
+.blueTheme{
+    h1,h2,h3,p, a, li{
+        color:$blue-dark;  
+    }
+
+    .bg-blue-dark{
+        h1,h2,h3,p, a{
+            color:$blue-light;  
+        } 
+    }
+    .underline-list li{
+        border-color:$blue-dark;
+    }
+    .slider-btn-wrapper {
+        .swiper-button-prev,
+        .swiper-button-next{
+            background-color: $blue-dark;
+            svg{
+                fill:$blue-light;
+            }
+        }
+    }
+
+    .tick{
+        fill:$blue-light;  
+    }
+
+    .little-star{
+        fill: $blue-dark;
+    }
+    .star-banner{
+        .contrast{
+            fill:$blue-light;  
+        }
+    }
+    .border-color{
+        border-color:$blue-dark;
+    }
+    .border-color-contrast{
+        border-color:$blue-light;
+        .little-star{
+            fill: $blue-light;
+        }
+    }
+}

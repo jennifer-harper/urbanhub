@@ -1,4 +1,4 @@
-var swiper = new Swiper('.slider-environments', {
+var swiper = new Swiper('.slider-urban-solutions', {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,

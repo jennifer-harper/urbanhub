@@ -1,11 +1,15 @@
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "home orangeTheme" } %} 
+{% set bodyAttributes ={ class: "home blueTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
 {% set page = craft.entries().section('home').all() %} 
 
-{% set buttonClass = "orange" %}
-{% set buttonClassContrast = "yellow" %}
+{% set buttonClass = "blue" %}
+{% set buttonClassContrast = "blue-light" %}
+
+{% set main = "bg-blue-dark" %}
+{% set contrast = "bg-blue-light" %}
+
 
 {% block head %} 
   {{ parent() }}
@@ -14,19 +18,38 @@
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/hero/environment.twig' %}
-    {% include '_partials/sections/enviro-mask.twig' %}
-    {% include '_partials/sections/enviro-banner.twig' %}
-    {% embed '_partials/sections/enviro-contrast.twig' %}
-        {% block class %} bg-orange {% endblock %}
+    {% include '_partials/hero/solutions.twig' %}
+    {% include '_partials/sections/solutions-usps.twig' %}
+    {% include '_partials/sections/solutions-mask.twig' %}
+
+    {% include '_partials/sections/solutions-banner.twig' %}
+    {% embed '_partials/sections/solutions-contrast.twig' %}
+        {% block class %} {{main}} {% endblock %}
         {% block colCount %} third {% endblock %}
     {% endembed %}
-    {% embed '_partials/sections/enviro-contrast-btm.twig' %}
-        {% block class %} bg-orange addons{% endblock %}
+    {% embed '_partials/sections/solutions-contrast-btm.twig' %}
+        {% block class %}  {{main}} addons{% endblock %}
         {% block colCount %} half {% endblock %}
     {% endembed %}
-    {% include '_partials/sections/slider-intro.twig' %}
-    {% include '_partials/sections/enviro-slider.twig' %}
+
+    {% embed '_partials/sections/star-banner-section.twig' %}
+        {% block class %} {{main}} {% endblock %}
+        {% block contrast %} {{contrast}} {% endblock %}
+    {% endembed %}
+
+        {% include '_partials/sections/slider-intro.twig' %}
+    {% include '_partials/sections/solutions-slider.twig' %}
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="pad-all ">
         <h1 class="lg">hello ambitious <span>home 135px</span></h1>

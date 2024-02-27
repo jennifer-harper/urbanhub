@@ -1,6 +1,6 @@
-<div class="swiper slider-environments">
+<div class="swiper slider-urban-solutions">
     <div class="swiper-wrapper">
-        {% set slider = craft.entries().section('urbanEnvironmentsSlider').all() %}
+        {% set slider = craft.entries().section('urbanSolutionsSlider').all() %}
         {% for slide in slider %}
             {% if entry.title != slide.spaceType[0] %}
                 <div class="swiper-slide border-right border-color no-border-mobile">
@@ -15,7 +15,7 @@
                                         <span class="no-wrap"><i>/{{slide.priceQuantity}}</i></span>
                                     </p> 
                                 </div>
-                                <p> {{slide.spaceDescription}}</p>
+                                {{slide.spaceDescription}}
                                 {% set buttonText = slide.buttonText ?? 'Find out more' %}
                                 {% set buttonPageLink = slide.spaceType[0].url ?? '/contact-us' %}
                                 {% embed '_partials/button' %}

@@ -1,25 +1,48 @@
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "other" } %} 
+{% set bodyAttributes ={ class: "other orangeTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
 {% set page = craft.entries().section('home').all() %} 
 
-{% set buttonClass = "green-lime" %}
-{% set buttonClassContrast = "green-lime" %}
+{% set buttonClass = "orange" %}
+{% set buttonClassContrast = "yellow" %}
+
+{% set main = "bg-orange" %}
+{% set contrast = "bg-yellow-light" %}
+
+{% block head %} 
+  {{ parent() }}
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+{% endblock %}
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/hero/environment.twig' %}
-    {% include '_partials/sections/enviro-mask.twig' %}
-    {% include '_partials/sections/enviro-banner.twig' %}
-    {% embed '_partials/sections/enviro-contrast.twig' %}
-        {% block class %} bg-lime {% endblock %}
+    {% include '_partials/hero/solutions.twig' %}
+    {% include '_partials/sections/solutions-usps.twig' %}
+    {% include '_partials/sections/solutions-mask.twig' %}
+
+    {% include '_partials/sections/solutions-banner.twig' %}
+    {% embed '_partials/sections/solutions-contrast.twig' %}
+        {% block class %} {{main}} {% endblock %}
         {% block colCount %} third {% endblock %}
     {% endembed %}
-    {% embed '_partials/sections/enviro-contrast-btm.twig' %}
-        {% block class %} bg-lime addons{% endblock %}
+    {% embed '_partials/sections/solutions-contrast-btm.twig' %}
+        {% block class %}  {{main}} addons{% endblock %}
         {% block colCount %} half {% endblock %}
     {% endembed %}
 
+    {% embed '_partials/sections/star-banner-section.twig' %}
+        {% block class %} {{main}} {% endblock %}
+    {% endembed %}
+
+    {% include '_partials/sections/slider-intro.twig' %}
+    {% include '_partials/sections/solutions-slider.twig' %}
+
   {% endfor %} 
+{% endblock %}
+
+{% block scripts %}
+{{ parent() }}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script  type="module" src="/assets/js/sliders.js"></script>
 {% endblock %}

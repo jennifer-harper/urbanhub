@@ -1,4 +1,4 @@
-dateModified: 1708987727
+dateModified: 1708997036
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -24,9 +24,11 @@ meta:
     4c8bceef-38e6-4299-9198-ae6c832a644c: 'Price Quantity' # Price Quantity
     4d78f48b-07fe-4864-8d7a-6d1e73752704: Other # Other
     5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd: Paragraph # Paragraph
+    5e96d5b2-57e0-4eec-99fa-0a099008f7d7: 'Selling Points' # Selling Points
     5fe4741c-ddf0-4203-8a3a-507126d173ca: 'Group Fields' # Group Fields
+    6eb48dc4-cde8-48e0-964e-628420361d69: 'group Fields' # group Fields
     7a8a0776-f56b-445a-b99d-2ccaeb899a53: UrbanOffice # UrbanOffice
-    7d73696a-27d3-438f-84cd-2d5fd1e9c0d5: 'Urban Environments Slider' # Urban Environments Slider
+    7d73696a-27d3-438f-84cd-2d5fd1e9c0d5: 'Urban Solutions Slider' # Urban Solutions Slider
     8dedadfc-4af6-49f2-95bd-efef33a55b64: Heading # Heading
     8e40aeeb-55f0-4320-9a85-9ea2d246361b: urbanhub # urbanhub
     33cfdfc6-431e-464c-917f-25271d27922c: 'Title H2' # Title H2
@@ -50,6 +52,7 @@ meta:
     6221ad00-05cc-4298-9ace-e6d2b6303c91: 'Button text' # Button text
     9758e6f4-7462-4750-9d36-440d40e64643: 'Sub Heading' # Sub Heading
     24354e21-7f7c-4191-a61f-5d6193d33d90: 'Sign In' # Sign In
+    56985cf3-1250-417e-ba85-9ff5472ba6bf: Heading # Heading
     250485d5-f50f-4a7f-a221-1fc9dc7dbb3a: Images # Images
     491730e4-5d8e-4d79-889a-57fe300b420c: 'Button Page Link' # Button Page Link
     800848a8-f09b-4adb-b0d0-76339d6195c8: 'Group Fields' # Group Fields
@@ -67,6 +70,7 @@ meta:
     c1bf7809-a0ec-476f-84d4-9d9bb2f451f4: 'Page Name' # Page Name
     c4fd8b25-a19f-4ccc-a013-d0fc9e5ce8b9: Other # Other
     c406e842-e9ae-4fa0-9851-a74a6f9cedf2: Home # Home
+    c6883bfd-18a2-4828-9c01-a69a1e1f7c0b: USPs # USPs
     c9568162-a2ec-4e6f-a89e-d0366292c4be: 'Slider Image' # Slider Image
     d5ebc5d3-29c4-49d3-970e-80907e54e5d9: 'Title H3' # Title H3
     d9af3e55-e89f-473c-a29a-abe18acebc79: Common # Common

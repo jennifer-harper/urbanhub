@@ -133,7 +133,7 @@ fieldLayouts:
 handle: default
 hasTitleField: false
 name: Default
-section: 7d73696a-27d3-438f-84cd-2d5fd1e9c0d5 # Urban Environments Slider
+section: 7d73696a-27d3-438f-84cd-2d5fd1e9c0d5 # Urban Solutions Slider
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
