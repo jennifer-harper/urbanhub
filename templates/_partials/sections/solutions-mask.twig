@@ -1,8 +1,11 @@
 <div class="flex-wrap">
-    {% set image2 = entry.image2.one() ?? 'uploads/images/picture4-small-crop.webp' %}
+    
 
     <div class="half bg-yellow mask-wrapper" 
-    style="background-image:url({{ image2.getUrl() }})">
+    {% if entry.image2 is not null %}
+        {% set image2 = entry.image2.one()%}
+            style="background-image:url({{ image2.getUrl() }})"
+        {% endif %}>
         {% include '_partials/masks/right-mask.twig' %}
         {% include '_partials/masks/bottom-mask.twig' %}
     </div>

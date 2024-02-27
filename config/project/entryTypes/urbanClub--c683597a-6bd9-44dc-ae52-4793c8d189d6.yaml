@@ -1,5 +1,5 @@
 fieldLayouts:
-  9e11494d-7449-4f46-a37d-fb51b5f0c5a6:
+  4c5386ed-6eaa-4e40-984b-0fb5b35b05e2:
     tabs:
       -
         elementCondition: null
@@ -27,12 +27,12 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 4d4c59bb-8701-4c60-b0fe-8359d9e5887e
+            uid: 56189a60-7b92-413b-9611-92f300f6fd58
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: f822c080-2ee6-4938-aba5-1571faa158be
+        uid: d5f0588a-0617-4f59-aea0-0f799d747578
         userCondition: null
       -
         elementCondition: null
@@ -45,7 +45,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: d6870637-a77f-43ad-91c4-cc34cca91c5f
+            uid: f86f6005-a1d6-4dad-abef-952da5d656ba
             userCondition: null
             warning: null
             width: 100
@@ -57,7 +57,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: bdf6b450-36b0-49c3-9568-5495d2a9baee
+            uid: 8086a2d8-14de-4f5e-851d-dd3abb85611a
             userCondition: null
             warning: null
             width: 100
@@ -69,7 +69,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: bb8de2cf-fd9e-478c-a1ed-79bf5b0f46fa
+            uid: b2f3f9e7-1df4-4aaa-b619-28693e1ef02d
             userCondition: null
             warning: null
             width: 100
@@ -81,19 +81,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b33f2a0f-5d00-4dff-bd98-883b901c8b65
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: cad0bd17-de2f-4f51-8302-3b11d7f11ae9
+            uid: 60946247-8c64-42f7-9b55-e23f5a4700eb
             userCondition: null
             warning: null
             width: 100
@@ -105,42 +93,24 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5abbc462-1587-4a32-a3b8-66697066bc1e
-            userCondition: null
-            warning: null
-            width: 100
-        name: Section
-        uid: 58916c67-a0a2-46a5-a2d4-b88e377e5e1f
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: 56985cf3-1250-417e-ba85-9ff5472ba6bf # Heading
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ec9dd34e-11b8-498a-9c57-796ba751938e
+            uid: a6af97cb-1191-4802-b797-2d80795cc531
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: c6883bfd-18a2-4828-9c01-a69a1e1f7c0b # USPs
+            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f7b4621c-1c01-48b0-a873-04a90b83309e
+            uid: edac02c9-e673-44ab-b17e-69281ae2dd9c
             userCondition: null
             warning: null
             width: 100
         name: Section
-        uid: 34e92b39-0c7a-474a-9fd4-94b33e0a7f13
+        uid: 46a91593-e68e-4b91-a574-d0c99db6f24d
         userCondition: null
       -
         elementCondition: null
@@ -153,7 +123,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: fbb0088f-8811-4e40-a24c-582d89197464
+            uid: a1497dfa-4658-4c1b-84fe-4312e5022c61
             userCondition: null
             warning: null
             width: 100
@@ -165,7 +135,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5f153b14-a61d-4c56-9ae5-06ab531ab0ee
+            uid: adea373a-c6ec-40e6-97cb-3bc6ae7a1dc7
             userCondition: null
             warning: null
             width: 100
@@ -177,7 +147,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 3d03d38b-6c89-4333-8ef4-4e1922bfa50b
+            uid: da25b666-e25e-453b-8312-62a62e4e60d0
             userCondition: null
             warning: null
             width: 100
@@ -189,7 +159,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: b7069261-5f7c-4b8d-9605-ac75b0eabf96
+            uid: bb6f291e-9d49-4d0a-906a-1bd32ecab1ff
             userCondition: null
             warning: null
             width: 100
@@ -201,12 +171,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6323521c-2fcd-4e16-9130-43dc9557d690
+            uid: 3091ba19-1074-4cf8-8316-911b0ca4e703
             userCondition: null
             warning: null
             width: 100
         name: Section
-        uid: 49f0ebaa-008e-417c-abb3-9b566d331f2f
+        uid: f380596b-c83b-4262-9ade-69312f4ef7b6
         userCondition: null
       -
         elementCondition: null
@@ -219,7 +189,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0a08adc9-ba5d-45ca-a33d-adcd60fd0a9f
+            uid: 29f83aff-131b-45f7-9182-c3899b47853d
             userCondition: null
             warning: null
             width: 100
@@ -231,7 +201,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: e8c80466-63ab-4c87-a2a8-61305e30a3be
+            uid: 07a94cf1-84fc-409d-b584-92ca634af5fb
             userCondition: null
             warning: null
             width: 100
@@ -243,12 +213,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2ba3a210-8e57-4492-b80c-d359c8b0e9d6
+            uid: 0a2f1198-68dd-4810-a2c1-274433331dea
             userCondition: null
             warning: null
             width: 100
         name: Section
-        uid: 2e176b3b-6c1d-4886-93ed-df431dc4210c
+        uid: d3c58664-e7f4-4682-b198-098db5ada0e5
         userCondition: null
       -
         elementCondition: null
@@ -261,7 +231,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9587b5de-82c8-4f8e-bbcd-1140a5fc71bf
+            uid: 5d71fbf2-2c08-4b64-b82b-6f3d2b212497
             userCondition: null
             warning: null
             width: 100
@@ -273,12 +243,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 5d9d8558-63c0-4143-844c-0d3c2dacaac9
+            uid: 18b747a3-60ba-4ef9-b884-f3842454f08f
             userCondition: null
             warning: null
             width: 100
         name: Section
-        uid: 65939a89-fab4-4ece-bece-4d82a5144141
+        uid: c239e877-714e-4058-94a2-eb002297832d
         userCondition: null
       -
         elementCondition: null
@@ -291,7 +261,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: be0323ef-2167-4962-bd93-775959db4a93
+            uid: 9c71ea34-2de3-4d38-a86b-836576a27ac1
             userCondition: null
             warning: null
             width: 100
@@ -303,7 +273,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: dcb85b2c-0657-448b-9385-b381ce4fd4ae
+            uid: acb848f7-c18a-4f39-85b0-bbf18374db29
             userCondition: null
             warning: null
             width: 100
@@ -315,12 +285,12 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: de718c89-a9c4-44c2-81a4-2d43f7182aca
+            uid: d08c2c20-abbd-4237-b9ae-a97bebb51b01
             userCondition: null
             warning: null
             width: 100
         name: Section
-        uid: 7485add7-92e1-4df5-920a-164148aba0d1
+        uid: abd09ab1-5d93-450c-a4fb-2e24cfa7109f
         userCondition: null
       -
         elementCondition: null
@@ -333,7 +303,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 18a2dbbc-5a8a-4c93-869c-e54b6af8f655
+            uid: 09e9c53d-d35e-4b33-b28e-5cb9f4103aae
             userCondition: null
             warning: null
             width: 100
@@ -343,15 +313,15 @@ fieldLayouts:
             style: tip
             tip: 'To edit slider content go to Channels - Urban Solutions Slider'
             type: craft\fieldlayoutelements\Tip
-            uid: 8218f1ab-a80e-4a38-8bab-e059ce5b71bb
+            uid: 4f57b730-2bc6-4b7f-a37a-b3231e341782
             userCondition: null
         name: Slider
-        uid: aeeb7216-33ab-431d-bc54-fb9d8869e088
+        uid: b3847051-f1bd-40fb-a8dc-23c3125235f7
         userCondition: null
-handle: urbanDesk
+handle: urbanClub
 hasTitleField: false
-name: UrbanDesk
-section: 910635d5-1696-4b6e-995f-1141ec5da6c0 # UrbanDesk
+name: urbanClub
+section: 0fadc91b-326d-4899-8d25-c5f9bf36b802 # urbanClub
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

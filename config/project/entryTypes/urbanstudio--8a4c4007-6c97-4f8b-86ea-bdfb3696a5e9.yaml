@@ -1,0 +1,47 @@
+fieldLayouts:
+  43e2798e-cb9a-4484-9078-724fe990b5fc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 17b7b2d8-a991-4213-bb82-5d5dbef52c1c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d7cb189b-9240-48d7-ad85-9ed1b30d3756
+        userCondition: null
+handle: urbanstudio
+hasTitleField: false
+name: UrbanStudio
+section: 48802c23-b684-41b9-9337-e0194906b5ce # UrbanStudio
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

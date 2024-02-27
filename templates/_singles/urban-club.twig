@@ -1,17 +1,15 @@
-   
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "urbanSuite" } %} 
+{% set bodyAttributes ={ class: "urbanClub brownTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
-{% set page = craft.entries().section('home').all() %} 
+{% set page = craft.entries().section('urbanClub').all() %} 
 
-{% set buttonClass = "green-light" %}
-{% set buttonClassContrast = "green" %}
+{% set buttonClass = "brown" %}
+{% set buttonClassContrast = "brown" %}
 
-{% set main = "bg-green-light" %}
-{% set contrast = "bg-green-dark" %}
-{% set footer = "bg-green-dark" %}
-
+{% set main = "bg-yellow" %}
+{% set contrast = "bg-brown" %}
+{% set footer = "bg-yellow" %}
 
 
 {% block head %} 
@@ -26,7 +24,6 @@
     {% include '_partials/sections/solutions-mask.twig' %}
 
     {% include '_partials/sections/solutions-banner.twig' %}
-
     {% embed '_partials/sections/solutions-contrast.twig' %}
         {% block class %} {{main}} {% endblock %}
         {% block colCount %} third {% endblock %}

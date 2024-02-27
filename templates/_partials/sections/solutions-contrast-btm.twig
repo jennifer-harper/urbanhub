@@ -10,6 +10,18 @@
                 {% block class %}{{buttonClassContrast }} col no-marg-top {% endblock %}
                  {% block title %}View Building Facilities {% endblock %}
             {% endembed %} 
+
+             {% for block in entry.button2 %}
+                    {% if block.type == 'groupFields' %}
+                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                        {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                        {% embed '_partials/button' %}
+                            {% block class %}{{buttonClass}}{% endblock %}
+                            {% block title %}{{buttonText}} {% endblock %}
+                            {% block url %}{{buttonPageLink}} {% endblock %}
+                        {% endembed %} 
+                    {% endif %}
+                {% endfor %}
         </div>
     </div>
 

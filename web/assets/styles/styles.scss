@@ -318,7 +318,7 @@ svg {
     fill:$green-dark
 }
 .tick{
-    fill:$lime;
+    fill:$green-light;
     margin-right:$base-font-size*.3;
 }
 
@@ -427,7 +427,12 @@ svg {
         border-width:1px;
     }
 }
-
+.border-color-contrast{
+    border-color:$green-light;
+    .little-star{
+        fill:$green-light
+    }
+}
 
 
 //-------Flex-----------//
@@ -549,12 +554,27 @@ svg {
         }
       }
     }
+
+    &.green-light{
+        a{
+          background-color: $green-light;
+          p{
+            color:$green-dark;
+          }
+          div{
+            background-color: $green-dark;
+            svg{
+              fill:$light;
+            }
+          }
+        }
+      }
   
     &.purple{
       a{
         background-color: $purple-dark;
         div{
-          background-color: $yellow;
+          background-color: $purple-light;
           svg{
             fill:$purple-dark
           }
@@ -603,6 +623,18 @@ svg {
         }
       }
     }
+
+    &.brown{
+        a{
+            background-color: $brown;
+            div{
+                background-color: $yellow;
+                svg{
+                    fill:$brown
+                }
+            }
+        }
+    }
   
     &.orange{
       a{
@@ -643,35 +675,46 @@ svg {
 .bg-green-dark{
   background-color: $green-dark;
 }
-.bg-grren-light{
+.bg-green-light{
   background-color: $green-light;
+  fill:$green-light;
 }
 .bg-yellow{
   background-color: $yellow;
 }
 .bg-yellow-light{
   background-color: $yellow-light;
+  fill:$yellow-light;
 }
 .bg-lime{
   background-color: $lime;
+  fill:$lime;
   
 }
 .bg-purple-dark{
   background-color: $purple-dark;
+  fill: $purple-dark;
 }
 .bg-purple-light{
   background-color: $purple-light;
+  fill:$purple-light;
 }
 .bg-orange{
   background-color: $orange;
+  fill:$orange;
 }
 .bg-blue-dark{
   background-color: $blue-dark;
+  fill:$blue-dark;
 }
 .bg-blue-light{
   background-color: $blue-light;
+  fill:$blue-light;
 }
-
+.bg-brown{
+    background-color: $brown;
+    fill:$brown;
+}
 
 
 
@@ -824,6 +867,9 @@ svg {
         h1,h2,h3,p, a{
             color:$yellow-light;  
         } 
+        .little-star{
+            fill: $yellow-light;
+        }
     }
     .underline-list li{
         border-color:$orange
@@ -845,19 +891,13 @@ svg {
     .little-star{
         fill: $orange;
     }
-    .star-banner{
-        .contrast{
-            fill:$yellow-light;
-        }
-    }
+
     .border-color{
         border-color:$orange;
     }
     .border-color-contrast{
         border-color:$yellow-light;
-        .little-star{
-            fill: $yellow-light;
-        }
+
     }
 }
 
@@ -870,10 +910,14 @@ svg {
         h1,h2,h3,p, a{
             color:$blue-light;  
         } 
+        .little-star{
+            fill: $blue-light;
+        }
     }
     .underline-list li{
         border-color:$blue-dark;
     }
+
     .slider-btn-wrapper {
         .swiper-button-prev,
         .swiper-button-next{
@@ -891,18 +935,152 @@ svg {
     .little-star{
         fill: $blue-dark;
     }
-    .star-banner{
-        .contrast{
-            fill:$blue-light;  
-        }
-    }
+
     .border-color{
         border-color:$blue-dark;
     }
     .border-color-contrast{
         border-color:$blue-light;
+
+    }
+}
+
+.lightBlueTheme{
+    h1,h2,h3,p, a, li{
+        color:$blue-dark;  
+    }
+    .underline-list li{
+        border-color:$blue-dark;
+    }
+
+    .little-star{
+        fill: $blue-light;
+    }
+    .bg-blue-light{
         .little-star{
-            fill: $blue-light;
+            fill: $blue-dark;
+        }  
+    }
+
+    .border-color{
+        border-color:$blue-dark;
+    }
+    .border-color-contrast{
+        border-color:$blue-dark;
+
+    }
+}
+
+.brownTheme{
+    h1,h2,h3,p, a, li{
+        color:$brown;  
+    }
+    .underline-list li{
+        border-color:$brown;
+    }
+
+    .slider-btn-wrapper {
+        .swiper-button-prev,
+        .swiper-button-next{
+            background-color: $brown;
+            svg{
+                fill:$yellow;
+            }
         }
+    }
+    .little-star{
+        fill: $brown;
+    }
+
+    .border-color{
+        border-color:$brown;
+    }
+
+    .border-color-contrast{
+        border-color:$brown;
+    }
+}
+
+.lightYellowTheme{
+    h1,h2,h3,p, a, li{
+        color:$orange;  
+    }
+
+    .bg-orange{
+        h1,h2,h3,p, a, li{
+            color:$yellow-light;  
+        }
+    }
+
+    .underline-list li{
+        border-color:$orange
+    }
+
+    .slider-btn-wrapper {
+        .swiper-button-prev,
+        .swiper-button-next{
+            background-color:$yellow-light;
+            svg{
+                fill:$orange;
+            }
+        }
+    }
+    .tick{
+        fill:$yellow-light;
+    }
+
+    .little-star{
+        fill: $orange;
+    }
+
+    .border-color{
+        border-color:$orange;
+    }
+    .border-color-contrast{
+        border-color:$orange;
+    }
+}
+
+.limeTheme{
+    .tick{
+        fill:$lime;
+    }
+    .border-color-contrast{
+        border-color:$green-dark;
+        .little-star{
+            fill: $green-dark;
+        }
+    }
+    .slider-btn-wrapper {
+        .swiper-button-prev,
+        .swiper-button-next{
+            svg{
+                fill:$lime;
+            }
+        }
+    }
+}
+
+.purpleTheme{
+    h1,h2,h3,p, a, li{
+        color:$purple-dark;  
+    }
+    .little-star{
+        fill: $purple-light;
+    }
+    .bg-purple-dark{
+        h1,h2,h3,p, a{
+            color:$purple-light;  
+        } 
+
+    }
+    .underline-list li{
+        border-color:$purple-dark;
+    }
+    .border-color{
+        border-color:$purple-dark
+    }
+    .border-color-contrast{
+        border-color:$purple-light;
     }
 }

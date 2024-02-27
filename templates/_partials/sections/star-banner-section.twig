@@ -1,3 +1,7 @@
-<div class="star-banner-wrapper {% block class %} {% endblock %}">
-{% include '_partials/svgs/star-banner.twig' %}
+<div class="star-banner-wrapper {% block class %}{% endblock %}">
+    {% embed '_partials/svgs/star-banner.twig' %}
+        {% block contrastStar %} {{contrast}} {% endblock %}
+        {% block contrastStar2 %} {{contrast}} {% endblock %}
+        {% block contrastStar3 %} {{contrast}} {% endblock %}
+    {% endembed %}
 </div>

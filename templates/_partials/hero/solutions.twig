@@ -37,8 +37,9 @@
         </div>
     </div>
     <div class="pad-top-btm pad-sides half center-style">
-    {% set image = entry.image.one() %}
-        {% if image %}
+    
+        {% if entry.image %}
+        {% set image = entry.image.one() %}
             <img class="max-75" src="{{image.url()}}" alt="{{image.alt}}">
         {% endif %}
     </div>

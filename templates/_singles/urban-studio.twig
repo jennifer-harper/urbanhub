@@ -1,17 +1,17 @@
    
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "urbanSuite" } %} 
+{% set bodyAttributes ={ class: "urbanStudio orangeTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
-{% set page = craft.entries().section('home').all() %} 
+{% set page = craft.entries().section('urbanStudio').all() %} 
 
-{% set buttonClass = "green-light" %}
-{% set buttonClassContrast = "green" %}
 
-{% set main = "bg-green-light" %}
-{% set contrast = "bg-green-dark" %}
-{% set footer = "bg-green-dark" %}
+{% set buttonClass = "orange" %}
+{% set buttonClassContrast = "yellow" %}
 
+{% set main = "bg-orange" %}
+{% set contrast = "bg-yellow-light" %}
+{% set footer = "bg-yellow-light" %}
 
 
 {% block head %} 
@@ -28,7 +28,7 @@
     {% include '_partials/sections/solutions-banner.twig' %}
 
     {% embed '_partials/sections/solutions-contrast.twig' %}
-        {% block class %} {{main}} {% endblock %}
+        {% block class %} {{main}} dark {% endblock %}
         {% block colCount %} third {% endblock %}
     {% endembed %}
     {% embed '_partials/sections/solutions-contrast-btm.twig' %}
