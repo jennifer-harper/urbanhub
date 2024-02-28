@@ -1,0 +1,19 @@
+columnSuffix: hjmovqbe
+contentColumnType: text
+fieldGroup: 952787c6-7c0b-46f8-9b75-93ef54023e32 # Admin
+handle: businessPostal
+instructions: null
+name: 'Business Postal'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

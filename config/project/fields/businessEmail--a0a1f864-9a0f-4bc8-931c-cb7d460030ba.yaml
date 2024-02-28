@@ -1,0 +1,14 @@
+columnSuffix: qleczxhu
+contentColumnType: string(255)
+fieldGroup: 952787c6-7c0b-46f8-9b75-93ef54023e32 # Admin
+handle: businessEmail
+instructions: null
+name: 'Business Email'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - email
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

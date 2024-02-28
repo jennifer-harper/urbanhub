@@ -264,6 +264,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 2ca3f21f-2832-4039-be1c-de50d73e0723 # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c4ffb671-773d-4bdc-8f33-386342750479
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: b4eebaf7-1d9d-4bca-81c1-b507952d4369 # Grid Add-ons
             instructions: null
             label: null

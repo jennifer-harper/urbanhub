@@ -8,8 +8,8 @@
 {% set buttonClass = "green-light" %}
 {% set buttonClassContrast = "green" %}
 
-{% set main = "bg-green-light" %}
-{% set contrast = "bg-green-dark" %}
+{% set main = "bg-green-dark" %}
+{% set contrast = "bg-green-light" %}
 {% set footer = "bg-green-dark" %}
 
 
@@ -28,11 +28,11 @@
     {% include '_partials/sections/solutions-banner.twig' %}
 
     {% embed '_partials/sections/solutions-contrast.twig' %}
-        {% block class %} {{main}} {% endblock %}
+        {% block class %} {{main}} dark{% endblock %}
         {% block colCount %} third {% endblock %}
     {% endembed %}
     {% embed '_partials/sections/solutions-contrast-btm.twig' %}
-        {% block class %}  {{main}} addons{% endblock %}
+        {% block class %}  {{main}} dark addons{% endblock %}
         {% block colCount %} half {% endblock %}
     {% endembed %}
 

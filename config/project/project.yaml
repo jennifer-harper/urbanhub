@@ -1,4 +1,4 @@
-dateModified: 1709065989
+dateModified: 1709092105
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -17,6 +17,7 @@ meta:
     000d9077-2303-446e-b493-b672513247cc: UrbanDesk # UrbanDesk
     0fadc91b-326d-4899-8d25-c5f9bf36b802: urbanClub # urbanClub
     1c0594f9-f13e-4001-b05e-ef49fc7b0cf6: 'List Point' # List Point
+    1e47f784-5868-477a-a65d-ccd20d3a2eaa: 'Contact Intros' # Contact Intros
     2c308d3a-8354-44d8-aa18-c4ec048de789: Home # Home
     2ca3f21f-2832-4039-be1c-de50d73e0723: Button # Button
     2d4fd05a-7931-4151-ac2a-8e3011088cd5: Simple # Simple
@@ -37,6 +38,7 @@ meta:
     8e40aeeb-55f0-4320-9a85-9ea2d246361b: urbanhub # urbanhub
     12d0eab0-1ab5-43ae-a25d-c957d5c5a4c8: 'Group Fields' # Group Fields
     33cfdfc6-431e-464c-917f-25271d27922c: 'Title H2' # Title H2
+    39d35486-b1b6-442d-95a0-f3d5dcdee6c9: 'Group Fields' # Group Fields
     41f1a3d3-a8fd-4e2a-ac05-b194f3063080: 'Selling Points' # Selling Points
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
     55a2395c-c1e1-44dc-ab10-3eb438f40eaf: UrbanOffice # UrbanOffice
@@ -44,6 +46,7 @@ meta:
     75fe64f6-ab16-4d2c-9322-e1bb839f4845: UrbanSuite # UrbanSuite
     82f704c3-36ac-4f0d-b835-560746906020: 'Button Text' # Button Text
     83c78d90-8c41-4ef1-a2ef-1c5110162342: Image # Image
+    92ee1b66-7b2d-43c4-aefc-08ae23a54dda: 'Business Phone' # Business Phone
     94ae2f64-db35-47c0-907e-b853e95b3ce5: Heading # Heading
     319d4674-6b0e-4027-abdc-23a8fe7bcf1f: UrbanSuite # UrbanSuite
     368e19da-aed2-4692-949d-976508166279: 'Page Title' # Page Title
@@ -53,6 +56,7 @@ meta:
     2995eac9-2c30-433a-bd61-0390ff903010: urbanhub # urbanhub
     4086dd2d-a840-4155-b992-eecd835319cc: 'Dollar Sign' # Dollar Sign
     4299af30-f9c7-48d6-922c-045249174b4a: Heading # Heading
+    04877c62-92fa-436b-95c0-204552480b37: 'Footer Banner' # Footer Banner
     5978cdef-8681-4576-a979-1eb00326e5ea: 'Group Fields' # Group Fields
     6221ad00-05cc-4298-9ace-e6d2b6303c91: 'Button text' # Button text
     08320fd1-0901-49fc-9707-c330852e1991: UrbanMeet # UrbanMeet
@@ -61,6 +65,7 @@ meta:
     34386ac3-d891-4b8d-b66d-3fe889be5579: 'Button Page Link' # Button Page Link
     48802c23-b684-41b9-9337-e0194906b5ce: UrbanStudio # UrbanStudio
     56985cf3-1250-417e-ba85-9ff5472ba6bf: Heading # Heading
+    82546b52-8a4e-4727-a216-ebae0292e3d9: Paragraph # Paragraph
     250485d5-f50f-4a7f-a221-1fc9dc7dbb3a: Images # Images
     491730e4-5d8e-4d79-889a-57fe300b420c: 'Button Page Link' # Button Page Link
     800848a8-f09b-4adb-b0d0-76339d6195c8: 'Group Fields' # Group Fields
@@ -68,8 +73,10 @@ meta:
     952787c6-7c0b-46f8-9b75-93ef54023e32: Admin # Admin
     4673650a-aadd-4dc5-966e-7a5dba8f1d55: Heading # Heading
     50516315-9cd3-4843-8f18-397e1d59c811: 'Group Fields' # Group Fields
+    a0a1f864-9a0f-4bc8-931c-cb7d460030ba: 'Business Email' # Business Email
     a33a9b78-e67f-4d71-b70f-5c91db0323fe: UrbanLease # UrbanLease
     a72e886d-5deb-4c6e-9dea-5a690a3f141b: 'Title h1' # Title h1
+    ac6a4bbe-5e8b-41c7-997d-cb16dc2a14d2: 'Business Address' # Business Address
     b4eebaf7-1d9d-4bca-81c1-b507952d4369: 'Grid Add-ons' # Grid Add-ons
     b9b1a6d2-d5a8-4791-8722-91479f5bf9ae: 'Meta Description' # Meta Description
     b2308c33-a2ac-480c-be85-0db8e054e2bd: Grid # Grid
@@ -85,15 +92,19 @@ meta:
     d5ebc5d3-29c4-49d3-970e-80907e54e5d9: 'Title H3' # Title H3
     d6f825ee-cd47-42b6-b079-dd879fa61250: UrbanLease # UrbanLease
     d9af3e55-e89f-473c-a29a-abe18acebc79: Common # Common
+    d161a33c-c457-4980-a1cd-ca717de7cd0d: 'Contact Dropdown' # Contact Dropdown
     d199f8b1-8c10-441f-8951-d2f10491a634: 'Page Intro' # Page Intro
     d4390a92-df70-4ac7-9d4f-f5758c1928bf: Default # Default
+    d7568988-4934-4d64-a04d-04c636118860: 'Business Postal' # Business Postal
     db842a7f-04a0-469e-89e3-316c7d347c71: UrbanMeet # UrbanMeet
     de84809e-27c8-44de-8294-bf2d5eec3aaa: Button # Button
+    e1ff4cfb-971f-4ad4-887e-8c567c6abcf5: Heading # Heading
     e5b61af4-7baa-4d4d-8814-6dc66d180fe1: 'Intro Paragraph' # Intro Paragraph
     e39a23c1-ef67-42ee-b725-b0d5d9a96f76: matrix # matrix
     e3854bbb-1638-4a39-bd6a-ab2c0a42e483: Heading # Heading
     eb88e673-2a3d-4557-aeea-9fd63d7d74fc: 'Space Price' # Space Price
     efebdbd4-c2aa-4fa3-af50-e6aaf0e04fdf: Heros # Heros
+    f672ccdb-eed8-47b2-84de-d4340a6f30fa: 'Contact Detail' # Contact Detail
     f996c36d-5af0-49f8-8dec-ec87c5f71580: 'Group Fields' # Group Fields
     fa573d0d-05be-480f-b5c8-2eb4c7420d0c: Lists # Lists
 plugins:

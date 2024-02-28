@@ -1,0 +1,26 @@
+<div class="pad-all for-sm border-top border-color flex-wrap">            
+    {% if businessInformation.contactIntros %}
+        {% for block in businessInformation.contactIntros %}
+            {% if block.type == 'groupFields' %}
+                <div class="pad-all sm">
+                    {% if block.heading %}
+                        {{ block.heading }}
+                        {{ businessInformation.businessAddress }}
+                    {% endif %}
+                    {% if block.paragraph %}
+                        {{ block.paragraph }}
+                    {% endif %}
+
+                    {% if block.contactDetail %}
+                        {% if block.contactDetail == 'businessAddress' %}
+                            {{ businessInformation.businessAddress }}
+                        {% elseif block.contactDetail == 'businessPhone' %}
+                            {{ businessInformation.businessPhone }}
+                        {% endif %}
+                    {% endif %}
+                </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+</div>
+

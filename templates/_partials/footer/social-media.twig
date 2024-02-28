@@ -1,0 +1,30 @@
+
+    <div class="flex-wrap pad-all flex-align-end-style border-top border-color">
+        <div class="half">
+            {% if businessInformation.heading %}
+                <h2>{{businessInformation.heading}}</h2>
+            {% endif %}
+
+            {% for block in entry.button %}
+                {% if block.type == 'groupFields' %}
+                    {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                    {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                    {% embed '_partials/button' %}
+                        {% block class %}{{buttonClassContrast}} no-marg-top {% endblock %}
+                        {% block title %}{{buttonText}} {% endblock %}
+                        {% block url %}{{buttonPageLink}} {% endblock %}
+                    {% endembed %} 
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="half  ">
+            <ul class="flex-wrap flex-end-style row">
+                <li><a href="">{% include '_partials/svgs/facebook.twig' %}</a></li>
+                <li><a href="">{% include '_partials/svgs/instagram.twig' %}</a></li>
+                <li><a href="">{% include '_partials/svgs/x.twig' %}</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    

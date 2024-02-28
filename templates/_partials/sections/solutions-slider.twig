@@ -7,15 +7,20 @@
                    <div class="pad-all">
                         <div class="flex-wrap">
                             <div class="half">
-                                <h3>{{slide.spaceType[0]}}</h3>
+                                {% if slide.spaceType %}
+                                    <h3>{{slide.spaceType[0]}}</h3>
+                                {% endif %}
                                 <div class="price-title">                
                                     <p>
-                                        <span class="sign">{{slide.dollarSign}}</span>
-                                        <span class="price">{{slide.spacePrice}}</span>
-                                        <span class="no-wrap"><i>/{{slide.priceQuantity}}</i></span>
+                                        {% if slide.dollarSign %}  <span class="sign">{{slide.dollarSign}}</span>{% endif %}
+                                        {% if slide.spacePrice %}  <span class="price">{{slide.spacePrice}}</span>{% endif %}
+                                        {% if slide.priceQuantity %}  <span class="no-wrap"><i>/{{slide.priceQuantity}}</i></span>{% endif %}
                                     </p> 
                                 </div>
-                                {{slide.spaceDescription}}
+                                {% if slide.spaceDescription%}
+                                    {{slide.spaceDescription}}
+                                {% endif %}
+
                                 {% set buttonText = slide.buttonText ?? 'Find out more' %}
                                 {% set buttonPageLink = slide.spaceType[0].url ?? '/contact-us' %}
                                 {% embed '_partials/button' %}

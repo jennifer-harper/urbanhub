@@ -1,3 +1,20 @@
-<div class="footer-banner {% block class %} {% endblock %}">
-<h2>Where <i>Wellington</i> goes to work</h2>
+<div class="footer-banner pad-all no-top{% block class %} {% endblock %}">
+    <div>
+    {% if businessInformation.footerBanner %}
+        {{businessInformation.footerBanner}} 
+    {% endif %}
+    </div>
+
+    <div class="flex-wrap flex-jc-sb">
+        <ul class="">
+            <li><p>© 2023 Urban Hub. <span>All rights reserved</span>.</p></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Cookie Policy</a></li>
+        </ul>
+
+        <div class="flex-end-style flex-wrap">
+        <a href="/">{% include '_partials/svgs/logo.twig' %}</a>
+        </div>
+    </div>
 </div>

@@ -9,7 +9,7 @@
 
 {% set main = "bg-blue-dark" %}
 {% set contrast = "bg-blue-light" %}
-
+{% set footer = "bg-blue-light" %}
 
 {% block head %} 
   {{ parent() }}
@@ -40,8 +40,8 @@
         {% include '_partials/sections/slider-intro.twig' %}
     {% include '_partials/sections/solutions-slider.twig' %}
 
-
-
+  {% include '_partials/footer/social-media.twig' %}
+ {% include '_partials/footer/contact-section.twig' %}
 
 
 
