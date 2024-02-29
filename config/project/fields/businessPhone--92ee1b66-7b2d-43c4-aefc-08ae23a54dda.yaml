@@ -1,14 +1,19 @@
 columnSuffix: ttrxitol
-contentColumnType: string(255)
+contentColumnType: text
 fieldGroup: 952787c6-7c0b-46f8-9b75-93ef54023e32 # Admin
 handle: businessPhone
-instructions: null
+instructions: 'This needs to have area code in front of number for click to calls to work'
 name: 'Business Phone'
 searchable: false
 settings:
-  maxLength: 255
-  types:
-    - tel
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\Url
+type: craft\fields\PlainText

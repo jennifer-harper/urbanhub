@@ -1,8 +1,8 @@
 
-    <div class="flex-wrap pad-all flex-align-end-style border-top border-color">
+    <div class="social-media flex-wrap pad-all flex-align-end-style border-top border-color">
         <div class="half">
             {% if businessInformation.heading %}
-                <h2>{{businessInformation.heading}}</h2>
+                {{businessInformation.heading}}
             {% endif %}
 
             {% for block in entry.button %}

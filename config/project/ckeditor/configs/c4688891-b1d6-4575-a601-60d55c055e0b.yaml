@@ -1,0 +1,8 @@
+headingLevels: false
+name: tables
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - insertTable
+  - sourceEditing

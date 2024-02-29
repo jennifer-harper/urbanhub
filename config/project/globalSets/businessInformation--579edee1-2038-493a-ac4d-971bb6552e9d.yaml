@@ -24,60 +24,6 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 4299af30-f9c7-48d6-922c-045249174b4a # Heading
-            instructions: null
-            label: 'Social Media Banner'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2a838e9b-7bd7-45ca-90c8-d6e533377909
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
-            instructions: null
-            label: 'Contact Us Button'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: dd7aefb5-d99d-4d51-a36f-9fb563fa4c7d
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 1e47f784-5868-477a-a65d-ccd20d3a2eaa # Contact Intros
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 7e893d1a-9565-4789-997d-70287533a64e
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 04877c62-92fa-436b-95c0-204552480b37 # Footer Banner
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: db86f31d-c189-4c02-bbc8-c2468f9e9802
-            userCondition: null
-            warning: null
-            width: 100
-        name: Footer
-        uid: 66ef66a3-2b28-49b0-84c0-bb75cb4d87ca
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
             fieldUid: ac6a4bbe-5e8b-41c7-997d-cb16dc2a14d2 # Business Address
             instructions: null
             label: null
@@ -85,6 +31,18 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: c0ef5939-babf-43ff-8237-fa5dd6f77be2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0922d403-58e1-43e9-9968-a0d39895a2ef # Business Phone 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0d3a98dd-8f1b-44d3-bd53-5a6f696bf42a
             userCondition: null
             warning: null
             width: 100
@@ -124,8 +82,128 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: 'Contact Section'
+        name: 'Contact Information'
         uid: 6398f4da-98e8-4a7c-aceb-6b64f6b0c8c2
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 89723374-3eac-4abc-b3ad-1bbd27091648 # Heading
+            instructions: null
+            label: 'Address Intro'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1660730f-0959-4ea6-a9b5-8a9b3ec20a4b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3e1bb40d-9000-497a-9b75-2f18c808ddd9 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83574b81-11e7-4161-b48e-6747e4157d2c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b780b22-e03b-4537-bd01-74db803e4b3a # Heading
+            instructions: null
+            label: 'Contact Intro'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e6432183-d1d1-4ee0-b632-9917d5e6e380
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7101e43f-897e-43e7-b0bc-b93672ac7d3f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4d32e2df-7698-415c-9640-62e6787a0270 # Heading
+            instructions: null
+            label: 'Enquire Intro'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 365b900d-4e9d-43d1-99fe-1bd5636f9e44
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e5b61af4-7baa-4d4d-8814-6dc66d180fe1 # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fcde9bc7-ca1a-415f-93e7-61dd5be519f2
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Contact Us Paragraphs'
+        uid: 42dcb374-c8c6-49d4-8a20-b0353b9cee8c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4299af30-f9c7-48d6-922c-045249174b4a # Heading
+            instructions: null
+            label: 'Social Links Title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2a838e9b-7bd7-45ca-90c8-d6e533377909
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
+            instructions: null
+            label: 'Contact Us Button'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd7aefb5-d99d-4d51-a36f-9fb563fa4c7d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 04877c62-92fa-436b-95c0-204552480b37 # Footer Banner
+            instructions: null
+            label: 'Footer Banner Title'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db86f31d-c189-4c02-bbc8-c2468f9e9802
+            userCondition: null
+            warning: null
+            width: 100
+        name: Footer
+        uid: 66ef66a3-2b28-49b0-84c0-bb75cb4d87ca
         userCondition: null
 handle: businessInformation
 name: 'Business Information'

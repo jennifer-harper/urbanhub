@@ -1,0 +1,23 @@
+columnSuffix: vbofirod
+contentColumnType: text
+fieldGroup: 952787c6-7c0b-46f8-9b75-93ef54023e32 # Admin
+handle: headingH3
+instructions: null
+name: Heading
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: d5ebc5d3-29c4-49d3-970e-80907e54e5d9 # Title H3
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -1,26 +1,56 @@
-<div class="pad-all for-sm border-top border-color flex-wrap">            
-    {% if businessInformation.contactIntros %}
-        {% for block in businessInformation.contactIntros %}
-            {% if block.type == 'groupFields' %}
-                <div class="pad-all sm">
-                    {% if block.heading %}
-                        {{ block.heading }}
-                        {{ businessInformation.businessAddress }}
-                    {% endif %}
-                    {% if block.paragraph %}
-                        {{ block.paragraph }}
-                    {% endif %}
-
-                    {% if block.contactDetail %}
-                        {% if block.contactDetail == 'businessAddress' %}
-                            {{ businessInformation.businessAddress }}
-                        {% elseif block.contactDetail == 'businessPhone' %}
-                            {{ businessInformation.businessPhone }}
-                        {% endif %}
-                    {% endif %}
-                </div>
+<div class="pad-all for-sm border-top border-color flex-wrap contact">            
+    <div class="pad-all sm ">
+        <div>
+            {% if businessInformation.headingH3 %}
+                {{ businessInformation.headingH3 }}
             {% endif %}
-        {% endfor %}
-    {% endif %}
+            {% if businessInformation.paragraph %}
+                {{ businessInformation.paragraph }}
+            {% endif %}
+        </div>
+        <div>
+            <p>Location</p>
+            {% if businessInformation.businessAddress %}
+                {{ businessInformation.businessAddress }}
+            {% endif %}
+        </div>
+    </div>
+    <div class="pad-all sm ">
+        <div>
+            {% if businessInformation.headingH3a %}
+                {{ businessInformation.headingH3a }}
+            {% endif %}
+            {% if businessInformation.paragraph2 %}
+                {{ businessInformation.paragraph2 }}
+            {% endif %}
+        </div>
+        <div>
+            <p>Contact</p>
+            {% if businessInformation.businessPhone %}
+            <a  href="tel:{{businessInformation.businessPhone}}">
+            <span class="phone">{{businessInformation.businessPhone2}}</span></a>    
+            {% endif %}
+            {% if businessInformation.businessPostal %}
+                  <p> {{ businessInformation.businessPostal  }}</p> 
+            {% endif %}
+        </div>
+    </div>
+    <div class="pad-all sm ">
+        <div>
+            {% if businessInformation.headingH3b %}
+                {{ businessInformation.headingH3b }}
+            {% endif %}
+            {% if businessInformation.introParagraph %}
+                {{ businessInformation.introParagraph }}
+            {% endif %}
+        </div>
+        <div>
+            <p>Enquire</p>
+            {% if businessInformation.businessEmail %}
+                <a class="email" href=" mailto:{{businessInformation.businessEmail}}"> 
+                {{ businessInformation.businessEmail }}</a>    
+            {% endif %}  
+        </div>  
+    </div>
 </div>
 

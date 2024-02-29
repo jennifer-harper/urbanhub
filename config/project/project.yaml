@@ -1,4 +1,4 @@
-dateModified: 1709092105
+dateModified: 1709173258
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -25,8 +25,10 @@ meta:
     3e1bb40d-9000-497a-9b75-2f18c808ddd9: Paragraph # Paragraph
     3ee36c75-6798-4bd2-8772-cbaf669e7981: 'Space Selling Points' # Space Selling Points
     4c8bceef-38e6-4299-9198-ae6c832a644c: 'Price Quantity' # Price Quantity
+    4d32e2df-7698-415c-9640-62e6787a0270: Heading # Heading
     4d78f48b-07fe-4864-8d7a-6d1e73752704: Other # Other
     4f8c2b59-6892-4972-98af-8768506d45d6: 'Button Text' # Button Text
+    5b65b990-0b02-4c00-b925-1d55001fe263: 'Public Schema' # Public Schema
     5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd: Paragraph # Paragraph
     5e96d5b2-57e0-4eec-99fa-0a099008f7d7: 'Selling Points' # Selling Points
     5fe4741c-ddf0-4203-8a3a-507126d173ca: 'Group Fields' # Group Fields
@@ -36,7 +38,9 @@ meta:
     8a4c4007-6c97-4f8b-86ea-bdfb3696a5e9: UrbanStudio # UrbanStudio
     8dedadfc-4af6-49f2-95bd-efef33a55b64: Heading # Heading
     8e40aeeb-55f0-4320-9a85-9ea2d246361b: urbanhub # urbanhub
+    9b780b22-e03b-4537-bd01-74db803e4b3a: Heading # Heading
     12d0eab0-1ab5-43ae-a25d-c957d5c5a4c8: 'Group Fields' # Group Fields
+    31a6a6cd-809b-4018-b66d-eb3c366fc392: TableEditor # TableEditor
     33cfdfc6-431e-464c-917f-25271d27922c: 'Title H2' # Title H2
     39d35486-b1b6-442d-95a0-f3d5dcdee6c9: 'Group Fields' # Group Fields
     41f1a3d3-a8fd-4e2a-ac05-b194f3063080: 'Selling Points' # Selling Points
@@ -48,10 +52,12 @@ meta:
     83c78d90-8c41-4ef1-a2ef-1c5110162342: Image # Image
     92ee1b66-7b2d-43c4-aefc-08ae23a54dda: 'Business Phone' # Business Phone
     94ae2f64-db35-47c0-907e-b853e95b3ce5: Heading # Heading
+    154ad8a9-d7ae-47f5-9a28-4af96dc5db80: Table # Table
     319d4674-6b0e-4027-abdc-23a8fe7bcf1f: UrbanSuite # UrbanSuite
     368e19da-aed2-4692-949d-976508166279: 'Page Title' # Page Title
     579edee1-2038-493a-ac4d-971bb6552e9d: 'Business Information' # Business Information
     820e4067-5880-4edb-9cba-20c3597f35ba: 'Enviro Slider' # Enviro Slider
+    0922d403-58e1-43e9-9968-a0d39895a2ef: 'Business Phone ' # Business Phone 
     1089edbe-d415-44fb-84ec-54cc1bd33633: 'Space Description' # Space Description
     2995eac9-2c30-433a-bd61-0390ff903010: urbanhub # urbanhub
     4086dd2d-a840-4155-b992-eecd835319cc: 'Dollar Sign' # Dollar Sign
@@ -73,6 +79,7 @@ meta:
     952787c6-7c0b-46f8-9b75-93ef54023e32: Admin # Admin
     4673650a-aadd-4dc5-966e-7a5dba8f1d55: Heading # Heading
     50516315-9cd3-4843-8f18-397e1d59c811: 'Group Fields' # Group Fields
+    89723374-3eac-4abc-b3ad-1bbd27091648: Heading # Heading
     a0a1f864-9a0f-4bc8-931c-cb7d460030ba: 'Business Email' # Business Email
     a33a9b78-e67f-4d71-b70f-5c91db0323fe: UrbanLease # UrbanLease
     a72e886d-5deb-4c6e-9dea-5a690a3f141b: 'Title h1' # Title h1
@@ -88,6 +95,7 @@ meta:
     c406e842-e9ae-4fa0-9851-a74a6f9cedf2: Home # Home
     c6883bfd-18a2-4828-9c01-a69a1e1f7c0b: USPs # USPs
     c683597a-6bd9-44dc-ae52-4793c8d189d6: urbanClub # urbanClub
+    c4688891-b1d6-4575-a601-60d55c055e0b: tables # tables
     c9568162-a2ec-4e6f-a89e-d0366292c4be: 'Slider Image' # Slider Image
     d5ebc5d3-29c4-49d3-970e-80907e54e5d9: 'Title H3' # Title H3
     d6f825ee-cd47-42b6-b079-dd879fa61250: UrbanLease # UrbanLease

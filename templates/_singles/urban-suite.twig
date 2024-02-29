@@ -1,16 +1,16 @@
    
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "urbanSuite" } %} 
+{% set bodyAttributes ={ class: "urbanSuite blueTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
 {% set page = craft.entries().section('home').all() %} 
 
-{% set buttonClass = "green-light" %}
-{% set buttonClassContrast = "green" %}
+{% set buttonClass = "blue" %}
+{% set buttonClassContrast = "blue-light" %}
 
-{% set main = "bg-green-dark" %}
-{% set contrast = "bg-green-light" %}
-{% set footer = "bg-green-dark" %}
+{% set main = "bg-blue-dark" %}
+{% set contrast = "bg-blue-light" %}
+{% set footer = "bg-blue-light" %}
 
 
 
@@ -22,7 +22,9 @@
 {% block content %} 
   {% for entry in page %} 
     {% include '_partials/hero/solutions.twig' %}
-    {% include '_partials/sections/solutions-usps.twig' %}
+        {% include '_partials/sections/table.twig' %}
+            {% include '_partials/sections/solutions-banner.twig' %}
+    {# {% include '_partials/sections/solutions-usps.twig' %} #}
     {% include '_partials/sections/solutions-mask.twig' %}
 
     {% include '_partials/sections/solutions-banner.twig' %}
@@ -42,7 +44,8 @@
 
     {% include '_partials/sections/slider-intro.twig' %}
     {% include '_partials/sections/solutions-slider.twig' %}
-
+  {% include '_partials/footer/social-media.twig' %}
+ {% include '_partials/footer/contact-section.twig' %}
   {% endfor %} 
 {% endblock %}
 

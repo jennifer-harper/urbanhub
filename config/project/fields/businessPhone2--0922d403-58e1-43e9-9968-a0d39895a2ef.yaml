@@ -1,9 +1,9 @@
-columnSuffix: qleczxhu
+columnSuffix: oklcitjf
 contentColumnType: text
 fieldGroup: 952787c6-7c0b-46f8-9b75-93ef54023e32 # Admin
-handle: businessEmail
-instructions: null
-name: 'Business Email'
+handle: businessPhone2
+instructions: 'This is the format that the website user will see'
+name: 'Business Phone '
 searchable: false
 settings:
   byteLimit: null
