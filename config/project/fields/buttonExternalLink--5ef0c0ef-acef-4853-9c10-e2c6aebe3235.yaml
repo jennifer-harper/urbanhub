@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: buttonExternalLink
+instructions: null
+name: 'Button External Link'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_buttonexternallink}}'
+  maxBlocks: 1
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

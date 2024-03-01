@@ -1,0 +1,73 @@
+field: 5ef0c0ef-acef-4853-9c10-e2c6aebe3235 # Button External Link
+fieldLayouts:
+  b351e45f-8290-446c-8a17-735084aba5be:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 71ffbd93-0d12-4ba4-b423-417fa3d2e68f # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7be17ca6-398f-4ee2-812d-45645972b8a0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2611d70-d001-4791-bfa0-92d60a09efce # Button Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ecc5a710-8f88-4c0a-8c58-2f3636cb3ceb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 727ae383-f92c-4ec5-a90e-e7a2e920679a
+        userCondition: null
+fields:
+  71ffbd93-0d12-4ba4-b423-417fa3d2e68f: # Button Text
+    columnSuffix: luvpcqkn
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d2611d70-d001-4791-bfa0-92d60a09efce: # Button Link
+    columnSuffix: iyqjyvon
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: buttonLink
+    instructions: null
+    name: 'Button Link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: groupFields
+name: 'Group Fields'
+sortOrder: 1

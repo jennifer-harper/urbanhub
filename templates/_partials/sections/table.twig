@@ -1,19 +1,7 @@
-<div class="table-section bg-blue-dark dark{% block class %} {% endblock %}">
-    <div class="pad-sides pad-top-btm no-btm">
-        <div class="text-center max-title">
-        {% if entry.heading3 %}
-            {{entry.heading3}}
-        {% endif %}
-        <p class="intro-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit soluta enim <i>consectetur adipisicing elit. Natus nemo</i></p>
-
-        <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis, magnam veniam! Eveniet ut !
-        </p>
-        </div>
-    </div>
-    <div class="pad-sides">
-        {% if entry.tableeditor %}
-            {{entry.tableeditor}}
+<div class="table-section {% block class %} {% endblock %}">
+    <div class="pad-sides table-light">
+        {% if entry.tableEditor %}
+            {{entry.tableEditor}}
         {% endif %}
     </div> 
 </div>

@@ -1,14 +1,14 @@
-columnSuffix: gnagqkiz
+columnSuffix: egcfyhvu
 contentColumnType: text
 fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
-handle: tableEditor
+handle: heading7
 instructions: null
-name: TableEditor
+name: Heading
 searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
-  ckeConfig: c4688891-b1d6-4575-a601-60d55c055e0b # tables
+  ckeConfig: 33cfdfc6-431e-464c-917f-25271d27922c # Title H2
   columnType: text
   defaultTransform: null
   enableSourceEditingForNonAdmins: false

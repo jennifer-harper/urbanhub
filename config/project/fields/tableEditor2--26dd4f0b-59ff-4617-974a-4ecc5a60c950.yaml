@@ -1,9 +1,9 @@
-columnSuffix: gnagqkiz
+columnSuffix: dzbmurud
 contentColumnType: text
 fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
-handle: tableEditor
+handle: tableEditor2
 instructions: null
-name: TableEditor
+name: 'Table Editor'
 searchable: false
 settings:
   availableTransforms: ''

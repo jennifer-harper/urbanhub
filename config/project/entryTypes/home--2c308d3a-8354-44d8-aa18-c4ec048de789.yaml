@@ -365,7 +365,7 @@ fieldLayouts:
             dismissible: false
             elementCondition: null
             style: tip
-            tip: 'To edit slider content go to Channels - Urban Environment Slider'
+            tip: 'To edit slider content go to Channels - Urban Solutions Slider'
             type: craft\fieldlayoutelements\Tip
             uid: 20d2bdcf-8a80-484b-aa60-a8aa9a92e0a6
             userCondition: null

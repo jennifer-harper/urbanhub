@@ -1,8 +1,49 @@
-{# {% set buttonClass = "blue" %}
-{% set buttonClassContrast = "blue-light" %}
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "urbanMeet blueTheme" }%}
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('urbanMeet').all() %} 
 
+{% set buttonClass = "blue" %}
+{% set buttonClassContrast = "blue-light" %}
 {% set main = "bg-blue-dark" %}
 {% set contrast = "bg-blue-light" %}
 {% set footer = "bg-blue-light" %}
 
-{% set bodyAttributes ={ class: "urbanLease blueTheme" } %}  #}
+{% block head %} 
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+{% endblock %}
+
+{% block content %} 
+  {% for entry in page %} 
+    {% include '_partials/hero/solutions.twig' %}
+    {% include '_partials/sections/solutions-usps.twig' %}
+    {% include '_partials/sections/solutions-mask.twig' %}
+    {% include '_partials/sections/center-banner.twig' %}
+    {% include '_partials/sections/table.twig' %}
+    {% include '_partials/sections/solutions-banner.twig' %}
+
+    {% embed '_partials/sections/table-dark.twig' %}
+        {% block bgColor %} {{main}} {% endblock %}
+        {% block class %} {{main}} {% endblock %}
+        {% block colCount %}quarter{% endblock %}
+    {% endembed %}
+
+    {% embed '_partials/sections/star-banner-section.twig' %}
+        {% block class %} {{main}} {% endblock %}
+        {% block contrast %} {{contrast}} {% endblock %}
+    {% endembed %}
+    {% include '_partials/sections/solutions-slider.twig' %}
+     {% include '_partials/footer/footer-page-banner.twig' %}
+  {% endfor %} 
+{% endblock %}
+
+
+
+
+{% block scripts %}
+{{ parent() }}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script  type="module" src="/assets/js/sliders.js"></script>
+{% endblock %}

@@ -31,8 +31,310 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: b9b1a6d2-d5a8-4791-8722-91479f5bf9ae # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a1cb07d-106b-4e44-a7a7-d9bc22dd23e6
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 746d2079-784a-4985-a472-54a08248cbdd
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: c1bf7809-a0ec-476f-84d4-9d9bb2f451f4 # Page Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5b955474-8e83-4033-b2de-25462ae5efbf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 368e19da-aed2-4692-949d-976508166279 # Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ea8058b-6ecb-4893-82dd-1bbbf0004120
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c093fd38-7d2d-4d3d-b514-a314fa8fd189 # Page Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 460ecc24-3f3e-4b37-b906-af586955890d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d199f8b1-8c10-441f-8951-d2f10491a634 # Page Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: de0f0da8-ad61-4df4-998b-ea6b8a458515
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df41979e-fffc-41f8-80b4-db649ca7709d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ee914a2-b05d-4c31-a59b-9919788305a7 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f36e149d-e967-4a78-939d-ce0ce6bde03c
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'First Section'
+        uid: c89da20d-a52f-49ab-9c6d-cb4bdd250ab7
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 56985cf3-1250-417e-ba85-9ff5472ba6bf # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ebb8bf0-743c-4189-b384-cf12d50ab9e8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c6883bfd-18a2-4828-9c01-a69a1e1f7c0b # USPs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0df092b1-7b96-42fb-bacc-481871191cd6
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'USP Banner'
+        uid: 3c3e4277-2c13-4711-b9d7-5d6c95c5e001
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4299af30-f9c7-48d6-922c-045249174b4a # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: daba2602-932f-451f-9106-bdd3dfb8ae00
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e5b61af4-7baa-4d4d-8814-6dc66d180fe1 # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c845e4f1-049e-421c-9c57-d4f4ed466c0e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3e1bb40d-9000-497a-9b75-2f18c808ddd9 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e142ea20-f70e-47b1-8f02-8eeb74941680
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fa573d0d-05be-480f-b5c8-2eb4c7420d0c # Lists
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 224179f8-8c88-4532-9529-3bfe272f88c9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9dc1b0ba-b9af-4d64-a927-364b6374b7e0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 54fd7cdc-ab6d-487e-9f29-ebfd83f6715c # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 716f645e-c9c5-413f-a7f6-1464ebfe319a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d50993f-4412-4e77-95a7-d53bb36e5d83
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Large Image Section'
+        uid: 68c2f585-db07-4859-8ef2-62f4b1a1bae4
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e3854bbb-1638-4a39-bd6a-ab2c0a42e483 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e785793f-480f-4d7f-ac1d-072faa65b30f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b2308c33-a2ac-480c-be85-0db8e054e2bd # Grid
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6d81a25b-e9d0-4336-9368-6faf9c6d0052
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8dedadfc-4af6-49f2-95bd-efef33a55b64 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d532269-15b8-4213-a99e-9c1abe6e255f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ca3f21f-2832-4039-be1c-de50d73e0723 # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ada8563-ffdb-4f5c-b583-ea941cbbfe1c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b4eebaf7-1d9d-4bca-81c1-b507952d4369 # Grid Add-ons
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ae975448-170f-4eeb-b84c-54748e99c4cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Membership Section'
+        uid: c251a3ff-37ec-46a5-9eee-74972ec0ed4f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 94ae2f64-db35-47c0-907e-b853e95b3ce5 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd404b7c-20da-4d3b-a372-9f0efbcc1fb9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'To edit slider content go to Channels - Urban Solutions Slider'
+            type: craft\fieldlayoutelements\Tip
+            uid: d6ef9e3a-1dff-4fb6-9c24-78cb319307e7
+            userCondition: null
+        name: Slider
+        uid: b4ce0946-3625-46dc-befe-925ded5d43cf
         userCondition: null
 handle: urbanSuite
 hasTitleField: false

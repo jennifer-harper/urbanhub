@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: bdaa862b-f4c9-44a8-8e83-355b31b152cb # Footer
+handle: footerButton
+instructions: null
+name: 'Footer Button'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_footerbutton}}'
+  maxBlocks: 1
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

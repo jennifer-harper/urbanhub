@@ -1,0 +1,83 @@
+field: fc5656c9-ee2c-497e-bab5-2bb3f236be53 # Footer Button
+fieldLayouts:
+  c35689d4-77e8-473d-84ee-59e4bde2583b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9de90435-fcff-45f8-983c-fd0bffd09548 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 98b4a2bb-48ea-4e33-b9cd-ecae65c1a4af
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b09630d2-fe6c-4792-90f0-5c6bb8514063 # Button Page Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6bcb3f16-ce06-4c0a-9bd3-346977ef999c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7d56c0ed-ded6-4a3f-9bd5-980d3757d8ba
+        userCondition: null
+fields:
+  9de90435-fcff-45f8-983c-fd0bffd09548: # Button Text
+    columnSuffix: tgpwfnse
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  b09630d2-fe6c-4792-90f0-5c6bb8514063: # Button Page Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonPageLink
+    instructions: null
+    name: 'Button Page Link'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      selectionLabel: null
+      showSiteMenu: true
+      sources:
+        - singles
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: groupFields
+name: 'Group Fields'
+sortOrder: 1

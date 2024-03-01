@@ -1,14 +1,14 @@
-columnSuffix: gnagqkiz
+columnSuffix: khkjxhen
 contentColumnType: text
 fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
-handle: tableEditor
+handle: introParagraph4
 instructions: null
-name: TableEditor
+name: 'Intro Paragraph'
 searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
-  ckeConfig: c4688891-b1d6-4575-a601-60d55c055e0b # tables
+  ckeConfig: 2d4fd05a-7931-4151-ac2a-8e3011088cd5 # Simple
   columnType: text
   defaultTransform: null
   enableSourceEditingForNonAdmins: false

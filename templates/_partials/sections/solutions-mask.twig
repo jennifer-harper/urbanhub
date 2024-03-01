@@ -1,12 +1,25 @@
 <div class="flex-wrap solutions-mask">
-    <div class="half bg-yellow mask-wrapper" 
-    {% if entry.image2 is not null %}
-        {% set image2 = entry.image2.one()%}
-            style="background-image:url({{ image2.getUrl() }})"
-        {% endif %}>
-        {% include '_partials/masks/right-mask.twig' %}
-        {% include '_partials/masks/bottom-mask.twig' %}
-    </div>
+    {% set image2 = entry.image2.one() %}
+    {% if image2 %}
+        <div class="half mask-wrapper" style="background-image:url({{ image2.getUrl() }})">
+            {% include '_partials/masks/right-mask.twig' %}
+            {% include '_partials/masks/bottom-mask.twig' %}
+        </div>
+    {% else %}
+        {% set imageFallback = businessInformation.image.one() %}
+        {% if imageFallback %}
+            <div class="half mask-wrapper" style="background-image:url({{ imageFallback.getUrl() }})">
+                {% include '_partials/masks/right-mask.twig' %}
+                {% include '_partials/masks/bottom-mask.twig' %}
+            </div>
+        {% else %}
+            <div class="half mask-wrapper" style="background-image:url('/uploads/images/picture4-small.webp')">
+                {% include '_partials/masks/right-mask.twig' %}
+                {% include '_partials/masks/bottom-mask.twig' %}
+            </div>
+        {% endif %}
+    {% endif %}
+
 
     <div class="pad-all half"> 
         {% if entry.heading %}

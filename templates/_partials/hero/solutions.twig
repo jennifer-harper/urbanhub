@@ -34,6 +34,19 @@
                     {% endif %}
                 {% endfor %}
             </div>
+            <div>
+                {% for block in entry.buttonExternalLink %}
+                    {% if block.type == 'groupFields' %}
+                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                        {% set buttonLink = block.buttonLink[0].url ?? '/contact-us' %}
+                        {% embed '_partials/button' %}
+                            {% block class %}{{buttonClass}}{% endblock %}
+                            {% block title %}{{buttonText}} {% endblock %}
+                            {% block url %}{{buttonLink}} {% endblock %}
+                        {% endembed %} 
+                    {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
     <div class="pad-top-btm pad-sides half center-style">

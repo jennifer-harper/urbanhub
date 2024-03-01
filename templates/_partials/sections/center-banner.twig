@@ -1,0 +1,21 @@
+<div class="center-banner {% block class %} {% endblock %}">
+    <div class="pad-sides pad-top-btm">
+        <div class="text-center max-title">
+        {% if entry.heading3 %}
+            {{entry.heading3}}
+        {% endif %}
+
+        {% if entry.introParagraph3 %}
+                <div class="intro-text">
+                    {{entry.introParagraph3}}
+                </div>
+            {% endif %}
+
+            {% if entry.paragraph3 %}
+                <div class="">
+                    {{entry.paragraph3}}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

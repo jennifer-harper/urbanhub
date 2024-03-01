@@ -188,6 +188,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight:600;
     color:$green-dark;
     z-index: 1;
+    position: relative;
     @media #{$mq-xxlarge} {
         margin-bottom: $md;
     }
@@ -206,11 +207,11 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     @media #{$mq-medium}{
         &.max-title{
-            max-width:67%;
+            max-width:55%;
             margin-left: auto;
             margin-right:auto;
             p{
-                max-width: 600px;
+                max-width: 700px;
                 margin-left: auto;
                 margin-right:auto;
             }
@@ -226,6 +227,7 @@ h1{
 
 h2{ 
   font-size: 44px;
+  line-height: $base-font-size*0.9;
 }
 
 h3{
@@ -490,6 +492,11 @@ svg {
             flex-basis: 33.33%;
         }
 
+        .quarter{
+            flex:1;
+            flex-basis: 50%;
+        }
+
         &.just-cont-space-btw{
             justify-content: space-between;
         }
@@ -499,6 +506,10 @@ svg {
     }
 
     @media #{$mq-large} {
+        .quarter{
+            flex:1;
+            flex-basis: 25%;
+        }
         .inner{
             flex-direction: row;
             align-items: flex-end;
@@ -955,25 +966,58 @@ svg {
                 border-color:$blue-light;
             }
         }
-    }
-
-    tbody{
-        td, th{
-            border-color:$blue-dark ;
+        .highlight{
+            fill:$light;
         }
     }
 
-    thead th{
-        background-color:#CBD5D0;
-        border-right: 1px solid $light;
+    table{
+        tbody{
+            td, th{
+                border-color:$blue-dark ;
+            }
+
+            @media (max-width:760px){
+                tr th{
+                    background-color:#CBD5D0;
+                }
+            }
+        }
+    
+        thead th{
+            background-color:#CBD5D0;
+            border-right: 1px solid $light;
+        }
     }
 
     .dark{
         thead th{
+            color:$blue-dark;
             background-color:#FAF6F0;
             border-right: 1px solid #000;
         }
+        tbody tr th{
+            color:$blue-dark;
+            background-color:#FAF6F0;
+
+            @media #{$mq-medium}{
+                color:$blue-light;
+                background-color:transparent;
+            }
+        }
+
+        tbody tr:last-of-type td{
+            vertical-align: top;
+        }
+
+        tbody td{
+            text-align: left;
+            // padding-left:$base-font-size;
+            // padding-right: $base-font-size;
+        }
     }
+
+
 
     .underline-list li{
         border-color:$blue-dark;
@@ -1270,10 +1314,29 @@ svg {
     }
 }
 .solutions-banner{
+    @media #{$mq-medium}{
+        .half:first-of-type{
+            padding-right:$base;
+        }
+        .half:last-of-type{
+            padding-left:$base;
+        }
+    }
+}
+
+
+.table-section.dark,
+.table-banner,
+.hero-solutions,
+.center-banner,
+.solutions-banner{
+    h1 svg,
     h2 svg{
         bottom:-20px;
     }
 }
+
+
 .solutions-contrast-btm:not(.bg-green-dark),
 .solutions-contrast:not(.bg-green-dark){
     .highlight{
@@ -1288,19 +1351,84 @@ svg {
     } 
 }
 
+.table-banner.dark{
+    @media #{$mq-medium}{
+        .small-col{
+            margin-left: auto;
+            max-width: 60%;
+            } 
+    }
+}
+
+.solutions-usp{
+    .usp p{
+        margin-right:20px;
+    }
+    @media #{$mq-medium}{
+    .usp{
+        max-width:25%
+    }
+}
+}
+
+
+
+
+
 //-------TABLES-----------//
+
+// make not a table
+table, thead, tbody, th, td, tr { 
+    display: block; 
+}
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr { 
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+td { 
+    position: relative;
+ }
+
+ td:before { 
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%; 
+    padding-right: 10px; 
+    white-space: nowrap;
+}
+
+.table{
+    margin:0;
+}
 table{
     width:100%;
     margin-top:$md;
 }
 table, td, th {
     border-collapse: collapse;
-    padding: 0.5em;
 }
 
 
 
+
 tbody{
+    tr td{
+        border-top-width: 0;
+        padding:0.5em;
+        padding-left:50%;
+        text-align: left;
+    }
+    td:last-of-type{
+        border-bottom-width: 0; 
+    }
+    tr:last-of-type td:last-of-type{
+        border-bottom: 1px solid;
+    }
     td, th{
         border: 1px solid
     }
@@ -1314,85 +1442,159 @@ tbody{
         text-align: center;
     }
     th{
-        border-left-width: 0;
         padding:$base-font-size;
         &:last-of-type{
             border-bottom-width: 0;
         }
     }
-
-    tr:first-of-type th{
-        border-top-width: 0;
-    }
-
     tr:first-of-type{
-
         td{
             border-top-width: 0;
         }
     }
+}
 
-    tr:last-of-type{
+
+
+
+.table-light{
+    @media #{$mq-small}{
+        table{display: table;}
+        thead{display:table-header-group;}
+        tbody{display: table-row-group;}
+        th{display:table-cell}
+        td{display:table-cell}
+        tr{display: table-row}
+    
+        thead tr { 
+            position: relative;
+            top:unset;
+            left:unset;
+        }
+        thead th{
+            padding:1em;
+        }
+    
         td{
-            border-bottom-width: 0;
+            padding-left:unset
+        }
+    
+        td:before{
+            display: none;
+        }
+    
+        tbody{
+            td:last-of-type{
+                border-right-width: 0;
+            }
+            th{
+                border-left-width: 0;
+            }
+            tr:first-of-type th{
+                border-top-width: 0;
+            }
+            tr:last-of-type{
+                td{
+                    border-bottom-width: 0;
+                }
+                td:last-of-type{
+                    border-bottom-width: 0;
+                }
+            }
+            tr td:last-of-type{
+                border-bottom-width:1px;
+            }
+            tr td{
+                padding:0.5em;
+                text-align: center;
+            }
+    
+        }
+        thead th{
+            &:last-of-type{
+                border-width:0;
+            }
         }
     }
-    td:last-of-type{
-        border-right-width: 0;
-    }
-}
-
-
-thead th{
-    &:last-of-type{
-        border-width:0;
-    }
 }
 
 
 
-
-
-@media only screen and (max-width: 760px),(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-	
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-
-	
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		position: relative;
-		padding-left: 50%; 
-	}
-	
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-	}
-	
-	/*
-	Label the data
-	*/
-	td:nth-of-type(1):before { content: "Kent"; }
-	td:nth-of-type(2):before { content: "Tory"; }
-	td:nth-of-type(3):before { content: "Lambton"; }
+.table-light{
+    td:nth-of-type(1):before { content: "Kent"; }
+    td:nth-of-type(2):before { content: "Tory"; }
+    td:nth-of-type(3):before { content: "Lambton"; }
     td:nth-of-type(4):before { content: "Willis"; }
     td:nth-of-type(5):before { content: "Cuba"; }
+}
+
+
+.dark-table{
+    @media #{$mq-medium}{
+        table{display: table;}
+        thead{display:table-header-group;}
+        tbody{display: table-row-group;}
+        th{display:table-cell}
+        td{display:table-cell}
+        tr{display: table-row}
+    
+        thead tr { 
+            position: relative;
+            top:unset;
+            left:unset;
+        }
+        thead th{
+            padding:1em;
+        }
+    
+        td{
+            padding-left:unset
+        }
+    
+        td:before{
+            display: none;
+        }
+    
+        tbody{
+            td:last-of-type{
+                border-right-width: 0;
+            }
+            th{
+                border-left-width: 0;
+            }
+            tr:first-of-type th{
+                border-top-width: 0;
+            }
+            tr:last-of-type{
+                td{
+                    border-bottom-width: 0;
+                }
+                td:last-of-type{
+                    border-bottom-width: 0;
+                }
+            }
+            tr td:last-of-type{
+                border-bottom-width:1px;
+            }
+            tr td{
+                padding:1em;
+            }
+    
+        }
+        thead th{
+            &:last-of-type{
+                border-width:0;
+            }
+        }
+    }
+}
+
+
+.dark-table{
+    td:nth-of-type(1):before { content: "Kent"; }
+    td:nth-of-type(2):before { content: "Tory"; }
+    td:nth-of-type(3):before { content: "Lambton"; }
+    td:nth-of-type(4):before { content: "Willis"; }
+    td:nth-of-type(5):before { content: "Interview"; }
+    td:nth-of-type(6):before { content: "Cuba"; }
 }

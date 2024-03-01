@@ -1,0 +1,68 @@
+
+ <div class="pad-all table-banner dark {% block bgColor %} {% endblock %}">
+    <div class="flex-wrap ">
+        <div class="half">
+            {% if entry.heading4 %}
+                {{entry.heading4}}
+            {% endif %}
+        </div>
+
+        <div class="half"> 
+           <div class="small-col"> 
+                        {% if entry.headingH3c %}
+                            <div class="intro-text">
+                                {{entry.headingH3c}}
+                            </div>
+                        {% endif %}
+
+                        {% if entry.paragraph4 %}
+                            <div class="">
+                                {{entry.paragraph4}}
+                            </div>
+                        {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="dark-table">
+        {% if entry.tableEditor2 %}
+            {{entry.tableEditor2}}
+        {% endif %}
+    </div>
+</div>
+
+
+<div class="table-section dark {% block class %} {% endblock %}">
+    <div class="pad-sides pad-top-btm no-btm">
+        <div class="text-center max-title">
+        {% if entry.heading7 %}
+            {{entry.heading7}}
+        {% endif %}
+        </div> 
+    </div> 
+
+
+    <div class="pad-all">
+        <div class="flex-wrap wrap border-top border-left border-color-contrast">
+            {% for block in entry.grid %}
+                {% if block.type == 'groupFields' %}
+                <div class="pad-all sm border-btm  border-right border-color-contrast flex-wrap col just-cont-space-btw {% block colCount %} {% endblock %}">
+                    <div>
+                        {% if block.subHeading %}
+                            {{block.subHeading}}
+                        {% endif %}
+                        <div class="no-btm-marg">
+                            {% if block.paragraph %}
+                                {{block.paragraph}}
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="flex-wrap">
+                        {% include '_partials/svgs/little-star.twig' %}
+                    </div>
+                </div>
+                {% endif %}                           
+            {% endfor %}
+        </div>
+    </div>  
+</div>

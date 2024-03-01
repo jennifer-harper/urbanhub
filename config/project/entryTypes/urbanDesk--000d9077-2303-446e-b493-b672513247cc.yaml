@@ -31,6 +31,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: b9b1a6d2-d5a8-4791-8722-91479f5bf9ae # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9eba6ce9-ed4f-4b1b-baab-658766a16978
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: f822c080-2ee6-4938-aba5-1571faa158be
         userCondition: null
@@ -109,7 +121,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Section
+        name: 'First Section'
         uid: 58916c67-a0a2-46a5-a2d4-b88e377e5e1f
         userCondition: null
       -
@@ -139,7 +151,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Section
+        name: 'USP Banner'
         uid: 34e92b39-0c7a-474a-9fd4-94b33e0a7f13
         userCondition: null
       -
@@ -205,12 +217,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Section
-        uid: 49f0ebaa-008e-417c-abb3-9b566d331f2f
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
           -
             elementCondition: null
             fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
@@ -247,8 +253,8 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Section
-        uid: 2e176b3b-6c1d-4886-93ed-df431dc4210c
+        name: 'Large Image Section'
+        uid: 49f0ebaa-008e-417c-abb3-9b566d331f2f
         userCondition: null
       -
         elementCondition: null
@@ -277,12 +283,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Section
-        uid: 65939a89-fab4-4ece-bece-4d82a5144141
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
           -
             elementCondition: null
             fieldUid: 8dedadfc-4af6-49f2-95bd-efef33a55b64 # Heading
@@ -319,7 +319,7 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Section
+        name: 'Membership Section'
         uid: 7485add7-92e1-4df5-920a-164148aba0d1
         userCondition: null
       -

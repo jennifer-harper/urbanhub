@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   color: #315844;
   z-index: 1;
+  position: relative;
 }
 @media (min-width: 126em) {
   h1, h2, h3, h4, h5, h6 {
@@ -157,12 +158,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 64em) {
   .text-center.max-title {
-    max-width: 67%;
+    max-width: 55%;
     margin-left: auto;
     margin-right: auto;
   }
   .text-center.max-title p {
-    max-width: 600px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -175,6 +176,7 @@ h1 {
 
 h2 {
   font-size: 44px;
+  line-height: 0.9em;
 }
 
 h3 {
@@ -418,6 +420,10 @@ svg {
     flex: 1;
     flex-basis: 33.33%;
   }
+  .flex-wrap .quarter {
+    flex: 1;
+    flex-basis: 50%;
+  }
   .flex-wrap.just-cont-space-btw {
     justify-content: space-between;
   }
@@ -426,6 +432,10 @@ svg {
   }
 }
 @media (min-width: 85.375em) {
+  .flex-wrap .quarter {
+    flex: 1;
+    flex-basis: 25%;
+  }
   .flex-wrap .inner {
     flex-direction: row;
     align-items: flex-end;
@@ -828,16 +838,41 @@ svg {
 .blueTheme .bg-blue-dark table tbody th, .blueTheme .bg-blue-dark table tr, .blueTheme .bg-blue-dark table td {
   border-color: #6AC4D1;
 }
-.blueTheme tbody td, .blueTheme tbody th {
+.blueTheme .bg-blue-dark .highlight {
+  fill: #FAF6F0;
+}
+.blueTheme table tbody td, .blueTheme table tbody th {
   border-color: #253C40;
 }
-.blueTheme thead th {
+@media (max-width: 760px) {
+  .blueTheme table tbody tr th {
+    background-color: #CBD5D0;
+  }
+}
+.blueTheme table thead th {
   background-color: #CBD5D0;
   border-right: 1px solid #FAF6F0;
 }
 .blueTheme .dark thead th {
+  color: #253C40;
   background-color: #FAF6F0;
   border-right: 1px solid #000;
+}
+.blueTheme .dark tbody tr th {
+  color: #253C40;
+  background-color: #FAF6F0;
+}
+@media (min-width: 64em) {
+  .blueTheme .dark tbody tr th {
+    color: #6AC4D1;
+    background-color: transparent;
+  }
+}
+.blueTheme .dark tbody tr:last-of-type td {
+  vertical-align: top;
+}
+.blueTheme .dark tbody td {
+  text-align: left;
 }
 .blueTheme .underline-list li {
   border-color: #253C40;
@@ -1087,6 +1122,24 @@ svg {
   }
 }
 
+@media (min-width: 64em) {
+  .solutions-banner .half:first-of-type {
+    padding-right: 5vw;
+  }
+  .solutions-banner .half:last-of-type {
+    padding-left: 5vw;
+  }
+}
+
+.table-section.dark h1 svg,
+.table-section.dark h2 svg,
+.table-banner h1 svg,
+.table-banner h2 svg,
+.hero-solutions h1 svg,
+.hero-solutions h2 svg,
+.center-banner h1 svg,
+.center-banner h2 svg,
+.solutions-banner h1 svg,
 .solutions-banner h2 svg {
   bottom: -20px;
 }
@@ -1100,6 +1153,52 @@ svg {
   bottom: -10px;
 }
 
+@media (min-width: 64em) {
+  .table-banner.dark .small-col {
+    margin-left: auto;
+    max-width: 60%;
+  }
+}
+
+.solutions-usp .usp p {
+  margin-right: 20px;
+}
+@media (min-width: 64em) {
+  .solutions-usp .usp {
+    max-width: 25%;
+  }
+}
+
+table, thead, tbody, th, td, tr {
+  display: block;
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+td {
+  position: relative;
+}
+
+td:before {
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  white-space: nowrap;
+}
+
+.table {
+  margin: 0;
+}
+
 table {
   width: 100%;
   margin-top: 3vw;
@@ -1107,9 +1206,20 @@ table {
 
 table, td, th {
   border-collapse: collapse;
-  padding: 0.5em;
 }
 
+tbody tr td {
+  border-top-width: 0;
+  padding: 0.5em;
+  padding-left: 50%;
+  text-align: left;
+}
+tbody td:last-of-type {
+  border-bottom-width: 0;
+}
+tbody tr:last-of-type td:last-of-type {
+  border-bottom: 1px solid;
+}
 tbody td, tbody th {
   border: 1px solid;
 }
@@ -1123,74 +1233,167 @@ tbody td {
   text-align: center;
 }
 tbody th {
-  border-left-width: 0;
   padding: 1em;
 }
 tbody th:last-of-type {
   border-bottom-width: 0;
 }
-tbody tr:first-of-type th {
-  border-top-width: 0;
-}
 tbody tr:first-of-type td {
   border-top-width: 0;
 }
-tbody tr:last-of-type td {
-  border-bottom-width: 0;
-}
-tbody td:last-of-type {
-  border-right-width: 0;
-}
 
-thead th:last-of-type {
-  border-width: 0;
-}
-
-@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Force table to not be like tables anymore */
-  table, thead, tbody, th, td, tr {
-    display: block;
+@media (min-width: 48em) {
+  .table-light table {
+    display: table;
   }
-  /* Hide table headers (but not display: none;, for accessibility) */
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+  .table-light thead {
+    display: table-header-group;
   }
-  td {
-    /* Behave  like a "row" */
-    border: none;
+  .table-light tbody {
+    display: table-row-group;
+  }
+  .table-light th {
+    display: table-cell;
+  }
+  .table-light td {
+    display: table-cell;
+  }
+  .table-light tr {
+    display: table-row;
+  }
+  .table-light thead tr {
     position: relative;
-    padding-left: 50%;
+    top: unset;
+    left: unset;
   }
-  td:before {
-    /* Now like a table header */
-    position: absolute;
-    /* Top/left values mimic padding */
-    top: 6px;
-    left: 6px;
-    width: 45%;
-    padding-right: 10px;
-    white-space: nowrap;
+  .table-light thead th {
+    padding: 1em;
   }
-  /*
-  Label the data
-  */
-  td:nth-of-type(1):before {
-    content: "Kent";
+  .table-light td {
+    padding-left: unset;
   }
-  td:nth-of-type(2):before {
-    content: "Tory";
+  .table-light td:before {
+    display: none;
   }
-  td:nth-of-type(3):before {
-    content: "Lambton";
+  .table-light tbody td:last-of-type {
+    border-right-width: 0;
   }
-  td:nth-of-type(4):before {
-    content: "Willis";
+  .table-light tbody th {
+    border-left-width: 0;
   }
-  td:nth-of-type(5):before {
-    content: "Cuba";
+  .table-light tbody tr:first-of-type th {
+    border-top-width: 0;
   }
+  .table-light tbody tr:last-of-type td {
+    border-bottom-width: 0;
+  }
+  .table-light tbody tr:last-of-type td:last-of-type {
+    border-bottom-width: 0;
+  }
+  .table-light tbody tr td:last-of-type {
+    border-bottom-width: 1px;
+  }
+  .table-light tbody tr td {
+    padding: 0.5em;
+    text-align: center;
+  }
+  .table-light thead th:last-of-type {
+    border-width: 0;
+  }
+}
+
+.table-light td:nth-of-type(1):before {
+  content: "Kent";
+}
+.table-light td:nth-of-type(2):before {
+  content: "Tory";
+}
+.table-light td:nth-of-type(3):before {
+  content: "Lambton";
+}
+.table-light td:nth-of-type(4):before {
+  content: "Willis";
+}
+.table-light td:nth-of-type(5):before {
+  content: "Cuba";
+}
+
+@media (min-width: 64em) {
+  .dark-table table {
+    display: table;
+  }
+  .dark-table thead {
+    display: table-header-group;
+  }
+  .dark-table tbody {
+    display: table-row-group;
+  }
+  .dark-table th {
+    display: table-cell;
+  }
+  .dark-table td {
+    display: table-cell;
+  }
+  .dark-table tr {
+    display: table-row;
+  }
+  .dark-table thead tr {
+    position: relative;
+    top: unset;
+    left: unset;
+  }
+  .dark-table thead th {
+    padding: 1em;
+  }
+  .dark-table td {
+    padding-left: unset;
+  }
+  .dark-table td:before {
+    display: none;
+  }
+  .dark-table tbody td:last-of-type {
+    border-right-width: 0;
+  }
+  .dark-table tbody th {
+    border-left-width: 0;
+  }
+  .dark-table tbody tr:first-of-type th {
+    border-top-width: 0;
+  }
+  .dark-table tbody tr:last-of-type td {
+    border-bottom-width: 0;
+  }
+  .dark-table tbody tr:last-of-type td:last-of-type {
+    border-bottom-width: 0;
+  }
+  .dark-table tbody tr td:last-of-type {
+    border-bottom-width: 1px;
+  }
+  .dark-table tbody tr td {
+    padding: 1em;
+  }
+  .dark-table thead th:last-of-type {
+    border-width: 0;
+  }
+}
+
+.dark-table td:nth-of-type(1):before {
+  content: "Kent";
+}
+.dark-table td:nth-of-type(2):before {
+  content: "Tory";
+}
+.dark-table td:nth-of-type(3):before {
+  content: "Lambton";
+}
+.dark-table td:nth-of-type(4):before {
+  content: "Willis";
+}
+.dark-table td:nth-of-type(5):before {
+  content: "Interview";
+}
+.dark-table td:nth-of-type(6):before {
+  content: "Cuba";
 }
 
 /*# sourceMappingURL=styles.css.map */
