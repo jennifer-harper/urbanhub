@@ -1006,6 +1006,12 @@ svg {
             }
         }
 
+        tbody{
+           tr th, td, th{
+                border-color:$light ;
+            }
+        }
+
         tbody tr:last-of-type td{
             vertical-align: top;
         }

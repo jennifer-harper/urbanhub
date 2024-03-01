@@ -868,6 +868,9 @@ svg {
     background-color: transparent;
   }
 }
+.blueTheme .dark tbody tr th, .blueTheme .dark tbody td, .blueTheme .dark tbody th {
+  border-color: #FAF6F0;
+}
 .blueTheme .dark tbody tr:last-of-type td {
   vertical-align: top;
 }
