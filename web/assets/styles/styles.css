@@ -47,6 +47,10 @@
   font-weight: normal;
   font-style: normal;
 }
+.nav {
+  width: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -124,7 +128,7 @@ div.no-btm-marg p {
 }
 
 h1 i, h2 i, h3 i, p i {
-  font-family: "reckless_neuemedium, serif";
+  font-family: "reckless_neuemedium, san-serif";
   font-weight: 500;
   white-space: nowrap;
   font-style: normal;
@@ -398,6 +402,15 @@ svg {
 .flex-wrap.row {
   flex-direction: row;
 }
+.flex-wrap .quarter {
+  flex-basis: 100%;
+}
+@media (min-width: 48em) {
+  .flex-wrap .quarter {
+    flex: 1;
+    flex-basis: 50%;
+  }
+}
 @media (min-width: 64em) {
   .flex-wrap {
     flex-direction: row;
@@ -419,10 +432,6 @@ svg {
   .flex-wrap .third {
     flex: 1;
     flex-basis: 33.33%;
-  }
-  .flex-wrap .quarter {
-    flex: 1;
-    flex-basis: 50%;
   }
   .flex-wrap.just-cont-space-btw {
     justify-content: space-between;

@@ -81,7 +81,9 @@
 }
 
 
-
+.nav{
+    width: 100%;
+}
 
 *{
   box-sizing: border-box;
@@ -464,9 +466,17 @@ svg {
     &.row{
         flex-direction:row; 
     }
+    .quarter{
+        flex-basis: 100%;
+    }
 
 
-
+    @media #{$mq-small} {
+        .quarter{
+            flex:1;
+            flex-basis: 50%;
+        }
+    }
 
     @media #{$mq-medium} {
         flex-direction:row;
@@ -492,10 +502,7 @@ svg {
             flex-basis: 33.33%;
         }
 
-        .quarter{
-            flex:1;
-            flex-basis: 50%;
-        }
+
 
         &.just-cont-space-btw{
             justify-content: space-between;
