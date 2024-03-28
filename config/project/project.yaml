@@ -1,4 +1,4 @@
-dateModified: 1709253367
+dateModified: 1711595736
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -76,6 +76,7 @@ meta:
     6221ad00-05cc-4298-9ace-e6d2b6303c91: 'Button text' # Button text
     08320fd1-0901-49fc-9707-c330852e1991: UrbanMeet # UrbanMeet
     9758e6f4-7462-4750-9d36-440d40e64643: 'Sub Heading' # Sub Heading
+    9972ba3c-d91b-450a-b432-1f5051cbad28: 'Explore Our Spaces' # Explore Our Spaces
     24354e21-7f7c-4191-a61f-5d6193d33d90: 'Sign In' # Sign In
     34386ac3-d891-4b8d-b66d-3fe889be5579: 'Button Page Link' # Button Page Link
     34804f61-aab1-4122-8907-cc55a4677fa1: Heading # Heading
@@ -94,6 +95,7 @@ meta:
     a33a9b78-e67f-4d71-b70f-5c91db0323fe: UrbanLease # UrbanLease
     a72e886d-5deb-4c6e-9dea-5a690a3f141b: 'Title h1' # Title h1
     ac6a4bbe-5e8b-41c7-997d-cb16dc2a14d2: 'Business Address' # Business Address
+    ad2fa7ed-3fb2-4493-97ef-5a303e5ca6fa: 'Explore Our Spaces' # Explore Our Spaces
     b09630d2-fe6c-4792-90f0-5c6bb8514063: 'Button Page Link' # Button Page Link
     b4eebaf7-1d9d-4bca-81c1-b507952d4369: 'Grid Add-ons' # Grid Add-ons
     b9b1a6d2-d5a8-4791-8722-91479f5bf9ae: 'Meta Description' # Meta Description

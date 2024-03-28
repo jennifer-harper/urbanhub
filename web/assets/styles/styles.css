@@ -1408,4 +1408,25 @@ tbody tr:first-of-type td {
   content: "Cuba";
 }
 
+.ourSpaces .two-thirds {
+  flex-basis: 66.666%;
+}
+.ourSpaces .hero h1 {
+  padding-top: 6vw;
+}
+.ourSpaces .hero .hero-cloud {
+  max-width: 80%;
+  margin-left: -5vw;
+}
+.ourSpaces .hero .hero-antenna {
+  max-width: 30%;
+  margin-left: 5vw;
+  margin-top: 3vw;
+  margin-bottom: -1vw;
+}
+.ourSpaces .roof .btn.downwards a {
+  background-color: transparent;
+  transform: rotate(90deg);
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,245 @@
+fieldLayouts:
+  d26a3685-d1d2-4729-9665-9f245c089f24:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 368e19da-aed2-4692-949d-976508166279 # Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f696e434-6965-465f-b871-060428534c74
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c093fd38-7d2d-4d3d-b514-a314fa8fd189 # Page Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0136f64a-860d-422d-9766-d0ffbd8bbbc4
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'First Section'
+        uid: a52eca91-62e3-449d-8981-6f98a24591d8
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4299af30-f9c7-48d6-922c-045249174b4a # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d49eb71c-b369-4c4c-a786-0fe40157f04e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e5b61af4-7baa-4d4d-8814-6dc66d180fe1 # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9c492cfd-f335-4eef-805d-04e92f855c99
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3e1bb40d-9000-497a-9b75-2f18c808ddd9 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8028e1b1-0dd7-4a82-a345-b889ff2c28bc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7320a971-e924-4da9-afc8-182e32a5fb2d
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Panel One'
+        uid: c89dd06a-0bba-48e6-ab0e-ef71086643f0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 34804f61-aab1-4122-8907-cc55a4677fa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0f85f8d4-c326-4e72-a8ae-bfa5c037b407
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fc5656c9-ee2c-497e-bab5-2bb3f236be53 # Footer Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3bdd6eb4-745f-4a83-b153-1c4f5fa6359e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 89723374-3eac-4abc-b3ad-1bbd27091648 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5fba3114-4207-4fe1-af77-8afca1d3b5c2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ea48c9dc-6e22-48a2-8f56-385fa9fa259e # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 55794c45-7d8a-4c8a-94f1-53605e54b59a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b780b22-e03b-4537-bd01-74db803e4b3a # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8793cd89-56b5-499f-a5c9-54e8fea293e0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d08c9cda-b4c0-42b0-a7e5-c654a94f6fa2 # Pargraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: deb8c981-1751-4335-b4d2-ada2f56fceb5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4d32e2df-7698-415c-9640-62e6787a0270 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d3d69073-cfa2-4fe9-b5b5-b86a3f4406a8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d48d0ef1-ee78-4bd5-8dc8-21ad80e2eb5e # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2bf73ee2-deb9-4a8e-8520-f99d339c57b2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Footer
+        uid: 7bb117fa-5078-4fc4-88c4-d7222e35a85c
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 4229ea84-84b7-4d2e-a96d-e4be1b495643
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9b1a6d2-d5a8-4791-8722-91479f5bf9ae # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7bd485b-d43a-4b9e-90ad-47b23826702f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6b2c99b5-ceb2-41a9-9f11-a41e26422e23
+        userCondition: null
+handle: exploreOurSpaces
+hasTitleField: false
+name: 'Explore Our Spaces'
+section: ad2fa7ed-3fb2-4493-97ef-5a303e5ca6fa # Explore Our Spaces
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

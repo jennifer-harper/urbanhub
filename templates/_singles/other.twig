@@ -9,6 +9,7 @@
 
 {% set main = "bg-orange" %}
 {% set contrast = "bg-yellow-light" %}
+{% set footer = "bg-blue-light" %}
 
 {% block head %} 
   {{ parent() }}
@@ -37,6 +38,8 @@
 
     {% include '_partials/sections/slider-intro.twig' %}
     {% include '_partials/sections/solutions-slider.twig' %}
+
+         {% include '_partials/footer/footer-page-banner.twig' %}
 
   {% endfor %} 
 {% endblock %}

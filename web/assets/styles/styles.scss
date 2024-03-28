@@ -1611,3 +1611,38 @@ tbody{
     td:nth-of-type(5):before { content: "Interview"; }
     td:nth-of-type(6):before { content: "Cuba"; }
 }
+
+
+
+// EXPLORE OUR SPACES
+
+.ourSpaces{
+    .two-thirds{
+        flex-basis:66.666%;
+    }
+    .hero{
+        h1{
+            padding-top:6vw
+        }
+        .hero-cloud{
+            max-width: 80%;
+            margin-left:-5vw;
+        }
+        .hero-antenna{
+            max-width: 30%;
+            margin-left:5vw;
+            margin-top:3vw;
+            margin-bottom: -1vw;
+        }
+
+    }
+
+    .roof{
+        .btn.downwards{
+            a{
+                background-color: transparent;
+                transform: rotate(90deg);
+            }
+        }
+    }
+}

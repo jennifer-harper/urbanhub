@@ -1,0 +1,81 @@
+<div class="hero-animation">
+    <div class="flex-wrap pad-top-btm no-btm hero">
+        <div class="half flex-wrap flex-jc-sb col"> 
+            <div>
+                <img class="hero-cloud" src="/uploads/images/cloud-hero.svg" alt="cloud illustration">
+            </div>
+            <div>
+                <img class="hero-antenna" src="/uploads/images/roof-antenna-1.svg" alt="antenna illustration">
+            </div>
+        </div>
+        <div class="pad-sides half">     
+            <div class="">
+                {% if entry.pageTitle %}
+                    {{entry.pageTitle}}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-wrap roof">
+        <div class="two-thirds"> 
+            <div class="flex-wrap"><img class="roof" src="/uploads/images/green-roof.svg" alt="roof shaped block color"></div>
+        </div>
+        <div class="pad-sides third">     
+            <div class="">
+                {% if entry.pageIntroParagraph %}
+                    <div class="">
+                        {{entry.pageIntroParagraph}}
+                    </div>
+                {% endif %}
+
+                <div class="btn downwards">
+                    <a href="">
+                        <div>{% include '_partials/svgs/arrow.twig' %}</div> 
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="private-animation">
+    <div class="flex-wrap">
+        <div class="two-thirds"> 
+            <div>
+                {% if entry.heading %}
+                    {{entry.heading}}
+                {% endif %}
+            </div>
+            <div>
+            
+            </div>
+        </div>
+
+        <div class="pad-sides third">     
+            <div class="">
+                {% if entry.introParagraph %}
+                    <div class="intro">
+                        {{entry.introParagraph}}
+                    </div>
+                {% endif %}
+
+                {% if entry.paragraph %}
+                        {{entry.paragraph}}
+                {% endif %}
+
+                {% for block in entry.button %}
+                    {% if block.type == 'groupFields' %}
+                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                        {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                        {% embed '_partials/button' %}
+                            {% block class %}{{buttonClass}}{% endblock %}
+                            {% block title %}{{buttonText}} {% endblock %}
+                            {% block url %}{{buttonPageLink}} {% endblock %}
+                        {% endembed %} 
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

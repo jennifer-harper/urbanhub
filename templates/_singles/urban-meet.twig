@@ -6,6 +6,7 @@
 
 {% set buttonClass = "blue" %}
 {% set buttonClassContrast = "blue-light" %}
+
 {% set main = "bg-blue-dark" %}
 {% set contrast = "bg-blue-light" %}
 {% set footer = "bg-blue-light" %}
@@ -35,6 +36,7 @@
         {% block contrast %} {{contrast}} {% endblock %}
     {% endembed %}
     {% include '_partials/sections/solutions-slider.twig' %}
+
      {% include '_partials/footer/footer-page-banner.twig' %}
   {% endfor %} 
 {% endblock %}
