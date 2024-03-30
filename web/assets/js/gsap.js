@@ -10,7 +10,7 @@ let tl = gsap.timeline({
     end: 'center top',
     scrub: 1,
     invalidateOnRefresh: true,
-    markers: { startColor: 'blue', endColor: 'red', fontSize: '18px', fontWeight: 'bold', indent: 20 },
+    // markers: { startColor: 'blue', endColor: 'red', fontSize: '18px', fontWeight: 'bold', indent: 20 },
   },
 })
 
