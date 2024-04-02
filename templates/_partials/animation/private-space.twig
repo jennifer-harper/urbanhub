@@ -1,0 +1,51 @@
+<div class="private-animation level">
+    <div class="flex-wrap main">
+        <div class="two-thirds bg-warm"> 
+            <div class="header-wrapper">
+                <img class="ceiling" src="uploads/images/uh-green-level-roof.png" alt="">
+                <div class="flex-wrap pad-sides">
+                    <div class="heading">
+                        <h2>Bespoke </br> <i>private</i> space</h2>
+                    </div>
+                    <div class="ceiling-lighting">
+                        <img src="uploads/images/uh-green-level-ceiling-light.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="illustraion-wrapper">
+                <img class="floor" src="uploads/images/uh-green-level-floor.png" alt="">
+                <img class="" src="uploads/images/uh-green-level-floor-baseline.png" alt="">
+            </div>
+        </div>
+        <div class="third">  
+            <div class="clouds">
+                <img class="cloud-2" src="uploads/images/uh-green-level-cloud-2.png" alt="">
+                <img class="cloud-1" src="uploads/images/uh-green-level-cloud-1.png" alt="">
+            </div>
+
+            <div class="content pad-all">
+                {% if entry.introParagraph %}
+                    <div class="intro-text">
+                        {{entry.introParagraph}}
+                    </div>
+                {% endif %}
+
+                {% if entry.paragraph %}
+                        {{entry.paragraph}}
+                {% endif %}
+
+                {% for block in entry.button %}
+                    {% if block.type == 'groupFields' %}
+                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                        {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                        {% embed '_partials/button' %}
+                            {% block class %}{{buttonClass}}{% endblock %}
+                            {% block title %}{{buttonText}} {% endblock %}
+                            {% block url %}{{buttonPageLink}} {% endblock %}
+                        {% endembed %} 
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

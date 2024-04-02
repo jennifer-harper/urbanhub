@@ -574,7 +574,7 @@ svg {
   background-color: #582F07;
 }
 .btn.brown a div {
-  background-color: #EFC334;
+  background-color: #EBE198;
 }
 .btn.brown a div svg {
   fill: #582F07;
@@ -614,7 +614,7 @@ svg {
 }
 
 .bg-yellow {
-  background-color: #EFC334;
+  background-color: #EBE198;
 }
 
 .bg-yellow-light {
@@ -655,6 +655,10 @@ svg {
 .bg-brown {
   background-color: #582F07;
   fill: #582F07;
+}
+
+.bg-warm {
+  background-color: #F4EFE1;
 }
 
 .right-mask,
@@ -925,10 +929,10 @@ svg {
 }
 .brownTheme .slider-btn-wrapper .swiper-button-prev svg,
 .brownTheme .slider-btn-wrapper .swiper-button-next svg {
-  fill: #EFC334;
+  fill: #EBE198;
 }
 .brownTheme .highlight {
-  fill: #EFC334;
+  fill: #EBE198;
 }
 .brownTheme .social-media,
 .brownTheme .little-star {
@@ -1408,25 +1412,145 @@ tbody tr:first-of-type td {
   content: "Cuba";
 }
 
-.ourSpaces .two-thirds {
-  flex-basis: 66.666%;
+.ourSpaces .level .two-thirds {
+  height: 100vh;
 }
-.ourSpaces .hero h1 {
+.ourSpaces .two-thirds {
+  position: relative;
+  flex-basis: 66.666%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+}
+.ourSpaces .two-thirds .heading {
+  padding: 5vw;
+  padding-left: 0;
+}
+.ourSpaces .two-thirds .base-line {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+.ourSpaces .two-thirds .illustraion-wrapper {
+  position: relative;
+}
+.ourSpaces .two-thirds .illustraion-wrapper .floor {
+  padding: 0 20px;
+}
+.ourSpaces .third {
+  min-width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ourSpaces .third .content .intro-text {
+  font-weight: 600;
+}
+.ourSpaces .hero-animation .hero {
+  flex-direction: column-reverse;
+}
+.ourSpaces .hero-animation .hero h1 {
   padding-top: 6vw;
 }
-.ourSpaces .hero .hero-cloud {
-  max-width: 80%;
-  margin-left: -5vw;
+.ourSpaces .hero-animation .hero .hero-cloud {
+  max-width: 50%;
+  margin-right: 0;
 }
-.ourSpaces .hero .hero-antenna {
+.ourSpaces .hero-animation .hero .hero-antenna {
   max-width: 30%;
   margin-left: 5vw;
   margin-top: 3vw;
   margin-bottom: -1vw;
 }
-.ourSpaces .roof .btn.downwards a {
+.ourSpaces .hero-animation .roof-wrap .btn.downwards a {
   background-color: transparent;
   transform: rotate(90deg);
+}
+.ourSpaces .hero-animation .roof-wrap .base-line {
+  display: none;
+}
+.ourSpaces .hero-animation .roof-wrap .third .pad-sides {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 64em) {
+  .ourSpaces .hero-animation .hero {
+    flex-direction: row;
+  }
+  .ourSpaces .hero-animation .hero .hero-cloud {
+    max-width: 80%;
+    margin-left: -5vw;
+  }
+  .ourSpaces .hero-animation .roof-wrap .base-line {
+    display: block;
+  }
+  .ourSpaces .hero-animation .roof-wrap .third .pad-sides {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.ourSpaces .private-animation {
+  position: relative;
+}
+.ourSpaces .private-animation .two-thirds {
+  height: 100vh;
+}
+.ourSpaces .private-animation .header-wrapper .flex-wrap {
+  justify-content: space-between;
+}
+.ourSpaces .private-animation .ceiling-lighting img {
+  margin-top: -1.5vw;
+  max-width: 12vw;
+}
+.ourSpaces .private-animation .clouds {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ourSpaces .private-animation .clouds .cloud-2 {
+  margin-top: 2vw;
+  margin-right: 3vw;
+  width: 30%;
+  z-index: 0;
+}
+.ourSpaces .private-animation .clouds .cloud-1 {
+  width: 60%;
+  margin-left: 0;
+  z-index: 0;
+}
+.ourSpaces .traditional.animation .heading {
+  padding-top: 3vw;
+  padding-bottom: 0;
+}
+.ourSpaces .traditional.animation .heading h2 {
+  color: #DB6B34;
+  margin-bottom: 0;
+}
+.ourSpaces .traditional.animation .heading h2 svg {
+  fill: #FAF6F0;
+}
+.ourSpaces .traditional.animation .content p:not(.btn p) {
+  color: #DB6B34;
+}
+.ourSpaces .traditional.animation .light {
+  position: absolute;
+  left: -10px;
+  top: -30px;
+  width: calc(100% - 30px);
+  opacity: 0.8;
+}
+.ourSpaces .traditional.animation .bird-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.ourSpaces .traditional.animation .bird-wrapper .bird {
+  max-width: 12vw;
+  margin-left: 3vw;
 }
 
 /*# sourceMappingURL=styles.css.map */

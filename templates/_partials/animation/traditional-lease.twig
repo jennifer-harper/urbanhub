@@ -1,0 +1,47 @@
+<div class="traditional animation level">
+    <div class="flex-wrap">
+        <div class="two-thirds bg-yellow">
+            <div class="header-wrapper">
+                <img class="ceiling" src="uploads/images/uh-orange-level-ceiling-fan.png" alt="">
+                <div class="flex-wrap pad-sides">
+                    <div class="heading">
+                        <h2>Traditional </br> office <i>lease</i></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="illustraion-wrapper">
+                <img class="floor" src="uploads/images/uh-orange-level-floor.png" alt="">
+                <img class="light" src="uploads/images/uh-orange-level-light-stream.png" alt="">
+                {# <img class="" src="uploads/images/uh-green-level-floor-baseline.png" alt=""> #}
+            </div>
+
+        </div>
+
+        <div class="third">  
+            <div class="bird-wrapper">
+                <img class="bird" src="uploads/images/uh-orange-level-bird.png" alt="">
+            </div>
+            <div class="content pad-all">
+                {% if entry.introParagraph %}
+                    <div class="intro-text">
+                        {{entry.introParagraph}}
+                    </div>
+                {% endif %}
+                {% if entry.paragraph %}
+                        {{entry.paragraph}}
+                {% endif %}
+                {% for block in entry.button %}
+                    {% if block.type == 'groupFields' %}
+                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                        {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                        {% embed '_partials/button' %}
+                            {% block class %}orange{% endblock %}
+                            {% block title %}{{buttonText}} {% endblock %}
+                            {% block url %}{{buttonPageLink}} {% endblock %}
+                        {% endembed %} 
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

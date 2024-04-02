@@ -756,6 +756,10 @@ svg {
     fill:$brown;
 }
 
+.bg-warm{
+    background-color: $light-warm;
+}
+
 
 //-------Image masks-----------//
 
@@ -1617,32 +1621,175 @@ tbody{
 // EXPLORE OUR SPACES
 
 .ourSpaces{
+    .level{
+        .two-thirds{
+            height: 100vh;
+        }
+    }
     .two-thirds{
+        position: relative;
         flex-basis:66.666%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;  
+        .heading{
+            padding:$base;
+            padding-left:0;
+        }
+        .base-line{
+            position: absolute;
+            width: 100%;
+            left:0;
+            bottom:0;
+        }
+        .illustraion-wrapper{
+            position: relative;
+            .floor{
+                padding:0 $xs;
+            }
+        }
+        z-index: 1;
     }
-    .hero{
-        h1{
-            padding-top:6vw
-        }
-        .hero-cloud{
-            max-width: 80%;
-            margin-left:-5vw;
-        }
-        .hero-antenna{
-            max-width: 30%;
-            margin-left:5vw;
-            margin-top:3vw;
-            margin-bottom: -1vw;
-        }
 
-    }
-
-    .roof{
-        .btn.downwards{
-            a{
-                background-color: transparent;
-                transform: rotate(90deg);
+    .third{
+        min-width: 33.33%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .content{
+            .intro-text{
+                font-weight: 600;
             }
         }
     }
+
+    .hero-animation{
+        .hero{
+            flex-direction: column-reverse;
+            h1{
+                padding-top:6vw
+            }
+            .hero-cloud{
+                max-width: 50%;
+                margin-right:0;
+            }
+            .hero-antenna{
+                max-width: 30%;
+                margin-left:5vw;
+                margin-top:3vw;
+                margin-bottom: -1vw;
+            }
+        }
+    
+        .roof-wrap{
+            .btn.downwards{
+                a{
+                    background-color: transparent;
+                    transform: rotate(90deg);
+                }
+            }
+            .base-line{
+                display: none;
+            }
+            .third .pad-sides{
+                display: flex;
+                padding-top:$sm;
+                padding-bottom: $sm;
+            }
+        }
+
+        @media #{$mq-medium}{
+            .hero{
+                flex-direction: row;
+                .hero-cloud{
+                    max-width: 80%;
+                    margin-left:-5vw;
+                }
+            }
+            .roof-wrap {
+                .base-line{
+                    display:block;
+                }
+                .third .pad-sides{
+                    display: block;
+                    padding-top:0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .private-animation{
+        position: relative;
+        .two-thirds{
+            height: 100vh;
+           
+        }
+        .header-wrapper{
+            .flex-wrap{
+                justify-content: space-between;
+            }
+        }
+
+        .ceiling-lighting img{
+            margin-top:-1.5vw;
+            max-width: 12vw;
+        }
+
+        .clouds{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .cloud-2{
+                margin-top:2vw;
+                margin-right: $md;
+                width: 30%;
+                z-index: 0;
+            }
+            .cloud-1{
+                width: 60%;
+                margin-left: 0;
+                z-index: 0;
+            }
+        }
+
+    } 
+
+    .traditional.animation{
+        .heading{
+            padding-top:3vw;
+            padding-bottom: 0;
+            h2{
+                color:$orange;
+                margin-bottom: 0;
+                svg{
+                    fill: $light;
+                }
+            }
+        }
+        .content{
+            p:not(.btn p){
+                color:$orange;
+            }
+        }
+
+
+        .light{
+            position:absolute;
+            left:-10px;
+            top:-30px;
+            width: calc(100% - 30px);
+            opacity: .8;
+        }
+        .bird-wrapper{
+            height:100%;
+            display: flex;
+            align-items: flex-end;
+            .bird{
+                max-width: 12vw;
+                margin-left:3vw;
+            }
+        }
+    }
+
 }
