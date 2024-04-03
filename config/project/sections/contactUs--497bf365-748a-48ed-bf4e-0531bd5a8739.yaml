@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: urbanOffice
-name: UrbanOffice
+handle: contactUs
+name: 'Contact Us'
 propagationMethod: all
 siteSettings:
   2995eac9-2c30-433a-bd61-0390ff903010: # urbanhub
     enabledByDefault: true
     hasUrls: true
-    template: _singles/urban-office.twig
-    uriFormat: urban-office
+    template: _singles/contact-us.twig
+    uriFormat: contact-us
 type: single

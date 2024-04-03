@@ -93,20 +93,8 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: c9568162-a2ec-4e6f-a89e-d0366292c4be # Slider Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: cb79a585-31cb-4c43-a11e-06101a7aa4ec
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 82f704c3-36ac-4f0d-b835-560746906020 # Button Text
-            instructions: null
+            instructions: 'Slide linked to corresponding page automatically '
             label: null
             required: false
             tip: null

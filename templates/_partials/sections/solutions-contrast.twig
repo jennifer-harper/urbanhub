@@ -10,14 +10,16 @@
         <div class="flex-wrap wrap border-top border-left border-color-contrast">
             {% for block in entry.grid %}
                 {% if block.type == 'groupFields' %}
-                <div class="pad-all sm border-btm  border-right border-color-contrast {% block colCount %} {% endblock %}">
-                    {% if block.subHeading %}
-                        {{block.subHeading}}
-                    {% endif %}
-                    <div class="no-btm-marg">
-                        {% if block.paragraph %}
-                            {{block.paragraph}}
+                <div class="flex-wrap col flex-jc-sb pad-all sm border-btm  border-right border-color-contrast {% block colCount %} {% endblock %}">
+                    <div>
+                        {% if block.subHeading %}
+                            {{block.subHeading}}
                         {% endif %}
+                        <div class="no-btm-marg">
+                            {% if block.paragraph %}
+                                {{block.paragraph}}
+                            {% endif %}
+                        </div>
                     </div>
                     <div class="flex-wrap">
                         {% include '_partials/svgs/little-star.twig' %}

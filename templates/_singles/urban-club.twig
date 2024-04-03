@@ -1,15 +1,15 @@
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "urbanClub brownTheme" } %} 
+{% set bodyAttributes ={ class: "urbanClub limeTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
 {% set page = craft.entries().section('urbanClub').all() %} 
 
-{% set buttonClass = "brown" %}
-{% set buttonClassContrast = "brown" %}
+{% set buttonClass = "lime" %}
+{% set buttonClassContrast = "green" %}
 
-{% set main = "bg-yellow" %}
-{% set contrast = "bg-brown" %}
-{% set footer = "bg-yellow" %}
+{% set main = "bg-lime" %}
+{% set contrast = "bg-green" %}
+{% set footer = "bg-line" %}
 
 
 {% block head %} 
@@ -20,13 +20,13 @@
 {% block content %} 
   {% for entry in page %} 
     {% include '_partials/hero/solutions.twig' %}
-    {% include '_partials/sections/solutions-usps.twig' %}
+     {% include '_partials/sections/club-slider.twig' %}
     {% include '_partials/sections/solutions-mask.twig' %}
 
     {% include '_partials/sections/solutions-banner.twig' %}
     {% embed '_partials/sections/solutions-contrast.twig' %}
         {% block class %} {{main}} {% endblock %}
-        {% block colCount %} third {% endblock %}
+        {% block colCount %} quarter{% endblock %}
     {% endembed %}
     {% embed '_partials/sections/solutions-contrast-btm.twig' %}
         {% block class %}  {{main}} addons{% endblock %}

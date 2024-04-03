@@ -1,0 +1,23 @@
+columnSuffix: ncbtrevq
+contentColumnType: text
+fieldGroup: 820e4067-5880-4edb-9cba-20c3597f35ba # Enviro Slider
+handle: svg
+instructions: null
+name: SVG
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 01f4115a-eade-499a-bf94-f3c1056b9da4 # SVG Image
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

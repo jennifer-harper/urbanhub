@@ -117,30 +117,30 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 56985cf3-1250-417e-ba85-9ff5472ba6bf # Heading
+            fieldUid: 0249f9a4-8d76-43b5-bf70-de0e1aebee56 # Heading
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: f7e407b1-523c-4b6e-8395-76b38fb38491
+            uid: 3e64f7ef-a04a-486c-bc5c-e5338baeff11
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: c6883bfd-18a2-4828-9c01-a69a1e1f7c0b # USPs
+            fieldUid: 83ec1284-d751-46da-989b-5ef46b55b332 # UrbanClub Slider
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: c766b216-f60e-47e3-86ef-b5ffe4460d2b
+            uid: cd3c6f69-d2b2-4db3-8fa3-754b1f036f90
             userCondition: null
             warning: null
             width: 100
-        name: 'USP Banner'
-        uid: d3c58664-e7f4-4682-b198-098db5ada0e5
+        name: 'Urban Club Slider'
+        uid: caa8d3c6-bf2f-4ae6-9315-b0a73f9ba47c
         userCondition: null
       -
         elementCondition: null
@@ -336,10 +336,112 @@ fieldLayouts:
         name: Slider
         uid: b3847051-f1bd-40fb-a8dc-23c3125235f7
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 34804f61-aab1-4122-8907-cc55a4677fa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 350c67ea-e304-4f9f-becc-3825c8deff03
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fc5656c9-ee2c-497e-bab5-2bb3f236be53 # Footer Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ff2110a-8f6f-4c54-a515-a6b7128c4f47
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 89723374-3eac-4abc-b3ad-1bbd27091648 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0fd4f8d9-a27f-4d80-bff2-26367c451047
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ea48c9dc-6e22-48a2-8f56-385fa9fa259e # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 213ba5f6-f4c4-4a7b-b9f2-d9a0f6f39691
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b780b22-e03b-4537-bd01-74db803e4b3a # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eafcfb01-37ec-4d52-9bd9-4601b95aa973
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d08c9cda-b4c0-42b0-a7e5-c654a94f6fa2 # Pargraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d56b42b5-6736-4431-9c75-3a0b57f7e813
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4d32e2df-7698-415c-9640-62e6787a0270 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d2620a76-0417-45b6-96b3-a80712efb1e6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d48d0ef1-ee78-4bd5-8dc8-21ad80e2eb5e # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c0dc7bb4-2003-4a9f-abd7-c6f992d0be3e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Footer
+        uid: a9f29b02-00b7-48dc-af88-d3690ec792f3
+        userCondition: null
 handle: urbanClub
 hasTitleField: false
-name: urbanClub
-section: 0fadc91b-326d-4899-8d25-c5f9bf36b802 # urbanClub
+name: UrbanClub
+section: 0fadc91b-326d-4899-8d25-c5f9bf36b802 # UrbanClub
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

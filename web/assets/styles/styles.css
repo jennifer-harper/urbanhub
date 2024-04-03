@@ -25,7 +25,13 @@
 }
 @font-face {
   font-family: "reckless_neuemedium";
-  src: url("recklessneue-medium-webfont.woff2") format("woff2"), url("recklessneue-medium-webfont.woff") format("woff");
+  src: url("../fonts/recklessneue-medium-webfont.woff2") format("woff2"), url("../fonts/recklessneue-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "reckless_regular";
+  src: url("../fonts/recklessneue-regular-webfont.woff2") format("woff2"), url("../fonts/recklessneue-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -128,7 +134,7 @@ div.no-btm-marg p {
 }
 
 h1 i, h2 i, h3 i, p i {
-  font-family: "reckless_neuemedium, san-serif";
+  font-family: "reckless_neuemedium", serif;
   font-weight: 500;
   white-space: nowrap;
   font-style: normal;
@@ -303,6 +309,10 @@ svg {
   fill: #FAF6F0;
 }
 
+.illustration-fill {
+  fill: #BAE2A6;
+}
+
 .pad-all {
   padding: 5vw;
 }
@@ -432,6 +442,7 @@ svg {
   .flex-wrap .third {
     flex: 1;
     flex-basis: 33.33%;
+    min-width: 33.33%;
   }
   .flex-wrap.just-cont-space-btw {
     justify-content: space-between;
@@ -444,6 +455,7 @@ svg {
   .flex-wrap .quarter {
     flex: 1;
     flex-basis: 25%;
+    min-width: 25%;
   }
   .flex-wrap .inner {
     flex-direction: row;
@@ -537,6 +549,15 @@ svg {
 .btn.purple a div svg {
   fill: #272641;
 }
+.btn.purple-light a {
+  background-color: #8885D8;
+}
+.btn.purple-light a div {
+  background-color: #272641;
+}
+.btn.purple-light a div svg {
+  fill: #8885D8;
+}
 .btn.blue a {
   background-color: #253C40;
 }
@@ -574,7 +595,7 @@ svg {
   background-color: #582F07;
 }
 .btn.brown a div {
-  background-color: #EBE198;
+  background-color: #EFC334;
 }
 .btn.brown a div svg {
   fill: #582F07;
@@ -614,7 +635,7 @@ svg {
 }
 
 .bg-yellow {
-  background-color: #EBE198;
+  background-color: #EFC334;
 }
 
 .bg-yellow-light {
@@ -658,7 +679,7 @@ svg {
 }
 
 .bg-warm {
-  background-color: #F4EFE1;
+  background-color: #FAF6F0;
 }
 
 .right-mask,
@@ -782,6 +803,10 @@ svg {
     column-count: 2;
   }
 }
+.slider-urban-solutions .illustration-fill {
+  width: 100%;
+  max-height: 15vw;
+}
 
 .bg-green-light .border-color-contrast {
   border-color: #315844;
@@ -820,6 +845,7 @@ svg {
 .orangeTheme .slider-btn-wrapper .swiper-button-next svg {
   fill: #EBE198;
 }
+.orangeTheme .illustration-fill,
 .orangeTheme .highlight,
 .orangeTheme .logo,
 .orangeTheme .tick {
@@ -834,6 +860,9 @@ svg {
 }
 .orangeTheme .border-color-contrast {
   border-color: #EBE198;
+}
+.orangeTheme .bg-yellow-light .logo {
+  fill: #DB6B34;
 }
 
 .blueTheme h1, .blueTheme h2, .blueTheme h3, .blueTheme p, .blueTheme a, .blueTheme li, .blueTheme table {
@@ -901,6 +930,7 @@ svg {
 .blueTheme .slider-btn-wrapper .swiper-button-next svg {
   fill: #6AC4D1;
 }
+.blueTheme .illustration-fill,
 .blueTheme .highlight,
 .blueTheme .tick {
   fill: #6AC4D1;
@@ -929,10 +959,10 @@ svg {
 }
 .brownTheme .slider-btn-wrapper .swiper-button-prev svg,
 .brownTheme .slider-btn-wrapper .swiper-button-next svg {
-  fill: #EBE198;
+  fill: #EFC334;
 }
 .brownTheme .highlight {
-  fill: #EBE198;
+  fill: #EFC334;
 }
 .brownTheme .social-media,
 .brownTheme .little-star {
@@ -979,10 +1009,13 @@ svg {
 .purpleTheme h1, .purpleTheme h2, .purpleTheme h3, .purpleTheme p, .purpleTheme a, .purpleTheme li {
   color: #272641;
 }
+.purpleTheme .illustration-fill,
+.purpleTheme .tick,
 .purpleTheme .highlight,
 .purpleTheme .little-star {
   fill: #8885D8;
 }
+.purpleTheme .logo,
 .purpleTheme .social-media {
   fill: #272641;
 }
@@ -996,7 +1029,15 @@ svg {
   border-color: #272641;
 }
 .purpleTheme .border-color-contrast {
-  border-color: #8885D8;
+  border-color: #272641;
+}
+.purpleTheme .slider-btn-wrapper .swiper-button-prev,
+.purpleTheme .slider-btn-wrapper .swiper-button-next {
+  background-color: #8885D8;
+}
+.purpleTheme .slider-btn-wrapper .swiper-button-prev svg,
+.purpleTheme .slider-btn-wrapper .swiper-button-next svg {
+  fill: #272641;
 }
 
 .lightBlueTheme h1, .lightBlueTheme h2, .lightBlueTheme h3, .lightBlueTheme p, .lightBlueTheme a, .lightBlueTheme li {
@@ -1021,6 +1062,7 @@ svg {
   border-color: #253C40;
 }
 
+.limeTheme .illustration-fill,
 .limeTheme .highlight,
 .limeTheme .tick {
   fill: #D3E84C;
@@ -1054,7 +1096,7 @@ svg {
   .footer-banner h2 {
     margin-top: -25px;
     line-height: 0.7em;
-    font-size: 11.2vw;
+    font-size: 10.8vw;
   }
 }
 @media (min-width: 85.375em) {

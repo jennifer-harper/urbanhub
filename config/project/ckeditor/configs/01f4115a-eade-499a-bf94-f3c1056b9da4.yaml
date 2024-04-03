@@ -1,0 +1,9 @@
+headingLevels: false
+name: 'SVG Image'
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - codeBlock

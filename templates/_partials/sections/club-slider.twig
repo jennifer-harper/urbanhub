@@ -1,0 +1,50 @@
+<div class="slider-intro flex-wrap pad-all heading-btn-wrapper border-btm border-color">
+    <div class=" pad-sides no-left">
+        <div class="slider-btn-wrapper">
+            <div class="swiper-button-next">
+                {% include '_partials/svgs/arrow.twig' %}
+            </div>
+            <div class="swiper-button-prev">
+                {% include '_partials/svgs/arrow.twig' %}
+            </div>
+      </div>
+    </div>
+    <div class="flex-wrap ">
+        {% if entry.heading7 %}
+            {{entry.heading7}}
+        {% endif %}
+    </div>
+</div>
+
+<div class="swiper slider-urban-solutions">
+    <div class="swiper-wrapper">
+        {% for block in entry.urbanclubSlider %}
+                {% if block.type == 'informationPoints' %}
+                <div class="swiper-slide border-right border-color no-border-mobile">
+                   <div class="pad-all">
+                        <div class="flex-wrap">
+                            <div class="half">
+                                {% if block.slideTitle %}
+                                    {{block.slideTitle}}
+                                {% endif %}
+                            </div>
+                            <div class="half center-style pad-sides no-right">
+                                {% set sliderImage = block.sliderImage.one() %}
+                                {% if sliderImage %}
+                                    <img class="" src="{{ sliderImage.url }}" alt="{{ sliderImage.title }}">
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="underline-list">
+                                 {% if block.listItems %}
+                                    {{block.listItems}}
+                                {% endif %}
+                        </div>
+                    </div>
+                </div>
+                                    {% endif %}
+                                {% endfor %}
+    </div>
+</div>
+
+

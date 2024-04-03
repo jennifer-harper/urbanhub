@@ -2,6 +2,17 @@
 @import 'mixins';
 @import url("https://use.typekit.net/cxz6ehv.css");
 
+// @import url(https://db.onlinewebfonts.com/c/8d7470a3ffc57e31f3d9ce407d991c08?family=Reckless+Neue+Light);
+// @font-face {
+//     font-family: "Reckless Neue Light";
+//     src: url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.eot");
+//     src: url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.eot?#iefix")format("embedded-opentype"),
+//     url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.woff2")format("woff2"),
+//     url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.woff")format("woff"),
+//     url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.ttf")format("truetype"),
+//     url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.svg#Reckless Neue Light")format("svg");
+// }
+
 @font-face {
   font-family: 'eina_semiboldregular';
   src: url('../fonts/eina_04_w03_semibold-webfont.woff2') format('woff2'),
@@ -43,11 +54,18 @@
 
 @font-face {
     font-family: 'reckless_neuemedium';
-    src: url('recklessneue-medium-webfont.woff2') format('woff2'),
-         url('recklessneue-medium-webfont.woff') format('woff');
+    src: url('../fonts/recklessneue-medium-webfont.woff2') format('woff2'),
+         url('../fonts/recklessneue-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+@font-face {
+    font-family: 'reckless_regular';
+    src: url('../fonts/recklessneue-regular-webfont.woff2') format('woff2'),
+         url('../fonts/recklessneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -362,6 +380,10 @@ svg {
     }
 }
 
+.illustration-fill{
+    fill:$green-light
+}
+
 //-------Padding-----------//
 .pad-all{
   padding:$base;
@@ -500,6 +522,7 @@ svg {
         .third{
             flex:1;
             flex-basis: 33.33%;
+            min-width:33.33%
         }
 
 
@@ -516,6 +539,7 @@ svg {
         .quarter{
             flex:1;
             flex-basis: 25%;
+            min-width: 25%;
         }
         .inner{
             flex-direction: row;
@@ -622,6 +646,18 @@ svg {
         }
       }
     }
+
+    &.purple-light{
+        a{
+          background-color: $purple-light;
+          div{
+            background-color: $purple-dark;
+            svg{
+              fill:$purple-light
+            }
+          }
+        }
+      }
   
     &.blue{
       a{
@@ -884,6 +920,10 @@ svg {
                 column-count: 2;
             }
         }
+        .illustration-fill{
+            width:100%;
+            max-height:15vw;
+        }
     }
 
 
@@ -939,6 +979,7 @@ svg {
         }
     }
 
+    .illustration-fill,
     .highlight,
     .logo,
     .tick{
@@ -956,6 +997,11 @@ svg {
     .border-color-contrast{
         border-color:$yellow-light;
 
+    }
+    .bg-yellow-light{
+        .logo{
+            fill:$orange;
+        }
     }
 }
 
@@ -1049,6 +1095,7 @@ svg {
             }
         }
     }
+    .illustration-fill,
     .highlight,
     .tick{
         fill:$blue-light;  
@@ -1150,10 +1197,13 @@ svg {
     h1,h2,h3,p, a, li{
         color:$purple-dark;  
     }
+    .illustration-fill,
+    .tick,
     .highlight,
     .little-star{
         fill: $purple-light;
     }
+    .logo,
     .social-media{
         fill: $purple-dark;
     }
@@ -1170,7 +1220,16 @@ svg {
         border-color:$purple-dark
     }
     .border-color-contrast{
-        border-color:$purple-light;
+        border-color:$purple-dark;
+    }
+    .slider-btn-wrapper {
+        .swiper-button-prev,
+        .swiper-button-next{
+            background-color:$purple-light;
+            svg{
+                fill:$purple-dark;
+            }
+        }
     }
 }
 
@@ -1207,6 +1266,7 @@ svg {
 
 
 .limeTheme{
+    .illustration-fill,
     .highlight,
     .tick{
         fill:$lime;
@@ -1217,6 +1277,7 @@ svg {
             fill: $green-dark;
         }
     }
+
     .slider-btn-wrapper {
         .swiper-button-prev,
         .swiper-button-next{
@@ -1225,6 +1286,7 @@ svg {
             }
         }
     }
+
 }
 
 
@@ -1244,7 +1306,7 @@ svg {
         @media #{$mq-medium}{
             margin-top:-25px;
             line-height: .7em;
-            font-size:11.2vw;
+            font-size:10.8vw;
         }
         @media #{$mq-large}{
             margin-bottom:$base;

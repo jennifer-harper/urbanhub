@@ -1,15 +1,15 @@
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "urbanDesk lightYellowTheme" } %} 
+{% set bodyAttributes ={ class: "urbanDesk purpleTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
 {% set page = craft.entries().section('urbanDesk').all() %} 
 
-{% set buttonClass = "yellow" %}
-{% set buttonClassContrast = "orange" %}
+{% set buttonClass = "purple" %}
+{% set buttonClassContrast = "purple" %}
 
-{% set main = "bg-yellow-light" %}
-{% set contrast = "bg-orange" %}
-{% set footer = "bg-orange" %}
+{% set main = "bg-purple-light" %}
+{% set contrast = "bg-purple-dark" %}
+{% set footer = "bg-purple-light" %}
 
 
 {% block head %} 
@@ -26,7 +26,7 @@
     {% include '_partials/sections/solutions-banner.twig' %}
     {% embed '_partials/sections/solutions-contrast.twig' %}
         {% block class %} {{main}} {% endblock %}
-        {% block colCount %} third {% endblock %}
+        {% block colCount %} quarter {% endblock %}
     {% endembed %}
     {% embed '_partials/sections/solutions-contrast-btm.twig' %}
         {% block class %}  {{main}} addons{% endblock %}
@@ -41,6 +41,7 @@
         {% include '_partials/sections/slider-intro.twig' %}
     {% include '_partials/sections/solutions-slider.twig' %}
 
+     {% include '_partials/footer/footer-page-banner.twig' %}
   {% endfor %} 
 {% endblock %}
 

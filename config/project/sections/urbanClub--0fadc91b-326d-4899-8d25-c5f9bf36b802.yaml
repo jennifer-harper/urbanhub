@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: urbanClub
-name: urbanClub
+name: UrbanClub
 propagationMethod: all
 siteSettings:
   2995eac9-2c30-433a-bd61-0390ff903010: # urbanhub

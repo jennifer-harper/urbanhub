@@ -1,4 +1,4 @@
-dateModified: 1711595736
+dateModified: 1712116724
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -15,9 +15,10 @@ meta:
   __names__:
     0c1682a4-44ac-44b0-b754-6d11996cf9fb: 'Paragraph ' # Paragraph 
     000d9077-2303-446e-b493-b672513247cc: UrbanDesk # UrbanDesk
-    0fadc91b-326d-4899-8d25-c5f9bf36b802: urbanClub # urbanClub
+    0fadc91b-326d-4899-8d25-c5f9bf36b802: UrbanClub # UrbanClub
     1c0594f9-f13e-4001-b05e-ef49fc7b0cf6: 'List Point' # List Point
     1e47f784-5868-477a-a65d-ccd20d3a2eaa: 'Contact Intros' # Contact Intros
+    01f4115a-eade-499a-bf94-f3c1056b9da4: 'SVG Image' # SVG Image
     2c308d3a-8354-44d8-aa18-c4ec048de789: Home # Home
     2ca3f21f-2832-4039-be1c-de50d73e0723: Button # Button
     2d4fd05a-7931-4151-ac2a-8e3011088cd5: Simple # Simple
@@ -35,7 +36,8 @@ meta:
     5ef0c0ef-acef-4853-9c10-e2c6aebe3235: 'Button External Link' # Button External Link
     5fe4741c-ddf0-4203-8a3a-507126d173ca: 'Group Fields' # Group Fields
     6eb48dc4-cde8-48e0-964e-628420361d69: 'group Fields' # group Fields
-    7a8a0776-f56b-445a-b99d-2ccaeb899a53: UrbanOffice # UrbanOffice
+    7a1645f6-a634-46ce-885f-a69c77f62e51: SVG # SVG
+    7af8b282-7c7b-4cb1-9ed8-8fb35f7f093d: 'Contact Us' # Contact Us
     7d73696a-27d3-438f-84cd-2d5fd1e9c0d5: 'Urban Solutions Slider' # Urban Solutions Slider
     8a4c4007-6c97-4f8b-86ea-bdfb3696a5e9: UrbanStudio # UrbanStudio
     8be806db-3051-4e01-a8a8-823d359dbfd2: Paragraph # Paragraph
@@ -47,20 +49,22 @@ meta:
     26dd4f0b-59ff-4617-974a-4ecc5a60c950: 'Table Editor' # Table Editor
     31a6a6cd-809b-4018-b66d-eb3c366fc392: TableEditor # TableEditor
     33cfdfc6-431e-464c-917f-25271d27922c: 'Title H2' # Title H2
+    34cab00e-4e02-42d6-a3fe-7d2f49769c4e: 'Slide Title' # Slide Title
     39d35486-b1b6-442d-95a0-f3d5dcdee6c9: 'Group Fields' # Group Fields
     41f1a3d3-a8fd-4e2a-ac05-b194f3063080: 'Selling Points' # Selling Points
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
-    55a2395c-c1e1-44dc-ab10-3eb438f40eaf: UrbanOffice # UrbanOffice
     71ffbd93-0d12-4ba4-b423-417fa3d2e68f: 'Button Text' # Button Text
     75c33b8a-3fbb-4031-9b40-b95976dc12ba: 'Sub Heading' # Sub Heading
     75fe64f6-ab16-4d2c-9322-e1bb839f4845: UrbanSuite # UrbanSuite
     82f704c3-36ac-4f0d-b835-560746906020: 'Button Text' # Button Text
     83c78d90-8c41-4ef1-a2ef-1c5110162342: Image # Image
+    83ec1284-d751-46da-989b-5ef46b55b332: 'UrbanClub Slider' # UrbanClub Slider
     92ee1b66-7b2d-43c4-aefc-08ae23a54dda: 'Business Phone' # Business Phone
     94ae2f64-db35-47c0-907e-b853e95b3ce5: Heading # Heading
     0249f9a4-8d76-43b5-bf70-de0e1aebee56: Heading # Heading
     319d4674-6b0e-4027-abdc-23a8fe7bcf1f: UrbanSuite # UrbanSuite
     368e19da-aed2-4692-949d-976508166279: 'Page Title' # Page Title
+    497bf365-748a-48ed-bf4e-0531bd5a8739: 'Contact Us' # Contact Us
     579edee1-2038-493a-ac4d-971bb6552e9d: 'Business Information' # Business Information
     701d3032-1766-4e06-979c-fd973c6b51e8: Paragraph # Paragraph
     745e6158-28f3-446a-883f-91c614885da5: 'Intro Paragraph' # Intro Paragraph
@@ -68,12 +72,14 @@ meta:
     820e4067-5880-4edb-9cba-20c3597f35ba: 'Enviro Slider' # Enviro Slider
     0922d403-58e1-43e9-9968-a0d39895a2ef: 'Business Phone ' # Business Phone 
     1089edbe-d415-44fb-84ec-54cc1bd33633: 'Space Description' # Space Description
+    1659e5a2-3f78-4f72-9feb-b880311a241b: 'Information Points' # Information Points
     2995eac9-2c30-433a-bd61-0390ff903010: urbanhub # urbanhub
     4086dd2d-a840-4155-b992-eecd835319cc: 'Dollar Sign' # Dollar Sign
     4299af30-f9c7-48d6-922c-045249174b4a: Heading # Heading
     04877c62-92fa-436b-95c0-204552480b37: 'Footer Banner' # Footer Banner
     5978cdef-8681-4576-a979-1eb00326e5ea: 'Group Fields' # Group Fields
     6221ad00-05cc-4298-9ace-e6d2b6303c91: 'Button text' # Button text
+    7947d890-19f4-48df-9f6d-c207065259fe: 'Slider Image' # Slider Image
     08320fd1-0901-49fc-9707-c330852e1991: UrbanMeet # UrbanMeet
     9758e6f4-7462-4750-9d36-440d40e64643: 'Sub Heading' # Sub Heading
     9972ba3c-d91b-450a-b432-1f5051cbad28: 'Explore Our Spaces' # Explore Our Spaces
@@ -107,9 +113,10 @@ meta:
     c093fd38-7d2d-4d3d-b514-a314fa8fd189: 'Page Intro Paragraph' # Page Intro Paragraph
     c1bf7809-a0ec-476f-84d4-9d9bb2f451f4: 'Page Name' # Page Name
     c4fd8b25-a19f-4ccc-a013-d0fc9e5ce8b9: Other # Other
+    c8f2d681-0ee8-4b7a-9344-17acc58a1ffb: 'List Items' # List Items
     c406e842-e9ae-4fa0-9851-a74a6f9cedf2: Home # Home
     c6883bfd-18a2-4828-9c01-a69a1e1f7c0b: USPs # USPs
-    c683597a-6bd9-44dc-ae52-4793c8d189d6: urbanClub # urbanClub
+    c683597a-6bd9-44dc-ae52-4793c8d189d6: UrbanClub # UrbanClub
     c4688891-b1d6-4575-a601-60d55c055e0b: tables # tables
     c9568162-a2ec-4e6f-a89e-d0366292c4be: 'Slider Image' # Slider Image
     d08c9cda-b4c0-42b0-a7e5-c654a94f6fa2: Pargraph # Pargraph

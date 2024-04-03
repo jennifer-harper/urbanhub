@@ -348,6 +348,108 @@ fieldLayouts:
         name: Slider
         uid: 8a42a91e-947a-4d19-b82d-807677df0db3
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 34804f61-aab1-4122-8907-cc55a4677fa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6a19b7d6-a4ef-4b48-8a22-99652fb22b5b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fc5656c9-ee2c-497e-bab5-2bb3f236be53 # Footer Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09e8c96d-2274-48ee-a285-a439ed2baa0a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 89723374-3eac-4abc-b3ad-1bbd27091648 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc207ae6-bcbd-43f2-9105-c9fd35e4edc8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ea48c9dc-6e22-48a2-8f56-385fa9fa259e # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f56ab685-fa32-4fcc-89df-22e45916d1ff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b780b22-e03b-4537-bd01-74db803e4b3a # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7a1a5e7a-020f-4353-a249-3e09bd0d26fb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d08c9cda-b4c0-42b0-a7e5-c654a94f6fa2 # Pargraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f4aeda51-cdaf-4829-9874-810ded299804
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4d32e2df-7698-415c-9640-62e6787a0270 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f5e0df68-ddd4-440a-a133-ca95848c175a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d48d0ef1-ee78-4bd5-8dc8-21ad80e2eb5e # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac061256-5ffc-4cd9-bb47-89d755146953
+            userCondition: null
+            warning: null
+            width: 100
+        name: Footer
+        uid: 9d7b5797-79a9-42cd-a594-019417844327
+        userCondition: null
 handle: urbanstudio
 hasTitleField: false
 name: UrbanStudio

@@ -1,16 +1,16 @@
    
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "urbanSuite blueTheme" } %} 
+{% set bodyAttributes ={ class: "urbanSuite" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
-{% set page = craft.entries().section('home').all() %} 
+{% set page = craft.entries().section('urbanSuite').all() %} 
 
-{% set buttonClass = "blue" %}
-{% set buttonClassContrast = "blue-light" %}
+{% set buttonClass = "green-light" %}
+{% set buttonClassContrast = "green" %}
 
-{% set main = "bg-blue-dark" %}
-{% set contrast = "bg-blue-light" %}
-{% set footer = "bg-blue-light" %}
+{% set main = "bg-green-light" %}
+{% set contrast = "bg-green-dark" %}
+{% set footer = "bg-green-dark" %}
 
 
 
@@ -30,11 +30,11 @@
     {% include '_partials/sections/solutions-banner.twig' %}
 
     {% embed '_partials/sections/solutions-contrast.twig' %}
-        {% block class %} {{main}} dark{% endblock %}
-        {% block colCount %} third {% endblock %}
+        {% block class %} {{main}} {% endblock %}
+        {% block colCount %} third{% endblock %}
     {% endembed %}
     {% embed '_partials/sections/solutions-contrast-btm.twig' %}
-        {% block class %}  {{main}} dark addons{% endblock %}
+        {% block class %}  {{main}} addons{% endblock %}
         {% block colCount %} half {% endblock %}
     {% endembed %}
 
@@ -48,8 +48,6 @@
 
      {% include '_partials/footer/footer-page-banner.twig' %}
 
-  {# {% include '_partials/footer/social-media.twig' %}
- {% include '_partials/footer/contact-section.twig' %} #}
   {% endfor %} 
 {% endblock %}
 
