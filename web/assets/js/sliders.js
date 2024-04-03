@@ -9,6 +9,9 @@ var swiper = new Swiper('.slider-urban-solutions', {
 
   breakpoints: {
     1024: {
+      slidesPerView: 2,
+    },
+    1366: {
       slidesPerView: 1.7,
     },
   },

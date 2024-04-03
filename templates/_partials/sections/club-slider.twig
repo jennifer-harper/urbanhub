@@ -1,4 +1,4 @@
-<div class="slider-intro flex-wrap pad-all heading-btn-wrapper border-btm border-color">
+<div class="slider-intro club flex-wrap pad-all heading-btn-wrapper border-btm border-color">
     <div class=" pad-sides no-left">
         <div class="slider-btn-wrapper">
             <div class="swiper-button-next">
@@ -9,19 +9,19 @@
             </div>
       </div>
     </div>
-    <div class="flex-wrap ">
+    <div class="flex-wrap">
         {% if entry.heading7 %}
             {{entry.heading7}}
         {% endif %}
     </div>
 </div>
 
-<div class="swiper slider-urban-solutions">
+<div class="swiper slider-urban-solutions border-btm border-color">
     <div class="swiper-wrapper">
         {% for block in entry.urbanclubSlider %}
                 {% if block.type == 'informationPoints' %}
                 <div class="swiper-slide border-right border-color no-border-mobile">
-                   <div class="pad-all">
+                   <div class="pad-all ">
                         <div class="flex-wrap">
                             <div class="half">
                                 {% if block.slideTitle %}
@@ -35,15 +35,15 @@
                                 {% endif %}
                             </div>
                         </div>
-                        <div class="underline-list">
-                                 {% if block.listItems %}
-                                    {{block.listItems}}
-                                {% endif %}
+                        <div class="underline-list-slider">
+                            {% if block.listItems %}
+                                {{block.listItems}}
+                            {% endif %}
                         </div>
                     </div>
                 </div>
-                                    {% endif %}
-                                {% endfor %}
+            {% endif %}
+        {% endfor %}
     </div>
 </div>
 
