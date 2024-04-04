@@ -1,0 +1,18 @@
+<div class="centered-hero {% block class %} {% endblock %}">
+    <div class="pad-all">
+        <div class="text-center max-title max-hero">
+        {% if entry.headingH1 %}
+            {{entry.headingH1}}
+        {% endif %}
+        <div class="intro-text">
+        {% if entry.introParagraph2 %}
+            {{entry.introParagraph2}}
+        {% endif %}
+        </div>
+
+        {% if entry.paragraph2 %}
+            {{entry.paragraph2}}
+        {% endif %}
+        </div>
+    </div>
+</div>

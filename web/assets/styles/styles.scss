@@ -236,14 +236,22 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     @media #{$mq-medium}{
         &.max-title{
-            max-width:55%;
+            max-width:75%;
             margin-left: auto;
             margin-right:auto;
             p{
-                max-width: 700px;
+                max-width: 650px;
                 margin-left: auto;
                 margin-right:auto;
             }
+        }
+        &.max-hero{
+            max-width:75%;
+        }
+    }
+    @media #{$mq-large}{
+        &.max-title{
+            max-width:55%;
         }
     }
 }
@@ -311,6 +319,9 @@ h3{
 
 
 @media #{$mq-large} {
+    h1{
+        font-size:5.4vw; 
+    }
   h3{
     font-size: 2.2vw;
   }
@@ -409,7 +420,7 @@ svg {
         padding-top:0
     }
     &.no-bottom{
-        padding-top:0
+        padding-bottom:0
     }
     &.no-left{
         padding-left:0
@@ -521,6 +532,7 @@ svg {
             position: relative;
             flex:1;
             flex-basis: 50%;
+            width: 50%;
             &.grow-vis{
                 flex-basis: 65%;
             }
@@ -586,7 +598,7 @@ svg {
 //-------Buttons-----------//
 .btn{
     display: flex;
-    margin-top: 50px;
+    margin-top: 3vw;
     a{
         padding: $base-font-size*.5;
         display: flex;
@@ -802,7 +814,9 @@ svg {
     background-color: $brown;
     fill:$brown;
 }
-
+.bg-light{
+    background-color: $light;
+}
 .bg-warm{
     background-color: $light-warm;
 }
@@ -989,6 +1003,15 @@ svg {
     }
     .logo{
         fill:$green-light
+    }
+}
+
+.greenTheme{
+    .nav{
+        background-color: $green-light;
+    }
+    .bg-green-light .highlight{
+        fill:$light;
     }
 }
 
@@ -1238,6 +1261,7 @@ svg {
     h1,h2,h3,p, a, li{
         color:$purple-dark;  
     }
+    .star-banner-wrapper .star-banner .light,
     .illustration-fill,
     .tick,
     .highlight,
@@ -1256,8 +1280,19 @@ svg {
         .btn a p{
             color:$purple-dark;
         }
+        .highlight,
+        &.star-banner-wrapper .star-banner .light{
+            fill:$light;
+        }
 
+        .right-mask,
+        .left-mask,
+        .bottom-mask{
+            fill:$purple-dark
+        }
     }
+
+
     .underline-list li{
         border-color:$purple-dark;
     }
@@ -1289,10 +1324,13 @@ svg {
     h1,h2,h3,p, a, li{
         color:$blue-dark;  
     }
+    h1 i .highlight{
+        fill:$light;
+    }
     .underline-list li{
         border-color:$blue-dark;
     }
-    .highlight,
+   h2 .highlight,
     .star-banner-wrapper .star-banner .light,
     .little-star{
         fill: $blue-light;
@@ -1302,7 +1340,7 @@ svg {
             fill: $blue-dark;
         }  
     }
-.logo,
+    .logo,
     .social-media{
         fill: $blue-dark;
     }
@@ -1425,6 +1463,7 @@ svg {
                 margin-top:$md;
                 font-family: $body-font;
                 margin-bottom: $base-font-size;
+                font-weight: 100;
             }
             a{
                 display: block;
@@ -1438,7 +1477,11 @@ svg {
     }
 }
 
-//-------Solutions pages-----------//
+
+
+
+
+//-------Solutions sections-----------//
 
 .solutions-mask h2{
     @media #{$mq-figma}{
@@ -1455,6 +1498,7 @@ svg {
         }
     }
 }
+
 .hero-solutions{
     .center-style{
         img.max-75{
@@ -1469,18 +1513,17 @@ svg {
         } 
     }
 }
-
-
-// .table-section.dark,
-// .table-banner,
-// .hero-solutions,
-// .center-banner,
-// .solutions-banner{
-//     h1 svg,
-//     h2 svg{
-//         bottom:-20px;
-//     }
-// }
+.centered-section,
+.table-section.dark,
+.table-banner,
+.hero-solutions,
+.center-banner,
+.solutions-banner{
+    h1 svg,
+    h2 svg{
+        bottom:-20px;
+    }
+}
 
 
 .solutions-contrast-btm:not(.bg-green-dark),
@@ -1986,4 +2029,47 @@ tbody{
         }
     }
 
+}
+
+.the-building{
+    .centered-section{
+        .text-center{
+            text-align: left;
+        }
+    }
+    @media #{$mq-medium}{
+        .centered-section{
+            .text-center{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.contact-us{
+    .hero{
+        padding-top:$md;
+        @media #{$mq-medium}{
+            p:not(.btn p){
+                max-width: 80%;
+            }
+        }
+    }
+    .solutions-mask{
+        .intro-text{
+            margin-bottom: 3vw;
+        }
+        .btn,
+        .little-star{
+            margin-top:1vw;
+        }
+    }
+    .footer-banner ul li{
+        p,a{
+            color:$light;
+        }
+    }
+    .logo .logo-star{
+        fill:$light;
+    }
 }

@@ -1,4 +1,4 @@
-dateModified: 1712191211
+dateModified: 1712271047
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -23,6 +23,7 @@ meta:
     2ca3f21f-2832-4039-be1c-de50d73e0723: Button # Button
     2d4fd05a-7931-4151-ac2a-8e3011088cd5: Simple # Simple
     2ee914a2-b05d-4c31-a59b-9919788305a7: Image # Image
+    3d94fda3-efd1-473e-883d-19ce15bc6846: Neighbourhood # Neighbourhood
     3e1bb40d-9000-497a-9b75-2f18c808ddd9: Paragraph # Paragraph
     3ee36c75-6798-4bd2-8772-cbaf669e7981: 'Space Selling Points' # Space Selling Points
     4c8bceef-38e6-4299-9198-ae6c832a644c: 'Price Quantity' # Price Quantity
@@ -80,6 +81,7 @@ meta:
     4086dd2d-a840-4155-b992-eecd835319cc: 'Dollar Sign' # Dollar Sign
     4299af30-f9c7-48d6-922c-045249174b4a: Heading # Heading
     04877c62-92fa-436b-95c0-204552480b37: 'Footer Banner' # Footer Banner
+    5223c8c7-2042-4fd7-b0e3-58ee93a5421e: Neighbourhood # Neighbourhood
     5978cdef-8681-4576-a979-1eb00326e5ea: 'Group Fields' # Group Fields
     6221ad00-05cc-4298-9ace-e6d2b6303c91: 'Button text' # Button text
     6947bebf-8056-426b-b5b5-a1e58e6bb36d: 'The Building' # The Building
@@ -113,6 +115,7 @@ meta:
     b5908f86-11d8-49a9-b0fc-1dc187009d66: 'Space Type' # Space Type
     bb2e6aac-abcc-4744-9ee7-250b2502df0d: 'Intro Paragraph' # Intro Paragraph
     bdaa862b-f4c9-44a8-8e83-355b31b152cb: Footer # Footer
+    bfb7b42f-4864-40c5-861c-2e94d9335067: Heading # Heading
     c06f5252-560d-4a13-98d7-2fe4e378328b: Paragraph # Paragraph
     c093fd38-7d2d-4d3d-b514-a314fa8fd189: 'Page Intro Paragraph' # Page Intro Paragraph
     c1bf7809-a0ec-476f-84d4-9d9bb2f451f4: 'Page Name' # Page Name

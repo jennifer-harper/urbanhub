@@ -1,0 +1,18 @@
+<div class="centered-section {% block class %} {% endblock %}">
+    <div class="pad-all">
+        <div class="text-center max-title">
+        {% if entry.heading4 %}
+            {{entry.heading4}}
+        {% endif %}
+        <div class="intro-text">
+        {% if entry.introParagraph4 %}
+            {{entry.introParagraph4}}
+        {% endif %}
+        </div>
+
+        {% if entry.paragraph4 %}
+            {{entry.paragraph4}}
+        {% endif %}
+        </div>
+    </div>
+</div>

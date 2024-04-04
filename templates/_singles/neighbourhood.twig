@@ -1,0 +1,30 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "neighbourhood purpleTheme" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('neighbourhood').all() %} 
+
+{% set buttonClass = "purple" %}
+{% set buttonClassContrast = "purple" %}
+
+{# //background color #}
+{% set main = "bg-purple-dark" %}
+{# //alternate star color #}
+{% set contrast = "bg-purple-dark" %}
+{% set footer = "bg-purple-light" %}
+
+
+
+{% block content %} 
+  {% for entry in page %} 
+    {% include '_partials/hero/hero-mask.twig' %}
+    {% include '_partials/sections/star-banner-section.twig' %}
+    {% embed '_partials/sections/solutions-mask-reverse.twig' %}
+        {% block class %}{{main}} dark{% endblock %}
+    {% endembed %}
+    {# {% include '_partials/footer/social-media.twig' %} #}
+    {% include '_partials/footer/contact-section.twig' %}
+    {% include '_partials/footer/map.twig' %}
+  {% endfor %} 
+{% endblock %}
+

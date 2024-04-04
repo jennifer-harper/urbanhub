@@ -176,14 +176,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (min-width: 64em) {
   .text-center.max-title {
-    max-width: 55%;
+    max-width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
   .text-center.max-title p {
-    max-width: 700px;
+    max-width: 650px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .text-center.max-hero {
+    max-width: 75%;
+  }
+}
+@media (min-width: 85.375em) {
+  .text-center.max-title {
+    max-width: 55%;
   }
 }
 
@@ -241,6 +249,9 @@ h3 {
   }
 }
 @media (min-width: 85.375em) {
+  h1 {
+    font-size: 5.4vw;
+  }
   h3 {
     font-size: 2.2vw;
   }
@@ -337,7 +348,7 @@ svg {
   padding-top: 0;
 }
 .pad-all.no-bottom {
-  padding-top: 0;
+  padding-bottom: 0;
 }
 .pad-all.no-left {
   padding-left: 0;
@@ -441,6 +452,7 @@ svg {
     position: relative;
     flex: 1;
     flex-basis: 50%;
+    width: 50%;
   }
   .flex-wrap .half.grow-vis {
     flex-basis: 65%;
@@ -494,7 +506,7 @@ svg {
 
 .btn {
   display: flex;
-  margin-top: 50px;
+  margin-top: 3vw;
 }
 .btn a {
   padding: 0.5em;
@@ -687,6 +699,10 @@ svg {
   fill: #582F07;
 }
 
+.bg-light {
+  background-color: #FAF6F0;
+}
+
 .bg-warm {
   background-color: #FAF6F0;
 }
@@ -862,6 +878,13 @@ svg {
 }
 .bg-green-dark .logo {
   fill: #BAE2A6;
+}
+
+.greenTheme .nav {
+  background-color: #BAE2A6;
+}
+.greenTheme .bg-green-light .highlight {
+  fill: #FAF6F0;
 }
 
 .orangeTheme h1, .orangeTheme h2, .orangeTheme h3, .orangeTheme p, .orangeTheme a, .orangeTheme li, .orangeTheme table {
@@ -1048,6 +1071,7 @@ svg {
 .purpleTheme h1, .purpleTheme h2, .purpleTheme h3, .purpleTheme p, .purpleTheme a, .purpleTheme li {
   color: #272641;
 }
+.purpleTheme .star-banner-wrapper .star-banner .light,
 .purpleTheme .illustration-fill,
 .purpleTheme .tick,
 .purpleTheme .highlight,
@@ -1063,6 +1087,14 @@ svg {
 }
 .purpleTheme .bg-purple-dark .btn a p {
   color: #272641;
+}
+.purpleTheme .bg-purple-dark .highlight, .purpleTheme .bg-purple-dark.star-banner-wrapper .star-banner .light {
+  fill: #FAF6F0;
+}
+.purpleTheme .bg-purple-dark .right-mask,
+.purpleTheme .bg-purple-dark .left-mask,
+.purpleTheme .bg-purple-dark .bottom-mask {
+  fill: #272641;
 }
 .purpleTheme .underline-list li {
   border-color: #272641;
@@ -1088,10 +1120,13 @@ svg {
 .lightBlueTheme h1, .lightBlueTheme h2, .lightBlueTheme h3, .lightBlueTheme p, .lightBlueTheme a, .lightBlueTheme li {
   color: #253C40;
 }
+.lightBlueTheme h1 i .highlight {
+  fill: #FAF6F0;
+}
 .lightBlueTheme .underline-list li {
   border-color: #253C40;
 }
-.lightBlueTheme .highlight,
+.lightBlueTheme h2 .highlight,
 .lightBlueTheme .star-banner-wrapper .star-banner .light,
 .lightBlueTheme .little-star {
   fill: #6AC4D1;
@@ -1215,6 +1250,7 @@ svg {
   margin-top: 3vw;
   font-family: "commuters-sans", sans-serif;
   margin-bottom: 1em;
+  font-weight: 100;
 }
 .contact div.sm div:last-of-type a {
   display: block;
@@ -1247,6 +1283,21 @@ svg {
   .hero-solutions .center-style img.max-75 {
     margin-left: auto;
   }
+}
+
+.centered-section h1 svg,
+.centered-section h2 svg,
+.table-section.dark h1 svg,
+.table-section.dark h2 svg,
+.table-banner h1 svg,
+.table-banner h2 svg,
+.hero-solutions h1 svg,
+.hero-solutions h2 svg,
+.center-banner h1 svg,
+.center-banner h2 svg,
+.solutions-banner h1 svg,
+.solutions-banner h2 svg {
+  bottom: -20px;
 }
 
 .solutions-contrast-btm:not(.bg-green-dark) .highlight,
@@ -1694,6 +1745,37 @@ tbody tr:first-of-type td {
   .urbanClub .slider-urban-solutions h3 {
     font-size: 40px;
   }
+}
+
+.the-building .centered-section .text-center {
+  text-align: left;
+}
+@media (min-width: 64em) {
+  .the-building .centered-section .text-center {
+    text-align: center;
+  }
+}
+
+.contact-us .hero {
+  padding-top: 3vw;
+}
+@media (min-width: 64em) {
+  .contact-us .hero p:not(.btn p) {
+    max-width: 80%;
+  }
+}
+.contact-us .solutions-mask .intro-text {
+  margin-bottom: 3vw;
+}
+.contact-us .solutions-mask .btn,
+.contact-us .solutions-mask .little-star {
+  margin-top: 1vw;
+}
+.contact-us .footer-banner ul li p, .contact-us .footer-banner ul li a {
+  color: #FAF6F0;
+}
+.contact-us .logo .logo-star {
+  fill: #FAF6F0;
 }
 
 /*# sourceMappingURL=styles.css.map */

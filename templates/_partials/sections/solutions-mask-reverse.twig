@@ -1,0 +1,37 @@
+<div class="flex-wrap solutions-mask {% block class %}{% endblock %}">
+    <div class="pad-all half flex-wrap col center-style no-btm"> 
+        {% if entry.heading %}
+            {{entry.heading}}
+        {% endif %}
+        {% if entry.heading6 %}
+                {{entry.heading6}}
+        {% endif %}
+
+
+        <div class="flex-wrap inner just-cont-space-btw">
+        {% if entry.paragraph %}
+            <div class="">
+                {{entry.paragraph}}
+            </div>
+        {% endif %}
+            <div class="flex-wrap ">
+            {% include '_partials/svgs/little-star.twig' %}
+            </div>
+        </div>
+
+    </div>
+    {% set image2 = entry.image2.one() %}
+    {% if image2 %}
+        <div class="half mask-wrapper" style="background-image:url({{ image2.getUrl() }})">
+            {% include '_partials/masks/right-mask.twig' %}
+            {% include '_partials/masks/bottom-mask.twig' %}
+        </div>
+    {% else %}
+        <div class="half mask-wrapper">
+            {% include '_partials/masks/right-mask.twig' %}
+            {% include '_partials/masks/bottom-mask.twig' %}
+        </div>
+    {% endif %}
+
+
+</div>

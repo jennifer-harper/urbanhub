@@ -30,16 +30,20 @@
         {% endif %}
 
 
-        <div class="flex-wrap inner just-cont-space-btw">
-            <ul class="underline-list">
-                {% for block in entry.lists %}
+        <div class="flex-wrap row flex-jc-sb">
+            <div>
+                {% for block in entry.buttonExternalLink %}
                     {% if block.type == 'groupFields' %}
-                        {% if block.listPoint %}
-                            <li>{{block.listPoint}}</li>
-                        {% endif %}
-                    {% endif %}                           
+                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                        {% set buttonLink = block.buttonLink[0].url ?? '/contact-us' %}
+                        {% embed '_partials/button' %}
+                            {% block class %}{{buttonClass}}{% endblock %}
+                            {% block title %}{{buttonText}} {% endblock %}
+                            {% block url %}{{buttonLink}} {% endblock %}
+                        {% endembed %} 
+                    {% endif %}
                 {% endfor %}
-            </ul>
+            </div>
             <div class="flex-wrap ">
             {% include '_partials/svgs/little-star.twig' %}
             </div>

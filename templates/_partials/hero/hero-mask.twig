@@ -1,5 +1,19 @@
-<div class="flex-wrap border-btm border-color no-border-mobile hero-solutions">
-    <div class="pad-all border-right no-border-mobile border-color half"> 
+<div class="flex-wrap solutions-mask hero-solutions{% block class %}{% endblock %}">
+
+    {% set image = entry.image.one() %}
+    {% if image %}
+        <div class="half mask-wrapper" style="background-image:url({{ image.getUrl() }})">
+            {% include '_partials/masks/right-mask.twig' %}
+            {% include '_partials/masks/bottom-mask.twig' %}
+        </div>
+    {% else %}
+            <div class="half mask-wrapper">
+                {% include '_partials/masks/right-mask.twig' %}
+                {% include '_partials/masks/bottom-mask.twig' %}
+            </div>
+    {% endif %}
+
+    <div class="pad-all half"> 
         <div class="">
             {% if entry.pageName %}
                 <div class="header-intro">
@@ -49,18 +63,4 @@
             </div>
         </div>
     </div>
-    <div class="pad-top-btm pad-sides half center-style">
-    {% if entry.image|length %}
-        {% set image = entry.image.one() %}
-        <img class="max-75" src="{{ image.url }}" alt="{{ image.alt }}">
-    {% else %}
-        {% set illustrationFallback = businessInformation.image2.one() %}
-        <div class="half mask-wrapper" style="background-image:url({{ illustrationFallback.getUrl() }})">
-            {% include '_partials/masks/right-mask.twig' %}
-            {% include '_partials/masks/bottom-mask.twig' %}
-        </div>
-    {% endif %}
-    </div>
 </div>
-
-

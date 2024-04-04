@@ -1,0 +1,23 @@
+columnSuffix: dbnsdfgp
+contentColumnType: text
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: headingH1
+instructions: null
+name: Heading
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: a72e886d-5deb-4c6e-9dea-5a690a3f141b # Title h1
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field
