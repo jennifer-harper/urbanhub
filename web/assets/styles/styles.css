@@ -420,6 +420,7 @@ svg {
 .flex-wrap.row {
   flex-direction: row;
 }
+.flex-wrap .third,
 .flex-wrap .quarter {
   flex-basis: 100%;
 }
@@ -1090,12 +1091,15 @@ svg {
 .lightBlueTheme .underline-list li {
   border-color: #253C40;
 }
+.lightBlueTheme .highlight,
+.lightBlueTheme .star-banner-wrapper .star-banner .light,
 .lightBlueTheme .little-star {
   fill: #6AC4D1;
 }
 .lightBlueTheme .bg-blue-light .little-star {
   fill: #253C40;
 }
+.lightBlueTheme .logo,
 .lightBlueTheme .social-media {
   fill: #253C40;
 }
@@ -1252,6 +1256,16 @@ svg {
 
 .solutions-contrast .highlight {
   bottom: -10px;
+}
+
+.solutions-contrast.other h3 {
+  margin-bottom: 0;
+}
+.solutions-contrast.other .little-star {
+  margin-top: 0;
+}
+.solutions-contrast.other .btn {
+  justify-content: flex-end;
 }
 
 @media (min-width: 64em) {

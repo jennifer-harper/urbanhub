@@ -1,30 +1,16 @@
 <div class="pad-all for-sm border-top border-color flex-wrap contact">            
-    <div class="pad-all sm ">
+    <div class="pad-all sm third">
         <div>
-            {% if businessInformation.headingH3 %}
-                {{ businessInformation.headingH3 }}
-            {% endif %}
-            {% if businessInformation.paragraph %}
-                {{ businessInformation.paragraph }}
-            {% endif %}
-        </div>
-        <div>
+        <h3>Take a <i>tour</i></h3>
             <p>Location</p>
             {% if businessInformation.businessAddress %}
                 {{ businessInformation.businessAddress }}
             {% endif %}
         </div>
     </div>
-    <div class="pad-all sm ">
+    <div class="pad-all sm third">
         <div>
-            {% if businessInformation.headingH3a %}
-                {{ businessInformation.headingH3a }}
-            {% endif %}
-            {% if businessInformation.paragraph2 %}
-                {{ businessInformation.paragraph2 }}
-            {% endif %}
-        </div>
-        <div>
+            <h3><i>Talk</i> to us</h3>
             <p>Contact</p>
             {% if businessInformation.businessPhone %}
             <a  href="tel:{{businessInformation.businessPhone}}">
@@ -35,16 +21,9 @@
             {% endif %}
         </div>
     </div>
-    <div class="pad-all sm ">
+    <div class="pad-all sm third">
         <div>
-            {% if businessInformation.headingH3b %}
-                {{ businessInformation.headingH3b }}
-            {% endif %}
-            {% if businessInformation.introParagraph %}
-                {{ businessInformation.introParagraph }}
-            {% endif %}
-        </div>
-        <div>
+            <h3><i>Move</i> in</h3>
             <p>Enquire</p>
             {% if businessInformation.businessEmail %}
                 <a class="email" href=" mailto:{{businessInformation.businessEmail}}"> 

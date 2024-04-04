@@ -1,0 +1,35 @@
+<div class="solutions-contrast other pad-all{% block class %} {% endblock %}">
+    <div class="">
+        <div class="">
+        {% if entry.heading3 %}
+            {{entry.heading3}}
+        {% endif %}
+        </div>
+    </div>
+    <div class="pad-top-btm">
+        <div class="flex-wrap wrap border-top border-left border-color-contrast">
+            {% for block in entry.gridSm %}
+                {% if block.type == 'groupFields' %}
+                <div class="flex-wrap  flex-jc-sb pad-all sm border-btm  border-right border-color-contrast row {% block colCount %} {% endblock %}">
+                    <div>
+                        {% if block.subHeading %}
+                            {{block.subHeading}}
+                        {% endif %}
+                    </div>
+                    <div class="">
+                        {% include '_partials/svgs/little-star.twig' %}
+                    </div>
+                </div>
+                {% endif %}                           
+            {% endfor %}
+        </div>
+    </div> 
+
+    {% set buttonText = block.buttonText ?? 'Enquire now' %}
+    {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+    {% embed '_partials/button' %}
+        {% block class %}{{buttonClassContrast}} no-marg-top {% endblock %}
+        {% block title %}{{buttonText}} {% endblock %}
+        {% block url %}{{buttonPageLink}} {% endblock %}
+    {% endembed %} 
+</div>

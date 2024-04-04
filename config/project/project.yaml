@@ -1,4 +1,4 @@
-dateModified: 1712116724
+dateModified: 1712191211
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -53,12 +53,14 @@ meta:
     39d35486-b1b6-442d-95a0-f3d5dcdee6c9: 'Group Fields' # Group Fields
     41f1a3d3-a8fd-4e2a-ac05-b194f3063080: 'Selling Points' # Selling Points
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
+    64c6c4b0-3771-452d-b41d-3d5e76d3c29f: 'Grid sm' # Grid sm
     71ffbd93-0d12-4ba4-b423-417fa3d2e68f: 'Button Text' # Button Text
     75c33b8a-3fbb-4031-9b40-b95976dc12ba: 'Sub Heading' # Sub Heading
     75fe64f6-ab16-4d2c-9322-e1bb839f4845: UrbanSuite # UrbanSuite
     82f704c3-36ac-4f0d-b835-560746906020: 'Button Text' # Button Text
     83c78d90-8c41-4ef1-a2ef-1c5110162342: Image # Image
     83ec1284-d751-46da-989b-5ef46b55b332: 'UrbanClub Slider' # UrbanClub Slider
+    89ab8da2-1d0d-4a82-b3e2-f02e20693164: 'The Building' # The Building
     92ee1b66-7b2d-43c4-aefc-08ae23a54dda: 'Business Phone' # Business Phone
     94ae2f64-db35-47c0-907e-b853e95b3ce5: Heading # Heading
     0249f9a4-8d76-43b5-bf70-de0e1aebee56: Heading # Heading
@@ -66,6 +68,7 @@ meta:
     368e19da-aed2-4692-949d-976508166279: 'Page Title' # Page Title
     497bf365-748a-48ed-bf4e-0531bd5a8739: 'Contact Us' # Contact Us
     579edee1-2038-493a-ac4d-971bb6552e9d: 'Business Information' # Business Information
+    612a75b6-bb1a-4004-a25b-c23798ef3cf2: 'Group Fields' # Group Fields
     701d3032-1766-4e06-979c-fd973c6b51e8: Paragraph # Paragraph
     745e6158-28f3-446a-883f-91c614885da5: 'Intro Paragraph' # Intro Paragraph
     750ece67-3956-41c0-9b8f-90dc48596ad9: Heading # Heading
@@ -79,6 +82,7 @@ meta:
     04877c62-92fa-436b-95c0-204552480b37: 'Footer Banner' # Footer Banner
     5978cdef-8681-4576-a979-1eb00326e5ea: 'Group Fields' # Group Fields
     6221ad00-05cc-4298-9ace-e6d2b6303c91: 'Button text' # Button text
+    6947bebf-8056-426b-b5b5-a1e58e6bb36d: 'The Building' # The Building
     7947d890-19f4-48df-9f6d-c207065259fe: 'Slider Image' # Slider Image
     08320fd1-0901-49fc-9707-c330852e1991: UrbanMeet # UrbanMeet
     9758e6f4-7462-4750-9d36-440d40e64643: 'Sub Heading' # Sub Heading
@@ -141,6 +145,7 @@ meta:
     f672ccdb-eed8-47b2-84de-d4340a6f30fa: 'Contact Detail' # Contact Detail
     f996c36d-5af0-49f8-8dec-ec87c5f71580: 'Group Fields' # Group Fields
     fa573d0d-05be-480f-b5c8-2eb4c7420d0c: Lists # Lists
+    fab56143-0785-45a8-b72b-a18482e4cafe: 'Sub Heading' # Sub Heading
     fc5656c9-ee2c-497e-bab5-2bb3f236be53: 'Footer Button' # Footer Button
 plugins:
   ckeditor:

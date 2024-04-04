@@ -1,9 +1,7 @@
 
 <div class="social-media flex-wrap pad-all flex-align-end-style border-top border-color">
     <div class="half">
-        {% if businessInformation.heading %}
-            {{businessInformation.heading}}
-        {% endif %}
+        <h2>{% block title %}Get Started {% endblock %}</h2>
 
         {% for block in entry.button %}
             {% if block.type == 'groupFields' %}

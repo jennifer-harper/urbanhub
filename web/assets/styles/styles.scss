@@ -497,6 +497,7 @@ svg {
     &.row{
         flex-direction:row; 
     }
+    .third,
     .quarter{
         flex-basis: 100%;
     }
@@ -1134,6 +1135,7 @@ svg {
             }
         }
     }
+
     .illustration-fill,
     .highlight,
     .tick{
@@ -1290,7 +1292,8 @@ svg {
     .underline-list li{
         border-color:$blue-dark;
     }
-
+    .highlight,
+    .star-banner-wrapper .star-banner .light,
     .little-star{
         fill: $blue-light;
     }
@@ -1299,7 +1302,7 @@ svg {
             fill: $blue-dark;
         }  
     }
-
+.logo,
     .social-media{
         fill: $blue-dark;
     }
@@ -1492,6 +1495,17 @@ svg {
     .highlight{
         bottom:-10px;
     } 
+}
+.solutions-contrast.other {
+    h3{
+       margin-bottom: 0;
+    } 
+    .little-star{
+        margin-top:0
+    }
+    .btn{
+        justify-content: flex-end; 
+    }
 }
 
 .table-banner.dark{

@@ -1,0 +1,50 @@
+field: 64c6c4b0-3771-452d-b41d-3d5e76d3c29f # Grid sm
+fieldLayouts:
+  dd5a98eb-80a2-4962-941a-c72831458f8a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: fab56143-0785-45a8-b72b-a18482e4cafe # Sub Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 82092e43-ded1-41e5-9ef4-0fbc5fc3c3fc
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e2486f01-3049-4f09-b2c9-7565dbe70c36
+        userCondition: null
+fields:
+  fab56143-0785-45a8-b72b-a18482e4cafe: # Sub Heading
+    columnSuffix: upftnvsq
+    contentColumnType: text
+    fieldGroup: null
+    handle: subHeading
+    instructions: null
+    name: 'Sub Heading'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: d5ebc5d3-29c4-49d3-970e-80907e54e5d9 # Title H3
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+handle: groupFields
+name: 'Group Fields'
+sortOrder: 1
