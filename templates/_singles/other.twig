@@ -9,7 +9,7 @@
 
 {% set main = "bg-orange" %}
 {% set contrast = "bg-yellow-light" %}
-{% set footer = "bg-blue-light" %}
+{% set footer = "bg-yellow-light" %}
 
 {% block head %} 
   {{ parent() }}
@@ -18,7 +18,11 @@
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/hero/solutions.twig' %}
+
+   {% include '_partials/sections/just-title.twig' %}
+  {% include '_partials/sections/three-cols.twig' %}
+
+    {# {% include '_partials/hero/solutions.twig' %}
     {% include '_partials/sections/solutions-usps.twig' %}
     {% include '_partials/sections/solutions-mask.twig' %}
 
@@ -39,7 +43,7 @@
     {% include '_partials/sections/slider-intro.twig' %}
     {% include '_partials/sections/solutions-slider.twig' %}
 
-         {% include '_partials/footer/footer-page-banner.twig' %}
+         {% include '_partials/footer/footer-page-banner.twig' %} #}
 
   {% endfor %} 
 {% endblock %}
