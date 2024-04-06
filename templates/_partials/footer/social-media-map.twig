@@ -1,0 +1,32 @@
+
+<div class="social-media flex-wrap pad-all flex-align-end-style border-top border-color">
+    <div class="half">
+        <h2>{% block title %}Get <i>Started</i> {% endblock %}</h2>
+
+        {% for block in entry.button %}
+            {% if block.type == 'groupFields' %}
+                {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                {% embed '_partials/button' %}
+                    {% block class %}{{buttonClassContrast}} no-marg-top {% endblock %}
+                    {% block title %}{{buttonText}} {% endblock %}
+                    {% block url %}{{buttonPageLink}} {% endblock %}
+                {% endembed %} 
+            {% endif %}
+        {% endfor %}
+
+        <ul class="flex-wrap row">
+            <li><a href="">{% include '_partials/svgs/facebook.twig' %}</a></li>
+            <li><a href="">{% include '_partials/svgs/instagram.twig' %}</a></li>
+            <li><a href="">{% include '_partials/svgs/x.twig' %}</a></li>
+        </ul>
+    </div>
+    <div class="half  ">
+
+    <p>map placeholder</p>
+    </div>
+</div>
+
+
+
+    
