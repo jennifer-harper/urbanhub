@@ -184,6 +184,24 @@ fieldLayouts:
         name: 'Image Section'
         uid: 226e18a7-baeb-47af-83a8-1c51db1307b7
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0249f9a4-8d76-43b5-bf70-de0e1aebee56 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e113d1d9-121e-4815-bd03-032e02ecb749
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Contact Intro'
+        uid: bd555384-7fb9-4375-a16b-bf98b0dba6d4
+        userCondition: null
 handle: contactUs
 hasTitleField: false
 name: 'Contact Us'

@@ -117,6 +117,60 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 946813fd-230f-4dfe-beaf-7a03b3228bb2 # 3 Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4b6a18d7-d335-4fbe-aef8-725d43ddfcdf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0249f9a4-8d76-43b5-bf70-de0e1aebee56 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb5fc052-367b-4312-90b3-8032a2ba8be8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 46b86537-184d-4bca-8915-f93775953752 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1bfe618c-c694-4bd6-bce3-9e988d296aa2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b326468-2ae8-40c9-bf8b-d6485ef61bcf
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Three Image Section'
+        uid: 5b9c9e44-f25e-4946-81d9-0303aa753f24
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 4299af30-f9c7-48d6-922c-045249174b4a # Heading
             instructions: null
             label: null
@@ -165,6 +219,60 @@ fieldLayouts:
             width: 100
         name: 'Dark Image Section'
         uid: 400c0412-8029-470d-a0ca-5fb1fc4e909a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 06d442e8-f80e-4312-bc7c-1116eefbcd47 # 3 Images Other
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f8fad307-eece-4a9c-9f88-bc76064679db
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 94ae2f64-db35-47c0-907e-b853e95b3ce5 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 24dc708a-395f-4052-b9cc-1bc979ce5f74
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4e0586f5-9520-4fbd-9d95-c70cb00318ad # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7cbe806e-53c6-4652-ba1a-1ec5babf5b35
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8be806db-3051-4e01-a8a8-823d359dbfd2 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d3187a8-2164-4670-9feb-2ef3dab690fb
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Three Images Section'
+        uid: 497dff57-9e0d-4101-9960-1f7b2f728fa6
         userCondition: null
 handle: neighbourhood
 hasTitleField: false

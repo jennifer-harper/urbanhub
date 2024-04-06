@@ -52,7 +52,9 @@
     {% include '_partials/sections/solutions-mask-contact.twig' %}
 
     
-    {% include '_partials/sections/just-title.twig' %}
+{% embed '_partials/sections/just-title.twig' %}
+    {% block allClass %}contact-title pad-sides{% endblock %}
+{% endembed %}
 
     {% include '_partials/footer/contact-section.twig' %}
   {% endfor %} 

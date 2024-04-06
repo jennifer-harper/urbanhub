@@ -1,23 +1,26 @@
 
-    <div class="flex-wrap third-wrap img-wrap">
+<div class="flex-wrap third-wrap img-wrap">
+    {% set images = entry.images.all() %}
+    {% if images %}
+    {% for image in images %}
         <div class="third ">
-            <img class="img-fit" src="/uploads/images/picture4-small.webp" alt="">
+            <img src="{{ image.getUrl}}" alt="{{ image.alt }}" class="img-fit">
         </div>
-        <div class="third ">
-            <img class="img-fit" src="/uploads/images/picture2-small.webp" alt="">
-        </div>
-        <div class="third ">
-        <img class="img-fit" src="/uploads/images/picture4-small.webp" alt="">
-        </div>
-    </div>
+    {% endfor %}
+        {% endif %}
+</div>
 
 <div class="pad-all no-top">
     <div class="flex-wrap third-wrap text-wrap">
         <div class="third">
-            <h3>A plethora of Wellington’s best restaurants, retailers and food options are right on the doorstep...</h3>
+            {% if entry.headingH3d %}
+                    {{entry.headingH3d}}
+            {% endif %}
         </div>
         <div class="third">
-            <p>A plethora of Wellington’s best restaurants, retailers and food options are right on the doorstep. Located within walking distance of Press Hall and Willis Lane, New World Metro and popular after-work institutions like Concrete Bar and Leroy’s means you’ll never be short of eating or entertainment options again. </p>
+            {% if entry.paragraph2 %}
+                    {{entry.paragraph2}}
+            {% endif %}
         </div>
     </div>
 </div>

@@ -1,0 +1,23 @@
+columnSuffix: wwgeumuw
+contentColumnType: text
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: headingH3e
+instructions: null
+name: Heading
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: d5ebc5d3-29c4-49d3-970e-80907e54e5d9 # Title H3
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

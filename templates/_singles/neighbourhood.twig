@@ -18,13 +18,21 @@
 {% block content %} 
   {% for entry in page %} 
     {% include '_partials/hero/hero-mask.twig' %}
+{% embed '_partials/sections/just-title.twig' %}
+    {% block allClass %}just-title pad-sides{% endblock %}
+{% endembed %}
+  {% include '_partials/sections/three-cols.twig' %}
     {% include '_partials/sections/star-banner-section.twig' %}
     {% embed '_partials/sections/solutions-mask-reverse.twig' %}
         {% block class %}{{main}} dark{% endblock %}
     {% endembed %}
-    {# {% include '_partials/footer/social-media.twig' %} #}
+
+
+
+  {% include '_partials/sections/three-cols-other.twig' %}
+   {% include '_partials/footer/social-media-map.twig' %}
     {% include '_partials/footer/contact-section.twig' %}
-    {% include '_partials/footer/map.twig' %}
+
   {% endfor %} 
 {% endblock %}
 

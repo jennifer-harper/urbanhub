@@ -1,4 +1,4 @@
-dateModified: 1712271047
+dateModified: 1712445005
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -29,6 +29,7 @@ meta:
     4c8bceef-38e6-4299-9198-ae6c832a644c: 'Price Quantity' # Price Quantity
     4d32e2df-7698-415c-9640-62e6787a0270: Heading # Heading
     4d78f48b-07fe-4864-8d7a-6d1e73752704: Other # Other
+    4e0586f5-9520-4fbd-9d95-c70cb00318ad: Heading # Heading
     4f8c2b59-6892-4972-98af-8768506d45d6: 'Button Text' # Button Text
     5b65b990-0b02-4c00-b925-1d55001fe263: 'Public Schema' # Public Schema
     5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd: Paragraph # Paragraph
@@ -36,6 +37,7 @@ meta:
     5eee97c1-601f-49be-9957-383c584a5de7: 'Group Fields' # Group Fields
     5ef0c0ef-acef-4853-9c10-e2c6aebe3235: 'Button External Link' # Button External Link
     5fe4741c-ddf0-4203-8a3a-507126d173ca: 'Group Fields' # Group Fields
+    06d442e8-f80e-4312-bc7c-1116eefbcd47: '3 Images Other' # 3 Images Other
     6eb48dc4-cde8-48e0-964e-628420361d69: 'group Fields' # group Fields
     7a1645f6-a634-46ce-885f-a69c77f62e51: SVG # SVG
     7af8b282-7c7b-4cb1-9ed8-8fb35f7f093d: 'Contact Us' # Contact Us
@@ -53,6 +55,7 @@ meta:
     34cab00e-4e02-42d6-a3fe-7d2f49769c4e: 'Slide Title' # Slide Title
     39d35486-b1b6-442d-95a0-f3d5dcdee6c9: 'Group Fields' # Group Fields
     41f1a3d3-a8fd-4e2a-ac05-b194f3063080: 'Selling Points' # Selling Points
+    46b86537-184d-4bca-8915-f93775953752: Heading # Heading
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
     64c6c4b0-3771-452d-b41d-3d5e76d3c29f: 'Grid sm' # Grid sm
     71ffbd93-0d12-4ba4-b423-417fa3d2e68f: 'Button Text' # Button Text
@@ -99,6 +102,7 @@ meta:
     491730e4-5d8e-4d79-889a-57fe300b420c: 'Button Page Link' # Button Page Link
     800848a8-f09b-4adb-b0d0-76339d6195c8: 'Group Fields' # Group Fields
     910635d5-1696-4b6e-995f-1141ec5da6c0: UrbanDesk # UrbanDesk
+    946813fd-230f-4dfe-beaf-7a03b3228bb2: '3 Images' # 3 Images
     952787c6-7c0b-46f8-9b75-93ef54023e32: Admin # Admin
     4673650a-aadd-4dc5-966e-7a5dba8f1d55: Heading # Heading
     50516315-9cd3-4843-8f18-397e1d59c811: 'Group Fields' # Group Fields

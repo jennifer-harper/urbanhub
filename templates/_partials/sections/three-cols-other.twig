@@ -1,0 +1,30 @@
+<div class="pad-all no-bottom contact-title">
+        {% if entry.heading5 %}
+                {{entry.heading5}}
+        {% endif %}
+    </div>
+<div class="flex-wrap third-wrap img-wrap">
+    {% set imagesOther = entry.imagesOther.all() %}
+    {% if imagesOther %}
+    {% for image in imagesOther %}
+        <div class="third ">
+            <img src="{{ image.getUrl}}" alt="{{ image.alt }}" class="img-fit">
+        </div>
+    {% endfor %}
+    {% endif %}
+</div>
+
+<div class="pad-all no-top">
+    <div class="flex-wrap third-wrap text-wrap">
+        <div class="third">
+            {% if entry.headingH3e %}
+                    {{entry.headingH3e}}
+            {% endif %}
+        </div>
+        <div class="third">
+            {% if entry.paragraph3 %}
+                    {{entry.paragraph3}}
+            {% endif %}
+        </div>
+    </div>
+</div>
