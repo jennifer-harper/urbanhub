@@ -1,0 +1,35 @@
+<div class="flex-wrap border-btm border-color no-border-mobile hero-solutions section-solutions {% block class %}{% endblock %}">     
+{# {% for block in entry.button %}
+    {% if block.type == 'groupFields' %} #}
+    
+        <div class="pad-all half border-btm border-color border-right"> 
+            <div class="feature-pad">
+                {% if entry.pageTitle %}
+                    {{entry.pageTitle}}
+                {% endif %}
+                {% if entry.pageIntroParagraph %}
+                    {{entry.pageIntroParagraph }}
+                {% endif %}
+            </div>
+            <div class="flex-wrap row pad-top-btm no-btm flex-jc-sb flex-end-style">
+                <div>
+                    {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                    {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                    {% embed '_partials/button' %}
+                        {% block class %}{{buttonClass}}{% endblock %}
+                        {% block title %}{{buttonText}} {% endblock %}
+                        {% block url %}{{buttonPageLink}} {% endblock %}
+                    {% endembed %} 
+                </div>
+                <div class="">
+                    {% if entry.image.one() %}
+                    {% set image = entry.image.one() %}
+                        <img class="" src="{{ image.url }}" alt="{{ image.alt }}">
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+    {# {% endif %}
+{% endfor %} #}
+</div>

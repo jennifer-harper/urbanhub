@@ -1330,6 +1330,12 @@ svg {
 .hero-solutions .center-style img.max-75 {
   margin-left: 0;
 }
+@media (min-width: 48em) {
+  .hero-solutions .feature-pad {
+    max-width: 75%;
+    margin-left: 0;
+  }
+}
 @media (min-width: 64em) {
   .hero-solutions .center-style img.max-75 {
     margin-left: auto;
@@ -1383,6 +1389,21 @@ svg {
 @media (min-width: 64em) {
   .solutions-usp .usp {
     max-width: 25%;
+  }
+}
+
+.section-solutions .border-right {
+  border-right-width: 0;
+}
+@media (min-width: 64em) {
+  .section-solutions .border-btm {
+    border-bottom-width: 0;
+  }
+  .section-solutions .border-right {
+    border-right-width: 1px;
+  }
+  .section-solutions .border-right:last-of-type {
+    border-right-width: 0;
   }
 }
 
@@ -1827,6 +1848,20 @@ tbody tr:first-of-type td {
 }
 .contact-us .logo .logo-star {
   fill: #FAF6F0;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 55%;
+  height: 100%;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

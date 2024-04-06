@@ -18,20 +18,23 @@
 
 {% block content %} 
   {% for entry in page %} 
-
+   {% embed '_partials/sections/btn-icon-section.twig' %}
+        {% block class %} {{contrast}}{% endblock %}
+    {% endembed %}
    {% include '_partials/sections/just-title.twig' %}
   {% include '_partials/sections/three-cols.twig' %}
  {% include '_partials/footer/social-media-map.twig' %}
+
     {# {% include '_partials/hero/solutions.twig' %}
     {% include '_partials/sections/solutions-usps.twig' %}
     {% include '_partials/sections/solutions-mask.twig' %}
 
-    {% include '_partials/sections/solutions-banner.twig' %}
-    {% embed '_partials/sections/solutions-contrast.twig' %}
+    {% include '_partials/sections/solutions-banner.twig' %} #}
+    {# {% embed '_partials/sections/solutions-contrast.twig' %}
         {% block class %} {{main}} {% endblock %}
         {% block colCount %} third {% endblock %}
-    {% endembed %}
-    {% embed '_partials/sections/solutions-contrast-btm.twig' %}
+    {% endembed %} #}
+    {# {% embed '_partials/sections/solutions-contrast-btm.twig' %}
         {% block class %}  {{main}} addons{% endblock %}
         {% block colCount %} half {% endblock %}
     {% endembed %}
@@ -43,7 +46,7 @@
     {% include '_partials/sections/slider-intro.twig' %}
     {% include '_partials/sections/solutions-slider.twig' %}
 
-         {% include '_partials/footer/footer-page-banner.twig' %} #}
+         {% include '_partials/footer/footer-page-banner.twig' %}  #}
 
   {% endfor %} 
 {% endblock %}

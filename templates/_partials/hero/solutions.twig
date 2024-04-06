@@ -50,15 +50,9 @@
         </div>
     </div>
     <div class="pad-top-btm pad-sides half center-style">
-    {% if entry.image|length %}
+    {% if entry.image.one() %}
         {% set image = entry.image.one() %}
         <img class="max-75" src="{{ image.url }}" alt="{{ image.alt }}">
-    {% else %}
-        {% set illustrationFallback = businessInformation.image2.one() %}
-        <div class="half mask-wrapper" style="background-image:url({{ illustrationFallback.getUrl() }})">
-            {% include '_partials/masks/right-mask.twig' %}
-            {% include '_partials/masks/bottom-mask.twig' %}
-        </div>
     {% endif %}
     </div>
 </div>

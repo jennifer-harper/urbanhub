@@ -1553,6 +1553,13 @@ svg {
             margin-left:0
         }
     }
+
+    @media #{$mq-small}{
+        .feature-pad{
+            max-width: 75%;
+            margin-left:0
+        }
+    }
     @media #{$mq-medium}{
         .center-style{
             img.max-75{
@@ -1616,9 +1623,26 @@ svg {
     .usp{
         max-width:25%
     }
+    }
 }
-}
+.section-solutions{
+    .border-right{
+        border-right-width:0;
+    }
 
+    @media #{$mq-medium}{
+        .border-btm{
+            border-bottom-width:0;
+        }
+        .border-right{
+            border-right-width:1px;
+            &:last-of-type{
+                border-right-width: 0;
+            }
+        }
+    }
+
+}
 
 
 
@@ -2119,5 +2143,19 @@ tbody{
     }
     .logo .logo-star{
         fill:$light;
+    }
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 55%;
+    height: 100%;
+    overflow: hidden;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
     }
 }
