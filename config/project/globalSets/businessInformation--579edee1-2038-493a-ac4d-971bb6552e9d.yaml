@@ -100,6 +100,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 82c50ae8-353d-4d5a-bbb3-08b969f2ee17 # Map Address
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dacba076-052a-4594-bb8f-11a948225f24
+            userCondition: null
+            warning: null
+            width: 100
         name: 'Contact Information'
         uid: 6398f4da-98e8-4a7c-aceb-6b64f6b0c8c2
         userCondition: null

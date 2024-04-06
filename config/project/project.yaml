@@ -1,4 +1,4 @@
-dateModified: 1712445005
+dateModified: 1712445985
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -61,6 +61,7 @@ meta:
     71ffbd93-0d12-4ba4-b423-417fa3d2e68f: 'Button Text' # Button Text
     75c33b8a-3fbb-4031-9b40-b95976dc12ba: 'Sub Heading' # Sub Heading
     75fe64f6-ab16-4d2c-9322-e1bb839f4845: UrbanSuite # UrbanSuite
+    82c50ae8-353d-4d5a-bbb3-08b969f2ee17: 'Map Address' # Map Address
     82f704c3-36ac-4f0d-b835-560746906020: 'Button Text' # Button Text
     83c78d90-8c41-4ef1-a2ef-1c5110162342: Image # Image
     83ec1284-d751-46da-989b-5ef46b55b332: 'UrbanClub Slider' # UrbanClub Slider

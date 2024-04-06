@@ -22,15 +22,6 @@
         </ul>
     </div>
     <div class="half  border-left border-color">
-        <div class="map-wrap">
-            <div class="google-maps">
-            {% set mapLink = block.mapLocation ?? 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11990.914368323172!2d174.7743993!3d-41.293011!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afd7c8b11f65%3A0xc06c815d7fb80b58!2sGentle%20Dental%20Centre!5e0!3m2!1sen!2snz!4v1710123341270!5m2!1sen!2snz' %}
-            <iframe src="{{mapLink}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </div>
+        {% include '_partials/footer/map.twig' %}
     </div>
 </div>
-
-
-
-    

@@ -57,5 +57,8 @@
 {% endembed %}
 
     {% include '_partials/footer/contact-section.twig' %}
+     {% embed '_partials/footer/map.twig' %}
+     {% block class %} pad-all no-top {% endblock %}
+     {% endembed %}
   {% endfor %} 
 {% endblock %}

@@ -1,0 +1,14 @@
+columnSuffix: dpivtnkt
+contentColumnType: string(2000)
+fieldGroup: 952787c6-7c0b-46f8-9b75-93ef54023e32 # Admin
+handle: mapAddress
+instructions: null
+name: 'Map Address'
+searchable: false
+settings:
+  maxLength: 2000
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url
