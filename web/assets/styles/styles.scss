@@ -120,7 +120,7 @@ body {
   margin: 0;
   overflow-x: hidden; 
   background-color:$light;
-    color: $base-font;
+color: $base-font;
   font-family: $body-font;
   font-weight: 400;
   font-size: $base-font-size;
@@ -133,7 +133,7 @@ body {
   }
 
   @media #{$mq-xxlarge} {
-    font-size: $base-font-size*1.3;
+    font-size: $base-font-size*2;
   }
 }
 
@@ -195,7 +195,9 @@ div{
         margin-bottom: 0;
     }
   }
-
+  @media #{$mq-xxlarge} {
+    margin-bottom: $base-spacing*2;
+  }
 
 }
 
@@ -358,6 +360,15 @@ h1 i{
   min-height:300px
 }
 
+.img-fit{
+    width: 100%;
+    height:100vw;
+    object-fit: cover;
+    @media #{$mq-medium}{
+        height: 40vw;
+    }
+}
+
 img {
   width:100%;
   max-width: 100%;
@@ -432,6 +443,8 @@ svg {
     //     padding:$md;
     // }
 }
+
+
 
 
 .pad-sides{
@@ -544,7 +557,7 @@ svg {
         .third{
             flex:1;
             flex-basis: 33.33%;
-            min-width:33.33%
+            max-width:33.33%
         }
 
 
@@ -593,6 +606,41 @@ svg {
     justify-content: center;
 }
 
+.third-wrap.img-wrap{
+    padding-left:calc($base - 1vw);
+    padding-right:calc($base - 1vw);
+    .third{
+        padding:1vw;
+    }
+}
+
+.third-wrap.text-wrap{
+    @media #{$mq-medium}{
+        justify-content: space-between;
+        align-items: flex-end;
+        .third{
+            flex-basis:45%;
+            max-width:45%;
+        }
+        h3,p{
+            margin-bottom: 0;
+            margin-top: 2vw;
+        }
+    }
+
+    @media #{$mq-large}{
+        justify-content: unset;
+
+        .third{
+            flex-basis:33.333%;
+            max-width:33.333%;
+            p{
+                padding-left: 5vw;
+            }
+        }
+    }
+
+}
 
 
 //-------Buttons-----------//

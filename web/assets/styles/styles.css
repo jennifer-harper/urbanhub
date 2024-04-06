@@ -86,7 +86,7 @@ body {
 }
 @media (min-width: 126em) {
   body {
-    font-size: 1.3em;
+    font-size: 2em;
   }
 }
 
@@ -139,6 +139,11 @@ div p {
 }
 div.no-btm-marg p {
   margin-bottom: 0;
+}
+@media (min-width: 126em) {
+  div {
+    margin-bottom: 2em;
+  }
 }
 
 h1 i, h2 i, h3 i, p i {
@@ -283,6 +288,17 @@ h1 i {
   background-position: 50% 50%;
   background-size: cover;
   min-height: 300px;
+}
+
+.img-fit {
+  width: 100%;
+  height: 100vw;
+  object-fit: cover;
+}
+@media (min-width: 64em) {
+  .img-fit {
+    height: 40vw;
+  }
 }
 
 img {
@@ -463,7 +479,7 @@ svg {
   .flex-wrap .third {
     flex: 1;
     flex-basis: 33.33%;
-    min-width: 33.33%;
+    max-width: 33.33%;
   }
   .flex-wrap.just-cont-space-btw {
     justify-content: space-between;
@@ -502,6 +518,41 @@ svg {
 .center-style {
   display: flex;
   justify-content: center;
+}
+
+.third-wrap.img-wrap {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.third-wrap.img-wrap .third {
+  padding: 1vw;
+}
+
+@media (min-width: 64em) {
+  .third-wrap.text-wrap {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .third-wrap.text-wrap .third {
+    flex-basis: 45%;
+    max-width: 45%;
+  }
+  .third-wrap.text-wrap h3, .third-wrap.text-wrap p {
+    margin-bottom: 0;
+    margin-top: 2vw;
+  }
+}
+@media (min-width: 85.375em) {
+  .third-wrap.text-wrap {
+    justify-content: unset;
+  }
+  .third-wrap.text-wrap .third {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+  .third-wrap.text-wrap .third p {
+    padding-left: 5vw;
+  }
 }
 
 .btn {
