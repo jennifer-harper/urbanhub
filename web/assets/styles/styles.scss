@@ -101,6 +101,7 @@
 
 .nav{
     width: 100%;
+    flex-wrap: wrap;
 }
 
 *{
@@ -196,7 +197,9 @@ div{
     }
   }
   @media #{$mq-xxlarge} {
-    margin-bottom: $base-spacing*2;
+    p{
+        margin-bottom: $base-spacing*2;
+    }
   }
 
 }
@@ -237,25 +240,35 @@ h1,h2,h3,h4,h5,h6 {
 .text-center{
     text-align: center;
     @media #{$mq-medium}{
-        &.max-title{
+        &.max-title,
+        &.max-hero{
             max-width:75%;
+
+        }
+        &.max-title,
+        &.max-hero{
             margin-left: auto;
             margin-right:auto;
             p{
-                max-width: 650px;
+                max-width: 30vw;
                 margin-left: auto;
                 margin-right:auto;
             }
         }
-        &.max-hero{
-            max-width:75%;
-        }
+
     }
+
     @media #{$mq-large}{
         &.max-title{
             max-width:55%;
         }
     }
+}
+.centered{
+    justify-content: center;
+}
+.align-right{
+    text-align: right;
 }
 
 //-------font size-----------//
@@ -509,7 +522,9 @@ svg {
     }
 }
 
-
+.border-color-other{
+    border-color: $grey;
+}
 //-------Flex-----------//
 .flex-wrap{
     display: flex;
@@ -1090,6 +1105,7 @@ svg {
         }
     }
 
+
     .illustration-fill,
     .highlight,
     .logo,
@@ -1113,7 +1129,12 @@ svg {
         .logo{
             fill:$orange;
         }
+        .highlight{
+            fill:$light
+        }
     }
+
+
 }
 
 .blueTheme{
@@ -1274,6 +1295,11 @@ svg {
             color:$yellow-light;  
         }
     }
+    .bg-yellow-light{
+        .highlight{
+            fill:$light;
+        }
+    }
 
     .underline-list li{
         border-color:$orange
@@ -1288,10 +1314,15 @@ svg {
             }
         }
     }
+    .highlight{
+        fill:$yellow-light
+    }
+    
+    .star-banner-wrapper .star-banner .light,
     .tick{
         fill:$yellow-light;
     }
-
+    .logo,
     .social-media,
     .little-star{
         fill: $orange;
@@ -1581,13 +1612,13 @@ svg {
 }
 
 
-.solutions-contrast-btm:not(.bg-green-dark),
-.solutions-contrast:not(.bg-green-dark){
-    .highlight{
-        fill:$light;
-    }
+// .solutions-contrast-btm:not(.bg-green-dark),
+// .solutions-contrast:not(.bg-green-dark){
+//     .highlight{
+//         fill:$light;
+//     }
 
-}
+// }
 
 .solutions-contrast{
     .highlight{

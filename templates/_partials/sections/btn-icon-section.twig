@@ -2,17 +2,18 @@
 {% for block in entry.buttonIconGroup %}
     {% if block.type == 'groupFields' %}
     
-        <div class="pad-all half border-btm border-color border-right"> 
+        <div class="pad-all half border-btm border-color border-right flex-jc-sb col flex-wrap"> 
             <div class="feature-pad">
-                {% if entry.heading %}
-                    {{entry.heading}}
+                {% if block.heading %}
+                    {{block.heading}}
                 {% endif %}
-                {% if entry.paragraph %}
-                    {{entry.paragraph }}
+                {% if block.paragraph %}
+                    {{block.paragraph }}
                 {% endif %}
             </div>
             <div class="flex-wrap row pad-top-btm no-btm flex-jc-sb flex-end-style">
                 <div>
+                {% if block.buttonText %}
                     {% set buttonText = block.buttonText ?? 'Enquire now' %}
                     {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
                     {% embed '_partials/button' %}
@@ -20,12 +21,14 @@
                         {% block title %}{{buttonText}} {% endblock %}
                         {% block url %}{{buttonPageLink}} {% endblock %}
                     {% endembed %} 
-                </div>
-                <div class="">
-                    {% if entry.icon.one() %}
-                    {% set image = entry.icon.one() %}
-                        <img class="" src="{{ image.url }}" alt="{{ image.alt }}">
                     {% endif %}
+                </div>
+                
+                <div class="align-right">
+                {% if block.icon.one() %}
+                    {% set image = block.icon.one() %}
+                    <img class="max-75" src="{{ image.url }}" alt="{{ image.alt }}">
+                {% endif %}
                 </div>
             </div>
         </div>

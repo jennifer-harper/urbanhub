@@ -1,4 +1,4 @@
-dateModified: 1712448836
+dateModified: 1712527360
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -62,7 +62,7 @@ meta:
     46b86537-184d-4bca-8915-f93775953752: Heading # Heading
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
     64c6c4b0-3771-452d-b41d-3d5e76d3c29f: 'Grid sm' # Grid sm
-    68c5d740-f1a6-4bd9-b351-2e5773d12ecb: 'Button Icon Group' # Button Icon Group
+    68c5d740-f1a6-4bd9-b351-2e5773d12ecb: 'Features with Icon' # Features with Icon
     71ffbd93-0d12-4ba4-b423-417fa3d2e68f: 'Button Text' # Button Text
     75c33b8a-3fbb-4031-9b40-b95976dc12ba: 'Sub Heading' # Sub Heading
     75fe64f6-ab16-4d2c-9322-e1bb839f4845: UrbanSuite # UrbanSuite
@@ -94,7 +94,7 @@ meta:
     5978cdef-8681-4576-a979-1eb00326e5ea: 'Group Fields' # Group Fields
     6221ad00-05cc-4298-9ace-e6d2b6303c91: 'Button text' # Button text
     6947bebf-8056-426b-b5b5-a1e58e6bb36d: 'The Building' # The Building
-    7887e1db-5239-4acb-869e-244341183488: Parapgraph # Parapgraph
+    7887e1db-5239-4acb-869e-244341183488: Paragraph # Paragraph
     7947d890-19f4-48df-9f6d-c207065259fe: 'Slider Image' # Slider Image
     08320fd1-0901-49fc-9707-c330852e1991: UrbanMeet # UrbanMeet
     9758e6f4-7462-4750-9d36-440d40e64643: 'Sub Heading' # Sub Heading

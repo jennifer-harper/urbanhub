@@ -13,7 +13,7 @@
             </div>
     {% endif %}
 
-    <div class="pad-all half"> 
+    <div class="pad-all half flex-wrap col center-style"> 
         <div class="">
             {% if entry.pageName %}
                 <div class="header-intro">
@@ -22,6 +22,9 @@
             {% endif %}
             {% if entry.pageTitle %}
                 {{entry.pageTitle}}
+            {% endif %}
+            {% if entry.heading2 %}
+                {{entry.heading2}}
             {% endif %}
             {% if entry.pageIntro %}
                 <div class="intro-text">

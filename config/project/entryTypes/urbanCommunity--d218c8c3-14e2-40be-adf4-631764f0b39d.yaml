@@ -111,7 +111,7 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 68c5d740-f1a6-4bd9-b351-2e5773d12ecb # Button Icon Group
+            fieldUid: 68c5d740-f1a6-4bd9-b351-2e5773d12ecb # Features with Icon
             instructions: null
             label: null
             required: false
@@ -163,6 +163,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 2ca3f21f-2832-4039-be1c-de50d73e0723 # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4308f3ad-6160-4925-8e55-533c200f493e
+            userCondition: null
+            warning: null
+            width: 100
         name: 'Centered Section'
         uid: 7162a0b3-f638-4400-afd1-4b2ebaad29a1
         userCondition: null
@@ -171,13 +183,13 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 368e19da-aed2-4692-949d-976508166279 # Page Title
+            fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 9498c106-be8d-4d62-ac4e-cac6af9a00c4
+            uid: 0729d461-9365-4fc7-875c-86e07ebba0df
             userCondition: null
             warning: null
             width: 100

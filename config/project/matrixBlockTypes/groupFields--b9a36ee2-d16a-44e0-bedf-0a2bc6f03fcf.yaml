@@ -1,4 +1,4 @@
-field: 68c5d740-f1a6-4bd9-b351-2e5773d12ecb # Button Icon Group
+field: 68c5d740-f1a6-4bd9-b351-2e5773d12ecb # Features with Icon
 fieldLayouts:
   a6731120-97dc-4372-98b2-f203d9017984:
     tabs:
@@ -19,7 +19,7 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 7887e1db-5239-4acb-869e-244341183488 # Parapgraph
+            fieldUid: 7887e1db-5239-4acb-869e-244341183488 # Paragraph
             instructions: null
             label: null
             required: false
@@ -97,7 +97,7 @@ fields:
       restrictedLocationSource: 'volume:250485d5-f50f-4a7f-a221-1fc9dc7dbb3a' # Images
       restrictedLocationSubpath: null
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       showUnpermittedFiles: false
       showUnpermittedVolumes: false
       sources: '*'
@@ -123,7 +123,7 @@ fields:
       maxRelations: 1
       minRelations: null
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       sources: '*'
       targetSiteId: null
       validateRelatedElements: false
@@ -155,13 +155,13 @@ fields:
     translationKeyFormat: null
     translationMethod: none
     type: craft\ckeditor\Field
-  7887e1db-5239-4acb-869e-244341183488: # Parapgraph
+  7887e1db-5239-4acb-869e-244341183488: # Paragraph
     columnSuffix: izzonctu
     contentColumnType: text
     fieldGroup: null
-    handle: parapgraph
+    handle: paragraph
     instructions: null
-    name: Parapgraph
+    name: Paragraph
     searchable: false
     settings:
       availableTransforms: ''

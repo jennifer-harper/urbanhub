@@ -55,6 +55,7 @@
 }
 .nav {
   width: 100%;
+  flex-wrap: wrap;
 }
 
 * {
@@ -141,7 +142,7 @@ div.no-btm-marg p {
   margin-bottom: 0;
 }
 @media (min-width: 126em) {
-  div {
+  div p {
     margin-bottom: 2em;
   }
 }
@@ -180,24 +181,31 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 @media (min-width: 64em) {
-  .text-center.max-title {
+  .text-center.max-title, .text-center.max-hero {
     max-width: 75%;
+  }
+  .text-center.max-title, .text-center.max-hero {
     margin-left: auto;
     margin-right: auto;
   }
-  .text-center.max-title p {
-    max-width: 650px;
+  .text-center.max-title p, .text-center.max-hero p {
+    max-width: 30vw;
     margin-left: auto;
     margin-right: auto;
-  }
-  .text-center.max-hero {
-    max-width: 75%;
   }
 }
 @media (min-width: 85.375em) {
   .text-center.max-title {
     max-width: 55%;
   }
+}
+
+.centered {
+  justify-content: center;
+}
+
+.align-right {
+  text-align: right;
 }
 
 h1 {
@@ -434,6 +442,10 @@ svg {
   .no-border-mobile {
     border-width: 1px;
   }
+}
+
+.border-color-other {
+  border-color: #cbd5d0;
 }
 
 .flex-wrap {
@@ -977,6 +989,9 @@ svg {
 .orangeTheme .bg-yellow-light .logo {
   fill: #DB6B34;
 }
+.orangeTheme .bg-yellow-light .highlight {
+  fill: #FAF6F0;
+}
 
 .blueTheme h1, .blueTheme h2, .blueTheme h3, .blueTheme p, .blueTheme a, .blueTheme li, .blueTheme table {
   color: #253C40;
@@ -1094,6 +1109,9 @@ svg {
 .lightYellowTheme .bg-orange h1, .lightYellowTheme .bg-orange h2, .lightYellowTheme .bg-orange h3, .lightYellowTheme .bg-orange p, .lightYellowTheme .bg-orange a, .lightYellowTheme .bg-orange li {
   color: #EBE198;
 }
+.lightYellowTheme .bg-yellow-light .highlight {
+  fill: #FAF6F0;
+}
 .lightYellowTheme .underline-list li {
   border-color: #DB6B34;
 }
@@ -1105,9 +1123,14 @@ svg {
 .lightYellowTheme .slider-btn-wrapper .swiper-button-next svg {
   fill: #DB6B34;
 }
+.lightYellowTheme .highlight {
+  fill: #EBE198;
+}
+.lightYellowTheme .star-banner-wrapper .star-banner .light,
 .lightYellowTheme .tick {
   fill: #EBE198;
 }
+.lightYellowTheme .logo,
 .lightYellowTheme .social-media,
 .lightYellowTheme .little-star {
   fill: #DB6B34;
@@ -1355,11 +1378,6 @@ svg {
 .solutions-banner h1 svg,
 .solutions-banner h2 svg {
   bottom: -20px;
-}
-
-.solutions-contrast-btm:not(.bg-green-dark) .highlight,
-.solutions-contrast:not(.bg-green-dark) .highlight {
-  fill: #FAF6F0;
 }
 
 .solutions-contrast .highlight {
