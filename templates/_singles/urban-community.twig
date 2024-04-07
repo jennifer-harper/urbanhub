@@ -1,0 +1,43 @@
+   
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "urbanCommunity orangeTheme" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('urbanCommunity').all() %} 
+
+
+{% set buttonClass = "orange" %}
+{% set buttonClassContrast = "orange" %}
+
+{% set main = "bg-yellow-light" %}
+{% set contrast = "bg-yellow-light" %}
+{% set footer = "bg-yellow-light" %}
+
+
+{% block content %} 
+  {% for entry in page %} 
+    {% include '_partials/hero/centered-hero.twig' %}
+
+    {% embed '_partials/sections/solutions-contrast.twig' %}
+        {% block class %} {{main}} {% endblock %}
+        {% block headingAlign %} align-left {% endblock %}
+        {% block colCount %} third {% endblock %}
+    {% endembed %}
+    {% embed '_partials/sections/star-banner-section.twig' %}
+        {% block class %} {{main}} {% endblock %}
+    {% endembed %}
+
+       {% embed '_partials/sections/btn-icon-section.twig' %}
+        {% block class %} {{contrast}}{% endblock %}
+    {% endembed %}
+    {% embed '_partials/sections/centered-section.twig' %}
+        {% block class %} {{contrast}}{% endblock %}
+    {% endembed %}
+
+    {% include '_partials/hero/hero-mask.twig' %}
+
+   {% include '_partials/footer/social-media.twig' %}
+    {% include '_partials/footer/contact-section.twig' %}
+  {% endfor %} 
+{% endblock %}
+

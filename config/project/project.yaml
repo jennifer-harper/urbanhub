@@ -1,4 +1,4 @@
-dateModified: 1712445985
+dateModified: 1712448836
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -23,6 +23,7 @@ meta:
     2ca3f21f-2832-4039-be1c-de50d73e0723: Button # Button
     2d4fd05a-7931-4151-ac2a-8e3011088cd5: Simple # Simple
     2ee914a2-b05d-4c31-a59b-9919788305a7: Image # Image
+    3cfc94ea-b426-43b8-9e50-d525f47c2148: 'Urban Community' # Urban Community
     3d94fda3-efd1-473e-883d-19ce15bc6846: Neighbourhood # Neighbourhood
     3e1bb40d-9000-497a-9b75-2f18c808ddd9: Paragraph # Paragraph
     3ee36c75-6798-4bd2-8772-cbaf669e7981: 'Space Selling Points' # Space Selling Points
@@ -42,6 +43,7 @@ meta:
     7a1645f6-a634-46ce-885f-a69c77f62e51: SVG # SVG
     7af8b282-7c7b-4cb1-9ed8-8fb35f7f093d: 'Contact Us' # Contact Us
     7d73696a-27d3-438f-84cd-2d5fd1e9c0d5: 'Urban Solutions Slider' # Urban Solutions Slider
+    07ea65b8-2896-4785-b43b-7763da8862c5: Icon # Icon
     8a4c4007-6c97-4f8b-86ea-bdfb3696a5e9: UrbanStudio # UrbanStudio
     8be806db-3051-4e01-a8a8-823d359dbfd2: Paragraph # Paragraph
     8dedadfc-4af6-49f2-95bd-efef33a55b64: Heading # Heading
@@ -49,6 +51,8 @@ meta:
     9b780b22-e03b-4537-bd01-74db803e4b3a: Heading # Heading
     9de90435-fcff-45f8-983c-fd0bffd09548: 'Button Text' # Button Text
     12d0eab0-1ab5-43ae-a25d-c957d5c5a4c8: 'Group Fields' # Group Fields
+    15aa301b-549c-4b00-a093-c1d0da96096b: 'Button Page Link' # Button Page Link
+    23f46a1f-4522-4e9d-b95a-988d9d65a2bb: Heading # Heading
     26dd4f0b-59ff-4617-974a-4ecc5a60c950: 'Table Editor' # Table Editor
     31a6a6cd-809b-4018-b66d-eb3c366fc392: TableEditor # TableEditor
     33cfdfc6-431e-464c-917f-25271d27922c: 'Title H2' # Title H2
@@ -58,6 +62,7 @@ meta:
     46b86537-184d-4bca-8915-f93775953752: Heading # Heading
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
     64c6c4b0-3771-452d-b41d-3d5e76d3c29f: 'Grid sm' # Grid sm
+    68c5d740-f1a6-4bd9-b351-2e5773d12ecb: 'Button Icon Group' # Button Icon Group
     71ffbd93-0d12-4ba4-b423-417fa3d2e68f: 'Button Text' # Button Text
     75c33b8a-3fbb-4031-9b40-b95976dc12ba: 'Sub Heading' # Sub Heading
     75fe64f6-ab16-4d2c-9322-e1bb839f4845: UrbanSuite # UrbanSuite
@@ -89,6 +94,7 @@ meta:
     5978cdef-8681-4576-a979-1eb00326e5ea: 'Group Fields' # Group Fields
     6221ad00-05cc-4298-9ace-e6d2b6303c91: 'Button text' # Button text
     6947bebf-8056-426b-b5b5-a1e58e6bb36d: 'The Building' # The Building
+    7887e1db-5239-4acb-869e-244341183488: Parapgraph # Parapgraph
     7947d890-19f4-48df-9f6d-c207065259fe: 'Slider Image' # Slider Image
     08320fd1-0901-49fc-9707-c330852e1991: UrbanMeet # UrbanMeet
     9758e6f4-7462-4750-9d36-440d40e64643: 'Sub Heading' # Sub Heading
@@ -101,6 +107,7 @@ meta:
     82546b52-8a4e-4727-a216-ebae0292e3d9: Paragraph # Paragraph
     250485d5-f50f-4a7f-a221-1fc9dc7dbb3a: Images # Images
     491730e4-5d8e-4d79-889a-57fe300b420c: 'Button Page Link' # Button Page Link
+    558281e3-3b00-49e5-a034-16c5ce0b6c6c: 'Button text' # Button text
     800848a8-f09b-4adb-b0d0-76339d6195c8: 'Group Fields' # Group Fields
     910635d5-1696-4b6e-995f-1141ec5da6c0: UrbanDesk # UrbanDesk
     946813fd-230f-4dfe-beaf-7a03b3228bb2: '3 Images' # 3 Images
@@ -115,6 +122,7 @@ meta:
     ad2fa7ed-3fb2-4493-97ef-5a303e5ca6fa: 'Explore Our Spaces' # Explore Our Spaces
     b09630d2-fe6c-4792-90f0-5c6bb8514063: 'Button Page Link' # Button Page Link
     b4eebaf7-1d9d-4bca-81c1-b507952d4369: 'Grid Add-ons' # Grid Add-ons
+    b9a36ee2-d16a-44e0-bedf-0a2bc6f03fcf: 'Group Fields' # Group Fields
     b9b1a6d2-d5a8-4791-8722-91479f5bf9ae: 'Meta Description' # Meta Description
     b2308c33-a2ac-480c-be85-0db8e054e2bd: Grid # Grid
     b5908f86-11d8-49a9-b0fc-1dc187009d66: 'Space Type' # Space Type
@@ -137,6 +145,7 @@ meta:
     d9af3e55-e89f-473c-a29a-abe18acebc79: Common # Common
     d48d0ef1-ee78-4bd5-8dc8-21ad80e2eb5e: Paragraph # Paragraph
     d199f8b1-8c10-441f-8951-d2f10491a634: 'Page Intro' # Page Intro
+    d218c8c3-14e2-40be-adf4-631764f0b39d: 'Urban Community' # Urban Community
     d2611d70-d001-4791-bfa0-92d60a09efce: 'Button Link' # Button Link
     d4390a92-df70-4ac7-9d4f-f5758c1928bf: Default # Default
     d7568988-4934-4d64-a04d-04c636118860: 'Business Postal' # Business Postal

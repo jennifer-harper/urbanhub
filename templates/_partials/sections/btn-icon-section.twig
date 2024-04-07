@@ -1,14 +1,14 @@
 <div class="flex-wrap border-btm border-color no-border-mobile hero-solutions section-solutions {% block class %}{% endblock %}">     
-{# {% for block in entry.button %}
-    {% if block.type == 'groupFields' %} #}
+{% for block in entry.buttonIconGroup %}
+    {% if block.type == 'groupFields' %}
     
         <div class="pad-all half border-btm border-color border-right"> 
             <div class="feature-pad">
-                {% if entry.pageTitle %}
-                    {{entry.pageTitle}}
+                {% if entry.heading %}
+                    {{entry.heading}}
                 {% endif %}
-                {% if entry.pageIntroParagraph %}
-                    {{entry.pageIntroParagraph }}
+                {% if entry.paragraph %}
+                    {{entry.paragraph }}
                 {% endif %}
             </div>
             <div class="flex-wrap row pad-top-btm no-btm flex-jc-sb flex-end-style">
@@ -22,14 +22,14 @@
                     {% endembed %} 
                 </div>
                 <div class="">
-                    {% if entry.image.one() %}
-                    {% set image = entry.image.one() %}
+                    {% if entry.icon.one() %}
+                    {% set image = entry.icon.one() %}
                         <img class="" src="{{ image.url }}" alt="{{ image.alt }}">
                     {% endif %}
                 </div>
             </div>
         </div>
 
-    {# {% endif %}
-{% endfor %} #}
+    {% endif %}
+{% endfor %}
 </div>
