@@ -210,6 +210,7 @@ h1 i, h2 i, h3 i, p i{
 //   white-space: nowrap;
   font-style: normal;
   z-index: 0;
+  position: relative;
 }
 
 
@@ -274,6 +275,7 @@ h1,h2,h3,h4,h5,h6 {
 .centered{
     justify-content: center;
 }
+
 .align-right{
     text-align: right;
     @media #{$mq-medium}{
@@ -281,6 +283,16 @@ h1,h2,h3,h4,h5,h6 {
         max-width: 45%;
         margin-right:0;
         margin-left: auto;
+    }
+}
+}
+.align-left{
+    text-align: left;
+    @media #{$mq-medium}{
+    &.max-title{
+        max-width: 45%;
+        margin-right:auto;
+        margin-left: 0;
     }
 }
 }
@@ -470,9 +482,9 @@ svg {
     &.no-right{
         padding-right:0
     }
-    // @media #{$mq-medium} {
-    //     padding:$md;
-    // }
+    @media #{$mq-figma} {
+        padding:$base $md;
+    }
 }
 
 
@@ -908,12 +920,14 @@ svg {
 
 
 //-------Image masks-----------//
-
+.left-mask,
+.left-mask-btm,
 .right-mask,
 .bottom-mask{
     position:absolute;
     fill:$light;
 }
+
 
 .bottom-mask{
     width:100%;
@@ -925,6 +939,18 @@ svg {
     height:100%;
     right:-1px;
     bottom:-1px;
+}
+
+.left-mask{
+    width:100%;
+    left:0;
+    top:0;
+}
+
+.left-mask-btm{
+    width:50%;
+    bottom:-1px;
+    left:-1px;
 }
 
 .mask-wrapper{
@@ -1098,9 +1124,7 @@ svg {
 }
 
 .greenTheme{
-    .nav{
-        background-color: $green-light;
-    }
+
     .bg-green-light .highlight{
         fill:$light;
     }
@@ -1110,7 +1134,7 @@ svg {
         }
     }
     .border-color{
-        border-color: $green-light;
+        border-color: $green-light !important;
     }
 }
 
@@ -1365,7 +1389,7 @@ svg {
     }
 
     .border-color{
-        border-color:$orange;
+        border-color:$orange !important ;
     }
     .border-color-contrast{
         border-color:$orange;
@@ -1400,6 +1424,7 @@ svg {
             fill:$light;
         }
 
+        .left-mask-btm,
         .right-mask,
         .left-mask,
         .bottom-mask{
@@ -1685,6 +1710,23 @@ svg {
     h3{
         max-width: 75%;
     }
+    .third .align-right{
+        min-height:14vw;
+    }
+    @media #{$mq-medium}{
+        .flex-wrap .third{
+            flex-basis:50%;
+            width: 50%;
+            max-width: 50%;
+        }
+    }
+    @media #{$mq-large}{
+        .flex-wrap .third{
+            flex-basis:33.333%;
+            width: 33.333%;
+            max-width: 33.333%;
+        }
+    }
 }
 
 .solutions-contrast.other {
@@ -1748,6 +1790,9 @@ svg {
 .section-solutions{
     .border-right{
         border-right-width:0;
+        &:last-of-type{
+            border-top:1px solid;
+        }
     }
 
     @media #{$mq-medium}{
@@ -1758,6 +1803,7 @@ svg {
             border-right-width:1px;
             &:last-of-type{
                 border-right-width: 0;
+                border-top:0px solid;
             }
         }
     }
@@ -2237,8 +2283,20 @@ tbody{
         }
     }
 }
+.urbanEnvironment{
+    .social-media{
+        border-top-width:0;
+    }
+}
+
+
+
+//contact-replates
 
 .contact-us{
+    .nav{
+        background-color: $green-light;
+    }
     .hero{
         padding-top:$md;
         @media #{$mq-medium}{

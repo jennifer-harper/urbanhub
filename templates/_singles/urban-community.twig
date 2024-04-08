@@ -16,20 +16,23 @@
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/hero/centered-hero.twig' %}
-
+    {% embed '_partials/hero/centered-hero.twig' %}
+     {% block class %} border-btm border-color-other {% endblock %}
+    {% endembed %}
     {% embed '_partials/sections/solutions-contrast.twig' %}
-        {% block headingAlign %} align-left {% endblock %}
+        {% block headingAlign %} align-left max-title {% endblock %}
         {% block colCount %} third {% endblock %}
     {% endembed %}
+
     {% embed '_partials/sections/star-banner-section.twig' %}
         {% block class %} bg-light {% endblock %}
     {% endembed %}
 
 
-       {% embed '_partials/sections/btn-icon-section.twig' %}
-        {% block class %} {{main}}{% endblock %}
+    {% embed '_partials/sections/btn-icon-section.twig' %}
+        {% block class %} {{main}} border-btm border-color{% endblock %}
     {% endembed %}
+
     {% embed '_partials/sections/centered-section.twig' %}
         {% block class %} {{main}}{% endblock %}
     {% endembed %}

@@ -1,8 +1,8 @@
-<div class="flex-wrap border-btm border-color no-border-mobile hero-solutions section-solutions {% block class %}{% endblock %}">     
+<div class="flex-wrap border-color  hero-solutions section-solutions {% block class %}{% endblock %}">     
 {% for block in entry.buttonIconGroup %}
     {% if block.type == 'groupFields' %}
     
-        <div class="pad-all half border-btm border-color border-right flex-jc-sb col flex-wrap"> 
+        <div class="pad-all half border-color border-right flex-jc-sb col flex-wrap"> 
             <div class="feature-pad">
                 {% if block.heading %}
                     {{block.heading}}
@@ -24,7 +24,7 @@
                     {% endif %}
                 </div>
                 
-                <div class="">
+                <div class="align-right">
                 {% if block.icon.one() %}
                     {% set image = block.icon.one() %}
                     <img class="max-75" src="{{ image.url }}" alt="{{ image.alt }}">

@@ -29,13 +29,13 @@
     {% set image = entry.image.one() %}
     {% if image %}
         <div class="half mask-wrapper" style="background-image:url({{ image.getUrl() }})">
-            {% include '_partials/masks/right-mask.twig' %}
-            {% include '_partials/masks/bottom-mask.twig' %}
+            {% include '_partials/masks/mask-left.twig' %}
+            {% include '_partials/masks/mask-left-btm.twig' %}
         </div>
     {% else %}
         <div class="half mask-wrapper">
-            {% include '_partials/masks/right-mask.twig' %}
-            {% include '_partials/masks/bottom-mask.twig' %}
+            {% include '_partials/masks/mask-left.twig' %}
+            {% include '_partials/masks/mask-left-btm.twig' %}
         </div>
     {% endif %}
 
