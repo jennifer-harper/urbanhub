@@ -1,0 +1,23 @@
+columnSuffix: mpidzsaj
+contentColumnType: text
+fieldGroup: efebdbd4-c2aa-4fa3-af50-e6aaf0e04fdf # Heros
+handle: headingAlt
+instructions: null
+name: Heading
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 33cfdfc6-431e-464c-917f-25271d27922c # Title H2
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

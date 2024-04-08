@@ -1,4 +1,4 @@
-dateModified: 1712527360
+dateModified: 1712538572
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -30,6 +30,7 @@ meta:
     4c8bceef-38e6-4299-9198-ae6c832a644c: 'Price Quantity' # Price Quantity
     4d32e2df-7698-415c-9640-62e6787a0270: Heading # Heading
     4d78f48b-07fe-4864-8d7a-6d1e73752704: Other # Other
+    4d45003e-8080-49cd-a9cd-30d65e3dfcb2: Icon # Icon
     4e0586f5-9520-4fbd-9d95-c70cb00318ad: Heading # Heading
     4f8c2b59-6892-4972-98af-8768506d45d6: 'Button Text' # Button Text
     5b65b990-0b02-4c00-b925-1d55001fe263: 'Public Schema' # Public Schema
@@ -105,6 +106,8 @@ meta:
     48802c23-b684-41b9-9337-e0194906b5ce: UrbanStudio # UrbanStudio
     56985cf3-1250-417e-ba85-9ff5472ba6bf: Heading # Heading
     82546b52-8a4e-4727-a216-ebae0292e3d9: Paragraph # Paragraph
+    99187c08-de31-449f-8c39-1902c47e7a22: 'Culture & Events' # Culture & Events
+    168839e9-6683-4aac-924b-9ec5087dacd7: 'Sub Heading' # Sub Heading
     250485d5-f50f-4a7f-a221-1fc9dc7dbb3a: Images # Images
     491730e4-5d8e-4d79-889a-57fe300b420c: 'Button Page Link' # Button Page Link
     558281e3-3b00-49e5-a034-16c5ce0b6c6c: 'Button text' # Button text
@@ -116,6 +119,7 @@ meta:
     50516315-9cd3-4843-8f18-397e1d59c811: 'Group Fields' # Group Fields
     89723374-3eac-4abc-b3ad-1bbd27091648: Heading # Heading
     a0a1f864-9a0f-4bc8-931c-cb7d460030ba: 'Business Email' # Business Email
+    a0a3e595-fd6a-4fdb-8c47-68c52f4348f7: 'Group Fields' # Group Fields
     a33a9b78-e67f-4d71-b70f-5c91db0323fe: UrbanLease # UrbanLease
     a72e886d-5deb-4c6e-9dea-5a690a3f141b: 'Title h1' # Title h1
     ac6a4bbe-5e8b-41c7-997d-cb16dc2a14d2: 'Business Address' # Business Address
@@ -142,6 +146,7 @@ meta:
     d08c9cda-b4c0-42b0-a7e5-c654a94f6fa2: Pargraph # Pargraph
     d5ebc5d3-29c4-49d3-970e-80907e54e5d9: 'Title H3' # Title H3
     d6f825ee-cd47-42b6-b079-dd879fa61250: UrbanLease # UrbanLease
+    d7ab6060-7bad-4f89-93b0-613e23012f36: Heading # Heading
     d9af3e55-e89f-473c-a29a-abe18acebc79: Common # Common
     d48d0ef1-ee78-4bd5-8dc8-21ad80e2eb5e: Paragraph # Paragraph
     d199f8b1-8c10-441f-8951-d2f10491a634: 'Page Intro' # Page Intro
@@ -149,6 +154,8 @@ meta:
     d2611d70-d001-4791-bfa0-92d60a09efce: 'Button Link' # Button Link
     d4390a92-df70-4ac7-9d4f-f5758c1928bf: Default # Default
     d7568988-4934-4d64-a04d-04c636118860: 'Business Postal' # Business Postal
+    da55d75a-2061-4112-98fb-f895d4ac8366: Paragraph # Paragraph
+    da96f250-8ec1-45a1-81bf-58b56467d573: 'Culture & Events' # Culture & Events
     db842a7f-04a0-469e-89e3-316c7d347c71: UrbanMeet # UrbanMeet
     de84809e-27c8-44de-8294-bf2d5eec3aaa: Button # Button
     dfdff9e2-24b7-4f95-809c-e020c6be1ec1: 'Group Fields' # Group Fields
@@ -159,6 +166,7 @@ meta:
     ea48c9dc-6e22-48a2-8f56-385fa9fa259e: Paragraph # Paragraph
     eb88e673-2a3d-4557-aeea-9fd63d7d74fc: 'Space Price' # Space Price
     efebdbd4-c2aa-4fa3-af50-e6aaf0e04fdf: Heros # Heros
+    f085bda5-adcb-4f77-b339-3e1fae4a34a2: 'Grid Icon' # Grid Icon
     f672ccdb-eed8-47b2-84de-d4340a6f30fa: 'Contact Detail' # Contact Detail
     f996c36d-5af0-49f8-8dec-ec87c5f71580: 'Group Fields' # Group Fields
     fa573d0d-05be-480f-b5c8-2eb4c7420d0c: Lists # Lists

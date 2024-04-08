@@ -1,0 +1,36 @@
+<div class="solutions-contrast icon{% block class %} {% endblock %}">
+    <div class="pad-sides pad-top-btm no-btm">
+        <div class="{% block headingAlign %} text-center max-title  {% endblock %}">
+        {% if entry.heading2 %}
+            {{entry.heading2}}
+        {% endif %}
+        </div>
+    </div>
+    <div class="pad-all">
+        <div class="flex-wrap wrap border-top border-left border-color-contrast">
+            {% for block in entry.gridIcon %}
+                {% if block.type == 'groupFields' %}
+                <div class=" pad-all sm border-btm  border-right border-color-contrast {% block colCount %} {% endblock %}">
+                    
+                    <div class="align-right">
+                        {% if block.icon.one() %}
+                        {% set image = block.icon.one() %}
+                            <img class="max-50" src="{{ image.url }}" alt="{{ image.alt }}">
+                        {% endif %}
+                    </div>
+                    <div>
+                        {% if block.subHeading %}
+                            {{block.subHeading}}
+                        {% endif %}
+                        <div class="no-btm-marg">
+                            {% if block.paragraph %}
+                                {{block.paragraph}}
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}                           
+            {% endfor %}
+        </div>
+    </div> 
+</div>

@@ -1,0 +1,37 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "cilture-events lightBlueTheme" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('cultureEvents').all() %} 
+
+{% set buttonClass = "blue" %}
+{% set buttonClassContrast = "blue" %}
+
+{# //background color #}
+{% set main = "bg-blue-light" %}
+{# //alternate star color #}
+{% set contrast = "bg-blue-dark" %}
+{% set footer = "bg-blue-light" %}
+
+
+
+{% block content %} 
+  {% for entry in page %} 
+    {% include '_partials/hero/hero-mask.twig' %}
+
+    {% embed '_partials/sections/solutions-contrast-sm.twig' %}
+        {% block colCount %} third{% endblock %}
+    {% endembed %}
+
+    {% embed '_partials/sections/solutions-icon-grid.twig' %}
+        {% block headingAlign %} align-right  {% endblock %}
+        {% block class %} {{main }}{% endblock %}
+        {% block colCount %} third{% endblock %}
+    {% endembed %}
+
+
+    {% include '_partials/footer/social-media.twig' %}
+    {% include '_partials/footer/contact-section.twig' %}
+  {% endfor %} 
+{% endblock %}
+

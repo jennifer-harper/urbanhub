@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
   }
   .text-center.max-title p, .text-center.max-hero p {
-    max-width: 30vw;
+    max-width: 50vw;
     margin-left: auto;
     margin-right: auto;
   }
@@ -197,6 +197,9 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 85.375em) {
   .text-center.max-title {
     max-width: 55%;
+  }
+  .text-center.max-title p, .text-center.max-hero p {
+    max-width: 40vw;
   }
 }
 
@@ -319,6 +322,9 @@ img.max-80 {
 }
 img.max-75 {
   max-width: 75%;
+}
+img.max-50 {
+  max-width: 50%;
 }
 
 svg {
@@ -1194,13 +1200,13 @@ svg {
 .lightBlueTheme h1, .lightBlueTheme h2, .lightBlueTheme h3, .lightBlueTheme p, .lightBlueTheme a, .lightBlueTheme li {
   color: #253C40;
 }
-.lightBlueTheme h1 i .highlight {
+.lightBlueTheme .bg-blue-light i .highlight {
   fill: #FAF6F0;
 }
 .lightBlueTheme .underline-list li {
   border-color: #253C40;
 }
-.lightBlueTheme h2 .highlight,
+.lightBlueTheme .highlight,
 .lightBlueTheme .star-banner-wrapper .star-banner .light,
 .lightBlueTheme .little-star {
   fill: #6AC4D1;
@@ -1382,6 +1388,10 @@ svg {
 
 .solutions-contrast .highlight {
   bottom: -10px;
+}
+
+.solutions-contrast.icon h3 {
+  max-width: 75%;
 }
 
 .solutions-contrast.other h3 {

@@ -24,12 +24,15 @@
             {% endfor %}
         </div>
     </div> 
-
-    {% set buttonText = block.buttonText ?? 'Enquire now' %}
-    {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
-    {% embed '_partials/button' %}
-        {% block class %}{{buttonClassContrast}} no-marg-top {% endblock %}
-        {% block title %}{{buttonText}} {% endblock %}
-        {% block url %}{{buttonPageLink}} {% endblock %}
-    {% endembed %} 
+        {% for block in entry.button %}
+            {% if block.type == 'groupFields' %}
+                {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                {% embed '_partials/button' %}
+                    {% block class %}{{buttonClassContrast}} no-marg-top {% endblock %}
+                    {% block title %}{{buttonText}} {% endblock %}
+                    {% block url %}{{buttonPageLink}} {% endblock %}
+                {% endembed %} 
+            {% endif %}                           
+        {% endfor %}
 </div>

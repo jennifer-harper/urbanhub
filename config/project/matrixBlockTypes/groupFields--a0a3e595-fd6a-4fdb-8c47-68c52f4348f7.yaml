@@ -1,0 +1,136 @@
+field: f085bda5-adcb-4f77-b339-3e1fae4a34a2 # Grid Icon
+fieldLayouts:
+  ac3cc7c4-0b86-4525-96f3-be52db397326:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 168839e9-6683-4aac-924b-9ec5087dacd7 # Sub Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 905334de-c904-413f-8b53-aa1af46323cc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: da55d75a-2061-4112-98fb-f895d4ac8366 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a26ecc1-154a-47df-ae7a-de33edea0c8f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4d45003e-8080-49cd-a9cd-30d65e3dfcb2 # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5da3afb0-2350-431f-ad69-eb50102c1d2b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 22a149f0-aaa0-4b9e-8d48-4504bd9e939a
+        userCondition: null
+fields:
+  4d45003e-8080-49cd-a9cd-30d65e3dfcb2: # Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: null
+    name: Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:250485d5-f50f-4a7f-a221-1fc9dc7dbb3a' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:250485d5-f50f-4a7f-a221-1fc9dc7dbb3a' # Images
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  168839e9-6683-4aac-924b-9ec5087dacd7: # Sub Heading
+    columnSuffix: hebacspu
+    contentColumnType: text
+    fieldGroup: null
+    handle: subHeading
+    instructions: null
+    name: 'Sub Heading'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: d5ebc5d3-29c4-49d3-970e-80907e54e5d9 # Title H3
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  da55d75a-2061-4112-98fb-f895d4ac8366: # Paragraph
+    columnSuffix: oqlyvbth
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraph
+    instructions: null
+    name: Paragraph
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 01f4115a-eade-499a-bf94-f3c1056b9da4 # SVG Image
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+handle: groupFields
+name: 'Group Fields'
+sortOrder: 1
