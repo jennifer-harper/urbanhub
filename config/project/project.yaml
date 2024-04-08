@@ -1,4 +1,4 @@
-dateModified: 1712548488
+dateModified: 1712560794
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -65,12 +65,14 @@ meta:
     41f1a3d3-a8fd-4e2a-ac05-b194f3063080: 'Selling Points' # Selling Points
     46b86537-184d-4bca-8915-f93775953752: Heading # Heading
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
+    57f75165-13b9-4bda-a25d-d8febd10a02c: 'The Team' # The Team
     64c6c4b0-3771-452d-b41d-3d5e76d3c29f: 'Grid sm' # Grid sm
     68c5d740-f1a6-4bd9-b351-2e5773d12ecb: 'Features with Icon' # Features with Icon
     71ffbd93-0d12-4ba4-b423-417fa3d2e68f: 'Button Text' # Button Text
     72f5630e-993c-4522-b8dd-3faa44e9f8bd: 'Button Page Link' # Button Page Link
     75c33b8a-3fbb-4031-9b40-b95976dc12ba: 'Sub Heading' # Sub Heading
     75fe64f6-ab16-4d2c-9322-e1bb839f4845: UrbanSuite # UrbanSuite
+    77b5742c-7ad6-456e-bbd8-2ba02f34ddbd: 'Urban Environment' # Urban Environment
     82c50ae8-353d-4d5a-bbb3-08b969f2ee17: 'Map Address' # Map Address
     82f704c3-36ac-4f0d-b835-560746906020: 'Button Text' # Button Text
     83c78d90-8c41-4ef1-a2ef-1c5110162342: Image # Image
@@ -96,6 +98,7 @@ meta:
     4086dd2d-a840-4155-b992-eecd835319cc: 'Dollar Sign' # Dollar Sign
     4299af30-f9c7-48d6-922c-045249174b4a: Heading # Heading
     04877c62-92fa-436b-95c0-204552480b37: 'Footer Banner' # Footer Banner
+    5080dd41-04c1-4450-9368-fb3bb7a572aa: 'The Team' # The Team
     5223c8c7-2042-4fd7-b0e3-58ee93a5421e: Neighbourhood # Neighbourhood
     5440fd18-f20f-444c-bb08-3e2bb6fd9993: Heading # Heading
     5978cdef-8681-4576-a979-1eb00326e5ea: 'Group Fields' # Group Fields
@@ -124,6 +127,7 @@ meta:
     946813fd-230f-4dfe-beaf-7a03b3228bb2: '3 Images' # 3 Images
     952787c6-7c0b-46f8-9b75-93ef54023e32: Admin # Admin
     4673650a-aadd-4dc5-966e-7a5dba8f1d55: Heading # Heading
+    14055142-96fe-4113-9d1e-c3ba9f40a9b0: Paragraph # Paragraph
     25042295-f652-43f0-999f-77c7920456c1: 'Button Footer' # Button Footer
     50516315-9cd3-4843-8f18-397e1d59c811: 'Group Fields' # Group Fields
     89723374-3eac-4abc-b3ad-1bbd27091648: Heading # Heading
@@ -147,6 +151,7 @@ meta:
     c1bf7809-a0ec-476f-84d4-9d9bb2f451f4: 'Page Name' # Page Name
     c4fd8b25-a19f-4ccc-a013-d0fc9e5ce8b9: Other # Other
     c8f2d681-0ee8-4b7a-9344-17acc58a1ffb: 'List Items' # List Items
+    c9ebb069-37ef-4eaa-aa1e-f347b0f79ff9: 'Urban Environment' # Urban Environment
     c406e842-e9ae-4fa0-9851-a74a6f9cedf2: Home # Home
     c6883bfd-18a2-4828-9c01-a69a1e1f7c0b: USPs # USPs
     c683597a-6bd9-44dc-ae52-4793c8d189d6: UrbanClub # UrbanClub

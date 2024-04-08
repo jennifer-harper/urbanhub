@@ -627,7 +627,9 @@ svg {
     align-items: flex-end; 
 }
 
-
+.align-items-stretch{
+    align-items: stretch;
+}
 
 .flex-jc-sb{
     justify-content: space-between;
@@ -1101,6 +1103,14 @@ svg {
     }
     .bg-green-light .highlight{
         fill:$light;
+    }
+    .bg-light{
+        .light{
+            fill:$green-dark
+        }
+    }
+    .border-color{
+        border-color: $green-light;
     }
 }
 
@@ -1678,9 +1688,12 @@ svg {
 }
 
 .solutions-contrast.other {
-    .header-intro,
-    .header-intro p{
+    .intro-text,
+    .intro-text p{
+        margin: 0;
        margin-bottom: 0;
+       margin-right:$md;
+       
     } 
     .little-star{
         margin-top:0
@@ -1688,6 +1701,26 @@ svg {
     .btn{
         justify-content: flex-end; 
     }
+    .flex-wrap .flex-wrap{
+        flex-direction: column;
+        div:last-of-type{
+            text-align: right;
+        }
+    }
+    @media #{$mq-small}{
+        .flex-wrap .flex-wrap{
+            flex-direction: row;
+
+        }
+    }
+
+    @media #{$mq-medium}{
+        .flex-wrap .flex-wrap{
+            flex-direction: row;
+
+        }
+    }
+
 }
 
 .table-banner.dark{

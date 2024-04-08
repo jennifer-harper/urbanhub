@@ -213,6 +213,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 94ae2f64-db35-47c0-907e-b853e95b3ce5 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9fdd3f5d-2484-4537-a8ed-b0f716d20ea4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: e3854bbb-1638-4a39-bd6a-ab2c0a42e483 # Heading
             instructions: null
             label: null

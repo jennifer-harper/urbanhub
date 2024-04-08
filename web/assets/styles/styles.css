@@ -536,6 +536,10 @@ svg {
   align-items: flex-end;
 }
 
+.align-items-stretch {
+  align-items: stretch;
+}
+
 .flex-jc-sb {
   justify-content: space-between;
 }
@@ -970,6 +974,12 @@ svg {
 }
 .greenTheme .bg-green-light .highlight {
   fill: #FAF6F0;
+}
+.greenTheme .bg-light .light {
+  fill: #315844;
+}
+.greenTheme .border-color {
+  border-color: #BAE2A6;
 }
 
 .orangeTheme h1, .orangeTheme h2, .orangeTheme h3, .orangeTheme p, .orangeTheme a, .orangeTheme li, .orangeTheme table {
@@ -1408,15 +1418,33 @@ svg {
   max-width: 75%;
 }
 
-.solutions-contrast.other .header-intro,
-.solutions-contrast.other .header-intro p {
+.solutions-contrast.other .intro-text,
+.solutions-contrast.other .intro-text p {
+  margin: 0;
   margin-bottom: 0;
+  margin-right: 3vw;
 }
 .solutions-contrast.other .little-star {
   margin-top: 0;
 }
 .solutions-contrast.other .btn {
   justify-content: flex-end;
+}
+.solutions-contrast.other .flex-wrap .flex-wrap {
+  flex-direction: column;
+}
+.solutions-contrast.other .flex-wrap .flex-wrap div:last-of-type {
+  text-align: right;
+}
+@media (min-width: 48em) {
+  .solutions-contrast.other .flex-wrap .flex-wrap {
+    flex-direction: row;
+  }
+}
+@media (min-width: 64em) {
+  .solutions-contrast.other .flex-wrap .flex-wrap {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 64em) {

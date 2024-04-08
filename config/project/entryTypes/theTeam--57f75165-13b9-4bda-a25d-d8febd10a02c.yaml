@@ -1,0 +1,197 @@
+fieldLayouts:
+  9da501c8-cefc-4afa-b849-ede3e37cda34:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c15ba04f-6a89-48e4-bec9-e5ed5bad1a07
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 0309b667-b792-41ab-95a9-78d619d27ab2
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 83c78d90-8c41-4ef1-a2ef-1c5110162342 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 60699dfc-6a9d-450c-8644-4924823d35ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9192e01d-dce0-4d2e-8aa5-0b421efb5cd1 # Page Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da25c837-9bdc-42e7-8dc6-6bc8f1c49df4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5440fd18-f20f-444c-bb08-3e2bb6fd9993 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 91f3c5f5-7104-4780-bf48-4faf5427ff43
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e5b61af4-7baa-4d4d-8814-6dc66d180fe1 # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: afcd7681-c738-4e4b-bade-573888f53f98
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3e1bb40d-9000-497a-9b75-2f18c808ddd9 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bba4121c-78ba-4b18-8b8f-321699f8fc9c
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'First Section'
+        uid: 17ce7f59-5d2f-4df2-b215-769f42528826
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 94ae2f64-db35-47c0-907e-b853e95b3ce5 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90b556a7-5c97-4f50-a19b-4e7ad07741d9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bb2e6aac-abcc-4744-9ee7-250b2502df0d # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b1f6c0e9-ae36-4a1f-8c47-3f5e0cc9bb8b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8be806db-3051-4e01-a8a8-823d359dbfd2 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8ced0f0-1247-4dcf-b199-18e62d075f5a
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Centred Section '
+        uid: 4bf85610-2e22-4c7c-b6ce-9baa76105247
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e3854bbb-1638-4a39-bd6a-ab2c0a42e483 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e03e9cad-e030-47e8-93d1-34a3c1e1d7dc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 14055142-96fe-4113-9d1e-c3ba9f40a9b0 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bc40faa9-d4bc-463d-8601-8eff4b81a5d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b2308c33-a2ac-480c-be85-0db8e054e2bd # Grid
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f69adaf3-bf49-463c-8951-68b85c657463
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Grid Section'
+        uid: bf5c4fa4-c406-40d2-8242-06deafc18e1a
+        userCondition: null
+handle: theTeam
+hasTitleField: false
+name: 'The Team'
+section: 5080dd41-04c1-4450-9368-fb3bb7a572aa # The Team
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

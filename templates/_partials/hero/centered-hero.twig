@@ -1,6 +1,11 @@
 <div class="centered-hero {% block class %} {% endblock %} border-btm border-color-other">
     <div class="pad-all">
         <div class="text-center max-hero">
+         {% if entry.pageName %}
+            <div class="header-intro">
+                {{entry.pageName}}
+            </div>
+        {% endif %}
         {% if entry.headingH1 %}
             {{entry.headingH1}}
         {% endif %}

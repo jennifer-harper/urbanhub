@@ -7,11 +7,11 @@
         </div>
     </div>
     <div class="pad-top-btm no-top">
-        <div class="flex-wrap wrap border-top border-left border-color-contrast flex-align-center">
+        <div class="flex-wrap wrap align-items-stretch border-top border-left border-color-contrast">
             {% for block in entry.gridSm %}
                 {% if block.type == 'groupFields' %}
-                <div class="flex-wrap  flex-jc-sb pad-all sm border-btm  border-right border-color-contrast row {% block colCount %} {% endblock %}">
-                    <div class="header-intro">
+                <div class="flex-wrap  flex-jc-sb pad-all sm border-btm  border-right border-color-contrast {% block colCount %} {% endblock %}">
+                    <div class="intro-text">
                         {% if block.subHeading %}
                             {{block.subHeading}}
                         {% endif %}

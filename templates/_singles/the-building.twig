@@ -29,7 +29,9 @@
     {% endembed %}
     {% include '_partials/footer/social-media.twig' %}
     {% include '_partials/footer/contact-section.twig' %}
-     {% include '_partials/footer/map.twig' %}
+     {% embed '_partials/footer/map.twig' %}
+     {% block class %}pad-all no-top{% endblock %}
+     {% endembed %}
   {% endfor %} 
 {% endblock %}
 
