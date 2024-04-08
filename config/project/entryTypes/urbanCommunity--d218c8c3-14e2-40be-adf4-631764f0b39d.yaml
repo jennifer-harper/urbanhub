@@ -183,61 +183,61 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
-            fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
+            fieldUid: 83c78d90-8c41-4ef1-a2ef-1c5110162342 # Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0729d461-9365-4fc7-875c-86e07ebba0df
+            uid: e1ccdca9-7d48-49bd-be39-4419d188df15
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: d199f8b1-8c10-441f-8951-d2f10491a634 # Page Intro
+            fieldUid: 4299af30-f9c7-48d6-922c-045249174b4a # Heading
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 01d6f626-3e02-41d3-b437-5d6cab420f61
+            uid: 69720f16-fcbf-465f-bd77-440deedae577
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: c093fd38-7d2d-4d3d-b514-a314fa8fd189 # Page Intro Paragraph
+            fieldUid: e5b61af4-7baa-4d4d-8814-6dc66d180fe1 # Intro Paragraph
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: a458f72c-c3df-4191-b2cf-e406beff39d5
+            uid: 680a4f7a-aac2-4bf1-9af5-3bc456fd1239
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
+            fieldUid: 3e1bb40d-9000-497a-9b75-2f18c808ddd9 # Paragraph
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0caee3a8-1a1a-44ae-9176-7c02d96a30b5
+            uid: 2e4e76db-030e-4e7b-9406-84cba8b6ac7e
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 2ee914a2-b05d-4c31-a59b-9919788305a7 # Image
+            fieldUid: d179adcc-4b06-4a3b-85b4-aaff28d7ca0b # Hero Button
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 116f9b62-7a85-4d1e-9b2c-0c46b93642dc
+            uid: 585a4238-fdc6-4486-8895-ed9d7c0e3c33
             userCondition: null
             warning: null
             width: 100

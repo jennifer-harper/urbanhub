@@ -276,7 +276,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 .align-right{
     text-align: right;
+    @media #{$mq-medium}{
+    &.max-title{
+        max-width: 45%;
+        margin-right:0;
+        margin-left: auto;
+    }
 }
+}
+
 
 //-------font size-----------//
 h1{
@@ -624,7 +632,9 @@ svg {
 .flex-jc-sb{
     justify-content: space-between;
 }
-
+.flex-align-center{
+    align-items: center;
+}
 
 .center-style{
     display: flex;
@@ -923,6 +933,12 @@ svg {
     overflow: hidden;
     min-height:80vh;
 }
+
+@media screen and (min-device-width: 1024px) and (orientation: portrait){
+    .mask-wrapper{
+        min-height:50vh;
+    }
+  }
 
 //-------heading with button-----------//
 .heading-btn-wrapper{
@@ -1572,9 +1588,28 @@ svg {
 
 //-------Solutions sections-----------//
 
-.solutions-mask h2{
-    @media #{$mq-figma}{
-        max-width: 80%;
+.solutions-mask{
+    .content-wrap{
+        ul.underline-list{
+            max-width: 100%;
+        }
+        p:last-of-type{
+            margin-bottom: 0;
+        }
+    }
+    @media #{$mq-medium}{
+        .star-wrap{
+            min-width: 6vw;
+        }
+        p:last-of-type:not(.btn p){
+            margin-right: $md;
+        }
+    }
+}
+
+.hero-style{
+    .content-wrap{
+        margin-top: $base;
     }
 }
 .solutions-banner{
@@ -1609,17 +1644,17 @@ svg {
         } 
     }
 }
-.centered-section,
-.table-section.dark,
-.table-banner,
-.hero-solutions,
-.center-banner,
-.solutions-banner{
-    h1 svg,
-    h2 svg{
-        bottom:-20px;
-    }
-}
+// .centered-section,
+// .table-section.dark,
+// .table-banner,
+// .hero-solutions,
+// .center-banner,
+// .solutions-banner{
+//     h1 svg,
+//     h2 svg{
+//         bottom:-20px;
+//     }
+// }
 
 
 // .solutions-contrast-btm:not(.bg-green-dark),
@@ -1643,7 +1678,8 @@ svg {
 }
 
 .solutions-contrast.other {
-    h3{
+    .header-intro,
+    .header-intro p{
        margin-bottom: 0;
     } 
     .little-star{
@@ -1673,6 +1709,9 @@ svg {
     }
     }
 }
+
+
+
 .section-solutions{
     .border-right{
         border-right-width:0;

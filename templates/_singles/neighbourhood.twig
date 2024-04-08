@@ -17,7 +17,11 @@
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/hero/hero-mask.twig' %}
+    {% embed '_partials/sections/solutions-mask.twig' %}
+    {% block pageClass %} hero-style {% endblock %}
+{% endembed %}
+
+
 {% embed '_partials/sections/just-title.twig' %}
     {% block allClass %}just-title pad-sides{% endblock %}
 {% endembed %}
@@ -30,8 +34,8 @@
 
 
   {% include '_partials/sections/three-cols-other.twig' %}
-   {% include '_partials/footer/social-media-map.twig' %}
-    {% include '_partials/footer/contact-section.twig' %}
+{% include '_partials/footer/social-media-map.twig' %}
+{% include '_partials/footer/contact-section.twig' %}
 
   {% endfor %} 
 {% endblock %}

@@ -3,17 +3,13 @@
     <div class="third pad-all">
         <h2>{% block title %}Get <i>Started</i> {% endblock %}</h2>
 
-        {% for block in entry.button %}
-            {% if block.type == 'groupFields' %}
-                {% set buttonText = block.buttonText ?? 'Enquire now' %}
-                {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                {% set buttonText = 'Enquire Now' %}
+                {% set buttonPageLink = '/contact-us' %}
                 {% embed '_partials/button' %}
                     {% block class %}{{buttonClassContrast}} no-marg-top {% endblock %}
                     {% block title %}{{buttonText}} {% endblock %}
                     {% block url %}{{buttonPageLink}} {% endblock %}
                 {% endembed %} 
-            {% endif %}
-        {% endfor %}
 
         <ul class="flex-wrap row ">
             <li><a href="">{% include '_partials/svgs/facebook.twig' %}</a></li>

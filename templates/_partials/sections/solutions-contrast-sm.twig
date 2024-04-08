@@ -1,4 +1,4 @@
-<div class="solutions-contrast other pad-all{% block class %} {% endblock %}">
+<div class="solutions-contrast other pad-all {% block class %} {% endblock %}">
     <div class="">
         <div class="">
         {% if entry.heading3 %}
@@ -6,12 +6,12 @@
         {% endif %}
         </div>
     </div>
-    <div class="pad-top-btm">
-        <div class="flex-wrap wrap border-top border-left border-color-contrast">
+    <div class="pad-top-btm no-top">
+        <div class="flex-wrap wrap border-top border-left border-color-contrast flex-align-center">
             {% for block in entry.gridSm %}
                 {% if block.type == 'groupFields' %}
                 <div class="flex-wrap  flex-jc-sb pad-all sm border-btm  border-right border-color-contrast row {% block colCount %} {% endblock %}">
-                    <div>
+                    <div class="header-intro">
                         {% if block.subHeading %}
                             {{block.subHeading}}
                         {% endif %}

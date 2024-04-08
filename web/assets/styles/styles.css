@@ -210,6 +210,13 @@ h1, h2, h3, h4, h5, h6 {
 .align-right {
   text-align: right;
 }
+@media (min-width: 64em) {
+  .align-right.max-title {
+    max-width: 45%;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
 
 h1 {
   line-height: 0.8em;
@@ -533,6 +540,10 @@ svg {
   justify-content: space-between;
 }
 
+.flex-align-center {
+  align-items: center;
+}
+
 .center-style {
   display: flex;
   justify-content: center;
@@ -803,6 +814,11 @@ svg {
   min-height: 80vh;
 }
 
+@media screen and (min-device-width: 1024px) and (orientation: portrait) {
+  .mask-wrapper {
+    min-height: 50vh;
+  }
+}
 @media (min-width: 64em) {
   .heading-btn-wrapper h2 {
     margin-bottom: 0;
@@ -1341,10 +1357,23 @@ svg {
   }
 }
 
-@media (min-width: 94em) {
-  .solutions-mask h2 {
-    max-width: 80%;
+.solutions-mask .content-wrap ul.underline-list {
+  max-width: 100%;
+}
+.solutions-mask .content-wrap p:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 64em) {
+  .solutions-mask .star-wrap {
+    min-width: 6vw;
   }
+  .solutions-mask p:last-of-type:not(.btn p) {
+    margin-right: 3vw;
+  }
+}
+
+.hero-style .content-wrap {
+  margin-top: 5vw;
 }
 
 @media (min-width: 64em) {
@@ -1371,21 +1400,6 @@ svg {
   }
 }
 
-.centered-section h1 svg,
-.centered-section h2 svg,
-.table-section.dark h1 svg,
-.table-section.dark h2 svg,
-.table-banner h1 svg,
-.table-banner h2 svg,
-.hero-solutions h1 svg,
-.hero-solutions h2 svg,
-.center-banner h1 svg,
-.center-banner h2 svg,
-.solutions-banner h1 svg,
-.solutions-banner h2 svg {
-  bottom: -20px;
-}
-
 .solutions-contrast .highlight {
   bottom: -10px;
 }
@@ -1394,7 +1408,8 @@ svg {
   max-width: 75%;
 }
 
-.solutions-contrast.other h3 {
+.solutions-contrast.other .header-intro,
+.solutions-contrast.other .header-intro p {
   margin-bottom: 0;
 }
 .solutions-contrast.other .little-star {

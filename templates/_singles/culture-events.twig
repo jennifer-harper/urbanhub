@@ -17,14 +17,15 @@
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/hero/hero-mask.twig' %}
+    {% include '_partials/sections/solutions-mask.twig' %}
 
     {% embed '_partials/sections/solutions-contrast-sm.twig' %}
+        {% block class %} no-top {% endblock %}
         {% block colCount %} third{% endblock %}
     {% endembed %}
 
     {% embed '_partials/sections/solutions-icon-grid.twig' %}
-        {% block headingAlign %} align-right  {% endblock %}
+        {% block headingAlign %} align-right max-title {% endblock %}
         {% block class %} {{main }}{% endblock %}
         {% block colCount %} third{% endblock %}
     {% endembed %}

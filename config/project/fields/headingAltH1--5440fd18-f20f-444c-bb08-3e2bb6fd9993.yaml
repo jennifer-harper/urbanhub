@@ -1,0 +1,23 @@
+columnSuffix: yiunblde
+contentColumnType: text
+fieldGroup: efebdbd4-c2aa-4fa3-af50-e6aaf0e04fdf # Heros
+handle: headingAltH1
+instructions: null
+name: Heading
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: a72e886d-5deb-4c6e-9dea-5a690a3f141b # Title h1
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

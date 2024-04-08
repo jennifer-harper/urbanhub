@@ -1,5 +1,6 @@
 headingLevels:
   - 2
+  - 3
 name: 'Title H2'
 toolbar:
   - heading

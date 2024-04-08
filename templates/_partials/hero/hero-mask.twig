@@ -38,32 +38,43 @@
                     {{entry.pageIntroParagraph }}
                 {% endif %}
             </div>
-            <div>
-                {% for block in entry.button %}
-                    {% if block.type == 'groupFields' %}
-                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
-                        {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
-                        {% embed '_partials/button' %}
-                            {% block class %}{{buttonClass}}{% endblock %}
-                            {% block title %}{{buttonText}} {% endblock %}
-                            {% block url %}{{buttonPageLink}} {% endblock %}
-                        {% endembed %} 
-                    {% endif %}
-                {% endfor %}
-            </div>
-            <div>
-                {% for block in entry.buttonExternalLink %}
-                    {% if block.type == 'groupFields' %}
-                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
-                        {% set buttonLink = block.buttonLink[0].url ?? '/contact-us' %}
-                        {% embed '_partials/button' %}
-                            {% block class %}{{buttonClass}}{% endblock %}
-                            {% block title %}{{buttonText}} {% endblock %}
-                            {% block url %}{{buttonLink}} {% endblock %}
-                        {% endembed %} 
-                    {% endif %}
-                {% endfor %}
-            </div>
+
+            {% if entry.button is defined or entry.externalButtonLink is defined %}
+                {% if entry.button %}
+                    <div>
+                        {% for block in entry.button %}
+                            {% if block.type == 'groupFields' %}
+                                {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                                {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                                {% embed '_partials/button' %}
+                                    {% block class %}{{ buttonClass }}{% endblock %}
+                                    {% block title %}{{ buttonText }}{% endblock %}
+                                    {% block url %}{{ buttonPageLink }}{% endblock %}
+                                {% endembed %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% elseif entry.externalButtonLink %}
+                    <div>
+                        {% for block in entry.externalButtonLink %}
+                            {% if block.type == 'groupFields' %}
+                                {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                                {% set buttonLink = block.buttonLink[0].url ?? '/contact-us' %}
+                                {% embed '_partials/button' %}
+                                    {% block class %}{{ buttonClass }}{% endblock %}
+                                    {% block title %}{{ buttonText }}{% endblock %}
+                                    {% block url %}{{ buttonLink }}{% endblock %}
+                                {% endembed %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            {% else %}
+                <div class="flex-wrap">
+                    {% include '_partials/svgs/little-star.twig' %}
+                </div>
+            {% endif %}
+
         </div>
     </div>
 </div>
