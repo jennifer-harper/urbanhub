@@ -25,9 +25,9 @@
     {% endembed %}
 
 <div class="bg-lime ">
-    <div class=" flex-wrap third-wrap img-wrap">
+    <div class="flex-wrap third-wrap img-wrap wrap">
         {% for post in storiesPost %}
-            <div class="third flex-wrap col flex-jc-sb">
+            <div class="third flex-wrap col flex-jc-sb story-wrap">
                 <a href='{{ post.url }}' class="pod">
 
                     {% set images = post.image.all() %}

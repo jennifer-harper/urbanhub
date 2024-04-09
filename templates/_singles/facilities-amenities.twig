@@ -1,0 +1,30 @@
+   
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "facilitiesAmenities greenTheme" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('facilitiesAmenities').all() %} 
+
+
+{% set buttonClass = "green-light" %}
+{% set buttonClassContrast = "green" %}
+
+{% set main = "bg-green-light" %}
+{% set contrast = "bg-green-dark" %}
+{% set footer = "bg-green-dark" %}
+
+
+{% block content %} 
+  {% for entry in page %} 
+    {% include '_partials/sections/solutions-mask.twig' %}
+
+
+    {% embed '_partials/sections/star-banner-section.twig' %}
+        {% block class %} {{main}} {% endblock %}
+    {% endembed %}
+   {% include '_partials/footer/social-media.twig' %}
+    {% include '_partials/footer/contact-section.twig' %}
+
+  {% endfor %} 
+{% endblock %}
+

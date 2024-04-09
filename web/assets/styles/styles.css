@@ -382,7 +382,7 @@ svg {
 }
 
 .pad-all {
-  padding: 5vw;
+  padding: 3vw;
 }
 .pad-all.lg {
   padding: 8vw;
@@ -391,7 +391,7 @@ svg {
   padding: 2.3076923077vw;
 }
 .pad-all.for-sm {
-  padding: 2.6923076923vw;
+  padding: 0.6923076923vw;
 }
 .pad-all.no-top {
   padding-top: 0;
@@ -406,9 +406,47 @@ svg {
   padding-right: 0;
 }
 
+.third-wrap.text-wrap,
+.third-wrap.img-wrap {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.third-wrap.text-wrap .third,
+.third-wrap.img-wrap .third {
+  padding: 1vw;
+}
+
+@media (min-width: 64em) {
+  .third-wrap.text-wrap {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .third-wrap.text-wrap .third {
+    flex-basis: 45%;
+    max-width: 45%;
+    padding: 0 0 0 1vw;
+  }
+  .third-wrap.text-wrap h3, .third-wrap.text-wrap p {
+    margin-bottom: 0;
+    margin-top: 2vw;
+  }
+}
+@media (min-width: 85.375em) {
+  .third-wrap.text-wrap {
+    justify-content: unset;
+  }
+  .third-wrap.text-wrap .third {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+  }
+  .third-wrap.text-wrap .third p {
+    padding-left: 5vw;
+  }
+}
+
 .pad-sides {
-  padding-left: 5vw;
-  padding-right: 5vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
 }
 .pad-sides.sides-sm {
   padding-right: 2.3076923077vw;
@@ -426,8 +464,8 @@ svg {
 }
 
 .pad-top-btm {
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
 }
 .pad-top-btm.no-top {
   padding-top: 0;
@@ -565,41 +603,6 @@ svg {
   justify-content: center;
 }
 
-.third-wrap.img-wrap {
-  padding-left: 4vw;
-  padding-right: 4vw;
-}
-.third-wrap.img-wrap .third {
-  padding: 1vw;
-}
-
-@media (min-width: 64em) {
-  .third-wrap.text-wrap {
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  .third-wrap.text-wrap .third {
-    flex-basis: 45%;
-    max-width: 45%;
-  }
-  .third-wrap.text-wrap h3, .third-wrap.text-wrap p {
-    margin-bottom: 0;
-    margin-top: 2vw;
-  }
-}
-@media (min-width: 85.375em) {
-  .third-wrap.text-wrap {
-    justify-content: unset;
-  }
-  .third-wrap.text-wrap .third {
-    flex-basis: 33.333%;
-    max-width: 33.333%;
-  }
-  .third-wrap.text-wrap .third p {
-    padding-left: 5vw;
-  }
-}
-
 .btn {
   display: flex;
   margin-top: 3vw;
@@ -632,7 +635,7 @@ svg {
 }
 .btn a div {
   background-color: #BAE2A6;
-  border-radius: 5vw;
+  border-radius: 3vw;
   padding: 0.2em 1em;
 }
 .btn a div svg {
@@ -880,7 +883,7 @@ svg {
 .slider-btn-wrapper .swiper-button-next {
   position: relative;
   background-color: #315844;
-  border-radius: 5vw;
+  border-radius: 3vw;
   padding: 0.7em 1em;
   width: unset;
   height: inherit;
@@ -1320,7 +1323,7 @@ svg {
 }
 @media (min-width: 85.375em) {
   .footer-banner h2 {
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
   }
 }
 .footer-banner.bg-green-dark h2, .footer-banner.bg-green-dark a, .footer-banner.bg-green-dark p {
@@ -1410,15 +1413,15 @@ svg {
 }
 
 .hero-style .content-wrap {
-  margin-top: 5vw;
+  margin-top: 3vw;
 }
 
 @media (min-width: 64em) {
   .solutions-banner .half:first-of-type {
-    padding-right: 5vw;
+    padding-right: 3vw;
   }
   .solutions-banner .half:last-of-type {
-    padding-left: 5vw;
+    padding-left: 3vw;
   }
 }
 
@@ -1765,7 +1768,7 @@ tbody tr:first-of-type td {
   z-index: 1;
 }
 .ourSpaces .two-thirds .heading {
-  padding: 5vw;
+  padding: 3vw;
   padding-left: 0;
 }
 .ourSpaces .two-thirds .base-line {
@@ -1956,12 +1959,37 @@ tbody tr:first-of-type td {
 }
 
 .stories .third-wrap.img-wrap {
-  padding-top: 4vw;
-  padding-bottom: 4vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 .stories .third-wrap.img-wrap h3 {
   margin-top: 3vw;
   margin-bottom: 3vw;
+}
+.stories .flex-wrap.third.story-wrap {
+  margin-bottom: 3vw;
+}
+.stories .centered-hero .pad-all {
+  padding-bottom: 0;
+}
+@media (min-width: 64em) {
+  .stories .third-wrap.img-wrap {
+    padding-bottom: 0;
+  }
+  .stories .flex-wrap.third.story-wrap {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 85.375em) {
+  .stories .third-wrap.img-wrap {
+    padding-bottom: 1vw;
+  }
+  .stories .flex-wrap.third.story-wrap {
+    flex-basis: 33.333%;
+    max-width: 33.333%;
+    margin-bottom: 1vw;
+  }
 }
 
 .contact-us .nav {

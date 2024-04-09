@@ -483,8 +483,52 @@ svg {
         padding-right:0
     }
     // @media #{$mq-figma} {
-    //     padding:$base $base*.5;
+    //     padding:$base $base*.65;
     // }
+}
+
+
+.third-wrap.text-wrap,
+.third-wrap.img-wrap{
+    padding-left:calc($base - 1vw);
+    padding-right:calc($base - 1vw);
+    .third{
+        padding:1vw;
+    }
+    // @media #{$mq-figma} {
+    //     padding-left:calc($base*.65 - 1vw);
+    //     padding-right:calc($base*.65 - 1vw);
+    // }
+}
+
+.third-wrap.text-wrap{
+    @media #{$mq-medium}{
+        justify-content: space-between;
+        align-items: flex-end;
+        .third{
+            flex-basis:45%;
+            max-width:45%;
+            padding:0 0 0 1vw;
+        }
+        h3,p{
+            margin-bottom: 0;
+            margin-top: 2vw;
+        }
+
+    }
+
+    @media #{$mq-large}{
+        justify-content: unset;
+
+        .third{
+            flex-basis:33.333%;
+            max-width:33.333%;
+            p{
+                padding-left: 5vw;
+            }
+        }
+    }
+
 }
 
 
@@ -655,41 +699,7 @@ svg {
     justify-content: center;
 }
 
-.third-wrap.img-wrap{
-    padding-left:calc($base - 1vw);
-    padding-right:calc($base - 1vw);
-    .third{
-        padding:1vw;
-    }
-}
 
-.third-wrap.text-wrap{
-    @media #{$mq-medium}{
-        justify-content: space-between;
-        align-items: flex-end;
-        .third{
-            flex-basis:45%;
-            max-width:45%;
-        }
-        h3,p{
-            margin-bottom: 0;
-            margin-top: 2vw;
-        }
-    }
-
-    @media #{$mq-large}{
-        justify-content: unset;
-
-        .third{
-            flex-basis:33.333%;
-            max-width:33.333%;
-            p{
-                padding-left: 5vw;
-            }
-        }
-    }
-
-}
 
 
 //-------Buttons-----------//
@@ -2299,7 +2309,9 @@ tbody{
     }
 }
 
-.stories{
+
+
+.stories {
     .third-wrap.img-wrap{
         padding-top:calc($base - 1vw);
         padding-bottom:calc($base - 1vw);
@@ -2307,8 +2319,34 @@ tbody{
             margin-top:$md;
             margin-bottom: $md;
         }
+    } 
+    .flex-wrap.third.story-wrap{
+        margin-bottom: $base;
+
     }
-    
+    .centered-hero .pad-all{
+        padding-bottom: 0;
+    }
+
+    @media #{$mq-medium}{
+        .third-wrap.img-wrap{
+            padding-bottom:0;
+        }
+        .flex-wrap.third.story-wrap{
+            flex-basis:50%;
+            max-width:50%;
+        }
+    }
+    @media #{$mq-large}{
+        .third-wrap.img-wrap{
+            padding-bottom:calc($base - 2vw);
+        }
+        .flex-wrap.third.story-wrap{
+            flex-basis:33.333%;
+            max-width:33.333%;
+            margin-bottom: 1vw;
+        }
+    }
 }
 
 //contact-related
