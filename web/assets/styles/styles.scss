@@ -482,9 +482,9 @@ svg {
     &.no-right{
         padding-right:0
     }
-    @media #{$mq-figma} {
-        padding:$base $md;
-    }
+    // @media #{$mq-figma} {
+    //     padding:$base $base*.5;
+    // }
 }
 
 
@@ -1518,6 +1518,11 @@ svg {
     .btn.green a div{
         background-color: $lime;  
     }
+    .bg-light{
+        .light{
+            fill:$lime
+        }
+    }
 }
 
 
@@ -2294,8 +2299,19 @@ tbody{
     }
 }
 
+.stories{
+    .third-wrap.img-wrap{
+        padding-top:calc($base - 1vw);
+        padding-bottom:calc($base - 1vw);
+        h3{
+            margin-top:$md;
+            margin-bottom: $md;
+        }
+    }
+    
+}
 
-//contact-replates
+//contact-related
 
 .contact-us{
     .nav{

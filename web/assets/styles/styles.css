@@ -405,11 +405,6 @@ svg {
 .pad-all.no-right {
   padding-right: 0;
 }
-@media (min-width: 94em) {
-  .pad-all {
-    padding: 5vw 3vw;
-  }
-}
 
 .pad-sides {
   padding-left: 5vw;
@@ -1298,6 +1293,9 @@ svg {
 .limeTheme .btn.green a div {
   background-color: #D3E84C;
 }
+.limeTheme .bg-light .light {
+  fill: #D3E84C;
+}
 
 .footer-banner {
   position: relative;
@@ -1955,6 +1953,15 @@ tbody tr:first-of-type td {
 
 .urbanCommunity .solutions-contrast h2 {
   margin-bottom: 0;
+}
+
+.stories .third-wrap.img-wrap {
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+}
+.stories .third-wrap.img-wrap h3 {
+  margin-top: 3vw;
+  margin-bottom: 3vw;
 }
 
 .contact-us .nav {

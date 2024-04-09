@@ -40,7 +40,9 @@
     {% embed '_partials/sections/solutions-mask.twig' %}
 {% endembed %}
 
-   {% include '_partials/footer/social-media.twig' %}
+   {% embed '_partials/footer/social-media.twig' %}
+           {% block class %} border-top{% endblock %}
+    {% endembed %}
     {% include '_partials/footer/contact-section.twig' %}
 
   {% endfor %} 

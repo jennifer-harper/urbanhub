@@ -21,13 +21,24 @@
     {% include '_partials/hero/centered-hero.twig' %}
 
     {% embed '_partials/sections/star-banner-section.twig' %}
-        {% block class %} {{main}} {% endblock %}
+        {% block class %} bg-light {% endblock %}
     {% endembed %}
 
-    <div class="bg-lime flex-wrap pad-all sm">
+<div class="bg-lime ">
+    <div class=" flex-wrap third-wrap img-wrap">
         {% for post in storiesPost %}
-            <div class="third pad-all for-sm">
+            <div class="third flex-wrap col flex-jc-sb">
                 <a href='{{ post.url }}' class="pod">
+
+                    {% set images = post.image.all() %}
+                    {% if images %}
+                    {% for image in images %}
+                        <div class="">
+                            <img src="{{ image.getUrl}}" alt="{{ image.alt }}" class="img-fit">
+                        </div>
+                    {% endfor %}
+                    {% endif %}
+
                     <h3>{{post.title}}</h3>
                     {% if post.pageIntro %}
                         {{post.pageIntro}}
@@ -35,11 +46,17 @@
                     {% if post.pageIntroParagraph %}
                         {{post.pageIntroParagraph}}  
                     {% endif %}
-                </a>            
+                </a> 
+
+                {% embed '_partials/button' %}
+                {% block class %}{{buttonClassContrast}}{% endblock %}
+                {% block title %}Find out more{% endblock %}
+                {% block url %}{{ post.url }}{% endblock %}
+                {% endembed %}         
             </div>
         {% endfor %}
     </div>
-
+</div>
    {% include '_partials/footer/social-media.twig' %}
     {% include '_partials/footer/contact-section.twig' %}
   {% endfor %} 
