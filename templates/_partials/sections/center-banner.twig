@@ -16,6 +16,19 @@
                     {{entry.paragraph3}}
                 </div>
             {% endif %}
+            {% if entry.buttonExternalLink is defined and entry.buttonExternalLink %}
+                {% for block in entry.buttonExternalLink %}
+                    {% if block.type == 'groupFields' %}
+                        {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                        {% set buttonLink = block.buttonLink  %}
+                        {% embed '_partials/button' %}
+                            {% block class %}{{buttonClass}} centered{% endblock %}
+                            {% block title %}{{buttonText}} {% endblock %}
+                            {% block url %}{{buttonLink}} {% endblock %}
+                        {% endembed %} 
+                    {% endif %}
+                {% endfor %}
+                 {% endif %}
         </div>
     </div>
 </div>

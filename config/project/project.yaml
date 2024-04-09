@@ -1,4 +1,4 @@
-dateModified: 1712560794
+dateModified: 1712624641
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -116,6 +116,7 @@ meta:
     48802c23-b684-41b9-9337-e0194906b5ce: UrbanStudio # UrbanStudio
     56985cf3-1250-417e-ba85-9ff5472ba6bf: Heading # Heading
     82546b52-8a4e-4727-a216-ebae0292e3d9: Paragraph # Paragraph
+    89804d47-08d1-4bd5-9a93-6e1dbb9d73f9: 'Stories Page' # Stories Page
     99187c08-de31-449f-8c39-1902c47e7a22: 'Culture & Events' # Culture & Events
     168839e9-6683-4aac-924b-9ec5087dacd7: 'Sub Heading' # Sub Heading
     250485d5-f50f-4a7f-a221-1fc9dc7dbb3a: Images # Images
@@ -143,7 +144,10 @@ meta:
     b9b1a6d2-d5a8-4791-8722-91479f5bf9ae: 'Meta Description' # Meta Description
     b2308c33-a2ac-480c-be85-0db8e054e2bd: Grid # Grid
     b5908f86-11d8-49a9-b0fc-1dc187009d66: 'Space Type' # Space Type
+    b8605ac6-4063-4aa4-ba46-f37641194b73: 'Stories Page' # Stories Page
+    b7237764-0346-4880-ad92-a5b51cd5a6b9: Default # Default
     bb2e6aac-abcc-4744-9ee7-250b2502df0d: 'Intro Paragraph' # Intro Paragraph
+    bc544d46-125f-4cc7-8feb-4ae448ed9679: Stories # Stories
     bdaa862b-f4c9-44a8-8e83-355b31b152cb: Footer # Footer
     bfb7b42f-4864-40c5-861c-2e94d9335067: Heading # Heading
     c06f5252-560d-4a13-98d7-2fe4e378328b: Paragraph # Paragraph

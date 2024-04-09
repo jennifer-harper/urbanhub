@@ -1,0 +1,25 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "stories limeTheme" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+
+{% set buttonClass = "lime" %}
+{% set buttonClassContrast = "green" %}
+
+{% set main = "bg-lime" %}
+{% set contrast = "bg-green" %}
+{% set footer = "bg-lime" %}
+
+{% block content %} 
+  
+    <div class="pad-all">
+        {{entry.pageTitle}}  
+        {{entry.pageIntro}}
+        {{entry.pageIntroParagraph}}  
+    </div>
+
+    {% include '_partials/footer/social-media.twig' %}
+    {% include '_partials/footer/contact-section.twig' %}
+
+{% endblock %}
+

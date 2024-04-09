@@ -35,7 +35,7 @@
                 {% for block in entry.buttonExternalLink %}
                     {% if block.type == 'groupFields' %}
                         {% set buttonText = block.buttonText ?? 'Enquire now' %}
-                        {% set buttonLink = block.buttonLink[0].url ?? '/contact-us' %}
+                        {% set buttonLink = block.buttonLink ?? '/contact-us' %}
                         {% embed '_partials/button' %}
                             {% block class %}{{buttonClass}}{% endblock %}
                             {% block title %}{{buttonText}} {% endblock %}

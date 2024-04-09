@@ -1,0 +1,47 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "stories limeTheme" } %} 
+{% set docTitle = 'Stories' %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('storiesPage').all() %} 
+
+{% set storiesPost = craft.entries().section('stories').orderBy('postDate desc').all() %}
+
+
+{% set buttonClass = "lime" %}
+{% set buttonClassContrast = "green" %}
+
+{% set main = "bg-lime" %}
+{% set contrast = "bg-green" %}
+{% set footer = "bg-lime" %}
+
+
+
+{% block content %} 
+  {% for entry in page %} 
+    {% include '_partials/hero/centered-hero.twig' %}
+
+    {% embed '_partials/sections/star-banner-section.twig' %}
+        {% block class %} {{main}} {% endblock %}
+    {% endembed %}
+
+    <div class="bg-lime flex-wrap pad-all sm">
+        {% for post in storiesPost %}
+            <div class="third pad-all for-sm">
+                <a href='{{ post.url }}' class="pod">
+                    <h3>{{post.title}}</h3>
+                    {% if post.pageIntro %}
+                        {{post.pageIntro}}
+                    {% endif %}
+                    {% if post.pageIntroParagraph %}
+                        {{post.pageIntroParagraph}}  
+                    {% endif %}
+                </a>            
+            </div>
+        {% endfor %}
+    </div>
+
+   {% include '_partials/footer/social-media.twig' %}
+    {% include '_partials/footer/contact-section.twig' %}
+  {% endfor %} 
+{% endblock %}
+

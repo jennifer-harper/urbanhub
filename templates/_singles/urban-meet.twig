@@ -25,8 +25,9 @@
     {% include '_partials/sections/center-banner.twig' %}
     
     {% include '_partials/sections/table.twig' %}
-    {% include '_partials/sections/solutions-banner.twig' %}
-
+    {% embed '_partials/sections/solutions-banner.twig' %}
+    {% block class %}  {% endblock %}
+{% endembed %}
     {% embed '_partials/sections/table-dark.twig' %}
         {% block bgColor %} {{main}} {% endblock %}
         {% block class %} {{main}} {% endblock %}

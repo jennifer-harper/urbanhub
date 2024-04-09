@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: auto;
     margin-right: auto;
   }
-  .text-center.max-title p, .text-center.max-hero p {
+  .text-center.max-title p:not(.btn p), .text-center.max-hero p:not(.btn p) {
     max-width: 50vw;
     margin-left: auto;
     margin-right: auto;
@@ -1951,6 +1951,10 @@ tbody tr:first-of-type td {
 
 .urbanEnvironment .social-media {
   border-top-width: 0;
+}
+
+.urbanCommunity .solutions-contrast h2 {
+  margin-bottom: 0;
 }
 
 .contact-us .nav {
