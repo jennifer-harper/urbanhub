@@ -237,6 +237,36 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7f047a05-2540-4f05-95d5-f1ed82f7f157
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f6235337-2bb0-4e9a-b111-8de6f0838c34 # Testimonial Bg Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eee1b97f-8cd1-4990-8b8e-731acc6295db
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Testimonal Section'
+        uid: 300615df-26d7-4cb3-9557-43066d85d8c8
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 34804f61-aab1-4122-8907-cc55a4677fa1 # Heading
             instructions: null
             label: null

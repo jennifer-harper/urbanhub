@@ -1,0 +1,53 @@
+
+<div class="pad-all border-btm border-color no-bottom testi-header">
+    {% if entry.heading2 %}
+        {{ entry.heading2 }}
+    {% endif %}
+</div>
+
+<div class="pad-all testimonials">
+
+        <div class="image-wrap">
+            {% set image = entry.testimonialBgImages.all() %}
+            {% if image|length >= 1  %}
+                <img class="" src="{{ image[0].getUrl() }}" alt="{{ image[0].alt }}">
+            {% endif %}
+        </div>
+
+        <div class="testimonial-wrap">
+            <img src="uploads/images/quotemarks.svg" alt="quote icon start" class="quote-icon">
+            <div class="swiper slider-testimonials">
+                {% set quotes = craft.entries().section('testimonials').all() %} 
+                <div class="swiper-wrapper">
+                {% for quote in quotes %} 
+                    <div class="swiper-slide bg-light-grey">
+                        <div class="quote">
+                        {% if quote.testimonial %}
+                            {{ quote.testimonial }}
+                        {% endif %}
+                        </div>
+
+                        <div class="owner-wrapper">
+                            {% if quote.testimonialName %}
+                                <p>{{ quote.testimonialName }}</p>
+                            {% endif %}
+
+                            {% if quote.testimonialImage.one() %}
+                                {% set imageQ = quote.testimonialImage.one() %}
+                                <img class="" src="{{ imageQ.url }}" alt="{{ imageQ.alt }}">
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+             <img src="uploads/images/quotemarks.svg" alt="quote icon finish" class="quote-icon">
+        </div>
+
+        <div class="image-wrap">
+            {% if image|length >= 1  %}
+                <img class="" src="{{ image[1].getUrl() }}" alt="{{ image[1].alt }}">
+            {% endif %}
+        </div>
+
+</div>

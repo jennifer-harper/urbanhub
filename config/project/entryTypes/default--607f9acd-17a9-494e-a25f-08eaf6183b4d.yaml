@@ -1,0 +1,83 @@
+fieldLayouts:
+  53e2fefa-e888-4ceb-9f87-dbad9521f3cc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b6ade001-54d1-4ad9-82ec-9a580bcb20e7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 856b2861-b0fa-4e28-8bc4-5952ab34d6d9 # Testimonial 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1ba71ca4-3d6c-40fb-a0c2-8febeb9e2dd7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 60213e3e-8333-45c1-b183-24d6e9703a38 # Testimonial Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 743b194a-f633-4b33-ad0c-2caba6715ccc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d716cb05-9b41-43e6-886a-1005f46cd177 # Testimonial Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4de2507-2dd8-48c8-b1bd-71680e87ebaa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cb1aae9f-a827-454e-ae97-aa02800c0548
+        userCondition: null
+handle: default
+hasTitleField: false
+name: Default
+section: 8b96bc2b-8291-4a3f-b029-6182d57d6576 # Testimonials
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{testimonialName}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

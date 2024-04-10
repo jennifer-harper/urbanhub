@@ -1,0 +1,51 @@
+<div class="tabs-urban-solutions">
+    <div class="">
+        {% set slider = craft.entries().section('urbanSolutionsSlider').all() %}
+        {% for slide in slider %}
+            {% if slide.spaceType is not empty %}
+                <div class="border-right border-color no-border-mobile {{slide.spaceType[0]}}">
+                   <div class="pad-all">
+                        <div class="flex-wrap img-cont">
+                            <div class="half center-style col">
+                                {% if slide.spaceType %}
+                                    <p>{{slide.spaceType[0]}}
+                                    </p>
+                                    <p>starts at</p>
+                                {% endif %}
+                                <div>                
+                                    <p class="flex-wrap">
+                                    <span class="flex-wrap row">
+                                        {% if slide.dollarSign %}  <span class="sign">{{slide.dollarSign}}</span>{% endif %}
+                                        {% if slide.spacePrice %}  <span class="price">{{slide.spacePrice}}</span>{% endif %}
+                                        </span>
+                                    
+                                        {% if slide.priceQuantity %}  
+                                        <span class="quantity">
+                                            <i>{{slide.priceQuantity}}</i>
+                                        </span>
+                                        {% endif %}
+                                    </p> 
+                                </div>
+
+                                {% if slide.spaceDescription %}
+                                    {{slide.spaceDescription}}
+                                {% endif %}
+
+                                {% set buttonText = slide.buttonText ?? 'Find out more' %}
+                                {% set buttonPageLink = slide.spaceType[0].url ?? '/contact-us' %}
+                                {% embed '_partials/button' %}
+                                    {% block class %}{{buttonClass}}{% endblock %}
+                                    {% block title %}{{buttonText}} {% endblock %}
+                                    {% block url %}{{buttonPageLink}} {% endblock %}
+                                {% endembed %} 
+                            </div>
+                            <div class="half center-style pad-sides no-right">
+                                {% include '_partials/svgs/' ~ slide.spaceType[0] ~ '.twig' %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

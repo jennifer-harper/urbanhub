@@ -2275,6 +2275,8 @@ tbody{
         }
     }
 }
+
+//tabs
 .home{
     .tabs-urban-solutions{
 
@@ -2380,6 +2382,91 @@ tbody{
     }
 
 
+}
+
+// testimonials
+.home{
+    .testi-header{
+        h2{
+            margin-bottom: 6vw;
+        }
+    }
+    .testimonials{
+        .testimonial-wrap{
+            position: relative;
+            padding-bottom: 6vw;
+            img{
+                width:6vw;
+            }
+            .quote-icon{
+                &:last-of-type{
+                    position: absolute;
+                    right: 0;
+                    bottom:6vw;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .img-wrap{
+            img{
+                max-width: 50%;
+            }
+        }
+
+
+
+        @media #{$mq-medium}{
+            padding-left: 0;
+            padding-right: 0;
+            display: flex;
+            .image-wrap{
+                display: flex;
+                flex-basis:25%;
+                width: 25%;
+                img{
+                    max-width: unset;
+                }
+            }
+            .testimonial-wrap{ 
+                flex-basis:50%;
+                width: 50%; 
+
+                .quote p{
+                    font-size: $base-font-size*1.2;
+                }
+                .owner-wrapper{
+                    margin-top: $md;
+                }
+                .swiper-slide{
+                    padding: 0 $md;
+
+                }
+                .quote-icon{
+                    &:first-of-type{
+                        margin-left: -6vw;
+                    }
+                    &:last-of-type{
+                        right:-6vw;
+                        bottom: 0;
+                    }
+
+                }
+            }
+
+            .image-wrap:first-of-type{
+                align-items: flex-end;
+                img{
+                    margin-left: -6vw;
+                }
+            }
+            .image-wrap:last-of-type{
+                align-items: flex-start;
+                img{
+                    margin-right: -6vw;
+                }
+            }
+        }
+    }
 }
 
 

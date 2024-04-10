@@ -2026,6 +2026,73 @@ tbody tr:first-of-type td {
   color: #253C40;
 }
 
+.home .testi-header h2 {
+  margin-bottom: 6vw;
+}
+.home .testimonials .testimonial-wrap {
+  position: relative;
+  padding-bottom: 6vw;
+}
+.home .testimonials .testimonial-wrap img {
+  width: 6vw;
+}
+.home .testimonials .testimonial-wrap .quote-icon:last-of-type {
+  position: absolute;
+  right: 0;
+  bottom: 6vw;
+  transform: rotate(180deg);
+}
+.home .testimonials .img-wrap img {
+  max-width: 50%;
+}
+@media (min-width: 64em) {
+  .home .testimonials {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+  }
+  .home .testimonials .image-wrap {
+    display: flex;
+    flex-basis: 25%;
+    width: 25%;
+  }
+  .home .testimonials .image-wrap img {
+    max-width: unset;
+  }
+  .home .testimonials .testimonial-wrap {
+    flex-basis: 50%;
+    width: 50%;
+  }
+  .home .testimonials .testimonial-wrap .quote p {
+    font-size: 1.2em;
+  }
+  .home .testimonials .testimonial-wrap .owner-wrapper {
+    margin-top: 3vw;
+  }
+  .home .testimonials .testimonial-wrap .swiper-slide {
+    padding: 0 3vw;
+  }
+  .home .testimonials .testimonial-wrap .quote-icon:first-of-type {
+    margin-left: -6vw;
+  }
+  .home .testimonials .testimonial-wrap .quote-icon:last-of-type {
+    right: -6vw;
+    bottom: 0;
+  }
+  .home .testimonials .image-wrap:first-of-type {
+    align-items: flex-end;
+  }
+  .home .testimonials .image-wrap:first-of-type img {
+    margin-left: -6vw;
+  }
+  .home .testimonials .image-wrap:last-of-type {
+    align-items: flex-start;
+  }
+  .home .testimonials .image-wrap:last-of-type img {
+    margin-right: -6vw;
+  }
+}
+
 @media (min-width: 48em) {
   .urbanLease .usp {
     max-width: 33.33%;
