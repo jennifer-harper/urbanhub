@@ -382,7 +382,7 @@ svg {
 }
 
 .pad-all {
-  padding: 3vw;
+  padding: 5vw;
 }
 .pad-all.lg {
   padding: 8vw;
@@ -391,7 +391,7 @@ svg {
   padding: 2.3076923077vw;
 }
 .pad-all.for-sm {
-  padding: 0.6923076923vw;
+  padding: 2.6923076923vw;
 }
 .pad-all.no-top {
   padding-top: 0;
@@ -405,15 +405,27 @@ svg {
 .pad-all.no-right {
   padding-right: 0;
 }
+@media (min-width: 94em) {
+  .pad-all {
+    padding: 5vw 3.25vw;
+  }
+}
 
 .third-wrap.text-wrap,
 .third-wrap.img-wrap {
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 4vw;
+  padding-right: 4vw;
 }
 .third-wrap.text-wrap .third,
 .third-wrap.img-wrap .third {
   padding: 1vw;
+}
+@media (min-width: 94em) {
+  .third-wrap.text-wrap,
+  .third-wrap.img-wrap {
+    padding-left: 2.25vw;
+    padding-right: 2.25vw;
+  }
 }
 
 @media (min-width: 64em) {
@@ -445,8 +457,8 @@ svg {
 }
 
 .pad-sides {
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 .pad-sides.sides-sm {
   padding-right: 2.3076923077vw;
@@ -464,8 +476,8 @@ svg {
 }
 
 .pad-top-btm {
-  padding-top: 3vw;
-  padding-bottom: 3vw;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
 }
 .pad-top-btm.no-top {
   padding-top: 0;
@@ -487,7 +499,8 @@ svg {
 }
 
 .border-top {
-  border-top: 1px solid;
+  border-top-width: 1px;
+  border-top-style: solid;
 }
 
 .border-left {
@@ -635,7 +648,7 @@ svg {
 }
 .btn a div {
   background-color: #BAE2A6;
-  border-radius: 3vw;
+  border-radius: 5vw;
   padding: 0.2em 1em;
 }
 .btn a div svg {
@@ -883,7 +896,7 @@ svg {
 .slider-btn-wrapper .swiper-button-next {
   position: relative;
   background-color: #315844;
-  border-radius: 3vw;
+  border-radius: 5vw;
   padding: 0.7em 1em;
   width: unset;
   height: inherit;
@@ -1004,8 +1017,12 @@ svg {
 .greenTheme .bg-light .light {
   fill: #315844;
 }
-.greenTheme .border-color {
-  border-color: #BAE2A6 !important;
+.greenTheme .bg-green-dark .border-color {
+  border-right-color: #BAE2A6;
+}
+.greenTheme .bg-green-light .border-color, .greenTheme .bg-green-light.border-color {
+  border-color: #FAF6F0;
+  border-top-color: #FAF6F0;
 }
 
 .orangeTheme h1, .orangeTheme h2, .orangeTheme h3, .orangeTheme p, .orangeTheme a, .orangeTheme li, .orangeTheme table {
@@ -1316,14 +1333,14 @@ svg {
 }
 @media (min-width: 64em) {
   .footer-banner h2 {
-    margin-top: -25px;
+    margin-top: -20px;
     line-height: 0.7em;
     font-size: 10.8vw;
   }
 }
 @media (min-width: 85.375em) {
   .footer-banner h2 {
-    margin-bottom: 3vw;
+    margin-bottom: 5vw;
   }
 }
 .footer-banner.bg-green-dark h2, .footer-banner.bg-green-dark a, .footer-banner.bg-green-dark p {
@@ -1413,15 +1430,15 @@ svg {
 }
 
 .hero-style .content-wrap {
-  margin-top: 3vw;
+  margin-top: 5vw;
 }
 
 @media (min-width: 64em) {
   .solutions-banner .half:first-of-type {
-    padding-right: 3vw;
+    padding-right: 5vw;
   }
   .solutions-banner .half:last-of-type {
-    padding-left: 3vw;
+    padding-left: 5vw;
   }
 }
 
@@ -1507,6 +1524,11 @@ svg {
 @media (min-width: 64em) {
   .solutions-usp .usp {
     max-width: 25%;
+  }
+}
+@media (min-width: 85.375em) {
+  .solutions-usp .flex-wrap.row.wrap {
+    flex-wrap: nowrap;
   }
 }
 
@@ -1768,7 +1790,7 @@ tbody tr:first-of-type td {
   z-index: 1;
 }
 .ourSpaces .two-thirds .heading {
-  padding: 3vw;
+  padding: 5vw;
   padding-left: 0;
 }
 .ourSpaces .two-thirds .base-line {
@@ -1897,6 +1919,21 @@ tbody tr:first-of-type td {
   margin-left: 3vw;
 }
 
+.home .star-banner .bg-green-light {
+  fill: #315844;
+}
+.home .solutions-usp {
+  border-bottom-width: 0;
+}
+@media (min-width: 64em) {
+  .home .just-title-home h2 {
+    max-width: 60%;
+  }
+  .home .hero-solutions .half:last-of-type .feature-pad {
+    max-width: 90%;
+  }
+}
+
 @media (min-width: 48em) {
   .urbanLease .usp {
     max-width: 33.33%;
@@ -1941,6 +1978,9 @@ tbody tr:first-of-type td {
   }
 }
 
+.the-building .nav {
+  background-color: #6AC4D1;
+}
 .the-building .centered-section .text-center {
   text-align: left;
 }
@@ -1959,15 +1999,15 @@ tbody tr:first-of-type td {
 }
 
 .stories .third-wrap.img-wrap {
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
 }
 .stories .third-wrap.img-wrap h3 {
   margin-top: 3vw;
   margin-bottom: 3vw;
 }
 .stories .flex-wrap.third.story-wrap {
-  margin-bottom: 3vw;
+  margin-bottom: 5vw;
 }
 .stories .centered-hero .pad-all {
   padding-bottom: 0;
@@ -1983,13 +2023,18 @@ tbody tr:first-of-type td {
 }
 @media (min-width: 85.375em) {
   .stories .third-wrap.img-wrap {
-    padding-bottom: 1vw;
+    padding-bottom: 3vw;
   }
   .stories .flex-wrap.third.story-wrap {
     flex-basis: 33.333%;
     max-width: 33.333%;
     margin-bottom: 1vw;
   }
+}
+
+.sustain-wellbeing .centered-hero .pad-all,
+.stories .centered-hero .pad-all {
+  padding-bottom: 0;
 }
 
 .contact-us .nav {

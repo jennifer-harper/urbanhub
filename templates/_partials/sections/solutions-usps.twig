@@ -4,11 +4,11 @@
         {{entry.heading6}}
     {% endif %}
     </div>
-    <div class="flex-wrap  row wrap">
+    <div class="flex-wrap row wrap">
         {% for block in entry.usps %}
             {% if block.type == 'groupFields' %}
                 {% if block.sellingPoints %}
-                    <div class="usp flex-wrap row quarter">
+                    <div class="usp flex-wrap row ">
                         {% include '_partials/svgs/tick.twig' %}
                         <p>{{block.sellingPoints}}</p>
                     </div>

@@ -1,99 +1,46 @@
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "home blueTheme" } %} 
+{% set bodyAttributes ={ class: "home greenTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
 {% set page = craft.entries().section('home').all() %} 
 
-{% set buttonClass = "blue" %}
-{% set buttonClassContrast = "blue-light" %}
 
-{% set main = "bg-blue-dark" %}
-{% set contrast = "bg-blue-light" %}
-{% set footer = "bg-blue-light" %}
+{% set buttonClass = "green" %}
+{% set buttonClassContrast = "green" %}
+{% set main = "bg-green-dark" %}
+{% set contrast = "bg-green-light" %}
+{% set footer = "bg-green-light" %}
 
-{% block head %} 
+{# {% block head %} 
   {{ parent() }}
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-{% endblock %}
+{% endblock %} #}
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/hero/solutions.twig' %}
-    {% include '_partials/sections/solutions-usps.twig' %}
+    {% include '_partials/hero/centered-hero.twig' %}
+
+    {% embed '_partials/sections/just-title.twig' %}
+    {% block allClass %}align-left pad-all border-top border-color-other just-title-home{% endblock %}
+{% endembed %}
     {% include '_partials/sections/solutions-mask.twig' %}
+    {% include '_partials/sections/solutions-usps.twig' %}
 
-    {% include '_partials/sections/solutions-banner.twig' %}
-    {% embed '_partials/sections/solutions-contrast.twig' %}
-        {% block class %} {{main}} {% endblock %}
-        {% block colCount %} third {% endblock %}
+        {% embed '_partials/sections/center-banner.twig' %}
+        {% block class %}{{contrast}} {% endblock %}
     {% endembed %}
-    {% embed '_partials/sections/solutions-contrast-btm.twig' %}
-        {% block class %}  {{main}} addons{% endblock %}
-        {% block colCount %} half {% endblock %}
+    {% embed '_partials/sections/btn-icon-section.twig' %}
+        {% block class %}{{contrast}} border-top  {% endblock %}
     {% endembed %}
-
     {% embed '_partials/sections/star-banner-section.twig' %}
-        {% block class %} {{main}} {% endblock %}
-        {% block contrast %} {{contrast}} {% endblock %}
+        {% block class %} {{contrast}} no-top {% endblock %}
     {% endembed %}
-
-    {% include '_partials/sections/slider-intro.twig' %}
-    {% include '_partials/sections/solutions-slider.twig' %}
-
-  {# {% include '_partials/footer/social-media.twig' %}
- {% include '_partials/footer/contact-section.twig' %}
-     {# {% include '_partials/footer/footer-page-banner.twig' %} #}
-
-
-
-
-
-
-
-
-    <div class="pad-all ">
-        <h1 class="lg">hello ambitious <span>home 135px</span></h1>
-        <h1>hello H1 95px </h1>
-        <h2>hello H2 80px</h2>
-        <h3>Hello H3 30px</h3>
-        <div ><p class="intro-text">Intro text</p></div>
-        <div><p class="header-intro">Header intro</p></div>
-        <div><p>Sentence</p> <a href="">Link</a></div>
-        <div class="dark"><p>Sentence Dark</p> <a href="">Link</a></div>
-        {% embed '_partials/button' %}
-        {% block class %}{{buttonClass}}{% endblock %}
-        {% endembed %} 
-    </div>
-
-
-
-     <div class="pad-all">
-        {% include '_partials/button' %}
-
-        {% embed '_partials/button' %}
-            {% block class %}{{buttonClassContrast}}{% endblock %}
-        {% endembed %} 
-
-        {% embed '_partials/button' %}
-            {% block class %}purple{% endblock %}
-        {% endembed %} 
-
-        {% embed '_partials/button' %}
-            {% block class %}blue {% endblock %}
-        {% endembed %} 
-
-        {% embed '_partials/button' %}
-            {% block class %}yellow {% endblock %}
-        {% endembed %} 
-        {% embed '_partials/button' %}
-            {% block class %}lime{% endblock %}
-        {% endembed %}
-    </div>
+     {% include '_partials/footer/footer-page-banner.twig' %}
   {% endfor %} 
 {% endblock %}
 
-{% block scripts %}
+{# {% block scripts %}
 {{ parent() }}
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script  type="module" src="/assets/js/sliders.js"></script>
-{% endblock %}
+{% endblock %} #}

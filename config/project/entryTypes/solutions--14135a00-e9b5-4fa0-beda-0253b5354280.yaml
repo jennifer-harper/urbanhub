@@ -1,0 +1,101 @@
+fieldLayouts:
+  9db35c2f-67a2-4aa0-9862-70760c65a437:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 980cfacc-45c6-470a-980b-be7a3e98931a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9b1a6d2-d5a8-4791-8722-91479f5bf9ae # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 66d6434f-8e12-4bd8-9309-a1abd2d76ae1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: bb03ca46-a1e9-4826-bcc6-42ffe02f5c79
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 83c78d90-8c41-4ef1-a2ef-1c5110162342 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 109d7d00-3253-45f9-86a0-e8b7e2e932d7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5440fd18-f20f-444c-bb08-3e2bb6fd9993 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 35a2f35e-cb6f-45be-b45a-1302717c7b95
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3e1bb40d-9000-497a-9b75-2f18c808ddd9 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 360eaaf5-ab34-453e-be86-8f0f4a2ebe39
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'First Section'
+        uid: c9708208-e23b-4dfc-83af-434528a617ae
+        userCondition: null
+handle: solutions
+hasTitleField: false
+name: Solutions
+section: 15004aec-fa30-4d5b-b01c-9b6f2b8da980 # Solutions
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

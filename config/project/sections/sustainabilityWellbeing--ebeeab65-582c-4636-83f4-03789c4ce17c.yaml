@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: sustainabilityWellbeing
+name: 'Sustainability & Wellbeing'
+propagationMethod: all
+siteSettings:
+  2995eac9-2c30-433a-bd61-0390ff903010: # urbanhub
+    enabledByDefault: true
+    hasUrls: true
+    template: _singles/sustainability-wellbeing.twig
+    uriFormat: sustainability-wellbeing
+type: single

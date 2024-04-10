@@ -482,9 +482,9 @@ svg {
     &.no-right{
         padding-right:0
     }
-    // @media #{$mq-figma} {
-    //     padding:$base $base*.65;
-    // }
+    @media #{$mq-figma} {
+        padding:$base $base*.65;
+    }
 }
 
 
@@ -495,10 +495,10 @@ svg {
     .third{
         padding:1vw;
     }
-    // @media #{$mq-figma} {
-    //     padding-left:calc($base*.65 - 1vw);
-    //     padding-right:calc($base*.65 - 1vw);
-    // }
+    @media #{$mq-figma} {
+        padding-left:calc($base*.65 - 1vw);
+        padding-right:calc($base*.65 - 1vw);
+    }
 }
 
 .third-wrap.text-wrap{
@@ -580,7 +580,8 @@ svg {
 }
 
 .border-top{
-    border-top: 1px solid;
+    border-top-width: 1px;
+    border-top-style: solid;
 }
 .border-left{
     border-left: 1px solid;
@@ -1143,9 +1144,17 @@ svg {
             fill:$green-dark
         }
     }
-    .border-color{
-        border-color: $green-light !important;
+    .bg-green-dark .border-color{
+        border-right-color: $green-light ;
     }
+    .bg-green-light{
+        .border-color,
+        &.border-color{
+            border-color:$light;
+            border-top-color:$light;
+        }
+    }
+
 }
 
 .orangeTheme{
@@ -1550,7 +1559,7 @@ svg {
             font-size:13vw;
         }
         @media #{$mq-medium}{
-            margin-top:-25px;
+            margin-top:-20px;
             line-height: .7em;
             font-size:10.8vw;
         }
@@ -1794,9 +1803,14 @@ svg {
         margin-right:20px;
     }
     @media #{$mq-medium}{
-    .usp{
-        max-width:25%
+        .usp{
+            max-width:25%
+        }
     }
+    @media #{$mq-large}{
+        .flex-wrap.row.wrap{
+            flex-wrap:nowrap;
+        }
     }
 }
 
@@ -2232,6 +2246,24 @@ tbody{
 
 
 // specific pages
+
+.home{
+    .star-banner .bg-green-light{
+     fill:$green-dark
+    }
+    .solutions-usp{
+        border-bottom-width: 0;
+    }
+    @media #{$mq-medium}{
+        .just-title-home h2 {
+            max-width: 60%;
+        }
+        .hero-solutions .half:last-of-type .feature-pad{
+            max-width: 90%;
+        }
+    }
+
+}
 .urbanLease{
     @media #{$mq-small}{
         .usp{
@@ -2285,6 +2317,9 @@ tbody{
 }
 
 .the-building{
+    .nav{
+        background-color: $blue-light;
+    }
     .centered-section{
         .text-center{
             text-align: left;
@@ -2348,6 +2383,16 @@ tbody{
         }
     }
 }
+.sustain-wellbeing,
+.stories{
+    .centered-hero .pad-all{
+        padding-bottom: 0;
+    } 
+}
+
+
+
+
 
 //contact-related
 
