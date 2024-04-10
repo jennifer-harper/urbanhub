@@ -105,6 +105,24 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 01e3ac64-8ca0-44cf-839a-89c52910615c # Wellbeing Slides
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bf1083e1-14f2-4d0d-b022-d862858ea8b2
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Feature Slides'
+        uid: 87055cbd-649d-4b7b-b9cc-30de6feb7dd0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
             fieldUid: 83c78d90-8c41-4ef1-a2ef-1c5110162342 # Image
             instructions: null
             label: null

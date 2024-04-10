@@ -11,18 +11,80 @@
 {% set contrast = "bg-green-light" %}
 {% set footer = "bg-green-light" %}
 
-{# {% block head %} 
+{% block head %} 
   {{ parent() }}
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-{% endblock %} #}
+{% endblock %}
 
 {% block content %} 
   {% for entry in page %} 
     {% include '_partials/hero/centered-hero.twig' %}
 
     {% embed '_partials/sections/just-title.twig' %}
-    {% block allClass %}align-left pad-all border-top border-color-other just-title-home{% endblock %}
-{% endembed %}
+        {% block allClass %}align-left pad-all border-top border-color-other just-title-home{% endblock %}
+    {% endembed %}
+
+
+<div class="tabs-urban-solutions">
+    <div class="">
+        {% set slider = craft.entries().section('urbanSolutionsSlider').all() %}
+        {% for slide in slider %}
+            {% if slide.spaceType is not empty %}
+                <div class="border-right border-color no-border-mobile {{slide.spaceType[0]}}">
+                   <div class="pad-all">
+                        <div class="flex-wrap img-cont">
+                            <div class="half center-style col">
+                                {% if slide.spaceType %}
+                                    <p>{{slide.spaceType[0]}}
+                                    </p>
+                                    <p>starts at</p>
+                                {% endif %}
+                                <div>                
+                                    <p class="flex-wrap">
+                                    <span class="flex-wrap row">
+                                        {% if slide.dollarSign %}  <span class="sign">{{slide.dollarSign}}</span>{% endif %}
+                                        {% if slide.spacePrice %}  <span class="price">{{slide.spacePrice}}</span>{% endif %}
+                                        </span>
+                                    
+                                        {% if slide.priceQuantity %}  
+                                        <span class="quantity">
+                                            <i>{{slide.priceQuantity}}</i>
+                                        </span>
+                                        {% endif %}
+                                    </p> 
+                                </div>
+
+                                {% if slide.spaceDescription %}
+                                    {{slide.spaceDescription}}
+                                {% endif %}
+
+                                {% set buttonText = slide.buttonText ?? 'Find out more' %}
+                                {% set buttonPageLink = slide.spaceType[0].url ?? '/contact-us' %}
+                                {% embed '_partials/button' %}
+                                    {% block class %}{{buttonClass}}{% endblock %}
+                                    {% block title %}{{buttonText}} {% endblock %}
+                                    {% block url %}{{buttonPageLink}} {% endblock %}
+                                {% endembed %} 
+                            </div>
+                            <div class="half center-style pad-sides no-right">
+                                {% include '_partials/svgs/' ~ slide.spaceType[0] ~ '.twig' %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
     {% include '_partials/sections/solutions-mask.twig' %}
     {% include '_partials/sections/solutions-usps.twig' %}
 
@@ -39,8 +101,8 @@
   {% endfor %} 
 {% endblock %}
 
-{# {% block scripts %}
+{% block scripts %}
 {{ parent() }}
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script  type="module" src="/assets/js/sliders.js"></script>
-{% endblock %} #}
+{% endblock %}

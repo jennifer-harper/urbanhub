@@ -1,0 +1,71 @@
+fieldLayouts:
+  eaa9f77e-86e8-4a69-be70-b4871e049ce8:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 955d374d-c01d-48f8-bd9b-e0a88f01b24a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6c9178f3-6ecb-442f-8efd-141076303b31 # Facilities Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bddb84f9-3900-4bee-92a7-cb06cf3b1bf4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d5e4fa84-5166-47ec-9821-290f8c656179 # Facilities Tabs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2bb9987b-6c06-4467-baad-47190872fbac
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c8163b8d-dc5b-4931-acd0-32ad4cfbcb01
+        userCondition: null
+handle: default
+hasTitleField: false
+name: Default
+section: c669938a-a37c-4ae1-985e-6645740e1d01 # Facilities & Amenities Tabs
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{{ facilitiesHeading | striptags }}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

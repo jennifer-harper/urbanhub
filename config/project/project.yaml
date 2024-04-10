@@ -1,4 +1,4 @@
-dateModified: 1712707662
+dateModified: 1712723931
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -18,6 +18,7 @@ meta:
     0f2d469b-9d5d-4f22-bc52-bdc2659c44f9: 'Button Text' # Button Text
     0fadc91b-326d-4899-8d25-c5f9bf36b802: UrbanClub # UrbanClub
     1c0594f9-f13e-4001-b05e-ef49fc7b0cf6: 'List Point' # List Point
+    01e3ac64-8ca0-44cf-839a-89c52910615c: 'Wellbeing Slides' # Wellbeing Slides
     1e47f784-5868-477a-a65d-ccd20d3a2eaa: 'Contact Intros' # Contact Intros
     01f4115a-eade-499a-bf94-f3c1056b9da4: 'SVG Image' # SVG Image
     2c5a6398-7ed4-445d-8950-a462d2e2e519: 'Button Page Link' # Button Page Link
@@ -41,17 +42,20 @@ meta:
     5eee97c1-601f-49be-9957-383c584a5de7: 'Group Fields' # Group Fields
     5ef0c0ef-acef-4853-9c10-e2c6aebe3235: 'Button External Link' # Button External Link
     5fe4741c-ddf0-4203-8a3a-507126d173ca: 'Group Fields' # Group Fields
+    6c9178f3-6ecb-442f-8efd-141076303b31: 'Facilities Heading' # Facilities Heading
     06d442e8-f80e-4312-bc7c-1116eefbcd47: '3 Images Other' # 3 Images Other
     6eb48dc4-cde8-48e0-964e-628420361d69: 'group Fields' # group Fields
     7a1645f6-a634-46ce-885f-a69c77f62e51: SVG # SVG
     7af8b282-7c7b-4cb1-9ed8-8fb35f7f093d: 'Contact Us' # Contact Us
-    7d73696a-27d3-438f-84cd-2d5fd1e9c0d5: 'Urban Solutions Slider' # Urban Solutions Slider
+    7d73696a-27d3-438f-84cd-2d5fd1e9c0d5: 'Urban Solutions Slider/Tabs' # Urban Solutions Slider/Tabs
     07e693cd-5893-4421-915a-a70846a5758c: 'First Button' # First Button
     07ea65b8-2896-4785-b43b-7763da8862c5: Icon # Icon
     8a4c4007-6c97-4f8b-86ea-bdfb3696a5e9: UrbanStudio # UrbanStudio
     8be806db-3051-4e01-a8a8-823d359dbfd2: Paragraph # Paragraph
     8dedadfc-4af6-49f2-95bd-efef33a55b64: Heading # Heading
     8e40aeeb-55f0-4320-9a85-9ea2d246361b: urbanhub # urbanhub
+    8ff21f52-acf8-473e-bd7e-dc0800668f7e: Heading # Heading
+    09a25dce-549d-4011-845e-cb88a84c7696: Default # Default
     9b780b22-e03b-4537-bd01-74db803e4b3a: Heading # Heading
     9de90435-fcff-45f8-983c-fd0bffd09548: 'Button Text' # Button Text
     9dfc719e-523d-4265-9a0c-f5835167f057: 'Group Fields' # Group Fields
@@ -83,12 +87,14 @@ meta:
     89ab8da2-1d0d-4a82-b3e2-f02e20693164: 'The Building' # The Building
     92ee1b66-7b2d-43c4-aefc-08ae23a54dda: 'Business Phone' # Business Phone
     94ae2f64-db35-47c0-907e-b853e95b3ce5: Heading # Heading
+    96f889e0-0cbd-41a2-9d2b-284d01e0f47c: Paragraph # Paragraph
     196e61bb-9be9-4f12-90cf-e89d0b1a2258: 'Button Text' # Button Text
     0249f9a4-8d76-43b5-bf70-de0e1aebee56: Heading # Heading
     319d4674-6b0e-4027-abdc-23a8fe7bcf1f: UrbanSuite # UrbanSuite
     368e19da-aed2-4692-949d-976508166279: 'Page Title' # Page Title
     497bf365-748a-48ed-bf4e-0531bd5a8739: 'Contact Us' # Contact Us
     579edee1-2038-493a-ac4d-971bb6552e9d: 'Business Information' # Business Information
+    0585d0c5-998b-4e6e-8e8d-22931d459658: 'Sub Heading' # Sub Heading
     612a75b6-bb1a-4004-a25b-c23798ef3cf2: 'Group Fields' # Group Fields
     701d3032-1766-4e06-979c-fd973c6b51e8: Paragraph # Paragraph
     745e6158-28f3-446a-883f-91c614885da5: 'Intro Paragraph' # Intro Paragraph
@@ -135,6 +141,7 @@ meta:
     4673650a-aadd-4dc5-966e-7a5dba8f1d55: Heading # Heading
     14055142-96fe-4113-9d1e-c3ba9f40a9b0: Paragraph # Paragraph
     25042295-f652-43f0-999f-77c7920456c1: 'Button Footer' # Button Footer
+    45436766-5742-4e10-98dc-b3bbbcece697: 'Group Fields' # Group Fields
     50516315-9cd3-4843-8f18-397e1d59c811: 'Group Fields' # Group Fields
     89723374-3eac-4abc-b3ad-1bbd27091648: Heading # Heading
     a0a1f864-9a0f-4bc8-931c-cb7d460030ba: 'Business Email' # Business Email
@@ -163,13 +170,17 @@ meta:
     c4fd8b25-a19f-4ccc-a013-d0fc9e5ce8b9: Other # Other
     c8f2d681-0ee8-4b7a-9344-17acc58a1ffb: 'List Items' # List Items
     c9ebb069-37ef-4eaa-aa1e-f347b0f79ff9: 'Urban Environment' # Urban Environment
+    c73e2d3a-6cdf-433e-8cba-7d1282295c1a: Icon # Icon
     c406e842-e9ae-4fa0-9851-a74a6f9cedf2: Home # Home
     c555c40a-443c-4a9e-8b89-9941d417a18a: 'Button Text' # Button Text
     c6883bfd-18a2-4828-9c01-a69a1e1f7c0b: USPs # USPs
+    c21181c9-a3a2-4127-8c77-732d2c653ac5: Image # Image
+    c669938a-a37c-4ae1-985e-6645740e1d01: 'Facilities & Amenities Tabs' # Facilities & Amenities Tabs
     c683597a-6bd9-44dc-ae52-4793c8d189d6: UrbanClub # UrbanClub
     c4688891-b1d6-4575-a601-60d55c055e0b: tables # tables
     c9568162-a2ec-4e6f-a89e-d0366292c4be: 'Slider Image' # Slider Image
     d08c9cda-b4c0-42b0-a7e5-c654a94f6fa2: Pargraph # Pargraph
+    d5e4fa84-5166-47ec-9821-290f8c656179: 'Facilities Tabs' # Facilities Tabs
     d5ebc5d3-29c4-49d3-970e-80907e54e5d9: 'Title H3' # Title H3
     d6f825ee-cd47-42b6-b079-dd879fa61250: UrbanLease # UrbanLease
     d7ab6060-7bad-4f89-93b0-613e23012f36: Heading # Heading
@@ -192,15 +203,18 @@ meta:
     e3854bbb-1638-4a39-bd6a-ab2c0a42e483: Heading # Heading
     e1256276-b061-4952-ad31-da6fea0cabff: 'Facilities & Amenities' # Facilities & Amenities
     ea48c9dc-6e22-48a2-8f56-385fa9fa259e: Paragraph # Paragraph
+    eb6b2cf0-cb1b-4e49-aeb4-422309571908: Paragraph # Paragraph
     eb88e673-2a3d-4557-aeea-9fd63d7d74fc: 'Space Price' # Space Price
     ebeeab65-582c-4636-83f4-03789c4ce17c: 'Sustainability & Wellbeing' # Sustainability & Wellbeing
     efebdbd4-c2aa-4fa3-af50-e6aaf0e04fdf: Heros # Heros
     f085bda5-adcb-4f77-b339-3e1fae4a34a2: 'Grid Icon' # Grid Icon
     f672ccdb-eed8-47b2-84de-d4340a6f30fa: 'Contact Detail' # Contact Detail
     f996c36d-5af0-49f8-8dec-ec87c5f71580: 'Group Fields' # Group Fields
+    f5588474-665a-4a01-9cee-3a92c7bd0d67: 'Group Fields' # Group Fields
     fa573d0d-05be-480f-b5c8-2eb4c7420d0c: Lists # Lists
     fab56143-0785-45a8-b72b-a18482e4cafe: 'Sub Heading' # Sub Heading
     fc5656c9-ee2c-497e-bab5-2bb3f236be53: 'Footer Button' # Footer Button
+    ff742c41-cefa-4113-81ed-c15b4712b984: 'Intro Paragraph' # Intro Paragraph
 plugins:
   ckeditor:
     edition: standard

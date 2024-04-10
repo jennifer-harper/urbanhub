@@ -1,0 +1,172 @@
+field: 01e3ac64-8ca0-44cf-839a-89c52910615c # Wellbeing Slides
+fieldLayouts:
+  e273bf3b-b8f3-413a-ab19-8b9fe71b1504:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 0585d0c5-998b-4e6e-8e8d-22931d459658 # Sub Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e2365d7-7c74-4e46-a14d-ba251c6e0d0f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ff742c41-cefa-4113-81ed-c15b4712b984 # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f95e2044-4731-40bd-bab9-4656bfd36006
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 96f889e0-0cbd-41a2-9d2b-284d01e0f47c # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15cdc069-e541-4e6d-bef5-696801fe5a5e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c73e2d3a-6cdf-433e-8cba-7d1282295c1a # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f7f8e4b-6552-4b68-a048-4453ff5dd4d6
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a36f8b49-bd49-45c1-801a-8b4814bd75fe
+        userCondition: null
+fields:
+  96f889e0-0cbd-41a2-9d2b-284d01e0f47c: # Paragraph
+    columnSuffix: xvebgszj
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraph
+    instructions: null
+    name: Paragraph
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 2d4fd05a-7931-4151-ac2a-8e3011088cd5 # Simple
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  0585d0c5-998b-4e6e-8e8d-22931d459658: # Sub Heading
+    columnSuffix: qagfirfq
+    contentColumnType: text
+    fieldGroup: null
+    handle: subHeading
+    instructions: null
+    name: 'Sub Heading'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 33cfdfc6-431e-464c-917f-25271d27922c # Title H2
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  c73e2d3a-6cdf-433e-8cba-7d1282295c1a: # Icon
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: icon
+    instructions: null
+    name: Icon
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:250485d5-f50f-4a7f-a221-1fc9dc7dbb3a' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:250485d5-f50f-4a7f-a221-1fc9dc7dbb3a' # Images
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  ff742c41-cefa-4113-81ed-c15b4712b984: # Intro Paragraph
+    columnSuffix: rakvoxep
+    contentColumnType: text
+    fieldGroup: null
+    handle: introParagraph
+    instructions: null
+    name: 'Intro Paragraph'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 2d4fd05a-7931-4151-ac2a-8e3011088cd5 # Simple
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+handle: groupFields
+name: 'Group Fields'
+sortOrder: 1

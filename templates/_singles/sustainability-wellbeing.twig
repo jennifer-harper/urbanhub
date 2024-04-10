@@ -19,6 +19,47 @@
     {% embed '_partials/sections/star-banner-section.twig' %}
         {% block class %} bg-light {% endblock %}
     {% endembed %}
+
+
+
+        <div class="solutions-contrast wellbeing bg-green-dark dark">
+            <div class="pad-all">
+                <div class="">
+                    {% for block in entry.wellbeingSlides %}
+                        {% if block.type == 'groupFields' %}
+                        <div class=" pad-all flex-wrap {% block colCount %} {% endblock %}">
+                            <div class="half">
+                                {% if block.subHeading %}
+                                    {{block.subHeading}}
+                                {% endif %}
+                                <div class="intro-text">
+                                    {% if block.introParagraph %}
+                                        {{block.introParagraph}}
+                                    {% endif %}
+                                </div>
+
+                                <div class="no-btm-marg">
+                                    {% if block.paragraph %}
+                                        {{block.paragraph}}
+                                    {% endif %}
+                                </div>
+                            </div>
+                              <div class="half flex-wrap center-style flex-end-style">
+                                {% if block.icon.one() %}
+                                {% set image = block.icon.one() %}
+                                    <img class="max-50" src="{{ image.url }}" alt="{{ image.alt }}">
+                                {% else %}
+                                    <img class="max-50" src="uploads/images/illustration4-keys.svg" alt="image icon">
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endif %}                           
+                    {% endfor %}
+                </div>
+            </div> 
+        </div>
+
+
     {% include '_partials/sections/solutions-mask.twig' %}
   {% endfor %} 
 {% endblock %}

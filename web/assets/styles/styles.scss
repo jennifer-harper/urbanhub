@@ -1753,6 +1753,18 @@ svg {
     }
 }
 
+.solutions-contrast.wellbeing{
+    .intro-text p{
+        color:$green-light;
+    }
+    .half{
+        img{
+            max-width: 80%;
+            margin-right:0;
+        }
+    }
+}
+
 .solutions-contrast.other {
     .intro-text,
     .intro-text p{
@@ -2262,8 +2274,116 @@ tbody{
             max-width: 90%;
         }
     }
+}
+.home{
+    .tabs-urban-solutions{
+
+        .price{
+            font-size: 10vw;
+            font-weight: bold;
+            line-height: 1em;
+            font-family: $header-font;
+            margin-top: -10px;
+        }
+        .quantity,
+        .sign{
+            font-size: 4vw;
+            font-family: $serif-feature;
+            line-height: 1em;
+        }
+        .quantity{
+            width: 1em;
+            margin-left: .4em;
+        }
+
+
+        .illustration-fill{
+            fill:$light
+        }
+        .UrbanLease{
+            background-color: $green-light;
+ 
+        }
+        .UrbanClub{
+            background-color:$lime;
+            .illustration-fill{
+                width: 50%;
+            }
+            .btn a{
+                div{
+                    background-color: $lime; 
+                }
+            }
+        }
+        .UrbanDesk{
+            background-color: $purple-light;
+            .btn a{
+                background-color: $purple-dark;
+                div{
+                    background-color: $purple-light; 
+                    svg{
+                        fill:$purple-dark
+                    }
+                }
+            }
+        }
+
+        .UrbanStudio{
+            background-color: $yellow-light;
+            
+            .btn a div svg,
+            h2, p:not(.btn p),
+            .illustration-fill{
+                fill:$orange;
+                color:$orange;
+            }
+
+            .btn a{
+                background-color: $orange;
+                div{
+                    background-color: $yellow-light; 
+                }
+            }
+        
+
+        }
+
+        .UrbanMeet{
+            background-color: $blue-light;
+            .btn a{
+                background-color: $blue-dark;
+                div{
+                    background-color: $blue-light; 
+                    svg{
+                        fill:$blue-dark
+                    }
+                }
+            }
+        }
+        .UrbanSuite{
+            background-color: $green-light;
+            .illustration-fill{
+                fill:$green-dark;
+            }
+            .quantity{
+                width: 4em;
+            }
+        }
+
+        .UrbanDesk, .UrbanMeet{
+            h2, p:not(.btn p){
+                color: $blue-dark;
+            }
+        }
+
+        
+    }
+
 
 }
+
+
+
 .urbanLease{
     @media #{$mq-small}{
         .usp{
@@ -2344,8 +2464,6 @@ tbody{
     }
 }
 
-
-
 .stories {
     .third-wrap.img-wrap{
         padding-top:calc($base - 1vw);
@@ -2383,6 +2501,7 @@ tbody{
         }
     }
 }
+
 .sustain-wellbeing,
 .stories{
     .centered-hero .pad-all{
@@ -2390,7 +2509,13 @@ tbody{
     } 
 }
 
-
+.facilitiesAmenities{
+    .tabs{
+        h2{
+            margin-bottom: 0;
+        }
+    }
+}
 
 
 

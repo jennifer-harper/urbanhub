@@ -1,0 +1,23 @@
+columnSuffix: gyfuluyt
+contentColumnType: text
+fieldGroup: d9af3e55-e89f-473c-a29a-abe18acebc79 # Common
+handle: facilitiesHeading
+instructions: null
+name: 'Facilities Heading'
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 33cfdfc6-431e-464c-917f-25271d27922c # Title H2
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -121,7 +121,7 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: 7d73696a-27d3-438f-84cd-2d5fd1e9c0d5 # Urban Solutions Slider
+section: 7d73696a-27d3-438f-84cd-2d5fd1e9c0d5 # Urban Solutions Slider/Tabs
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
