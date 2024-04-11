@@ -2668,11 +2668,11 @@ nav {
     }
     
     .navbar {
-        height: 100%;
-        width: 100%;
+        // height: 100%;
+        // width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+
         margin: auto;
         padding: 0;
         .bx-menu {
@@ -2680,7 +2680,7 @@ nav {
           }
         .links {
             display: flex;
-            li {
+            > li {
                 position: relative;
                 display: flex;
                 align-items: center;
@@ -2691,10 +2691,9 @@ nav {
                     text-decoration: none;
                     white-space: nowrap;
                     color: #fff;
+                    padding-right:5px;
                   }
                   .arrow {
-                    /* background: red; */
-                    height: 100%;
                     width: 22px;
                     text-align: center;
                     display: inline-block;
@@ -2709,6 +2708,7 @@ nav {
                     border-radius: 0 0 4px 4px;
                     display: none;
                     z-index: 2;
+
                   }
                   &:hover{
                     > .arrow{
@@ -2722,69 +2722,108 @@ nav {
         }
     }
 }
+
+@media (min-width: 800px) {
+  nav{
+    .navbar{
+        justify-content: center;
+        .links{
+            li{
+                a{
+                   padding-left: 20px; 
+                }
+            }
+        }    
+    }
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-nav{
+        margin-right:$md
+    }
+    .btn{
+        margin-left:$md;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+    nav{
+        .mobile-nav{
+            margin-right:8vw;
+        }
+        .btn{
+            margin-left:8vw;
+        }
+    }
+}
+
+
   
   
 @media (max-width: 800px) {
-nav {
-    .mobile-nav {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        padding: 20px;
-        background-color: red;
-        z-index: 20;
-    }
-    .navbar {
-        .bx-menu {
-            display: block;
-        }
-        .nav-links {
-            position: fixed;
-            left: 0;
-            top: -100%;
-            display: block;
+    nav {
+        .mobile-nav {
+            display: flex;
             width: 100%;
-            background: #3e8da8;
+            justify-content: space-between;
             padding: 20px;
-            transition: all 0.5s ease;
-            z-index: 10;
-        } 
-        .links {
-            display: block;
-            margin-top: 20px;
-            li {
+            background-color: red;
+            z-index: 20;
+        }
+        .navbar {
+            .bx-menu {
                 display: block;
-                .sub-menu {
-                    position: relative;
-                    top: 0;
-                    margin-top: 0;
-                    display: none;
-                    }
-                    &:hover {
-                    .arrow {
-                        transform: rotate(0deg);
-                        }
-                        .sub-menu {
+            }
+            .nav-links {
+                position: fixed;
+                left: 0;
+                top: -100%;
+                display: block;
+                width: 100%;
+                background: #3e8da8;
+                padding: 20px;
+                transition: all 0.5s ease;
+                z-index: 10;
+            } 
+            .links {
+                display: block;
+                margin-top: 20px;
+                li {
+                    display: block;
+                    .sub-menu {
+                        position: relative;
+                        top: 0;
+                        margin-top: 0;
                         display: none;
                         }
+                        &:hover {
+                        .arrow {
+                            transform: rotate(0deg);
+                            }
+                            .sub-menu {
+                            display: none;
+                            }
+                        }
                     }
-                }
-            } 
-    }
+                } 
+        }
 
-    .navbar .nav-links.show2 .links .environment-sub-menu,
-    .navbar .nav-links.show1 .links .solutions-sub-menu,
-    .navbar .nav-links.show3 .links .community-sub-menu {
-        display: block;
-    }
+        .navbar .nav-links.show2 .links .environment-sub-menu,
+        .navbar .nav-links.show1 .links .solutions-sub-menu,
+        .navbar .nav-links.show3 .links .community-sub-menu {
+            display: block;
+        }
 
-    .navbar .nav-links.show2 .links .environment-arrow,
-    .navbar .nav-links.show1 .links .solutions-arrow,
-    .navbar .nav-links.show3 .links .community-arrow {
-        transform: rotate(180deg);
-    }
+        .navbar .nav-links.show2 .links .environment-arrow,
+        .navbar .nav-links.show1 .links .solutions-arrow,
+        .navbar .nav-links.show3 .links .community-arrow {
+            transform: rotate(180deg);
+        }
 
-}
+    }
 }
   
 

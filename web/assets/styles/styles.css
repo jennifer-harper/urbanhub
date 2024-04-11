@@ -2251,11 +2251,8 @@ nav ul {
   margin-top: 0;
 }
 nav .navbar {
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   margin: auto;
   padding: 0;
 }
@@ -2265,29 +2262,28 @@ nav .navbar .bx-menu {
 nav .navbar .links {
   display: flex;
 }
-nav .navbar .links li {
+nav .navbar .links > li {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   list-style: none;
 }
-nav .navbar .links li a {
+nav .navbar .links > li a {
   height: 100%;
   text-decoration: none;
   white-space: nowrap;
   color: #fff;
+  padding-right: 5px;
 }
-nav .navbar .links li .arrow {
-  /* background: red; */
-  height: 100%;
+nav .navbar .links > li .arrow {
   width: 22px;
   text-align: center;
   display: inline-block;
   color: #fff;
   transition: all 0.3s ease;
 }
-nav .navbar .links li .sub-menu {
+nav .navbar .links > li .sub-menu {
   position: absolute;
   top: 20px;
   left: 0;
@@ -2296,19 +2292,40 @@ nav .navbar .links li .sub-menu {
   display: none;
   z-index: 2;
 }
-
-.links li:hover .environment-arrow,
-.links li:hover .solutions-arrow,
-.links li:hover .community-arrow {
+nav .navbar .links > li:hover > .arrow {
   transform: rotate(180deg);
 }
-
-nav .navbar .links li:hover .environment-sub-menu,
-nav .navbar .links li:hover .solutions-sub-menu,
-nav .navbar .links li:hover .community-sub-menu {
+nav .navbar .links > li:hover > .sub-menu {
   display: block;
 }
 
+@media (min-width: 800px) {
+  nav .navbar {
+    justify-content: center;
+  }
+  nav .navbar .links li a {
+    padding-left: 20px;
+  }
+  nav .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .mobile-nav {
+    margin-right: 3vw;
+  }
+  nav .btn {
+    margin-left: 3vw;
+  }
+}
+@media (min-width: 1366px) {
+  nav .mobile-nav {
+    margin-right: 8vw;
+  }
+  nav .btn {
+    margin-left: 8vw;
+  }
+}
 @media (max-width: 800px) {
   nav .mobile-nav {
     display: flex;
