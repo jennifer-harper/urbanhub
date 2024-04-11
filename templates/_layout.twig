@@ -17,8 +17,10 @@
   
 <body {{ attr(bodyAttributes ?? {}) }} >
   {% include '_partials/nav.twig' %}
+  <div class="body-wrapper">
   {% block content %}
   {% endblock %}
+  </div>
 
     {% embed '_partials/footer/footer-banner.twig' %}
         {% block class %} {{footer}}{% endblock %}

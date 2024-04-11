@@ -1,49 +1,80 @@
  <nav>
       <div class="navbar">
         <div class="mobile-nav">
-          <a href="#">Logo</a>
+          <a href="/">Logo</a>
           <i class="bx bx-menu"></i>
         </div>
 
         <div class="nav-links">
-            <ul class="links">
-                <li><a href="#">Home</a></li>
-                <li>
-                <a href="/solutions">Solutions</a>
-                <i class="bx bxs-chevron-down solutions-arrow arrow"></i>
-                <ul class="solutions-sub-menu sub-menu">
-                    <li><a href="urban-studio">UrbanStudio</a></li>
-                    <li><a href="urban-suite">UrbanSuite</a></li>
-                    <li><a href="urban-desk">UrbanDesk</a></li>
-                    <li><a href="urban-club">UrbanClub</a></li>
-                    <li><a href="urban-meet">UrbanMeet</a></li>
-                    <li><a href="urban-lease">UrbanLease</a></li>
-                </ul>
-                </li>
-                <li>
-                <a href="/community">Community</a>
-                <i class="bx bxs-chevron-down community-arrow arrow"></i>
-                <ul class="community-sub-menu sub-menu">
-                    <li><a href="/the-team">Your Team</a></li>
-                    <li><a href="/culture-events">Culture & Events</a></li>
-                    <li><a href="/neighbourhood">Neighbourhood</a></li>
-                </ul>
-                </li>
+            <div class="links">
+                <div class="x"><a href="/">Home</a></div>
+                <div class="x">
+                    <a href="/solutions">Solutions</a>
+                    <i class="bx bxs-chevron-down solutions-arrow arrow"></i>
+                    <div class="solutions-sub-menu sub-menu">
+                        <a href="urban-studio">
+                            <div>
+                                <p>UrbanStudio</p>
+                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            </div>
+                        </a>
+                        <a href="urban-suite">
+                            <div>
+                                <p>UrbanStudio</p>
+                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            </div>
+                        </a>
+                        <a href="urban-desk">
+                        <div>
+                                <p>UrbanStudio</p>
+                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            </div>                    
+                        </a>
+                        <a href="urban-club">
+                        <div>
+                                <p>UrbanStudio</p>
+                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            </div>
+                        </a>
+                        <a href="urban-meet">
+                        <div>
+                                <p>UrbanStudio</p>
+                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            </div>
+                        
+                        </a>
+                        <a href="urban-lease">
+                        <div>
+                                <p>UrbanStudio</p>
+                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                 <div class="x">
+                    <a href="/urban-community">Community</a>
+                    <i class="bx bxs-chevron-down community-arrow arrow"></i>
+                    <div class="community-sub-menu sub-menu">
+                        <a href="/the-team">Your Team</a>
+                        <a href="/culture-events">Culture & Events</a>
+                        <a href="/neighbourhood">Neighbourhood</a>
+                    </div>
+                </div>
 
-                <li>
-                <a href="/urban-environment">Urban Environment</a>
-                <i class="bx bxs-chevron-down environment-arrow arrow"></i>
-                <ul class="environment-sub-menu sub-menu">
-                    <li><a href="the-building">The Building</a></li>
-                    <li><a href="#">Facilities & Amenities</a></li>
-                    <li><a href="/sustainability-wellbeing">Sustainability & Wellbeing</a></li>
-                    <li><a href="#">Explore Our Spaces</a></li>
-                </ul>
-                </li>
+                    <div class="x">
+                    <a href="/urban-environment">Urban Environment</a>
+                    <i class="bx bxs-chevron-down environment-arrow arrow"></i>
+                    <div class="environment-sub-menu sub-menu">
+                        <a href="the-building">The Building</a> 
+                        <a href="#">Facilities & Amenities</a>  
+                        <a href="/sustainability-wellbeing">Sustainability & Wellbeing</a>  
+                        <a href="#">Explore Our Spaces</a>  
+                    </div>
+                </div>
 
-                <li><a href="/stories">Stories</a></li>
-                <li><a href="/contact-us">Contact</a></li>
-            </ul>
+                 <div class="x"><a href="/stories">Stories</a></div>
+                 <div class="x"><a href="/contact-us">Contact</a></div>
+            </div>
        
 
             {% embed '_partials/button' %}
