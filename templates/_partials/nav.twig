@@ -1,28 +1,57 @@
-<div class="flex-wrap flex-jc-sb nav">
-    <div class="flex-wrap flex-jc-sb nav">
-        <p><a href="/">Home</a></p>
-        {# <p><a href="/other">Other</a></p> #}
-        {# <p><a href="/explore-our-spaces">Explore our spaces</a></p> #}
-        <p><a href="/urban-desk">UrbanDesk</a></p>
-        <p><a href="/urban-studio">UrbanStudio</a></p>
-        <p><a href="/urban-suite">UrbanSuite</a></p>
-        <p><a href="/urban-lease">UrbanLease</a></p>
-        <p><a href="/urban-meet">UrbanMeet</a></p>
-        <p><a href="/urban-club">UrbanClub</a></p>
-        <p><a href="/the-building">Building</a></p>
-        <p><a href="/neighbourhood">Neighbourhood</a></p>
-                <p><a href="/urban-community">Community</a></p>
-                <p><a href="/culture-events">Culture</a></p>
-                 <p><a href="/the-team">Team</a></p>
-                  <p><a href="/urban-environment">Environment</a></p>
-                   <p><a href="/stories">Stories</a></p>
-                    <p><a href="/solutions">Solutions</a></p>
-                    <p><a href="/sustainability-wellbeing">Wellbeing</a></p>
-         <p><a href="/contact-us">contact</a></p>
-    </div>
-    {% embed '_partials/button' %}
+
+    <nav>
+      <div class="navbar">
+        <div class="mobile-nav">
+          <a href="#">Logo</a>
+          <i class="bx bx-menu"></i>
+        </div>
+
+        <div class="nav-links">
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="/solutions">Solutions</a>
+              <i class="bx bxs-chevron-down solutions-arrow arrow"></i>
+              <ul class="solutions-sub-menu sub-menu">
+                <li><a href="urban-studio">UrbanStudio</a></li>
+                <li><a href="urban-suite">UrbanSuite</a></li>
+                <li><a href="urban-desk">UrbanDesk</a></li>
+                <li><a href="urban-club">UrbanClub</a></li>
+                <li><a href="urban-meet">UrbanMeet</a></li>
+                <li><a href="urban-lease">UrbanLease</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="/community">Community</a>
+              <i class="bx bxs-chevron-down community-arrow arrow"></i>
+              <ul class="community-sub-menu sub-menu">
+                <li><a href="/the-team">Your Team</a></li>
+                <li><a href="/culture-events">Culture & Events</a></li>
+                <li><a href="/neighbourhood">Neighbourhood</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="/urban-environment">Urban Environment</a>
+              <i class="bx bxs-chevron-down environment-arrow arrow"></i>
+              <ul class="environment-sub-menu sub-menu">
+                <li><a href="the-building">The Building</a></li>
+                <li><a href="#">Facilities & Amenities</a></li>
+                <li><a href="/sustainability-wellbeing">Sustainability & Wellbeing</a></li>
+                <li><a href="#">Explore Our Spaces</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/stories">Stories</a></li>
+            <li><a href="/contact-us">Contact</a></li>
+          </ul>
+       
+
+            {# {% embed '_partials/button' %}
         {% block class %} {{buttonClass}} no-marg-top {% endblock %}
         {% block title %}Sign In{% endblock %}
         {% block url %}{{businessInformation.signIn}} target="_blank" {% endblock %}
-    {% endembed %} 
-</div>
+    {% endembed %}  #}
+     </div>
+      </div>
+    </nav>
