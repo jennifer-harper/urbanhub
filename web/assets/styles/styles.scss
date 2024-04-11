@@ -2656,9 +2656,6 @@ tbody{
 
 
 //////////////////
-
-
-
 nav {
     position: fixed;
     top: 0;
@@ -2713,91 +2710,82 @@ nav {
                     display: none;
                     z-index: 2;
                   }
+                  &:hover{
+                    > .arrow{
+                        transform: rotate(180deg);
+                    }
+                    > .sub-menu{
+                    display: block;
+                    }
+                  }
               }
         }
     }
 }
   
   
-  .links li:hover .environment-arrow,
-  .links li:hover .solutions-arrow,
-  .links li:hover .community-arrow {
-    transform: rotate(180deg);
-  }
-  
-  nav .navbar .links li:hover .environment-sub-menu,
-  nav .navbar .links li:hover .solutions-sub-menu,
-  nav .navbar .links li:hover .community-sub-menu {
-    display: block;
-  }
-  
-
-
-  
-  @media (max-width: 800px) {
-    nav {
-        .mobile-nav {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            padding: 20px;
-            background-color: red;
-            z-index: 20;
-        }
-        .navbar {
-            .bx-menu {
-                display: block;
-            }
-            .nav-links {
-                position: fixed;
-                left: 0;
-                top: -100%;
-                display: block;
-                width: 100%;
-                background: #3e8da8;
-                padding: 20px;
-                transition: all 0.5s ease;
-                z-index: 10;
-            } 
-            .links {
-                display: block;
-                margin-top: 20px;
-                li {
-                    display: block;
-                    .sub-menu {
-                        position: relative;
-                        top: 0;
-                      margin-top: 0;
-                        display: none;
-                      }
-                      &:hover {
-                        .arrow {
-                            transform: rotate(0deg);
-                          }
-                          .sub-menu {
-                            display: none;
-                          }
-                      }
-                  }
-              } 
-        }
-
-        .navbar .nav-links.show2 .links .environment-sub-menu,
-        .navbar .nav-links.show1 .links .solutions-sub-menu,
-        .navbar .nav-links.show3 .links .community-sub-menu {
-          display: block;
-        }
-    
-        .navbar .nav-links.show2 .links .environment-arrow,
-        .navbar .nav-links.show1 .links .solutions-arrow,
-        .navbar .nav-links.show3 .links .community-arrow {
-          transform: rotate(180deg);
-        }
-
+@media (max-width: 800px) {
+nav {
+    .mobile-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: red;
+        z-index: 20;
     }
-  
+    .navbar {
+        .bx-menu {
+            display: block;
+        }
+        .nav-links {
+            position: fixed;
+            left: 0;
+            top: -100%;
+            display: block;
+            width: 100%;
+            background: #3e8da8;
+            padding: 20px;
+            transition: all 0.5s ease;
+            z-index: 10;
+        } 
+        .links {
+            display: block;
+            margin-top: 20px;
+            li {
+                display: block;
+                .sub-menu {
+                    position: relative;
+                    top: 0;
+                    margin-top: 0;
+                    display: none;
+                    }
+                    &:hover {
+                    .arrow {
+                        transform: rotate(0deg);
+                        }
+                        .sub-menu {
+                        display: none;
+                        }
+                    }
+                }
+            } 
+    }
 
-  }
+    .navbar .nav-links.show2 .links .environment-sub-menu,
+    .navbar .nav-links.show1 .links .solutions-sub-menu,
+    .navbar .nav-links.show3 .links .community-sub-menu {
+        display: block;
+    }
+
+    .navbar .nav-links.show2 .links .environment-arrow,
+    .navbar .nav-links.show1 .links .solutions-arrow,
+    .navbar .nav-links.show3 .links .community-arrow {
+        transform: rotate(180deg);
+    }
+
+}
+}
   
 
   
