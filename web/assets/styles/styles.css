@@ -1956,14 +1956,20 @@ nav .navbar {
   width: 100%;
   padding: 20px;
 }
-nav .navbar .bx-menu {
-  display: none;
-}
 nav .navbar .arrow {
   width: 22px;
   text-align: center;
   display: inline-block;
   transition: all 0.3s ease;
+}
+nav .navbar .sub-menu {
+  position: relative;
+  top: 0;
+  margin-top: 0;
+  display: none;
+}
+nav .navbar .sub-menu .content {
+  border-bottom: 1px solid #cbd5d0;
 }
 nav .navbar .sub-menu a .header-intro {
   margin-top: 3vw;
@@ -1981,13 +1987,63 @@ nav .navbar .sub-menu a .content {
 nav .navbar .sub-menu a .content svg {
   max-width: 50%;
 }
+nav .navbar .nav-links {
+  position: fixed;
+  left: 0;
+  top: -100%;
+  display: block;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.5s ease;
+  z-index: 10;
+  background-color: #FAF6F0;
+  height: 100vh;
+  overflow: scroll;
+}
+nav .navbar .links {
+  display: block;
+  margin-top: 20px;
+}
+nav .navbar .links .x:hover .arrow {
+  transform: rotate(0deg);
+}
+nav .navbar .links .x:hover .sub-menu {
+  display: none;
+}
+nav .mobile-nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  z-index: 20;
+}
+nav .bx-menu {
+  display: block;
+}
 
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
+  nav .mobile-nav {
+    width: unset;
+    padding: 0;
+  }
+  nav .bx-menu {
+    display: none;
+  }
   nav .navbar {
     justify-content: center;
   }
+  nav .navbar .nav-links {
+    position: static;
+    left: unset;
+    top: unset;
+    display: flex;
+    padding: unset;
+    height: unset;
+    overflow: unset;
+  }
   nav .navbar .links {
     display: flex;
+    margin-top: 0;
   }
   nav .navbar .links .x {
     z-index: 10;
@@ -2002,14 +2058,17 @@ nav .navbar .sub-menu a .content svg {
   }
   nav .navbar .links .x .sub-menu {
     position: absolute;
-    top: 2vw;
+    top: 3vw;
     left: 0;
     background: #FAF6F0;
     display: none;
     z-index: 2;
     width: 100%;
     z-index: 0;
-    height: calc(100vh - 2vw);
+    height: calc(100vh - 3vw);
+  }
+  nav .navbar .links .x .sub-menu .content {
+    border-bottom-width: 0;
   }
   nav .navbar .links .x:hover > .arrow {
     transform: rotate(180deg);
@@ -2049,52 +2108,7 @@ nav .navbar .sub-menu a .content svg {
     margin-left: 12vw;
   }
 }
-@media (max-width: 800px) {
-  nav .mobile-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 20px;
-    z-index: 20;
-  }
-  nav .navbar .bx-menu {
-    display: block;
-  }
-  nav .navbar .nav-links {
-    position: fixed;
-    left: 0;
-    top: -100%;
-    display: block;
-    width: 100%;
-    padding: 20px;
-    transition: all 0.5s ease;
-    z-index: 10;
-    background-color: #FAF6F0;
-    height: 100vh;
-    overflow: scroll;
-  }
-  nav .navbar .links {
-    display: block;
-    margin-top: 20px;
-  }
-  nav .navbar .links .x {
-    display: block;
-  }
-  nav .navbar .links .x .sub-menu {
-    position: relative;
-    top: 0;
-    margin-top: 0;
-    display: none;
-  }
-  nav .navbar .links .x .sub-menu .content {
-    border-bottom: 1px solid #cbd5d0;
-  }
-  nav .navbar .links .x:hover .arrow {
-    transform: rotate(0deg);
-  }
-  nav .navbar .links .x:hover .sub-menu {
-    display: none;
-  }
+@media (max-width: 1100px) {
   nav .navbar .nav-links.show2 .links .environment-sub-menu,
   nav .navbar .nav-links.show1 .links .solutions-sub-menu,
   nav .navbar .nav-links.show3 .links .community-sub-menu {

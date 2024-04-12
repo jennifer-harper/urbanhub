@@ -2295,15 +2295,24 @@ nav {
         margin: auto;
         width: 100%;
         padding:20px;
-        .bx-menu {
-            display: none;
-        }
+
         .arrow {
             width: 22px;
             text-align: center;
             display: inline-block;
             transition: all 0.3s ease;
         }
+
+        .sub-menu {
+            position: relative;
+            top: 0;
+            margin-top: 0;
+            display: none;
+            .content{
+                border-bottom: 1px solid $grey;
+            }
+        }
+
         .sub-menu{
             a{
                 .header-intro{
@@ -2327,17 +2336,76 @@ nav {
 
             }
         }
+
+        .nav-links {
+            position: fixed;
+            left: 0;
+            top: -100%;
+            display: block;
+            width: 100%;
+            padding: 20px;
+            transition: all 0.5s ease;
+            z-index: 10;
+            background-color: $light;
+            height: 100vh;
+            overflow: scroll;
+        }
+        .links{
+            display: block;
+            margin-top: 20px;
+            .x{
+                &:hover {
+                    .arrow {
+                        transform: rotate(0deg);
+                    }
+                    .sub-menu {
+                        display: none;
+                    }
+                }
+            }
+        } 
+
+
     }
+    .mobile-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 20px;
+        z-index: 20;
+    }
+    .bx-menu {
+        display: block;
+    }
+
 }
 
 
 
-@media (min-width: 800px) {
+@media (min-width: 1100px) {
   nav{
+    .mobile-nav {
+        width: unset;
+        padding: 0;
+    }
+    .bx-menu {
+        display: none;
+    }
     .navbar{
         justify-content: center;
+        .nav-links {
+            position: static;
+            left: unset;
+            top: unset;
+            display: flex;
+            padding: unset;
+            height: unset;
+            overflow: unset;
+        } 
+        
         .links{
             display: flex;
+            margin-top:0;
             .x {
                 z-index: 10;
                 display: flex;
@@ -2353,14 +2421,17 @@ nav {
 
                 .sub-menu {
                     position: absolute;
-                    top:2vw;
+                    top:3vw;
                     left: 0;
                     background: $light;
                     display: none;
                     z-index: 2;
                     width: 100%;
                     z-index: 0;
-                    height: calc(100vh - 2vw);
+                    height: calc(100vh - 3vw);
+                    .content{
+                        border-bottom-width: 0;
+                    }
                 }
 
                 &:hover{
@@ -2368,6 +2439,7 @@ nav {
                         transform: rotate(180deg);
                     }
                     > .sub-menu{
+                        // background-color: red;
                         display: flex;
                         flex-wrap: wrap;
                         flex-direction: row;
@@ -2417,58 +2489,8 @@ nav {
 
   
   
-@media (max-width: 800px) {
+@media (max-width: 1100px) {
     nav {
-        .mobile-nav {
-            display: flex;
-            width: 100%;
-            justify-content: space-between;
-            padding: 20px;
-            z-index: 20;
-        }
-        .navbar {
-            .bx-menu {
-                display: block;
-            }
-            .nav-links {
-                position: fixed;
-                left: 0;
-                top: -100%;
-                display: block;
-                width: 100%;
-                padding: 20px;
-                transition: all 0.5s ease;
-                z-index: 10;
-                background-color: $light;
-                height: 100vh;
-                overflow: scroll;
-            } 
-            .links {
-                display: block;
-                margin-top: 20px;
-                .x {
-                    display: block;
-                    .sub-menu {
-                        position: relative;
-                        top: 0;
-                        margin-top: 0;
-                        display: none;
-                        .content{
-                            border-bottom: 1px solid $grey;
-                        }
-                    }
-                    &:hover {
-                        .arrow {
-                            transform: rotate(0deg);
-                        }
-                        .sub-menu {
-                            display: none;
-                        }
-                    }
-            }
-            } 
-        }
-
         .navbar .nav-links.show2 .links .environment-sub-menu,
         .navbar .nav-links.show1 .links .solutions-sub-menu,
         .navbar .nav-links.show3 .links .community-sub-menu {
