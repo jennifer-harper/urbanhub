@@ -1169,6 +1169,9 @@ svg {
         .little-star{
             fill: $yellow-light;
         }
+        .highlight{
+            fill:$light;
+        }
     }
     .underline-list li{
         border-color:$orange
@@ -1187,11 +1190,11 @@ svg {
 
     .illustration-fill,
     .highlight,
-    .logo,
     .tick{
         fill:$yellow-light;
     }
 
+    .logo,
     .social-media,
     .little-star{
         fill: $orange;
@@ -1542,6 +1545,11 @@ svg {
             fill:$lime
         }
     }
+    .bg-lime{
+        .highlight{
+            fill:$light;
+        }
+    }
 }
 
 
@@ -1592,7 +1600,7 @@ svg {
     }
     .logo{
         margin-top:20px;
-        width: 100px;
+        width: 200px;
     }
 }
 
@@ -2741,6 +2749,7 @@ nav {
         }
     }
     .testimonials{
+        overflow:hidden;
         .testimonial-wrap{
             position: relative;
             padding-bottom: 6vw;
@@ -2755,14 +2764,25 @@ nav {
                     transform: rotate(180deg);
                 }
             }
-        }
-        .img-wrap{
-            img{
-                max-width: 50%;
+            .owner-wrapper{
+                img{
+                    width: 100px;
+                }
             }
         }
 
+        .swiper-slide{
+            padding: 20px;
+        }
 
+        .image-wrap{
+            img{
+                max-width: 50%;
+            }
+            &:last-of-type{
+                text-align: right;
+            }
+        }
 
         @media #{$mq-medium}{
             padding-left: 0;
@@ -2785,6 +2805,9 @@ nav {
                 }
                 .owner-wrapper{
                     margin-top: $md;
+                    img{
+                        width: 6vw;
+                    }
                 }
                 .swiper-slide{
                     padding: 0 $md;
