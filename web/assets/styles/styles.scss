@@ -1592,6 +1592,7 @@ svg {
     }
     .logo{
         margin-top:20px;
+        width: 100px;
     }
 }
 
@@ -2876,6 +2877,19 @@ nav {
     nav .navbar .nav-links,
     nav .navbar{
         background-color: $blue-light;
+        .content{
+            .illustration-fill{
+                fill:$light;
+            }
+
+        }
+        .x:hover .solutions-sub-menu  a{
+            border-bottom-color:$light;
+            border-right-color:$light
+        }
+        .little-star{
+            fill:$blue-dark
+        }
     }
     .centered-section{
         .text-center{
@@ -2963,6 +2977,16 @@ nav {
     nav .navbar .nav-links,
     nav .navbar{
         background-color: $green-light;
+        .content{
+            .illustration-fill{
+                fill:$green-dark;
+            }
+
+        }
+        .x:hover .solutions-sub-menu  a{
+            border-bottom-color:$green-dark;
+            border-right-color:$green-dark;
+        }
     }
 
     .hero{
@@ -2987,7 +3011,7 @@ nav {
             color:$light;
         }
     }
-    .logo .logo-star{
+    .logo-star{
         fill:$light;
     }
 }

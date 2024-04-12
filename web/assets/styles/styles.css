@@ -1366,6 +1366,7 @@ svg {
 }
 .footer-banner .logo {
   margin-top: 20px;
+  width: 100px;
 }
 
 .contact h3 {
@@ -2395,6 +2396,22 @@ nav .bx-menu {
 .the-building nav .navbar {
   background-color: #6AC4D1;
 }
+.the-building nav .navbar .links .x .sub-menu .content .illustration-fill,
+.the-building nav .navbar .nav-links .content .illustration-fill,
+.the-building nav .navbar .content .illustration-fill {
+  fill: #FAF6F0;
+}
+.the-building nav .navbar .links .x .sub-menu .x:hover .solutions-sub-menu a,
+.the-building nav .navbar .nav-links .x:hover .solutions-sub-menu a,
+.the-building nav .navbar .x:hover .solutions-sub-menu a {
+  border-bottom-color: #FAF6F0;
+  border-right-color: #FAF6F0;
+}
+.the-building nav .navbar .links .x .sub-menu .little-star,
+.the-building nav .navbar .nav-links .little-star,
+.the-building nav .navbar .little-star {
+  fill: #253C40;
+}
 .the-building .centered-section .text-center {
   text-align: left;
 }
@@ -2460,6 +2477,17 @@ nav .bx-menu {
 .contact-us nav .navbar {
   background-color: #BAE2A6;
 }
+.contact-us nav .navbar .links .x .sub-menu .content .illustration-fill,
+.contact-us nav .navbar .nav-links .content .illustration-fill,
+.contact-us nav .navbar .content .illustration-fill {
+  fill: #315844;
+}
+.contact-us nav .navbar .links .x .sub-menu .x:hover .solutions-sub-menu a,
+.contact-us nav .navbar .nav-links .x:hover .solutions-sub-menu a,
+.contact-us nav .navbar .x:hover .solutions-sub-menu a {
+  border-bottom-color: #315844;
+  border-right-color: #315844;
+}
 .contact-us .hero {
   padding-top: 3vw;
 }
@@ -2478,7 +2506,7 @@ nav .bx-menu {
 .contact-us .footer-banner ul li p, .contact-us .footer-banner ul li a {
   color: #FAF6F0;
 }
-.contact-us .logo .logo-star {
+.contact-us .logo-star {
   fill: #FAF6F0;
 }
 
