@@ -1,7 +1,7 @@
  <nav>
       <div class="navbar">
         <div class="mobile-nav">
-          <a href="/">Logo</a>
+          <a href="/" class="logo">{% include '_partials/svgs/logo.twig' %}</a>
           <i class="bx bx-menu"></i>
         </div>
 
@@ -13,40 +13,70 @@
                     <i class="bx bxs-chevron-down solutions-arrow arrow"></i>
                     <div class="solutions-sub-menu sub-menu">
                         <a href="urban-studio">
-                            <div>
-                                <p>UrbanStudio</p>
-                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            <div class="content">
+                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Urban<i>Studio</i></p>
+                                    </div>
+                                    <p>Explore serviced offices</p>
+                                </div>
                             </div>
                         </a>
                         <a href="urban-suite">
-                            <div>
-                                <p>UrbanStudio</p>
-                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            <div class="content">
+                                {% include '_partials/svgs/UrbanSuite-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Urban<i>Suite</i></p>
+                                    </div>
+                                    <p>Explore bespoke private offices</p>
+                                </div>
                             </div>
                         </a>
                         <a href="urban-desk">
-                        <div>
-                                <p>UrbanStudio</p>
-                                {% include '_partials/svgs/UrbanStudio.twig' %}
-                            </div>                    
+                            <div class="content">
+                                {% include '_partials/svgs/UrbanDesk-2.twig' %}
+                                <div>
+                                     <div class="header-intro">
+                                        <p>Urban<i>Desk</i></p>
+                                    </div>
+                                    <p>Explore co-working spaces</p>
+                                </div>
+                            </div>                   
                         </a>
                         <a href="urban-club">
-                        <div>
-                                <p>UrbanStudio</p>
-                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            <div class="content">
+                                {% include '_partials/svgs/UrbanClub-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Urban<i>Club</i></p>
+                                    </div>
+                                    <p>Explore hotdesk, member access & virtual work</p>
+                                </div>
                             </div>
                         </a>
                         <a href="urban-meet">
-                        <div>
-                                <p>UrbanStudio</p>
-                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                             <div class="content">
+                                {% include '_partials/svgs/UrbanMeet-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Urban<i>Meet</i></p>
+                                    </div>
+                                    <p>Explore meeting & conference rooms</p>
+                                </div>
                             </div>
                         
                         </a>
                         <a href="urban-lease">
-                        <div>
-                                <p>UrbanStudio</p>
-                                {% include '_partials/svgs/UrbanStudio.twig' %}
+                            <div class="content">
+                                {% include '_partials/svgs/UrbanLease-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Urban<i>Lease</i></p>
+                                    </div>
+                                    <p>Explore traditional lease options</p>
+                                </div>
                             </div>
                         </a>
                     </div>
@@ -55,20 +85,91 @@
                     <a href="/urban-community">Community</a>
                     <i class="bx bxs-chevron-down community-arrow arrow"></i>
                     <div class="community-sub-menu sub-menu">
-                        <a href="/the-team">Your Team</a>
-                        <a href="/culture-events">Culture & Events</a>
-                        <a href="/neighbourhood">Neighbourhood</a>
+
+                         <a href="/the-team">
+                            <div class="content">
+                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Your <i>Team</i></p>
+                                    </div>
+                                    <p>Explore serviced offices</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/culture-events">
+                            <div class="content">
+                                {% include '_partials/svgs/UrbanSuite-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Culture <i>and Events</i></p>
+                                    </div>
+                                    <p>Explore bespoke private offices</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/neighbourhood">
+                            <div class="content">
+                                {% include '_partials/svgs/UrbanDesk-2.twig' %}
+                                <div>
+                                     <div class="header-intro">
+                                        <p>Neighbourhood</p>
+                                    </div>
+                                    <p>Explore co-working spaces</p>
+                                </div>
+                            </div>                   
+                        </a>
                     </div>
                 </div>
 
-                    <div class="x">
+                <div class="x">
                     <a href="/urban-environment">Urban Environment</a>
                     <i class="bx bxs-chevron-down environment-arrow arrow"></i>
                     <div class="environment-sub-menu sub-menu">
-                        <a href="the-building">The Building</a> 
-                        <a href="#">Facilities & Amenities</a>  
-                        <a href="/sustainability-wellbeing">Sustainability & Wellbeing</a>  
-                        <a href="#">Explore Our Spaces</a>  
+                        <a href="/the-building">
+                            <div class="content">
+                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>The <i>Building</i></p>
+                                    </div>
+                                    <p>Explore serviced offices</p>
+                                </div>
+                            </div>
+                        </a>    
+                        <a href="/facilities-amenities">
+                            <div class="content">
+                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Facilities & <i>Amenities</i></p>
+                                    </div>
+                                    <p>Explore serviced offices</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="/sustainability-wellbeing">
+                            <div class="content">
+                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Sustainability & <i>Wellbeing</i></p>
+                                    </div>
+                                    <p>Explore serviced offices</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="content">
+                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                                <div>
+                                    <div class="header-intro">
+                                        <p>Explore <i>Our Space</i></p>
+                                    </div>
+                                    <p>Explore serviced offices</p>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
