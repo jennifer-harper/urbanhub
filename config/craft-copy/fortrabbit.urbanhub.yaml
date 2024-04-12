@@ -1,0 +1,9 @@
+app: urbanhub
+ssh_url: urbanhub@deploy.eu2.frbit.com
+git_remote: urbanhub/master
+before:
+    code/up: {  }
+after:
+    code/down:
+        - 'php craft migrate/all'
+        - 'php craft project-config/apply'
