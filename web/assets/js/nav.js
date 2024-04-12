@@ -4,10 +4,10 @@ let menuOpenBtn = document.querySelector('.navbar .bx-menu')
 
 // Function to toggle the menu state
 function toggleMenu() {
-  if (navLinks.style.top === '50px') {
+  if (navLinks.style.top === '100px') {
     navLinks.style.top = '-100%' // Close the menu
   } else {
-    navLinks.style.top = '50px' // Open the menu
+    navLinks.style.top = '100px' // Open the menu
   }
 }
 

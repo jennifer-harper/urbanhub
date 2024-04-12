@@ -2,7 +2,7 @@
       <div class="navbar">
         <div class="mobile-nav">
           <a href="/" class="logo">{% include '_partials/svgs/logo.twig' %}</a>
-          <i class="bx bx-menu"></i>
+         
         </div>
 
         <div class="nav-links">
@@ -12,6 +12,7 @@
                     <a href="/solutions">Solutions</a>
                     <i class="bx bxs-chevron-down solutions-arrow arrow"></i>
                     <div class="solutions-sub-menu sub-menu">
+                        <div class="new-wrapper">
                         <a href="urban-studio">
                             <div class="content">
                                {% include '_partials/svgs/UrbanStudio-2.twig' %}
@@ -79,16 +80,17 @@
                                 </div>
                             </div>
                         </a>
+                        </div>
                     </div>
                 </div>
                  <div class="x">
                     <a href="/urban-community">Community</a>
                     <i class="bx bxs-chevron-down community-arrow arrow"></i>
                     <div class="community-sub-menu sub-menu">
-
+<div class="new-wrapper">
                          <a href="/the-team">
                             <div class="content">
-                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                               {% include '_partials/svgs/little-star.twig' %}
                                 <div>
                                     <div class="header-intro">
                                         <p>Your <i>Team</i></p>
@@ -99,7 +101,7 @@
                         </a>
                         <a href="/culture-events">
                             <div class="content">
-                                {% include '_partials/svgs/UrbanSuite-2.twig' %}
+                                 {% include '_partials/svgs/little-star.twig' %}
                                 <div>
                                     <div class="header-intro">
                                         <p>Culture <i>and Events</i></p>
@@ -110,7 +112,7 @@
                         </a>
                         <a href="/neighbourhood">
                             <div class="content">
-                                {% include '_partials/svgs/UrbanDesk-2.twig' %}
+                                 {% include '_partials/svgs/little-star.twig' %}
                                 <div>
                                      <div class="header-intro">
                                         <p>Neighbourhood</p>
@@ -119,6 +121,7 @@
                                 </div>
                             </div>                   
                         </a>
+                        </div>
                     </div>
                 </div>
 
@@ -126,9 +129,10 @@
                     <a href="/urban-environment">Urban Environment</a>
                     <i class="bx bxs-chevron-down environment-arrow arrow"></i>
                     <div class="environment-sub-menu sub-menu">
+                    <div class="new-wrapper">
                         <a href="/the-building">
                             <div class="content">
-                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                                {% include '_partials/svgs/little-star.twig' %}
                                 <div>
                                     <div class="header-intro">
                                         <p>The <i>Building</i></p>
@@ -139,7 +143,7 @@
                         </a>    
                         <a href="/facilities-amenities">
                             <div class="content">
-                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                                {% include '_partials/svgs/little-star.twig' %}
                                 <div>
                                     <div class="header-intro">
                                         <p>Facilities & <i>Amenities</i></p>
@@ -150,7 +154,7 @@
                         </a>
                         <a href="/sustainability-wellbeing">
                             <div class="content">
-                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                               {% include '_partials/svgs/little-star.twig' %}
                                 <div>
                                     <div class="header-intro">
                                         <p>Sustainability & <i>Wellbeing</i></p>
@@ -161,7 +165,7 @@
                         </a>
                         <a href="">
                             <div class="content">
-                               {% include '_partials/svgs/UrbanStudio-2.twig' %}
+                               {% include '_partials/svgs/little-star.twig' %}
                                 <div>
                                     <div class="header-intro">
                                         <p>Explore <i>Our Space</i></p>
@@ -171,6 +175,7 @@
                             </div>
                         </a>
                     </div>
+                    </div>
                 </div>
 
                  <div class="x"><a href="/stories">Stories</a></div>
@@ -178,11 +183,14 @@
             </div>
        
 
-            {% embed '_partials/button' %}
-            {% block class %} {{buttonClass}} no-marg-top {% endblock %}
-            {% block title %}Sign In{% endblock %}
-            {% block url %}{{businessInformation.signIn}} target="_blank" {% endblock %}
-            {% endembed %} 
+
         </div>
+
+        {% embed '_partials/button' %}
+        {% block class %} {{buttonClass}} no-marg-top {% endblock %}
+        {% block title %}Sign In{% endblock %}
+        {% block url %}{{businessInformation.signIn}} target="_blank" {% endblock %}
+        {% endembed %} 
+         <i class="bx bx-menu"></i>
       </div>
     </nav>

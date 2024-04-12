@@ -1939,6 +1939,9 @@ nav {
   z-index: 99;
   background-color: #FAF6F0;
 }
+nav .little-star {
+  margin: 0 auto;
+}
 nav ul {
   margin-top: 0;
 }
@@ -1997,7 +2000,7 @@ nav .navbar .nav-links {
   transition: all 0.5s ease;
   z-index: 10;
   background-color: #FAF6F0;
-  height: 100vh;
+  height: calc(100vh - 100px);
   overflow: scroll;
 }
 nav .navbar .links {
@@ -2014,14 +2017,53 @@ nav .mobile-nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 20px;
   z-index: 20;
 }
 nav .bx-menu {
   display: block;
+  z-index: 20;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) and (max-width: 1100px) {
+  nav a {
+    font-size: 14px;
+  }
+}
+@media (min-width: 600px) {
+  nav .navbar .links .x .sub-menu .content {
+    border-bottom-width: 0;
+  }
+  nav .solutions-sub-menu .new-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  nav .solutions-sub-menu .new-wrapper a {
+    flex-basis: 50%;
+    width: 50%;
+    border-bottom: 1px solid #cbd5d0;
+    border-right: 1px solid #cbd5d0;
+  }
+  nav .solutions-sub-menu .new-wrapper a:nth-of-type(5n), nav .solutions-sub-menu .new-wrapper a:last-of-type {
+    border-bottom-width: 0;
+  }
+  nav .solutions-sub-menu .new-wrapper a:nth-of-type(2n), nav .solutions-sub-menu .new-wrapper a:nth-of-type(4n), nav .solutions-sub-menu .new-wrapper a:last-of-type {
+    border-right-width: 0;
+  }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  nav .environment-sub-menu .new-wrapper,
+  nav .community-sub-menu .new-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  nav .environment-sub-menu .new-wrapper a,
+  nav .community-sub-menu .new-wrapper a {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
+@media (min-width: 1025px) {
   nav .mobile-nav {
     width: unset;
     padding: 0;
@@ -2033,6 +2075,7 @@ nav .bx-menu {
     justify-content: center;
   }
   nav .navbar .nav-links {
+    justify-content: center;
     position: static;
     left: unset;
     top: unset;
@@ -2058,14 +2101,14 @@ nav .bx-menu {
   }
   nav .navbar .links .x .sub-menu {
     position: absolute;
-    top: 3vw;
+    top: 60px;
     left: 0;
     background: #FAF6F0;
     display: none;
     z-index: 2;
     width: 100%;
     z-index: 0;
-    height: calc(100vh - 3vw);
+    height: calc(100vh - 60px);
   }
   nav .navbar .links .x .sub-menu .content {
     border-bottom-width: 0;
@@ -2073,20 +2116,36 @@ nav .bx-menu {
   nav .navbar .links .x:hover > .arrow {
     transform: rotate(180deg);
   }
-  nav .navbar .links .x:hover > .sub-menu {
+  nav .navbar .links .x:hover .sub-menu {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    text-align: center;
     padding: 3vw;
   }
-  nav .navbar .links .x:hover > .sub-menu a {
+  nav .navbar .links .x:hover .sub-menu .new-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 100%;
+  }
+  nav .navbar .links .x:hover .solutions-sub-menu a {
     flex-basis: 33.33%;
     width: 33.33%;
     border-right: 1px solid #cbd5d0;
+    border-bottom: 1px solid #cbd5d0;
   }
-  nav .navbar .links .x:hover > .sub-menu a:nth-of-type(3n), nav .navbar .links .x:hover > .sub-menu a:last-of-type {
+  nav .navbar .links .x:hover .solutions-sub-menu a:nth-of-type(3n), nav .navbar .links .x:hover .solutions-sub-menu a:last-of-type {
     border-right-width: 0;
+  }
+  nav .navbar .links .x:hover .solutions-sub-menu a:nth-of-type(4n), nav .navbar .links .x:hover .solutions-sub-menu a:nth-of-type(5n), nav .navbar .links .x:hover .solutions-sub-menu a:last-of-type {
+    border-bottom-width: 0;
+  }
+  nav .navbar .links .x:hover .community-sub-menu a {
+    flex-basis: 33.33%;
+    width: 33.33%;
+  }
+  nav .navbar .links .x:hover .environment-sub-menu a {
+    flex-basis: 25%;
+    width: 25%;
   }
   nav .nav-links {
     display: flex;
@@ -2108,7 +2167,7 @@ nav .bx-menu {
     margin-left: 12vw;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1025px) {
   nav .navbar .nav-links.show2 .links .environment-sub-menu,
   nav .navbar .nav-links.show1 .links .solutions-sub-menu,
   nav .navbar .nav-links.show3 .links .community-sub-menu {
