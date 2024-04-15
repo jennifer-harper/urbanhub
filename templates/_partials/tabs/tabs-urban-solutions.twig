@@ -1,20 +1,24 @@
 <div class="tabs-urban-solutions">
-    <div class="">
+    <div>
         {% set slider = craft.entries().section('urbanSolutionsSlider').all() %}
         {% for slide in slider %}
             {% if slide.spaceType is not empty %}
-                <div class="border-right border-color no-border-mobile {{slide.spaceType[0]}}">
-                   <div class="pad-all">
-                        <div class="flex-wrap img-cont">
-                            <div class="half center-style col">
+                <div class="{{slide.spaceType[0]}}">
+                   <div class="pad-all flex-wrap ">
+                        {# <div class=""> #}
+                            <div class="half ">
                                 {% if slide.spaceType %}
-                                    <p>{{slide.spaceType[0]}}
+                                    <p>
+                                        {{slide.spaceType[0]}}
                                     </p>
-                                    <p>starts at</p>
+
+                                    {% if slide.dollarSign is defined and slide.dollarSign != '' %}
+                                        <p>Starts at</p>
+                                    {% endif %}
                                 {% endif %}
                                 <div>                
-                                    <p class="flex-wrap">
-                                    <span class="flex-wrap row">
+                                    <p class="flex-wrap row">
+                                        <span class="flex-wrap row">
                                         {% if slide.dollarSign %}  <span class="sign">{{slide.dollarSign}}</span>{% endif %}
                                         {% if slide.spacePrice %}  <span class="price">{{slide.spacePrice}}</span>{% endif %}
                                         </span>
@@ -27,9 +31,12 @@
                                     </p> 
                                 </div>
 
-                                {% if slide.spaceDescription %}
+                                <div class="description">
+                                    {% if slide.spaceDescription %}
                                     {{slide.spaceDescription}}
-                                {% endif %}
+                                    {% endif %}
+                                </div>
+
 
                                 {% set buttonText = slide.buttonText ?? 'Find out more' %}
                                 {% set buttonPageLink = slide.spaceType[0].url ?? '/contact-us' %}
@@ -39,10 +46,13 @@
                                     {% block url %}{{buttonPageLink}} {% endblock %}
                                 {% endembed %} 
                             </div>
-                            <div class="half center-style pad-sides no-right">
-                                {% include '_partials/svgs/' ~ slide.spaceType[0] ~ '.twig' %}
+
+                            <div class="half pad-sides illustration">
+                                <div>
+                                    {% include '_partials/svgs/' ~ slide.spaceType[0] ~ '.twig' %}
+                                </div>
                             </div>
-                        </div>
+                        {# </div> #}
                     </div>
                 </div>
             {% endif %}

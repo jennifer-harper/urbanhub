@@ -699,7 +699,9 @@ svg {
     display: flex;
     justify-content: center;
 }
-
+.center-style.col{
+    flex-direction: column;
+}
 
 
 
@@ -2636,17 +2638,18 @@ nav {
 //tabs
 .home{
     .tabs-urban-solutions{
-
         .price{
-            font-size: 10vw;
+            font-size: 20vw;
             font-weight: bold;
             line-height: 1em;
             font-family: $header-font;
             margin-top: -10px;
         }
+
+
         .quantity,
         .sign{
-            font-size: 4vw;
+            font-size: 8vw;
             font-family: $serif-feature;
             line-height: 1em;
         }
@@ -2655,19 +2658,26 @@ nav {
             margin-left: .4em;
         }
 
-
-        .illustration-fill{
-            fill:$light
+        .illustration{
+            margin-top:$sm;
+            .illustration-fill{
+                fill:$light;
+            }
         }
+
         .UrbanLease{
             background-color: $green-light;
- 
         }
+
         .UrbanClub{
             background-color:$lime;
-            .illustration-fill{
-                width: 50%;
+            .illustration{
+                text-align: right;
+                .illustration-fill{
+                    width: 50%;
+                }
             }
+
             .btn a{
                 div{
                     background-color: $lime; 
@@ -2735,8 +2745,65 @@ nav {
             }
         }
 
+        @media #{$mq-small}{
+            .illustration{
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                div{
+                    width: 100%;
+                }
+            }
+
+            .flex-wrap:not(.flex-wrap.row){
+                flex-direction: row;
+                .half{
+                    width: 50%;
+                    flex-basis:50%;
+                }
+            }
+
+            .price{
+                font-size: 11vw;
+            }
+
+            .quantity,
+            .sign{
+                font-size: 4vw;
+            }
+
+            .UrbanClub{
+                .illustration{
+                    .illustration-fill{
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    
+        @media #{$mq-large}{
+            .price{
+                font-size: 11vw;
+            }
+            .quantity,
+            .sign{
+                font-size: 4vw;
+            }
+            .description{
+                max-width: 25vw;
+            }
+            .UrbanClub{
+                .illustration-fill{
+                    width: 50%;
+                }
+            }
+
+        }
         
     }
+
+    
 
 
 }

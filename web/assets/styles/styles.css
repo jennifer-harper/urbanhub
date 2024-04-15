@@ -616,6 +616,10 @@ svg {
   justify-content: center;
 }
 
+.center-style.col {
+  flex-direction: column;
+}
+
 .btn {
   display: flex;
   margin-top: 3vw;
@@ -2203,7 +2207,7 @@ nav .bx-menu {
 }
 
 .home .tabs-urban-solutions .price {
-  font-size: 10vw;
+  font-size: 20vw;
   font-weight: bold;
   line-height: 1em;
   font-family: "eina_semiboldregular", sans-serif;
@@ -2211,7 +2215,7 @@ nav .bx-menu {
 }
 .home .tabs-urban-solutions .quantity,
 .home .tabs-urban-solutions .sign {
-  font-size: 4vw;
+  font-size: 8vw;
   font-family: "reckless_neuemedium", serif;
   line-height: 1em;
 }
@@ -2219,7 +2223,10 @@ nav .bx-menu {
   width: 1em;
   margin-left: 0.4em;
 }
-.home .tabs-urban-solutions .illustration-fill {
+.home .tabs-urban-solutions .illustration {
+  margin-top: 40px;
+}
+.home .tabs-urban-solutions .illustration .illustration-fill {
   fill: #FAF6F0;
 }
 .home .tabs-urban-solutions .UrbanLease {
@@ -2228,7 +2235,10 @@ nav .bx-menu {
 .home .tabs-urban-solutions .UrbanClub {
   background-color: #D3E84C;
 }
-.home .tabs-urban-solutions .UrbanClub .illustration-fill {
+.home .tabs-urban-solutions .UrbanClub .illustration {
+  text-align: right;
+}
+.home .tabs-urban-solutions .UrbanClub .illustration .illustration-fill {
   width: 50%;
 }
 .home .tabs-urban-solutions .UrbanClub .btn a div {
@@ -2284,6 +2294,49 @@ nav .bx-menu {
 }
 .home .tabs-urban-solutions .UrbanDesk h2, .home .tabs-urban-solutions .UrbanDesk p:not(.btn p), .home .tabs-urban-solutions .UrbanMeet h2, .home .tabs-urban-solutions .UrbanMeet p:not(.btn p) {
   color: #253C40;
+}
+@media (min-width: 48em) {
+  .home .tabs-urban-solutions .illustration {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .home .tabs-urban-solutions .illustration div {
+    width: 100%;
+  }
+  .home .tabs-urban-solutions .flex-wrap:not(.flex-wrap.row) {
+    flex-direction: row;
+  }
+  .home .tabs-urban-solutions .flex-wrap:not(.flex-wrap.row) .half {
+    width: 50%;
+    flex-basis: 50%;
+  }
+  .home .tabs-urban-solutions .price {
+    font-size: 11vw;
+  }
+  .home .tabs-urban-solutions .quantity,
+  .home .tabs-urban-solutions .sign {
+    font-size: 4vw;
+  }
+  .home .tabs-urban-solutions .UrbanClub .illustration .illustration-fill {
+    width: 70%;
+  }
+}
+@media (min-width: 85.375em) {
+  .home .tabs-urban-solutions .price {
+    font-size: 11vw;
+  }
+  .home .tabs-urban-solutions .quantity,
+  .home .tabs-urban-solutions .sign {
+    font-size: 4vw;
+  }
+  .home .tabs-urban-solutions .description {
+    max-width: 25vw;
+  }
+  .home .tabs-urban-solutions .UrbanClub .illustration-fill {
+    width: 50%;
+  }
 }
 
 .home .testi-header h2 {
