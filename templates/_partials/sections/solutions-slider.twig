@@ -13,11 +13,19 @@
                                     </h3>
                                 {% endif %}
                                 <div class="price-title">                
-                                    <p>
-                                        {% if slide.dollarSign %}  <span class="sign">{{slide.dollarSign}}</span>{% endif %}
-                                        {% if slide.spacePrice %}  <span class="price">{{slide.spacePrice}}</span>{% endif %}
-                                        {% if slide.priceQuantity %}  <span class="no-wrap"><i>/{{slide.priceQuantity}}</i></span>{% endif %}
-                                    </p> 
+
+                                        <p class="flex-wrap row">
+                                            <span class="flex-wrap row">
+                                            {% if slide.dollarSign %}  <span class="sign">{{slide.dollarSign}}</span>{% endif %}
+                                            {% if slide.spacePrice %}  <span class="price">{{slide.spacePrice}}</span>{% endif %}
+                                            </span>
+                                        
+                                            {% if slide.priceQuantity %}  
+                                            <span class="quantity">
+                                                <i>{{slide.priceQuantity}}</i>
+                                            </span>
+                                            {% endif %}
+                                        </p> 
                                 </div>
                                 {% if slide.spaceDescription %}
                                     {{slide.spaceDescription}}

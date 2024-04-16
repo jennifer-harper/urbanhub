@@ -80,14 +80,9 @@ body {
   font-size: 1em;
   line-height: 1.5em;
 }
-@media (min-width: 100em) {
+@media (min-width: 120em) {
   body {
     font-size: 1.2em;
-  }
-}
-@media (min-width: 126em) {
-  body {
-    font-size: 2em;
   }
 }
 
@@ -111,7 +106,7 @@ ul {
 ul li a {
   padding-right: 20px;
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .underline-list-slider ul li a,
   ul li a {
     padding-right: 1em;
@@ -121,7 +116,7 @@ ul li a {
 ul li:last-of-type a {
   padding-right: 0;
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .underline-list-slider ul.underline-list,
   ul.underline-list {
     max-width: 70%;
@@ -141,7 +136,7 @@ div p {
 div.no-btm-marg p {
   margin-bottom: 0;
 }
-@media (min-width: 126em) {
+@media (min-width: 94em) {
   div p {
     margin-bottom: 2em;
   }
@@ -165,7 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   position: relative;
 }
-@media (min-width: 126em) {
+@media (min-width: 94em) {
   h1, h2, h3, h4, h5, h6 {
     margin-bottom: 3vw;
   }
@@ -195,7 +190,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: auto;
   }
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .text-center.max-title {
     max-width: 55%;
   }
@@ -249,10 +244,11 @@ h3 {
   line-height: 1.18em;
 }
 
-.header-intro {
+.header-intro p {
   font-size: 30px;
   font-family: "eina_semiboldregular", sans-serif;
   margin-bottom: 0.3em;
+  line-height: 1em;
 }
 
 @media (min-width: 48em) {
@@ -283,18 +279,24 @@ h3 {
     font-size: 3.5vw;
   }
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   h1 {
-    font-size: 5.4vw;
+    font-size: 7.5em;
+  }
+  h2 {
+    font-size: 5em;
   }
   h3 {
-    font-size: 2.2vw;
+    font-size: 1.7em;
   }
   .intro-text {
-    font-size: 1.6vw;
+    font-size: 1.5em;
   }
-  .header-intro {
-    font-size: 2vw;
+  .header-intro p {
+    font-size: 2.5em;
+  }
+  .solutions-wrap h1 {
+    font-size: 5.7em;
   }
 }
 h2 i,
@@ -443,7 +445,7 @@ svg {
     margin-top: 2vw;
   }
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .third-wrap.text-wrap {
     justify-content: unset;
   }
@@ -576,7 +578,7 @@ svg {
     align-items: flex-end;
   }
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .flex-wrap .quarter {
     flex: 1;
     flex-basis: 25%;
@@ -634,7 +636,7 @@ svg {
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
-@media (min-width: 126em) {
+@media (min-width: 94em) {
   .btn a {
     border-radius: 3vw;
   }
@@ -959,6 +961,9 @@ svg {
 .slider-urban-solutions .price-title {
   margin-top: 10px;
 }
+.slider-urban-solutions .price-title p.flex-wrap.row {
+  align-items: flex-end;
+}
 .slider-urban-solutions .price-title .no-wrap {
   font-size: 1.2em;
   white-space: nowrap;
@@ -979,23 +984,20 @@ svg {
     font-size: 4.5vw;
   }
 }
+.slider-urban-solutions .price-title .sign {
+  line-height: 2.5em;
+}
+.slider-urban-solutions .price-title .quantity {
+  margin-left: 0.5em;
+}
 .slider-urban-solutions .underline-list {
   max-width: 100%;
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .slider-urban-solutions .underline-list {
     font-size: 0.8em;
     column-count: 2;
   }
-}
-.slider-urban-solutions .illustration-fill {
-  width: 100%;
-}
-.slider-urban-solutions .illustration-fill.urban-club {
-  width: 60%;
-}
-.slider-urban-solutions .illustration-fill.urban-studio {
-  width: 80%;
 }
 
 .bg-green-light .border-color-contrast {
@@ -1348,7 +1350,7 @@ svg {
     font-size: 10.8vw;
   }
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .footer-banner h2 {
     margin-bottom: 5vw;
   }
@@ -1444,6 +1446,9 @@ svg {
   margin-top: 5vw;
 }
 
+.solutions-banner .intro-text p {
+  font-family: "eina_semiboldregular", sans-serif;
+}
 @media (min-width: 64em) {
   .solutions-banner .half:first-of-type {
     padding-right: 5vw;
@@ -1485,7 +1490,7 @@ svg {
     max-width: 50%;
   }
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .solutions-contrast.icon .flex-wrap .third {
     flex-basis: 33.333%;
     width: 33.333%;
@@ -1545,9 +1550,10 @@ svg {
     max-width: 25%;
   }
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .solutions-usp .flex-wrap.row.wrap {
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 
@@ -2220,6 +2226,15 @@ nav .bx-menu {
   }
 }
 
+.home .centered-hero {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .centered-hero > .pad-all {
+  width: 100%;
+}
 .home .star-banner .bg-green-light {
   fill: #315844;
 }
@@ -2248,6 +2263,16 @@ nav .bx-menu {
   display: flex;
   justify-content: center;
   padding: 1em;
+}
+.home .tabs-urban-solutions .mobile-only {
+  font-size: 21px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.home .tabs-urban-solutions .mobile-only i {
+  font-family: "reckless_neuemedium", serif;
+  font-style: normal;
+  margin-top: -1px;
 }
 .home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .mobile-only.UrbanStudio {
   background-color: #EBE198;
@@ -2281,11 +2306,12 @@ nav .bx-menu {
 .home .tabs-urban-solutions .sign {
   font-size: 8vw;
   font-family: "reckless_neuemedium", serif;
-  line-height: 1em;
+  line-height: 1.3em;
 }
 .home .tabs-urban-solutions .quantity {
   width: 1em;
   margin-left: 0.4em;
+  line-height: 1em;
 }
 .home .tabs-urban-solutions .illustration {
   margin-top: 40px;
@@ -2301,7 +2327,7 @@ nav .bx-menu {
   color: #DB6B34;
 }
 .home .tabs-urban-solutions .UrbanStudio .btn a div svg,
-.home .tabs-urban-solutions .UrbanStudio h2, .home .tabs-urban-solutions .UrbanStudio p:not(.btn p),
+.home .tabs-urban-solutions .UrbanStudio h2, .home .tabs-urban-solutions .UrbanStudio .tab-content p:not(.btn p),
 .home .tabs-urban-solutions .UrbanStudio .illustration-fill {
   fill: #DB6B34;
   color: #DB6B34;
@@ -2329,7 +2355,7 @@ nav .bx-menu {
 .home .tabs-urban-solutions .UrbanDesk.r-tabs-tab.r-tabs-state-active a {
   color: #272641;
 }
-.home .tabs-urban-solutions .UrbanDesk h2, .home .tabs-urban-solutions .UrbanDesk p:not(.btn p) {
+.home .tabs-urban-solutions .UrbanDesk h2, .home .tabs-urban-solutions .UrbanDesk .tab-content p:not(.btn p) {
   color: #272641;
 }
 .home .tabs-urban-solutions .UrbanDesk .btn a {
@@ -2348,9 +2374,6 @@ nav .bx-menu {
 .home .tabs-urban-solutions .UrbanClub .illustration {
   text-align: right;
 }
-.home .tabs-urban-solutions .UrbanClub .illustration .illustration-fill {
-  width: 50%;
-}
 .home .tabs-urban-solutions .UrbanClub .btn a div {
   background-color: #D3E84C;
 }
@@ -2361,7 +2384,7 @@ nav .bx-menu {
 .home .tabs-urban-solutions .UrbanMeet.r-tabs-tab.r-tabs-state-active a {
   color: #253C40;
 }
-.home .tabs-urban-solutions .UrbanMeet h2, .home .tabs-urban-solutions .UrbanMeet p:not(.btn p) {
+.home .tabs-urban-solutions .UrbanMeet h2, .home .tabs-urban-solutions .UrbanMeet .tab-content p:not(.btn p) {
   color: #253C40;
 }
 .home .tabs-urban-solutions .UrbanMeet .btn a {
@@ -2404,16 +2427,8 @@ nav .bx-menu {
   .home .tabs-urban-solutions .sign {
     font-size: 4vw;
   }
-  .home .tabs-urban-solutions .UrbanClub .illustration .illustration-fill {
-    width: 70%;
-  }
 }
-@media (min-width: 64em) {
-  .home .tabs-urban-solutions .tab-content {
-    min-height: 63vh;
-  }
-}
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .home .tabs-urban-solutions .price {
     font-size: 11vw;
   }
@@ -2423,9 +2438,6 @@ nav .bx-menu {
   }
   .home .tabs-urban-solutions .description {
     max-width: 25vw;
-  }
-  .home .tabs-urban-solutions .UrbanClub .illustration-fill {
-    width: 50%;
   }
 }
 
@@ -2616,7 +2628,7 @@ nav .bx-menu {
     max-width: 50%;
   }
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .stories .third-wrap.img-wrap {
     padding-bottom: 3vw;
   }

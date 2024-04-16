@@ -128,13 +128,8 @@ color: $base-font;
   line-height: $base-font-size*1.5;
 
 
-
-  @media #{$mq-xlarge} {
+  @media #{$mq-large} {
     font-size: $base-font-size*1.2;
-  }
-
-  @media #{$mq-xxlarge} {
-    font-size: $base-font-size*2;
   }
 }
 
@@ -160,7 +155,7 @@ ul {
 
   li a{
     padding-right:20px;
-    @media #{$mq-large}{
+    @media #{$mq-figma}{
         padding-right:$base-font-size;
     }
   }
@@ -169,7 +164,7 @@ ul {
         padding-right:0;
   }
   &.underline-list{
-    @media #{$mq-large}{
+    @media #{$mq-figma}{
         max-width:70%;
       }
   }
@@ -196,7 +191,7 @@ div{
         margin-bottom: 0;
     }
   }
-  @media #{$mq-xxlarge} {
+  @media #{$mq-figma} {
     p{
         margin-bottom: $base-spacing*2;
     }
@@ -224,7 +219,7 @@ h1,h2,h3,h4,h5,h6 {
     color:$green-dark;
     z-index: 1;
     position: relative;
-    @media #{$mq-xxlarge} {
+    @media #{$mq-figma} {
         margin-bottom: $md;
     }
 }
@@ -259,7 +254,7 @@ h1,h2,h3,h4,h5,h6 {
 
     }
 
-    @media #{$mq-large}{
+    @media #{$mq-figma}{
         &.max-title{
             max-width:55%;
         }
@@ -319,10 +314,11 @@ h3{
   line-height:1.18em
 }
 
-.header-intro {
+.header-intro p{
   font-size:30px;
   font-family: $header-font;
   margin-bottom: calc(1em * .3);
+  line-height: 1em;
 }
 
 
@@ -360,20 +356,38 @@ h3{
 }
 
 
-@media #{$mq-large} {
+@media #{$mq-figma} {
     h1{
-        font-size:5.4vw; 
+        font-size:$base-font-size*7.5; 
     }
-  h3{
-    font-size: 2.2vw;
-  }
-  .intro-text{
-    font-size:1.6vw;
-  }
-  .header-intro{
-    font-size:2vw;
-  }
+    h2{
+        font-size:$base-font-size*5; 
+    }
+
+    h3{
+        font-size:$base-font-size*1.7; 
+    }
+
+    .intro-text{
+        font-size:$base-font-size*1.5; 
+    }
+
+    .header-intro p{
+        font-size:$base-font-size*2.5; 
+    }
+
+    .solutions-wrap{
+        h1{
+            font-size:$base-font-size*5.7; 
+        } 
+    }
 }
+
+
+
+
+
+
 
 //-------Images-----------//
 h2 i,
@@ -517,7 +531,7 @@ svg {
 
     }
 
-    @media #{$mq-large}{
+    @media #{$mq-figma}{
         justify-content: unset;
 
         .third{
@@ -660,7 +674,7 @@ svg {
         }
     }
 
-    @media #{$mq-large} {
+    @media #{$mq-figma} {
         .quarter{
             flex:1;
             flex-basis: 25%;
@@ -716,7 +730,7 @@ svg {
         align-items: center;
         border-radius: 50px;
         @include transition;
-        @media #{$mq-xxlarge} {
+        @media #{$mq-figma} {
             border-radius: $md;
         }
       p{
@@ -1075,6 +1089,9 @@ svg {
         }
         .price-title{
             margin-top:10px;
+            p.flex-wrap.row{
+                align-items: flex-end;
+            }
             .no-wrap{
                 font-size:$base-font-size*1.2;
                 white-space: nowrap;
@@ -1091,23 +1108,21 @@ svg {
                     font-size:4.5vw;
                 }
             }
+            .sign{
+                line-height: 2.5em;
+            }
+            .quantity{
+                margin-left:$base-font-size*.5;
+            }
         }
         .underline-list{
             max-width:100%;
-            @media #{$mq-large}{
+            @media #{$mq-figma}{
                 font-size:$base-font-size*.8;
                 column-count: 2;
             }
         }
-        .illustration-fill{
-            width:100%;
-            &.urban-club{
-                width: 60%;
-            }
-            &.urban-studio{
-                width: 80%;
-            }
-        }
+
     }
 
 
@@ -1573,7 +1588,7 @@ svg {
             line-height: .7em;
             font-size:10.8vw;
         }
-        @media #{$mq-large}{
+        @media #{$mq-figma}{
             margin-bottom:$base;
         }
     }
@@ -1683,6 +1698,9 @@ svg {
     }
 }
 .solutions-banner{
+    .intro-text p{
+        font-family: $header-font;
+    }
     @media #{$mq-medium}{
         .half:first-of-type{
             padding-right:$base;
@@ -1755,7 +1773,7 @@ svg {
             max-width: 50%;
         }
     }
-    @media #{$mq-large}{
+    @media #{$mq-figma}{
         .flex-wrap .third{
             flex-basis:33.333%;
             width: 33.333%;
@@ -1830,9 +1848,10 @@ svg {
             max-width:25%
         }
     }
-    @media #{$mq-large}{
+    @media #{$mq-figma}{
         .flex-wrap.row.wrap{
             flex-wrap:nowrap;
+            justify-content: space-between;
         }
     }
 }
@@ -2654,6 +2673,15 @@ nav {
 //--------------- specific pages
 
 .home{
+    .centered-hero{
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       > .pad-all{
+            width: 100%;
+        }
+    }
     .star-banner .bg-green-light{
      fill:$green-dark
     }
@@ -2686,6 +2714,17 @@ nav {
                         padding:$base-font-size;
                     }
                 }
+            }
+        }
+
+        .mobile-only{
+            font-size: 21px;
+            font-weight: 600;
+            margin-bottom: 0;
+            i{
+                font-family: $serif-feature;
+                font-style: normal;
+                margin-top: -1px;
             }
         }
 
@@ -2727,11 +2766,12 @@ nav {
         .sign{
             font-size: 8vw;
             font-family: $serif-feature;
-            line-height: 1em;
+            line-height: 1.3em;
         }
         .quantity{
             width: 1em;
             margin-left: .4em;
+            line-height: 1em;
         }
 
         .illustration{
@@ -2741,9 +2781,6 @@ nav {
             }
         }
 
-
-
-
         .UrbanStudio{          
             &.r-tabs-tab.r-tabs-state-active a div,
             .tab-content{
@@ -2751,14 +2788,14 @@ nav {
             }
 
             &.r-tabs-tab.r-tabs-state-active{
-                a{
+                a {
                     color:$orange
                 }
             }
 
             
             .btn a div svg,
-            h2, p:not(.btn p),
+            h2, .tab-content p:not(.btn p),
             .illustration-fill{
                 fill:$orange;
                 color:$orange;
@@ -2794,12 +2831,12 @@ nav {
             }
 
             &.r-tabs-tab.r-tabs-state-active{
-                a{
+                a {
                     color:$purple-dark
                 }
             }
 
-            h2, p:not(.btn p){
+            h2, .tab-content p:not(.btn p){
                 color: $purple-dark;
             }
             
@@ -2822,9 +2859,6 @@ nav {
             
             .illustration{
                 text-align: right;
-                .illustration-fill{
-                    width: 50%;
-                }
             }
 
             .btn a{
@@ -2842,12 +2876,12 @@ nav {
             }
 
             &.r-tabs-tab.r-tabs-state-active{
-                a{
+                a {
                     color:$blue-dark;
                 }
             }
 
-            h2, p:not(.btn p){
+            h2, .tab-content p:not(.btn p){
                 color: $blue-dark;
             }
             
@@ -2900,23 +2934,10 @@ nav {
                 font-size: 4vw;
             }
 
-            .UrbanClub{
-                .illustration{
-                    .illustration-fill{
-                        width: 70%;
-                    }
-                }
-            }
         }
 
-
-        @media #{$mq-medium}{
-            .tab-content{
-                min-height: 63vh;
-            }
-        }
     
-        @media #{$mq-large}{
+        @media #{$mq-figma}{
             .price{
                 font-size: 11vw;
             }
@@ -2926,11 +2947,6 @@ nav {
             }
             .description{
                 max-width: 25vw;
-            }
-            .UrbanClub{
-                .illustration-fill{
-                    width: 50%;
-                }
             }
 
         }
@@ -3163,7 +3179,7 @@ nav {
             max-width:50%;
         }
     }
-    @media #{$mq-large}{
+    @media #{$mq-figma}{
         .third-wrap.img-wrap{
             padding-bottom:calc($base - 2vw);
         }

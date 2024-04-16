@@ -21,7 +21,8 @@
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/hero/solutions.twig' %}
+    <div class="solutions-wrap">
+        {% include '_partials/hero/solutions.twig' %}
 
     {% include '_partials/sections/solutions-usps.twig' %}
     {% include '_partials/sections/solutions-mask.twig' %}
@@ -43,9 +44,12 @@
 
     {% include '_partials/sections/slider-intro.twig' %}
     {% include '_partials/sections/solutions-slider.twig' %}
+    
+         {% include '_partials/footer/footer-page-banner.twig' %}
+    </div>
 
 
-     {% include '_partials/footer/footer-page-banner.twig' %}
+
 
   {% endfor %} 
 {% endblock %}
