@@ -9,7 +9,7 @@
 {% set buttonClassContrast = "green" %}
 {% set main = "bg-green-dark" %}
 {% set contrast = "bg-green-light" %}
-{% set footer = "bg-green-light" %}
+{% set footer = "bg-green-dark" %}
 
 {% block head %} 
   {{ parent() }}
@@ -18,7 +18,45 @@
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/hero/centered-hero.twig' %}
+        <div class="centered-hero {% block class %} {% endblock %}">
+            <div class="pad-all">
+                <div class="text-center max-hero">
+
+                    <div class="h1-wrap">
+                        <img src="/uploads/images/illustration2-FlyingPaper.svg " alt="" class="hero-special one">
+                        {% if entry.headingH1 %}
+                            {{entry.headingH1}}
+                        {% endif %}
+                        <img src="/uploads/images/illustration1-Bookshelf.svg " alt="" class="hero-special two">
+                    </div>
+
+                    <div class="intro-text">
+                        {% if entry.introParagraph2 %}
+                            {{entry.introParagraph2}}
+                        {% endif %}
+                    </div>
+
+                    {% if entry.paragraph2 %}
+                        {{entry.paragraph2}}
+                    {% endif %}
+
+
+                    {% if entry.firstButton is defined and entry.firstButton %}
+                            {% for block in entry.firstButton %}
+                                {% if block.type == 'groupFields' %}
+                                    {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                                    {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                                    {% embed '_partials/button' %}
+                                        {% block class %}{{ buttonClass }} centered {% endblock %}
+                                        {% block title %}{{ buttonText }}{% endblock %}
+                                        {% block url %}{{ buttonPageLink }}{% endblock %}
+                                    {% endembed %}
+                                {% endif %}
+                            {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
 
     {% embed '_partials/sections/just-title.twig' %}
         {% block allClass %}align-left pad-all border-top border-color-other just-title-home{% endblock %}

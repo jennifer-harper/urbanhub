@@ -191,7 +191,7 @@ div{
         margin-bottom: 0;
     }
   }
-  @media #{$mq-figma} {
+  @media #{$mq-large} {
     p{
         margin-bottom: $base-spacing*2;
     }
@@ -260,7 +260,7 @@ h1,h2,h3,h4,h5,h6 {
         }
         &.max-title,
         &.max-hero{
-            p{
+            p:not(.btn p){
                 max-width: 40vw;
             }
         }
@@ -376,11 +376,24 @@ h3{
         font-size:$base-font-size*2.5; 
     }
 
+
+    .the-team,
+    .facilitiesAmenities,
+    .neighbourhood,
+    .culture-events,
+    .solutionsPage,
     .solutions-wrap{
         h1{
             font-size:$base-font-size*5.7; 
         } 
     }
+
+    .urbanCommunity{
+        h1{
+            font-size:$base-font-size*6.5; 
+        }
+    }
+
 }
 
 
@@ -674,7 +687,7 @@ svg {
         }
     }
 
-    @media #{$mq-figma} {
+    @media #{$mq-desktop} {
         .quarter{
             flex:1;
             flex-basis: 25%;
@@ -1690,6 +1703,11 @@ svg {
             margin-right: $md;
         }
     }
+    @media #{$mq-figma}{
+       .inner p:last-of-type:not(.btn p){
+           max-width: 30vw;
+        }
+    }
 }
 
 .hero-style{
@@ -2590,22 +2608,13 @@ nav {
         justify-content: space-between;
         align-items: center;
     }
-    .mobile-nav{
-        margin-right:$md
-    }
-    .btn{
-        margin-left:$md;
-    }
   }
 }
 
 @media (min-width: 1366px) {
     nav{
-        .mobile-nav{
-            margin-right:10vw;
-        }
-        .btn{
-            margin-left:12vw;
+        .navbar .links .x{
+            padding-right:15px;
         }
     }
 }
@@ -2656,7 +2665,7 @@ nav {
 
 /* Accordion responsive breakpoint - change per page/tabsgroup */
 .home{
-    @media only screen and (min-width:769px) {
+    @media only screen and (min-width:1024px) {
         .r-tabs .r-tabs-nav {
             display: flex;
             justify-content: space-between;
@@ -2681,6 +2690,33 @@ nav {
        > .pad-all{
             width: 100%;
         }
+        .h1-wrap{
+            position: relative;
+            .hero-special{
+                position: absolute;
+
+                &.one{
+                    left:0%;
+                    width: 200px;
+                    top: 35%;
+                    z-index: 10;
+                }
+                &.two{
+                    width: 100px;
+                    right:-3%;
+                    top: -35%;
+                }
+            }
+        }
+        .intro-text p{
+            font-size:$base-font-size*1.7;
+            line-height: 1em;
+            font-family:$header-font;
+            margin-bottom: $base-font-size;
+        }
+       .max-hero >  p:last-of-type:not(.btn p){
+            max-width: 500px;
+        }
     }
     .star-banner .bg-green-light{
      fill:$green-dark
@@ -2688,6 +2724,15 @@ nav {
     .solutions-usp{
         border-bottom-width: 0;
     }
+
+    .footer-banner .logo {
+        fill:$light;
+        .logo-star{
+            fill:$green-light;
+        }
+    }
+
+
     @media #{$mq-medium}{
         .just-title-home h2 {
             max-width: 60%;
@@ -2707,8 +2752,11 @@ nav {
             li{
                 width: 100%;
                 a{
+                    display: flex;
                     width: 100%;
+                    justify-content: center;
                     div{
+                        width: 100%;
                         display: flex;
                         justify-content: center;
                         padding:$base-font-size;
@@ -2780,6 +2828,10 @@ nav {
                 fill:$light;
             }
         }
+        .description p{
+            font-size:$base-font-size*1.2;
+        }
+
 
         .UrbanStudio{          
             &.r-tabs-tab.r-tabs-state-active a div,

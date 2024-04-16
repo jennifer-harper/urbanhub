@@ -13,14 +13,14 @@ $xxl:20vw;
 
 $bp-small: 48em; // 768px
 $bp-medium: 64em; // 1024px
-$bp-large: 85.375em; // 1366px
+$bp-desktop: 85.375em; // 1366px
 $bp-figma:94em;
 $bp-large: 120em; // 2000px
 
 // Media Queries
 $mq-small: "(min-width: #{$bp-small})";
 $mq-medium: "(min-width: #{$bp-medium})";
-$mq-large: "(min-width: #{$bp-large})";
+$mq-desktop: "(min-width: #{$bp-desktop})";
 $mq-figma: "(min-width: #{$bp-figma})";
 $mq-large: "(min-width: #{$bp-large})";
 $mq-retina: "(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)";

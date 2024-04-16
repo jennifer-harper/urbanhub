@@ -136,7 +136,7 @@ div p {
 div.no-btm-marg p {
   margin-bottom: 0;
 }
-@media (min-width: 94em) {
+@media (min-width: 120em) {
   div p {
     margin-bottom: 2em;
   }
@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5, h6 {
   .text-center.max-title {
     max-width: 55%;
   }
-  .text-center.max-title p, .text-center.max-hero p {
+  .text-center.max-title p:not(.btn p), .text-center.max-hero p:not(.btn p) {
     max-width: 40vw;
   }
 }
@@ -295,8 +295,16 @@ h3 {
   .header-intro p {
     font-size: 2.5em;
   }
+  .the-team h1,
+  .facilitiesAmenities h1,
+  .neighbourhood h1,
+  .culture-events h1,
+  .solutionsPage h1,
   .solutions-wrap h1 {
     font-size: 5.7em;
+  }
+  .urbanCommunity h1 {
+    font-size: 6.5em;
   }
 }
 h2 i,
@@ -578,7 +586,7 @@ svg {
     align-items: flex-end;
   }
 }
-@media (min-width: 94em) {
+@media (min-width: 85.375em) {
   .flex-wrap .quarter {
     flex: 1;
     flex-basis: 25%;
@@ -1441,6 +1449,11 @@ svg {
     margin-right: 3vw;
   }
 }
+@media (min-width: 94em) {
+  .solutions-mask .inner p:last-of-type:not(.btn p) {
+    max-width: 30vw;
+  }
+}
 
 .hero-style .content-wrap {
   margin-top: 5vw;
@@ -2169,19 +2182,10 @@ nav .bx-menu {
     justify-content: space-between;
     align-items: center;
   }
-  nav .mobile-nav {
-    margin-right: 3vw;
-  }
-  nav .btn {
-    margin-left: 3vw;
-  }
 }
 @media (min-width: 1366px) {
-  nav .mobile-nav {
-    margin-right: 10vw;
-  }
-  nav .btn {
-    margin-left: 12vw;
+  nav .navbar .links .x {
+    padding-right: 15px;
   }
 }
 @media (max-width: 1025px) {
@@ -2216,7 +2220,7 @@ nav .bx-menu {
 }
 
 /* Accordion responsive breakpoint - change per page/tabsgroup */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
   .home .r-tabs .r-tabs-nav {
     display: flex;
     justify-content: space-between;
@@ -2235,11 +2239,43 @@ nav .bx-menu {
 .home .centered-hero > .pad-all {
   width: 100%;
 }
+.home .centered-hero .h1-wrap {
+  position: relative;
+}
+.home .centered-hero .h1-wrap .hero-special {
+  position: absolute;
+}
+.home .centered-hero .h1-wrap .hero-special.one {
+  left: 0%;
+  width: 200px;
+  top: 35%;
+  z-index: 10;
+}
+.home .centered-hero .h1-wrap .hero-special.two {
+  width: 100px;
+  right: -3%;
+  top: -35%;
+}
+.home .centered-hero .intro-text p {
+  font-size: 1.7em;
+  line-height: 1em;
+  font-family: "eina_semiboldregular", sans-serif;
+  margin-bottom: 1em;
+}
+.home .centered-hero .max-hero > p:last-of-type:not(.btn p) {
+  max-width: 500px;
+}
 .home .star-banner .bg-green-light {
   fill: #315844;
 }
 .home .solutions-usp {
   border-bottom-width: 0;
+}
+.home .footer-banner .logo {
+  fill: #FAF6F0;
+}
+.home .footer-banner .logo .logo-star {
+  fill: #BAE2A6;
 }
 @media (min-width: 64em) {
   .home .just-title-home h2 {
@@ -2257,9 +2293,12 @@ nav .bx-menu {
   width: 100%;
 }
 .home .tabs-urban-solutions .tabs-nav-wrapper li a {
+  display: flex;
   width: 100%;
+  justify-content: center;
 }
 .home .tabs-urban-solutions .tabs-nav-wrapper li a div {
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 1em;
@@ -2318,6 +2357,9 @@ nav .bx-menu {
 }
 .home .tabs-urban-solutions .illustration .illustration-fill {
   fill: #FAF6F0;
+}
+.home .tabs-urban-solutions .description p {
+  font-size: 1.2em;
 }
 .home .tabs-urban-solutions .UrbanStudio.r-tabs-tab.r-tabs-state-active a div,
 .home .tabs-urban-solutions .UrbanStudio .tab-content {
