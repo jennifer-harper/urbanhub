@@ -169,18 +169,6 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: d179adcc-4b06-4a3b-85b4-aaff28d7ca0b # Hero Button
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: e3fdb5fe-42b9-4e09-92ea-df8b6f28f48d
-            userCondition: null
-            warning: null
-            width: 100
         name: 'Main Image Section'
         uid: 62134eab-d489-485b-9450-82db9f709af9
         userCondition: null

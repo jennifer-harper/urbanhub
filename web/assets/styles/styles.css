@@ -2191,6 +2191,35 @@ nav .bx-menu {
     transform: rotate(180deg);
   }
 }
+/* Accordion responsive breakpoint */
+.r-tabs-nav {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.r-tabs-nav li a {
+  padding: 0;
+}
+
+.r-tabs-accordion-title {
+  display: block;
+}
+
+.r-tabs-panel {
+  display: none;
+}
+
+/* Accordion responsive breakpoint - change per page/tabsgroup */
+@media only screen and (min-width: 769px) {
+  .home .r-tabs .r-tabs-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .home .r-tabs .r-tabs-accordion-title {
+    display: none;
+  }
+}
+
 .home .star-banner .bg-green-light {
   fill: #315844;
 }
@@ -2206,6 +2235,41 @@ nav .bx-menu {
   }
 }
 
+.home .tabs-urban-solutions {
+  border-top: 1px solid #cbd5d0;
+}
+.home .tabs-urban-solutions .tabs-nav-wrapper li {
+  width: 100%;
+}
+.home .tabs-urban-solutions .tabs-nav-wrapper li a {
+  width: 100%;
+}
+.home .tabs-urban-solutions .tabs-nav-wrapper li a div {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .mobile-only.UrbanStudio {
+  background-color: #EBE198;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanSuite {
+  background-color: #BAE2A6;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanDesk {
+  background-color: #8885D8;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanClub {
+  background-color: #D3E84C;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanMeet {
+  background-color: #6AC4D1;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanLease {
+  background-color: #BAE2A6;
+}
+.home .tabs-urban-solutions .mobile-only {
+  padding: 1em;
+}
 .home .tabs-urban-solutions .price {
   font-size: 20vw;
   font-weight: bold;
@@ -2229,35 +2293,12 @@ nav .bx-menu {
 .home .tabs-urban-solutions .illustration .illustration-fill {
   fill: #FAF6F0;
 }
-.home .tabs-urban-solutions .UrbanLease {
-  background-color: #BAE2A6;
-}
-.home .tabs-urban-solutions .UrbanClub {
-  background-color: #D3E84C;
-}
-.home .tabs-urban-solutions .UrbanClub .illustration {
-  text-align: right;
-}
-.home .tabs-urban-solutions .UrbanClub .illustration .illustration-fill {
-  width: 50%;
-}
-.home .tabs-urban-solutions .UrbanClub .btn a div {
-  background-color: #D3E84C;
-}
-.home .tabs-urban-solutions .UrbanDesk {
-  background-color: #8885D8;
-}
-.home .tabs-urban-solutions .UrbanDesk .btn a {
-  background-color: #272641;
-}
-.home .tabs-urban-solutions .UrbanDesk .btn a div {
-  background-color: #8885D8;
-}
-.home .tabs-urban-solutions .UrbanDesk .btn a div svg {
-  fill: #272641;
-}
-.home .tabs-urban-solutions .UrbanStudio {
+.home .tabs-urban-solutions .UrbanStudio.r-tabs-tab.r-tabs-state-active a div,
+.home .tabs-urban-solutions .UrbanStudio .tab-content {
   background-color: #EBE198;
+}
+.home .tabs-urban-solutions .UrbanStudio.r-tabs-tab.r-tabs-state-active a {
+  color: #DB6B34;
 }
 .home .tabs-urban-solutions .UrbanStudio .btn a div svg,
 .home .tabs-urban-solutions .UrbanStudio h2, .home .tabs-urban-solutions .UrbanStudio p:not(.btn p),
@@ -2271,8 +2312,57 @@ nav .bx-menu {
 .home .tabs-urban-solutions .UrbanStudio .btn a div {
   background-color: #EBE198;
 }
-.home .tabs-urban-solutions .UrbanMeet {
+.home .tabs-urban-solutions .UrbanSuite.r-tabs-tab.r-tabs-state-active a div,
+.home .tabs-urban-solutions .UrbanSuite .tab-content {
+  background-color: #BAE2A6;
+}
+.home .tabs-urban-solutions .UrbanSuite .illustration-fill {
+  fill: #315844;
+}
+.home .tabs-urban-solutions .UrbanSuite .quantity {
+  width: 4em;
+}
+.home .tabs-urban-solutions .UrbanDesk.r-tabs-tab.r-tabs-state-active a div,
+.home .tabs-urban-solutions .UrbanDesk .tab-content {
+  background-color: #8885D8;
+}
+.home .tabs-urban-solutions .UrbanDesk.r-tabs-tab.r-tabs-state-active a {
+  color: #272641;
+}
+.home .tabs-urban-solutions .UrbanDesk h2, .home .tabs-urban-solutions .UrbanDesk p:not(.btn p) {
+  color: #272641;
+}
+.home .tabs-urban-solutions .UrbanDesk .btn a {
+  background-color: #272641;
+}
+.home .tabs-urban-solutions .UrbanDesk .btn a div {
+  background-color: #8885D8;
+}
+.home .tabs-urban-solutions .UrbanDesk .btn a div svg {
+  fill: #272641;
+}
+.home .tabs-urban-solutions .UrbanClub.r-tabs-tab.r-tabs-state-active a div,
+.home .tabs-urban-solutions .UrbanClub .tab-content {
+  background-color: #D3E84C;
+}
+.home .tabs-urban-solutions .UrbanClub .illustration {
+  text-align: right;
+}
+.home .tabs-urban-solutions .UrbanClub .illustration .illustration-fill {
+  width: 50%;
+}
+.home .tabs-urban-solutions .UrbanClub .btn a div {
+  background-color: #D3E84C;
+}
+.home .tabs-urban-solutions .UrbanMeet.r-tabs-tab.r-tabs-state-active a div,
+.home .tabs-urban-solutions .UrbanMeet .tab-content {
   background-color: #6AC4D1;
+}
+.home .tabs-urban-solutions .UrbanMeet.r-tabs-tab.r-tabs-state-active a {
+  color: #253C40;
+}
+.home .tabs-urban-solutions .UrbanMeet h2, .home .tabs-urban-solutions .UrbanMeet p:not(.btn p) {
+  color: #253C40;
 }
 .home .tabs-urban-solutions .UrbanMeet .btn a {
   background-color: #253C40;
@@ -2283,19 +2373,14 @@ nav .bx-menu {
 .home .tabs-urban-solutions .UrbanMeet .btn a div svg {
   fill: #253C40;
 }
-.home .tabs-urban-solutions .UrbanSuite {
+.home .tabs-urban-solutions .UrbanLease.r-tabs-tab.r-tabs-state-active a div,
+.home .tabs-urban-solutions .UrbanLease .tab-content {
   background-color: #BAE2A6;
 }
-.home .tabs-urban-solutions .UrbanSuite .illustration-fill {
-  fill: #315844;
-}
-.home .tabs-urban-solutions .UrbanSuite .quantity {
-  width: 4em;
-}
-.home .tabs-urban-solutions .UrbanDesk h2, .home .tabs-urban-solutions .UrbanDesk p:not(.btn p), .home .tabs-urban-solutions .UrbanMeet h2, .home .tabs-urban-solutions .UrbanMeet p:not(.btn p) {
-  color: #253C40;
-}
 @media (min-width: 48em) {
+  .home .tabs-urban-solutions .tab-content {
+    min-height: 50vh;
+  }
   .home .tabs-urban-solutions .illustration {
     margin-top: 0;
     display: flex;
@@ -2321,6 +2406,11 @@ nav .bx-menu {
   }
   .home .tabs-urban-solutions .UrbanClub .illustration .illustration-fill {
     width: 70%;
+  }
+}
+@media (min-width: 64em) {
+  .home .tabs-urban-solutions .tab-content {
+    min-height: 63vh;
   }
 }
 @media (min-width: 85.375em) {
@@ -2540,6 +2630,13 @@ nav .bx-menu {
 .sustain-wellbeing .centered-hero .pad-all,
 .stories .centered-hero .pad-all {
   padding-bottom: 0;
+}
+
+.sustain-wellbeing .solutions-mask .intro-text {
+  margin-bottom: 6vw;
+}
+.sustain-wellbeing .contact.border-top {
+  border-top-width: 0px;
 }
 
 .facilitiesAmenities .tabs h2 {

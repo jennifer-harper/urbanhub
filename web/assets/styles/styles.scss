@@ -2614,6 +2614,41 @@ nav {
 
 
 
+//tabs related
+// ALL TABS, WORKING CODE -- add specific tab design under page class
+/* Accordion responsive breakpoint */
+.r-tabs-nav {
+    display: none;
+    margin: 0;
+    padding: 0;
+    li a{
+        padding: 0;
+    }
+}
+
+.r-tabs-accordion-title {
+    display: block;
+}
+
+.r-tabs-panel {
+    display: none;
+}
+
+
+/* Accordion responsive breakpoint - change per page/tabsgroup */
+.home{
+    @media only screen and (min-width:769px) {
+        .r-tabs .r-tabs-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        .r-tabs .r-tabs-accordion-title {
+            display: none;
+        }
+    }
+}
+
+
 
 
 //--------------- specific pages
@@ -2638,6 +2673,48 @@ nav {
 //tabs
 .home{
     .tabs-urban-solutions{
+        border-top:1px solid $grey;
+
+        .tabs-nav-wrapper{
+            li{
+                width: 100%;
+                a{
+                    width: 100%;
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        padding:$base-font-size;
+                    }
+                }
+            }
+        }
+
+        .r-tabs-accordion-title.r-tabs-state-active{
+            .mobile-only.UrbanStudio{
+                 background-color: $yellow-light;
+             }
+             .UrbanSuite{
+                 background-color: $green-light; 
+             }
+             .UrbanDesk{
+                 background-color: $purple-light;
+             }
+             .UrbanClub{
+                 background-color:$lime; 
+             }
+             .UrbanMeet{
+                 background-color: $blue-light;
+             }
+             .UrbanLease{
+                 background-color: $green-light;
+             }
+         }
+         .mobile-only{
+            padding:$base-font-size;
+        }
+
+
+
         .price{
             font-size: 20vw;
             font-weight: bold;
@@ -2645,7 +2722,6 @@ nav {
             font-family: $header-font;
             margin-top: -10px;
         }
-
 
         .quantity,
         .sign{
@@ -2665,40 +2741,21 @@ nav {
             }
         }
 
-        .UrbanLease{
-            background-color: $green-light;
-        }
 
-        .UrbanClub{
-            background-color:$lime;
-            .illustration{
-                text-align: right;
-                .illustration-fill{
-                    width: 50%;
+
+
+        .UrbanStudio{          
+            &.r-tabs-tab.r-tabs-state-active a div,
+            .tab-content{
+                background-color: $yellow-light;
+            }
+
+            &.r-tabs-tab.r-tabs-state-active{
+                a{
+                    color:$orange
                 }
             }
 
-            .btn a{
-                div{
-                    background-color: $lime; 
-                }
-            }
-        }
-        .UrbanDesk{
-            background-color: $purple-light;
-            .btn a{
-                background-color: $purple-dark;
-                div{
-                    background-color: $purple-light; 
-                    svg{
-                        fill:$purple-dark
-                    }
-                }
-            }
-        }
-
-        .UrbanStudio{
-            background-color: $yellow-light;
             
             .btn a div svg,
             h2, p:not(.btn p),
@@ -2713,12 +2770,87 @@ nav {
                     background-color: $yellow-light; 
                 }
             }
-        
 
         }
 
+        .UrbanSuite{
+            &.r-tabs-tab.r-tabs-state-active a div,
+            .tab-content{
+                background-color: $green-light;
+            }
+            
+            .illustration-fill{
+                fill:$green-dark;
+            }
+            .quantity{
+                width: 4em;
+            }
+        }
+
+        .UrbanDesk{
+            &.r-tabs-tab.r-tabs-state-active a div,
+            .tab-content{
+                background-color: $purple-light;
+            }
+
+            &.r-tabs-tab.r-tabs-state-active{
+                a{
+                    color:$purple-dark
+                }
+            }
+
+            h2, p:not(.btn p){
+                color: $purple-dark;
+            }
+            
+            .btn a{
+                background-color: $purple-dark;
+                div{
+                    background-color: $purple-light; 
+                    svg{
+                        fill:$purple-dark
+                    }
+                }
+            }
+        }
+
+        .UrbanClub{
+            &.r-tabs-tab.r-tabs-state-active a div,
+            .tab-content{
+                background-color:$lime; 
+            }
+            
+            .illustration{
+                text-align: right;
+                .illustration-fill{
+                    width: 50%;
+                }
+            }
+
+            .btn a{
+                div{
+                    background-color: $lime; 
+                }
+            }
+        }
+
+
         .UrbanMeet{
-            background-color: $blue-light;
+            &.r-tabs-tab.r-tabs-state-active a div,
+            .tab-content{
+                background-color: $blue-light;
+            }
+
+            &.r-tabs-tab.r-tabs-state-active{
+                a{
+                    color:$blue-dark;
+                }
+            }
+
+            h2, p:not(.btn p){
+                color: $blue-dark;
+            }
+            
             .btn a{
                 background-color: $blue-dark;
                 div{
@@ -2729,23 +2861,18 @@ nav {
                 }
             }
         }
-        .UrbanSuite{
-            background-color: $green-light;
-            .illustration-fill{
-                fill:$green-dark;
-            }
-            .quantity{
-                width: 4em;
-            }
-        }
 
-        .UrbanDesk, .UrbanMeet{
-            h2, p:not(.btn p){
-                color: $blue-dark;
+        .UrbanLease{
+            &.r-tabs-tab.r-tabs-state-active a div,
+            .tab-content{
+                background-color: $green-light;
             }
         }
 
         @media #{$mq-small}{
+            .tab-content{
+                min-height: 50vh;
+            }
             .illustration{
                 margin-top: 0;
                 display: flex;
@@ -2781,6 +2908,13 @@ nav {
                 }
             }
         }
+
+
+        @media #{$mq-medium}{
+            .tab-content{
+                min-height: 63vh;
+            }
+        }
     
         @media #{$mq-large}{
             .price{
@@ -2802,10 +2936,6 @@ nav {
         }
         
     }
-
-    
-
-
 }
 
 // testimonials
@@ -2994,11 +3124,13 @@ nav {
         }
     }
 }
+
 .urbanEnvironment{
     .social-media{
         border-top-width:0;
     }
 }
+
 .urbanCommunity{
     .solutions-contrast h2{
         margin-bottom: 0;
@@ -3050,6 +3182,18 @@ nav {
     } 
 }
 
+.sustain-wellbeing{
+    .solutions-mask{
+        .intro-text{
+            margin-bottom: 6vw;
+        }
+    }
+    .contact.border-top{
+        border-top-width:0px;
+    }
+}
+
+
 .facilitiesAmenities{
     .tabs{
         h2{
@@ -3057,6 +3201,19 @@ nav {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

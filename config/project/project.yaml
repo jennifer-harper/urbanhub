@@ -1,4 +1,4 @@
-dateModified: 1712893992
+dateModified: 1713223521
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -234,8 +234,9 @@ system:
   edition: solo
   live: true
   name: urbanhub
+  retryDuration: null
   schemaVersion: 4.5.3.0
-  timeZone: America/Los_Angeles
+  timeZone: Pacific/Auckland
 users:
   allowPublicRegistration: false
   defaultGroup: null
