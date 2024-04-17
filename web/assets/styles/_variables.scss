@@ -16,6 +16,7 @@ $bp-medium: 64em; // 1024px
 $bp-desktop: 85.375em; // 1366px
 $bp-figma:94em;
 $bp-large: 120em; // 2000px
+$bp-retina: 220em; // 2000px
 
 // Media Queries
 $mq-small: "(min-width: #{$bp-small})";
@@ -23,7 +24,7 @@ $mq-medium: "(min-width: #{$bp-medium})";
 $mq-desktop: "(min-width: #{$bp-desktop})";
 $mq-figma: "(min-width: #{$bp-figma})";
 $mq-large: "(min-width: #{$bp-large})";
-$mq-retina: "(-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi)";
+$mq-retina: "(min-width: #{$bp-retina})";
 
 // Font-Size
 $base-font-size: 1em;

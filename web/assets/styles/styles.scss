@@ -128,8 +128,8 @@ color: $base-font;
   line-height: $base-font-size*1.5;
 
 
-  @media #{$mq-large} {
-    font-size: $base-font-size*1.2;
+  @media #{$mq-retina} {
+    font-size: $base-font-size*2.2;
   }
 }
 
@@ -238,6 +238,17 @@ h1,h2,h3,h4,h5,h6 {
     @media #{$mq-medium}{
         &.max-title,
         &.max-hero{
+            p:not(.btn p){
+                max-width: 50vw;
+                margin-left: auto;
+                margin-right:auto;
+            }
+        }
+    }
+
+    @media #{$mq-desktop}{
+        &.max-title,
+        &.max-hero{
             max-width:75%;
 
         }
@@ -254,6 +265,8 @@ h1,h2,h3,h4,h5,h6 {
 
     }
 
+
+
     @media #{$mq-figma}{
         &.max-title{
             max-width:55%;
@@ -261,7 +274,7 @@ h1,h2,h3,h4,h5,h6 {
         &.max-title,
         &.max-hero{
             p:not(.btn p){
-                max-width: 40vw;
+                max-width: 36vw;
             }
         }
 
@@ -311,7 +324,8 @@ h3{
 //intros
 .intro-text {
   font-size:25px;
-  line-height:1.18em
+  line-height:1.18em;
+  font-family: $header-font;
 }
 
 .header-intro p{
@@ -325,35 +339,37 @@ h3{
 
 @media #{$mq-small} {
   h1{
-    font-size:8.5vw; 
-    &.lg{
-      font-size:calc(8vw + 2.5vw); 
-    }
+    font-size:$base-font-size*4.8; 
   }
   h2{
-    font-size: 7vw;
+    font-size:$base-font-size*3.8; 
   }
+  .header-intro p,
   h3{
-    font-size: 3.5vw;
+    font-size:$base-font-size*2.4; 
   }
 
+  .intro-text{
+    font-size:$base-font-size*2; 
+  }
 }
 
 @media #{$mq-medium} {
-  h1{
-    font-size:6vw; 
-    &.lg{
-      font-size:calc(6vw + 2.5vw); 
+    h1{
+      font-size:$base-font-size*5.4; 
+    }
+    h2{
+      font-size:$base-font-size*4; 
+    }
+    .header-intro p,
+    h3{
+      font-size:$base-font-size*1.8; 
+    }
+  
+    .intro-text{
+      font-size:$base-font-size*1.4; 
     }
   }
-  h2{
-    font-size: 5vw;
-  }
-  h3{
-    font-size: 3.5vw;
-  }
-
-}
 
 
 @media #{$mq-figma} {
@@ -388,9 +404,17 @@ h3{
         } 
     }
 
+    .sustain-wellbeing,
+    .contact-us,
     .urbanCommunity{
         h1{
             font-size:$base-font-size*6.5; 
+        }
+    }
+
+    .the-building{
+        h1{
+            font-size:$base-font-size*8; 
         }
     }
 
@@ -482,7 +506,15 @@ svg {
 }
 
 .illustration-fill{
-    fill:$green-light
+    fill:$green-light;
+    width: 100%;
+}
+
+ul li a .social-media{
+    width: 30px;
+    @media #{$mq-figma}{
+        width:2vw;
+    }
 }
 
 //-------Padding-----------//
@@ -693,6 +725,9 @@ svg {
             flex-basis: 25%;
             min-width: 25%;
         }
+    }
+
+    @media #{$mq-figma} {
         .inner{
             flex-direction: row;
             align-items: flex-end;
@@ -999,8 +1034,12 @@ svg {
     background-position: center;
     background-size: cover;
     overflow: hidden;
-    min-height:80vh;
+    min-height:60vh;
+    @media #{$mq-desktop}{
+        min-height:80vh;
+    }
 }
+
 
 @media screen and (min-device-width: 1024px) and (orientation: portrait){
     .mask-wrapper{
@@ -1130,9 +1169,11 @@ svg {
         }
         .underline-list{
             max-width:100%;
+            font-family: $header-font;
             @media #{$mq-figma}{
                 font-size:$base-font-size*.8;
                 column-count: 2;
+                column-gap:1.5vw;
             }
         }
 
@@ -1165,7 +1206,12 @@ svg {
 }
 
 .greenTheme{
-
+    .border-color{
+        border-color:$grey;
+    }
+    .solutions-banner .border-color{
+        border-color:$green-dark;
+    }
     .bg-green-light .highlight{
         fill:$light;
     }
@@ -1231,8 +1277,12 @@ svg {
     }
 
     .border-color{
+        border-color:$grey;
+    }
+    .solutions-banner .border-color{
         border-color:$orange;
     }
+
     .border-color-contrast{
         border-color:$yellow-light;
 
@@ -1244,6 +1294,9 @@ svg {
         .highlight{
             fill:$light
         }
+    }
+    ul.underline-list li{
+        border-color:$orange;
     }
 
 
@@ -1275,7 +1328,7 @@ svg {
     table{
         tbody{
             td, th{
-                border-color:$blue-dark ;
+                border-color:$grey ;
             }
 
             @media (max-width:760px){
@@ -1325,7 +1378,7 @@ svg {
     }
 
 
-
+.solutions-banner .border-color,
     .underline-list li{
         border-color:$blue-dark;
     }
@@ -1353,7 +1406,7 @@ svg {
     }
 
     .border-color{
-        border-color:$blue-dark;
+        border-color:$grey;
     }
     .border-color-contrast{
         border-color:$blue-light;
@@ -1484,12 +1537,12 @@ svg {
         }
     }
 
-
+.solutions-banner .border-color,
     .underline-list li{
         border-color:$purple-dark;
     }
     .border-color{
-        border-color:$purple-dark
+        border-color:$grey;
     }
     .border-color-contrast{
         border-color:$purple-light;
@@ -1519,18 +1572,22 @@ svg {
     .bg-blue-light i .highlight{
         fill:$light;
     }
+
+    .border-color{
+        border-color:$grey;
+    }
+
     .underline-list li{
         border-color:$blue-dark;
     }
    .highlight,
-    .star-banner-wrapper .star-banner .light,
-    .little-star{
+    .star-banner-wrapper .star-banner .light{
         fill: $blue-light;
     }
-    .bg-blue-light{
+
         .little-star{
             fill: $blue-dark;
-        }  
+ 
     }
     .logo,
     .social-media{
@@ -1552,6 +1609,11 @@ svg {
     .tick{
         fill:$lime;
     }
+
+    .border-color{
+        border-color:$grey;
+    }
+    .solutions-banner .border-color,
     .border-color-contrast{
         border-color:$green-dark;
         .little-star{
@@ -1617,6 +1679,9 @@ svg {
             white-space: nowrap;
         }
     }
+   .logo-url{
+        padding-right:0;
+    }
     ul {
         li{
             padding: 0;
@@ -1631,7 +1696,14 @@ svg {
     .logo{
         margin-top:20px;
         width: 200px;
+        @media #{$mq-medium}{
+            width:10vw;
+        }
+        @media #{$mq-figma}{
+            width:8vw;
+        }
     }
+
 }
 
 
@@ -1686,6 +1758,13 @@ svg {
 
 //-------Solutions sections-----------//
 
+.solutions-wrap{
+    nav{
+        border-bottom: 1px solid $grey;
+    }
+}
+
+
 .solutions-mask{
     .content-wrap{
         ul.underline-list{
@@ -1695,6 +1774,8 @@ svg {
             margin-bottom: 0;
         }
     }
+
+
     @media #{$mq-medium}{
         .star-wrap{
             min-width: 6vw;
@@ -1703,6 +1784,12 @@ svg {
             margin-right: $md;
         }
     }
+    // @media #{$mq-desktop}{
+    //     .flex-wrap .inner{
+    //         flex-direction: row;
+    //         align-items: flex-end;
+    //     }
+    // }
     @media #{$mq-figma}{
        .inner p:last-of-type:not(.btn p){
            max-width: 30vw;
@@ -1852,7 +1939,7 @@ svg {
     @media #{$mq-medium}{
         .small-col{
             margin-left: auto;
-            max-width: 60%;
+            max-width: 80%;
             } 
     }
 }
@@ -1861,12 +1948,12 @@ svg {
     .usp p{
         margin-right:20px;
     }
-    @media #{$mq-medium}{
-        .usp{
-            max-width:25%
-        }
-    }
-    @media #{$mq-figma}{
+    // @media #{$mq-medium}{
+    //     .usp{
+    //         max-width:25%
+    //     }
+    // }
+    @media #{$mq-desktop}{
         .flex-wrap.row.wrap{
             flex-wrap:nowrap;
             justify-content: space-between;
@@ -1881,6 +1968,7 @@ svg {
         border-right-width:0;
         &:last-of-type{
             border-top:1px solid;
+            border-color:$green-light
         }
     }
 
@@ -2316,7 +2404,7 @@ tbody{
 
 //////////////////
 .body-wrapper{
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 nav {
@@ -2337,6 +2425,9 @@ nav {
     }
     .logo{
         width: 100px;
+        @media #{$mq-figma}{
+            width: 6vw;
+        }
     }
     .navbar {
         display: flex;
@@ -2344,7 +2435,7 @@ nav {
         position: relative;
         margin: auto;
         width: 100%;
-        padding:20px;
+        padding:10px 20px;
 
         .arrow {
             width: 22px;
@@ -2714,9 +2805,7 @@ nav {
             font-family:$header-font;
             margin-bottom: $base-font-size;
         }
-       .max-hero >  p:last-of-type:not(.btn p){
-            max-width: 500px;
-        }
+
     }
     .star-banner .bg-green-light{
      fill:$green-dark
@@ -3197,6 +3286,17 @@ nav {
     .social-media{
         border-top-width:0;
     }
+
+
+    .star-banner-wrapper{
+        padding-top:0;
+    }
+
+    @media #{$mq-figma}{
+        .text-center.max-hero p:not(.btn p){
+            max-width: 35vw;
+        }
+    }
 }
 
 .urbanCommunity{
@@ -3206,6 +3306,9 @@ nav {
 }
 
 .stories {
+    h1 i{
+        font-family: $header-font;
+    }
     .third-wrap.img-wrap{
         padding-top:calc($base - 1vw);
         padding-bottom:calc($base - 1vw);
@@ -3239,6 +3342,10 @@ nav {
             flex-basis:33.333%;
             max-width:33.333%;
             margin-bottom: 1vw;
+        }
+
+        .text-center.max-hero p:not(.btn p){
+            max-width: 25vw;
         }
     }
 }
@@ -3326,8 +3433,27 @@ nav {
             color:$light;
         }
     }
-    .logo-star{
-        fill:$light;
+    .footer-banner {
+        .logo{
+         fill:$light;
+        }
+        .logo-star{
+            fill:$green-light;
+        }
+    }
+    .border-top.border-color{
+        border-top-color:$grey;
+    }
+
+    @media #{$mq-figma}{
+        .solutions-mask h2{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .tail p{
+            max-width: 25vw;;
+        }
     }
 }
 

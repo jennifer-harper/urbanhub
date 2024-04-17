@@ -1,6 +1,6 @@
    
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "urbanSuite greenTheme" } %} 
+{% set bodyAttributes ={ class: "urbanSuite greenTheme solutions-wrap" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
 {% set page = craft.entries().section('urbanSuite').all() %} 
@@ -21,7 +21,7 @@
 
 {% block content %} 
   {% for entry in page %} 
-    <div class="solutions-wrap">
+
         {% include '_partials/hero/solutions.twig' %}
 
     {% include '_partials/sections/solutions-usps.twig' %}
@@ -46,7 +46,7 @@
     {% include '_partials/sections/solutions-slider.twig' %}
     
          {% include '_partials/footer/footer-page-banner.twig' %}
-    </div>
+
 
 
 
