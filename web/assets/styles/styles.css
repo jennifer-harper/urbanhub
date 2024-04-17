@@ -2197,7 +2197,6 @@ nav .bx-menu {
     margin-top: 0;
   }
   nav .navbar .links .x {
-    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2206,7 +2205,6 @@ nav .bx-menu {
   nav .navbar .links .x a:not(.sub-menu a) {
     padding-left: 20px;
     padding-right: 5px;
-    z-index: 10;
   }
   nav .navbar .links .x .sub-menu {
     position: absolute;
@@ -2224,7 +2222,6 @@ nav .bx-menu {
   }
   nav .navbar .links .x:hover > .arrow {
     transform: rotate(180deg);
-    z-index: 10;
   }
   nav .navbar .links .x:hover .sub-menu {
     display: flex;
@@ -2854,6 +2851,31 @@ nav .bx-menu {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+.sustain-wellbeing .solutions-contrast {
+  overflow: hidden;
+}
+.sustain-wellbeing .solutions-contrast .something {
+  width: 300%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  justify-content: center;
+}
+.sustain-wellbeing .solutions-contrast .something .panel {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #cbd5d0;
+}
+.sustain-wellbeing .solutions-contrast .something .panel:last-of-type {
+  border-width: 0;
+}
+.sustain-wellbeing .solutions-contrast .something .panel .half {
+  display: flex;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=styles.css.map */

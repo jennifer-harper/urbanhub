@@ -1,31 +1,26 @@
 gsap.registerPlugin(ScrollTrigger)
 
-gsap.set('.footer-banner', { yPercent: -50 })
-
-// function startPoint() {
-//   return window.innerWidth <= 991 ? '.logo' : 'header'
-// }
-// var offset = $(startPoint()).outerHeight(true)
+var offset = $('nav').outerHeight(true)
 
 // function scrollPoint() {
-//   return window.innerWidth <= 991 ? '-125' : '-100'
+//   return window.innerWidth <= 768 ? '-100' : '-90'
 // }
 
-// let sections = gsap.utils.toArray('.panel')
-// gsap.to(sections, {
-//   xPercent: scrollPoint() * (sections.length - 1),
-//   ease: 'none',
-//   scrollTrigger: {
-//     trigger: '.container',
-//     start: 'top top+=' + offset,
-//     pin: true,
-//     scrub: 1,
-//     end: () => '+=' + document.querySelector('.container').offsetWidth,
-//     markers: {
-//       startColor: 'red',
-//     },
-//   },
-// })
+let sections = gsap.utils.toArray('.panel')
+gsap.to(sections, {
+  xPercent: -90 * (sections.length - 1),
+  ease: 'none',
+  scrollTrigger: {
+    trigger: '.something',
+    start: 'top top+=' + offset,
+    pin: true,
+    scrub: 1,
+    end: () => '+=' + document.querySelector('.something').offsetWidth,
+    // markers: {
+    //   startColor: 'red',
+    // },
+  },
+})
 
 // let tl = gsap.timeline({
 //   defaults: { duration: 1, ease: 'circ.out' },

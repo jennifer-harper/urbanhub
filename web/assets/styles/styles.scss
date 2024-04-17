@@ -2615,7 +2615,7 @@ nav {
             display: flex;
             margin-top:0;
             .x {
-                z-index: 10;
+                // z-index: 10;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -2625,7 +2625,7 @@ nav {
                 a:not(.sub-menu a){
                     padding-left: 20px; 
                     padding-right:5px;
-                    z-index: 10;
+                    // z-index: 10;
 
                 }
 
@@ -2647,7 +2647,7 @@ nav {
             .x:hover{
                 > .arrow{
                     transform: rotate(180deg);
-                    z-index: 10;
+                    // z-index: 10;
                 }
                 .sub-menu{
                     display: flex;
@@ -3482,8 +3482,34 @@ nav {
 }
 
 
+.sustain-wellbeing{
+    .solutions-contrast{
+        overflow: hidden;
+        .something{
+            width: 300%;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            justify-content: center;
+            .panel{
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                border-right:1px solid $grey;
+                &:last-of-type{
+                    border-width: 0;
+                }
+                .half{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
+          }
+    }
+}
 
 
-  
 
   
