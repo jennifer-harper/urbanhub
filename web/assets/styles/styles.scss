@@ -1647,7 +1647,10 @@ ul li a .social-media{
 
 
 //-------Footer Contact section-----------//
+footer{
+    overflow: hidden;
 
+}
 .footer-banner{
     position: relative;
     overflow: hidden;
@@ -1663,8 +1666,10 @@ ul li a .social-media{
             line-height: .7em;
             font-size:10.8vw;
         }
+
         @media #{$mq-figma}{
-            margin-bottom:$base;
+            margin-top:-25px;
+            line-height: .75em;
         }
     }
     &.bg-green-dark{

@@ -1392,6 +1392,10 @@ ul li a .social-media {
   fill: #FAF6F0;
 }
 
+footer {
+  overflow: hidden;
+}
+
 .footer-banner {
   position: relative;
   overflow: hidden;
@@ -1415,7 +1419,8 @@ ul li a .social-media {
 }
 @media (min-width: 94em) {
   .footer-banner h2 {
-    margin-bottom: 5vw;
+    margin-top: -25px;
+    line-height: 0.75em;
   }
 }
 .footer-banner.bg-green-dark h2, .footer-banner.bg-green-dark a, .footer-banner.bg-green-dark p {

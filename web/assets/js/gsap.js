@@ -1,29 +1,31 @@
 gsap.registerPlugin(ScrollTrigger)
 
-function startPoint() {
-  return window.innerWidth <= 991 ? '.logo' : 'header'
-}
-var offset = $(startPoint()).outerHeight(true)
+gsap.set('.footer-banner', { yPercent: -50 })
 
-function scrollPoint() {
-  return window.innerWidth <= 991 ? '-125' : '-100'
-}
+// function startPoint() {
+//   return window.innerWidth <= 991 ? '.logo' : 'header'
+// }
+// var offset = $(startPoint()).outerHeight(true)
 
-let sections = gsap.utils.toArray('.panel')
-gsap.to(sections, {
-  xPercent: scrollPoint() * (sections.length - 1),
-  ease: 'none',
-  scrollTrigger: {
-    trigger: '.container',
-    start: 'top top+=' + offset,
-    pin: true,
-    scrub: 1,
-    end: () => '+=' + document.querySelector('.container').offsetWidth,
-    markers: {
-      startColor: 'red',
-    },
-  },
-})
+// function scrollPoint() {
+//   return window.innerWidth <= 991 ? '-125' : '-100'
+// }
+
+// let sections = gsap.utils.toArray('.panel')
+// gsap.to(sections, {
+//   xPercent: scrollPoint() * (sections.length - 1),
+//   ease: 'none',
+//   scrollTrigger: {
+//     trigger: '.container',
+//     start: 'top top+=' + offset,
+//     pin: true,
+//     scrub: 1,
+//     end: () => '+=' + document.querySelector('.container').offsetWidth,
+//     markers: {
+//       startColor: 'red',
+//     },
+//   },
+// })
 
 // let tl = gsap.timeline({
 //   defaults: { duration: 1, ease: 'circ.out' },
