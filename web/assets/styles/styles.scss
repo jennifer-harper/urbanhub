@@ -2460,7 +2460,6 @@ nav {
         }
 
         .sub-menu{
-
             a{
                 .header-intro{
                     margin-top:$md;
@@ -2626,18 +2625,20 @@ nav {
                 a:not(.sub-menu a){
                     padding-left: 20px; 
                     padding-right:5px;
+                    z-index: 10;
+
                 }
 
                 .sub-menu {
                     position: absolute;
-                    top:60px;
+                    top:50px;
                     left: 0;
                     background: $light;
                     display: none;
                     z-index: 2;
                     width: 100%;
                     z-index: 0;
-                    height: calc(100vh - 60px);
+                    height: calc(100vh - 50px);
                     .content{
                         border-bottom-width: 0;
                     }
@@ -2646,6 +2647,7 @@ nav {
             .x:hover{
                 > .arrow{
                     transform: rotate(180deg);
+                    z-index: 10;
                 }
                 .sub-menu{
                     display: flex;
@@ -2706,6 +2708,9 @@ nav {
     }
   }
 }
+
+
+
 
 @media (min-width: 1366px) {
     nav{
