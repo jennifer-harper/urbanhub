@@ -1,9 +1,21 @@
 fieldLayouts:
-  eaa9f77e-86e8-4a69-be70-b4871e049ce8:
+  003c28e0-5bb7-4c62-b511-a54038707256:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            elementCondition: null
+            fieldUid: af3b627a-988e-4ea1-9993-4df0385d56ba # Staff Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: edbc7930-d303-4ba3-89e0-aafa7e7c75a4
+            userCondition: null
+            warning: null
+            width: 100
           -
             autocapitalize: true
             autocomplete: false
@@ -14,7 +26,7 @@ fieldLayouts:
             id: null
             inputType: null
             instructions: null
-            label: null
+            label: 'Staff Name'
             max: null
             min: null
             name: null
@@ -27,57 +39,33 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 955d374d-c01d-48f8-bd9b-e0a88f01b24a
+            uid: 7837a6cc-a9a3-4790-a463-f569b633d674
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: c3ec75ab-6c08-4afb-a510-4c5af3d0da4a # Tab Title
+            fieldUid: 5b19f44d-dfcc-4769-b2ae-47e67f653eb2 # Staff Position
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 82ccbad5-3d12-4b2e-b337-89d6e0ed191e
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 6c9178f3-6ecb-442f-8efd-141076303b31 # Facilities Heading
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: bddb84f9-3900-4bee-92a7-cb06cf3b1bf4
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: d5e4fa84-5166-47ec-9821-290f8c656179 # Facilities Tabs
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 2bb9987b-6c06-4467-baad-47190872fbac
+            uid: 22941d06-152b-4d25-933a-c8b1ab394535
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: c8163b8d-dc5b-4931-acd0-32ad4cfbcb01
+        uid: 4f70e299-ee8c-44cb-bfba-644bd49af8b7
         userCondition: null
 handle: default
-hasTitleField: false
+hasTitleField: true
 name: Default
-section: c669938a-a37c-4ae1-985e-6645740e1d01 # Facilities & Amenities Tabs
+section: f0e30fc6-403e-4a73-8c7e-0e24edde01f6 # Staff
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
 sortOrder: 1
-titleFormat: '{{ facilitiesHeading | striptags }}'
+titleFormat: null
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

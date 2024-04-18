@@ -509,6 +509,12 @@ ul li a .social-media {
 .pad-sides.no-right {
   padding-right: 0;
 }
+@media (min-width: 94em) {
+  .pad-sides {
+    padding-left: 3.25vw;
+    padding-right: 3.25vw;
+  }
+}
 
 .pad-top-btm {
   padding-top: 5vw;
@@ -1593,7 +1599,13 @@ footer {
 }
 .solutions-contrast.wellbeing .half img {
   max-width: 80%;
-  margin-right: 0;
+  margin-top: 6vw;
+}
+@media (min-width: 64em) {
+  .solutions-contrast.wellbeing .half img {
+    margin-right: 0;
+    margin-top: 0;
+  }
 }
 
 .solutions-contrast.other .intro-text,
@@ -2205,6 +2217,7 @@ nav .bx-menu {
   nav .navbar .links .x a:not(.sub-menu a) {
     padding-left: 20px;
     padding-right: 5px;
+    z-index: 10;
   }
   nav .navbar .links .x .sub-menu {
     position: absolute;
@@ -2246,13 +2259,10 @@ nav .bx-menu {
   nav .navbar .links .x:hover .solutions-sub-menu a:nth-of-type(4n), nav .navbar .links .x:hover .solutions-sub-menu a:nth-of-type(5n), nav .navbar .links .x:hover .solutions-sub-menu a:last-of-type {
     border-bottom-width: 0;
   }
+  nav .navbar .links .x:hover .environment-sub-menu a,
   nav .navbar .links .x:hover .community-sub-menu a {
     flex-basis: 33.33%;
     width: 33.33%;
-  }
-  nav .navbar .links .x:hover .environment-sub-menu a {
-    flex-basis: 25%;
-    width: 25%;
   }
   nav .nav-links {
     display: flex;
@@ -2296,12 +2306,29 @@ nav .bx-menu {
   display: none;
 }
 
+.tabs-nav-wrapper li {
+  width: 100%;
+}
+.tabs-nav-wrapper li a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.tabs-nav-wrapper li a div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+
 /* Accordion responsive breakpoint - change per page/tabsgroup */
 @media only screen and (min-width: 1024px) {
+  .facilitiesAmenities .r-tabs .r-tabs-nav,
   .home .r-tabs .r-tabs-nav {
     display: flex;
     justify-content: space-between;
   }
+  .facilitiesAmenities .r-tabs .r-tabs-accordion-title,
   .home .r-tabs .r-tabs-accordion-title {
     display: none;
   }
@@ -2362,20 +2389,6 @@ nav .bx-menu {
 
 .home .tabs-urban-solutions {
   border-top: 1px solid #cbd5d0;
-}
-.home .tabs-urban-solutions .tabs-nav-wrapper li {
-  width: 100%;
-}
-.home .tabs-urban-solutions .tabs-nav-wrapper li a {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-}
-.home .tabs-urban-solutions .tabs-nav-wrapper li a div {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 1em;
 }
 .home .tabs-urban-solutions .mobile-only {
   font-size: 21px;
@@ -2781,8 +2794,120 @@ nav .bx-menu {
   border-top-width: 0px;
 }
 
-.facilitiesAmenities .tabs h2 {
-  margin-bottom: 0;
+.facilitiesAmenities .mobile-only {
+  padding: 1em;
+}
+.facilitiesAmenities .tabs-facilities {
+  border-top: 1px solid #cbd5d0;
+}
+.facilitiesAmenities .tabs-facilities li.r-tabs-tab.r-tabs-state-active {
+  background-color: #BAE2A6;
+}
+.facilitiesAmenities .tabs .flex-wrap .half .img-wrap {
+  text-align: right;
+}
+.facilitiesAmenities .tabs .flex-wrap .half img {
+  margin-top: 20px;
+  width: 50%;
+}
+@media (min-width: 48em) {
+  .facilitiesAmenities .tabs .flex-wrap .half {
+    position: relative;
+    flex: 1;
+    flex-basis: 50%;
+    width: 50%;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 64em) {
+  .facilitiesAmenities .tabs h2 {
+    margin-bottom: 0;
+  }
+  .facilitiesAmenities .tabs h3 {
+    margin-bottom: 6vw;
+  }
+  .facilitiesAmenities .tabs .flex-wrap .half > div {
+    width: 50%;
+  }
+  .facilitiesAmenities .tabs .flex-wrap .half > div img {
+    max-width: 70%;
+  }
+  .facilitiesAmenities .tabs .flex-wrap .half .img-wrap {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .facilitiesAmenities .tabs-facilities .tabs-nav-wrapper li a div {
+    font-size: 13px;
+  }
+}
+@media (min-width: 85.375em) {
+  .facilitiesAmenities .tabs-facilities .tabs-nav-wrapper li a div {
+    font-size: 1em;
+  }
+}
+
+.the-team h2 {
+  text-align: center;
+  padding-top: 2vw;
+}
+.the-team .staff-wrapper h3 {
+  margin: 0.5em 0;
+}
+@media (min-width: 48em) {
+  .the-team .staff-wrapper .img-wrap {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .the-team .staff-wrapper .img-fit {
+    height: 60vw;
+  }
+}
+@media (min-width: 64em) {
+  .the-team .staff-wrapper .img-wrap {
+    max-width: unset;
+  }
+  .the-team .staff-wrapper .img-fit {
+    height: 30vw;
+  }
+}
+@media (min-width: 94em) {
+  .the-team .staff-wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+  .the-team .staff-wrapper .img-fit {
+    height: 18vw;
+  }
+}
+
+@media (min-width: 48em) {
+  .culture-events .events-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .culture-events .events-title h2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .culture-events .events-title h2, .culture-events .events-title p {
+    margin-bottom: 0;
+  }
+  .culture-events .events-title p {
+    margin-left: 40px;
+  }
+}
+@media (min-width: 64em) {
+  .culture-events .events-title p {
+    max-width: 30vw;
+  }
+}
+@media (min-width: 94em) {
+  .culture-events .events-title p {
+    max-width: 20vw;
+  }
 }
 
 .contact-us nav .navbar .links .x .sub-menu,

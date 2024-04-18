@@ -1,0 +1,19 @@
+columnSuffix: zfnocdae
+contentColumnType: text
+fieldGroup: 514898d5-a466-42b8-9d7d-be363d77d811 # Staff
+handle: staffPosition
+instructions: null
+name: 'Staff Position'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

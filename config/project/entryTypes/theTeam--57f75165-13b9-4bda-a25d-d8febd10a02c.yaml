@@ -184,10 +184,36 @@ fieldLayouts:
         name: 'Grid Section'
         uid: bf5c4fa4-c406-40d2-8242-06deafc18e1a
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0cf7897a-3685-4fe2-a06f-11d068990e04
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'To edit team details and add new profile go to Entries > Channels > Staff'
+            type: craft\fieldlayoutelements\Tip
+            uid: 24c48bf8-1816-408e-80c4-0c763dfaff13
+            userCondition: null
+        name: 'Your Team'
+        uid: f166228d-02a1-4f93-a0f6-a2498bec9270
+        userCondition: null
 handle: theTeam
 hasTitleField: false
-name: 'The Team'
-section: 5080dd41-04c1-4450-9368-fb3bb7a572aa # The Team
+name: 'Your Team'
+section: 5080dd41-04c1-4450-9368-fb3bb7a572aa # Your Team
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

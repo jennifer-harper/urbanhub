@@ -160,6 +160,44 @@ fieldLayouts:
         name: 'Icon Grid Section'
         uid: 29e229d5-a9a7-4848-a247-8a92d13731c1
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8dedadfc-4af6-49f2-95bd-efef33a55b64 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 51a943e3-74c0-4067-8ea2-0d3b1f826827
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 701d3032-1766-4e06-979c-fd973c6b51e8 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 719613ce-8530-465c-b5a6-736e0a2ef03b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'To add or edit Community Events go to Entries > Channels > Events'
+            type: craft\fieldlayoutelements\Tip
+            uid: 76a643b4-760d-462c-acb9-1544e72aeee8
+            userCondition: null
+        name: 'Community Events'
+        uid: baee02c4-9245-49ad-9e61-484f767264f0
+        userCondition: null
 handle: cultureEvents
 hasTitleField: false
 name: 'Culture & Events'

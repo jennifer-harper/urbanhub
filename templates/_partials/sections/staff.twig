@@ -1,0 +1,29 @@
+ {% set allStaff = craft.entries().section('staff').all() %}
+
+
+
+<div class="pad-all staff-wrapper">
+    {% if entry.heading2 %}
+        {{entry.heading2}}
+    {% endif %}
+    <div class=" flex-wrap third-wrap img-wrap wrap">
+        {% for staff in allStaff %}
+            <div class="third">
+                {% if staff.staffImage.one() %}
+                    {% set image = staff.staffImage.one() %}
+                        <img class="img-fit" src="{{ image.url }}" alt="{{ image.alt }}">
+                    {% else %}
+                        <img class="img-fit" src="/uploads/images/picture2-small.webp" alt="Placeholder staff image">
+                {% endif %}
+
+                {% if staff.title %}
+                    <h3>{{staff.title}}</h3> 
+                {% endif %}
+                {% if staff.staffPosition %}
+                    <p>{{staff.staffPosition}}</p> 
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
