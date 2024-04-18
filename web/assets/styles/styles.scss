@@ -2085,8 +2085,8 @@ tbody{
 }
 
 
-
-
+.table-solutions,
+.dark-table,
 .table-light{
     @media #{$mq-small}{
         table{display: table;}
@@ -2159,66 +2159,18 @@ tbody{
 }
 
 
+
 .dark-table{
     @media #{$mq-medium}{
-        table{display: table;}
-        thead{display:table-header-group;}
-        tbody{display: table-row-group;}
-        th{display:table-cell}
-        td{display:table-cell}
-        tr{display: table-row}
-    
-        thead tr { 
-            position: relative;
-            top:unset;
-            left:unset;
-        }
-        thead th{
-            padding:1em;
-        }
-    
-        td{
-            padding-left:unset
-        }
-    
-        td:before{
-            display: none;
-        }
     
         tbody{
-            td:last-of-type{
-                border-right-width: 0;
-            }
-            th{
-                border-left-width: 0;
-            }
-            tr:first-of-type th{
-                border-top-width: 0;
-            }
-            tr:last-of-type{
-                td{
-                    border-bottom-width: 0;
-                }
-                td:last-of-type{
-                    border-bottom-width: 0;
-                }
-            }
-            tr td:last-of-type{
-                border-bottom-width:1px;
-            }
             tr td{
                 padding:1em;
             }
     
         }
-        thead th{
-            &:last-of-type{
-                border-width:0;
-            }
-        }
     }
 }
-
 
 .dark-table{
     td:nth-of-type(1):before { content: "Kent"; }
@@ -2229,6 +2181,29 @@ tbody{
     td:nth-of-type(6):before { content: "Cuba"; }
 }
 
+
+.table-solutions{
+    thead tr th,
+    tbody tr td{
+        text-align: left;
+    }
+    tbody{
+        border-top:1px solid $green-dark
+    }
+    thead tr th{
+        border-left: 1px solid $green-dark;
+        border-right: 1px solid $green-dark;
+        &:first-of-type{
+            border-left-width: 0;
+        }
+    }
+}
+
+
+.table-solutions.large-team{
+    td:nth-of-type(1):before { content: "UrbanSuites"; }
+    td:nth-of-type(2):before { content: "UrbanLease"; }
+}
 
 
 // EXPLORE OUR SPACES
@@ -3523,6 +3498,21 @@ nav {
 
 
 .culture-events{
+
+    .icon{
+        .align-right{
+            img{
+                max-width: 25%;
+            }
+
+        }
+        @media #{$mq-desktop}{
+            h3,
+            .align-right img{
+                max-width: 50%;
+            }
+        }
+    }
     .events-title{
         @media #{$mq-small}{
             display: flex;
@@ -3542,14 +3532,23 @@ nav {
 
         @media #{$mq-medium}{
             p{
-                max-width: 30vw;
+                max-width: 27vw;
             }
         }
 
         @media #{$mq-figma}{
             p{
-                max-width: 20vw;
+                max-width: 31vw;
+                padding: 0 3vw;
             }
+        }
+    }
+
+    .event-wrapper{
+        margin: 3vw 0;
+        border:1px solid $grey;
+        .third.pad-all{
+            padding:3vw;
         }
     }
 }

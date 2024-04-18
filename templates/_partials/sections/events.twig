@@ -7,5 +7,51 @@
             {{entry.paragraph4}}
         {% endif %}
     </div>
-    
+   
+    {% set events = craft.entries().section('events').all() %}
+    {% for event in events %}
+    <div class="event-wrapper flex-wrap">
+        {% set image = event.eventImage.one() %}
+        {% if image %}
+            <div class="third bg-cover" style="background-image:url({{ image.getUrl() }})">
+            </div>
+        {% else %}
+            <div class="third bg-cover " style="background-image:url(/uploads/images/picture2-small.webp)">
+            </div>
+        {% endif %}
+
+
+        <div class="pad-all third">
+            {% if event.eventHeading %}
+                {{event.eventHeading}}
+            {% endif %}
+
+
+            {% if event.eventsDate %}
+                {{event.eventsDate|date('d-m-Y')}}
+            {% endif %}
+        </div>
+        <div class="pad-all third">
+            {% if event.eventDescription %}
+                {{event.eventDescription}}
+            {% endif %}
+
+        
+            {% for block in event.buttonExternalLink %}
+                    {% if block.type == 'groupFields' %}
+                    {% if block.buttonLink is defined %}
+                        {% set buttonText = block.buttonText ?? 'Learn More' %}
+                        {% set buttonLink = block.buttonLink  %}
+                        {% embed '_partials/button' %}
+                            {% block class %}{{buttonClass}}{% endblock %}
+                            {% block title %}{{buttonText}} {% endblock %}
+                            {% block url %}{{buttonLink}} {% endblock %}
+                        {% endembed %} 
+                    {% endif %}
+                    {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
 </div>
+

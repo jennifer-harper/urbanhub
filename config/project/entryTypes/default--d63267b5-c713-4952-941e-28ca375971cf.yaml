@@ -1,21 +1,9 @@
 fieldLayouts:
-  47998a7b-91e0-4f3a-846b-dbed66decbc3:
+  3654cd57-0e2f-4685-9431-639e06447a53:
     tabs:
       -
         elementCondition: null
         elements:
-          -
-            elementCondition: null
-            fieldUid: a1e344df-1f0a-4388-8778-489f82901003 # Event Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 49aff3c2-2186-416f-8a82-267d5035124a
-            userCondition: null
-            warning: null
-            width: 100
           -
             autocapitalize: true
             autocomplete: false
@@ -26,7 +14,7 @@ fieldLayouts:
             id: null
             inputType: null
             instructions: null
-            label: null
+            label: Title
             max: null
             min: null
             name: null
@@ -39,65 +27,53 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 1429bb24-dfda-4562-9a54-bbab3cea6d1f
+            uid: 19d4347e-e6f7-4eaf-b28b-67c86ee9753c
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: fe621405-1666-4bdb-aa36-961848155562 # Event Heading
-            instructions: 'Make sure to select H3 for title size (not H2)'
-            label: null
+            fieldUid: 701d3032-1766-4e06-979c-fd973c6b51e8 # Paragraph
+            instructions: null
+            label: 'Tab Title'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 0cc18fbe-f39e-4d8f-8881-d25082b9b59e
+            uid: 1af81ead-d919-4229-9bd6-897d2dca6a61
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 622574df-c584-4714-bb44-5901cffb136e # Events Date
+            fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: bf5e1b49-0630-4cb1-a31c-7bfc0d054707
+            uid: 7211e06d-99d9-46f7-a0b1-e7c20c5dc332
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: 40fce394-8f21-46f4-97d0-40a383ca4106 # Event Description
+            fieldUid: 31a6a6cd-809b-4018-b66d-eb3c366fc392 # TableEditor
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 705d084b-bfeb-416e-a7da-fe93a509d212
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 5ef0c0ef-acef-4853-9c10-e2c6aebe3235 # Button External Link
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: bcf50add-1a08-439f-bdc1-1a525ec040b3
+            uid: de02f6b6-5cfc-417b-a622-ffbaba78023f
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 59bcab90-c15b-4877-9086-aa3b8bbeb19e
+        uid: 0e5148ab-9ad9-4874-8c7d-9d5d9adb57f9
         userCondition: null
 handle: default
 hasTitleField: true
 name: Default
-section: 555cbca0-44d4-45a7-b7d9-15108927da39 # Events
+section: 261c18b2-1b1d-4729-9d6b-7b05a5c91307 # Solutions Tables
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

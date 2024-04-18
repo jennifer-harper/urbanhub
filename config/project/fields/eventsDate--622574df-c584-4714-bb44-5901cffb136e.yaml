@@ -1,0 +1,17 @@
+columnSuffix: lmqmgigh
+contentColumnType: datetime
+fieldGroup: 4ce1e5c9-dab9-46f0-b32c-a5ac141e8eb3 # Events
+handle: eventsDate
+instructions: null
+name: 'Events Date'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 15
+  showDate: true
+  showTime: false
+  showTimeZone: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date

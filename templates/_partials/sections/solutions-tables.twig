@@ -1,0 +1,17 @@
+{% set tables = craft.entries().section('solutionsTables').all() %} 
+{% for table in tables %}
+
+<div class="bg-green-light solutions-tables pad-all">
+    {% if table.heading2 %}
+        {{table.heading2}}
+    {% endif %}
+    <div class="table-section">
+        <div class="pad-sides table-solutions {{table.slug}}">
+            {% if table.tableEditor %}
+                {{table.tableEditor}}
+            {% endif %}
+        </div> 
+    </div>
+</div>
+{% endfor %}
+

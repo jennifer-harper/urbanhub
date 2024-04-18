@@ -1,6 +1,6 @@
    
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "solutionsPage" } %} 
+{% set bodyAttributes ={ class: "solutionsPage greenTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
 {% set page = craft.entries().section('solutions').all() %} 
@@ -15,7 +15,10 @@
 
 {% block content %} 
   {% for entry in page %} 
-   {% include '_partials/sections/solutions-mask.twig' %}
-       {% include '_partials/footer/contact-section.twig' %}
+    {% include '_partials/sections/solutions-mask.twig' %}
+
+    {% include '_partials/sections/solutions-tables.twig' %}
+    {% include '_partials/footer/contact-section.twig' %}
   {% endfor %} 
 {% endblock %}
+

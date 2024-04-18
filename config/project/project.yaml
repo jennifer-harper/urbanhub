@@ -1,4 +1,4 @@
-dateModified: 1713399483
+dateModified: 1713407614
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -72,6 +72,7 @@ meta:
     34cab00e-4e02-42d6-a3fe-7d2f49769c4e: 'Slide Title' # Slide Title
     39d35486-b1b6-442d-95a0-f3d5dcdee6c9: 'Group Fields' # Group Fields
     40abd61f-9b8d-4b2d-a05f-982fbb8d5343: 'Sustainability & Wellbeing' # Sustainability & Wellbeing
+    40fce394-8f21-46f4-97d0-40a383ca4106: 'Event Description' # Event Description
     41f1a3d3-a8fd-4e2a-ac05-b194f3063080: 'Selling Points' # Selling Points
     46b86537-184d-4bca-8915-f93775953752: Heading # Heading
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
@@ -94,6 +95,7 @@ meta:
     96f889e0-0cbd-41a2-9d2b-284d01e0f47c: Paragraph # Paragraph
     196e61bb-9be9-4f12-90cf-e89d0b1a2258: 'Button Text' # Button Text
     0249f9a4-8d76-43b5-bf70-de0e1aebee56: Heading # Heading
+    261c18b2-1b1d-4729-9d6b-7b05a5c91307: 'Solutions Tables' # Solutions Tables
     319d4674-6b0e-4027-abdc-23a8fe7bcf1f: UrbanSuite # UrbanSuite
     368e19da-aed2-4692-949d-976508166279: 'Page Title' # Page Title
     497bf365-748a-48ed-bf4e-0531bd5a8739: 'Contact Us' # Contact Us
@@ -143,6 +145,7 @@ meta:
     491730e4-5d8e-4d79-889a-57fe300b420c: 'Button Page Link' # Button Page Link
     514898d5-a466-42b8-9d7d-be363d77d811: Staff # Staff
     558281e3-3b00-49e5-a034-16c5ce0b6c6c: 'Button text' # Button text
+    622574df-c584-4714-bb44-5901cffb136e: 'Events Date' # Events Date
     800848a8-f09b-4adb-b0d0-76339d6195c8: 'Group Fields' # Group Fields
     910635d5-1696-4b6e-995f-1141ec5da6c0: UrbanDesk # UrbanDesk
     946813fd-230f-4dfe-beaf-7a03b3228bb2: '3 Images' # 3 Images
@@ -155,6 +158,7 @@ meta:
     89723374-3eac-4abc-b3ad-1bbd27091648: Heading # Heading
     a0a1f864-9a0f-4bc8-931c-cb7d460030ba: 'Business Email' # Business Email
     a0a3e595-fd6a-4fdb-8c47-68c52f4348f7: 'Group Fields' # Group Fields
+    a1e344df-1f0a-4388-8778-489f82901003: 'Event Image' # Event Image
     a33a9b78-e67f-4d71-b70f-5c91db0323fe: UrbanLease # UrbanLease
     a72e886d-5deb-4c6e-9dea-5a690a3f141b: 'Title h1' # Title h1
     ac6a4bbe-5e8b-41c7-997d-cb16dc2a14d2: 'Business Address' # Business Address
@@ -204,6 +208,7 @@ meta:
     d716cb05-9b41-43e6-886a-1005f46cd177: 'Testimonial Image' # Testimonial Image
     d2611d70-d001-4791-bfa0-92d60a09efce: 'Button Link' # Button Link
     d4390a92-df70-4ac7-9d4f-f5758c1928bf: Default # Default
+    d63267b5-c713-4952-941e-28ca375971cf: Default # Default
     d7568988-4934-4d64-a04d-04c636118860: 'Business Postal' # Business Postal
     da55d75a-2061-4112-98fb-f895d4ac8366: Paragraph # Paragraph
     da96f250-8ec1-45a1-81bf-58b56467d573: 'Culture & Events' # Culture & Events
@@ -229,6 +234,7 @@ meta:
     fa573d0d-05be-480f-b5c8-2eb4c7420d0c: Lists # Lists
     fab56143-0785-45a8-b72b-a18482e4cafe: 'Sub Heading' # Sub Heading
     fc5656c9-ee2c-497e-bab5-2bb3f236be53: 'Footer Button' # Footer Button
+    fe621405-1666-4bdb-aa36-961848155562: 'Event Heading' # Event Heading
     ff742c41-cefa-4113-81ed-c15b4712b984: 'Intro Paragraph' # Intro Paragraph
 plugins:
   ckeditor:

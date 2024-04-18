@@ -1748,60 +1748,96 @@ tbody tr:first-of-type td {
 }
 
 @media (min-width: 48em) {
+  .table-solutions table,
+  .dark-table table,
   .table-light table {
     display: table;
   }
+  .table-solutions thead,
+  .dark-table thead,
   .table-light thead {
     display: table-header-group;
   }
+  .table-solutions tbody,
+  .dark-table tbody,
   .table-light tbody {
     display: table-row-group;
   }
+  .table-solutions th,
+  .dark-table th,
   .table-light th {
     display: table-cell;
   }
+  .table-solutions td,
+  .dark-table td,
   .table-light td {
     display: table-cell;
   }
+  .table-solutions tr,
+  .dark-table tr,
   .table-light tr {
     display: table-row;
   }
+  .table-solutions thead tr,
+  .dark-table thead tr,
   .table-light thead tr {
     position: relative;
     top: unset;
     left: unset;
   }
+  .table-solutions thead th,
+  .dark-table thead th,
   .table-light thead th {
     padding: 1em;
   }
+  .table-solutions td,
+  .dark-table td,
   .table-light td {
     padding-left: unset;
   }
+  .table-solutions td:before,
+  .dark-table td:before,
   .table-light td:before {
     display: none;
   }
+  .table-solutions tbody td:last-of-type,
+  .dark-table tbody td:last-of-type,
   .table-light tbody td:last-of-type {
     border-right-width: 0;
   }
+  .table-solutions tbody th,
+  .dark-table tbody th,
   .table-light tbody th {
     border-left-width: 0;
   }
+  .table-solutions tbody tr:first-of-type th,
+  .dark-table tbody tr:first-of-type th,
   .table-light tbody tr:first-of-type th {
     border-top-width: 0;
   }
+  .table-solutions tbody tr:last-of-type td,
+  .dark-table tbody tr:last-of-type td,
   .table-light tbody tr:last-of-type td {
     border-bottom-width: 0;
   }
+  .table-solutions tbody tr:last-of-type td:last-of-type,
+  .dark-table tbody tr:last-of-type td:last-of-type,
   .table-light tbody tr:last-of-type td:last-of-type {
     border-bottom-width: 0;
   }
+  .table-solutions tbody tr td:last-of-type,
+  .dark-table tbody tr td:last-of-type,
   .table-light tbody tr td:last-of-type {
     border-bottom-width: 1px;
   }
+  .table-solutions tbody tr td,
+  .dark-table tbody tr td,
   .table-light tbody tr td {
     padding: 0.5em;
     text-align: center;
   }
+  .table-solutions thead th:last-of-type,
+  .dark-table thead th:last-of-type,
   .table-light thead th:last-of-type {
     border-width: 0;
   }
@@ -1824,61 +1860,8 @@ tbody tr:first-of-type td {
 }
 
 @media (min-width: 64em) {
-  .dark-table table {
-    display: table;
-  }
-  .dark-table thead {
-    display: table-header-group;
-  }
-  .dark-table tbody {
-    display: table-row-group;
-  }
-  .dark-table th {
-    display: table-cell;
-  }
-  .dark-table td {
-    display: table-cell;
-  }
-  .dark-table tr {
-    display: table-row;
-  }
-  .dark-table thead tr {
-    position: relative;
-    top: unset;
-    left: unset;
-  }
-  .dark-table thead th {
-    padding: 1em;
-  }
-  .dark-table td {
-    padding-left: unset;
-  }
-  .dark-table td:before {
-    display: none;
-  }
-  .dark-table tbody td:last-of-type {
-    border-right-width: 0;
-  }
-  .dark-table tbody th {
-    border-left-width: 0;
-  }
-  .dark-table tbody tr:first-of-type th {
-    border-top-width: 0;
-  }
-  .dark-table tbody tr:last-of-type td {
-    border-bottom-width: 0;
-  }
-  .dark-table tbody tr:last-of-type td:last-of-type {
-    border-bottom-width: 0;
-  }
-  .dark-table tbody tr td:last-of-type {
-    border-bottom-width: 1px;
-  }
   .dark-table tbody tr td {
     padding: 1em;
-  }
-  .dark-table thead th:last-of-type {
-    border-width: 0;
   }
 }
 
@@ -1899,6 +1882,28 @@ tbody tr:first-of-type td {
 }
 .dark-table td:nth-of-type(6):before {
   content: "Cuba";
+}
+
+.table-solutions thead tr th,
+.table-solutions tbody tr td {
+  text-align: left;
+}
+.table-solutions tbody {
+  border-top: 1px solid #315844;
+}
+.table-solutions thead tr th {
+  border-left: 1px solid #315844;
+  border-right: 1px solid #315844;
+}
+.table-solutions thead tr th:first-of-type {
+  border-left-width: 0;
+}
+
+.table-solutions.large-team td:nth-of-type(1):before {
+  content: "UrbanSuites";
+}
+.table-solutions.large-team td:nth-of-type(2):before {
+  content: "UrbanLease";
 }
 
 .ourSpaces .level .two-thirds {
@@ -2882,6 +2887,15 @@ nav .bx-menu {
   }
 }
 
+.culture-events .icon .align-right img {
+  max-width: 25%;
+}
+@media (min-width: 85.375em) {
+  .culture-events .icon h3,
+  .culture-events .icon .align-right img {
+    max-width: 50%;
+  }
+}
 @media (min-width: 48em) {
   .culture-events .events-title {
     display: flex;
@@ -2901,13 +2915,21 @@ nav .bx-menu {
 }
 @media (min-width: 64em) {
   .culture-events .events-title p {
-    max-width: 30vw;
+    max-width: 27vw;
   }
 }
 @media (min-width: 94em) {
   .culture-events .events-title p {
-    max-width: 20vw;
+    max-width: 31vw;
+    padding: 0 3vw;
   }
+}
+.culture-events .event-wrapper {
+  margin: 3vw 0;
+  border: 1px solid #cbd5d0;
+}
+.culture-events .event-wrapper .third.pad-all {
+  padding: 3vw;
 }
 
 .contact-us nav .navbar .links .x .sub-menu,
