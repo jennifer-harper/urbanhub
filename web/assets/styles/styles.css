@@ -2061,7 +2061,6 @@ nav {
   left: 0;
   width: 100%;
   z-index: 99;
-  background-color: #FAF6F0;
 }
 nav .little-star {
   margin: 0 auto;
@@ -2237,7 +2236,6 @@ nav .fa-bars.rotate-icon {
     position: relative;
   }
   nav .navbar .links .x .sub-menu {
-    background-color: pink;
     position: absolute;
     top: -100vh;
     left: 0;
@@ -2249,6 +2247,7 @@ nav .fa-bars.rotate-icon {
     width: 100%;
     height: 100vh;
     transition: top 0.5s ease-in;
+    transition-delay: 0.25s;
   }
   nav .navbar .links .x .sub-menu .new-wrapper {
     display: flex;
@@ -2283,6 +2282,7 @@ nav .fa-bars.rotate-icon {
     position: relative;
   }
   nav .navbar .links .x:hover .sub-menu {
+    transition-delay: 0.25s;
     display: flex;
     top: 0px;
     transition: top 0.5s ease-in;
