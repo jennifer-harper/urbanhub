@@ -1136,6 +1136,9 @@ ul li a .social-media {
 .orangeTheme ul.underline-list li {
   border-color: #DB6B34;
 }
+.orangeTheme nav .navbar i {
+  color: #DB6B34;
+}
 
 .blueTheme h1, .blueTheme h2, .blueTheme h3, .blueTheme p, .blueTheme a, .blueTheme li, .blueTheme table {
   color: #253C40;
@@ -2062,6 +2065,9 @@ nav {
   width: 100%;
   z-index: 99;
 }
+nav .bx-lg {
+  font-size: 3em;
+}
 nav .little-star {
   margin: 0 auto;
 }
@@ -2091,7 +2097,7 @@ nav .navbar .arrow {
   width: 22px;
   text-align: center;
   display: inline-block;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
   z-index: 10;
   position: relative;
 }
@@ -2148,12 +2154,12 @@ nav .mobile-nav {
   justify-content: space-between;
   z-index: 20;
 }
-nav .fa-bars {
+nav .bx-menu {
   display: block;
   z-index: 20;
   margin-left: 20px;
 }
-nav .fa-bars.rotate-icon {
+nav .bx-menu.rotate-icon {
   transform: rotate(90deg);
 }
 
@@ -2201,7 +2207,7 @@ nav .fa-bars.rotate-icon {
     width: unset;
     padding: 0;
   }
-  nav .fa-bars {
+  nav .bx-menu {
     display: none;
   }
   nav .navbar {
@@ -2277,7 +2283,7 @@ nav .fa-bars.rotate-icon {
   }
   nav .navbar .links .x:hover > .arrow {
     transform: rotate(180deg);
-    transition: all 0.5s ease-in;
+    transition: all 0.2s ease-in;
     z-index: 10;
     position: relative;
   }

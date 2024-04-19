@@ -1292,6 +1292,10 @@ ul li a .social-media{
         border-color:$orange;
     }
 
+    nav .navbar i{
+        color:$orange;
+    }
+
 
 }
 
@@ -2416,6 +2420,10 @@ nav {
     width: 100%;
     z-index: 99;
 
+    .bx-lg{
+        font-size:3em;
+    }
+
     .little-star{
         margin: 0 auto;;
     }
@@ -2443,7 +2451,7 @@ nav {
             width: 22px;
             text-align: center;
             display: inline-block;
-            transition: all .5s ease-in;
+            transition: all .2s ease-in;
             z-index: 10;
             position: relative;
         }
@@ -2514,7 +2522,7 @@ nav {
         // padding: 20px;
         z-index: 20;
     }
-    .fa-bars{
+    .bx-menu{
         display: block;
         z-index: 20;
         margin-left: 20px;
@@ -2596,8 +2604,9 @@ nav {
         width: unset;
         padding: 0;
     }
-    .fa-bars {
+    .bx-menu {
         display: none;
+
     }
     .navbar{
         background-color: $light;
@@ -2692,7 +2701,7 @@ nav {
             .x:hover{
                 > .arrow{
                     transform: rotate(180deg);
-                    transition: all .5s ease-in;
+                    transition: all .2s ease-in;
                     z-index: 10;
                     position: relative;
                 }

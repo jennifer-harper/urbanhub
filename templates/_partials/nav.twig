@@ -2,6 +2,7 @@
       <div class="navbar">
         <div class="mobile-nav">
           <a href="/" class="logo">{% include '_partials/svgs/logo.twig' %}</a>
+         
         </div>
 
         <div class="nav-links">
@@ -9,8 +10,7 @@
                 <div class="x"><a href="/">Home</a></div>
                 <div class="x">
                     <a href="/solutions">Solutions</a>
-                    <i class="fa-solid fa-chevron-down solutions-arrow arrow"></i>
-                    
+                    <i class="bx bxs-chevron-down solutions-arrow arrow"></i>
                     <div class="solutions-sub-menu sub-menu">
                         <div class="new-wrapper">
                         <a href="urban-studio">
@@ -85,10 +85,10 @@
                 </div>
                  <div class="x">
                     <a href="/urban-community">Community</a>
-                    <i class="fa-solid fa-chevron-down community-arrow arrow"></i>
+                    <i class="bx bxs-chevron-down community-arrow arrow"></i>
                     <div class="community-sub-menu sub-menu">
-                        <div class="new-wrapper">
-                         <a href="/your-team">
+<div class="new-wrapper">
+                         <a href="/the-team">
                             <div class="content">
                                {% include '_partials/svgs/little-star.twig' %}
                                 <div>
@@ -127,7 +127,7 @@
 
                 <div class="x">
                     <a href="/urban-environment">Urban Environment</a>
-                    <i class="fa-solid fa-chevron-down environment-arrow arrow"></i>
+                    <i class="bx bxs-chevron-down environment-arrow arrow"></i>
                     <div class="environment-sub-menu sub-menu">
                     <div class="new-wrapper">
                         <a href="/the-building">
@@ -186,8 +186,7 @@
         {% block class %} {{buttonClass}} no-marg-top {% endblock %}
         {% block title %}Sign In{% endblock %}
         {% block url %}{{businessInformation.signIn}} target="_blank" {% endblock %}
-        {% endembed %}
-
-        <i class="fa-solid fa-bars fa-xl"></i>
+        {% endembed %} 
+         <i class="bx bx-menu bx-lg"></i>
       </div>
     </nav>

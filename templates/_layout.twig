@@ -7,7 +7,7 @@
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
       <meta name="description" content="{{ metaDesc|default('UrbanHub') }}">
       <link rel="icon" href="/uploads/images/favicon.png" type="image/x-icon" />
-      {# <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" /> #}
+      <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
       {% do craft.app.view.registerCssFile('@web/assets/styles/styles.css') %}
     {% endblock %}
 </head>
@@ -28,7 +28,7 @@
   
   {% block scripts %}
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://kit.fontawesome.com/b3510dc66a.js" crossorigin="anonymous"></script>
+    {# <script src="https://kit.fontawesome.com/b3510dc66a.js" crossorigin="anonymous"></script> #}
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script type="module" src="/assets/js/script.js"></script>
