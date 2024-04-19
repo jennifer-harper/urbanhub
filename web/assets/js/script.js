@@ -23,3 +23,10 @@ $(document).ready(function () {
     $(this).html(newText)
   })
 })
+
+//solutions tables
+$('.solutions-tables thead tr th').each(function () {
+  var text = $(this).text()
+  var newText = text.replace(/(Urban)(\w*)/g, '$1<span>$2</span>')
+  $(this).html(newText)
+})

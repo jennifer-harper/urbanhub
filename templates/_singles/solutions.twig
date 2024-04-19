@@ -16,9 +16,14 @@
 {% block content %} 
   {% for entry in page %} 
     {% include '_partials/sections/solutions-mask.twig' %}
-
     {% include '_partials/sections/solutions-tables.twig' %}
     {% include '_partials/footer/contact-section.twig' %}
   {% endfor %} 
 {% endblock %}
 
+{% block scripts %}
+{{ parent() }}
+    <script src="/assets/js/jquery-2.1.0.min.js"></script>
+    <script src="/assets/js/jquery.responsiveTabs.js" type="text/javascript"></script>
+    <script src="/assets/js/jquery.tabs.js"></script>
+{% endblock %}

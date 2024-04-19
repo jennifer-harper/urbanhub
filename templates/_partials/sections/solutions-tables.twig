@@ -1,17 +1,33 @@
-{% set tables = craft.entries().section('solutionsTables').all() %} 
-{% for table in tables %}
+{% set tables = craft.entries().section('solutionsTables').orderBy('postDate asc').all() %}
 
-<div class="bg-green-light solutions-tables pad-all">
-    {% if table.heading2 %}
-        {{table.heading2}}
-    {% endif %}
-    <div class="table-section">
-        <div class="pad-sides table-solutions {{table.slug}}">
-            {% if table.tableEditor %}
-                {{table.tableEditor}}
+
+    <div class="tabs-facilities" id="horizontalTab">
+        <ul class="tabs-nav-wrapper">
+        {% for table in tables %}
+            <li class="">
+                <a href="#tab-{{ loop.index }}">
+                    <div class="mobile-only">
+                    {% if  table.paragraph4 %}
+                        {{table.paragraph4}}
+                    {% endif %}
+                    </div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+        {% for table in tables %}
+        <div class="bg-green-light solutions-tables pad-all" id="tab-{{ loop.index }}">
+            {% if table.heading2 %}
+                {{table.heading2}}
             {% endif %}
-        </div> 
+            <div class="table-section">
+                <div class="table-light other {{table.slug}}">
+                    {% if table.tableEditor %}
+                        {{table.tableEditor}}
+                    {% endif %}
+                </div> 
+            </div>
+        </div>
+        {% endfor %}
     </div>
-</div>
-{% endfor %}
-

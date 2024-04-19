@@ -2,17 +2,6 @@
 @import 'mixins';
 @import url("https://use.typekit.net/cxz6ehv.css");
 
-// @import url(https://db.onlinewebfonts.com/c/8d7470a3ffc57e31f3d9ce407d991c08?family=Reckless+Neue+Light);
-// @font-face {
-//     font-family: "Reckless Neue Light";
-//     src: url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.eot");
-//     src: url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.eot?#iefix")format("embedded-opentype"),
-//     url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.woff2")format("woff2"),
-//     url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.woff")format("woff"),
-//     url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.ttf")format("truetype"),
-//     url("https://db.onlinewebfonts.com/t/8d7470a3ffc57e31f3d9ce407d991c08.svg#Reckless Neue Light")format("svg");
-// }
-
 @font-face {
   font-family: 'eina_semiboldregular';
   src: url('../fonts/eina_04_w03_semibold-webfont.woff2') format('woff2'),
@@ -2085,7 +2074,7 @@ tbody{
 }
 
 
-.table-solutions,
+
 .dark-table,
 .table-light{
     @media #{$mq-small}{
@@ -2182,25 +2171,48 @@ tbody{
 }
 
 
-.table-solutions{
-    thead tr th,
-    tbody tr td{
-        text-align: left;
+.other{
+    tbody tr th{
+        padding:0.5em;
     }
-    tbody{
-        border-top:1px solid $green-dark
-    }
-    thead tr th{
-        border-left: 1px solid $green-dark;
-        border-right: 1px solid $green-dark;
-        &:first-of-type{
-            border-left-width: 0;
+    @media #{$mq-small}{
+        thead tr th,
+        tbody tr td{
+            text-align: left;
+        }
+        tbody tr td{
+            padding: 1em;
+        }
+        tbody{
+            border-top:1px solid $green-dark
+        }
+        thead tr th:not(:first-of-type){
+            border-left: 1px solid $green-dark;
+            border-right: 1px solid $green-dark;
+            font-size:$base-font-size*2;
+            span{
+                font-family: $serif-feature;
+            }
+            &:last-of-type{
+                border-right-width: 0;  
+            }
+        }
+        thead th:first-of-type{
+            padding: 1em 0.5em;
+        }
+        thead tr th,
+        tbody tr th{
+            font-family: $header-font;
+        }
+        tbody tr td{
+            max-width: 30vw;
         }
     }
+
 }
 
 
-.table-solutions.large-team{
+.table-light.other.large-team{
     td:nth-of-type(1):before { content: "UrbanSuites"; }
     td:nth-of-type(2):before { content: "UrbanLease"; }
 }
@@ -2431,20 +2443,14 @@ nav {
             width: 22px;
             text-align: center;
             display: inline-block;
-            transition: all 0.3s ease;
+            transition: all .5s ease-in;
         }
 
-        .sub-menu {
+        .sub-menu{
             position: relative;
             top: 0;
             margin-top: 0;
             display: none;
-            .content{
-                border-bottom: 1px solid $grey;
-            }
-        }
-
-        .sub-menu{
             a{
                 .header-intro{
                     margin-top:$md;
@@ -2458,7 +2464,7 @@ nav {
                     align-items: center;
                     padding: $md;
                     text-align: center;
-                    // justify-content: space-between;
+                    border-bottom: 1px solid $grey;
                     svg{
                         max-width: 50%;
                     }
@@ -2488,6 +2494,7 @@ nav {
                 &:hover {
                     .arrow {
                         transform: rotate(0deg);
+                        transition: all .5s ease-in;
                     }
                     .sub-menu {
                         display: none;
@@ -2505,9 +2512,13 @@ nav {
         // padding: 20px;
         z-index: 20;
     }
-    .bx-menu {
+    .fa-bars{
         display: block;
         z-index: 20;
+        margin-left: 20px;
+        &.rotate-icon{
+            transform: rotate(90deg);
+        }
     }
 
 }
@@ -2574,13 +2585,15 @@ nav {
     }
 }
 
+
+
 @media (min-width: 1025px) {
   nav{
     .mobile-nav {
         width: unset;
         padding: 0;
     }
-    .bx-menu {
+    .fa-bars {
         display: none;
     }
     .navbar{
@@ -2600,7 +2613,6 @@ nav {
             display: flex;
             margin-top:0;
             .x {
-                // z-index: 10;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -2620,30 +2632,21 @@ nav {
                     left: 0;
                     background: $light;
                     display: none;
+                    flex-wrap: wrap;
+                    padding:$md;
                     z-index: 2;
                     width: 100%;
                     z-index: 0;
                     height: calc(100vh - 50px);
-                    .content{
-                        border-bottom-width: 0;
-                    }
-                }
-            }
-            .x:hover{
-                > .arrow{
-                    transform: rotate(180deg);
-                    // z-index: 10;
-                }
-                .sub-menu{
-                    display: flex;
-                    flex-wrap: wrap;
-                    padding:$md;
-
+                    // transition: all 1s ease-in;
                     .new-wrapper{
                         display: flex;
                         flex-wrap: wrap;
                         align-content: center; 
                         width: 100%;
+                    }
+                    .content{
+                        border-bottom-width: 0;
                     }
                 }
 
@@ -2680,22 +2683,21 @@ nav {
                 //     }
                 // }
             }
+
+            .x:hover{
+                > .arrow{
+                    transform: rotate(180deg);
+                    transition: all .5s ease-in;
+                }
+
+                .sub-menu{
+                    display: flex;
+                }
+            }
         }    
-    }
-
-
-
-
-
-    .nav-links{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
   }
 }
-
-
 
 
 @media (min-width: 1366px) {
@@ -2770,6 +2772,7 @@ nav {
 
 
 /* Accordion responsive breakpoint - change per page/tabsgroup */
+
 .facilitiesAmenities,
 .home{
     @media only screen and (min-width:1024px) {
@@ -2782,9 +2785,17 @@ nav {
         }
     }
 }
-
-
-
+.solutionsPage{
+    @media only screen and (min-width:920px) {
+        .r-tabs .r-tabs-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+        .r-tabs .r-tabs-accordion-title {
+            display: none;
+        }
+    }
+}
 
 //--------------- specific pages
 
@@ -2849,7 +2860,6 @@ nav {
 }
 
 //tabs
-
 .home{
     .tabs-urban-solutions{
         border-top:1px solid $grey;
@@ -3368,9 +3378,9 @@ nav {
     }
 }
 
-
+//tabs
+.solutionsPage,
 .facilitiesAmenities{
-
     .mobile-only{
         padding: $base-font-size;
     }
@@ -3403,7 +3413,6 @@ nav {
     }
 
     @media #{$mq-medium}{
-
         .tabs{
             h2{
                 margin-bottom: 0;
@@ -3412,8 +3421,6 @@ nav {
                 margin-bottom: 6vw;
             }
         }
-
-
         .tabs  .flex-wrap .half {
             > div{
                  width: 50%;
@@ -3437,6 +3444,7 @@ nav {
             } 
         }
     }
+
     @media #{$mq-desktop}{
         .tabs-facilities{
             .tabs-nav-wrapper{
@@ -3445,13 +3453,8 @@ nav {
                 }
             } 
         }
-
-
-
     }
 }
-
-
 
 
 .the-team{
@@ -3554,11 +3557,33 @@ nav {
 }
 
 
+.sustain-wellbeing{
+    .solutions-contrast{
+        overflow: hidden;
+        .something{
+            width: 300%;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: hidden;
+            justify-content: center;
+            .panel{
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                border-right:1px solid $grey;
+                &:last-of-type{
+                    border-width: 0;
+                }
+                .half{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
 
-
-
-
-
+          }
+    }
+}
 
 
 
@@ -3643,34 +3668,6 @@ nav {
     }
 }
 
-
-.sustain-wellbeing{
-    .solutions-contrast{
-        overflow: hidden;
-        .something{
-            width: 300%;
-            min-height: 100vh;
-            display: flex;
-            flex-wrap: nowrap;
-            overflow: hidden;
-            justify-content: center;
-            .panel{
-                width: 100%;
-                align-items: center;
-                justify-content: center;
-                border-right:1px solid $grey;
-                &:last-of-type{
-                    border-width: 0;
-                }
-                .half{
-                    display: flex;
-                    flex-direction: column;
-                }
-            }
-
-          }
-    }
-}
 
 
 

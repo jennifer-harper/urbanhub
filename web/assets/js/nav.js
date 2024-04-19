@@ -1,13 +1,15 @@
 let navbar = document.querySelector('.navbar')
 let navLinks = document.querySelector('.nav-links')
-let menuOpenBtn = document.querySelector('.navbar .bx-menu')
+let menuOpenBtn = document.querySelector('.navbar .fa-bars')
 
 // Function to toggle the menu state
 function toggleMenu() {
   if (navLinks.style.top === '100px') {
     navLinks.style.top = '-100%' // Close the menu
+    $('.navbar .fa-bars').removeClass('rotate-icon')
   } else {
     navLinks.style.top = '100px' // Open the menu
+    $('.navbar .fa-bars').addClass('rotate-icon')
   }
 }
 
