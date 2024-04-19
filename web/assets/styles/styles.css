@@ -2093,6 +2093,8 @@ nav .navbar .arrow {
   text-align: center;
   display: inline-block;
   transition: all 0.5s ease-in;
+  z-index: 10;
+  position: relative;
 }
 nav .navbar .sub-menu {
   position: relative;
@@ -2204,6 +2206,7 @@ nav .fa-bars.rotate-icon {
     display: none;
   }
   nav .navbar {
+    background-color: #FAF6F0;
     justify-content: center;
   }
   nav .navbar .nav-links {
@@ -2213,8 +2216,9 @@ nav .fa-bars.rotate-icon {
     top: unset;
     display: flex;
     padding: unset;
-    height: unset;
+    height: 60px;
     overflow: unset;
+    z-index: revert-layer;
   }
   nav .navbar .links {
     display: flex;
@@ -2230,19 +2234,21 @@ nav .fa-bars.rotate-icon {
     padding-left: 20px;
     padding-right: 5px;
     z-index: 10;
+    position: relative;
   }
   nav .navbar .links .x .sub-menu {
+    background-color: pink;
     position: absolute;
-    top: 50px;
+    top: -100vh;
     left: 0;
     background: #FAF6F0;
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     padding: 3vw;
-    z-index: 2;
+    z-index: -10;
     width: 100%;
-    z-index: 0;
-    height: calc(100vh - 50px);
+    height: 100vh;
+    transition: top 0.5s ease-in;
   }
   nav .navbar .links .x .sub-menu .new-wrapper {
     display: flex;
@@ -2273,9 +2279,14 @@ nav .fa-bars.rotate-icon {
   nav .navbar .links .x:hover > .arrow {
     transform: rotate(180deg);
     transition: all 0.5s ease-in;
+    z-index: 10;
+    position: relative;
   }
   nav .navbar .links .x:hover .sub-menu {
     display: flex;
+    top: 0px;
+    transition: top 0.5s ease-in;
+    z-index: -10;
   }
 }
 @media (min-width: 1366px) {

@@ -2444,6 +2444,8 @@ nav {
             text-align: center;
             display: inline-block;
             transition: all .5s ease-in;
+            z-index: 10;
+            position: relative;
         }
 
         .sub-menu{
@@ -2589,6 +2591,7 @@ nav {
 
 @media (min-width: 1025px) {
   nav{
+    // position: relative;
     .mobile-nav {
         width: unset;
         padding: 0;
@@ -2597,6 +2600,7 @@ nav {
         display: none;
     }
     .navbar{
+        background-color: $light;
         justify-content: center;
         .nav-links {
             justify-content: center;
@@ -2605,8 +2609,9 @@ nav {
             top: unset;
             display: flex;
             padding: unset;
-            height: unset;
+            height: 60px;
             overflow: unset;
+            z-index: revert-layer;
         } 
 
         .links{
@@ -2623,22 +2628,22 @@ nav {
                     padding-left: 20px; 
                     padding-right:5px;
                     z-index: 10;
-
+                    position: relative;
                 }
 
                 .sub-menu {
+                    background-color: pink;;
                     position: absolute;
-                    top:50px;
+                    top:-100vh;
                     left: 0;
                     background: $light;
-                    display: none;
+                    display: flex;
                     flex-wrap: wrap;
                     padding:$md;
-                    z-index: 2;
+                    z-index: -10;
                     width: 100%;
-                    z-index: 0;
-                    height: calc(100vh - 50px);
-                    // transition: all 1s ease-in;
+                    height: 100vh;
+                    transition:top .5s ease-in;
                     .new-wrapper{
                         display: flex;
                         flex-wrap: wrap;
@@ -2688,10 +2693,15 @@ nav {
                 > .arrow{
                     transform: rotate(180deg);
                     transition: all .5s ease-in;
+                    z-index: 10;
+                    position: relative;
                 }
 
                 .sub-menu{
                     display: flex;
+                    top:0px;
+                    transition:top .5s ease-in;
+                    z-index: -10;
                 }
             }
         }    
