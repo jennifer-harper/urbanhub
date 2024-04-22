@@ -73,7 +73,7 @@ fieldLayouts:
 handle: default
 hasTitleField: true
 name: Default
-section: 261c18b2-1b1d-4729-9d6b-7b05a5c91307 # Solutions Tables
+section: 261c18b2-1b1d-4729-9d6b-7b05a5c91307 # Solutions Page - Tables
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site

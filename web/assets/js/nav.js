@@ -5,11 +5,11 @@ let menuOpenBtn = document.querySelector('.navbar .bx-menu')
 
 // Function to toggle the menu state
 function toggleMenu() {
-  if (navLinks.style.top === '100px') {
+  if (navLinks.style.top === '80px') {
     navLinks.style.top = '-100%' // Close the menu
     $('.navbar .bx-menu').removeClass('rotate-icon')
   } else {
-    navLinks.style.top = '100px' // Open the menu
+    navLinks.style.top = '80px' // Open the menu
     $('.navbar .bx-menu').addClass('rotate-icon')
   }
 }

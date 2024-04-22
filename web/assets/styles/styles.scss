@@ -116,6 +116,9 @@ color: $base-font;
   font-size: $base-font-size;
   line-height: $base-font-size*1.5;
 
+  @media #{$mq-large} {
+    font-size: $base-font-size*1.3;
+  }
 
   @media #{$mq-retina} {
     font-size: $base-font-size*2.2;
@@ -251,10 +254,7 @@ h1,h2,h3,h4,h5,h6 {
                 margin-right:auto;
             }
         }
-
     }
-
-
 
     @media #{$mq-figma}{
         &.max-title{
@@ -266,7 +266,18 @@ h1,h2,h3,h4,h5,h6 {
                 max-width: 36vw;
             }
         }
+    }
 
+    @media #{$mq-large}{
+        &.max-title{
+            max-width:55%;
+        }
+        &.max-title,
+        &.max-hero{
+            p:not(.btn p){
+                max-width: 40vw;
+            }
+        }
     }
 }
 .centered{
@@ -335,7 +346,7 @@ h3{
   }
   .header-intro p,
   h3{
-    font-size:$base-font-size*2.4; 
+    font-size:$base-font-size*2.1; 
   }
 
   .intro-text{
@@ -345,7 +356,7 @@ h3{
 
 @media #{$mq-medium} {
     h1{
-      font-size:$base-font-size*5.4; 
+      font-size:$base-font-size*5.5; 
     }
     h2{
       font-size:$base-font-size*4; 
@@ -357,6 +368,27 @@ h3{
   
     .intro-text{
       font-size:$base-font-size*1.4; 
+    }
+
+    .facilitiesAmenities,
+    .culture-events{
+        h1{
+            font-size:$base-font-size*4.6; 
+        }
+    }
+    .neighbourhood{
+        h1{
+            font-size:$base-font-size*4; 
+        }
+        h2{
+            font-size:$base-font-size*3.5; 
+        }
+    }
+
+    .solutionsPage{
+        h1{
+            font-size:$base-font-size*4.4; 
+        }
     }
   }
 
@@ -407,6 +439,12 @@ h3{
         }
     }
 
+    .table-banner.dark .small-col{
+        h3{
+            font-size:$base-font-size*2; 
+        }
+    }
+
 }
 
 
@@ -419,11 +457,11 @@ h3{
 h2 i,
 h1 i{
     position: relative;
-    z-index: 1;
+    z-index: -1;
     font-weight:500;
 }
 
-.highlight{
+div .highlight{
     position: absolute;
     width: 100%;
     left:0;
@@ -1205,7 +1243,7 @@ ul li a .social-media{
     .solutions-banner .border-color{
         border-color:$green-dark;
     }
-    .bg-green-light .highlight{
+    .bg-green-light .highlight svg{
         fill:$light;
     }
     .bg-light{
@@ -1238,7 +1276,7 @@ ul li a .social-media{
         .little-star{
             fill: $yellow-light;
         }
-        .highlight{
+        .highlight svg{
             fill:$light;
         }
     }
@@ -1258,7 +1296,7 @@ ul li a .social-media{
 
 
     .illustration-fill,
-    .highlight,
+    .highlight svg,
     .tick{
         fill:$yellow-light;
     }
@@ -1284,7 +1322,7 @@ ul li a .social-media{
         .logo{
             fill:$orange;
         }
-        .highlight{
+        .highlight svg{
             fill:$light
         }
     }
@@ -1317,7 +1355,7 @@ ul li a .social-media{
                 border-color:$blue-light;
             }
         }
-        .highlight{
+        .highlight svg{
             fill:$light;
         }
     }
@@ -1391,7 +1429,7 @@ ul li a .social-media{
     }
 
     .illustration-fill,
-    .highlight,
+    .highlight svg,
     .tick{
         fill:$blue-light;  
     }
@@ -1429,7 +1467,7 @@ ul li a .social-media{
         }
     }
 
-    .highlight{
+    .highlight svg{
         fill:$yellow;
     }
 
@@ -1458,7 +1496,7 @@ ul li a .social-media{
         }
     }
     .bg-yellow-light{
-        .highlight{
+        .highlight svg{
             fill:$light;
         }
     }
@@ -1476,7 +1514,7 @@ ul li a .social-media{
             }
         }
     }
-    .highlight{
+    .highlight svg{
         fill:$yellow-light
     }
     
@@ -1484,10 +1522,14 @@ ul li a .social-media{
     .tick{
         fill:$yellow-light;
     }
+
+    nav .navbar .arrow,
+    nav .bx-menu,
     .logo,
     .social-media,
     .little-star{
         fill: $orange;
+        color:$orange;
     }
 
     .border-color{
@@ -1505,13 +1547,16 @@ ul li a .social-media{
     .star-banner-wrapper .star-banner .light,
     .illustration-fill,
     .tick,
-    .highlight,
+    .highlight svg,
     .little-star{
         fill: $purple-light;
     }
+    nav .navbar .arrow,
+    nav .bx-menu,
     .logo,
     .social-media{
         fill: $purple-dark;
+        color:$purple-dark;
     }
 
     .bg-purple-dark{
@@ -1521,7 +1566,7 @@ ul li a .social-media{
         .btn a p{
             color:$purple-dark;
         }
-        .highlight,
+        .highlight svg,
         &.star-banner-wrapper .star-banner .light{
             fill:$light;
         }
@@ -1566,7 +1611,7 @@ ul li a .social-media{
     h1,h2,h3,p, a, li{
         color:$blue-dark;  
     }
-    .bg-blue-light i .highlight{
+    .bg-blue-light i .highlight svg{
         fill:$light;
     }
 
@@ -1577,7 +1622,7 @@ ul li a .social-media{
     .underline-list li{
         border-color:$blue-dark;
     }
-   .highlight,
+   .highlight svg,
     .star-banner-wrapper .star-banner .light{
         fill: $blue-light;
     }
@@ -1586,9 +1631,12 @@ ul li a .social-media{
             fill: $blue-dark;
  
     }
+    nav .navbar .arrow,
+    nav .bx-menu,
     .logo,
     .social-media{
         fill: $blue-dark;
+        color:$blue-dark;
     }
 
     .border-color{
@@ -1602,7 +1650,7 @@ ul li a .social-media{
 
 .limeTheme{
     .illustration-fill,
-    .highlight,
+    .highlight svg,
     .tick{
         fill:$lime;
     }
@@ -1635,7 +1683,7 @@ ul li a .social-media{
         }
     }
     .bg-lime{
-        .highlight{
+        .highlight svg{
             fill:$light;
         }
     }
@@ -1786,12 +1834,7 @@ footer{
             margin-right: $md;
         }
     }
-    // @media #{$mq-desktop}{
-    //     .flex-wrap .inner{
-    //         flex-direction: row;
-    //         align-items: flex-end;
-    //     }
-    // }
+
     @media #{$mq-figma}{
        .inner p:last-of-type:not(.btn p){
            max-width: 30vw;
@@ -1854,7 +1897,7 @@ footer{
 
 // .solutions-contrast-btm:not(.bg-green-dark),
 // .solutions-contrast:not(.bg-green-dark){
-//     .highlight{
+//     .highlight svg{
 //         fill:$light;
 //     }
 
@@ -1948,6 +1991,17 @@ footer{
         .small-col{
             margin-left: auto;
             max-width: 80%;
+            } 
+    }
+    @media #{$mq-figma}{
+        .small-col{
+            max-width: 28vw;
+            } 
+    }
+    @media #{$mq-large}{
+        .small-col{
+            margin-left: auto;
+            max-width: 22.5vw;
             } 
     }
 }
@@ -2079,7 +2133,7 @@ tbody{
 
 
 
-.dark-table,
+
 .table-light{
     @media #{$mq-small}{
         table{display: table;}
@@ -2151,6 +2205,69 @@ tbody{
     td:nth-of-type(5):before { content: "Cuba"; }
 }
 
+
+
+
+.dark-table{
+    @media #{$mq-medium}{
+        table{display: table;}
+        thead{display:table-header-group;}
+        tbody{display: table-row-group;}
+        th{display:table-cell}
+        td{display:table-cell}
+        tr{display: table-row}
+    
+        thead tr { 
+            position: relative;
+            top:unset;
+            left:unset;
+        }
+        thead th{
+            padding:1em;
+        }
+    
+        td{
+            padding-left:unset
+        }
+    
+        td:before{
+            display: none;
+        }
+    
+        tbody{
+            td:last-of-type{
+                border-right-width: 0;
+            }
+            th{
+                border-left-width: 0;
+            }
+            tr:first-of-type th{
+                border-top-width: 0;
+            }
+            tr:last-of-type{
+                td{
+                    border-bottom-width: 0;
+                }
+                td:last-of-type{
+                    border-bottom-width: 0;
+                }
+            }
+            tr td:last-of-type{
+                border-bottom-width:1px;
+            }
+            tr td{
+                padding:0.5em;
+                text-align: center;
+            }
+    
+        }
+        thead th{
+            &:last-of-type{
+                border-width:0;
+            }
+        }
+    }
+}
 
 
 .dark-table{
@@ -2587,8 +2704,8 @@ nav {
                 flex-wrap:wrap;
                 justify-content: space-between;
                 a{
-                    flex-basis:50%;
-                    width: 50%;
+                    flex-basis:33.333%;
+                    width: 33.333%;
                 }
             }
         }
@@ -2651,7 +2768,7 @@ nav {
                     z-index: -10;
                     width: 100%;
                     height: 100vh;
-                    transition:top .5s ease-in;
+                    transition:top .25s ease-in;
                     transition-delay:.25s; 
                     .new-wrapper{
                         display: flex;
@@ -2733,6 +2850,7 @@ nav {
   
 @media (max-width: 1025px) {
     nav {
+        background-color: $light;
         .navbar .nav-links.show2 .links .environment-sub-menu,
         .navbar .nav-links.show1 .links .solutions-sub-menu,
         .navbar .nav-links.show3 .links .community-sub-menu {
@@ -2869,12 +2987,9 @@ nav {
     }
 
 
-    @media #{$mq-medium}{
+    @media #{$mq-desktop}{
         .just-title-home h2 {
             max-width: 60%;
-        }
-        .hero-solutions .half:last-of-type .feature-pad{
-            max-width: 90%;
         }
     }
 }
@@ -2886,12 +3001,13 @@ nav {
 
         .mobile-only{
             font-size: 21px;
-            font-weight: 600;
             margin-bottom: 0;
+            line-height: 1em;
             i{
                 font-family: $serif-feature;
                 font-style: normal;
                 margin-top: -1px;
+                line-height:.95em
             }
         }
 
@@ -3322,16 +3438,21 @@ nav {
         padding-top:0;
     }
 
-    @media #{$mq-figma}{
-        .text-center.max-hero p:not(.btn p){
-            max-width: 35vw;
-        }
-    }
+    // @media #{$mq-figma}{
+    //     .text-center.max-hero p:not(.btn p){
+    //         max-width: 35vw;
+    //     }
+    // }
 }
 
 .urbanCommunity{
     .solutions-contrast h2{
         margin-bottom: 0;
+    }
+    @media #{$mq-medium}{
+        .solutions-mask h2{
+            font-size:$base-font-size*3.5;
+        }
     }
 }
 
@@ -3375,7 +3496,12 @@ nav {
         }
 
         .text-center.max-hero p:not(.btn p){
-            max-width: 25vw;
+            max-width: 36vw;
+        }
+    }
+    @media #{$mq-retina}{
+        .text-center.max-hero p:not(.btn p){
+            max-width: 32vw;
         }
     }
 }
@@ -3580,28 +3706,29 @@ nav {
 .sustain-wellbeing{
     .solutions-contrast{
         overflow: hidden;
-        .something{
-            width: 300%;
-            min-height: 100vh;
-            display: flex;
-            flex-wrap: nowrap;
-            overflow: hidden;
-            justify-content: center;
-            .panel{
-                width: 100%;
-                align-items: center;
+        @media #{$mq-small}{
+            .something{
+                width: 300%;
+                min-height: 100vh;
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: hidden;
                 justify-content: center;
-                border-right:1px solid $grey;
-                &:last-of-type{
-                    border-width: 0;
-                }
-                .half{
-                    display: flex;
-                    flex-direction: column;
+                .panel{
+                    width: 100%;
+                    align-items: center;
+                    justify-content: center;
+                    border-right:1px solid $grey;
+                    &:last-of-type{
+                        border-width: 0;
+                    }
+                    .half{
+                        display: flex;
+                        flex-direction: column;
+                    }
                 }
             }
-
-          }
+        }
     }
 }
 

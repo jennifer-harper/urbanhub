@@ -85,6 +85,14 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'To edit the Solutions Page Tables, go to Entries -> Channels -> Solutions Page Tables'
+            type: craft\fieldlayoutelements\Tip
+            uid: 5cb711f9-1d9e-413f-b283-ab2b9cbc27d8
+            userCondition: null
         name: 'First Section'
         uid: c9708208-e23b-4dfc-83af-434528a617ae
         userCondition: null
