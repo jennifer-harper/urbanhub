@@ -461,13 +461,15 @@ h1 i{
     font-weight:500;
 }
 
-div .highlight{
+.highlight{
     position: absolute;
     width: 100%;
     left:0;
     bottom:0;
     z-index: -1;
-    fill:$green-light;
+    svg{
+        fill:$green-light;
+    }
 }
 
 
@@ -1875,12 +1877,24 @@ footer{
         }
     }
     @media #{$mq-medium}{
+        .feature-pad{
+            max-width: 100%;
+            margin-left:0
+        }
         .center-style{
             img.max-75{
                 margin-left:auto;
             }
         } 
     }
+
+    @media #{$mq-desktop}{
+        .feature-pad{
+            max-width: 75%;
+            margin-left:0
+        }
+    }
+    
 }
 // .centered-section,
 // .table-section.dark,
@@ -3438,11 +3452,11 @@ nav {
         padding-top:0;
     }
 
-    // @media #{$mq-figma}{
-    //     .text-center.max-hero p:not(.btn p){
-    //         max-width: 35vw;
-    //     }
-    // }
+    h1 i .highlight{
+        bottom:-30px;
+        left:-10px;
+    }
+
 }
 
 .urbanCommunity{

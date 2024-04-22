@@ -358,12 +358,14 @@ h1 i {
   font-weight: 500;
 }
 
-div .highlight {
+.highlight {
   position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
   z-index: -1;
+}
+.highlight svg {
   fill: #BAE2A6;
 }
 
@@ -1605,8 +1607,18 @@ footer {
   }
 }
 @media (min-width: 64em) {
+  .hero-solutions .feature-pad {
+    max-width: 100%;
+    margin-left: 0;
+  }
   .hero-solutions .center-style img.max-75 {
     margin-left: auto;
+  }
+}
+@media (min-width: 85.375em) {
+  .hero-solutions .feature-pad {
+    max-width: 75%;
+    margin-left: 0;
   }
 }
 
@@ -2858,6 +2870,10 @@ nav .bx-menu.rotate-icon {
 }
 .urbanEnvironment .star-banner-wrapper {
   padding-top: 0;
+}
+.urbanEnvironment h1 i .highlight {
+  bottom: -30px;
+  left: -10px;
 }
 
 .urbanCommunity .solutions-contrast h2 {
