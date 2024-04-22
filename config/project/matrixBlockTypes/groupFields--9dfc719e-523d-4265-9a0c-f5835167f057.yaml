@@ -66,10 +66,10 @@ fields:
       branchLimit: null
       localizeRelations: false
       maintainHierarchy: false
-      maxRelations: null
+      maxRelations: 1
       minRelations: null
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       sources: '*'
       targetSiteId: null
       validateRelatedElements: false

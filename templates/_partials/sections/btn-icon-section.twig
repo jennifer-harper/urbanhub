@@ -1,4 +1,4 @@
-<div class="flex-wrap border-color  hero-solutions section-solutions {% block class %}{% endblock %}">     
+<div class="flex-wrap border-color  section-solutions {% block class %}{% endblock %}">     
 {% for block in entry.buttonIconGroup %}
     {% if block.type == 'groupFields' %}
     
@@ -11,8 +11,8 @@
                     {{block.paragraph }}
                 {% endif %}
             </div>
-            <div class="flex-wrap row pad-top-btm no-btm flex-jc-sb flex-end-style">
-                <div>
+            <div class="flex-wrap  pad-top-btm no-btm ">
+                <div class="flex-wrap col">
                 {% if block.buttonText %}
                     {% set buttonText = block.buttonText ?? 'Enquire now' %}
                     {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
@@ -27,7 +27,7 @@
                 <div class="align-right">
                 {% if block.icon.one() %}
                     {% set image = block.icon.one() %}
-                    <img class="max-75" src="{{ image.url }}" alt="{{ image.alt }}">
+                    <img  src="{{ image.url }}" alt="{{ image.alt }}">
                 {% endif %}
                 </div>
             </div>

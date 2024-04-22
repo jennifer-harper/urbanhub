@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://use.typekit.net/cxz6ehv.css");
 @font-face {
   font-family: "eina_semiboldregular";
@@ -1723,7 +1724,7 @@ footer {
 }
 .section-solutions .border-right:last-of-type {
   border-top: 1px solid;
-  border-color: #BAE2A6;
+  border-color: #FAF6F0;
 }
 @media (min-width: 64em) {
   .section-solutions .border-btm {
@@ -1735,6 +1736,27 @@ footer {
   .section-solutions .border-right:last-of-type {
     border-right-width: 0;
     border-top: 0px solid;
+  }
+}
+
+.section-solutions .align-right {
+  margin-top: 20px;
+  text-align: left;
+}
+.section-solutions .align-right img {
+  max-width: 20vw;
+  margin-left: 10px;
+}
+@media (min-width: 48em) {
+  .section-solutions .half .flex-wrap.no-btm {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .section-solutions .half .flex-wrap.no-btm .flex-wrap.col {
+    justify-content: flex-end;
+  }
+  .section-solutions .align-right {
+    text-align: right;
   }
 }
 
@@ -2014,6 +2036,27 @@ tbody tr:first-of-type td {
 }
 .table-light.other.large-team td:nth-of-type(2):before {
   content: "UrbanLease";
+}
+
+.table-light.other.small-teams td:nth-of-type(1):before {
+  content: "UrbanStudio";
+}
+.table-light.other.small-teams td:nth-of-type(2):before {
+  content: "UrbanDesk";
+}
+
+.table-light.other.freelancers td:nth-of-type(1):before {
+  content: "UrbanClub";
+}
+.table-light.other.freelancers td:nth-of-type(2):before {
+  content: "UrbanDesk";
+}
+
+.table-light.other.meetings td:nth-of-type(1):before {
+  content: "UrbanMeet";
+}
+.table-light.other.meetings td:nth-of-type(2):before {
+  content: "UrbanClub";
 }
 
 .ourSpaces .level .two-thirds {
@@ -2456,6 +2499,31 @@ nav .bx-menu.rotate-icon {
   padding: 1em;
 }
 
+.r-tabs-accordion-title .mobile-only {
+  font-size: 1.3em;
+  padding: 2.5vw 5vw;
+  border-bottom: 1px solid #cbd5d0;
+  position: relative;
+}
+.r-tabs-accordion-title .mobile-only:after {
+  content: "⌜";
+  position: absolute;
+  right: 3vw;
+  top: calc(50% - 13px);
+  transform: rotate(-135deg);
+  width: 20px;
+  height: 20px;
+  font-size: 1.3em;
+}
+
+.r-tabs-accordion-title.r-tabs-state-active .mobile-only {
+  border-bottom-color: #FAF6F0;
+}
+.r-tabs-accordion-title.r-tabs-state-active .mobile-only:after {
+  transform: rotate(45deg);
+  top: calc(50% - 7px);
+}
+
 /* Accordion responsive breakpoint - change per page/tabsgroup */
 @media only screen and (min-width: 1024px) {
   .facilitiesAmenities .r-tabs .r-tabs-nav,
@@ -2480,7 +2548,6 @@ nav .bx-menu.rotate-icon {
 }
 
 .home .centered-hero {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2549,10 +2616,8 @@ nav .bx-menu.rotate-icon {
   border-top: 1px solid #cbd5d0;
 }
 .home .tabs-urban-solutions .mobile-only {
-  font-size: 21px;
-  margin-bottom: 0;
+  font-size: 1em;
   line-height: 1em;
-  padding: 1em;
 }
 .home .tabs-urban-solutions .mobile-only i {
   font-family: "reckless_neuemedium", serif;
@@ -2561,19 +2626,16 @@ nav .bx-menu.rotate-icon {
   line-height: 0.95em;
 }
 .home .tabs-urban-solutions .r-tabs-accordion-title .mobile-only {
-  font-size: 2em;
-  padding: 2.5vw 5vw;
-  border-bottom: 1px solid #cbd5d0;
-  position: relative;
+  font-size: 1.5em;
 }
-.home .tabs-urban-solutions .r-tabs-accordion-title .mobile-only:after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
+.home .tabs-urban-solutions .r-tabs-accordion-title .mobile-only i {
+  margin-top: 0px;
 }
 .home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .mobile-only {
   border-bottom-color: #FAF6F0;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .mobile-only:after {
+  transform: rotate(45deg);
 }
 .home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanStudio {
   background-color: #EBE198;
@@ -2705,9 +2767,6 @@ nav .bx-menu.rotate-icon {
   background-color: #BAE2A6;
 }
 @media (min-width: 48em) {
-  .home .tabs-urban-solutions .tab-content {
-    min-height: 50vh;
-  }
   .home .tabs-urban-solutions .illustration {
     margin-top: 0;
     display: flex;
@@ -2730,6 +2789,11 @@ nav .bx-menu.rotate-icon {
   .home .tabs-urban-solutions .quantity,
   .home .tabs-urban-solutions .sign {
     font-size: 4vw;
+  }
+}
+@media (min-width: 64em) {
+  .home .tabs-urban-solutions .tab-content {
+    min-height: 50vh;
   }
 }
 @media (min-width: 94em) {
@@ -3076,6 +3140,9 @@ nav .bx-menu.rotate-icon {
   }
   .the-team .staff-wrapper .img-fit {
     height: 18vw;
+  }
+  .the-team .staff-wrapper .img-wrap {
+    padding: 0;
   }
 }
 
