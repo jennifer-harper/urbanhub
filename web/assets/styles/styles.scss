@@ -2985,13 +2985,19 @@ nav {
             }
         }
         .intro-text p{
-            font-size:$base-font-size*1.7;
+            font-size:$base-font-size*1.2;
             line-height: 1em;
             font-family:$header-font;
             margin-bottom: $base-font-size;
         }
+        @media #{$mq-medium}{
+            .intro-text p{
+                font-size:$base-font-size*1.7;
+            }
+        }
 
     }
+
     .star-banner .bg-green-light{
      fill:$green-dark
     }
@@ -3005,11 +3011,23 @@ nav {
             fill:$green-light;
         }
     }
+    .just-title-home{
+        h2{
+            margin-bottom: 0;
+        } 
+        .btn{
+            margin-top: 6vw;
+        } 
 
 
-    @media #{$mq-desktop}{
-        .just-title-home h2 {
-            max-width: 60%;
+        @media #{$mq-medium}{
+            align-items: flex-end;
+        }
+
+        @media #{$mq-desktop}{
+        h2 {
+                max-width: 60%;
+            }
         }
     }
 }
@@ -3023,6 +3041,7 @@ nav {
             font-size: 21px;
             margin-bottom: 0;
             line-height: 1em;
+            padding: 1em;
             i{
                 font-family: $serif-feature;
                 font-style: normal;
@@ -3031,29 +3050,49 @@ nav {
             }
         }
 
+        .r-tabs-accordion-title{
+            .mobile-only{
+                font-size: $base-font-size*2;
+                padding:$base*.5 $base;
+                border-bottom: 1px solid $grey;
+                position: relative;;
+                &:after{
+                    content:'';
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+
+
         .r-tabs-accordion-title.r-tabs-state-active{
-            .mobile-only.UrbanStudio{
+            .mobile-only{
+                border-bottom-color: $light;
+        
+            }
+            .UrbanStudio{
                  background-color: $yellow-light;
+                 color:$orange
              }
              .UrbanSuite{
                  background-color: $green-light; 
              }
              .UrbanDesk{
                  background-color: $purple-light;
+                 color:$purple-dark
              }
              .UrbanClub{
                  background-color:$lime; 
              }
              .UrbanMeet{
                  background-color: $blue-light;
+                 color:$blue-dark
              }
              .UrbanLease{
                  background-color: $green-light;
              }
          }
-         .mobile-only{
-            padding:$base-font-size;
-        }
 
 
 
@@ -3211,6 +3250,7 @@ nav {
         }
 
         @media #{$mq-small}{
+            
             .tab-content{
                 min-height: 50vh;
             }

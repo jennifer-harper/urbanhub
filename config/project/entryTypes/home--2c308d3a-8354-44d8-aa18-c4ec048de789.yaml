@@ -115,6 +115,26 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13fd6ffa-3071-4421-a50b-504492830bcd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'To edit to edit the tab content go to Entries -> Channels -> Urban Solutions Slider/Tabs'
+            type: craft\fieldlayoutelements\Tip
+            uid: d1fbc04b-92fb-4bf8-9340-0436480717d2
+            userCondition: null
         name: 'Tabs Intro Section'
         uid: e62444a8-40ae-4258-9670-75336017433c
         userCondition: null

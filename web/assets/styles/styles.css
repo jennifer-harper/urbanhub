@@ -2506,10 +2506,15 @@ nav .bx-menu.rotate-icon {
   top: -35%;
 }
 .home .centered-hero .intro-text p {
-  font-size: 1.7em;
+  font-size: 1.2em;
   line-height: 1em;
   font-family: "eina_semiboldregular", sans-serif;
   margin-bottom: 1em;
+}
+@media (min-width: 64em) {
+  .home .centered-hero .intro-text p {
+    font-size: 1.7em;
+  }
 }
 .home .star-banner .bg-green-light {
   fill: #315844;
@@ -2522,6 +2527,17 @@ nav .bx-menu.rotate-icon {
 }
 .home .footer-banner .logo .logo-star {
   fill: #BAE2A6;
+}
+.home .just-title-home h2 {
+  margin-bottom: 0;
+}
+.home .just-title-home .btn {
+  margin-top: 6vw;
+}
+@media (min-width: 64em) {
+  .home .just-title-home {
+    align-items: flex-end;
+  }
 }
 @media (min-width: 85.375em) {
   .home .just-title-home h2 {
@@ -2536,6 +2552,7 @@ nav .bx-menu.rotate-icon {
   font-size: 21px;
   margin-bottom: 0;
   line-height: 1em;
+  padding: 1em;
 }
 .home .tabs-urban-solutions .mobile-only i {
   font-family: "reckless_neuemedium", serif;
@@ -2543,26 +2560,41 @@ nav .bx-menu.rotate-icon {
   margin-top: -1px;
   line-height: 0.95em;
 }
-.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .mobile-only.UrbanStudio {
+.home .tabs-urban-solutions .r-tabs-accordion-title .mobile-only {
+  font-size: 2em;
+  padding: 2.5vw 5vw;
+  border-bottom: 1px solid #cbd5d0;
+  position: relative;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title .mobile-only:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .mobile-only {
+  border-bottom-color: #FAF6F0;
+}
+.home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanStudio {
   background-color: #EBE198;
+  color: #DB6B34;
 }
 .home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanSuite {
   background-color: #BAE2A6;
 }
 .home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanDesk {
   background-color: #8885D8;
+  color: #272641;
 }
 .home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanClub {
   background-color: #D3E84C;
 }
 .home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanMeet {
   background-color: #6AC4D1;
+  color: #253C40;
 }
 .home .tabs-urban-solutions .r-tabs-accordion-title.r-tabs-state-active .UrbanLease {
   background-color: #BAE2A6;
-}
-.home .tabs-urban-solutions .mobile-only {
-  padding: 1em;
 }
 .home .tabs-urban-solutions .price {
   font-size: 20vw;

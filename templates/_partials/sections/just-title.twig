@@ -2,5 +2,19 @@
         {% if entry.heading7 %}
                 {{entry.heading7}}
         {% endif %}
+
+        {% for block in entry.button %}
+            {% if block.type == 'groupFields' %}
+            {% if block.buttonPageLink[0].url is defined and block.buttonPageLink[0].url !=" " %}
+            <div>
+                {% embed '_partials/button' %}
+                    {% block class %}{{buttonClass}}{% endblock %}
+                    {% block title %}{{block.buttonText}} {% endblock %}
+                    {% block url %}{{block.buttonPageLink[0].url}} {% endblock %}
+                {% endembed %} 
+            </div>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
     </div>
 
