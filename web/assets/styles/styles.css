@@ -77,7 +77,6 @@ body {
   background-color: #FAF6F0;
   color: #315844;
   font-family: "commuters-sans", sans-serif;
-  font-weight: 400;
   font-size: 1em;
   line-height: 1.5em;
 }
@@ -1538,7 +1537,6 @@ footer {
 }
 .contact div.sm div:last-of-type {
   font-family: "eina_semiboldregular", sans-serif;
-  font-weight: bold;
 }
 .contact div.sm div:last-of-type p {
   margin-bottom: 0;
@@ -2595,6 +2593,7 @@ nav .bx-menu.rotate-icon {
 }
 .home .centered-hero .h1-wrap .hero-special {
   position: absolute;
+  display: none;
 }
 .home .centered-hero .h1-wrap .hero-special.one {
   left: 0%;
@@ -2606,6 +2605,11 @@ nav .bx-menu.rotate-icon {
   width: 100px;
   right: -3%;
   top: -35%;
+}
+@media (min-width: 48em) {
+  .home .centered-hero .h1-wrap .hero-special {
+    display: block;
+  }
 }
 .home .centered-hero .intro-text p {
   font-size: 1.2em;

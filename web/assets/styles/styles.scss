@@ -112,7 +112,7 @@ body {
   background-color:$light;
 color: $base-font;
   font-family: $body-font;
-  font-weight: 400;
+//   font-weight: 400;
   font-size: $base-font-size;
   line-height: $base-font-size*1.5;
 
@@ -1763,6 +1763,7 @@ footer{
 .contact{
     h3{
         margin-top: $sm;
+
         &:first-of-type{
             margin-top:0;
         }
@@ -1782,7 +1783,6 @@ footer{
         justify-content: space-between;
         div:last-of-type{
             font-family: $header-font;
-            font-weight:bold;
             p{
                 margin-bottom: 0;
             }
@@ -3060,7 +3060,7 @@ nav {
             position: relative;
             .hero-special{
                 position: absolute;
-
+                display: none;
                 &.one{
                     left:0%;
                     width: 200px;
@@ -3071,6 +3071,9 @@ nav {
                     width: 100px;
                     right:-3%;
                     top: -35%;
+                }
+                @media #{$mq-small}{
+                    display: block
                 }
             }
         }
