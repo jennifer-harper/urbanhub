@@ -3,7 +3,6 @@
 {% set docTitle = 'Stories' %} 
 {% set metaDesc = entry.metaDescription %} 
 {% set page = craft.entries().section('storiesPage').all() %} 
-
 {% set storiesPost = craft.entries().section('stories').orderBy('postDate desc').all() %}
 
 
@@ -24,39 +23,40 @@
         {% block class %} bg-light {% endblock %}
     {% endembed %}
 
-<div class="bg-lime ">
-    <div class="flex-wrap third-wrap img-wrap wrap">
-        {% for post in storiesPost %}
-            <div class="third flex-wrap col flex-jc-sb story-wrap">
-                <a href='{{ post.url }}' class="pod">
+        <div class="bg-lime blog-feed">
+            <div class="flex-wrap third-wrap img-wrap wrap">
+                {% for post in storiesPost %}
+                    <div class="third flex-wrap col flex-jc-sb story-wrap">
+                        <a href='{{ post.url }}' class="pod">
 
-                    {% set images = post.image.all() %}
-                    {% if images %}
-                    {% for image in images %}
-                        <div class="">
-                            <img src="{{ image.getUrl}}" alt="{{ image.alt }}" class="img-fit">
-                        </div>
-                    {% endfor %}
-                    {% endif %}
+                            {% set images = post.image.all() %}
+                            {% if images %}
+                            {% for image in images %}
+                                <div class="">
+                                    <img src="{{ image.getUrl}}" alt="{{ image.alt }}" class="img-fit">
+                                </div>
+                            {% endfor %}
+                            {% endif %}
 
-                    <h3>{{post.title}}</h3>
-                    {% if post.pageIntro %}
-                        {{post.pageIntro}}
-                    {% endif %}
-                    {% if post.pageIntroParagraph %}
-                        {{post.pageIntroParagraph}}  
-                    {% endif %}
-                </a> 
+                            <div class="content-wrapper">
+                                <h3>{{post.title}}</h3>
+                                {% if post.pageIntro %}
+                                    {{post.pageIntro}}
+                                {% endif %}
+                            </div>
+                        </a> 
 
-                {% embed '_partials/button' %}
-                {% block class %}{{buttonClassContrast}}{% endblock %}
-                {% block title %}Find out more{% endblock %}
-                {% block url %}{{ post.url }}{% endblock %}
-                {% endembed %}         
+                        {% embed '_partials/button' %}
+                        {% block class %}{{buttonClassContrast}}{% endblock %}
+                        {% block title %}Find out more{% endblock %}
+                        {% block url %}{{ post.url }}{% endblock %}
+                        {% endembed %}         
+                    </div>
+                {% endfor %}
             </div>
-        {% endfor %}
-    </div>
-</div>
+        </div>
+
+
    {% include '_partials/footer/social-media.twig' %}
     {% include '_partials/footer/contact-section.twig' %}
   {% endfor %} 

@@ -1,21 +1,124 @@
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "stories limeTheme" } %} 
+{% set bodyAttributes ={ class: "story limeTheme" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %} 
 
-{% set buttonClass = "lime" %}
+{% set buttonClass = "green" %}
 {% set buttonClassContrast = "green" %}
 
 {% set main = "bg-lime" %}
 {% set contrast = "bg-green" %}
 {% set footer = "bg-lime" %}
 
+{% set currentEntryId = entry.id %}
+{% set storiesPost = craft.entries().section('stories').id('not ' ~ currentEntryId).orderBy('postDate desc').all() %}
+
 {% block content %} 
-  
-    <div class="pad-all">
-        {{entry.pageTitle}}  
-        {{entry.pageIntro}}
-        {{entry.pageIntroParagraph}}  
+    <div class="flex-wrap solutions-mask bg-lime">
+        {% set image = entry.image.one() %}
+        {% if image %}
+            <div class="half mask-wrapper" style="background-image:url({{ image.getUrl() }})">
+                {% include '_partials/masks/right-mask.twig' %}
+                {% include '_partials/masks/bottom-mask.twig' %}
+            </div>
+        {% else %}
+                <div class="half mask-wrapper">
+                    {% include '_partials/masks/right-mask.twig' %}
+                    {% include '_partials/masks/bottom-mask.twig' %}
+                </div>
+        {% endif %}
+
+        <div class="pad-all half flex-wrap col center-style no-btm">  
+            {{entry.postDate | date('d F Y')}}
+            {% if entry.pageTitle %}
+                    {{entry.pageTitle}}
+            {% endif %}
+        </div>
+    </div>
+
+    <div class="pad-all flex-wrap blog-content-wrap">
+        <div class="third">
+            <div class="intro-text">
+                Follow us
+            </div>
+            <ul class="flex-wrap row">
+            <li><a href="{{businessInformation.facebook}}" href="_blank" >{% include '_partials/svgs/facebook.twig' %}</a></li>
+            <li><a href="{{businessInformation.instagram}}" href="_blank"   >{% include '_partials/svgs/instagram.twig' %}</a></li>
+            <li><a href="{{businessInformation.facebook}}" href="_blank" >{% include '_partials/svgs/x.twig' %}</a></li>
+        </ul>
+        </div>
+
+        <div class="blog-content">
+            <div class="header-intro">
+                {% if entry.pageIntro %}
+                    {{entry.pageIntro}}
+                {% endif %}
+            </div>
+
+            {% set images = entry.image2.all() %}
+            {% if images %}
+            {% for image in images %}
+                <div class="">
+                    <img src="{{ image.getUrl}}" alt="{{ image.alt }}" class="img-fit">
+                </div>
+            {% endfor %}
+            {% endif %}
+
+
+            {% if entry.pageIntroParagraph %}
+                {{entry.pageIntroParagraph}}  
+            {% endif %} 
+        </div>
+    </div>
+
+    {% embed '_partials/sections/star-banner-section.twig' %}
+        {% block class %} {{contrast}} no-top bg-light{% endblock %}
+    {% endembed %}
+
+
+    <div class="bg-lime blog-feed">
+        <div class="pad-all no-bottom align-left just-title-home flex-wrap flex-jc-sb ">
+            <h2>Read <i>Next</i></h2>
+
+            <div>
+                {% embed '_partials/button' %}
+                    {% block class %}{{buttonClassContrast}}{% endblock %}
+                    {% block title %}All stories{% endblock %}
+                    {% block url %}/stories{% endblock %}
+                {% endembed %} 
+            </div>
+        </div>
+
+        <div class="flex-wrap third-wrap img-wrap wrap">
+            {% for post in storiesPost %}
+                <div class="third flex-wrap col flex-jc-sb story-wrap">
+                    <a href='{{ post.url }}' class="pod">
+
+                        {% set images = post.image.all() %}
+                        {% if images %}
+                        {% for image in images %}
+                            <div class="">
+                                <img src="{{ image.getUrl}}" alt="{{ image.alt }}" class="img-fit">
+                            </div>
+                        {% endfor %}
+                        {% endif %}
+
+                        <div class="content-wrapper">
+                            <h3>{{post.title}}</h3>
+                            {% if post.pageIntro %}
+                                {{post.pageIntro}}
+                            {% endif %}
+                        </div>
+                    </a> 
+
+                    {% embed '_partials/button' %}
+                    {% block class %}{{buttonClassContrast}}{% endblock %}
+                    {% block title %}Find out more{% endblock %}
+                    {% block url %}{{ post.url }}{% endblock %}
+                    {% endembed %}         
+                </div>
+            {% endfor %}
+        </div>
     </div>
 
     {% include '_partials/footer/social-media.twig' %}

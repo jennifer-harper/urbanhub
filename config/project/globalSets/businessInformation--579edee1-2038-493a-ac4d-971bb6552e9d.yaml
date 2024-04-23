@@ -16,26 +16,44 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
-        name: Information
-        uid: 8d5fdb9f-d972-4ad9-9b52-30f1bbdbe3be
-        userCondition: null
-      -
-        elementCondition: null
-        elements:
           -
             elementCondition: null
-            fieldUid: 94ae2f64-db35-47c0-907e-b853e95b3ce5 # Heading
+            fieldUid: c90d6d87-a43b-46cd-bca8-d634794723fc # Facebook
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 756da4f7-2c1d-47d9-bca4-69b66630bd35
+            uid: e97da23c-3103-4bee-860a-025aa0ae6350
             userCondition: null
             warning: null
             width: 100
-        name: 'Slider Title'
-        uid: 7514e8cd-15a3-4356-a9e3-2f78682e53a6
+          -
+            elementCondition: null
+            fieldUid: b75e7a02-75d5-4cc0-b393-073d25ca4714 # Instagram
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 424ef75f-a162-4589-9d9b-03cafeb1b502
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9375f2ff-8a06-4428-bbb6-de754ee5348c # Twitter / X
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df830e06-babb-41ff-b6fa-17ff5e5c0c16
+            userCondition: null
+            warning: null
+            width: 100
+        name: Information
+        uid: 8d5fdb9f-d972-4ad9-9b52-30f1bbdbe3be
         userCondition: null
       -
         elementCondition: null
@@ -114,6 +132,24 @@ fieldLayouts:
             width: 100
         name: 'Contact Information'
         uid: 6398f4da-98e8-4a7c-aceb-6b64f6b0c8c2
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 94ae2f64-db35-47c0-907e-b853e95b3ce5 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 756da4f7-2c1d-47d9-bca4-69b66630bd35
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Slider Title'
+        uid: 7514e8cd-15a3-4356-a9e3-2f78682e53a6
         userCondition: null
       -
         elementCondition: null

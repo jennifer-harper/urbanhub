@@ -342,6 +342,7 @@ h3{
   h1{
     font-size:$base-font-size*4.8; 
   }
+  .story h1,
   h2{
     font-size:$base-font-size*3.8; 
   }
@@ -359,6 +360,7 @@ h3{
     h1{
       font-size:$base-font-size*5.5; 
     }
+    .story h1,
     h2{
       font-size:$base-font-size*4; 
     }
@@ -398,6 +400,7 @@ h3{
     h1{
         font-size:$base-font-size*7.5; 
     }
+    .story h1,
     h2{
         font-size:$base-font-size*5; 
     }
@@ -1669,6 +1672,12 @@ ul li a .social-media{
         }
     }
 
+    .bg-light{
+        .light{
+            fill:$lime;
+        }
+    }
+
     .slider-btn-wrapper {
         .swiper-button-prev,
         .swiper-button-next{
@@ -2614,7 +2623,7 @@ nav {
                     display: flex;
                     flex-direction: column;
                     // align-items: center;
-                    padding: 0 2vw;
+                    padding: 2vw;
                     border-bottom: 1px solid $grey;
                     svg{
                         max-width: 50%;
@@ -2645,7 +2654,7 @@ nav {
             padding: 20px;
             transition: all 0.5s ease;
             z-index: 10;
-            background-color: $light;
+            // background-color: $light;
             height: calc(100vh - 80px);
             overflow: scroll;
         }
@@ -3610,16 +3619,40 @@ nav {
     }
 }
 
+
+// blog related
+
 .stories {
     h1 i{
         font-family: $header-font;
+    }
+
+    @media #{$mq-figma}{
+        .text-center.max-hero p:last-of-type{
+            max-width: 34vw;
+        }
+
+        .text-center.max-hero .intro-text p{
+            max-width: 36vw;
+        }
+    }
+    @media #{$mq-large}{
+        .text-center.max-hero .intro-text p{
+            max-width: 25vw;
+        }
+    }
+}
+
+.blog-feed{
+    h2{
+        margin-bottom: 0;
     }
     .third-wrap.img-wrap{
         padding-top:calc($base - 1vw);
         padding-bottom:calc($base - 1vw);
         h3{
             margin-top:$md;
-            margin-bottom: $md;
+            margin-bottom: $md*.5;
         }
     } 
     .flex-wrap.third.story-wrap{
@@ -3628,6 +3661,20 @@ nav {
     }
     .centered-hero .pad-all{
         padding-bottom: 0;
+    }
+    .just-title-home {
+        align-items: flex-end;
+    }
+
+    .story-wrap{
+        .btn{
+            margin-top:20px;
+        }
+    }
+    @media #{$mq-small}{
+       .content-wrapper{
+            max-width: 75%;
+        }
     }
 
     @media #{$mq-medium}{
@@ -3639,6 +3686,7 @@ nav {
             max-width:50%;
         }
     }
+
     @media #{$mq-figma}{
         .third-wrap.img-wrap{
             padding-bottom:calc($base - 2vw);
@@ -3648,17 +3696,77 @@ nav {
             max-width:33.333%;
             margin-bottom: 1vw;
         }
-
-        .text-center.max-hero p:not(.btn p){
-            max-width: 36vw;
-        }
-    }
-    @media #{$mq-retina}{
-        .text-center.max-hero p:not(.btn p){
-            max-width: 32vw;
+        .story-wrap{
+            .btn{
+                margin-top:1vw;
+            }
         }
     }
 }
+
+.story{
+    nav .navbar .nav-links,
+    nav .navbar .links .x .sub-menu,   
+    nav .navbar{
+        background-color: $lime;
+    }
+    nav .navbar .links .x .sub-menu .illustration-fill{
+        fill:$light;
+    }
+    .mask-wrapper{
+        svg{
+            fill:$lime;
+        }
+    }
+    nav .links li.x,
+    nav .navbar .links .x .solutions-sub-menu li {
+        border-color:$light;
+    }
+    h1{
+        margin-top:1vw
+    }
+
+    .blog-content-wrap{
+        flex-direction:column-reverse;
+        .blog-content{
+            img,
+            .header-intro{
+                margin-bottom: 3vw;
+            } 
+        }
+    }
+
+
+    @media #{$mq-medium}{
+        .blog-content-wrap{
+            flex-direction:row;
+        
+            .blog-content{
+                max-width: 66%;
+                padding-left: 6vw;
+            } 
+        }
+    }
+    
+
+}
+
+.stories,
+.story{
+    .img-fit{
+        height:80vw;
+    }
+    @media #{$mq-medium}{
+        .img-fit{
+            height:30vw;
+        }
+    }
+}
+
+// blog related
+
+
+
 
 .sustain-wellbeing,
 .stories{

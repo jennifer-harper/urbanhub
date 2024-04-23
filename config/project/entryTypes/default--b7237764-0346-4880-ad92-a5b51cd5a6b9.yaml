@@ -81,9 +81,21 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: c093fd38-7d2d-4d3d-b514-a314fa8fd189 # Page Intro Paragraph
+            fieldUid: 83c78d90-8c41-4ef1-a2ef-1c5110162342 # Image
             instructions: null
             label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ce872222-b5a9-4573-bf99-fbfc040c0ffc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c093fd38-7d2d-4d3d-b514-a314fa8fd189 # Page Intro Paragraph
+            instructions: null
+            label: 'Blog main content'
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
