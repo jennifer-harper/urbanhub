@@ -164,6 +164,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #315844;
   z-index: 1;
   position: relative;
+  font-weight: unset;
 }
 @media (min-width: 94em) {
   h1, h2, h3, h4, h5, h6 {
