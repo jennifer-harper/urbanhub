@@ -3103,13 +3103,17 @@ nav {
     .just-title-home{
         h2{
             margin-bottom: 0;
+            text-align: center;
         } 
         .btn{
             margin-top: 6vw;
         } 
-
+        align-items: center;
 
         @media #{$mq-medium}{
+            h2{
+                text-align: left;
+            } 
             align-items: flex-end;
         }
 

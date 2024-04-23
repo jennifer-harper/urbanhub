@@ -2630,8 +2630,12 @@ nav .bx-menu.rotate-icon {
 .home .footer-banner .logo .logo-star {
   fill: #BAE2A6;
 }
+.home .just-title-home {
+  align-items: center;
+}
 .home .just-title-home h2 {
   margin-bottom: 0;
+  text-align: center;
 }
 .home .just-title-home .btn {
   margin-top: 6vw;
@@ -2639,6 +2643,9 @@ nav .bx-menu.rotate-icon {
 @media (min-width: 64em) {
   .home .just-title-home {
     align-items: flex-end;
+  }
+  .home .just-title-home h2 {
+    text-align: left;
   }
 }
 @media (min-width: 85.375em) {
