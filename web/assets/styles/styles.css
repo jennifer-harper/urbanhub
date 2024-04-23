@@ -2265,7 +2265,7 @@ nav .navbar .sub-menu li .header-intro p {
 nav .navbar .sub-menu li .content {
   display: flex;
   flex-direction: column;
-  padding: 2vw;
+  padding: 1vw 2vw;
   border-bottom: 1px solid #cbd5d0;
 }
 nav .navbar .sub-menu li .content svg {
@@ -2286,6 +2286,7 @@ nav .navbar .nav-links {
   padding: 20px;
   transition: all 0.5s ease;
   z-index: 10;
+  background-color: #FAF6F0;
   height: calc(100vh - 80px);
   overflow: scroll;
 }
