@@ -1,8 +1,13 @@
-dateModified: 1713916962
+dateModified: 1713922853
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: null
+  template: null
+  transportSettings:
+    messageStream: ''
+    token: $POSTMARK
+  transportType: craftcms\postmark\Adapter
 fs:
   hardDisk:
     hasUrls: true
@@ -246,10 +251,31 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from urbanhub'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: jennifer@ambitious.co.nz
+  contact-form-honeypot:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      honeypotParam: honeypooh
   copy:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
 system:
   edition: solo
   live: true

@@ -36,7 +36,7 @@
         </div>
     </div>
 
-    <div class="pad-all flex-wrap blog-content-wrap">
+    <div class="pad-all flex-wrap blog-content-wrap bg-light">
         <div class="third">
             <div class="intro-text">
                 Follow us
@@ -121,8 +121,13 @@
         </div>
     </div>
 
-    {% include '_partials/footer/social-media.twig' %}
-    {% include '_partials/footer/contact-section.twig' %}
+    {% embed '_partials/footer/social-media.twig' %}
+        {% block css %}bg-light {% endblock %}
+    {% endembed %} 
 
+    {% embed '_partials/footer/contact-section.twig' %}
+        {% block class %}bg-light {% endblock %}
+    {% endembed %} 
+    
 {% endblock %}
 

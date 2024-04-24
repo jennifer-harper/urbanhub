@@ -701,6 +701,7 @@ ul li a .social-media {
   display: flex;
   margin-top: 3vw;
 }
+.btn span,
 .btn a {
   padding: 0.5em;
   display: flex;
@@ -712,10 +713,12 @@ ul li a .social-media {
   transition-timing-function: ease-in;
 }
 @media (min-width: 94em) {
+  .btn span,
   .btn a {
     border-radius: 3vw;
   }
 }
+.btn span p,
 .btn a p {
   color: #FAF6F0;
   font-weight: 500;
@@ -727,11 +730,13 @@ ul li a .social-media {
   white-space: nowrap;
   text-transform: capitalize;
 }
+.btn span div,
 .btn a div {
   background-color: #BAE2A6;
   border-radius: 5vw;
   padding: 0.2em 1em;
 }
+.btn span div svg,
 .btn a div svg {
   fill: #315844;
   width: 1.6em;
@@ -2484,7 +2489,13 @@ nav .bx-menu.rotate-icon {
   nav .navbar .nav-links.show3 .links .community-sub-menu {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+  }
+  nav .navbar .nav-links.show1 .links .solutions-sub-menu {
+    margin: 20px 0 40px 0;
+  }
+  nav .navbar .nav-links.show2 .links .environment-sub-menu,
+  nav .navbar .nav-links.show3 .links .community-sub-menu {
+    margin: 50px 0 0 0;
   }
   nav .navbar .nav-links.show2 .links .environment-arrow,
   nav .navbar .nav-links.show1 .links .solutions-arrow,
@@ -2987,6 +2998,10 @@ nav .bx-menu.rotate-icon {
   }
 }
 
+.the-building {
+  position: relative;
+  background-color: #6AC4D1;
+}
 .the-building nav .navbar .links .x .sub-menu,
 .the-building nav .navbar .nav-links,
 .the-building nav .navbar {
@@ -3105,6 +3120,10 @@ nav .bx-menu.rotate-icon {
   }
 }
 
+.story {
+  position: relative;
+  background-color: #D3E84C;
+}
 .story nav .navbar .nav-links,
 .story nav .navbar .links .x .sub-menu,
 .story nav .navbar {
@@ -3339,6 +3358,10 @@ nav .bx-menu.rotate-icon {
   }
 }
 
+.contact-us {
+  position: relative;
+  background-color: #BAE2A6;
+}
 .contact-us nav .navbar .links .x .sub-menu,
 .contact-us nav .navbar .nav-links,
 .contact-us nav .navbar {
@@ -3355,8 +3378,17 @@ nav .bx-menu.rotate-icon {
   border-bottom-color: #315844;
   border-right-color: #315844;
 }
+.contact-us nav .links li.x {
+  border-color: #FAF6F0;
+}
+.contact-us nav .navbar .links .x .solutions-sub-menu li {
+  border-color: #FAF6F0;
+}
 .contact-us .hero {
   padding-top: 3vw;
+}
+.contact-us .hero .form-wrapper {
+  padding: 3vw;
 }
 @media (min-width: 64em) {
   .contact-us .hero p:not(.btn p) {
@@ -3490,6 +3522,97 @@ nav .bx-menu.rotate-icon {
   .thank-you .icon-title img {
     width: 15vw;
     margin-bottom: -5vw;
+  }
+}
+
+input#honeypooh {
+  display: none;
+}
+
+.contact-form .form-layout textarea,
+.contact-form .form-layout input,
+.contact-form .form-layout div {
+  width: 100%;
+  font-family: "commuters-sans", sans-serif;
+}
+.contact-form .form-layout textarea,
+.contact-form .form-layout input {
+  padding: 0.7em 0;
+  border-width: 0;
+  border-bottom-color: #cbd5d0 !important;
+  border-bottom: 1px solid;
+  border-radius: 0;
+  background-color: transparent;
+  outline-color: #BAE2A6;
+  outline-width: 1px;
+}
+.contact-form .form-layout label,
+.contact-form .form-layout input {
+  padding-left: 10px;
+}
+.contact-form .form-layout.message,
+.contact-form .form-layout div {
+  margin-top: 20px;
+}
+.contact-form button {
+  border-width: 0;
+  background-color: transparent;
+  border-radius: 3vw;
+  font-family: "commuters-sans", sans-serif;
+  font-size: 1em;
+}
+@media (min-width: 48em) {
+  .contact-form .flex-wrap {
+    flex-direction: row;
+  }
+  .contact-form .form-layout {
+    margin-bottom: 3vw;
+  }
+  .contact-form .form-layout.message,
+  .contact-form .form-layout div {
+    margin-top: 0;
+  }
+  .contact-form .form-layout div:first-of-type {
+    margin-right: 20px;
+  }
+  .contact-form .form-layout div:last-of-type {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 64em) {
+  .contact-form .flex-wrap {
+    flex-direction: column;
+  }
+  .contact-form .form-layout {
+    margin-bottom: 0;
+  }
+  .contact-form .form-layout.message,
+  .contact-form .form-layout div {
+    margin-top: 20px;
+  }
+  .contact-form .form-layout div:first-of-type {
+    margin-right: 0px;
+  }
+  .contact-form .form-layout div:last-of-type {
+    margin-left: 0px;
+  }
+}
+@media (min-width: 85.375em) {
+  .contact-form .flex-wrap {
+    flex-direction: row;
+  }
+  .contact-form .form-layout {
+    margin-bottom: 3vw;
+  }
+  .contact-form .form-layout.message,
+  .contact-form .form-layout div {
+    margin-top: 0;
+  }
+  .contact-form .form-layout div:first-of-type {
+    margin-right: 20px;
+  }
+  .contact-form .form-layout div:last-of-type {
+    margin-left: 20px;
   }
 }
 

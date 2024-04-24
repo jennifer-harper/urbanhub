@@ -808,6 +808,7 @@ ul li a .social-media{
 .btn{
     display: flex;
     margin-top: 3vw;
+    span,
     a{
         padding: $base-font-size*.5;
         display: flex;
@@ -2932,7 +2933,15 @@ nav {
         .navbar .nav-links.show3 .links .community-sub-menu {
             display: flex;
             flex-direction: column;
-            margin-top: 20px;
+        }
+
+        .navbar .nav-links.show1 .links .solutions-sub-menu{
+            margin: 20px 0 40px 0;
+        }
+
+        .navbar .nav-links.show2 .links .environment-sub-menu,
+        .navbar .nav-links.show3 .links .community-sub-menu{
+            margin: 50px 0 0 0;
         }
 
         .navbar .nav-links.show2 .links .environment-arrow,
@@ -3560,6 +3569,8 @@ nav {
 }
 
 .the-building{
+    position: relative;
+    background-color:$blue-light;
     nav .navbar .links .x .sub-menu,
     nav .navbar .nav-links,
     nav .navbar{
@@ -3707,6 +3718,8 @@ nav {
 }
 
 .story{
+    position: relative;
+    background-color: $lime;
     nav .navbar .nav-links,
     nav .navbar .links .x .sub-menu,   
     nav .navbar{
@@ -4009,6 +4022,11 @@ nav {
 //contact-related
 
 .contact-us{
+    position: relative;
+    background-color: $green-light;
+
+
+
     nav .navbar .links .x .sub-menu,
     nav .navbar .nav-links,
     nav .navbar{
@@ -4025,8 +4043,20 @@ nav {
         }
     }
 
+    nav .links li.x{
+        border-color:$light;
+    }
+
+        nav .navbar .links .x .solutions-sub-menu li {
+           border-color:$light;
+        }
+
+
     .hero{
         padding-top:$md;
+        .form-wrapper{
+            padding:3vw;
+        }
         @media #{$mq-medium}{
             p:not(.btn p){
                 max-width: 80%;
@@ -4187,3 +4217,103 @@ nav {
     }
 }
   
+
+input#honeypooh{ display: none; }
+
+.contact-form{
+    .form-layout{
+        textarea,
+        input,
+        div{
+            width: 100%;
+            font-family: $body-font;
+        }
+        textarea,
+        input{
+            padding: $base-font-size*.7 0;
+            border-width:0;
+            border-bottom-color:$grey !important;
+            border-bottom: 1px solid;
+            border-radius: 0;
+            background-color: transparent;
+            outline-color:$green-light;
+            outline-width: 1px;
+        }
+
+        label,
+        input{
+            padding-left: 10px;
+        }
+
+        &.message,
+        div{
+            margin-top:20px;
+        }
+    }
+
+    button{
+        border-width: 0;
+        background-color: transparent;
+        border-radius: 3vw;
+        font-family: $body-font; 
+        font-size: $base-font-size;
+    }
+    
+    @media #{$mq-small}{
+        .flex-wrap{
+            flex-direction: row;
+        }
+        .form-layout{
+            margin-bottom: 3vw;
+            &.message,
+            div{
+                margin-top: 0;
+            }
+            div:first-of-type{
+                margin-right: 20px;
+            }
+            div:last-of-type{
+                margin-left: 20px;
+            }
+        }
+    }
+
+    @media #{$mq-medium}{
+        .flex-wrap{
+            flex-direction: column;
+        }
+        .form-layout{
+            margin-bottom:0;
+            &.message,
+            div{
+                margin-top: 20px;
+            }
+            div:first-of-type{
+                margin-right: 0px;
+            }
+            div:last-of-type{
+                margin-left: 0px;
+            }
+        }
+    }
+
+    @media #{$mq-desktop}{
+        .flex-wrap{
+            flex-direction: row;
+        }
+        .form-layout{
+            margin-bottom: 3vw;
+            &.message,
+            div{
+                margin-top: 0;
+            }
+            div:first-of-type{
+                margin-right: 20px;
+            }
+            div:last-of-type{
+                margin-left: 20px;
+            }
+        }
+    }
+
+}

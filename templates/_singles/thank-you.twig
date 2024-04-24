@@ -11,7 +11,7 @@
 
 {% block content %} 
 
-        <div class="pad-all text-center ">
+        <div class="pad-all no-top text-center ">
         <div class="icon-title">
             <img src="/uploads/images/celebrate-icon.svg" alt="">
             {% if entry.pageTitle %}
@@ -20,25 +20,35 @@
         </div>
 
             <div class="max">
+
+
+                {% if craft.app.session.hasFlash('notice') %}
+                <span>{{ craft.app.request.getQueryParam('from') }}</span>
                 <div class="intro-text">
-                    {% if entry.introParagraph %}
-                        {{entry.introParagraph}}
-                    {% endif %}
+                {% if entry.introParagraph %}
+                {{entry.introParagraph}}
+                {% endif %}
                 </div>
                 {% if entry.paragraph %}
-                    {{entry.paragraph}}
+                {{entry.paragraph}}
                 {% endif %}
+                {% elseif craft.app.session.hasFlash('error') %}
+                <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
+                {% endif %}
+
+
             </div>
 
             <div>
                 {% embed '_partials/button' %}
                     {% block class %}{{buttonClassContrast}}{% endblock %}
                     {% block title %}Back to home{% endblock %}
-                    {% block url %}/home{% endblock %}
+                    {% block url %}/{% endblock %}
                 {% endembed %} 
             </div>
         </div>
-        <div class="contact"></div>
+
 
 {% endblock %}
+
 

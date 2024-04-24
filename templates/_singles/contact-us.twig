@@ -34,7 +34,7 @@
             {% endif %}
         </div>
     </div>
-    <div class="half bg-light pad-all">
+    <div class="half bg-light form-wrapper">
         {% if entry.heading6 %}
             {{entry.heading6}}
         {% endif %}
@@ -49,16 +49,21 @@
     {% embed '_partials/sections/star-banner-section.twig' %}
         {% block class %}{{main}}{% endblock %}
     {% endembed %}
+
+
     {% include '_partials/sections/solutions-mask-contact.twig' %}
 
     
 {% embed '_partials/sections/just-title.twig' %}
-    {% block allClass %}contact-title pad-sides{% endblock %}
+    {% block allClass %}contact-title pad-sides bg-light flex-wrap{% endblock %}
 {% endembed %}
 
-    {% include '_partials/footer/contact-section.twig' %}
+    {% embed '_partials/footer/contact-section.twig' %}
+ {% block class %} bg-light {% endblock %}
+
+{% endembed %}
      {% embed '_partials/footer/map.twig' %}
-     {% block class %} pad-all no-top {% endblock %}
+        {% block class %} pad-all no-top bg-light {% endblock %}
      {% endembed %}
   {% endfor %} 
 {% endblock %}

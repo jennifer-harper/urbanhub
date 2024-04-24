@@ -20,17 +20,40 @@
     {% embed '_partials/hero/centered-hero.twig' %}
         {% block class %} {{main }}{% endblock %}
     {% endembed %}
-    {% include '_partials/sections/solutions-mask.twig' %}
-    {% include '_partials/sections/centered-section.twig' %}
-    {% include '_partials/sections/star-banner-section.twig' %}
+
+
+    {% embed '_partials/sections/solutions-mask.twig' %}
+        {% block pageClass %} bg-light {% endblock %}
+    {% endembed %} 
+
+
+    {% embed '_partials/sections/centered-section.twig' %}
+        {% block class %} bg-light {% endblock %}
+    {% endembed %}
+
+    {% embed '_partials/sections/star-banner-section.twig' %}
+        {% block class %} bg-light {% endblock %}
+    {% endembed %} 
+
     {% embed '_partials/sections/solutions-contrast-sm.twig' %}
         {% block class %} {{main }}{% endblock %}
         {% block colCount %} third{% endblock %}
     {% endembed %}
-    {% include '_partials/footer/social-media.twig' %}
-    {% include '_partials/footer/contact-section.twig' %}
+
+
+    {% embed '_partials/footer/social-media.twig' %}
+        {% block css %}bg-light {% endblock %}
+    {% endembed %} 
+
+    {% embed '_partials/footer/contact-section.twig' %}
+        {% block class %}bg-light {% endblock %}
+    {% endembed %} 
+
+
+
+
      {% embed '_partials/footer/map.twig' %}
-     {% block class %}pad-all no-top{% endblock %}
+        {% block class %}pad-all no-top bg-light{% endblock %}
      {% endembed %}
   {% endfor %} 
 {% endblock %}
