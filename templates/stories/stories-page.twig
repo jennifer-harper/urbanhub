@@ -27,7 +27,7 @@
             <div class="flex-wrap third-wrap img-wrap wrap">
                 {% for post in storiesPost %}
                     <div class="third flex-wrap col flex-jc-sb story-wrap">
-                        <a href='{{ post.url }}' class="pod">
+                        <a href='/stories/{{ post.slug }}' class="pod">
 
                             {% set images = post.image.all() %}
                             {% if images %}
