@@ -17,12 +17,13 @@ return GeneralConfig::create()
     // Prevent generated URLs from including "index.php"
     ->omitScriptNameInUrls()
     // Enable Dev Mode (see https://craftcms.com/guides/what-dev-mode-does)
-    // ->devMode(App::env('DEV_MODE') ?? false)
-    ->devMode(false)
+    ->devMode(App::env('DEV_MODE') ?? false)
+    // ->devMode(false)
     // Preload Single entries as Twig variables
     ->preloadSingles()
     // Allow administrative changes
-    ->allowAdminChanges(App::env('ALLOW_ADMIN_CHANGES') ?? false)
+    // ->allowAdminChanges(App::env('ALLOW_ADMIN_CHANGES') ?? false)
+    ->allowAdminChanges(true)
     // Disallow robots
     ->disallowRobots(App::env('DISALLOW_ROBOTS') ?? false)
     // Prevent user enumeration attacks
