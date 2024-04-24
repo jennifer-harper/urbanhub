@@ -1,0 +1,44 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "thank-you greenTheme " } %} 
+{% set docTitle = 'Thank you' %} 
+
+{% set buttonClass = "green" %}
+{% set buttonClassContrast = "green" %}
+{% set main = "bg-green-dark" %}
+{% set contrast = "bg-green-light" %}
+{% set footer = "bg-green-dark" %}
+
+
+{% block content %} 
+
+        <div class="pad-all text-center ">
+        <div class="icon-title">
+            <img src="/uploads/images/celebrate-icon.svg" alt="">
+            {% if entry.pageTitle %}
+                {{entry.pageTitle}}
+            {% endif %}
+        </div>
+
+            <div class="max">
+                <div class="intro-text">
+                    {% if entry.introParagraph %}
+                        {{entry.introParagraph}}
+                    {% endif %}
+                </div>
+                {% if entry.paragraph %}
+                    {{entry.paragraph}}
+                {% endif %}
+            </div>
+
+            <div>
+                {% embed '_partials/button' %}
+                    {% block class %}{{buttonClassContrast}}{% endblock %}
+                    {% block title %}Back to home{% endblock %}
+                    {% block url %}/home{% endblock %}
+                {% endembed %} 
+            </div>
+        </div>
+        <div class="contact"></div>
+
+{% endblock %}
+

@@ -1,0 +1,33 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "error greenTheme " } %} 
+{% set docTitle = 'Page does not exist' %} 
+
+{% set buttonClass = "green" %}
+{% set buttonClassContrast = "green" %}
+{% set main = "bg-green-dark" %}
+{% set contrast = "bg-green-light" %}
+{% set footer = "bg-green-dark" %}
+
+
+{% block content %} 
+
+        <div class="pad-all text-center">
+            <div class="icon-title">
+                <img src="/uploads/images/error-icon.svg" alt="">
+                <h1>404</h1>
+            </div>
+
+            <div class="intro-text">
+                <p>The page you are looking for doesn't exist</p>
+            </div>
+
+            <div>
+                {% embed '_partials/button' %}
+                    {% block class %}{{buttonClassContrast}}{% endblock %}
+                    {% block title %}Back to home{% endblock %}
+                    {% block url %}/{% endblock %}
+                {% endembed %} 
+            </div>
+        </div>
+        <div class="contact"></div>
+{% endblock %}

@@ -3663,9 +3663,7 @@ nav {
     .centered-hero .pad-all{
         padding-bottom: 0;
     }
-    .just-title-home {
-        align-items: flex-end;
-    }
+
 
     .story-wrap{
         .btn{
@@ -3679,6 +3677,9 @@ nav {
     }
 
     @media #{$mq-medium}{
+        .just-title-home {
+            align-items: flex-end;
+        }
         .third-wrap.img-wrap{
             padding-bottom:0;
         }
@@ -4085,6 +4086,104 @@ nav {
 }
 
 
+.thank-you,
+.error{
+    .pad-all.text-center{
+        min-height:calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .btn{
+        justify-content: center;
+        margin-top:0;
+    }
+
+    .icon-title{
+        position: relative;
+    }
 
 
+    @media #{$mq-medium}{
+        .max{
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    @media #{$mq-figma}{
+        .max{
+            max-width: 30%;
+
+        }
+    }
+}
+
+.error{
+    h1{
+        font-size: 50vw;
+    }
+
+    .icon-title{
+        position: relative;
+        img{
+            width: 50vw;
+            position: absolute;
+            left:calc(50% - 30vw);
+            bottom:0%;
+            z-index: 2;
+
+        }
+
+        @media #{$mq-medium}{
+            img{
+                width: 40%;
+                left:calc(50% - 20%);
+                bottom:0%;
+            }
+        }
+        @media #{$mq-figma}{
+            img{
+                width: 25%;
+                left:calc(50% - 12%);
+                bottom:0%;
+            }
+        }
+
+    }
+    @media #{$mq-medium}{
+        h1{
+            font-size: 30vw;
+        }
+    }
+    @media #{$mq-figma}{
+        h1{
+            font-size: 25vw;
+        }
+    }
+}
+
+.thank-you{
+    .icon-title{
+        img{
+            width: 15vw;
+        }
+        @media #{$mq-small}{
+            img{
+                width: 20vw;
+               margin-bottom: -6vw;
+               z-index: 2;
+                position: relative;
+            }
+        }
+        @media #{$mq-desktop}{
+            img{
+                width: 15vw;
+               margin-bottom: -5vw;
+
+            }
+        }
+    }
+}
   
