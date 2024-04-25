@@ -11,7 +11,7 @@
 window.onload = function () {
   $.ajax({
     type: 'GET',
-    url: 'urbanhub.ddev.site', // Replace with your URL
+    // url: 'urbanhub.ddev.site', // Replace with your URL
     beforeSend: function () {
       $('#loadingDiv').fadeIn(300)
     },
