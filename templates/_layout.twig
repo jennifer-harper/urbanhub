@@ -11,29 +11,37 @@
       {% do craft.app.view.registerCssFile('@web/assets/styles/styles.css') %}
     {% endblock %}
 </head>
-
-
-
-  
 <body {{ attr(bodyAttributes ?? {}) }} >
-  {% include '_partials/nav.twig' %}
-  <div class="body-wrapper">
-  {% block content %}
-  {% endblock %}
-  </div>
-    <div class="contact"></div>
+
+
+    <div id='loadingDiv'>
+        Please wait...
+    </div>
+
+
+    {# {% include '_partials/nav.twig' %} #}
+    <main class="body-wrapper" style="display: none;">
+        {% block content %}{% endblock %}
+        <div class="contact"></div>
+    </main>
     {% embed '_partials/footer/footer-banner.twig' %}
         {% block class %} {{footer}}{% endblock %}
     {% endembed %}
-  
+
   {% block scripts %}
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     {# <script src="https://kit.fontawesome.com/b3510dc66a.js" crossorigin="anonymous"></script> #}
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+   
+
     <script type="module" src="/assets/js/script.js"></script>
-    <script type="module" src="/assets/js/nav.js"></script>
+    {# <script type="module" src="/assets/js/nav.js"></script> #}
      <script type="module" src="/assets/js/footer.js"></script>
+     <script type="module" src="/assets/js/main.js"></script>
+
   {% endblock %}
+
 </body>
 </html>

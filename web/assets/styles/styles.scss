@@ -125,6 +125,22 @@ color: $base-font;
   }
 }
 
+//-------PAGE LOAD ANIMATION-----------//
+
+
+#loadingDiv {
+    display: none;
+    background-color: red;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10000;
+    position: fixed;
+}
+
+
+
+
+
 //-------HEADINGS AND TYPE-----------//
 
 a {

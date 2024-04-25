@@ -91,6 +91,15 @@ body {
   }
 }
 
+#loadingDiv {
+  display: none;
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+  z-index: 10000;
+  position: fixed;
+}
+
 a {
   color: #315844;
   transition-property: all;
