@@ -140,10 +140,23 @@ color: $base-font;
     align-items: center;
 }
 
-
-#hideMe{
-    display: none;
+.star-loader{
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    animation-duration: 3000ms;
 }
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
 
 
 //-------HEADINGS AND TYPE-----------//
@@ -3592,6 +3605,13 @@ nav {
 .the-building{
     position: relative;
     background-color:$blue-light;
+
+    #loadingDiv{
+        background-color:$blue-light;
+        svg.star-loader{
+            fill:$light;
+        }
+    }
     nav .navbar .links .x .sub-menu,
     nav .navbar .nav-links,
     nav .navbar{
@@ -3741,6 +3761,11 @@ nav {
 .story{
     position: relative;
     background-color: $lime;
+
+    #loadingDiv{
+        background-color: $lime;
+    }
+
     nav .navbar .nav-links,
     nav .navbar .links .x .sub-menu,   
     nav .navbar{

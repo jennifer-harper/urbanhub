@@ -103,10 +103,21 @@ body {
   align-items: center;
 }
 
-#hideMe {
-  display: none;
+.star-loader {
+  animation-name: spin;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3000ms;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 a {
   color: #315844;
   transition-property: all;
@@ -3018,6 +3029,12 @@ nav .bx-menu.rotate-icon {
   position: relative;
   background-color: #6AC4D1;
 }
+.the-building #loadingDiv {
+  background-color: #6AC4D1;
+}
+.the-building #loadingDiv svg.star-loader {
+  fill: #FAF6F0;
+}
 .the-building nav .navbar .links .x .sub-menu,
 .the-building nav .navbar .nav-links,
 .the-building nav .navbar {
@@ -3138,6 +3155,9 @@ nav .bx-menu.rotate-icon {
 
 .story {
   position: relative;
+  background-color: #D3E84C;
+}
+.story #loadingDiv {
   background-color: #D3E84C;
 }
 .story nav .navbar .nav-links,
