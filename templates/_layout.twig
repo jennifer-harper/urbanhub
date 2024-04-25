@@ -14,7 +14,11 @@
 <body {{ attr(bodyAttributes ?? {}) }} >
 
 
-    <div id='loadingDiv'></div>
+    <div id='loadingDiv'>
+       <svg class="star-loader" xmlns="http://www.w3.org/2000/svg" width="36" height="38" viewBox="0 0 36 38" fill="none">
+            <path d="M28.9145 3.69646L17.5315 0L15.6343 12.7959L6.93509 3.92784L0 13.4727L11.1285 19.0087L0.0115618 24.5447L6.94666 34.0895L15.6459 25.2157L17.5488 38L28.9261 34.3035L22.9512 22.844L36 25.0422V12.9694L22.9338 15.1676L28.9145 3.69646Z" />
+        </svg>
+    </div>
 
     <div id="hideMe" class="body-wrapper">
         {% include '_partials/nav.twig' %}

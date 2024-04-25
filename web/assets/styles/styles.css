@@ -93,11 +93,14 @@ body {
 
 #loadingDiv {
   display: none;
-  background-color: #315844;
+  background-color: #FAF6F0;
   height: 100vh;
   width: 100vw;
   z-index: 10000;
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #hideMe {
@@ -3373,6 +3376,9 @@ nav .bx-menu.rotate-icon {
 
 .contact-us {
   position: relative;
+  background-color: #BAE2A6;
+}
+.contact-us #loadingDiv {
   background-color: #BAE2A6;
 }
 .contact-us nav .navbar .links .x .sub-menu,

@@ -8,23 +8,24 @@
 //   })
 
 //////////////
-
-$.ajax({
-  type: 'GET',
-  url: 'urbanhub.ddev.site', // Replace with your URL
-  beforeSend: function () {
-    $('#loadingDiv').fadeIn(300)
-  },
-  success: function (data) {
-    console.log(data)
-  },
-  complete: function () {
-    setTimeout(function () {
-      $('#loadingDiv').fadeOut(300)
-      $('#hideMe').css('display', 'block')
-    }, 1000)
-  },
-})
+window.onload = function () {
+  $.ajax({
+    type: 'GET',
+    url: 'urbanhub.ddev.site', // Replace with your URL
+    beforeSend: function () {
+      $('#loadingDiv').fadeIn(300)
+    },
+    success: function (data) {
+      console.log(data)
+    },
+    complete: function () {
+      setTimeout(function () {
+        $('#loadingDiv').fadeOut(300)
+        $('#hideMe').css('display', 'block')
+      }, 500)
+    },
+  })
+}
 
 ///////////////////////////////////
 

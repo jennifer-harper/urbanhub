@@ -130,11 +130,14 @@ color: $base-font;
 
 #loadingDiv {
     display: none;
-    background-color: $green-dark;
+    background-color: $light;
     height: 100vh;
     width: 100vw;
     z-index: 10000;
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -4042,6 +4045,11 @@ nav {
 .contact-us{
     position: relative;
     background-color: $green-light;
+
+    #loadingDiv{
+        background-color: $green-light; 
+    }
+
     nav .navbar .links .x .sub-menu,
     nav .navbar .nav-links,
     nav .navbar{
