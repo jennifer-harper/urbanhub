@@ -22,7 +22,7 @@ $.ajax({
     setTimeout(function () {
       $('#loadingDiv').fadeOut(300)
       $('#hideMe').css('display', 'block')
-    }, 500)
+    }, 1000)
   },
 })
 

@@ -16,9 +16,9 @@
 
     <div id='loadingDiv'></div>
 
-    <div id="hideMe">
+    <div id="hideMe" class="body-wrapper">
         {% include '_partials/nav.twig' %}
-        <main class="body-wrapper">
+        <main >
             {% block content %}{% endblock %}
             <div class="contact"></div>
         </main>
