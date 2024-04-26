@@ -2,6 +2,7 @@
 
 // Function to calculate and log page load time
 function logPageLoadTime() {
+  $('#loadingDiv').css('display', 'flex')
   // Measure time when DOMContentLoaded event is fired
   var domContentLoadedTime = window.performance.now()
   console.log('DOM Content Loaded Time:', domContentLoadedTime.toFixed(2), 'ms')
@@ -24,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 // window.onload = function () {
-//   $('#prep').css('display', 'none')
 //   // Calculate page load time using performance.timing
 //   var pageLoadTime = window.performance.timing.loadEventEnd - window.performance.timing.navigationStart
 //   console.log('Page Load Time:', pageLoadTime, 'ms')
@@ -36,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function () {
 // }
 
 // window.onload = function () {
-
 //   var startTime = performance.now() // Record start time
 
 //   $.ajax({
