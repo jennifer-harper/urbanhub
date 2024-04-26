@@ -2,7 +2,6 @@
 
 // Function to calculate and log page load time
 function logPageLoadTime() {
-  $('#loadingDiv').css('display', 'flex')
   // Measure time when DOMContentLoaded event is fired
   var domContentLoadedTime = window.performance.now()
   console.log('DOM Content Loaded Time:', domContentLoadedTime.toFixed(2), 'ms')
