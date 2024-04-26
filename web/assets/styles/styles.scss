@@ -145,6 +145,8 @@ color: $base-font;
     animation-iteration-count: infinite;
     animation-timing-function: linear; 
     animation-duration: 3000ms;
+    width: 100px;
+    height: 100px;
 }
 
 @keyframes spin {
