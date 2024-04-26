@@ -1,0 +1,294 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "about-you greenTheme svgStyle" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('aboutYou').all() %} 
+
+{% set buttonClass = "green" %}
+{% set buttonClassContrast = "green" %}
+
+{# //background color #}
+{% set main = "bg-green-light" %}
+{# //alternate star color #}
+{% set contrast = "bg-green-dark" %}
+{% set footer = "bg-green-dark" %}
+
+
+
+{% block content %} 
+  {% for entry in page %} 
+
+  <div class="centered-hero start bg-green-light">
+    <div class="pad-all">
+        <div class="text-center max-hero">
+            {% if entry.pageTitle %}
+                {{entry.pageTitle}}
+            {% endif %}
+            {% if entry.pageIntro %}
+                <div class="intro-text">
+                    {{entry.pageIntro}}
+                </div>
+            {% endif %}
+
+            {% if entry.pageIntroParagraph %}
+                {{entry.pageIntroParagraph }}
+            {% endif %}
+        </div>
+
+        {% embed '_partials/button' %}
+            {% block class %}{{ buttonClass }} centered {% endblock %}
+            {% block title %}Get Started{% endblock %}
+            {% block url %}#getstarted{% endblock %}
+        {% endembed %}
+    </div>
+</div>
+
+
+<div class="centered-hero bg-green-light" id="getstarted">
+    <div class="pad-all">
+        <div class="text-center max-hero">
+            <h2>Do you need space <i>sometimes</i> or <i>all the time</i>?</h2>
+        </div>
+
+        <div class="flex-wrap section-solutions">     
+                <div class="pad-all third box bg-light"> 
+                    <div class="feature-pad">
+                        <h3>Sometimes</h3>
+                    </div>
+                    <div class="flex-wrap style row flex-jc-sb">
+                        <div class="flex-wrap col flex-jc-fe">
+                            {% embed '_partials/button' %}
+                                {% block class %}{{ buttonClass }}{% endblock %}
+                                {% block title %}Continue{% endblock %}
+                                {% block url %}#space{% endblock %}
+                            {% endembed %}
+                        </div>
+                        
+                        <div class="align-right">
+                             <img  src="/uploads/images/illustration26-watch.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                        <div class="pad-all third box bg-light"> 
+                    <div class="feature-pad">
+                        <h3>Full Time</h3>
+                    </div>
+                    <div class="flex-wrap  style row flex-jc-sb">
+                        <div class="flex-wrap col flex-jc-fe">
+                            {% embed '_partials/button' %}
+                                {% block class %}{{ buttonClass }}{% endblock %}
+                               {% block title %}Continue{% endblock %}
+                                {% block url %}#space{% endblock %}
+                            {% endembed %}
+                        </div>
+                        
+                        <div class="align-right">
+                            <img  src="/uploads/images/illustration26-watch.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="centered-hero bg-green-light" id="space">
+    <div class="pad-all">
+        <div class="text-center max-hero">
+            <h2>What <i>sized</i> team are you ?</h2>
+        </div>
+
+        <div class="flex-wrap section-solutions">     
+                <div class="pad-all third box bg-light"> 
+                    <div class="feature-pad">
+                        <h3>I'm a big team</h3>
+                    </div>
+                    <div class="flex-wrap style row flex-jc-sb">
+                        <div class="flex-wrap col flex-jc-fe">
+                            {% embed '_partials/button' %}
+                                {% block class %}{{ buttonClass }}{% endblock %}
+                                {% block title %}Continue{% endblock %}
+                                {% block url %}#team{% endblock %}
+                            {% endembed %}
+                        </div>
+                        <div class="align-right">
+                             <img  src="/uploads/images/illustration4-keys.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pad-all third box bg-light"> 
+                    <div class="feature-pad">
+                        <h3>I'm a small team</h3>
+                    </div>
+                    <div class="flex-wrap  style row flex-jc-sb">
+                        <div class="flex-wrap col flex-jc-fe">
+                            {% embed '_partials/button' %}
+                                {% block class %}{{ buttonClass }}{% endblock %}
+                               {% block title %}Continue{% endblock %}
+                                {% block url %}#team{% endblock %}
+                            {% endembed %}
+                        </div>
+                        
+                        <div class="align-right">
+                            <img  src="/uploads/images/illustration4-keys.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pad-all third box bg-light"> 
+                    <div class="feature-pad">
+                        <h3>It's just me</h3>
+                    </div>
+                    <div class="flex-wrap  style row flex-jc-sb">
+                        <div class="flex-wrap col flex-jc-fe">
+                            {% embed '_partials/button' %}
+                                {% block class %}{{ buttonClass }}{% endblock %}
+                               {% block title %}Continue{% endblock %}
+                                {% block url %}#team{% endblock %}
+                            {% endembed %}
+                        </div>
+                        
+                        <div class="align-right">
+                            <img  src="/uploads/images/illustration4-keys.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<div class="centered-hero bg-green-light" id="team">
+    <div class="pad-all">
+        <div class="text-center max-hero">
+            <h2>Do you value <i>privacy</i> or <i>collaboration</i>?</h2>
+        </div>
+
+        <div class="flex-wrap section-solutions">     
+                <div class="pad-all third box bg-light"> 
+                    <div class="feature-pad">
+                        <h3>Privacy</h3>
+                    </div>
+                    <div class="flex-wrap style row flex-jc-sb">
+                        <div class="flex-wrap col flex-jc-fe">
+                            {% embed '_partials/button' %}
+                                {% block class %}{{ buttonClass }}{% endblock %}
+                                {% block title %}Continue{% endblock %}
+                                {% block url %}#results{% endblock %}
+                            {% endembed %}
+                        </div>
+                        <div class="align-right">
+                             <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pad-all third box bg-light"> 
+                    <div class="feature-pad">
+                        <h3>Collaboration</h3>
+                    </div>
+                    <div class="flex-wrap  style row flex-jc-sb">
+                        <div class="flex-wrap col flex-jc-fe">
+                            {% embed '_partials/button' %}
+                                {% block class %}{{ buttonClass }}{% endblock %}
+                               {% block title %}Continue{% endblock %}
+                                {% block url %}#results{% endblock %}
+                            {% endembed %}
+                        </div>
+                        
+                        <div class="align-right">
+                            <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="centered-hero bg-green-light" id="results">
+    <div class="pad-all">
+        <div class="text-center max-hero">
+            <h2>Best option for <i>you</i></h2>
+
+            <div class="pad-all flex-wrap center-style wrap">
+                <div class="third">
+                    <h3>Urban<i>Studio</i></h3>
+                    <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                    {% embed '_partials/button' %}
+                        {% block class %}{{ buttonClass }} centered{% endblock %}
+                        {% block title %}Find out more{% endblock %}
+                        {% block url %}/urban-studio{% endblock %}
+                    {% endembed %}
+                </div>
+                
+                <div class="third">
+                    <h3>Urban<i>Suite</i></h3>
+                    <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                    {% embed '_partials/button' %}
+                        {% block class %}{{ buttonClass }} centered{% endblock %}
+                        {% block title %}Find out more{% endblock %}
+                        {% block url %}/urban-suite{% endblock %}
+                    {% endembed %}
+                </div>
+                 <div class="third">
+                    <h3>Urban<i>Desk</i></h3>
+                    <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                    {% embed '_partials/button' %}
+                        {% block class %}{{ buttonClass }} centered{% endblock %}
+                        {% block title %}Find out more{% endblock %}
+                        {% block url %}/urban-desk{% endblock %}
+                    {% endembed %}
+                </div>
+
+                <div class="third">
+                    <h3>Urban<i>Club</i></h3>
+                    <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                    {% embed '_partials/button' %}
+                        {% block class %}{{ buttonClass }} centered{% endblock %}
+                        {% block title %}Find out more{% endblock %}
+                        {% block url %}/urban-club{% endblock %}
+                    {% endembed %}
+                </div>
+                <div class="third">
+                    <h3>Urban<i>Meet</i></h3>
+                    <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                    {% embed '_partials/button' %}
+                        {% block class %}{{ buttonClass }} centered{% endblock %}
+                        {% block title %}Find out more{% endblock %}
+                        {% block url %}/urban-meet{% endblock %}
+                    {% endembed %}
+                </div>
+                 <div class="third">
+                    <h3>Urban<i>Lease</i></h3>
+                    <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                    {% embed '_partials/button' %}
+                        {% block class %}{{ buttonClass }} centered{% endblock %}
+                        {% block title %}Find out more{% endblock %}
+                        {% block url %}/urban-lease{% endblock %}
+                    {% endembed %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="star-banner-wrapper pad-top-btm no-btm bg-green-light">
+    {% embed '_partials/svgs/star-banner.twig' %}
+        {% block contrastStar %} {{contrast}} {% endblock %}
+        {% block contrastStar2 %} {{contrast}} {% endblock %}
+        {% block contrastStar3 %} {{contrast}} {% endblock %}
+    {% endembed %}
+</div>
+
+  {% endfor %} 
+{% endblock %}
+
+
+{% block scripts %}
+{{ parent() }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://npmcdn.com/isotope-layout@3.0.6/dist/isotope.pkgd.js"></script>
+<script  type="module" src="/assets/js/isotope.js"></script>
+{% endblock %}

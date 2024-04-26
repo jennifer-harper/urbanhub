@@ -817,6 +817,10 @@ ul li a .social-media{
     align-items: flex-end; 
 }
 
+.flex-jc-fe{
+    justify-content: flex-end;
+}
+
 .align-items-stretch{
     align-items: stretch;
 }
@@ -4068,38 +4072,6 @@ nav {
 //contact-related
 
 .contact-us{
-    position: relative;
-    background-color: $green-light;
-
-    #loadingDiv{
-        background-color: $green-light; 
-    }
-
-    nav .navbar .links .x .sub-menu,
-    nav .navbar .nav-links,
-    nav .navbar{
-        background-color: $green-light;
-        .content{
-            .illustration-fill{
-                fill:$green-dark;
-            }
-
-        }
-        .x:hover .solutions-sub-menu  a{
-            border-bottom-color:$green-dark;
-            border-right-color:$green-dark;
-        }
-    }
-
-    nav .links li.x{
-        border-color:$light;
-    }
-
-        nav .navbar .links .x .solutions-sub-menu li {
-           border-color:$light;
-        }
-
-
     .hero{
         padding-top:$md;
         .form-wrapper{
@@ -4360,6 +4332,85 @@ input#honeypooh{ display: none; }
             }
             div:last-of-type{
                 margin-left: 20px;
+            }
+        }
+    }
+
+}
+
+.contact-us,
+.about-you{
+    position: relative;
+    background-color: $green-light;
+
+    #loadingDiv{
+        background-color: $green-light; 
+    }
+
+    nav .navbar .links .x .sub-menu,
+    nav .navbar .nav-links,
+    nav .navbar{
+        background-color: $green-light;
+        .content{
+            .illustration-fill{
+                fill:$green-dark;
+            }
+
+        }
+        .x:hover .solutions-sub-menu  a{
+            border-bottom-color:$green-dark;
+            border-right-color:$green-dark;
+        }
+    }
+
+    nav .links li.x{
+        border-color:$light;
+    }
+
+    nav .navbar .links .x .solutions-sub-menu li {
+        border-color:$light;
+    } 
+}
+
+
+.about-you{
+    .centered-hero{
+        min-height:calc(100vh - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    .section-solutions{
+        justify-content: center;
+        h3{
+            margin-bottom: 0;
+        }
+        .box{
+            margin: $base-font-size;
+        }
+        .align-right{
+            display: flex;
+        }
+
+    }
+    #results{
+        .pad-all{
+            padding-bottom: 0;
+        }
+        .third{
+            margin: 3vw 0;
+        }
+    }
+
+
+    @media #{$mq-small}{
+        .box .flex-wrap.style{
+            flex-direction: row;
+            justify-content: space-between;
+            .flex-wrap.col{
+                justify-content: flex-end;
+                
             }
         }
     }

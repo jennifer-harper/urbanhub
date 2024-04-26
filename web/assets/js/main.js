@@ -1,4 +1,4 @@
-////Function to calculate and log page load time
+//Function to calculate and log page load time
 function logPageLoadTime() {
   // Measure time when DOMContentLoaded event is fired
   var domContentLoadedTime = window.performance.now()
@@ -36,21 +36,20 @@ document.addEventListener('DOMContentLoaded', function () {
 //       console.log('Local Site Loading Time:', loadingTime.toFixed(2), 'ms')
 //       setTimeout(function () {
 //         $('#loadingDiv').fadeOut(100)
-//         $('#prep').css('display', 'block')
 //       }, 300)
 //     },
 //   })
 
-//     $.ajax({
-//       type: 'GET',
-//       url: 'https://urbanhub.frb.io',
-//       complete: function () {
-//         var endTime = performance.now() // Record end time
-//         var loadingTime = endTime - startTime // Calculate loading time in milliseconds
-//         console.log('Live Site Loading Time:', loadingTime.toFixed(2), 'ms')
+//   $.ajax({
+//     type: 'GET',
+//     url: 'https://urbanhub.frb.io',
+//     complete: function () {
+//       var endTime = performance.now() // Record end time
+//       var loadingTime = endTime - startTime // Calculate loading time in milliseconds
+//       console.log('Live Site Loading Time:', loadingTime.toFixed(2), 'ms')
 
-//         $('#loadingDiv').fadeOut(100)
-//         $('#prep').css('display', 'block')
-//       },
-//     })
+//       $('#loadingDiv').fadeOut(100)
+//       $('#prep').css('display', 'block')
+//     },
+//   })
 // }

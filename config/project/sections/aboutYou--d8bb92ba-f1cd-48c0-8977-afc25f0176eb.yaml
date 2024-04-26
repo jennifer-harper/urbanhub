@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: aboutYou
+name: 'About You'
+propagationMethod: all
+siteSettings:
+  2995eac9-2c30-433a-bd61-0390ff903010: # urbanhub
+    enabledByDefault: true
+    hasUrls: true
+    template: _singles/about-you.twig
+    uriFormat: about-you
+type: single

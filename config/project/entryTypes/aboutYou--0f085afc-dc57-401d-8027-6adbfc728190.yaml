@@ -1,0 +1,88 @@
+fieldLayouts:
+  cf6b4ee5-3d87-495e-9370-e29cf6687da9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 3eddd7d6-a696-4607-bded-4d8986b940d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 368e19da-aed2-4692-949d-976508166279 # Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e5603bf-f6a1-4b28-84bb-6983924bc896
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d199f8b1-8c10-441f-8951-d2f10491a634 # Page Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 480bb84a-e88c-4999-a356-1cd7c179d872
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c093fd38-7d2d-4d3d-b514-a314fa8fd189 # Page Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5388055b-bf12-4544-84a9-393cee69d62f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1db76e4a-20e4-4038-a2f0-6957ea9941ae
+        userCondition: null
+      -
+        elementCondition: null
+        name: Questionaire
+        uid: c95780ab-235b-4d6f-ba46-4f69026279c0
+        userCondition: null
+handle: aboutYou
+hasTitleField: false
+name: 'About You'
+section: d8bb92ba-f1cd-48c0-8977-afc25f0176eb # About You
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
