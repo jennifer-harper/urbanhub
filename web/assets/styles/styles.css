@@ -92,6 +92,7 @@ body {
 }
 
 #loadingDiv {
+  display: none;
   background-color: #FAF6F0;
   height: 100vh;
   width: 100vw;
