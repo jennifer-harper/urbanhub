@@ -4,9 +4,10 @@ window.onload = function () {
 
   $.ajax({
     type: 'GET',
+    url: 'urbanhub.frb.io',
     complete: function () {
       //   setTimeout(function () {
-      $('#loadingDiv').fadeOut(100)
+      $('#loadingDiv').fadeOut()
       $('#prep').css('display', 'block')
       //   }, 500)
     },
