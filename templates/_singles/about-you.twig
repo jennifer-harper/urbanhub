@@ -44,230 +44,202 @@
 </div>
 
 
-<div class="centered-hero bg-green-light" id="getstarted">
-    <div class="pad-all">
-        <div class="text-center max-hero">
-            <h2>Do you need space <i>sometimes</i> or <i>all the time</i>?</h2>
+
+
+{% macro btnItem(dataFilter, url) %}
+  <div class="btn green">
+    <button data-filter="{{ dataFilter }}" class="button">
+    <a href="{{ url }}">
+        <p>Continue</p>
+        <div>{% include '_partials/svgs/arrow.twig' %}</div> 
+    </a>
+    </button>
+  </div>
+{% endmacro %}
+
+<div class="filters">
+    <div class="centered-hero bg-green-light" id="getstarted">
+        <div class="pad-all">
+            <div class="text-center max-hero">
+                <h2>Do you need space <i>sometimes</i> or <i>all the time</i>?</h2>
+            </div>
+
+            <div class="flex-wrap section-solutions">     
+                    <div class="pad-all third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>Sometimes</h3>
+                        </div>
+                        <div class="flex-wrap style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                            {{ _self.btnItem('.sometimes', '#space') }}
+                            </div>
+                            
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration26-watch.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                            <div class="pad-all third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>Full Time</h3>
+                        </div>
+                        <div class="flex-wrap  style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                                {{ _self.btnItem('.fullTime', '#space') }}
+                            </div>
+                            
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration26-watch.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
+    </div>
 
-        <div class="flex-wrap section-solutions">     
-                <div class="pad-all third box bg-light"> 
-                    <div class="feature-pad">
-                        <h3>Sometimes</h3>
-                    </div>
-                    <div class="flex-wrap style row flex-jc-sb">
-                        <div class="flex-wrap col flex-jc-fe">
-                            {% embed '_partials/button' %}
-                                {% block class %}{{ buttonClass }}{% endblock %}
-                                {% block title %}Continue{% endblock %}
-                                {% block url %}#space{% endblock %}
-                            {% endembed %}
-                        </div>
-                        
-                        <div class="align-right">
-                             <img  src="/uploads/images/illustration26-watch.svg" alt="">
-                        </div>
-                    </div>
-                </div>
+    <div class="centered-hero bg-green-light" id="space">
+        <div class="pad-all">
+            <div class="text-center max-hero">
+                <h2>What <i>sized</i> team are you ?</h2>
+            </div>
 
-                        <div class="pad-all third box bg-light"> 
-                    <div class="feature-pad">
-                        <h3>Full Time</h3>
-                    </div>
-                    <div class="flex-wrap  style row flex-jc-sb">
-                        <div class="flex-wrap col flex-jc-fe">
-                            {% embed '_partials/button' %}
-                                {% block class %}{{ buttonClass }}{% endblock %}
-                               {% block title %}Continue{% endblock %}
-                                {% block url %}#space{% endblock %}
-                            {% endembed %}
+            <div class="flex-wrap section-solutions">     
+                    <div class="pad-all third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>I'm a big team</h3>
                         </div>
-                        
-                        <div class="align-right">
-                            <img  src="/uploads/images/illustration26-watch.svg" alt="">
+                        <div class="flex-wrap style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                                {{ _self.btnItem('.bigTeam', '#team') }}
+                            </div>
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration4-keys.svg" alt="">
+                            </div>
                         </div>
                     </div>
-                </div>
+
+                    <div class="pad-all third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>I'm a small team</h3>
+                        </div>
+                        <div class="flex-wrap  style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                                {{ _self.btnItem('.smallTeam', '#team') }}
+                            </div>
+                            
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration4-keys.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pad-all third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>It's just me</h3>
+                        </div>
+                        <div class="flex-wrap  style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                                {{ _self.btnItem('.single', '#team') }}
+                            </div>
+                            
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration4-keys.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="centered-hero bg-green-light" id="team">
+        <div class="pad-all">
+            <div class="text-center max-hero">
+                <h2>Do you value <i>privacy</i> or <i>collaboration</i>?</h2>
+            </div>
+
+            <div class="flex-wrap section-solutions">     
+                    <div class="pad-all third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>Privacy</h3>
+                        </div>
+                        <div class="flex-wrap style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                                {{ _self.btnItem('.privacy', '#results') }}
+                            </div>
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pad-all third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>Collaboration</h3>
+                        </div>
+                        <div class="flex-wrap  style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                                {{ _self.btnItem('.collaboration', '#results') }}
+                            </div>
+                            
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration20-hands.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
         </div>
     </div>
 </div>
 
-<div class="centered-hero bg-green-light" id="space">
-    <div class="pad-all">
-        <div class="text-center max-hero">
-            <h2>What <i>sized</i> team are you ?</h2>
-        </div>
-
-        <div class="flex-wrap section-solutions">     
-                <div class="pad-all third box bg-light"> 
-                    <div class="feature-pad">
-                        <h3>I'm a big team</h3>
-                    </div>
-                    <div class="flex-wrap style row flex-jc-sb">
-                        <div class="flex-wrap col flex-jc-fe">
-                            {% embed '_partials/button' %}
-                                {% block class %}{{ buttonClass }}{% endblock %}
-                                {% block title %}Continue{% endblock %}
-                                {% block url %}#team{% endblock %}
-                            {% endembed %}
-                        </div>
-                        <div class="align-right">
-                             <img  src="/uploads/images/illustration4-keys.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pad-all third box bg-light"> 
-                    <div class="feature-pad">
-                        <h3>I'm a small team</h3>
-                    </div>
-                    <div class="flex-wrap  style row flex-jc-sb">
-                        <div class="flex-wrap col flex-jc-fe">
-                            {% embed '_partials/button' %}
-                                {% block class %}{{ buttonClass }}{% endblock %}
-                               {% block title %}Continue{% endblock %}
-                                {% block url %}#team{% endblock %}
-                            {% endembed %}
-                        </div>
-                        
-                        <div class="align-right">
-                            <img  src="/uploads/images/illustration4-keys.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pad-all third box bg-light"> 
-                    <div class="feature-pad">
-                        <h3>It's just me</h3>
-                    </div>
-                    <div class="flex-wrap  style row flex-jc-sb">
-                        <div class="flex-wrap col flex-jc-fe">
-                            {% embed '_partials/button' %}
-                                {% block class %}{{ buttonClass }}{% endblock %}
-                               {% block title %}Continue{% endblock %}
-                                {% block url %}#team{% endblock %}
-                            {% endembed %}
-                        </div>
-                        
-                        <div class="align-right">
-                            <img  src="/uploads/images/illustration4-keys.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-        </div>
-    </div>
-</div>
-
-<div class="centered-hero bg-green-light" id="team">
-    <div class="pad-all">
-        <div class="text-center max-hero">
-            <h2>Do you value <i>privacy</i> or <i>collaboration</i>?</h2>
-        </div>
-
-        <div class="flex-wrap section-solutions">     
-                <div class="pad-all third box bg-light"> 
-                    <div class="feature-pad">
-                        <h3>Privacy</h3>
-                    </div>
-                    <div class="flex-wrap style row flex-jc-sb">
-                        <div class="flex-wrap col flex-jc-fe">
-                            {% embed '_partials/button' %}
-                                {% block class %}{{ buttonClass }}{% endblock %}
-                                {% block title %}Continue{% endblock %}
-                                {% block url %}#results{% endblock %}
-                            {% endembed %}
-                        </div>
-                        <div class="align-right">
-                             <img  src="/uploads/images/illustration20-hands.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pad-all third box bg-light"> 
-                    <div class="feature-pad">
-                        <h3>Collaboration</h3>
-                    </div>
-                    <div class="flex-wrap  style row flex-jc-sb">
-                        <div class="flex-wrap col flex-jc-fe">
-                            {% embed '_partials/button' %}
-                                {% block class %}{{ buttonClass }}{% endblock %}
-                               {% block title %}Continue{% endblock %}
-                                {% block url %}#results{% endblock %}
-                            {% endembed %}
-                        </div>
-                        
-                        <div class="align-right">
-                            <img  src="/uploads/images/illustration20-hands.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-        </div>
-    </div>
-</div>
-
+{% macro btnResult(url) %}
+  <div class="btn green centered">
+    <a href="{{ url }}">
+      <p>Continue</p>
+      <div>{% include '_partials/svgs/arrow.twig' %}</div> 
+    </a>
+  </div>
+{% endmacro %}
 
 <div class="centered-hero bg-green-light" id="results">
     <div class="pad-all">
+
         <div class="text-center max-hero">
             <h2>Best option for <i>you</i></h2>
 
-            <div class="pad-all flex-wrap center-style wrap">
-                <div class="third">
+            <div class="pad-all grid">
+                <div class="sometimes single privacy">
                     <h3>Urban<i>Studio</i></h3>
                     <img  src="/uploads/images/illustration20-hands.svg" alt="">
-                    {% embed '_partials/button' %}
-                        {% block class %}{{ buttonClass }} centered{% endblock %}
-                        {% block title %}Find out more{% endblock %}
-                        {% block url %}/urban-studio{% endblock %}
-                    {% endembed %}
+                   {{ _self.btnResult('urban-studio') }}
                 </div>
                 
-                <div class="third">
+                <div class="fullTime collaboration">
                     <h3>Urban<i>Suite</i></h3>
                     <img  src="/uploads/images/illustration20-hands.svg" alt="">
-                    {% embed '_partials/button' %}
-                        {% block class %}{{ buttonClass }} centered{% endblock %}
-                        {% block title %}Find out more{% endblock %}
-                        {% block url %}/urban-suite{% endblock %}
-                    {% endembed %}
+                   {{ _self.btnResult('urban-suite') }}
                 </div>
-                 <div class="third">
+                 <div class="sometimes single smallTeam">
                     <h3>Urban<i>Desk</i></h3>
                     <img  src="/uploads/images/illustration20-hands.svg" alt="">
-                    {% embed '_partials/button' %}
-                        {% block class %}{{ buttonClass }} centered{% endblock %}
-                        {% block title %}Find out more{% endblock %}
-                        {% block url %}/urban-desk{% endblock %}
-                    {% endembed %}
+                    {{ _self.btnResult('urban-desk') }}
                 </div>
 
-                <div class="third">
+                <div class="third bigTeam collaboration">
                     <h3>Urban<i>Club</i></h3>
                     <img  src="/uploads/images/illustration20-hands.svg" alt="">
-                    {% embed '_partials/button' %}
-                        {% block class %}{{ buttonClass }} centered{% endblock %}
-                        {% block title %}Find out more{% endblock %}
-                        {% block url %}/urban-club{% endblock %}
-                    {% endembed %}
+                   {{ _self.btnResult('urban-club') }}
                 </div>
-                <div class="third">
+                <div class="third bigTeam">
                     <h3>Urban<i>Meet</i></h3>
                     <img  src="/uploads/images/illustration20-hands.svg" alt="">
-                    {% embed '_partials/button' %}
-                        {% block class %}{{ buttonClass }} centered{% endblock %}
-                        {% block title %}Find out more{% endblock %}
-                        {% block url %}/urban-meet{% endblock %}
-                    {% endembed %}
+                    {{ _self.btnResult('urban-meet') }}
                 </div>
-                 <div class="third">
+                 <div class="third fullTime bigTeam">
                     <h3>Urban<i>Lease</i></h3>
                     <img  src="/uploads/images/illustration20-hands.svg" alt="">
-                    {% embed '_partials/button' %}
-                        {% block class %}{{ buttonClass }} centered{% endblock %}
-                        {% block title %}Find out more{% endblock %}
-                        {% block url %}/urban-lease{% endblock %}
-                    {% endembed %}
+                    {{ _self.btnResult('urban-lease') }}
                 </div>
             </div>
         </div>

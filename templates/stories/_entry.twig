@@ -12,6 +12,7 @@
 
 {% set currentEntryId = entry.id %}
 {% set currentEntry = craft.entries().id(currentEntryId).one() %}
+
 {% if currentEntry %}
     {% set postDateAsString = currentEntry.postDate|date('Y-m-d H:i:s') %}
     {% set storiesPost = craft.entries()

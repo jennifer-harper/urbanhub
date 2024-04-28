@@ -1018,6 +1018,15 @@ ul li a .social-media{
   
   }
 
+  //found on contact page form and about you page
+button{
+    border-width: 0;
+    background-color: transparent;
+    border-radius: 3vw;
+    font-family: $body-font; 
+    font-size: $base-font-size;
+}
+
 
 //-------Colors-----------//
 
@@ -4273,13 +4282,7 @@ input#honeypooh{ display: none; }
         }
     }
 
-    button{
-        border-width: 0;
-        background-color: transparent;
-        border-radius: 3vw;
-        font-family: $body-font; 
-        font-size: $base-font-size;
-    }
+
     
     @media #{$mq-small}{
         .flex-wrap{
@@ -4418,3 +4421,4 @@ input#honeypooh{ display: none; }
     }
 
 }
+

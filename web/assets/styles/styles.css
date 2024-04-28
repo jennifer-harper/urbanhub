@@ -877,6 +877,14 @@ ul li a .social-media {
   fill: #D3E84C;
 }
 
+button {
+  border-width: 0;
+  background-color: transparent;
+  border-radius: 3vw;
+  font-family: "commuters-sans", sans-serif;
+  font-size: 1em;
+}
+
 .bg-green-dark {
   background-color: #315844;
 }
@@ -3569,13 +3577,6 @@ input#honeypooh {
 .contact-form .form-layout.message,
 .contact-form .form-layout div {
   margin-top: 20px;
-}
-.contact-form button {
-  border-width: 0;
-  background-color: transparent;
-  border-radius: 3vw;
-  font-family: "commuters-sans", sans-serif;
-  font-size: 1em;
 }
 @media (min-width: 48em) {
   .contact-form .flex-wrap {

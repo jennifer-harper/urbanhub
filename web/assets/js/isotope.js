@@ -1,34 +1,38 @@
-// document.addEventListener('DOMContentLoaded', function () {
-//     var $grid = $('.grid').isotope({
-//       itemSelector: '.grid-item',
-//       layoutMode: 'fitRows',
-//       fitRows: {
-//         gutter: 20,
-//       },
-//       percentPosition: true,
-//       masonry: {
-//         // use element for option
-//         columnWidth: '.grid-sizer',
-//       },
-//     })
+// external js: isotope.pkgd.js
 
-//     // bind filter button click
-//     $('.filters-button-group').on('click', 'button', function () {
-//       var filterValue = $(this).attr('data-filter')
-//       $grid.isotope({ filter: filterValue })
-//     })
-//     // change is-checked class on buttons
-//     $('.button-group').each(function (i, buttonGroup) {
-//       var $buttonGroup = $(buttonGroup)
-//       $buttonGroup.on('click', 'button', function () {
-//         $buttonGroup.find('.is-checked').removeClass('is-checked')
-//         $(this).addClass('is-checked')
-//       })
-//     })
-//   })
+// init Isotope
+var $grid = $('.grid').isotope({
+  itemSelector: '.third',
+})
 
-//   jQuery(window).on('load', function () {
-//     $('.grid').isotope({
-//       itemSelector: '.grid-item',
-//     })
-//   })
+// store filter for each group
+var filters = []
+
+// change is-checked class on buttons
+$('.filters').on('click', 'button', function (event) {
+  var $target = $(event.currentTarget)
+  $target.toggleClass('is-checked')
+  var isChecked = $target.hasClass('is-checked')
+  var filter = $target.attr('data-filter')
+  if (isChecked) {
+    addFilter(filter)
+  } else {
+    removeFilter(filter)
+  }
+  // filter isotope
+  // group filters together, inclusive
+  $grid.isotope({ filter: filters.join(',') })
+})
+
+function addFilter(filter) {
+  if (filters.indexOf(filter) == -1) {
+    filters.push(filter)
+  }
+}
+
+function removeFilter(filter) {
+  var index = filters.indexOf(filter)
+  if (index != -1) {
+    filters.splice(index, 1)
+  }
+}
