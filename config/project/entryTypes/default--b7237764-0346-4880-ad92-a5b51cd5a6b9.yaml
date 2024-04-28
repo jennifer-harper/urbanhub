@@ -103,6 +103,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: e5b61af4-7baa-4d4d-8814-6dc66d180fe1 # Intro Paragraph
+            instructions: null
+            label: 'img url'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2ec6fda3-0be3-4df8-9401-c61026ca0157
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 35414b60-0900-4099-bb2a-dd2c4dcf9b23
         userCondition: null

@@ -11,7 +11,36 @@
 {% set footer = "bg-lime" %}
 
 {% set currentEntryId = entry.id %}
-{% set storiesPost = craft.entries().section('stories').id('not ' ~ currentEntryId).orderBy('postDate desc').all() %}
+{% set currentEntry = craft.entries().id(currentEntryId).one() %}
+{% if currentEntry %}
+    {% set postDateAsString = currentEntry.postDate|date('Y-m-d H:i:s') %}
+    {% set storiesPost = craft.entries()
+        .section('stories')
+        .id('not ' ~ currentEntryId)
+        .postDate('<' ~ postDateAsString)
+        .orderBy('postDate desc')
+        .limit(3)
+        .all() %}
+
+    {# If there are fewer than 3 previous posts, fetch additional recent posts to fill the gap #}
+    {% set missingPostsCount = 3 - storiesPost|length %}
+    {% if missingPostsCount > 0 %}
+        {% set additionalPosts = craft.entries()
+            .section('stories')
+            .id('not ' ~ currentEntryId)
+            .postDate('>' ~ postDateAsString)
+            .orderBy('postDate desc')
+            .limit(missingPostsCount)
+            .all() %}
+
+        {% set storiesPost = storiesPost|merge(additionalPosts) %}
+    {% endif %}
+{% else %}
+    {# Handle case where current entry is not found #}
+{% endif %}
+
+
+
 
 {% block content %} 
     <div class="flex-wrap solutions-mask bg-lime">

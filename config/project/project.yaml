@@ -1,4 +1,4 @@
-dateModified: 1714097684
+dateModified: 1714338382
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -274,6 +274,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.0
+  feed-me:
+    edition: standard
+    enabled: true
+    schemaVersion: 5.1.0.0
   postmark:
     edition: standard
     enabled: true
