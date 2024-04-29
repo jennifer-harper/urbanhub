@@ -62,6 +62,9 @@
         <div class="pad-all">
             <div class="text-center max-hero">
                 <h2>Do you need space <i>sometimes</i> or <i>all the time</i>?</h2>
+                {% if entry.heading %}
+                    {{entry.heading}}
+                {% endif %}
             </div>
 
             <div class="flex-wrap section-solutions button-group js-radio-button-group" data-filter-group="color">     
@@ -102,6 +105,9 @@
         <div class="pad-all">
             <div class="text-center max-hero">
                 <h2>What <i>sized</i> team are you ?</h2>
+                {% if entry.heading2 %}
+                    {{entry.heading2}}
+                {% endif %}
             </div>
 
             <div class="flex-wrap section-solutions button-group js-radio-button-group" data-filter-group="size">     
@@ -156,6 +162,9 @@
         <div class="pad-all">
             <div class="text-center max-hero">
                 <h2>Do you value <i>privacy</i> or <i>collaboration</i>?</h2>
+                {% if entry.heading3 %}
+                    {{entry.heading3}}
+                {% endif %}
             </div>
 
             <div class="flex-wrap section-solutions button-group js-radio-button-group" data-filter-group="shape">     

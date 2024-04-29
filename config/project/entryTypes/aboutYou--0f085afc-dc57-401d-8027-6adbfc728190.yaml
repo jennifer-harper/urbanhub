@@ -72,6 +72,43 @@ fieldLayouts:
         userCondition: null
       -
         elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4299af30-f9c7-48d6-922c-045249174b4a # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3976862d-6bac-4f2e-9ab3-e7783e67c632
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3e88506-f102-44b9-a5aa-a9a3a3225c95
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e3854bbb-1638-4a39-bd6a-ab2c0a42e483 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 648cd2c8-bf81-463d-b8fc-195e1cf206d4
+            userCondition: null
+            warning: null
+            width: 100
         name: Questionaire
         uid: c95780ab-235b-4d6f-ba46-4f69026279c0
         userCondition: null
