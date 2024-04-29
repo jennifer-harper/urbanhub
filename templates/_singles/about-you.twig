@@ -18,7 +18,7 @@
 {% block content %} 
   {% for entry in page %} 
 
-  {# <div class="centered-hero start bg-green-light">
+  <div class="centered-hero start bg-green-light">
     <div class="pad-all">
         <div class="text-center max-hero">
             {% if entry.pageTitle %}
@@ -41,12 +41,12 @@
             {% block url %}#getstarted{% endblock %}
         {% endembed %}
     </div>
-</div> #}
+</div>
 
 
 
 
-{# {% macro btnItem(dataFilter, url) %}
+ {% macro btnItem(dataFilter, url) %}
   <div class="btn green centered">
     <button data-filter="{{ dataFilter }}" class="button">
     <a href="{{ url }}">
@@ -58,13 +58,13 @@
 {% endmacro %}
 
 <div class="filters">
-    <div class="centered-hero bg-green-light" id="getstarted">
+    <div class="centered-hero bg-green-light ui-group" id="getstarted">
         <div class="pad-all">
             <div class="text-center max-hero">
                 <h2>Do you need space <i>sometimes</i> or <i>all the time</i>?</h2>
             </div>
 
-            <div class="flex-wrap section-solutions" data-filter-group="color">     
+            <div class="flex-wrap section-solutions button-group js-radio-button-group" data-filter-group="color">     
                     <div class="third box bg-light"> 
                         <div class="feature-pad">
                             <h3>Sometimes</h3>
@@ -80,7 +80,7 @@
                         </div>
                     </div>
 
-                            <div class=" third box bg-light"> 
+                    <div class=" third box bg-light"> 
                         <div class="feature-pad">
                             <h3>Full Time</h3>
                         </div>
@@ -98,18 +98,13 @@
         </div>
     </div>
 
-
-
-
-
-
-    <div class="centered-hero bg-green-light" id="space">
+    <div class="centered-hero bg-green-light ui-group" id="space">
         <div class="pad-all">
             <div class="text-center max-hero">
                 <h2>What <i>sized</i> team are you ?</h2>
             </div>
 
-            <div class="flex-wrap section-solutions" data-filter-group="size">     
+            <div class="flex-wrap section-solutions button-group js-radio-button-group" data-filter-group="size">     
                     <div class="third box bg-light"> 
                         <div class="feature-pad">
                             <h3>I'm a big team</h3>
@@ -157,13 +152,13 @@
         </div>
     </div>
 
-    <div class="centered-hero bg-green-light" id="team">
+    <div class="centered-hero bg-green-light ui-group" id="team">
         <div class="pad-all">
             <div class="text-center max-hero">
                 <h2>Do you value <i>privacy</i> or <i>collaboration</i>?</h2>
             </div>
 
-            <div class="flex-wrap section-solutions" data-filter-group="shape">     
+            <div class="flex-wrap section-solutions button-group js-radio-button-group" data-filter-group="shape">     
                     <div class="third box bg-light"> 
                         <div class="feature-pad">
                             <h3>Privacy</h3>
@@ -195,106 +190,70 @@
 
             </div>
         </div>
-    </div>
-</div> #}
-
-
-
-<div class="filters">
-
-  <div class="ui-group">
-    <h3>Color</h3>
-    <div class="button-group js-radio-button-group" data-filter-group="color">
-      <button class="button" data-filter=".sometimes">Sometimes</button>
-      <button class="button" data-filter=".fullTime">Fulltime</button>
-    </div>
-  </div>
-
-  <div class="ui-group">
-    <h3>Size</h3>
-    <div class="button-group js-radio-button-group" data-filter-group="size">
-      <button class="button" data-filter=".big">Big</button>
-      <button class="button" data-filter=".small">Small</button>
-      <button class="button" data-filter=".single">Single</button>
-    </div>
-  </div>
-
-  <div class="ui-group">
-    <h3>Shape</h3>
-    <div class="button-group js-radio-button-group" data-filter-group="shape">
-      <button class="button" data-filter=".privacy">Privacy</button>
-      <button class="button" data-filter=".collaboration">Collaboration</button>
-    </div>
-  </div>
-
+    </div> 
 </div>
 
 
-<div class="grid">
-<div class="grid-sizer"></div>
-  <div class="color-shape fullTime big privacy collaboration">UrbanSuite</div>
-  <div class="color-shape fullTime small privacy collaboration">UrbanStudio</div>
-  <div class="color-shape fullTime sometimes single collaboration">UrbanDesk</div>
-  <div class="color-shape sometimes single collaboration">UrbanClub</div>
-  <div class="color-shape sometimes small big privacy collaboration">UrbanMeet</div>
-  <div class="color-shape fullTime big privacy">UrbanLease</div>
-</div>
-
-
-
-{# {% macro btnResult(url) %}
+{% macro btnResult(url) %}
   <div class="btn green centered">
     <a href="{{ url }}">
       <p>Continue</p>
       <div>{% include '_partials/svgs/arrow.twig' %}</div> 
     </a>
   </div>
-{% endmacro %} #}
+{% endmacro %}
 
-{# <div class="centered-hero bg-green-light" id="results">
+<div class="centered-hero bg-green-light" id="results">
     <div class="pad-all">
-    
         <div class="text-center max-hero">
             <h2>Best option for <i>you</i></h2>
 
-            <div class="grid urban-result">
-                <div class="third fullTime bigTeam privacy collaboration">
+            <div class="grid">
+                <div class="grid-sizer"></div>
+                <div class="third color-shape fullTime bigTeam privacy collaboration">
                     <h3>Urban<i>Studio</i></h3>
                     <img  src="/uploads/images/UrbanStudio3.svg" alt="">
                    {{ _self.btnResult('urban-studio') }}
                 </div>
                 
-                <div class="third fullTime smallTeam privacy collaboration">
+                <div class="third  color-shape fullTime smallTeam privacy collaboration">
                     <h3>Urban<i>Suite</i></h3>
                     <img  src="/uploads/images/UrbanSuite3.svg" alt="">
                    {{ _self.btnResult('urban-suite') }}
                 </div>
-                 <div class="third sometimes fullTime single collaboration">
+                 <div class="third color-shape sometimes fullTime single collaboration">
                     <h3>Urban<i>Desk</i></h3>
                     <img  src="/uploads/images/UrbanDesk3.svg" alt="">
                     {{ _self.btnResult('urban-desk') }}
                 </div>
 
-                <div class="third sometimes single collaboration">
+                <div class="third color-shape sometimes single collaboration">
                     <h3>Urban<i>Club</i></h3>
                     <img  src="/uploads/images/UrbanClub3.svg" alt="">
                    {{ _self.btnResult('urban-club') }}
                 </div>
-                <div class="third sometimes privacy collaboration smallTeam bigTeam">
+                <div class="third color-shape sometimes privacy collaboration smallTeam bigTeam">
                     <h3>Urban<i>Meet</i></h3>
                     <img  src="/uploads/images/UrbanMeet3.svg" alt="">
                     {{ _self.btnResult('urban-meet') }}
                 </div>
-                 <div class="third fullTime bigTeam privacy">
+                 <div class="third color-shape fullTime bigTeam privacy">
                     <h3>Urban<i>Lease</i></h3>
                     <img  src="/uploads/images/UrbanLease3.svg" alt="">
                     {{ _self.btnResult('urban-lease') }}
                 </div>
-           
             </div>
+
         </div>
     </div>
-</div> #}
+</div> 
+
+
+
+
+
+
+
 
 <div class="star-banner-wrapper pad-top-btm no-btm bg-green-light">
     {% embed '_partials/svgs/star-banner.twig' %}
@@ -314,3 +273,45 @@
 <script src="https://npmcdn.com/isotope-layout@3.0.6/dist/isotope.pkgd.js"></script>
 <script  type="module" src="/assets/js/isotope.js"></script>
 {% endblock %}
+
+
+
+{# <div class="filters">
+  <div class="ui-group">
+    <h3>Color</h3>
+    <div class="button-group js-radio-button-group" data-filter-group="color">
+      <button class="button" data-filter=".sometimes">Sometimes</button>
+      <button class="button" data-filter=".fullTime">Fulltime</button>
+    </div>
+  </div>
+
+
+  <div class="ui-group">
+    <h3>Size</h3>
+    <div class="button-group js-radio-button-group" data-filter-group="size">
+      <button class="button" data-filter=".bigTeam">Big</button>
+      <button class="button" data-filter=".smallTeam">Small</button>
+      <button class="button" data-filter=".single">Single</button>
+    </div>
+  </div>
+
+  <div class="ui-group">
+    <h3>Shape</h3>
+    <div class="button-group js-radio-button-group" data-filter-group="shape">
+      <button class="button" data-filter=".privacy">Privacy</button>
+      <button class="button" data-filter=".collaboration">Collaboration</button>
+    </div>
+  </div>
+
+</div> #}
+
+
+{# <div class="grid">
+    <div class="grid-sizer"></div>
+  <div class="color-shape fullTime bigTeam privacy collaboration">UrbanSuite</div>
+  <div class="color-shape fullTime smallTeam privacy collaboration">UrbanStudio</div>
+  <div class="color-shape fullTime sometimes single collaboration">UrbanDesk</div>
+  <div class="color-shape sometimes single collaboration">UrbanClub</div>
+  <div class="color-shape sometimes smallTeam bigTeam privacy collaboration">UrbanMeet</div>
+  <div class="color-shape fullTime bigTeam privacy">UrbanLease</div>
+</div> #}

@@ -3748,8 +3748,7 @@ input#honeypooh {
 }
 
 .grid {
-  margin: 6vw auto;
-  background-color: red;
+  margin: 0 auto;
 }
 
 .grid-sizer,
@@ -3758,7 +3757,6 @@ input#honeypooh {
 }
 
 .color-shape {
-  background-color: white;
   text-align: center;
 }
 
