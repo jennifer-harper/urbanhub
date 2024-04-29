@@ -1,8 +1,13 @@
-// external js: isotope.pkgd.js
-
 // init Isotope
 var $grid = $('.grid').isotope({
   itemSelector: '.third',
+  //   percentPosition: true,
+  masonry: {
+    // columnWidth: 100,
+    // columnWidth: '.grid-sizer',
+    // isFitWidth: true,
+    fitWidth: true,
+  },
 })
 
 // store filter for each group

@@ -24,9 +24,11 @@
             {% block content %}{% endblock %}
             <div class="contact"></div>
         </main>
-        {% embed '_partials/footer/footer-banner.twig' %}
-            {% block class %} {{footer}}{% endblock %}
-        {% endembed %}
+        {% if craft.app.request.segment(1) != 'about-you' %}
+            {% embed '_partials/footer/footer-banner.twig' %}
+                {% block class %} {{footer}}{% endblock %}
+            {% endembed %}
+        {% endif %}
     </div>    
 
   {% block scripts %}
