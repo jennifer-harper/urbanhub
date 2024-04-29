@@ -87,6 +87,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: f99163b0-87d0-4140-aa4e-3becb1114797 # Questionnaire 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 51c7e756-cc6e-4546-a487-41999e5cf44c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
             instructions: null
             label: null

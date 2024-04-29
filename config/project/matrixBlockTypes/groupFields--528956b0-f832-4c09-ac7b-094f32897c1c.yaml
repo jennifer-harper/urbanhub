@@ -1,0 +1,96 @@
+field: f99163b0-87d0-4140-aa4e-3becb1114797 # Questionnaire 
+fieldLayouts:
+  cd98ca6c-32c8-42bb-8474-761a87d4acc4:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4a8d9d6f-e6db-416d-940b-40b7a2518fbb # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 69f1f627-b861-4b4e-8cf3-9bcf514ca467
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 7be5f0df-fb90-4da8-ae7c-2f4f92bd56a5 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d94ff868-eb82-40d3-bc6e-4571bdcaec29
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d51d01d8-6a23-4455-8ddb-741b405782ba
+        userCondition: null
+fields:
+  4a8d9d6f-e6db-416d-940b-40b7a2518fbb: # Heading
+    columnSuffix: orvlkrwp
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  7be5f0df-fb90-4da8-ae7c-2f4f92bd56a5: # Image
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds:
+        - image
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:250485d5-f50f-4a7f-a221-1fc9dc7dbb3a' # Images
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      previewMode: full
+      restrictFiles: true
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:250485d5-f50f-4a7f-a221-1fc9dc7dbb3a' # Images
+      restrictedLocationSubpath: null
+      selectionLabel: null
+      showSiteMenu: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: large
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+handle: groupFields
+name: 'Group Fields'
+sortOrder: 1
