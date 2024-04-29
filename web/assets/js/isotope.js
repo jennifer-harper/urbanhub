@@ -9,8 +9,24 @@ var $grid = $('.grid').isotope({
   //     fitWidth: true,
   //   },
 
-  layoutMode: 'fitRows',
+  //   layoutMode: 'fitRows',
+  //   fitRows: {
+  //     gutter: 20,
+  //   },
 })
+
+// var $grid = $('.grid').isotope({
+//     itemSelector: '.grid-item',
+//     layoutMode: 'fitRows',
+//     fitRows: {
+//       gutter: 20,
+//     },
+//     percentPosition: true,
+//     masonry: {
+//       // use element for option
+//       columnWidth: '.grid-sizer',
+//     },
+//   })
 
 // store filter for each group
 var filters = []

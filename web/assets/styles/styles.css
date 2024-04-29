@@ -3451,7 +3451,7 @@ nav .bx-menu.rotate-icon {
 
 .google-maps {
   position: relative;
-  padding-bottom: 55%;
+  padding-bottom: 35%;
   height: 100%;
   overflow: hidden;
 }
@@ -3461,6 +3461,12 @@ nav .bx-menu.rotate-icon {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+
+@media (min-width: 64em) {
+  .neighbourhood .google-maps {
+    padding-bottom: 50%;
+  }
 }
 
 .thank-you .pad-all.text-center,

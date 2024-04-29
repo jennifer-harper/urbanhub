@@ -4132,9 +4132,11 @@ nav {
     }
 }
 
+
+
 .google-maps {
     position: relative;
-    padding-bottom: 55%;
+    padding-bottom: 35%;
     height: 100%;
     overflow: hidden;
     iframe {
@@ -4143,6 +4145,14 @@ nav {
         left: 0;
         width: 100% !important;
         height: 100% !important;
+    }
+}
+.neighbourhood{
+    .google-maps{
+
+        @media #{$mq-medium}{
+            padding-bottom: 50%;
+        }
     }
 }
 
