@@ -61,7 +61,6 @@
     <div class="centered-hero bg-green-light ui-group" id="getstarted">
         <div class="pad-all">
             <div class="text-center max-hero">
-                
                 {% if entry.heading %}
                     {{entry.heading}}
                 {% endif %}
@@ -107,49 +106,32 @@
             </div>
 
             <div class="flex-wrap section-solutions button-group js-radio-button-group" data-filter-group="size">     
+                {% for block in entry.questionnaire2 %}
+                    {% if block.type == 'groupFields' %}
                     <div class="third box bg-light"> 
                         <div class="feature-pad">
-                            <h3>I'm a big team</h3>
+                            {% if block.heading %}
+                               <h3>{{block.heading}}</h3> 
+                            {% endif %}
                         </div>
+
                         <div class="flex-wrap style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                                {{ _self.btnItem('.bigTeam', '#team') }}
-                            </div>
-                            <div class="align-right">
-                                <img  src="/uploads/images/illustration4-keys.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" third box bg-light"> 
-                        <div class="feature-pad">
-                            <h3>I'm a small team</h3>
-                        </div>
-                        <div class="flex-wrap  style row flex-jc-sb">
-                            <div class="flex-wrap col flex-jc-fe">
-                                {{ _self.btnItem('.smallTeam', '#team') }}
+                                {% if block.heading %}
+                                    {{ _self.btnItem('.' ~ block.heading|replace({' ': '', '/[^a-zA-Z0-9]/': ''})|lower, '#team') }}
+                                {% endif %}
                             </div>
                             
                             <div class="align-right">
-                                <img  src="/uploads/images/illustration4-keys.svg" alt="">
+                                {% if block.image.one() %}
+                                    {% set image = block.image.one() %}
+                                    <img  src="{{ image.url }}" alt="{{ image.alt }}">
+                                {% endif %}
                             </div>
                         </div>
                     </div>
-
-                    <div class="third box bg-light"> 
-                        <div class="feature-pad">
-                            <h3>It's just me</h3>
-                        </div>
-                        <div class="flex-wrap  style row flex-jc-sb">
-                            <div class="flex-wrap col flex-jc-fe">
-                                {{ _self.btnItem('.single', '#team') }}
-                            </div>
-                            
-                            <div class="align-right">
-                                <img  src="/uploads/images/illustration4-keys.svg" alt="">
-                            </div>
-                        </div>
-                    </div>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>
