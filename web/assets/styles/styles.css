@@ -3743,12 +3743,23 @@ input#honeypooh {
     align-items: flex-start;
   }
   .about-you #results .third {
-    margin: 6vwx 0;
+    margin: 6vw 0;
   }
 }
 
 .grid {
-  margin: 0 auto;
+  margin: 6vw auto;
+  background-color: red;
+}
+
+.grid-sizer,
+.color-shape {
+  width: 33%;
+}
+
+.color-shape {
+  background-color: white;
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

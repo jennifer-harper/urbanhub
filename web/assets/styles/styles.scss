@@ -4463,7 +4463,7 @@ input#honeypooh{ display: none; }
         }
         #results{
             .third{
-                margin: 6vwx 0;
+                margin: 6vw 0;
             }
         }
     }
@@ -4471,18 +4471,16 @@ input#honeypooh{ display: none; }
 
 }
 
-// .grid{
-//     margin: 0 auto;
-//     // width: fit-content;
-//     .third{
-//        min-width: 33.333%;
-//     }
-// }
+
 
 .grid {
-    margin: 0 auto;
- 
-    // .third{
-    //     width: 33.33%;
-    // }
+    margin: 6vw auto;
+    background-color: red;
   }
+
+  .grid-sizer,
+.color-shape { width: 33%; }
+.color-shape{
+    background-color: white;
+    text-align: center;
+}

@@ -1,61 +1,48 @@
+// external js: isotope.pkgd.js
+
 // init Isotope
 var $grid = $('.grid').isotope({
-  itemSelector: '.third',
-  //   percentPosition: true,
-  //   masonry: {
-  //     // columnWidth: 100,
-  //     // columnWidth: '.grid-sizer',
-  //     // isFitWidth: true,
-  //     fitWidth: true,
-  //   },
+  itemSelector: '.color-shape',
+  percentPosition: true,
+  masonry: {
+    // use outer width of grid-sizer for columnWidth
+    columnWidth: '.grid-sizer',
 
-  //   layoutMode: 'fitRows',
-  //   fitRows: {
-  //     gutter: 20,
-  //   },
+    gutter: 10,
+  },
 })
-
-// var $grid = $('.grid').isotope({
-//     itemSelector: '.grid-item',
-//     layoutMode: 'fitRows',
-//     fitRows: {
-//       gutter: 20,
-//     },
-//     percentPosition: true,
-//     masonry: {
-//       // use element for option
-//       columnWidth: '.grid-sizer',
-//     },
-//   })
 
 // store filter for each group
-var filters = []
+var filters = {}
 
-// change is-checked class on buttons
-$('.filters').on('click', 'button', function (event) {
-  var $target = $(event.currentTarget)
-  $target.toggleClass('is-checked')
-  var isChecked = $target.hasClass('is-checked')
-  var filter = $target.attr('data-filter')
-  if (isChecked) {
-    addFilter(filter)
-  } else {
-    removeFilter(filter)
-  }
-  // filter isotope
-  // group filters together, inclusive
-  $grid.isotope({ filter: filters.join(',') })
+$('.filters').on('click', '.button', function (event) {
+  var $button = $(event.currentTarget)
+  // get group key
+  var $buttonGroup = $button.parents('.button-group')
+  var filterGroup = $buttonGroup.attr('data-filter-group')
+  // set filter for group
+  filters[filterGroup] = $button.attr('data-filter')
+  // combine filters
+  var filterValue = concatValues(filters)
+  // set filter for Isotope
+  $grid.isotope({ filter: filterValue })
 })
 
-function addFilter(filter) {
-  if (filters.indexOf(filter) == -1) {
-    filters.push(filter)
-  }
-}
+// change is-checked class on buttons
+$('.button-group').each(function (i, buttonGroup) {
+  var $buttonGroup = $(buttonGroup)
+  $buttonGroup.on('click', 'button', function (event) {
+    $buttonGroup.find('.is-checked').removeClass('is-checked')
+    var $button = $(event.currentTarget)
+    $button.addClass('is-checked')
+  })
+})
 
-function removeFilter(filter) {
-  var index = filters.indexOf(filter)
-  if (index != -1) {
-    filters.splice(index, 1)
+// flatten object by concatting values
+function concatValues(obj) {
+  var value = ''
+  for (var prop in obj) {
+    value += obj[prop]
   }
+  return value
 }
