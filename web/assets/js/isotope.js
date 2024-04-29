@@ -2,12 +2,14 @@
 var $grid = $('.grid').isotope({
   itemSelector: '.third',
   //   percentPosition: true,
-  masonry: {
-    // columnWidth: 100,
-    // columnWidth: '.grid-sizer',
-    // isFitWidth: true,
-    fitWidth: true,
-  },
+  //   masonry: {
+  //     // columnWidth: 100,
+  //     // columnWidth: '.grid-sizer',
+  //     // isFitWidth: true,
+  //     fitWidth: true,
+  //   },
+
+  layoutMode: 'fitRows',
 })
 
 // store filter for each group
