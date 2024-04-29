@@ -61,38 +61,42 @@
     <div class="centered-hero bg-green-light ui-group" id="getstarted">
         <div class="pad-all">
             <div class="text-center max-hero">
+                
                 {% if entry.heading %}
                     {{entry.heading}}
                 {% endif %}
             </div>
 
             <div class="flex-wrap section-solutions button-group js-radio-button-group" data-filter-group="color">     
-                {% for block in entry.questionnaire %}
-                    {% if block.type == 'groupFields' %}
                     <div class="third box bg-light"> 
                         <div class="feature-pad">
-                            {% if block.heading %}
-                               <h3>{{block.heading}}</h3> 
-                            {% endif %}
+                            <h3>Sometimes</h3>
                         </div>
-
                         <div class="flex-wrap style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                                {% if block.heading %}
-                                    {{ _self.btnItem('.' ~ block.heading|replace({' ': '', '/[^a-zA-Z0-9]/': ''})|lower, '#space') }}
-                                {% endif %}
+                            {{ _self.btnItem('.sometimes', '#space') }}
                             </div>
                             
                             <div class="align-right">
-                                {% if block.image.one() %}
-                                    {% set image = block.image.one() %}
-                                    <img  src="{{ image.url }}" alt="{{ image.alt }}">
-                                {% endif %}
+                                <img  src="/uploads/images/illustration26-watch.svg" alt="">
                             </div>
                         </div>
                     </div>
-                    {% endif %}
-                {% endfor %}
+
+                    <div class=" third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>Full Time</h3>
+                        </div>
+                        <div class="flex-wrap  style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                                {{ _self.btnItem('.fullTime', '#space') }}
+                            </div>
+                            
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration26-watch.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -106,32 +110,49 @@
             </div>
 
             <div class="flex-wrap section-solutions button-group js-radio-button-group" data-filter-group="size">     
-                {% for block in entry.questionnaire2 %}
-                    {% if block.type == 'groupFields' %}
                     <div class="third box bg-light"> 
                         <div class="feature-pad">
-                            {% if block.heading %}
-                               <h3>{{block.heading}}</h3> 
-                            {% endif %}
+                            <h3>I'm a big team</h3>
                         </div>
-
                         <div class="flex-wrap style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                                {% if block.heading %}
-                                    {{ _self.btnItem('.' ~ block.heading|replace({' ': '', '/[^a-zA-Z0-9]/': ''})|lower, '#team') }}
-                                {% endif %}
+                                {{ _self.btnItem('.bigTeam', '#team') }}
                             </div>
-                            
                             <div class="align-right">
-                                {% if block.image.one() %}
-                                    {% set image = block.image.one() %}
-                                    <img  src="{{ image.url }}" alt="{{ image.alt }}">
-                                {% endif %}
+                                <img  src="/uploads/images/illustration4-keys.svg" alt="">
                             </div>
                         </div>
                     </div>
-                    {% endif %}
-                {% endfor %}
+
+                    <div class=" third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>I'm a small team</h3>
+                        </div>
+                        <div class="flex-wrap  style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                                {{ _self.btnItem('.smallTeam', '#team') }}
+                            </div>
+                            
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration4-keys.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third box bg-light"> 
+                        <div class="feature-pad">
+                            <h3>It's just me</h3>
+                        </div>
+                        <div class="flex-wrap  style row flex-jc-sb">
+                            <div class="flex-wrap col flex-jc-fe">
+                                {{ _self.btnItem('.single', '#team') }}
+                            </div>
+                            
+                            <div class="align-right">
+                                <img  src="/uploads/images/illustration4-keys.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
     </div>
@@ -196,7 +217,7 @@
 
             <div class="grid">
                 <div class="grid-sizer"></div>
-                <div class="third color-shape fulltime bigTeam privacy collaboration">
+                <div class="third color-shape fullTime bigTeam privacy collaboration">
                     <div class="flexIt">
                     <h3>Urban<i>Studio</i></h3>
                     <img  src="/uploads/images/UrbanStudio3.svg" alt="">
@@ -204,12 +225,12 @@
                     </div>
                 </div>
                 
-                <div class="third  color-shape fulltime smallTeam privacy collaboration">
+                <div class="third  color-shape fullTime smallTeam privacy collaboration">
                     <h3>Urban<i>Suite</i></h3>
                     <img  src="/uploads/images/UrbanSuite3.svg" alt="">
                    {{ _self.btnResult('urban-suite') }}
                 </div>
-                 <div class="third color-shape sometimes fulltime single privacy collaboration">
+                 <div class="third color-shape sometimes fullTime single privacy collaboration">
                     <h3>Urban<i>Desk</i></h3>
                     <img  src="/uploads/images/UrbanDesk3.svg" alt="">
                     {{ _self.btnResult('urban-desk') }}
@@ -225,7 +246,7 @@
                     <img  src="/uploads/images/UrbanMeet3.svg" alt="">
                     {{ _self.btnResult('urban-meet') }}
                 </div>
-                 <div class="third color-shape fulltime bigTeam privacy">
+                 <div class="third color-shape fullTime bigTeam privacy">
                     <h3>Urban<i>Lease</i></h3>
                     <img  src="/uploads/images/UrbanLease3.svg" alt="">
                     {{ _self.btnResult('urban-lease') }}

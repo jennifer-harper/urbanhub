@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e39a23c1-ef67-42ee-b725-b0d5d9a96f76 # matrix
+handle: questionnaire2
+instructions: null
+name: Questionnaire
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_questionnaire2}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
