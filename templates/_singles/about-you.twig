@@ -204,16 +204,18 @@
 {% endmacro %}
 
 <div class="centered-hero bg-green-light" id="results">
-    <div class="pad-all">
+    <div class="pad-top-btm">
         <div class="text-center max-hero">
             <h2>Best option for <i>you</i></h2>
 
             <div class="grid">
                 <div class="grid-sizer"></div>
                 <div class="third color-shape fullTime bigTeam privacy collaboration">
+                    <div class="flexIt">
                     <h3>Urban<i>Studio</i></h3>
                     <img  src="/uploads/images/UrbanStudio3.svg" alt="">
                    {{ _self.btnResult('urban-studio') }}
+                    </div>
                 </div>
                 
                 <div class="third  color-shape fullTime smallTeam privacy collaboration">
@@ -221,7 +223,7 @@
                     <img  src="/uploads/images/UrbanSuite3.svg" alt="">
                    {{ _self.btnResult('urban-suite') }}
                 </div>
-                 <div class="third color-shape sometimes fullTime single collaboration">
+                 <div class="third color-shape sometimes fullTime single privacy collaboration">
                     <h3>Urban<i>Desk</i></h3>
                     <img  src="/uploads/images/UrbanDesk3.svg" alt="">
                     {{ _self.btnResult('urban-desk') }}
@@ -276,42 +278,3 @@
 
 
 
-{# <div class="filters">
-  <div class="ui-group">
-    <h3>Color</h3>
-    <div class="button-group js-radio-button-group" data-filter-group="color">
-      <button class="button" data-filter=".sometimes">Sometimes</button>
-      <button class="button" data-filter=".fullTime">Fulltime</button>
-    </div>
-  </div>
-
-
-  <div class="ui-group">
-    <h3>Size</h3>
-    <div class="button-group js-radio-button-group" data-filter-group="size">
-      <button class="button" data-filter=".bigTeam">Big</button>
-      <button class="button" data-filter=".smallTeam">Small</button>
-      <button class="button" data-filter=".single">Single</button>
-    </div>
-  </div>
-
-  <div class="ui-group">
-    <h3>Shape</h3>
-    <div class="button-group js-radio-button-group" data-filter-group="shape">
-      <button class="button" data-filter=".privacy">Privacy</button>
-      <button class="button" data-filter=".collaboration">Collaboration</button>
-    </div>
-  </div>
-
-</div> #}
-
-
-{# <div class="grid">
-    <div class="grid-sizer"></div>
-  <div class="color-shape fullTime bigTeam privacy collaboration">UrbanSuite</div>
-  <div class="color-shape fullTime smallTeam privacy collaboration">UrbanStudio</div>
-  <div class="color-shape fullTime sometimes single collaboration">UrbanDesk</div>
-  <div class="color-shape sometimes single collaboration">UrbanClub</div>
-  <div class="color-shape sometimes smallTeam bigTeam privacy collaboration">UrbanMeet</div>
-  <div class="color-shape fullTime bigTeam privacy">UrbanLease</div>
-</div> #}

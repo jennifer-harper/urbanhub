@@ -3743,21 +3743,26 @@ input#honeypooh {
     align-items: flex-start;
   }
   .about-you #results .third {
-    margin: 6vw 0;
+    margin: 3vw 0;
   }
 }
 
 .grid {
   margin: 0 auto;
 }
-
-.grid-sizer,
-.color-shape {
-  width: 33%;
-}
-
-.color-shape {
+.grid .color-shape {
   text-align: center;
+}
+.grid .color-shape img {
+  max-height: 6vw;
+}
+.grid .color-shape .btn {
+  font-size: 16px;
+}
+@media (min-width: 94em) {
+  .grid .color-shape h3 {
+    font-size: 1.5em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
