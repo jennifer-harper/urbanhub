@@ -18,6 +18,7 @@
 {% block content %} 
   {% for entry in page %} 
 
+<section id="container">
   <div class="centered-hero start bg-green-light">
     <div class="pad-all">
         <div class="text-center max-hero">
@@ -54,6 +55,15 @@
         <div>{% include '_partials/svgs/arrow.twig' %}</div> 
     </a>
     </button>
+  </div>
+{% endmacro %}
+
+{% macro btnResult(url) %}
+  <div class="btn green centered">
+    <a href="{{ url }}">
+      <p>Continue</p>
+      <div>{% include '_partials/svgs/arrow.twig' %}</div> 
+    </a>
   </div>
 {% endmacro %}
 
@@ -200,16 +210,6 @@
     </div> 
 </div>
 
-
-{% macro btnResult(url) %}
-  <div class="btn green centered">
-    <a href="{{ url }}">
-      <p>Continue</p>
-      <div>{% include '_partials/svgs/arrow.twig' %}</div> 
-    </a>
-  </div>
-{% endmacro %}
-
 <div class="centered-hero bg-green-light" id="results">
     <div class="pad-top-btm">
         <div class="text-center max-hero">
@@ -257,14 +257,9 @@
     </div>
 </div> 
 
+</section>
 
-
-
-
-
-
-
-<div class="star-banner-wrapper pad-top-btm no-btm bg-green-light">
+<div class="star-banner-wrapper bg-green-light">
     {% embed '_partials/svgs/star-banner.twig' %}
         {% block contrastStar %} {{contrast}} {% endblock %}
         {% block contrastStar2 %} {{contrast}} {% endblock %}

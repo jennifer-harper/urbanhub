@@ -50,3 +50,13 @@ jQuery(window).on('load', function () {
     itemSelector: '.color-shape',
   })
 })
+
+//need queries to update on browser changes
+var navHeight = $('nav').innerHeight()
+var starHeight = $('.star-banner-wrapper').innerHeight()
+
+var offset = navHeight + starHeight
+
+$('#container').css('height', 'calc(102vh - ' + offset + 'px)')
+$('.centered-hero').css('min-height', 'calc(100vh - ' + offset + 'px)')
+console.log(navHeight, starHeight, offset)
