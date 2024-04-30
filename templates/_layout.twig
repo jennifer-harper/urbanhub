@@ -24,11 +24,11 @@
             {% block content %}{% endblock %}
             <div class="contact"></div>
         </main>
-        {% if craft.app.request.segment(1) != 'about-you' %}
+        {# {% if craft.app.request.segment(1) != 'about-you' %}
             {% embed '_partials/footer/footer-banner.twig' %}
                 {% block class %} {{footer}}{% endblock %}
             {% endembed %}
-        {% endif %}
+        {% endif %} #}
     </div>    
 
   {% block scripts %}
@@ -38,7 +38,7 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script type="module" src="/assets/js/script.js"></script>
     <script type="module" src="/assets/js/nav.js"></script>
-    <script type="module" src="/assets/js/footer.js"></script>
+    {# <script type="module" src="/assets/js/footer.js"></script> #}
   {% endblock %}
 
 </body>

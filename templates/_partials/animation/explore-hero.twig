@@ -1,29 +1,25 @@
 <div class="hero-animation">
     <div class="flex-wrap pad-top-btm no-btm hero">
-        <div class="half flex-wrap flex-jc-sb col"> 
+        <div class="flex-wrap flex-jc-sb col"> 
             <img class="hero-cloud" src="/uploads/images/cloud-hero.svg" alt="cloud illustration">
-            <img class="hero-antenna" src="/uploads/images/roof-antenna-1.svg" alt="antenna illustration">
         </div>
-        <div class="pad-sides half">     
-            <div class="">
+        <div class="pad-sides">     
                 {% if entry.pageTitle %}
                     {{entry.pageTitle}}
                 {% endif %}
-            </div>
         </div>
     </div>
 
     <div class="flex-wrap roof-wrap">
         <div class="two-thirds"> 
+            <img class="hero-antenna" src="/uploads/images/roof-antenna-1.svg" alt="antenna illustration">
             <img class="roof" src="/uploads/images/green-roof.svg" alt="roof shaped block color">
             <img class="base-line" src="uploads/images/uh-hero-roof-single.png" alt="">
         </div>
         <div class="third">     
             <div class="pad-sides ">
                 {% if entry.pageIntroParagraph %}
-                    <div class="">
                         {{entry.pageIntroParagraph}}
-                    </div>
                 {% endif %}
 
                 <div class="btn downwards">

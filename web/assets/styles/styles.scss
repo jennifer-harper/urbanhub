@@ -1038,7 +1038,7 @@ button{
   fill:$green-light;
 }
 .bg-yellow{
-  background-color: $yellow;
+  background-color: $yellow-light;
 }
 .bg-yellow-light{
   background-color: $yellow-light;
@@ -2425,40 +2425,54 @@ tbody{
 }
 
 // EXPLORE OUR SPACES
-
-.ourSpaces{
-    .level{
-        .two-thirds{
-            height: 100vh;
-        }
+.relative{
+    position: relative;
+    .ceiling{
+        position: absolute;
+        top: -2px;
+        width: 100%;
+        left: 0;
     }
+}
+.ourSpaces{
+
     .two-thirds{
         position: relative;
-        flex-basis:66.666%;
+        flex-basis:50%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;  
-        .heading{
-            padding:$base;
-            padding-left:0;
+        justify-content: space-between; 
+        z-index: 1; 
+
+
+        .header-wrapper{
+            padding:0 3vw;
+            justify-content: space-between;
+            .heading{
+                padding-top: 20px;
+            }
         }
+
+
+
         .base-line{
             position: absolute;
             width: 100%;
             left:0;
             bottom:0;
         }
-        .illustraion-wrapper{
-            position: relative;
-            .floor{
-                padding:0 $xs;
-            }
-        }
-        z-index: 1;
+    }
+
+    .illustraion-wrapper{
+        position: relative;
+        // max-height: 50%;
+        overflow: hidden;
+        padding:0 $xs;
+
     }
 
     .third{
-        min-width: 33.33%;
+        flex-basis:50%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -2469,26 +2483,71 @@ tbody{
         }
     }
 
+    @media #{$mq-small}{
+
+        .two-thirds:not(.hero-animation .two-thirds){
+            border-right: 1px solid grey;
+        }
+    }
+
+    @media #{$mq-medium}{
+        .level{
+            height: calc(100vh - 85px);
+            .main{
+                flex-direction: row;
+                height: 100%;
+            }
+        }
+        .two-thirds{
+            flex-basis: 66.666%;
+            .header-wrapper{
+                .heading{
+                    padding-top: 6vw;
+                }
+            }
+        }
+        .third{
+            flex-basis: 33.333%;
+        }
+
+
+    }
+
+    @media #{$mq-desktop}{
+        .two-thirds{
+            .header-wrapper{
+                .heading{
+                    padding-top: 3vw;
+                }
+            }
+        }
+    }
+
+}  
+
+
+
+
+.ourSpaces{
     .hero-animation{
-        .hero{
-            flex-direction: column-reverse;
-            h1{
-                padding-top:6vw
-            }
-            .hero-cloud{
-                max-width: 50%;
-                margin-right:0;
-            }
-            .hero-antenna{
-                max-width: 30%;
-                margin-left:5vw;
-                margin-top:3vw;
-                margin-bottom: -1vw;
-            }
+        h1{
+            padding-top:6vw
+        }
+        .hero-cloud{
+            max-width: 50%;
+            margin-right:0;
+        }
+        .hero-antenna{
+            max-width: 30%;
+            margin-left:5vw;
+            margin-top:3vw;
+            margin-bottom: -1vw;
         }
     
         .roof-wrap{
+            flex-direction: column-reverse;
             .btn.downwards{
+                display: none;
                 a{
                     background-color: transparent;
                     transform: rotate(90deg);
@@ -2497,16 +2556,26 @@ tbody{
             .base-line{
                 display: none;
             }
-            .third .pad-sides{
-                display: flex;
-                padding-top:$sm;
-                padding-bottom: $sm;
-            }
+
         }
 
         @media #{$mq-medium}{
-            .hero{
+            h1{
+                padding-bottom:6vw
+            }
+            .hero-antenna{
+                position: absolute;
+                margin: 0;
+                left: 5vw;
+                top:-100%
+            }
+
+            .hero,
+            .roof-wrap{
                 flex-direction: row;
+
+            }
+            .hero{
                 .hero-cloud{
                     max-width: 80%;
                     margin-left:-5vw;
@@ -2523,27 +2592,48 @@ tbody{
                 }
             }
         }
-    }
-
-    .private-animation{
-        position: relative;
-        .two-thirds{
-            height: 100vh;
-           
-        }
-        .header-wrapper{
-            .flex-wrap{
-                justify-content: space-between;
+        @media #{$mq-medium}{
+            .roof-wrap .btn.downwards{
+                display: flex
             }
         }
 
-        .ceiling-lighting img{
-            margin-top:-1.5vw;
-            max-width: 12vw;
+        @media #{$mq-desktop}{
+            .hero-antenna{
+                width: 20%;
+                top: -69%;
+            }
+            .hero-cloud{
+                margin-top: -3vw;
+            }
+            h1{
+                padding-top: 0;
+            }
+        }
+        
+        @media #{$mq-figma}{
+            .hero{
+                div{
+                    flex-basis: 50%;
+                    width: 50%;
+                }
+            }
+
+        }
+    
+
+    }
+    .private-animation{
+        position: relative;
+
+        .ceiling-lighting {
+            img{
+                max-width: 12vw;
+            }
         }
 
         .clouds{
-            display: flex;
+            display: none;
             flex-direction: column;
             justify-content: space-between;
             .cloud-2{
@@ -2559,15 +2649,22 @@ tbody{
             }
         }
 
+        @media #{$mq-medium}{
+            .clouds{
+                display: flex;
+            }
+        }
+
     } 
 
-    .traditional.animation{
+    .traditional-animation{
+       .relative .ceiling{
+            top:-5px;
+        }
         .heading{
-            padding-top:3vw;
-            padding-bottom: 0;
             h2{
                 color:$orange;
-                margin-bottom: 0;
+                margin-right: 3vw;
                 svg{
                     fill: $light;
                 }
@@ -2578,25 +2675,41 @@ tbody{
                 color:$orange;
             }
         }
+        .ceiling-fan{
+            max-width: 25%;
+        }
 
+        .floor{
+            padding: 0;
+        }
 
         .light{
             position:absolute;
-            left:-10px;
-            top:-30px;
-            width: calc(100% - 30px);
+            left: 20px;
+            right: 20px;
+            top: 0;
+            width: calc(100% - 40px);
             opacity: .8;
         }
+        
+
         .bird-wrapper{
+            display:none;
             height:100%;
-            display: flex;
+
             align-items: flex-end;
             .bird{
                 max-width: 12vw;
                 margin-left:3vw;
             }
         }
+        @media #{$mq-medium}{
+            .bird-wrapper{
+                display: flex;
+            }
+        }
     }
+
 
 }
 
@@ -2933,12 +3046,12 @@ nav {
                     }
                 }
 
-                // .environment-sub-menu{
-                //     a{
-                //         flex-basis:25%;
-                //         width:25%;
-                //     }
-                // }
+                .environment-sub-menu{
+                    li{
+                        flex-basis:50%;
+                        width:50%;
+                    }
+                }
             }
 
             .x:hover{

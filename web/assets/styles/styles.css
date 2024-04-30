@@ -895,7 +895,7 @@ button {
 }
 
 .bg-yellow {
-  background-color: #EFC334;
+  background-color: #EBE198;
 }
 
 .bg-yellow-light {
@@ -2109,20 +2109,30 @@ tbody tr:first-of-type td {
   content: "UrbanClub";
 }
 
-.ourSpaces .level .two-thirds {
-  height: 100vh;
+.relative {
+  position: relative;
 }
+.relative .ceiling {
+  position: absolute;
+  top: -2px;
+  width: 100%;
+  left: 0;
+}
+
 .ourSpaces .two-thirds {
   position: relative;
-  flex-basis: 66.666%;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
 }
-.ourSpaces .two-thirds .heading {
-  padding: 5vw;
-  padding-left: 0;
+.ourSpaces .two-thirds .header-wrapper {
+  padding: 0 3vw;
+  justify-content: space-between;
+}
+.ourSpaces .two-thirds .header-wrapper .heading {
+  padding-top: 20px;
 }
 .ourSpaces .two-thirds .base-line {
   position: absolute;
@@ -2130,14 +2140,13 @@ tbody tr:first-of-type td {
   left: 0;
   bottom: 0;
 }
-.ourSpaces .two-thirds .illustraion-wrapper {
+.ourSpaces .illustraion-wrapper {
   position: relative;
-}
-.ourSpaces .two-thirds .illustraion-wrapper .floor {
+  overflow: hidden;
   padding: 0 20px;
 }
 .ourSpaces .third {
-  min-width: 33.33%;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -2145,21 +2154,53 @@ tbody tr:first-of-type td {
 .ourSpaces .third .content .intro-text {
   font-weight: 600;
 }
-.ourSpaces .hero-animation .hero {
-  flex-direction: column-reverse;
+@media (min-width: 48em) {
+  .ourSpaces .two-thirds:not(.hero-animation .two-thirds) {
+    border-right: 1px solid grey;
+  }
 }
-.ourSpaces .hero-animation .hero h1 {
+@media (min-width: 64em) {
+  .ourSpaces .level {
+    height: calc(100vh - 85px);
+  }
+  .ourSpaces .level .main {
+    flex-direction: row;
+    height: 100%;
+  }
+  .ourSpaces .two-thirds {
+    flex-basis: 66.666%;
+  }
+  .ourSpaces .two-thirds .header-wrapper .heading {
+    padding-top: 6vw;
+  }
+  .ourSpaces .third {
+    flex-basis: 33.333%;
+  }
+}
+@media (min-width: 85.375em) {
+  .ourSpaces .two-thirds .header-wrapper .heading {
+    padding-top: 3vw;
+  }
+}
+
+.ourSpaces .hero-animation h1 {
   padding-top: 6vw;
 }
-.ourSpaces .hero-animation .hero .hero-cloud {
+.ourSpaces .hero-animation .hero-cloud {
   max-width: 50%;
   margin-right: 0;
 }
-.ourSpaces .hero-animation .hero .hero-antenna {
+.ourSpaces .hero-animation .hero-antenna {
   max-width: 30%;
   margin-left: 5vw;
   margin-top: 3vw;
   margin-bottom: -1vw;
+}
+.ourSpaces .hero-animation .roof-wrap {
+  flex-direction: column-reverse;
+}
+.ourSpaces .hero-animation .roof-wrap .btn.downwards {
+  display: none;
 }
 .ourSpaces .hero-animation .roof-wrap .btn.downwards a {
   background-color: transparent;
@@ -2168,13 +2209,18 @@ tbody tr:first-of-type td {
 .ourSpaces .hero-animation .roof-wrap .base-line {
   display: none;
 }
-.ourSpaces .hero-animation .roof-wrap .third .pad-sides {
-  display: flex;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
 @media (min-width: 64em) {
-  .ourSpaces .hero-animation .hero {
+  .ourSpaces .hero-animation h1 {
+    padding-bottom: 6vw;
+  }
+  .ourSpaces .hero-animation .hero-antenna {
+    position: absolute;
+    margin: 0;
+    left: 5vw;
+    top: -100%;
+  }
+  .ourSpaces .hero-animation .hero,
+  .ourSpaces .hero-animation .roof-wrap {
     flex-direction: row;
   }
   .ourSpaces .hero-animation .hero .hero-cloud {
@@ -2190,21 +2236,37 @@ tbody tr:first-of-type td {
     padding-bottom: 0;
   }
 }
+@media (min-width: 64em) {
+  .ourSpaces .hero-animation .roof-wrap .btn.downwards {
+    display: flex;
+  }
+}
+@media (min-width: 85.375em) {
+  .ourSpaces .hero-animation .hero-antenna {
+    width: 20%;
+    top: -69%;
+  }
+  .ourSpaces .hero-animation .hero-cloud {
+    margin-top: -3vw;
+  }
+  .ourSpaces .hero-animation h1 {
+    padding-top: 0;
+  }
+}
+@media (min-width: 94em) {
+  .ourSpaces .hero-animation .hero div {
+    flex-basis: 50%;
+    width: 50%;
+  }
+}
 .ourSpaces .private-animation {
   position: relative;
 }
-.ourSpaces .private-animation .two-thirds {
-  height: 100vh;
-}
-.ourSpaces .private-animation .header-wrapper .flex-wrap {
-  justify-content: space-between;
-}
 .ourSpaces .private-animation .ceiling-lighting img {
-  margin-top: -1.5vw;
   max-width: 12vw;
 }
 .ourSpaces .private-animation .clouds {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -2219,35 +2281,51 @@ tbody tr:first-of-type td {
   margin-left: 0;
   z-index: 0;
 }
-.ourSpaces .traditional.animation .heading {
-  padding-top: 3vw;
-  padding-bottom: 0;
+@media (min-width: 64em) {
+  .ourSpaces .private-animation .clouds {
+    display: flex;
+  }
 }
-.ourSpaces .traditional.animation .heading h2 {
+.ourSpaces .traditional-animation .relative .ceiling {
+  top: -5px;
+}
+.ourSpaces .traditional-animation .heading h2 {
   color: #DB6B34;
-  margin-bottom: 0;
+  margin-right: 3vw;
 }
-.ourSpaces .traditional.animation .heading h2 svg {
+.ourSpaces .traditional-animation .heading h2 svg {
   fill: #FAF6F0;
 }
-.ourSpaces .traditional.animation .content p:not(.btn p) {
+.ourSpaces .traditional-animation .content p:not(.btn p) {
   color: #DB6B34;
 }
-.ourSpaces .traditional.animation .light {
+.ourSpaces .traditional-animation .ceiling-fan {
+  max-width: 25%;
+}
+.ourSpaces .traditional-animation .floor {
+  padding: 0;
+}
+.ourSpaces .traditional-animation .light {
   position: absolute;
-  left: -10px;
-  top: -30px;
-  width: calc(100% - 30px);
+  left: 20px;
+  right: 20px;
+  top: 0;
+  width: calc(100% - 40px);
   opacity: 0.8;
 }
-.ourSpaces .traditional.animation .bird-wrapper {
+.ourSpaces .traditional-animation .bird-wrapper {
+  display: none;
   height: 100%;
-  display: flex;
   align-items: flex-end;
 }
-.ourSpaces .traditional.animation .bird-wrapper .bird {
+.ourSpaces .traditional-animation .bird-wrapper .bird {
   max-width: 12vw;
   margin-left: 3vw;
+}
+@media (min-width: 64em) {
+  .ourSpaces .traditional-animation .bird-wrapper {
+    display: flex;
+  }
 }
 
 .body-wrapper {
@@ -2501,6 +2579,10 @@ nav .bx-menu.rotate-icon {
   nav .navbar .links .x .sub-menu.environment-sub-menu .content,
   nav .navbar .links .x .sub-menu.community-sub-menu .content {
     text-align: center;
+  }
+  nav .navbar .links .x .environment-sub-menu li {
+    flex-basis: 50%;
+    width: 50%;
   }
   nav .navbar .links .x:hover > .arrow {
     transform: rotate(180deg);
