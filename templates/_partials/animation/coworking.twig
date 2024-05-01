@@ -1,0 +1,49 @@
+
+<div class="coworking level">
+    <div class="flex-wrap main">
+        <div class="two-thirds bg-purple-light"> 
+            <div class="relative">
+                <div class="speaker-wrapper">
+                    <img class="speaker" src="uploads/images/speaker-wave-3.png" alt="">
+                    <img class="speaker" src="uploads/images/speaker-wave-2.png" alt="">
+                    <img class="speaker" src="uploads/images/speaker-wave-1.png" alt="">
+                    <img class="speaker" src="uploads/images/speaker.png" alt="">
+                </div>
+                <div class="flex-wrap row pad-sides header-wrapper">
+                    <img class="ceiling" src="uploads/images/uh-green-level-roof.png" alt="">
+                    <div class="heading">
+                        <h2>Coworking, like it <i>should</i> be</h2>
+                        <div class="content">
+                            {% if entry.introParagraph %}
+                                <div class="intro-text">
+                                    {{entry.introParagraph}}
+                                </div>
+                            {% endif %}
+
+                            {% if entry.paragraph %}
+                                    {{entry.paragraph}}
+                            {% endif %}
+
+                            {% embed '_partials/button' %}
+                                {% block class %}purple{% endblock %}
+                                {% block title %}Enquire Now{% endblock %}
+                                {% block url %}/{% endblock %}
+                            {% endembed %} 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="illustration-wrapper">
+                <img class="" src="uploads/images/coworking-bg.png" alt="">
+                 <img class="half-floor" src="uploads/images/uh-green-level-roof.png" alt="">
+            </div>
+        </div>
+
+        <div class="third">  
+            <div class="bird-wrapper mobile-hide">
+                <img class="bird" src="uploads/images/uh-orange-level-bird.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>

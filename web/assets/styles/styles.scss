@@ -2435,7 +2435,6 @@ tbody{
     }
 }
 .ourSpaces{
-
     .two-thirds{
         position: relative;
         flex-basis:50%;
@@ -2452,9 +2451,6 @@ tbody{
                 padding-top: 20px;
             }
         }
-
-
-
         .base-line{
             position: absolute;
             width: 100%;
@@ -2463,7 +2459,7 @@ tbody{
         }
     }
 
-    .illustraion-wrapper{
+    .illustration-wrapper{
         position: relative;
         // max-height: 50%;
         overflow: hidden;
@@ -2476,10 +2472,10 @@ tbody{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        .content{
-            .intro-text{
-                font-weight: 600;
-            }
+    }
+    .content{
+        .intro-text{
+            font-weight: 600;
         }
     }
 
@@ -2522,7 +2518,11 @@ tbody{
             }
         }
     }
-
+    @media #{$mq-retina}{
+        .level{
+            height: calc(100vh - 170px);
+        }
+    }
 }  
 
 
@@ -2593,10 +2593,16 @@ tbody{
             }
         }
         @media #{$mq-medium}{
+            height: calc(100vh - 85px);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             .roof-wrap .btn.downwards{
                 display: flex
             }
         }
+
+
 
         @media #{$mq-desktop}{
             .hero-antenna{
@@ -2618,11 +2624,27 @@ tbody{
                     width: 50%;
                 }
             }
-
         }
-    
-
+        @media #{$mq-retina}{
+            height: calc(100vh - 170px);
+        }
     }
+
+
+    .mobile-hide{
+        display:none;
+        @media #{$mq-medium}{
+                display: flex;
+        }
+    }
+    .half-floor{
+        max-width: 85%;
+        margin-left: auto;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
     .private-animation{
         position: relative;
 
@@ -2633,7 +2655,6 @@ tbody{
         }
 
         .clouds{
-            display: none;
             flex-direction: column;
             justify-content: space-between;
             .cloud-2{
@@ -2646,12 +2667,6 @@ tbody{
                 width: 60%;
                 margin-left: 0;
                 z-index: 0;
-            }
-        }
-
-        @media #{$mq-medium}{
-            .clouds{
-                display: flex;
             }
         }
 
@@ -2694,23 +2709,207 @@ tbody{
         
 
         .bird-wrapper{
-            display:none;
             height:100%;
-
             align-items: flex-end;
             .bird{
                 max-width: 12vw;
                 margin-left:3vw;
             }
         }
-        @media #{$mq-medium}{
-            .bird-wrapper{
-                display: flex;
+
+        @media #{$mq-retina}{
+            .relative .ceiling{
+                top:-16px;
             }
         }
     }
 
+    .team-animation{
+        .heading{
+            h2{
+                color:$blue-dark;
+                margin-right: 10vw;
+                svg{
+                    fill: $blue-light;
+                }
+            }
+        }
+        .content{
+            p:not(.btn p){
+                color:$blue-dark;
+            }
+        }
+        .wall-clock{
+            position: relative;
+            width: 12vw;
+            height: 12vw;
+            margin-bottom: -6vw;
+            margin-left: 6vw;
+            .animate{
+                position: absolute;
+                left: 0;
+                top:0;
+                width: 100%;
+            }
+        }
+        .third{
+            justify-content: flex-end;
+        }
 
+
+        @media #{$mq-desktop}{
+            .wall-clock{
+                width: 8vw;
+                height: 8vw;
+            }
+            .heading{
+                h2{
+                    margin-right: 23vw;
+                }
+            }
+        }
+    }
+
+    .coworking{
+        .heading{
+            h2{
+                color:$light;
+                margin-right: 10vw;
+                margin-bottom: 20px;
+                svg{
+                    fill: $purple-dark;
+                }
+            }
+        }
+        .content{
+            p:not(.btn p){
+                color:$light;
+            }
+            .btn{
+                margin-top: 20px;
+            }
+        }
+
+        .illustration-wrapper{
+            padding-left: 0;
+            position: relative;
+        }
+        .third{
+            justify-content: center;
+        }
+
+        .bird-wrapper{
+            .bird{
+                max-width: 12vw;
+                margin-left:3vw;
+            }
+        }
+        .speaker-wrapper img{
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 12vw;
+            height: 12vw;
+        }
+
+
+        @media #{$mq-small}{
+            .content{
+                max-width:70%
+
+            }
+            .heading{
+                h2{
+                    margin-bottom: 3vw;
+                }
+            }
+        }
+
+        @media #{$mq-medium}{
+            .content{
+                .btn{
+                    margin-top: 2vw;
+                }
+            }
+        }
+
+        @media #{$mq-desktop}{
+            .content{
+                max-width:65%;
+                .intro-text p{
+                    margin-bottom: 20px;
+                }
+                .btn{
+                    margin-top: 1vw;
+                }
+            }
+            .heading{
+                h2{
+                    margin-bottom: 2vw;
+                }
+            }
+        }
+
+        @media #{$mq-large}{
+            .heading{
+                display:flex;
+                flex-direction: row;
+            }
+
+        }
+        @media #{$mq-retina}{
+            .heading{
+                display:flex;
+                flex-direction: column;
+            }
+        }
+
+    }
+
+    .tour{
+        h2{
+            svg{
+                fill: $lime;
+            }
+        }
+        .third{
+            justify-content: flex-end;
+        }
+        .wind-wrapper,
+        .st-sign-wrapper{
+            max-width: 50%;
+            margin-left: auto;
+        }
+
+        .wind-wrapper{
+            img{
+                transform: scaleX(-1);
+                margin-bottom: 3vw;
+            }
+        }
+        .illustration-wrapper{
+            position: relative;
+            .floor-light{
+                position: absolute;
+                left: 20px;
+                z-index: -1;
+                width: calc(100% - 40px);
+    
+            }
+        }
+        .btn{
+            margin-bottom: 30px;
+        }
+
+
+        @media #{$mq-small}{
+            h2{
+                max-width:70%
+
+            }
+        }
+
+    }
 }
 
 
