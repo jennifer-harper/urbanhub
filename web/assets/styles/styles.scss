@@ -2619,7 +2619,7 @@ tbody{
         
         @media #{$mq-figma}{
             .hero{
-                div{
+                div:not(h1 div){
                     flex-basis: 50%;
                     width: 50%;
                 }

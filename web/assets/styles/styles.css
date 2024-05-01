@@ -2265,7 +2265,7 @@ tbody tr:first-of-type td {
   }
 }
 @media (min-width: 94em) {
-  .ourSpaces .hero-animation .hero div {
+  .ourSpaces .hero-animation .hero div:not(h1 div) {
     flex-basis: 50%;
     width: 50%;
   }
