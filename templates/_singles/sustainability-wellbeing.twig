@@ -15,12 +15,14 @@
 
 {% block content %} 
   {% for entry in page %} 
+
         {% include '_partials/hero/centered-hero.twig' %}
         {% embed '_partials/sections/star-banner-section.twig' %}
             {% block class %} bg-light {% endblock %}
         {% endembed %}
-        <div class="solutions-contrast wellbeing bg-green-dark dark">
-        <div class="something">
+
+        <div class="solutions-contrast wellbeing bg-green-dark dark " >
+            <div class="something">
                 {% for block in entry.wellbeingSlides %}
                     {% if block.type == 'groupFields' %}
                     <div class=" pad-all flex-wrap panel {% block colCount %} {% endblock %}">
@@ -55,6 +57,7 @@
         </div>
     {% include '_partials/sections/solutions-mask.twig' %}
     {% include '_partials/footer/contact-section.twig' %}
+
   {% endfor %} 
 {% endblock %}
 

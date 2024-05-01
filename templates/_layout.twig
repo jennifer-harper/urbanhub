@@ -19,16 +19,20 @@
     </div>
 
     <div id="prep" class="body-wrapper">
-        {% include '_partials/nav.twig' %}
+       
+        {# {% if craft.app.request.segment(1) != 'explore-our-spaces' %}{% endif %} #}
+         {% include '_partials/nav.twig' %}
         <main >
             {% block content %}{% endblock %}
             <div class="contact"></div>
         </main>
-        {% if craft.app.request.segment(1) != 'about-you' %}
+
+        {% if craft.app.request.segment(1) not in ['about-you', 'explore-our-spaces'] %}
             {% embed '_partials/footer/footer-banner.twig' %}
                 {% block class %} {{footer}}{% endblock %}
             {% endembed %}
         {% endif %}
+
     </div>    
 
   {% block scripts %}
@@ -36,6 +40,7 @@
     <script type="module" src="/assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/ScrollSmoother.min.js"></script>
     <script type="module" src="/assets/js/script.js"></script>
     <script type="module" src="/assets/js/nav.js"></script>
     <script type="module" src="/assets/js/footer.js"></script>

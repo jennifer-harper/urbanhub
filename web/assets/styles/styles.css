@@ -2188,8 +2188,8 @@ tbody tr:first-of-type td {
   }
 }
 
-.ourSpaces .hero-animation h1 {
-  padding-top: 6vw;
+.ourSpaces .hero-animation .hero {
+  padding-top: 7vw;
 }
 .ourSpaces .hero-animation .hero-cloud {
   max-width: 50%;
@@ -2243,7 +2243,7 @@ tbody tr:first-of-type td {
 }
 @media (min-width: 64em) {
   .ourSpaces .hero-animation {
-    height: calc(100vh - 85px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2256,9 +2256,6 @@ tbody tr:first-of-type td {
   .ourSpaces .hero-animation .hero-antenna {
     width: 20%;
     top: -69%;
-  }
-  .ourSpaces .hero-animation .hero-cloud {
-    margin-top: -3vw;
   }
   .ourSpaces .hero-animation h1 {
     padding-top: 0;

@@ -2529,9 +2529,10 @@ tbody{
 
 
 .ourSpaces{
+
     .hero-animation{
-        h1{
-            padding-top:6vw
+        .hero{
+            padding-top: 7vw;
         }
         .hero-cloud{
             max-width: 50%;
@@ -2593,7 +2594,7 @@ tbody{
             }
         }
         @media #{$mq-medium}{
-            height: calc(100vh - 85px);
+            height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -2609,9 +2610,7 @@ tbody{
                 width: 20%;
                 top: -69%;
             }
-            .hero-cloud{
-                margin-top: -3vw;
-            }
+
             h1{
                 padding-top: 0;
             }
