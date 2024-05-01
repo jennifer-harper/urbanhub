@@ -12,8 +12,9 @@
                 <div class="flex-wrap row pad-sides header-wrapper">
                     <img class="ceiling" src="uploads/images/uh-green-level-roof.png" alt="">
                     <div class="heading">
-                        <h2>Coworking, like <br /> it  <i>should</i> be</h2>
-
+                        {% if entry.heading4 %}
+                        {{entry.heading4}}
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -28,7 +29,7 @@
             <div class="bird-wrapper mobile-hide">
                 <img class="bird" src="uploads/images/uh-orange-level-bird.png" alt="">
             </div>
-                <div class="content pad-sides">
+                <div class="content pad-all">
                     {% if entry.introParagraph %}
                         <div class="intro-text">
                             {{entry.introParagraph}}
@@ -39,11 +40,12 @@
                             {{entry.paragraph}}
                     {% endif %}
 
-                    {% embed '_partials/button' %}
-                        {% block class %}purple{% endblock %}
-                        {% block title %}Enquire Now{% endblock %}
-                        {% block url %}/{% endblock %}
-                    {% endembed %} 
+                {% set button4 = entry.buildingLink4[0].url ?? '/contact-us' %}
+                {% embed '_partials/button' %}
+                    {% block class %}purple{% endblock %}
+                    {% block title %}Enquire Now{% endblock %}
+                    {% block url %}{{button4}}{% endblock %}
+                {% endembed %}  
                 </div>
         </div>
     </div>

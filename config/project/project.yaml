@@ -1,4 +1,4 @@
-dateModified: 1714431743
+dateModified: 1714529399
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: urbanhub
@@ -86,6 +86,7 @@ meta:
     46b86537-184d-4bca-8915-f93775953752: Heading # Heading
     54fd7cdc-ab6d-487e-9f29-ebfd83f6715c: 'Intro Paragraph' # Intro Paragraph
     57f75165-13b9-4bda-a25d-d8febd10a02c: 'Your Team' # Your Team
+    58a23fd2-b9ed-4834-9d91-a5b824101f1f: 'Building Link' # Building Link
     60c6a9c0-a4fd-4f47-bd21-e5a69857356a: Heading # Heading
     64c6c4b0-3771-452d-b41d-3d5e76d3c29f: 'Grid sm' # Grid sm
     67e20c54-bc49-4c79-9385-d7c3e0ddf173: Image # Image
@@ -120,12 +121,14 @@ meta:
     750ece67-3956-41c0-9b8f-90dc48596ad9: Heading # Heading
     820e4067-5880-4edb-9cba-20c3597f35ba: 'Enviro Slider' # Enviro Slider
     856b2861-b0fa-4e28-8bc4-5952ab34d6d9: 'Testimonial ' # Testimonial 
+    917e19fa-bdd0-44f7-b44e-15582bf1eebf: 'Building Link' # Building Link
     0922d403-58e1-43e9-9968-a0d39895a2ef: 'Business Phone ' # Business Phone 
     1089edbe-d415-44fb-84ec-54cc1bd33633: 'Space Description' # Space Description
     1659e5a2-3f78-4f72-9feb-b880311a241b: 'Information Points' # Information Points
     2995eac9-2c30-433a-bd61-0390ff903010: urbanhub # urbanhub
     03315e5f-17f7-4ec9-9c09-8bec7d3e223a: Heading # Heading
     4086dd2d-a840-4155-b992-eecd835319cc: 'Dollar Sign' # Dollar Sign
+    4295a173-ae5a-47ce-9796-04bb2046bc2f: 'Building Link' # Building Link
     4299af30-f9c7-48d6-922c-045249174b4a: Heading # Heading
     04877c62-92fa-436b-95c0-204552480b37: 'Footer Banner' # Footer Banner
     5080dd41-04c1-4450-9368-fb3bb7a572aa: 'Your Team' # Your Team
@@ -174,6 +177,7 @@ meta:
     89723374-3eac-4abc-b3ad-1bbd27091648: Heading # Heading
     a0a1f864-9a0f-4bc8-931c-cb7d460030ba: 'Business Email' # Business Email
     a0a3e595-fd6a-4fdb-8c47-68c52f4348f7: 'Group Fields' # Group Fields
+    a0b87284-c2cd-45ca-927f-03f9558c3cb0: 'Building Link' # Building Link
     a1e344df-1f0a-4388-8778-489f82901003: 'Event Image' # Event Image
     a9b2875a-ac1b-41c6-8d3c-9bf714731f4d: 'Group Fields' # Group Fields
     a33a9b78-e67f-4d71-b70f-5c91db0323fe: UrbanLease # UrbanLease
@@ -192,6 +196,7 @@ meta:
     b8605ac6-4063-4aa4-ba46-f37641194b73: 'Stories Page' # Stories Page
     b7237764-0346-4880-ad92-a5b51cd5a6b9: Default # Default
     bb2e6aac-abcc-4744-9ee7-250b2502df0d: 'Intro Paragraph' # Intro Paragraph
+    bbdf5c9c-3d61-4c53-94fa-4ee400e528ff: 'Building Link' # Building Link
     bc544d46-125f-4cc7-8feb-4ae448ed9679: Stories # Stories
     bcd7d9d5-2bd7-4d31-8a29-0669b0abbb5e: 'Thank you' # Thank you
     bdaa862b-f4c9-44a8-8e83-355b31b152cb: Footer # Footer

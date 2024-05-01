@@ -72,18 +72,222 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: de84809e-27c8-44de-8294-bf2d5eec3aaa # Button
+            fieldUid: 917e19fa-bdd0-44f7-b44e-15582bf1eebf # Building Link
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 7320a971-e924-4da9-afc8-182e32a5fb2d
+            uid: 3d37e885-898f-4d95-811a-bd729da1dd56
             userCondition: null
             warning: null
             width: 100
         name: 'Panel One'
         uid: c89dd06a-0bba-48e6-ab0e-ef71086643f0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 4673650a-aadd-4dc5-966e-7a5dba8f1d55 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fe3e53ca-ab17-46d0-8015-f49e2ed58d28
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 54fd7cdc-ab6d-487e-9f29-ebfd83f6715c # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 809b1524-bf46-4a43-b861-33929c69b76c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c0ed38c-11e0-4bbe-baee-3a545a75a51e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a0b87284-c2cd-45ca-927f-03f9558c3cb0 # Building Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8c7bfbdc-1ef2-4e80-ba50-715ab31cc758
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Panel two'
+        uid: 17e78442-4cec-4d02-bae6-51c40403f898
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e3854bbb-1638-4a39-bd6a-ab2c0a42e483 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8390b227-7014-4494-8650-60b152169492
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bb2e6aac-abcc-4744-9ee7-250b2502df0d # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fd6c2159-a359-4efd-b3db-8724fdf42869
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8be806db-3051-4e01-a8a8-823d359dbfd2 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56673580-b484-44d8-b07a-5a5eeac4fba8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 58a23fd2-b9ed-4834-9d91-a5b824101f1f # Building Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9a8ad9b-d6b6-4b61-853e-ae1d98740d66
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Panel three'
+        uid: 3ccf8477-b9c9-4772-bef9-c82906358fd5
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8dedadfc-4af6-49f2-95bd-efef33a55b64 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d7f516a-7f14-4b60-bd49-36ae346e5264
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 745e6158-28f3-446a-883f-91c614885da5 # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b8c9ab30-0ac4-4e1f-bdd0-82be1f831ac2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 701d3032-1766-4e06-979c-fd973c6b51e8 # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 78f8c5d7-0cbe-48ad-854a-c4326cbb15d7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4295a173-ae5a-47ce-9796-04bb2046bc2f # Building Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ecb0453a-f6dd-46fe-859f-550befa16fad
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Panel four'
+        uid: 94a264e3-b5e1-45c1-af7c-5969cadb2862
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 94ae2f64-db35-47c0-907e-b853e95b3ce5 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8d8d365b-e6d0-4a33-9b09-7f5ff43cf0d3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d199f8b1-8c10-441f-8951-d2f10491a634 # Page Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7d12001e-f75d-404c-9359-4dc9751c2833
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bbdf5c9c-3d61-4c53-94fa-4ee400e528ff # Building Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5be1551c-0748-40e0-bcf8-d253bb0e53bb
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Panel five'
+        uid: de7ffc0e-69a1-4f4c-ab6a-df3d4806984f
         userCondition: null
       -
         elementCondition: null

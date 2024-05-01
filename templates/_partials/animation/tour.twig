@@ -6,12 +6,22 @@
                 <div class="flex-wrap row pad-sides header-wrapper">
                 <img class="ceiling" src="uploads/images/uh-green-level-roof.png" alt="">
                     <div class="heading">
-                        <h2>Take a <i>virtual</i> tour</h2>
+
+                        {% if entry.heading5 %}
+                        {{entry.heading5}}
+                        {% endif %}
+
+
+
                         <div class="content">
+                        {% if entry.pageIntro %}
+                                {{entry.pageIntro}}
+                        {% endif %}
+                            {% set button5 = entry.buildingLink5[0].url ?? '/contact-us' %}
                             {% embed '_partials/button' %}
                                 {% block class %}lime{% endblock %}
                                 {% block title %}Enquire Now{% endblock %}
-                                {% block url %}/{% endblock %}
+                                {% block url %}{{button5}}{% endblock %}
                             {% endembed %} 
                         </div>
                     </div>
@@ -20,9 +30,8 @@
             </div>
 
             <div class="illustration-wrapper ">
-            <img class="floor-light" src="uploads/images/ground-floor-light.png" alt="">
+                <img class="floor-light" src="uploads/images/ground-floor-light.png" alt="">
                 <img class="" src="uploads/images/ground-floor.png" alt="">
-                 
             </div>
         </div>
 

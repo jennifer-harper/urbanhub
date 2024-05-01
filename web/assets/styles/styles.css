@@ -2316,7 +2316,6 @@ tbody tr:first-of-type td {
 }
 .ourSpaces .traditional-animation .heading h2 {
   color: #DB6B34;
-  margin-right: 3vw;
 }
 .ourSpaces .traditional-animation .heading h2 svg {
   fill: #FAF6F0;
@@ -2345,6 +2344,11 @@ tbody tr:first-of-type td {
 .ourSpaces .traditional-animation .bird-wrapper .bird {
   max-width: 12vw;
   margin-left: 3vw;
+}
+@media (min-width: 64em) {
+  .ourSpaces .traditional-animation .heading h2 {
+    margin-left: 3vw;
+  }
 }
 @media (min-width: 220em) {
   .ourSpaces .traditional-animation .relative .ceiling {
@@ -2386,7 +2390,7 @@ tbody tr:first-of-type td {
     height: 8vw;
   }
   .ourSpaces .team-animation .heading h2 {
-    margin-right: 23vw;
+    margin-right: 15vw;
   }
 }
 .ourSpaces .coworking .heading h2 {
@@ -2445,9 +2449,22 @@ tbody tr:first-of-type td {
 .ourSpaces .tour .btn {
   margin-bottom: 30px;
 }
+.ourSpaces .tour .content p:not(.btn p) {
+  color: #253C40;
+}
 @media (min-width: 48em) {
   .ourSpaces .tour h2 {
     max-width: 70%;
+  }
+}
+@media (min-width: 64em) {
+  .ourSpaces .tour .content p:not(.btn p) {
+    max-width: 60%;
+  }
+}
+@media (min-width: 120em) {
+  .ourSpaces .tour h2 {
+    max-width: 100%;
   }
 }
 

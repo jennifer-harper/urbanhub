@@ -6,7 +6,9 @@
                 <img class="ceiling" src="uploads/images/uh-green-level-roof.png" alt="">
                 <div class="flex-wrap row pad-sides header-wrapper">
                     <div class="heading">
-                        <h2>Bespoke </br> <i>private</i> space</h2>
+                        {% if entry.heading %}
+                            {{entry.heading}}
+                        {% endif %}
                     </div>
                     <div class="ceiling-lighting">
                         <img src="uploads/images/uh-green-level-ceiling-light.png" alt="">
@@ -38,10 +40,12 @@
                         {{entry.paragraph}}
                 {% endif %}
 
+
+                {% set button1 = entry.buildingLink[0].url ?? '/contact-us' %}
                 {% embed '_partials/button' %}
                     {% block class %}green {% endblock %}
                     {% block title %}Enquire Now{% endblock %}
-                    {% block url %}/{% endblock %}
+                    {% block url %}{{button1}}{% endblock %}
                 {% endembed %} 
             </div>
         </div>

@@ -6,7 +6,9 @@
                 <div class="flex-wrap row pad-sides header-wrapper">
                 <img class="ceiling" src="uploads/images/uh-green-level-roof.png" alt="">
                     <div class="heading">
-                        <h2>Gather your team <i>together</i></h2>
+                    {% if entry.heading3 %}
+                        {{entry.heading3}}
+                    {% endif %}
                     </div>
 
                 </div>
@@ -19,7 +21,7 @@
                 <img class="hour animate" src="uploads/images/hour-second-2.png" alt="">
             </div>
                 <img class="" src="uploads/images/team-together.png" alt="">
-                                 <img class="half-floor" src="uploads/images/uh-green-level-roof.png" alt="">
+                <img class="half-floor" src="uploads/images/uh-green-level-roof.png" alt="">
             </div>
         </div>
 
@@ -39,10 +41,11 @@
                         {{entry.paragraph}}
                 {% endif %}
 
+                {% set button3 = entry.buildingLink2[0].url ?? '/contact-us' %}
                 {% embed '_partials/button' %}
-                    {% block class %}blue{% endblock %}
+                    {% block class %}blue {% endblock %}
                     {% block title %}Enquire Now{% endblock %}
-                    {% block url %}/{% endblock %}
+                    {% block url %}{{button3}}{% endblock %}
                 {% endembed %} 
             </div>
         </div>

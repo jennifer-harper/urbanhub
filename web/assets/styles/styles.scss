@@ -2645,6 +2645,7 @@ tbody{
         bottom: 0;
     }
 
+
     .private-animation{
         position: relative;
 
@@ -2679,7 +2680,6 @@ tbody{
         .heading{
             h2{
                 color:$orange;
-                margin-right: 3vw;
                 svg{
                     fill: $light;
                 }
@@ -2714,6 +2714,13 @@ tbody{
             .bird{
                 max-width: 12vw;
                 margin-left:3vw;
+            }
+        }
+        @media #{$mq-medium}{
+            .heading{
+                h2{
+                    margin-left: 3vw;
+                }
             }
         }
 
@@ -2767,7 +2774,7 @@ tbody{
             }
             .heading{
                 h2{
-                    margin-right: 23vw;
+                    margin-right: 15vw;
                 }
             }
         }
@@ -2851,10 +2858,30 @@ tbody{
             margin-bottom: 30px;
         }
 
+        .content{
+            p:not(.btn p){
+                color:$blue-dark;
+            }
+        }
+
 
         @media #{$mq-small}{
             h2{
                 max-width:70%
+
+            }
+        }
+
+        @media #{$mq-medium}{
+            .content{
+                p:not(.btn p){
+                    max-width: 60%;
+                }
+            }
+        }
+        @media #{$mq-large}{
+            h2{
+                max-width:100%
 
             }
         }

@@ -9,9 +9,10 @@
                         <img src="uploads/images/fan.png" alt="">
                     </div>
                     <div class="heading">
-                        <h2>Traditional </br> office <i>lease</i></h2>
+                        {% if entry.heading2 %}
+                            {{entry.heading2}}
+                        {% endif %}
                     </div>
-
                 </div>
             </div>
 
@@ -27,20 +28,22 @@
             </div>
 
             <div class="content pad-all">
-                {% if entry.introParagraph %}
+                {% if entry.introParagraph2 %}
                     <div class="intro-text">
-                        {{entry.introParagraph}}
+                        {{entry.introParagraph2}}
                     </div>
                 {% endif %}
 
-                {% if entry.paragraph %}
-                        {{entry.paragraph}}
+                {% if entry.paragraph2 %}
+                        {{entry.paragraph2}}
                 {% endif %}
 
+
+                {% set button2 = entry.buildingLink2[0].url ?? '/contact-us' %}
                 {% embed '_partials/button' %}
                     {% block class %}orange {% endblock %}
                     {% block title %}Enquire Now{% endblock %}
-                    {% block url %}/{% endblock %}
+                    {% block url %}{{button2}}{% endblock %}
                 {% endembed %} 
             </div>
         </div>
