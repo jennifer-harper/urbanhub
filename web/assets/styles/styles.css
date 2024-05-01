@@ -2374,6 +2374,9 @@ tbody tr:first-of-type td {
   top: 0;
   width: 100%;
 }
+.ourSpaces .team-animation .wind-wrapper {
+  max-width: 50%;
+}
 .ourSpaces .team-animation .third {
   justify-content: flex-end;
 }
@@ -2395,10 +2398,7 @@ tbody tr:first-of-type td {
   fill: #272641;
 }
 .ourSpaces .coworking .content p:not(.btn p) {
-  color: #FAF6F0;
-}
-.ourSpaces .coworking .content .btn {
-  margin-top: 20px;
+  color: #272641;
 }
 .ourSpaces .coworking .illustration-wrapper {
   padding-left: 0;
@@ -2417,45 +2417,6 @@ tbody tr:first-of-type td {
   right: 0;
   width: 12vw;
   height: 12vw;
-}
-@media (min-width: 48em) {
-  .ourSpaces .coworking .content {
-    max-width: 70%;
-  }
-  .ourSpaces .coworking .heading h2 {
-    margin-bottom: 3vw;
-  }
-}
-@media (min-width: 64em) {
-  .ourSpaces .coworking .content .btn {
-    margin-top: 2vw;
-  }
-}
-@media (min-width: 85.375em) {
-  .ourSpaces .coworking .content {
-    max-width: 65%;
-  }
-  .ourSpaces .coworking .content .intro-text p {
-    margin-bottom: 20px;
-  }
-  .ourSpaces .coworking .content .btn {
-    margin-top: 1vw;
-  }
-  .ourSpaces .coworking .heading h2 {
-    margin-bottom: 2vw;
-  }
-}
-@media (min-width: 120em) {
-  .ourSpaces .coworking .heading {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (min-width: 220em) {
-  .ourSpaces .coworking .heading {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .ourSpaces .tour h2 svg {
   fill: #D3E84C;

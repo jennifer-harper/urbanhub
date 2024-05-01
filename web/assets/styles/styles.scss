@@ -2752,6 +2752,9 @@ tbody{
                 width: 100%;
             }
         }
+        .wind-wrapper{
+            max-width: 50%;
+        }
         .third{
             justify-content: flex-end;
         }
@@ -2783,10 +2786,7 @@ tbody{
         }
         .content{
             p:not(.btn p){
-                color:$light;
-            }
-            .btn{
-                margin-top: 20px;
+                color:$purple-dark;
             }
         }
 
@@ -2813,56 +2813,6 @@ tbody{
         }
 
 
-        @media #{$mq-small}{
-            .content{
-                max-width:70%
-
-            }
-            .heading{
-                h2{
-                    margin-bottom: 3vw;
-                }
-            }
-        }
-
-        @media #{$mq-medium}{
-            .content{
-                .btn{
-                    margin-top: 2vw;
-                }
-            }
-        }
-
-        @media #{$mq-desktop}{
-            .content{
-                max-width:65%;
-                .intro-text p{
-                    margin-bottom: 20px;
-                }
-                .btn{
-                    margin-top: 1vw;
-                }
-            }
-            .heading{
-                h2{
-                    margin-bottom: 2vw;
-                }
-            }
-        }
-
-        @media #{$mq-large}{
-            .heading{
-                display:flex;
-                flex-direction: row;
-            }
-
-        }
-        @media #{$mq-retina}{
-            .heading{
-                display:flex;
-                flex-direction: column;
-            }
-        }
 
     }
 
