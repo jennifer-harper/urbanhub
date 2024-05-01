@@ -2189,8 +2189,8 @@ tbody tr:first-of-type td {
   }
 }
 
-.ourSpaces .hero-animation .hero {
-  padding-top: 7vw;
+.ourSpaces footer {
+  margin-bottom: -7vw;
 }
 .ourSpaces .hero-animation .hero-cloud {
   max-width: 50%;

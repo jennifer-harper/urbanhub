@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger)
 
 let offset = $('.footer-banner').outerHeight(true)
-// console.log(offset)
+
 let footer = document.querySelector('.footer-banner')
 gsap.set(footer, { yPercent: -70 })
 

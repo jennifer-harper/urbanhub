@@ -43,7 +43,9 @@
     <script src="/assets/js/ScrollSmoother.min.js"></script>
     <script type="module" src="/assets/js/script.js"></script>
     <script type="module" src="/assets/js/nav.js"></script>
+  {% if craft.app.request.segment(1) not in ['about-you', 'explore-our-spaces'] %}
     <script type="module" src="/assets/js/footer.js"></script>
+     {% endif %}
   {% endblock %}
 
 </body>

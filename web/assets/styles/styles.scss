@@ -2530,10 +2530,13 @@ tbody{
 
 
 .ourSpaces{
+    footer{
+        margin-bottom: -7vw;
+    }
     .hero-animation{
-        .hero{
-            padding-top: 7vw;
-        }
+        // .hero{
+        //     padding-top: 7vw;
+        // }
         .hero-cloud{
             max-width: 50%;
             margin-right:0;
