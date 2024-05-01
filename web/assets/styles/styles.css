@@ -2162,6 +2162,7 @@ tbody tr:first-of-type td {
 @media (min-width: 64em) {
   .ourSpaces .level {
     height: calc(100vh - 85px);
+    overflow: hidden;
   }
   .ourSpaces .level .main {
     flex-direction: row;

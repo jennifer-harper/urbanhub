@@ -2489,6 +2489,7 @@ tbody{
     @media #{$mq-medium}{
         .level{
             height: calc(100vh - 85px);
+            overflow: hidden;
             .main{
                 flex-direction: row;
                 height: 100%;
@@ -2529,7 +2530,6 @@ tbody{
 
 
 .ourSpaces{
-
     .hero-animation{
         .hero{
             padding-top: 7vw;
