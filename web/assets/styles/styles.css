@@ -2337,10 +2337,21 @@ tbody tr:first-of-type td {
 .ourSpaces .secondSection .bird-wrapper {
   height: 100%;
   align-items: flex-end;
+  width: 12vw;
+  height: 12vw;
+  position: relative;
 }
 .ourSpaces .secondSection .bird-wrapper .bird {
   max-width: 12vw;
   margin-left: 3vw;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.ourSpaces .secondSection .bird-wrapper .bird-down {
+  opacity: 0;
 }
 @media (min-width: 64em) {
   .ourSpaces .secondSection .heading h2 {

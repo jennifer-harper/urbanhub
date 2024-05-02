@@ -37,7 +37,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
     tl.to('.firstSection .content', { yPercent: 0, ease: 'circ.out' }, 'start')
   }
 
+  TweenMax.to(eggo, 0.75, {
+    scale: 1.25,
+    repeat: -1,
+    yoyo: true,
+    ease: Elastic.easeInOut,
+  })
+
   function secondSection() {
+    let bird = gsap.timeline()
+    bird.to
+
     let tl = gsap.timeline({
       defaults: { duration: 3, ease: 'none' },
       scrollTrigger: {
@@ -53,7 +63,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
     gsap.set('.secondSection .content', { yPercent: 150 })
     gsap.set('.secondSection .light', { alpha: 0 })
-    gsap.set('.secondSection .bird', { alpha: 0 })
+    gsap.set('.secondSection .bird-down', { alpha: 1 })
     tl.addLabel('start')
     // tl.to('.secondSection .bird', {
     //   duration: 4,
@@ -122,21 +132,30 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   function fifthhSection() {
     let tl = gsap.timeline({
-      defaults: { duration: 1, ease: 'none' },
+      defaults: { duration: 3, ease: 'none' },
       scrollTrigger: {
         trigger: '.fifthSection',
         start: 'top top+=' + navHeight,
-        end: 'bottom bottom',
+        end: 'bottom top',
+        pin: true,
+        anticipatePin: 1,
+        scrub: 1,
+        invalidateOnRefresh: true,
         toggleActions: 'play none none reverse',
         // markers: marker,
       },
     })
     gsap.set('.fifthSection .floor-light', { alpha: 0 })
-    tl.to('.fifthSection .floor-light', { alpha: 1, duration: 0 })
+    gsap.set('.fifthSection .wind', { xPercent: 100 })
+    gsap.set('.fifthSection .st-sign', { transformOrigin: '50% 100%' })
+    tl.addLabel('start')
+    tl.to('.fifthSection .wind', { xPercent: 0, ease: 'circ.out' }, 'start')
+    tl.to('.fifthSection .st-sign', { rotate: -5, yPercent: 5, ease: 'circ.out' }, 'start+=0.5')
+    tl.to('.fifthSection .floor-light', { alpha: 1 }, 'start+=2')
   }
 
   mm.add('(min-width: 1024px)', () => {
-    firstSection()
+    // firstSection()
     secondSection()
     thirdSection()
     fourthSection()
