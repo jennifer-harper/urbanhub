@@ -37,13 +37,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     tl.to('.firstSection .content', { yPercent: 0, ease: 'circ.out' }, 'start')
   }
 
-  TweenMax.to(eggo, 0.75, {
-    scale: 1.25,
-    repeat: -1,
-    yoyo: true,
-    ease: Elastic.easeInOut,
-  })
-
   function secondSection() {
     let bird = gsap.timeline()
     bird.to
@@ -63,17 +56,23 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
     gsap.set('.secondSection .content', { yPercent: 150 })
     gsap.set('.secondSection .light', { alpha: 0 })
-    gsap.set('.secondSection .bird-down', { alpha: 1 })
+    gsap.set('.secondSection .bird-wrapper', { yPercent: 50 })
+
     tl.addLabel('start')
-    // tl.to('.secondSection .bird', {
-    //   duration: 4,
-    //   motionPath: {
-    //     path: '#mainPath',
-    //     align: '#mainPath',
-    //     alignOrigin: [0.5, 0.5],
-    //     autoRotate: true,
-    //   },
-    // })
+
+    tl.to(
+      '.secondSection .bird',
+      {
+        duration: 6,
+        motionPath: {
+          path: '#mainPath',
+          align: '#mainPath',
+          alignOrigin: [0.5, 0.5],
+          autoRotate: true,
+        },
+      },
+      'start+=0.05'
+    )
 
     tl.to('.secondSection .light', { alpha: 0.5, duration: 0.1 }, 'start+=1.5')
     tl.to('.secondSection .light', { alpha: 0, duration: 0.1 }, 'start+=2')
@@ -122,7 +121,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       },
     })
     gsap.set('.fourthSection .content', { yPercent: 150 })
-    gsap.set('.fourthSection .bird', { alpha: 0 })
+
     tl.addLabel('start')
     // tl.to('.fourthSection .bird', { alpha: 1 }, 'start')
     tl.to('.fourthSection .content', { yPercent: 0 }, 'start')
@@ -155,7 +154,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   mm.add('(min-width: 1024px)', () => {
-    // firstSection()
+    firstSection()
     secondSection()
     thirdSection()
     fourthSection()
@@ -168,6 +167,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     //second
     gsap.set('.secondSection .content', { yPercent: 0 })
     gsap.set('.secondSection .light', { alpha: 1 })
+    gsap.set('.secondSection .bird', { alpha: 0 })
     //third
     gsap.set('.thirdSection .content', { yPercent: 0 })
     gsap.set('.thirdSection .wind', { xPercent: 0 })

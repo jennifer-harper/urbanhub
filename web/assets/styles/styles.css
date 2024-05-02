@@ -2187,6 +2187,9 @@ tbody tr:first-of-type td {
   }
 }
 
+.ourSpaces .hero {
+  padding-top: 5vw;
+}
 .ourSpaces .hero-animation .hero-cloud {
   max-width: 50%;
   margin-right: 0;
@@ -2212,7 +2215,7 @@ tbody tr:first-of-type td {
 }
 @media (min-width: 64em) {
   .ourSpaces .hero-animation {
-    height: 100vh;
+    height: 99vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2269,6 +2272,11 @@ tbody tr:first-of-type td {
     margin-top: 0vw;
   }
 }
+@media (min-width: 1600px) and (min-height: 900px) {
+  .ourSpaces .hero-animation .hero {
+    padding-top: 8vw !important;
+  }
+}
 .ourSpaces .mobile-hide {
   display: none;
 }
@@ -2305,9 +2313,6 @@ tbody tr:first-of-type td {
   margin-left: 0;
   z-index: 0;
 }
-.ourSpaces .secondSection svg {
-  fill: none;
-}
 .ourSpaces .secondSection .relative .ceiling {
   top: -5px;
 }
@@ -2334,24 +2339,23 @@ tbody tr:first-of-type td {
   width: calc(100% - 40px);
   opacity: 0.8;
 }
+.ourSpaces .secondSection .third {
+  justify-content: flex-end;
+  position: relative;
+}
 .ourSpaces .secondSection .bird-wrapper {
   height: 100%;
+  width: calc(100% + 24vw);
+  margin-right: -12vw;
+  margin-left: -12vw;
   align-items: flex-end;
-  width: 12vw;
-  height: 12vw;
-  position: relative;
+}
+.ourSpaces .secondSection .bird-wrapper svg {
+  fill: none;
+  stroke: none;
 }
 .ourSpaces .secondSection .bird-wrapper .bird {
   max-width: 12vw;
-  margin-left: 3vw;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
-.ourSpaces .secondSection .bird-wrapper .bird-down {
-  opacity: 0;
 }
 @media (min-width: 64em) {
   .ourSpaces .secondSection .heading h2 {
@@ -2429,6 +2433,9 @@ tbody tr:first-of-type td {
   right: 0;
   width: 12vw;
   height: 12vw;
+}
+.ourSpaces .fourthSection .third {
+  position: relative;
 }
 .ourSpaces .fifthSection h2 svg {
   fill: #D3E84C;
