@@ -2164,6 +2164,8 @@ tbody tr:first-of-type td {
   .ourSpaces .level {
     height: calc(100vh - 85px);
     overflow: hidden;
+    z-index: 100;
+    position: relative;
   }
   .ourSpaces .level .main {
     flex-direction: row;

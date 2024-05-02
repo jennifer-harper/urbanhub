@@ -2491,6 +2491,8 @@ tbody{
         .level{
             height: calc(100vh - 85px);
             overflow: hidden;
+            z-index: 100;
+        position: relative;
             .main{
                 flex-direction: row;
                 height: 100%;

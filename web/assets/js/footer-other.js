@@ -1,7 +1,8 @@
 gsap.registerPlugin(ScrollTrigger)
 
-let footer = document.querySelector('.footer-banner.standard')
+let footer = document.querySelector('.footer-banner.other')
 let offset = $(footer).outerHeight(true)
+console.log(offset)
 gsap.set(footer, { yPercent: -70 })
 
 const uncover = gsap.timeline({ paused: true })
@@ -15,20 +16,20 @@ function createScrollTrigger() {
   }
 
   trigger = ScrollTrigger.create({
-    trigger: '.contact',
+    trigger: '.thingy',
     start: 'bottom bottom',
-    end: `bottom bottom-=${offset}`,
+    // end: `bottom bottom-=${offset}`,
     animation: uncover,
     scrub: true,
-    // markers: {
-    //   startColor: 'red',
-    // },
+    markers: {
+      startColor: 'pink',
+    },
   })
 }
 
 // Function to update offset and recreate ScrollTrigger
 function updateOffsetAndRefresh() {
-  offset = $('.footer-banner.standard').outerHeight(true)
+  offset = $('.footer-banner.other').outerHeight(true)
   createScrollTrigger() // Recreate ScrollTrigger with updated offset
 }
 

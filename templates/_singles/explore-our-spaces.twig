@@ -29,7 +29,9 @@
                 {% include '_partials/animation/thirdSection.twig' %}
                 {% include '_partials/animation/fourthSection.twig' %}
                 {% include '_partials/animation/fifthSection.twig' %}
-
+                {% embed '_partials/footer/footer-banner-other.twig' %}
+                    {% block class %} {{footer}}{% endblock %}
+                {% endembed %}
             </div>
         </div>
     {% endfor %} 
@@ -41,4 +43,5 @@
 {% block scripts %}
 {{ parent() }}
     <script src="/assets/js/building.js"></script>
+
 {% endblock %}
