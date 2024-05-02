@@ -29,14 +29,18 @@
                     <div class="third flex-wrap col flex-jc-sb story-wrap">
                         <a href='/stories/{{ post.slug }}' class="pod">
 
-                            {% set images = post.image.all() %}
-                            {% if images %}
+                        {% set images = post.image.all() %}
+                        {% if images %}
                             {% for image in images %}
                                 <div class="">
-                                    <img src="{{ image.getUrl}}" alt="{{ image.alt }}" class="img-fit">
+                                    <img src="{{ image.getUrl }}" alt="{{ image.alt }}" class="img-fit">
                                 </div>
                             {% endfor %}
-                            {% endif %}
+                        {% else %}
+                            <div class="">
+                                <img src="/uploads/images/successful-project-leader-in-coworking-space-2021-09-24-03-50-27.webp" alt="Placeholder Image" class="img-fit">
+                            </div>
+                        {% endif %}
 
                             <div class="content-wrapper">
                                 <h3>{{post.title}}</h3>
