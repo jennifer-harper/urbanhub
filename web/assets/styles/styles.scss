@@ -2468,6 +2468,7 @@ tbody{
     }
 
     .third{
+        overflow: hidden;
         flex-basis:50%;
         display: flex;
         flex-direction: column;
@@ -2519,24 +2520,14 @@ tbody{
             }
         }
     }
-    @media #{$mq-retina}{
-        .level{
-            height: calc(100vh - 170px);
-        }
-    }
 }  
 
 
 
 
 .ourSpaces{
-    footer{
-        margin-bottom: -7vw;
-    }
+
     .hero-animation{
-        // .hero{
-        //     padding-top: 7vw;
-        // }
         .hero-cloud{
             max-width: 50%;
             margin-right:0;
@@ -2595,8 +2586,7 @@ tbody{
                     padding-bottom: 0;
                 }
             }
-        }
-        @media #{$mq-medium}{
+
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -2609,13 +2599,19 @@ tbody{
 
 
         @media #{$mq-desktop}{
+            .hero{
+                .hero-cloud{
+
+                    margin-top:-1vw;
+                }
+            }
             .hero-antenna{
                 width: 20%;
                 top: -69%;
             }
 
             h1{
-                padding-top: 0;
+                padding-top: 4vw;
             }
         }
         
@@ -2627,9 +2623,17 @@ tbody{
                 }
             }
         }
-        @media #{$mq-retina}{
-            height: calc(100vh - 170px);
+        @media #{$mq-large}{
+            .hero{
+                .hero-cloud{
+
+                    margin-top:0vw;
+                }
+            }
+
         }
+        
+
     }
 
 
@@ -2648,7 +2652,7 @@ tbody{
     }
 
 
-    .private-animation{
+    .firstSection{
         position: relative;
 
         .ceiling-lighting {
@@ -2675,7 +2679,11 @@ tbody{
 
     } 
 
-    .traditional-animation{
+    .secondSection{
+
+        svg{
+            fill:none;
+        }
        .relative .ceiling{
             top:-5px;
         }
@@ -2721,7 +2729,7 @@ tbody{
         @media #{$mq-medium}{
             .heading{
                 h2{
-                    margin-left: 3vw;
+                    margin-right: 3vw;
                 }
             }
         }
@@ -2733,7 +2741,7 @@ tbody{
         }
     }
 
-    .team-animation{
+    .thirdSection{
         .heading{
             h2{
                 color:$blue-dark;
@@ -2782,7 +2790,7 @@ tbody{
         }
     }
 
-    .coworking{
+    .fourthSection{
         .heading{
             h2{
                 color:$light;
@@ -2825,7 +2833,7 @@ tbody{
 
     }
 
-    .tour{
+    .fifthSection{
         h2{
             svg{
                 fill: $lime;
