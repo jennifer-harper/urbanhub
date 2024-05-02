@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         anticipatePin: 1,
         scrub: 1,
         invalidateOnRefresh: true,
-        markers: marker,
+        // markers: marker,
       },
     })
     gsap.set('.secondSection .content', { yPercent: 150 })
