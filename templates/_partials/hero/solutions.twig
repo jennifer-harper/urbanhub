@@ -49,12 +49,23 @@
             </div>
         </div>
     </div>
-    <div class="pad-top-btm pad-sides half center-style">
-    {% if entry.image.one() %}
-        {% set image = entry.image.one() %}
-        <img class="max-75" src="{{ image.url }}" alt="{{ image.alt }}">
+
+
+
+
+    {% set image = entry.image.one() %}
+    {% if image %}
+        <div class="half mask-wrapper" style="background-image:url({{ image.getUrl() }})">
+            {% include '_partials/masks/solutions-top.twig' %}
+            {% include '_partials/masks/solutions-bottom.twig' %}
+        </div>
+    {% else %}
+        <div class="half mask-wrapper">
+            {% include '_partials/masks/mask-left.twig' %}
+            {% include '_partials/masks/mask-left-btm.twig' %}
+        </div>
     {% endif %}
     </div>
-</div>
+
 
 

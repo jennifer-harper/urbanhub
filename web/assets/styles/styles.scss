@@ -1082,6 +1082,8 @@ button{
 
 
 //-------Image masks-----------//
+
+.other,
 .left-mask,
 .left-mask-btm,
 .right-mask,
@@ -1090,6 +1092,16 @@ button{
     fill:$light;
 }
 
+.other.btm{
+    bottom:0;
+    left:0;
+    width: 40%;
+}
+.other.top{
+    top: 0;
+    left: 0;
+    width: 60%;
+}
 
 .bottom-mask{
     width:100%;
