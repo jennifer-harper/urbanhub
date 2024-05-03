@@ -1,0 +1,101 @@
+fieldLayouts:
+  f89983de-0220-441d-85fe-edae7debf154:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 35b2d785-8b48-46bb-95ca-70728f98561d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 41d54f8f-128a-4760-8978-4369a9cb09c2
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: bfb7b42f-4864-40c5-861c-2e94d9335067 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73325e8e-19a1-404a-9ebe-a61b2a6ac248
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 54fd7cdc-ab6d-487e-9f29-ebfd83f6715c # Intro Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 36c7a0b8-9c6b-4027-bdd6-8903097cd914
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5bb4d2ad-cdd2-47de-bd32-bdfe443c47bd # Paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 19ccfde4-cf2b-4fd0-946b-b33ec8076e03
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 07e693cd-5893-4421-915a-a70846a5758c # First Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 62f6527f-00e2-4184-9069-06f52e095b4b
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Section One'
+        uid: 4924dba5-9f9c-48b6-9ad4-406533ff5b8e
+        userCondition: null
+handle: virtualTour
+hasTitleField: false
+name: 'Virtual Tour'
+section: f88b8a1d-7783-411c-89fa-d248c1725031 # Virtual Tour
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

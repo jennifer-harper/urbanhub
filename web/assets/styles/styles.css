@@ -4045,4 +4045,13 @@ input#honeypooh {
   }
 }
 
+.virtual .bg-green-dark {
+  padding: 5vw;
+  padding-bottom: 0;
+}
+.virtual .tour-wrapper {
+  max-width: 890px;
+  margin: 0 auto;
+}
+
 /*# sourceMappingURL=styles.css.map */
