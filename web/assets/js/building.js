@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     })
     gsap.set('.secondSection .content', { yPercent: 150 })
     gsap.set('.secondSection .light', { alpha: 0 })
-    gsap.set('.secondSection .bird-wrapper', { yPercent: 50 })
+    gsap.set('.secondSection .bird-wrapper', { yPercent: 40 })
 
     tl.addLabel('start')
 

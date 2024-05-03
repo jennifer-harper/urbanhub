@@ -2169,8 +2169,15 @@ tbody tr:first-of-type td {
   font-weight: 600;
 }
 @media (min-width: 48em) {
-  .ourSpaces .two-thirds:not(.hero-animation .two-thirds) {
-    border-right: 1px solid grey;
+  .ourSpaces .two-thirds:not(.hero-animation .two-thirds):after {
+    width: 6px;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    content: "";
+    background: url(../../uploads/images/walls.png);
+    background-repeat: no-repeat;
+    opacity: 0.9;
   }
 }
 @media (min-width: 64em) {
@@ -2336,7 +2343,7 @@ tbody tr:first-of-type td {
   fill: #FAF6F0;
 }
 .ourSpaces .secondSection .content p:not(.btn p) {
-  color: #DB6B34;
+  color: #000;
 }
 .ourSpaces .secondSection .ceiling-fan {
   max-width: 25%;
@@ -2358,9 +2365,9 @@ tbody tr:first-of-type td {
 }
 .ourSpaces .secondSection .bird-wrapper {
   height: 100%;
-  width: calc(100% + 24vw);
-  margin-right: -12vw;
-  margin-left: -12vw;
+  width: calc(100% + 16vw);
+  margin-right: -8vw;
+  margin-left: -8vw;
   align-items: flex-end;
 }
 .ourSpaces .secondSection .bird-wrapper svg {
@@ -2368,7 +2375,7 @@ tbody tr:first-of-type td {
   stroke: none;
 }
 .ourSpaces .secondSection .bird-wrapper .bird {
-  max-width: 12vw;
+  max-width: 8vw;
 }
 @media (min-width: 64em) {
   .ourSpaces .secondSection .heading h2 {

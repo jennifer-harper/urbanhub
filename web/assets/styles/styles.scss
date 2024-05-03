@@ -2494,8 +2494,18 @@ tbody{
 
     @media #{$mq-small}{
 
-        .two-thirds:not(.hero-animation .two-thirds){
-            border-right: 1px solid grey;
+        .two-thirds:not(.hero-animation .two-thirds):after{
+            // border-right: 1px solid red;
+            width: 6px;
+            position: absolute;
+            right: 0;
+            height: 100%;
+            content: '';
+            background: url(../../uploads/images/walls.png);
+            background-repeat: no-repeat;
+            opacity: 0.9;
+            // background: url(../uploads/images/walls.png);
+            // background-color: pink;
         }
     }
 
@@ -2504,7 +2514,7 @@ tbody{
             height: calc(100vh - 85px);
             overflow: hidden;
             z-index: 100;
-        position: relative;
+            position: relative;
             .main{
                 flex-direction: row;
                 height: 100%;
@@ -2714,7 +2724,7 @@ tbody{
         }
         .content{
             p:not(.btn p){
-                color:$orange;
+                color:#000;
             }
         }
         .ceiling-fan{
@@ -2740,16 +2750,16 @@ tbody{
 
         .bird-wrapper{
             height:100%;
-            width: calc(100% + 24vw);
-            margin-right:-12vw;
-            margin-left: -12vw;
+            width: calc(100% + 16vw);
+            margin-right:-8vw;
+            margin-left: -8vw;
             align-items: flex-end;
             svg{
                 fill:none;
                 stroke:none;
             }
             .bird{
-                max-width: 12vw;
+                max-width: 8vw;
             }
         }
         @media #{$mq-medium}{
