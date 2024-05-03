@@ -214,7 +214,6 @@
     <div class="pad-top-btm">
         <div class="text-center max-hero">
             <h2>Best option for <i>you</i></h2>
-
             <div class="grid">
                 <div class="grid-sizer"></div>
                 <div class="third color-shape fullTime bigTeam privacy collaboration">
@@ -251,8 +250,13 @@
                     <img  src="/uploads/images/UrbanLease3.svg" alt="">
                     {{ _self.btnResult('urban-lease') }}
                 </div>
-            </div>
 
+            </div>
+                {% embed '_partials/button' %}
+                    {% block class %} {{buttonClass}} centered try-again{% endblock %}
+                    {% block title %}Try Again{% endblock %}
+                    {% block url %}/about-you{% endblock %}
+                {% endembed %} 
         </div>
     </div>
 </div> 

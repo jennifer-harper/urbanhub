@@ -2,7 +2,6 @@
       <div class="navbar">
         <div class="mobile-nav">
           <a href="/" class="logo">{% include '_partials/svgs/logo.twig' %}</a>
-         
         </div>
 
         <div class="nav-links">
@@ -206,10 +205,15 @@
                  <li class="x"><a href="/stories">Stories</a></li>
                  <li class="x"><a href="/contact-us">Contact</a></li>
             </ul>
+                    {% embed '_partials/button' %}
+        {% block class %} {{buttonClass}} btn-two{% endblock %}
+        {% block title %}Sign In{% endblock %}
+        {% block url %}{{businessInformation.signIn}} target="_blank" {% endblock %}
+        {% endembed %} 
         </div>
 
         {% embed '_partials/button' %}
-        {% block class %} {{buttonClass}} no-marg-top {% endblock %}
+        {% block class %} {{buttonClass}} no-marg-top btn-one{% endblock %}
         {% block title %}Sign In{% endblock %}
         {% block url %}{{businessInformation.signIn}} target="_blank" {% endblock %}
         {% endembed %} 
