@@ -505,7 +505,7 @@ h1 i{
     position: absolute;
     width: 100%;
     left:0;
-    bottom:0;
+    bottom:-1.23vw;
     z-index: -1;
     svg{
         fill:$green-light;
