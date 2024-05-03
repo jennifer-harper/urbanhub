@@ -883,11 +883,11 @@ ul li a .social-media{
           width: $base-font-size*1.6;
         }
       }
-      &:hover{
-        @include transition;
-        flex-direction: row-reverse;
+    //   &:hover{
+    //     @include transition;
+    //     flex-direction: row-reverse;
 
-      }
+    //   }
     }
 
 

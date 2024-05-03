@@ -778,13 +778,6 @@ ul li a .social-media {
   fill: #315844;
   width: 1.6em;
 }
-.btn span:hover,
-.btn a:hover {
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in;
-  flex-direction: row-reverse;
-}
 .btn.no-marg-top {
   margin-top: 0px;
 }
