@@ -449,6 +449,12 @@ svg {
   margin-top: 3vw;
   margin-left: auto;
   fill: #315844;
+  width: 6vw;
+}
+@media (min-width: 64em) {
+  .little-star {
+    width: 2vw;
+  }
 }
 
 .tick {

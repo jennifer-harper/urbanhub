@@ -559,7 +559,11 @@ svg {
     margin-left:auto;
     margin-top: $md;
     margin-left:auto;
-    fill:$green-dark
+    fill:$green-dark;
+    width : 6vw;
+    @media #{$mq-medium}{
+        width : 2vw;
+    }
 }
 .tick{
     fill:$green-light;
