@@ -2917,25 +2917,16 @@ nav .bx-menu.rotate-icon {
 .home .centered-hero .h1-wrap {
   position: relative;
 }
-.home .centered-hero .h1-wrap .hero-special {
+.home .centered-hero .h1-wrap i:after {
+  width: 6vw;
   position: absolute;
-  display: none;
-}
-.home .centered-hero .h1-wrap .hero-special.one {
-  left: 0%;
-  width: 200px;
-  top: 35%;
-  z-index: 10;
-}
-.home .centered-hero .h1-wrap .hero-special.two {
-  width: 100px;
-  right: -3%;
-  top: -35%;
-}
-@media (min-width: 48em) {
-  .home .centered-hero .h1-wrap .hero-special {
-    display: block;
-  }
+  top: 0;
+  right: -6vw;
+  height: 9vw;
+  content: "";
+  background: url(../../uploads/images/illustration1-Bookshelf.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .home .centered-hero .intro-text p {
   font-size: 1.2em;

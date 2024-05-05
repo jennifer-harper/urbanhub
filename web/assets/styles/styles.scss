@@ -2506,7 +2506,6 @@ tbody{
     }
 
     @media #{$mq-small}{
-
         .two-thirds:not(.hero-animation .two-thirds):after{
             // border-right: 1px solid red;
             width: 6px;
@@ -2517,8 +2516,7 @@ tbody{
             background: url(../../uploads/images/walls.png);
             background-repeat: no-repeat;
             opacity: 0.9;
-            // background: url(../uploads/images/walls.png);
-            // background-color: pink;
+
         }
     }
 
@@ -3481,23 +3479,17 @@ nav {
         }
         .h1-wrap{
             position: relative;
-            .hero-special{
+            i:after{
+                width: 6vw;
                 position: absolute;
-                display: none;
-                &.one{
-                    left:0%;
-                    width: 200px;
-                    top: 35%;
-                    z-index: 10;
-                }
-                &.two{
-                    width: 100px;
-                    right:-3%;
-                    top: -35%;
-                }
-                @media #{$mq-small}{
-                    display: block
-                }
+                top: 0;
+                right: -6vw;
+                height: 9vw;
+                content: '';
+                // content:url(../../uploads/images/illustration1-Bookshelf.svg);
+                background: url(../../uploads/images/illustration1-Bookshelf.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
             }
         }
         .intro-text p{
