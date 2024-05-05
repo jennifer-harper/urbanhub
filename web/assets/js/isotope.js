@@ -1,11 +1,9 @@
-// external js: isotope.pkgd.js
 document.addEventListener('DOMContentLoaded', function () {
   // init Isotope
   var $grid = $('.grid').isotope({
     itemSelector: '.color-shape',
     masonry: {
       fitWidth: true,
-      gutter: 10,
     },
   })
 
@@ -43,20 +41,38 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     return value
   }
-})
 
-jQuery(window).on('load', function () {
-  $('.grid').isotope({
-    itemSelector: '.color-shape',
+  function updateIsotopeOptions() {
+    var windowWidth = $(window).width()
+    var isotopeOptions = {
+      itemSelector: '.color-shape',
+      masonry: {
+        fitWidth: true,
+      },
+    }
+
+    if (windowWidth > 1025) {
+      isotopeOptions.masonry.gutter = 20
+    }
+
+    $grid.isotope(isotopeOptions)
+  }
+
+  // Initial call to set options based on window width
+  updateIsotopeOptions()
+
+  // Update options on window resize
+  $(window).on('resize', function () {
+    updateIsotopeOptions()
   })
+
+  //need queries to update on browser changes
+  var navHeight = $('nav').innerHeight()
+  var starHeight = $('.star-banner-wrapper').innerHeight()
+  var offset = navHeight + starHeight
+
+  $('#container').css('height', 'calc(102vh - ' + offset + 'px)')
+  $('.centered-hero').css('min-height', 'calc(102vh - ' + offset + 'px)')
+
+  console.log(navHeight, starHeight, offset)
 })
-
-//need queries to update on browser changes
-var navHeight = $('nav').innerHeight()
-var starHeight = $('.star-banner-wrapper').innerHeight()
-
-var offset = navHeight + starHeight
-
-$('#container').css('height', 'calc(102vh - ' + offset + 'px)')
-$('.centered-hero').css('min-height', 'calc(100vh - ' + offset + 'px)')
-console.log(navHeight, starHeight, offset)

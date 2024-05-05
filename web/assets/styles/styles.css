@@ -3982,8 +3982,11 @@ input#honeypooh {
 .about-you #container .section-solutions .btn {
   margin-top: 0;
 }
-.about-you #container #results .centered-hero .pad-top-btm {
-  padding-top: 0;
+.about-you #container #results .centered-hero {
+  justify-content: flex-start;
+}
+.about-you #container #results .pad-top-btm {
+  padding: 0;
 }
 .about-you #container #results .pad-all {
   padding-bottom: 0;
@@ -3993,6 +3996,7 @@ input#honeypooh {
 }
 .about-you #container #results .grid {
   margin: 0 auto;
+  transform: scale(0.8);
 }
 .about-you #container #results .grid .color-shape {
   text-align: center;
@@ -4000,13 +4004,13 @@ input#honeypooh {
 .about-you #container #results .grid .color-shape .btn {
   font-size: 16px;
 }
-.about-you #container #results img,
-.about-you #container #results .btn {
+.about-you #container #results .grid .color-shape img {
   transform: scale(0.8);
 }
 .about-you #container #results .try-again {
-  margin-top: -10px;
-  transform: scale(0.8);
+  margin-top: 0;
+  font-size: 16px;
+  transform: scale(0.9);
 }
 .about-you #container #results h2 {
   margin-bottom: 0;
@@ -4022,14 +4026,6 @@ input#honeypooh {
   }
   .about-you #container #results h3 {
     margin-bottom: 40px;
-  }
-  .about-you #container #results img,
-  .about-you #container #results .btn {
-    transform: scale(1);
-  }
-  .about-you #container #results .try-again {
-    margin-top: 20px;
-    transform: scale(1);
   }
   .about-you #container .section-solutions .box {
     padding: 3vw;
@@ -4087,6 +4083,13 @@ input#honeypooh {
 @media (min-width: 94em) {
   .about-you #container #results h2 {
     margin-bottom: 3vw;
+  }
+  .about-you #container #results .grid {
+    transform: scale(1);
+  }
+  .about-you #container #results .try-again {
+    margin-top: 2vw;
+    transform: scale(1);
   }
 }
 

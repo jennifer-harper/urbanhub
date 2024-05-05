@@ -4782,8 +4782,11 @@ input#honeypooh{ display: none; }
 
 
     #results{
-        .centered-hero .pad-top-btm{
-            padding-top: 0;
+        .centered-hero{
+            justify-content: flex-start;
+        }
+        .pad-top-btm{
+            padding: 0;
         }
         .pad-all{
             padding-bottom: 0;
@@ -4793,24 +4796,24 @@ input#honeypooh{ display: none; }
         }
         .grid {
             margin:0 auto;
+            transform: scale(.8);
             .color-shape{
                 text-align: center;
-
                 .btn{
                     font-size: 16px;
                 }
-
+                img{
+                    transform: scale(.8);
+                }
             }
           }
 
-          img,
-          .btn{
-            transform:scale(.8)
-          }
           .try-again{
-            margin-top: -10px;
-            transform:scale(.8)
+            margin-top: 0;
+            font-size: 16px;
+            transform: scale(.9);
           }
+
           h2{
             margin-bottom: 0;
           }
@@ -4819,7 +4822,6 @@ input#honeypooh{ display: none; }
 
 
     @media #{$mq-small}{
-
         .centered-hero{
             h2{
                 font-size:40px;
@@ -4831,23 +4833,12 @@ input#honeypooh{ display: none; }
             }
         }
 
-    #results{
-        h3{
-            margin-bottom: 40px;
+        #results{
+            h3{
+                margin-bottom: 40px;
+            }
+
         }
-        img,
-        .btn{
-          transform:scale(1)
-        }
-
-            .try-again{
-                margin-top:20px;
-                transform:scale(1)
-              }
-
-    }
-
-
 
         .section-solutions{
             .box{
@@ -4866,7 +4857,6 @@ input#honeypooh{ display: none; }
     }
 
     @media #{$mq-medium}{
-
         .box .flex-wrap.style{
             flex-direction: column-reverse;
             justify-content: space-between;
@@ -4924,6 +4914,13 @@ input#honeypooh{ display: none; }
                 h2{
                     margin-bottom:3vw
                 }
+                .grid{
+                    transform: scale(1);
+                }
+                .try-again{
+                    margin-top: 2vw;
+                    transform: scale(1);
+                  }
             }
         }
     }
