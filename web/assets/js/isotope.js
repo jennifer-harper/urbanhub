@@ -1,3 +1,4 @@
+// external js: isotope.pkgd.js
 document.addEventListener('DOMContentLoaded', function () {
   // init Isotope
   var $grid = $('.grid').isotope({
@@ -42,37 +43,34 @@ document.addEventListener('DOMContentLoaded', function () {
     return value
   }
 
-  function updateIsotopeOptions() {
-    var windowWidth = $(window).width()
-    var isotopeOptions = {
-      itemSelector: '.color-shape',
-      masonry: {
-        fitWidth: true,
-      },
-    }
+  function refreshHeight() {
+    var navHeight = $('nav').innerHeight()
+    var starHeight = $('.star-banner-wrapper').innerHeight()
+    var offset = navHeight + starHeight
 
-    if (windowWidth > 1025) {
-      isotopeOptions.masonry.gutter = 20
-    }
-
-    $grid.isotope(isotopeOptions)
+    $('#container').css('height', 'calc(102vh - ' + offset + 'px)')
+    $('.centered-hero').css('min-height', 'calc(102vh - ' + offset + 'px)')
+    console.log(navHeight, starHeight, offset)
   }
 
-  // Initial call to set options based on window width
-  updateIsotopeOptions()
+  function updateOffsetAndRefresh() {
+    setTimeout(refreshHeight, 300) // Wait 300 milliseconds after orientation change
+  }
 
-  // Update options on window resize
-  $(window).on('resize', function () {
-    updateIsotopeOptions()
+  // Initial call to set layout based on window size
+  refreshHeight()
+
+  // Update layout on window resize or orientation change
+  $(window).on('resize orientationchange', updateOffsetAndRefresh)
+
+  // Recalculate navHeight after orientation change with a slight delay
+  window.addEventListener('orientationchange', function () {
+    setTimeout(refreshHeight, 500) // Wait 500 milliseconds after orientation change
   })
+})
 
-  //need queries to update on browser changes
-  var navHeight = $('nav').innerHeight()
-  var starHeight = $('.star-banner-wrapper').innerHeight()
-  var offset = navHeight + starHeight
-
-  $('#container').css('height', 'calc(102vh - ' + offset + 'px)')
-  $('.centered-hero').css('min-height', 'calc(102vh - ' + offset + 'px)')
-
-  console.log(navHeight, starHeight, offset)
+jQuery(window).on('load', function () {
+  $('.grid').isotope({
+    itemSelector: '.color-shape',
+  })
 })

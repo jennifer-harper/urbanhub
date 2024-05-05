@@ -3957,6 +3957,7 @@ input#honeypooh {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 100%;
 }
 .about-you #container .centered-hero h2 {
   font-size: 25px;
@@ -4066,6 +4067,7 @@ input#honeypooh {
   .about-you #container .box .flex-wrap.style {
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
   }
   .about-you #container .section-solutions .box {
     display: flex;
@@ -4079,8 +4081,6 @@ input#honeypooh {
   .about-you #container img {
     max-height: 6vw;
   }
-}
-@media (min-width: 94em) {
   .about-you #container #results h2 {
     margin-bottom: 3vw;
   }

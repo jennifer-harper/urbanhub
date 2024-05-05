@@ -4746,26 +4746,26 @@ input#honeypooh{ display: none; }
 .about-you{
     #container{
      overflow: hidden; 
-
-    .centered-hero{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        h2{
-            font-size:25px;
-            margin-bottom: $base-font-size*.5;
+        .centered-hero{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            // max-height: 100vh;
+            h2{
+                font-size:25px;
+                margin-bottom: $base-font-size*.5;
+            }
+            h3{
+                font-size:20px;
+                margin-bottom: 0;
+            }
+            .pad-all{
+                padding:3vw;
+            }
         }
-        h3{
-            font-size:20px;
-            margin-bottom: 0;
-        }
-        .pad-all{
-            padding:3vw;
-        }
-    }
 
-    .section-solutions{
+        .section-solutions{
         justify-content: center;
         .box{
             margin: $base-font-size*.5;
@@ -4777,127 +4777,128 @@ input#honeypooh{ display: none; }
         .btn{
             margin-top: 0;
         }
-    }
-
-
-
-    #results{
-        .centered-hero{
-            justify-content: flex-start;
         }
-        .pad-top-btm{
-            padding: 0;
-        }
-        .pad-all{
-            padding-bottom: 0;
-        }
-        .third{
-            margin: 10px 0;
-        }
-        .grid {
-            margin:0 auto;
-            transform: scale(.8);
-            .color-shape{
-                text-align: center;
-                .btn{
-                    font-size: 16px;
-                }
-                img{
-                    transform: scale(.8);
-                }
-            }
-          }
-
-          .try-again{
-            margin-top: 0;
-            font-size: 16px;
-            transform: scale(.9);
-          }
-
-          h2{
-            margin-bottom: 0;
-          }
-
-    }
 
 
-    @media #{$mq-small}{
-        .centered-hero{
-            h2{
-                font-size:40px;
-                margin-bottom: $base-font-size*.5;
-            }
-            h3{
-                font-size:30px;
-                margin-bottom: 0;
-            }
-        }
 
         #results{
-            h3{
-                margin-bottom: 40px;
+            .centered-hero{
+                justify-content: flex-start;
+            }
+            .pad-top-btm{
+                padding: 0;
+            }
+            .pad-all{
+                padding-bottom: 0;
+            }
+            .third{
+                margin: 10px 0;
+            }
+            .grid {
+                margin:0 auto;
+                transform: scale(.8);
+                .color-shape{
+                    text-align: center;
+                    .btn{
+                        font-size: 16px;
+                    }
+                    img{
+                        transform: scale(.8);
+                    }
+                }
             }
 
-        }
-
-        .section-solutions{
-            .box{
-                padding: 3vw;
+            .try-again{
+                margin-top: 0;
+                font-size: 16px;
+                transform: scale(.9);
             }
-        }
 
-        .box .flex-wrap.style{
-            flex-direction: row;
-            justify-content: space-between;
-            .flex-wrap.col{
-                justify-content: flex-end;
-                
-            }
-        }
-    }
-
-    @media #{$mq-medium}{
-        .box .flex-wrap.style{
-            flex-direction: column-reverse;
-            justify-content: space-between;
-        }
-        .section-solutions .box{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .section-solutions{
-            text-align: center;
-            .btn{
-                margin-top: $base-font-size;
-            }
-          }
-        
-    }
-
-    @media #{$mq-desktop}{
-        .centered-hero{
             h2{
-                font-size:$base-font-size*4; 
+                margin-bottom: 0;
             }
-            h3{
-                font-size:$base-font-size*1.8; 
+
+        }
+
+
+        @media #{$mq-small}{
+            .centered-hero{
+                h2{
+                    font-size:40px;
+                    margin-bottom: $base-font-size*.5;
+                }
+                h3{
+                    font-size:30px;
+                    margin-bottom: 0;
+                }
+            }
+
+            #results{
+                h3{
+                    margin-bottom: 40px;
+                }
+
+            }
+
+            .section-solutions{
+                .box{
+                    padding: 3vw;
+                }
+            }
+
+            .box .flex-wrap.style{
+                flex-direction: row;
+                justify-content: space-between;
+                .flex-wrap.col{
+                    justify-content: flex-end;
+                    
+                }
             }
         }
 
-        .box .flex-wrap.style{
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .section-solutions .box{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: flex-start;
+        @media #{$mq-medium}{
+            .box .flex-wrap.style{
+                flex-direction: column-reverse;
+                justify-content: space-between;
+            }
+            .section-solutions .box{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .section-solutions{
+                text-align: center;
+                .btn{
+                    margin-top: $base-font-size;
+                }
+            }
+            
         }
 
+        @media #{$mq-desktop}{
+            .centered-hero{
+                h2{
+                    font-size:$base-font-size*4; 
+                }
+                h3{
+                    font-size:$base-font-size*1.8; 
+                }
+            }
+
+            .box .flex-wrap.style{
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .section-solutions .box{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
 
             .third{
                 margin: 3vw 0;
@@ -4906,10 +4907,7 @@ input#honeypooh{ display: none; }
             img{
                 max-height:6vw;
             }
-    
-    }
 
-    @media #{$mq-figma}{
             #results{
                 h2{
                     margin-bottom:3vw
@@ -4920,7 +4918,7 @@ input#honeypooh{ display: none; }
                 .try-again{
                     margin-top: 2vw;
                     transform: scale(1);
-                  }
+                }
             }
         }
     }
