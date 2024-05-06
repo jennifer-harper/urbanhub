@@ -3998,6 +3998,7 @@ input#honeypooh {
   margin-bottom: 0;
 }
 .about-you #container .centered-hero#getstarted, .about-you #container .centered-hero#space, .about-you #container .centered-hero#team, .about-you #container .centered-hero#results {
+  background: yellow;
   position: absolute;
   width: 100vw;
   top: 0;
@@ -4014,6 +4015,7 @@ input#honeypooh {
   z-index: 0;
 }
 .about-you #container .centered-hero#hero {
+  background: red;
   position: relative;
   z-index: 3;
 }
