@@ -42,6 +42,30 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     return value
   }
+
+  function updateIsotopeOptions() {
+    var windowWidth = $(window).width()
+    var isotopeOptions = {
+      itemSelector: '.color-shape',
+      masonry: {
+        fitWidth: true,
+      },
+    }
+
+    if (windowWidth > 1025) {
+      isotopeOptions.masonry.gutter = 20
+    }
+
+    $grid.isotope(isotopeOptions)
+  }
+
+  // Initial call to set options based on window width
+  updateIsotopeOptions()
+
+  // Update options on window resize
+  $(window).on('resize', function () {
+    updateIsotopeOptions()
+  })
 })
 
 jQuery(window).on('load', function () {
