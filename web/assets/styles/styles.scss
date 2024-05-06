@@ -4788,6 +4788,7 @@ input#honeypooh{ display: none; }
                 height: 100%;
                 padding: 0;
                 padding-top: 50px;
+                padding: 3vw;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -4823,10 +4824,12 @@ input#honeypooh{ display: none; }
                 }
             }
             &#hero{
-                background-color: pink;
                 position: relative;
                 z-index: 3;
-                padding:5vw;
+                .pad-all{
+                    padding:5vw;
+                    padding-top:50px;
+                }
                 &.active2{
                     display:none;
                     z-index: 0;
@@ -4834,6 +4837,7 @@ input#honeypooh{ display: none; }
             }
 
             @media #{$mq-small}{
+                &#hero .pad-all,
                 .pad-all{
                     padding:5vw;
                     display: flex;
@@ -4865,9 +4869,6 @@ input#honeypooh{ display: none; }
         #results{
             .centered-hero{
                 justify-content: flex-start;
-            }
-            .pad-top-btm{
-                padding: 0;
             }
             .pad-all{
                 padding-bottom: 0;
@@ -4953,6 +4954,11 @@ input#honeypooh{ display: none; }
                 text-align: center;
                 .btn{
                     margin-top: $base-font-size;
+                }
+            }
+            #results{
+                .pad-all{
+                    padding-bottom: 5vw;
                 }
             }
             

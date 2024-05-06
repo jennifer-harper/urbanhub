@@ -3983,6 +3983,7 @@ input#honeypooh {
   height: 100%;
   padding: 0;
   padding-top: 50px;
+  padding: 3vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -4013,16 +4014,19 @@ input#honeypooh {
   z-index: 0;
 }
 .about-you #container .centered-hero#hero {
-  background-color: pink;
   position: relative;
   z-index: 3;
+}
+.about-you #container .centered-hero#hero .pad-all {
   padding: 5vw;
+  padding-top: 50px;
 }
 .about-you #container .centered-hero#hero.active2 {
   display: none;
   z-index: 0;
 }
 @media (min-width: 48em) {
+  .about-you #container .centered-hero#hero .pad-all,
   .about-you #container .centered-hero .pad-all {
     padding: 5vw;
     display: flex;
@@ -4046,9 +4050,6 @@ input#honeypooh {
 }
 .about-you #container #results .centered-hero {
   justify-content: flex-start;
-}
-.about-you #container #results .pad-top-btm {
-  padding: 0;
 }
 .about-you #container #results .pad-all {
   padding-bottom: 0;
@@ -4116,6 +4117,9 @@ input#honeypooh {
   }
   .about-you #container .section-solutions .btn {
     margin-top: 1em;
+  }
+  .about-you #container #results .pad-all {
+    padding-bottom: 5vw;
   }
 }
 @media (min-width: 85.375em) {
