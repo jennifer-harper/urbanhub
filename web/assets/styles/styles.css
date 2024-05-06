@@ -3977,12 +3977,16 @@ input#honeypooh {
 
 .about-you #container {
   overflow: hidden;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 120px);
 }
 .about-you #container .centered-hero .pad-all {
   height: 100%;
   padding: 3vw;
   padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 .about-you #container .centered-hero h2 {
   font-size: 25px;
@@ -4010,7 +4014,7 @@ input#honeypooh {
   z-index: 0;
 }
 .about-you #container .centered-hero#hero {
-  background-color: red;
+  background-color: pink;
   position: relative;
   z-index: 3;
   padding: 5vw;

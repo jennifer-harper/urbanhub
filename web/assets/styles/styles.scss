@@ -4782,16 +4782,16 @@ input#honeypooh{ display: none; }
     // }
     #container{
         overflow: hidden; 
-        height: calc(100vh - 80px);
+        height: calc(100vh - 120px);
         .centered-hero{
             .pad-all{
                 height: 100%;
                 padding: 3vw;
                 padding-top: 50px;
-                // display: flex;
-                // align-items: center;
-                // justify-content: center;
-                // flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
             }
             h2{
                 font-size:25px;
@@ -4824,7 +4824,7 @@ input#honeypooh{ display: none; }
                 }
             }
             &#hero{
-                background-color: red;
+                background-color: pink;
                 position: relative;
                 z-index: 3;
                 padding:5vw;
