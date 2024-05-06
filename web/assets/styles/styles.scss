@@ -3286,8 +3286,8 @@ nav {
                 .environment-sub-menu,
                 .community-sub-menu{
                     li{
-                        flex-basis:33.33%;
-                        width: 33.33%;
+                        flex-basis:50%;
+                        width:50%;
                     }
                 }
 
@@ -3301,12 +3301,12 @@ nav {
                     }
                 }
 
-                .environment-sub-menu{
-                    li{
-                        flex-basis:50%;
-                        width:50%;
-                    }
-                }
+                // .environment-sub-menu{
+                //     li{
+                //         flex-basis:50%;
+                //         width:50%;
+                //     }
+                // }
             }
 
             .x:hover{

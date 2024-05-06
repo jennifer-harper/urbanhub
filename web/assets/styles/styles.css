@@ -2771,8 +2771,8 @@ nav .bx-menu.rotate-icon {
   }
   nav .navbar .links .x .environment-sub-menu li,
   nav .navbar .links .x .community-sub-menu li {
-    flex-basis: 33.33%;
-    width: 33.33%;
+    flex-basis: 50%;
+    width: 50%;
   }
   nav .navbar .links .x .sub-menu.environment-sub-menu svg,
   nav .navbar .links .x .sub-menu.community-sub-menu svg {
@@ -2781,10 +2781,6 @@ nav .bx-menu.rotate-icon {
   nav .navbar .links .x .sub-menu.environment-sub-menu .content,
   nav .navbar .links .x .sub-menu.community-sub-menu .content {
     text-align: center;
-  }
-  nav .navbar .links .x .environment-sub-menu li {
-    flex-basis: 50%;
-    width: 50%;
   }
   nav .navbar .links .x:hover > .arrow {
     transform: rotate(180deg);
