@@ -4782,7 +4782,7 @@ input#honeypooh{ display: none; }
     // }
     #container{
         overflow: hidden; 
-        height: calc(100vh - 120px);
+        height: calc(100vh - 80px);
         .centered-hero{
             .pad-all{
                 height: 100%;
@@ -4807,8 +4807,8 @@ input#honeypooh{ display: none; }
             &#space,
             &#team,
             &#results{
-                background: yellow;
-                position: absolute;
+                background: pink;
+                // position: absolute;
                 width: 100vw;
                 top: 0;
                 display:none;
