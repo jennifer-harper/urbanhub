@@ -3190,7 +3190,7 @@ nav .bx-menu.rotate-icon {
 }
 @media (min-width: 64em) {
   .home .tabs-urban-solutions .tab-content {
-    min-height: 50vh;
+    min-height: 85vh;
   }
 }
 @media (min-width: 94em) {

@@ -5,7 +5,7 @@
         <ul class="tabs-nav-wrapper">
         {% for table in tables %}
             <li class="">
-                <a href="#tab-{{ loop.index }}">
+                <a href="#solution-{{ table.slug}}">
                     <div class="mobile-only">
                     {% if  table.paragraph4 %}
                         {{table.paragraph4}}
@@ -17,7 +17,7 @@
         </ul>
 
         {% for table in tables %}
-        <div class="bg-green-light solutions-tables pad-all" id="tab-{{ loop.index }}">
+        <div class="bg-green-light solutions-tables pad-all" id="solution-{{ table.slug }}">
             {% if table.heading2 %}
                 {{table.heading2}}
             {% endif %}

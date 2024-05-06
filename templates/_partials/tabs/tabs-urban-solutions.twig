@@ -5,7 +5,7 @@
         {% for slide in slider %} 
          {% if slide.spaceType is not empty %}
             <li class="{{slide.spaceType[0]}}">
-                <a href="#tab-{{ loop.index }}">
+                <a href="#tab-{{ slide.slug }}">
                    <div class="mobile-only {{slide.spaceType[0]}}">
                     {% if  slide.spaceType %}
                         {{slide.spaceType[0]}}
@@ -20,7 +20,7 @@
     <div>
         {% for slide in slider %}
             {% if slide.spaceType is not empty %}
-                <div class="{{slide.spaceType[0]}}" id="tab-{{ loop.index }}">
+                <div class="{{slide.spaceType[0]}}" id="tab-{{ slide.slug }}">
                    <div class="pad-all flex-wrap tab-content">
                             <div class="half flex-wrap flex-align-center">
                                 <div>

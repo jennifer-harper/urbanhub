@@ -6,7 +6,7 @@
     <ul class="tabs-nav-wrapper">
         {% for tab in tabs %} 
             <li class="">
-                <a href="#tab-{{ loop.index }}">
+                <a href="#facilities-{{ tab.slug }}">
                    <div class="mobile-only">
                     {% if  tab.tabTitle %}
                         {{tab.tabTitle}}
@@ -18,7 +18,7 @@
     </ul>
 
     {% for tab in tabs %}
-            <div class="solutions-contrast tabs bg-green-light" id="tab-{{ loop.index }}">
+            <div class="solutions-contrast tabs bg-green-light" id="facilities-{{ tab.slug}}">
                 <div class="pad-all no-bottom">
                     <div class="flex-wrap flex-jc-sb flex-align-center ">
                         {{tab.facilitiesHeading}}
