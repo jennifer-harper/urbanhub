@@ -3975,14 +3975,17 @@ input#honeypooh {
   border-color: #FAF6F0;
 }
 
+.about-you .body-wrapper {
+  padding-top: 0px;
+}
 .about-you #container {
   overflow: hidden;
-  height: calc(100vh - 150px);
+  height: 100vh;
 }
 .about-you #container .centered-hero .pad-all {
   height: 100%;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 150px;
   padding: 3vw;
   display: flex;
   align-items: center;

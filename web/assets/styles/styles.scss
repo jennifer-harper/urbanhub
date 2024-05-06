@@ -4777,17 +4777,18 @@ input#honeypooh{ display: none; }
 
 
 .about-you{
-    // .body-wrapper{
-    //     padding-top: 120px;
-    // }
+    .body-wrapper{
+        padding-top: 0px;
+    }
     #container{
         overflow: hidden; 
-        height: calc(100vh - 150px);
+        // height: calc(100vh - 150px);
+        height: 100vh;
         .centered-hero{
             .pad-all{
                 height: 100%;
                 padding: 0;
-                padding-top: 50px;
+                padding-top: 150px;
                 padding: 3vw;
                 display: flex;
                 align-items: center;
