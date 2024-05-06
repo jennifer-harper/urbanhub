@@ -3980,7 +3980,7 @@ input#honeypooh {
 }
 .about-you #container {
   overflow: hidden;
-  height: 100vh;
+  height: calc(100vh - 80px);
 }
 .about-you #container .centered-hero .pad-all {
   height: 100%;
@@ -3994,9 +3994,6 @@ input#honeypooh {
 .about-you #container .centered-hero h3 {
   font-size: 20px;
   margin-bottom: 0;
-}
-.about-you #container .centered-hero .pad-all {
-  padding: 3vw;
 }
 .about-you #container .centered-hero#getstarted, .about-you #container .centered-hero#space, .about-you #container .centered-hero#team, .about-you #container .centered-hero#results {
   position: absolute;
@@ -4018,6 +4015,7 @@ input#honeypooh {
   position: relative;
   z-index: 3;
   padding-top: 50px;
+  padding: 5vw;
 }
 .about-you #container .centered-hero#hero.active2 {
   display: none;
@@ -4025,6 +4023,7 @@ input#honeypooh {
 }
 @media (min-width: 48em) {
   .about-you #container .centered-hero .pad-all {
+    padding: 5vw;
     display: flex;
     align-items: center;
     justify-content: center;

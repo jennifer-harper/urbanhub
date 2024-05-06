@@ -4782,8 +4782,7 @@ input#honeypooh{ display: none; }
     }
     #container{
         overflow: hidden; 
-        // height: calc(100vh - 80px);
-        height: 100vh;
+        height: calc(100vh - 80px);
         .centered-hero{
             .pad-all{
                 height: 100%;
@@ -4801,9 +4800,6 @@ input#honeypooh{ display: none; }
             h3{
                 font-size:20px;
                 margin-bottom: 0;
-            }
-            .pad-all{
-                padding:3vw;
             }
 
             &#getstarted,
@@ -4830,6 +4826,7 @@ input#honeypooh{ display: none; }
                 position: relative;
                 z-index: 3;
                 padding-top: 50px;
+                padding:5vw;
                 &.active2{
                     display:none;
                     z-index: 0;
@@ -4838,6 +4835,7 @@ input#honeypooh{ display: none; }
 
             @media #{$mq-small}{
                 .pad-all{
+                    padding:5vw;
                     display: flex;
                     align-items: center;
                     justify-content: center;
