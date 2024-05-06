@@ -3975,17 +3975,17 @@ input#honeypooh {
   border-color: #FAF6F0;
 }
 
+.about-you .body-wrapper {
+  padding-top: 120px;
+}
 .about-you #container {
   overflow: hidden;
-  height: calc(100vh - 80px);
+  height: 100vh;
 }
 .about-you #container .centered-hero .pad-all {
   height: 100%;
   padding: 3vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  padding-top: 50px;
 }
 .about-you #container .centered-hero h2 {
   font-size: 25px;
@@ -4017,10 +4017,19 @@ input#honeypooh {
 .about-you #container .centered-hero#hero {
   position: relative;
   z-index: 3;
+  padding-top: 50px;
 }
 .about-you #container .centered-hero#hero.active2 {
   display: none;
   z-index: 0;
+}
+@media (min-width: 48em) {
+  .about-you #container .centered-hero .pad-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 .about-you #container .section-solutions {
   justify-content: center;

@@ -4777,17 +4777,22 @@ input#honeypooh{ display: none; }
 
 
 .about-you{
+    .body-wrapper{
+        padding-top: 120px;
+    }
     #container{
         overflow: hidden; 
-        height: calc(100vh - 80px);
+        // height: calc(100vh - 80px);
+        height: 100vh;
         .centered-hero{
             .pad-all{
                 height: 100%;
                 padding: 3vw;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
+                padding-top: 50px;
+                // display: flex;
+                // align-items: center;
+                // justify-content: center;
+                // flex-direction: column;
             }
             h2{
                 font-size:25px;
@@ -4824,12 +4829,21 @@ input#honeypooh{ display: none; }
             &#hero{
                 position: relative;
                 z-index: 3;
+                padding-top: 50px;
                 &.active2{
                     display:none;
                     z-index: 0;
                 }
             }
 
+            @media #{$mq-small}{
+                .pad-all{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
 
         }
         
