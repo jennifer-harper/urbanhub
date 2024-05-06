@@ -74,3 +74,20 @@ jQuery(window).on('load', function () {
     itemSelector: '.color-shape',
   })
 })
+
+$(document).ready(function () {
+  // Function to toggle display property
+  function toggleDisplay() {
+    $('#getstarted').toggleClass('hidden-class')
+  }
+
+  // Click event handlers for the buttons
+  $('#space').click(toggleDisplay)
+
+  //   function toggleDisplay2() {
+  //     $('#space').toggleClass('hidden-class')
+  //   }
+
+  //   // Click event handlers for the buttons
+  //   $('#team').click(toggleDisplay2)
+})

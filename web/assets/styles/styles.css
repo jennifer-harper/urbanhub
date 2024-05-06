@@ -4118,6 +4118,17 @@ input#honeypooh {
   }
 }
 
+.about-you #container #results,
+.about-you #container #team,
+.about-you #container #space,
+.about-you #container #get-started {
+  display: none;
+}
+
+.about-you #container .hidden-class {
+  display: flex;
+}
+
 .virtual .bg-green-dark {
   padding: 5vw;
   padding-bottom: 0;

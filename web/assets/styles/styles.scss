@@ -4958,6 +4958,22 @@ input#honeypooh{ display: none; }
 }
 
 
+.about-you #container{
+    #results,
+    #team,
+    #space,
+    #get-started{
+        display:none
+    }
+}
+
+.about-you #container{
+    .hidden-class{
+        display:flex
+    }
+}
+
+
 .virtual{
     .bg-green-dark{
         padding:5vw;
