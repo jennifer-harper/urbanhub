@@ -3981,7 +3981,7 @@ input#honeypooh {
 }
 .about-you #container .centered-hero .pad-all {
   height: 100%;
-  padding: 3vw;
+  padding: 0;
   padding-top: 50px;
   display: flex;
   align-items: center;
@@ -4013,6 +4013,7 @@ input#honeypooh {
   z-index: 0;
 }
 .about-you #container .centered-hero#hero {
+  background-color: pink;
   position: relative;
   z-index: 3;
   padding: 5vw;
@@ -4052,7 +4053,7 @@ input#honeypooh {
 .about-you #container #results .pad-all {
   padding-bottom: 0;
 }
-.about-you #container #results .third {
+.about-you #container #results .color-shape {
   margin: 10px 0;
 }
 .about-you #container #results .grid {
@@ -4135,7 +4136,7 @@ input#honeypooh {
     justify-content: space-between;
     align-items: flex-start;
   }
-  .about-you #container .third {
+  .about-you #container .color-shape {
     margin: 3vw 0;
   }
   .about-you #container img {
