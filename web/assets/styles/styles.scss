@@ -499,6 +499,7 @@ h1 i{
     position: relative;
     z-index: -1;
     font-weight:500;
+    white-space: nowrap;
 }
 
 .highlight{
@@ -507,6 +508,7 @@ h1 i{
     left:0;
     bottom:0;
     z-index: -1;
+    white-space: nowrap;
     svg{
         fill:$green-light;
     }
@@ -3483,18 +3485,34 @@ nav {
         }
         .h1-wrap{
             position: relative;
-            i:after{
-                width: 6vw;
-                position: absolute;
-                top: 0;
-                right: -6vw;
-                height: 9vw;
-                content: '';
-                // content:url(../../uploads/images/illustration1-Bookshelf.svg);
-                background: url(../../uploads/images/illustration1-Bookshelf.svg);
-                background-size: contain;
-                background-repeat: no-repeat;
+            display: flex;
+            .hero-special{
+                position: relative;
+                // width: 15vw;
+
+                div{
+                    position: absolute;
+                    width: 40vw;
+                    top: 20%;
+                }
+                &.two{
+                    max-width:50px ;
+                }
             }
+
+            h1{
+                i:after{
+                    position: absolute;
+                    content: '';
+                    background: url(../../uploads/images/illustration1-Bookshelf.svg);
+                    background-size: contain;
+                    width: 6vw;
+                    height: 11vw;
+                    background-repeat: no-repeat;
+                    bottom: -5%;
+                }
+            }
+
         }
         .intro-text p{
             font-size:$base-font-size*1.2;

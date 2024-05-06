@@ -388,6 +388,7 @@ h1 i {
   position: relative;
   z-index: -1;
   font-weight: 500;
+  white-space: nowrap;
 }
 
 .highlight {
@@ -396,6 +397,7 @@ h1 i {
   left: 0;
   bottom: 0;
   z-index: -1;
+  white-space: nowrap;
 }
 .highlight svg {
   fill: #BAE2A6;
@@ -2922,17 +2924,28 @@ nav .bx-menu.rotate-icon {
 }
 .home .centered-hero .h1-wrap {
   position: relative;
+  display: flex;
 }
-.home .centered-hero .h1-wrap i:after {
-  width: 6vw;
+.home .centered-hero .h1-wrap .hero-special {
+  position: relative;
+}
+.home .centered-hero .h1-wrap .hero-special div {
   position: absolute;
-  top: 0;
-  right: -6vw;
-  height: 9vw;
+  width: 40vw;
+  top: 20%;
+}
+.home .centered-hero .h1-wrap .hero-special.two {
+  max-width: 50px;
+}
+.home .centered-hero .h1-wrap h1 i:after {
+  position: absolute;
   content: "";
   background: url(../../uploads/images/illustration1-Bookshelf.svg);
   background-size: contain;
+  width: 6vw;
+  height: 11vw;
   background-repeat: no-repeat;
+  bottom: -5%;
 }
 .home .centered-hero .intro-text p {
   font-size: 1.2em;
