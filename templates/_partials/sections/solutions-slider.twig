@@ -10,6 +10,9 @@
                             <div class="half">
                                 {% if slide.spaceType %}
                                     <h3>{{slide.spaceType[0]}}
+                                    {% if slide.dollarSign is defined and slide.dollarSign != '' %}
+                                        , from
+                                    {% endif %}
                                     </h3>
                                 {% endif %}
                                 <div class="price-title">                
@@ -19,7 +22,6 @@
                                             {% if slide.dollarSign %}  <span class="sign">{{slide.dollarSign}}</span>{% endif %}
                                             {% if slide.spacePrice %}  <span class="price">{{slide.spacePrice}}</span>{% endif %}
                                             </span>
-                                        
                                             {% if slide.priceQuantity %}  
                                             <span class="quantity">
                                                 <i>{{slide.priceQuantity}}</i>
