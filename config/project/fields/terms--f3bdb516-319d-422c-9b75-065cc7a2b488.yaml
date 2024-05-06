@@ -8,7 +8,7 @@ searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
-  ckeConfig: 33cfdfc6-431e-464c-917f-25271d27922c # Title H2
+  ckeConfig: 37fa8148-be44-4619-80ea-820845de1071 # For Terms
   columnType: text
   defaultTransform: null
   enableSourceEditingForNonAdmins: false
