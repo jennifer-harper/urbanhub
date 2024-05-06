@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: cookiePolicy
+name: 'Cookie Policy'
+propagationMethod: all
+siteSettings:
+  2995eac9-2c30-433a-bd61-0390ff903010: # urbanhub
+    enabledByDefault: true
+    hasUrls: true
+    template: _singles/cookie-policy.twig
+    uriFormat: cookie-policy
+type: single

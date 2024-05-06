@@ -1,0 +1,31 @@
+   
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "terms-conditions greenTheme svgStyle" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('termsConditions').all() %} 
+
+{% set buttonClass = "green-light" %}
+{% set buttonClassContrast = "green" %}
+
+{% set main = "bg-green-light" %}
+{% set contrast = "bg-green-dark" %}
+{% set footer = "bg-green-dark" %}
+
+
+{% block content %} 
+  {% for entry in page %} 
+    <div class="pad-all text-center">
+        {% if entry.pageTitle %}
+            {{entry.pageTitle}}
+        {% endif %}
+    </div>
+
+    <div class="pad-all">
+        {% if entry.terms %}
+            {{entry.terms}}
+        {% endif %}
+    </div>
+  {% endfor %} 
+{% endblock %}
+

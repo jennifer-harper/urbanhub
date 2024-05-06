@@ -1,0 +1,23 @@
+columnSuffix: brbzzrkr
+contentColumnType: text
+fieldGroup: 952787c6-7c0b-46f8-9b75-93ef54023e32 # Admin
+handle: terms
+instructions: null
+name: Terms
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: 33cfdfc6-431e-464c-917f-25271d27922c # Title H2
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

@@ -1,0 +1,83 @@
+fieldLayouts:
+  53672f7b-510e-45cd-8861-6383f50cfa40:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c912cffd-25fc-42b3-80ac-0d662561bc71
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9b1a6d2-d5a8-4791-8722-91479f5bf9ae # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d35fe7e9-b6fb-436e-907a-9c28dfe7b19c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 368e19da-aed2-4692-949d-976508166279 # Page Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a3e44e7-3867-4a3e-894a-7257d46c9589
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f3bdb516-319d-422c-9b75-065cc7a2b488 # Terms
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d7858f7-909d-414a-9471-f96a52edf93e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 50ad7e4c-d892-402f-8e96-5c2cac55924d
+        userCondition: null
+handle: privacyPolicy
+hasTitleField: false
+name: 'Privacy Policy'
+section: 2a479ee5-ac03-4e03-bdc1-50c50d67238c # Privacy Policy
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
