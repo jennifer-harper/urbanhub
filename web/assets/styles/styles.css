@@ -3977,12 +3977,15 @@ input#honeypooh {
 
 .about-you #container {
   overflow: hidden;
+  height: calc(100vh - 80px);
 }
-.about-you #container .centered-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.about-you #container .centered-hero .pad-all {
   height: 100%;
+  padding: 3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .about-you #container .centered-hero h2 {
   font-size: 25px;
@@ -3994,6 +3997,30 @@ input#honeypooh {
 }
 .about-you #container .centered-hero .pad-all {
   padding: 3vw;
+}
+.about-you #container .centered-hero#getstarted, .about-you #container .centered-hero#space, .about-you #container .centered-hero#team, .about-you #container .centered-hero#results {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  display: none;
+  position: relative;
+  z-index: 1;
+}
+.about-you #container .centered-hero#getstarted.active, .about-you #container .centered-hero#space.active, .about-you #container .centered-hero#team.active, .about-you #container .centered-hero#results.active {
+  display: block;
+  z-index: 2;
+}
+.about-you #container .centered-hero#getstarted.active2, .about-you #container .centered-hero#space.active2, .about-you #container .centered-hero#team.active2, .about-you #container .centered-hero#results.active2 {
+  display: none;
+  z-index: 0;
+}
+.about-you #container .centered-hero#hero {
+  position: relative;
+  z-index: 3;
+}
+.about-you #container .centered-hero#hero.active2 {
+  display: none;
+  z-index: 0;
 }
 .about-you #container .section-solutions {
   justify-content: center;
@@ -4116,17 +4143,6 @@ input#honeypooh {
     margin-top: 2vw;
     transform: scale(1);
   }
-}
-
-.about-you #container #results,
-.about-you #container #team,
-.about-you #container #space,
-.about-you #container #get-started {
-  display: none;
-}
-
-.about-you #container .hidden-class {
-  display: flex;
 }
 
 .virtual .bg-green-dark {

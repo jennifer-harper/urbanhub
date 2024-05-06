@@ -42,31 +42,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     return value
   }
-
-  function refreshHeight() {
-    var navHeight = $('nav').innerHeight()
-    var starHeight = $('.star-banner-wrapper').innerHeight()
-    var offset = navHeight + starHeight
-
-    $('#container').css('height', 'calc(102vh - ' + offset + 'px)')
-    $('.centered-hero').css('min-height', 'calc(102vh - ' + offset + 'px)')
-    console.log(navHeight, starHeight, offset)
-  }
-
-  function updateOffsetAndRefresh() {
-    setTimeout(refreshHeight, 300) // Wait 300 milliseconds after orientation change
-  }
-
-  // Initial call to set layout based on window size
-  refreshHeight()
-
-  // Update layout on window resize or orientation change
-  $(window).on('resize orientationchange', updateOffsetAndRefresh)
-
-  // Recalculate navHeight after orientation change with a slight delay
-  window.addEventListener('orientationchange', function () {
-    setTimeout(refreshHeight, 500) // Wait 500 milliseconds after orientation change
-  })
 })
 
 jQuery(window).on('load', function () {
@@ -75,19 +50,73 @@ jQuery(window).on('load', function () {
   })
 })
 
+//   function refreshHeight() {
+//     var navHeight = $('nav').innerHeight()
+//     var starHeight = $('.star-banner-wrapper').innerHeight()
+//     var offset = navHeight + starHeight
+
+//     $('#container').css('height', 'calc(102vh - ' + offset + 'px)')
+//     $('.centered-hero').css('min-height', 'calc(102vh - ' + offset + 'px)')
+//     console.log(navHeight, starHeight, offset)
+//   }
+
+//   function updateOffsetAndRefresh() {
+//     setTimeout(refreshHeight, 300) // Wait 300 milliseconds after orientation change
+//   }
+
+//   // Initial call to set layout based on window size
+//   refreshHeight()
+
+//   // Update layout on window resize or orientation change
+//   $(window).on('resize orientationchange', updateOffsetAndRefresh)
+
+//   // Recalculate navHeight after orientation change with a slight delay
+//   window.addEventListener('orientationchange', function () {
+//     setTimeout(refreshHeight, 500) // Wait 500 milliseconds after orientation change
+//   })
+
 $(document).ready(function () {
   // Function to toggle display property
-  function toggleDisplay() {
-    $('#getstarted').toggleClass('hidden-class')
-  }
+  $('#startbtn').click(function () {
+    $('#getstarted').addClass('active')
+    $('#hero').removeClass('active')
+    $('#hero').addClass('active2')
+    console.log('btn clciked')
+  })
 
-  // Click event handlers for the buttons
-  $('#space').click(toggleDisplay)
+  $('#sometimesBtn, #fulltimeBtn').click(function () {
+    $('#space').addClass('active')
+    $('#getstarted').removeClass('active')
+    $('#getstarted').addClass('active2')
+  })
+  $('#teamBtn1, #teamBtn2, #teamBtn3').click(function () {
+    $('#team').addClass('active')
+    $('#space').removeClass('active')
+    $('#space').addClass('active2')
+  })
 
-  //   function toggleDisplay2() {
-  //     $('#space').toggleClass('hidden-class')
-  //   }
+  $('#privacy, #collaboration').click(function () {
+    $('#results').addClass('active')
+    $('#team').removeClass('active')
+    $('#team').addClass('active2')
+  })
+})
 
-  //   // Click event handlers for the buttons
-  //   $('#team').click(toggleDisplay2)
+function refreshHeight() {
+  $('.centered-hero').css('height', 'calc(100vh - 80px)')
+}
+
+function updateOffsetAndRefresh() {
+  setTimeout(refreshHeight, 300) // Wait 300 milliseconds after orientation change
+}
+
+// Initial call to set layout based on window size
+refreshHeight()
+
+// Update layout on window resize or orientation change
+$(window).on('resize orientationchange', updateOffsetAndRefresh)
+
+// Recalculate navHeight after orientation change with a slight delay
+window.addEventListener('orientationchange', function () {
+  setTimeout(refreshHeight, 500) // Wait 500 milliseconds after orientation change
 })

@@ -18,8 +18,28 @@
 {% block content %} 
   {% for entry in page %} 
 
+{% macro btnItem(dataFilter, url, id) %}
+  <div class="btn green centered">
+    <button data-filter="{{ dataFilter }}" class="button">
+    <a href="{{ url }}" id="{{id}}">
+        <p>Continue</p>
+        <div>{% include '_partials/svgs/arrow.twig' %}</div> 
+    </a>
+    </button>
+  </div>
+{% endmacro %}
+
+{% macro btnResult(url) %}
+  <div class="btn green centered">
+    <a href="{{ url }}">
+      <p>Continue</p>
+      <div>{% include '_partials/svgs/arrow.twig' %}</div> 
+    </a>
+  </div>
+{% endmacro %}
+
 <section id="container">
-  <div class="centered-hero start bg-green-light">
+  <div class="centered-hero start bg-green-light" id="hero">
     <div class="pad-all">
         <div class="text-center max-hero">
             {% if entry.pageTitle %}
@@ -36,36 +56,26 @@
             {% endif %}
         </div>
 
-        {% embed '_partials/button' %}
+        {# {% embed '_partials/button' %}
             {% block class %}{{ buttonClass }} centered {% endblock %}
             {% block title %}Get Started{% endblock %}
             {% block url %}#getstarted{% endblock %}
-        {% endembed %}
+        {% endembed %} #}
+            <div class="btn green centered">
+            <button class="button">
+            <a href="#getstarted" id="startbtn">
+            <p>Getstarted</p>
+            <div>{% include '_partials/svgs/arrow.twig' %}</div> 
+            </a>
+            </button>
+            </div>
     </div>
 </div>
 
 
 
 
- {% macro btnItem(dataFilter, url) %}
-  <div class="btn green centered">
-    <button data-filter="{{ dataFilter }}" class="button">
-    <a href="{{ url }}">
-        <p>Continue</p>
-        <div>{% include '_partials/svgs/arrow.twig' %}</div> 
-    </a>
-    </button>
-  </div>
-{% endmacro %}
 
-{% macro btnResult(url) %}
-  <div class="btn green centered">
-    <a href="{{ url }}">
-      <p>Continue</p>
-      <div>{% include '_partials/svgs/arrow.twig' %}</div> 
-    </a>
-  </div>
-{% endmacro %}
 
 <div class="filters">
     <div class="centered-hero bg-green-light ui-group" id="getstarted">
@@ -84,7 +94,7 @@
                         </div>
                         <div class="flex-wrap style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                            {{ _self.btnItem('.sometimes', '#space') }}
+                            {{ _self.btnItem('.sometimes', '#space', 'sometimesBtn') }}
                             </div>
                             
                             <div class="align-right">
@@ -99,7 +109,7 @@
                         </div>
                         <div class="flex-wrap  style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                                {{ _self.btnItem('.fullTime', '#space') }}
+                                {{ _self.btnItem('.fullTime', '#space', 'fulltimeBtn') }}
                             </div>
                             
                             <div class="align-right">
@@ -126,7 +136,7 @@
                         </div>
                         <div class="flex-wrap style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                                {{ _self.btnItem('.bigTeam', '#team') }}
+                                {{ _self.btnItem('.bigTeam', '#team','teamBtn1') }}
                             </div>
                             <div class="align-right">
                                 <img  src="/uploads/images/illustration4-keys.svg" alt="">
@@ -140,7 +150,7 @@
                         </div>
                         <div class="flex-wrap  style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                                {{ _self.btnItem('.smallTeam', '#team') }}
+                                {{ _self.btnItem('.smallTeam', '#team','teamBtn2') }}
                             </div>
                             
                             <div class="align-right">
@@ -155,7 +165,7 @@
                         </div>
                         <div class="flex-wrap  style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                                {{ _self.btnItem('.single', '#team') }}
+                                {{ _self.btnItem('.single', '#team','teamBtn3') }}
                             </div>
                             
                             <div class="align-right">
@@ -182,7 +192,7 @@
                         </div>
                         <div class="flex-wrap style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                                {{ _self.btnItem('.privacy', '#results') }}
+                                {{ _self.btnItem('.privacy', '#results', 'privacy') }}
                             </div>
                             <div class="align-right">
                                 <img  src="/uploads/images/illustration20-hands.svg" alt="">
@@ -196,7 +206,7 @@
                         </div>
                         <div class="flex-wrap  style row flex-jc-sb">
                             <div class="flex-wrap col flex-jc-fe">
-                                {{ _self.btnItem('.collaboration', '#results') }}
+                                {{ _self.btnItem('.collaboration', '#results', 'collaboration') }}
                             </div>
                             
                             <div class="align-right">
@@ -211,7 +221,7 @@
 </div>
 
 <div class="centered-hero bg-green-light" id="results">
-    <div class="pad-top-btm">
+    <div class="pad-all">
         <div class="text-center max-hero">
             <h2>Best option for <i>you</i></h2>
             <div class="grid">
