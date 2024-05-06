@@ -4777,6 +4777,9 @@ input#honeypooh{ display: none; }
 
 
 .about-you{
+    button{
+        padding: 0;;
+    }
     .body-wrapper{
         padding-top: 80px;
     }
@@ -4806,7 +4809,7 @@ input#honeypooh{ display: none; }
             &#space,
             &#team,
             &#results{
-                background: lightblue;
+                background: lightpink;
                 // position: absolute;
                 width: 100vw;
                 top: 0;
@@ -4849,20 +4852,31 @@ input#honeypooh{ display: none; }
             }
 
         }
+
+        .box .row .flex-jc-fe{
+            justify-content: flex-start;
+            .btn{
+                margin-top: 10px;
+            }
+        }
         
 
         .section-solutions{
-        justify-content: center;
-        .box{
-            margin: $base-font-size*.5;
-            padding: 20px;
-        }
-        .align-right{
-            display: flex;
-        }
-        .btn{
-            margin-top: 0;
-        }
+            justify-content: center;
+            .box{
+                margin: $base-font-size*.5;
+                padding: 20px;
+            }
+            .align-right{
+                display: flex;
+                margin-top: 0;
+                img{
+                    max-width: 15vw;
+                }
+            }
+            .btn{
+                margin-top: 0;
+            }
         }
 
 

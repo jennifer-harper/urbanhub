@@ -3975,6 +3975,9 @@ input#honeypooh {
   border-color: #FAF6F0;
 }
 
+.about-you button {
+  padding: 0;
+}
 .about-you .body-wrapper {
   padding-top: 80px;
 }
@@ -4000,7 +4003,7 @@ input#honeypooh {
   margin-bottom: 0;
 }
 .about-you #container .centered-hero#getstarted, .about-you #container .centered-hero#space, .about-you #container .centered-hero#team, .about-you #container .centered-hero#results {
-  background: lightblue;
+  background: lightpink;
   width: 100vw;
   top: 0;
   display: none;
@@ -4037,6 +4040,12 @@ input#honeypooh {
     flex-direction: column;
   }
 }
+.about-you #container .box .row .flex-jc-fe {
+  justify-content: flex-start;
+}
+.about-you #container .box .row .flex-jc-fe .btn {
+  margin-top: 10px;
+}
 .about-you #container .section-solutions {
   justify-content: center;
 }
@@ -4046,6 +4055,10 @@ input#honeypooh {
 }
 .about-you #container .section-solutions .align-right {
   display: flex;
+  margin-top: 0;
+}
+.about-you #container .section-solutions .align-right img {
+  max-width: 15vw;
 }
 .about-you #container .section-solutions .btn {
   margin-top: 0;
