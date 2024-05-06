@@ -4778,18 +4778,18 @@ input#honeypooh{ display: none; }
 
 .about-you{
     .body-wrapper{
-        padding-top: 0px;
+        padding-top: 80px;
     }
     #container{
         overflow: hidden; 
-        // height: calc(100vh - 150px);
-        height: 100vh;
+        height: calc(100vh - 150px);
         .centered-hero{
             .pad-all{
                 height: 100%;
-                padding: 0;
-                padding-top: 150px;
+
+                
                 padding: 3vw;
+                padding-top: 70px;
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
@@ -4808,7 +4808,7 @@ input#honeypooh{ display: none; }
             &#space,
             &#team,
             &#results{
-                background: pink;
+                background: lightblue;
                 // position: absolute;
                 width: 100vw;
                 top: 0;
@@ -4826,7 +4826,7 @@ input#honeypooh{ display: none; }
                 }
             }
             &#hero{
-                background: red;
+
                 position: relative;
                 z-index: 3;
                 .pad-all{

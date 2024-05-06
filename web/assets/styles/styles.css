@@ -3976,17 +3976,16 @@ input#honeypooh {
 }
 
 .about-you .body-wrapper {
-  padding-top: 0px;
+  padding-top: 80px;
 }
 .about-you #container {
   overflow: hidden;
-  height: 100vh;
+  height: calc(100vh - 150px);
 }
 .about-you #container .centered-hero .pad-all {
   height: 100%;
-  padding: 0;
-  padding-top: 150px;
   padding: 3vw;
+  padding-top: 70px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -4001,7 +4000,7 @@ input#honeypooh {
   margin-bottom: 0;
 }
 .about-you #container .centered-hero#getstarted, .about-you #container .centered-hero#space, .about-you #container .centered-hero#team, .about-you #container .centered-hero#results {
-  background: pink;
+  background: lightblue;
   width: 100vw;
   top: 0;
   display: none;
@@ -4017,7 +4016,6 @@ input#honeypooh {
   z-index: 0;
 }
 .about-you #container .centered-hero#hero {
-  background: red;
   position: relative;
   z-index: 3;
 }
