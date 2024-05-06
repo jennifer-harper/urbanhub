@@ -4003,7 +4003,6 @@ input#honeypooh {
   margin-bottom: 0;
 }
 .about-you #container .centered-hero#getstarted, .about-you #container .centered-hero#space, .about-you #container .centered-hero#team, .about-you #container .centered-hero#results {
-  background: lightpink;
   width: 100vw;
   top: 0;
   display: none;
