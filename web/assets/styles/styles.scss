@@ -2968,6 +2968,12 @@ tbody{
 .body-wrapper{
     padding-top: 80px;
     @media #{$mq-retina}{
+        padding-top:4.4vw;
+    }
+}
+
+.home{
+    @media #{$mq-retina}{
         padding-top: 8vw;
     }
 }
