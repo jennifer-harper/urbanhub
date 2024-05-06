@@ -2526,8 +2526,8 @@ tbody tr:first-of-type td {
 }
 
 @media (min-width: 220em) {
-  .home {
-    padding-top: 8vw;
+  .home .body-wrapper {
+    padding-top: 6.5vw;
   }
 }
 

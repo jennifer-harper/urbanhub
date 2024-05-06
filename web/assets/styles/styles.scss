@@ -2973,8 +2973,10 @@ tbody{
 }
 
 .home{
-    @media #{$mq-retina}{
-        padding-top: 8vw;
+    .body-wrapper{
+        @media #{$mq-retina}{
+            padding-top:6.5vw;
+        }
     }
 }
 
