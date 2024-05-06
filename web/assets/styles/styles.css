@@ -4132,6 +4132,12 @@ input#honeypooh {
   .about-you #container .section-solutions .btn {
     margin-top: 1em;
   }
+  .about-you #container .section-solutions .align-right {
+    margin-top: 1vw;
+  }
+  .about-you #container .section-solutions .align-right img {
+    max-width: 20vw;
+  }
   .about-you #container #results .pad-all {
     padding-bottom: 5vw;
   }

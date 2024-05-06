@@ -4968,6 +4968,12 @@ input#honeypooh{ display: none; }
                 .btn{
                     margin-top: $base-font-size;
                 }
+                .align-right{
+                    margin-top: 1vw;
+                    img{
+                        max-width: 20vw;
+                    }
+                }
             }
             #results{
                 .pad-all{
