@@ -3975,9 +3975,6 @@ input#honeypooh {
   border-color: #FAF6F0;
 }
 
-.about-you .body-wrapper {
-  padding-top: 120px;
-}
 .about-you #container {
   overflow: hidden;
   height: calc(100vh - 80px);
@@ -3996,6 +3993,7 @@ input#honeypooh {
   margin-bottom: 0;
 }
 .about-you #container .centered-hero#getstarted, .about-you #container .centered-hero#space, .about-you #container .centered-hero#team, .about-you #container .centered-hero#results {
+  background-color: aqua;
   position: absolute;
   width: 100vw;
   top: 0;
@@ -4012,9 +4010,9 @@ input#honeypooh {
   z-index: 0;
 }
 .about-you #container .centered-hero#hero {
+  background-color: red;
   position: relative;
   z-index: 3;
-  padding-top: 50px;
   padding: 5vw;
 }
 .about-you #container .centered-hero#hero.active2 {
