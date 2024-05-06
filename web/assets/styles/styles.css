@@ -3977,7 +3977,7 @@ input#honeypooh {
 
 .about-you #container {
   overflow: hidden;
-  height: calc(100vh - 120px);
+  height: calc(100vh - 150px);
 }
 .about-you #container .centered-hero .pad-all {
   height: 100%;
@@ -3998,8 +3998,7 @@ input#honeypooh {
   margin-bottom: 0;
 }
 .about-you #container .centered-hero#getstarted, .about-you #container .centered-hero#space, .about-you #container .centered-hero#team, .about-you #container .centered-hero#results {
-  background: yellow;
-  position: absolute;
+  background: pink;
   width: 100vw;
   top: 0;
   display: none;
