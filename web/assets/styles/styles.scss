@@ -4725,14 +4725,21 @@ nav {
 input#honeypooh{ display: none; }
 
 .contact-form{
+    margin-top: 2em;
     .form-layout{
+
+        select,
         textarea,
         input,
         div{
             width: 100%;
             font-family: $body-font;
             font-size:$base-font-size;
+            color:$base-font;
         }
+
+        option,
+        select,
         textarea,
         input{
             padding: $base-font-size*.7 0;
@@ -4743,17 +4750,29 @@ input#honeypooh{ display: none; }
             background-color: transparent;
             outline-color:$green-light;
             outline-width: 1px;
+            // &::placeholder{
+            //     color:#000
+            // }
         }
-
-        label,
-        input{
-            padding-left: 10px;
+        select option.placeholder{
+            margin-left: 20px;
         }
+        
+        
+        // label,
+        // input{
+        //     padding-left: 10px;
+        // }
 
         &.message,
         div{
             margin-top:20px;
         }
+    }
+
+    .form-layout.dropdown {
+        display: flex;
+        flex-direction: column;
     }
 
 

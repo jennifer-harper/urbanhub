@@ -13,24 +13,19 @@
 
 
     <div class="form-layout flex-wrap">
-        {{ input('hidden', 'message[Location Query for]', block.locationName ?? '', {
-            id: 'locationName',
-        }) }}
-
         <div>
             <label for="firstName">First Name *</label>
             <input id="firstName" type="text" name="message[First Name]" value="" required autocomplete="given-name" placeholder="Enter first name">
             {{ message ? _self.errorList(message.getErrors('message[firstName]')) }}
         </div>
-
         <div>
             <label for="lastName">Last Name *</label>
             <input id="lastName" type="text" name="message[Last Name]" value="" required autocomplete="family-name" placeholder="Enter last name">
             {{ message ? _self.errorList(message.getErrors('message[lasttName]')) }}
         </div>
     </div>
-    <div class="form-layout flex-wrap">
 
+    <div class="form-layout flex-wrap">
         <div>
             <label for="phone">Mobile Number *</label>
             <input id="phone" type="tel" name="message[Phone]" value="" required autocomplete="tel-local" placeholder="Enter mobile number">
@@ -49,14 +44,37 @@
         </div>
     </div>
 
-    <div class="form-layout message">
-            <label  for="message">Message *</label>
-            <textarea rows="5" cols="40" id="message" name="message[body]" required placeholder="Type your message">{{ message.message.body ?? '' }}</textarea>
+    <div class="form-layout dropdown">
+            <label for="workspace">What type of workspace are you looking for?</label>
+            <select id="workspace" name="message[Workspace]">
+                <option value="" class="placeholder" selected disabled>Select an option</option>
+                <option value="urbanSuite">UrbanSuite</option>
+                <option value="urbanStudio">UrbanStudio</option>
+                <option value="urbanDesk">UrbanDesk</option>
+                <option value="urbanMeet">UrbanMeet</option>
+                <option value="urbanClub">UrbanClub</option>
+                <option value="urbanLease">UrbanLease</option>
+                <option value="unknown">I'm not sure</option>
+            </select>
     </div>
-    {# <div class="form-layout">
+
+
+    <div class="form-layout message">
+        <label  for="message">Message *</label>
+        <textarea rows="5" cols="40" id="message" name="message[body]" required placeholder="Type your message">{{ message.message.body ?? '' }}</textarea>
+    </div>
+
+    <style>
+    .form-layout.honey-pot{
+        position:absolute;
+        top:-200vh;
+        left:0;
+    }
+    </style>
+    <div class="form-layout honey-pot">
         <label for="honeypooh" class="sr-only">Search</label>
         <input id="honeypooh" name="honeypooh" type="text">
-    </div> #}
+    </div>
 
     <button type="submit" class="btn">
         <span>

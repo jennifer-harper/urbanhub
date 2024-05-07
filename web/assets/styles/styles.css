@@ -3896,13 +3896,20 @@ input#honeypooh {
   display: none;
 }
 
+.contact-form {
+  margin-top: 2em;
+}
+.contact-form .form-layout select,
 .contact-form .form-layout textarea,
 .contact-form .form-layout input,
 .contact-form .form-layout div {
   width: 100%;
   font-family: "commuters-sans", sans-serif;
   font-size: 1em;
+  color: #315844;
 }
+.contact-form .form-layout option,
+.contact-form .form-layout select,
 .contact-form .form-layout textarea,
 .contact-form .form-layout input {
   padding: 0.7em 0;
@@ -3914,13 +3921,16 @@ input#honeypooh {
   outline-color: #BAE2A6;
   outline-width: 1px;
 }
-.contact-form .form-layout label,
-.contact-form .form-layout input {
-  padding-left: 10px;
+.contact-form .form-layout select option.placeholder {
+  margin-left: 20px;
 }
 .contact-form .form-layout.message,
 .contact-form .form-layout div {
   margin-top: 20px;
+}
+.contact-form .form-layout.dropdown {
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 48em) {
   .contact-form .flex-wrap {
