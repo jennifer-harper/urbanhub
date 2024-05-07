@@ -3,7 +3,7 @@ contentColumnType: text
 fieldGroup: 952787c6-7c0b-46f8-9b75-93ef54023e32 # Admin
 handle: twitter
 instructions: null
-name: 'Twitter / X'
+name: Linkedin
 searchable: false
 settings:
   byteLimit: null
