@@ -2624,7 +2624,7 @@ nav .navbar .sub-menu li .content {
   border-bottom: 1px solid #cbd5d0;
 }
 nav .navbar .sub-menu li .content svg {
-  max-width: 50%;
+  max-width: 40%;
 }
 nav .navbar .sub-menu li:last-of-type .content {
   border-bottom-width: 0;
@@ -2769,7 +2769,7 @@ nav .bx-menu.rotate-icon {
     flex-wrap: wrap;
     z-index: -10;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 130px);
     max-height: calc(100vh - 80px);
     overflow: hidden;
     transition: top 0.25s ease-in;
