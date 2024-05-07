@@ -513,6 +513,36 @@ h1 i{
         fill:$green-light;
     }
 }
+h2 i{
+    .highlight{
+        bottom: -.18em;
+    } 
+}
+h1 i{
+    .highlight{
+        bottom: -.3em;
+    }
+}
+
+.home {
+    .section-solutions{
+        h2 i{
+            .highlight{
+                bottom: -.4em;
+            } 
+        }  
+    }
+}
+
+.social-media{
+    h2 i{
+        .highlight{
+            bottom: -.15em;
+        } 
+    }  
+}
+
+
 .ourSpace{
     .highlight{
         bottom:-1.23vw;

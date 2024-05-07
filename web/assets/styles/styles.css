@@ -403,6 +403,22 @@ h1 i {
   fill: #BAE2A6;
 }
 
+h2 i .highlight {
+  bottom: -0.18em;
+}
+
+h1 i .highlight {
+  bottom: -0.3em;
+}
+
+.home .section-solutions h2 i .highlight {
+  bottom: -0.4em;
+}
+
+.social-media h2 i .highlight {
+  bottom: -0.15em;
+}
+
 .ourSpace .highlight {
   bottom: -1.23vw;
 }
