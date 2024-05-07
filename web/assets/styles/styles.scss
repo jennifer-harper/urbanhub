@@ -513,18 +513,25 @@ h1 i{
         fill:$green-light;
     }
 }
+
+h1 i{
+    .highlight{
+        bottom: -.16em;
+    }
+}
 h2 i{
     .highlight{
         bottom: -.18em;
     } 
 }
-h1 i{
-    .highlight{
-        bottom: -.3em;
-    }
-}
+
 
 .home {
+    h1 i{
+        .highlight{
+            bottom: -.3em;
+        }
+    }
     .section-solutions{
         h2 i{
             .highlight{
@@ -533,6 +540,30 @@ h1 i{
         }  
     }
 }
+
+.the-team{
+    .staff-wrapper{
+        h2 i{
+            .highlight{
+                bottom: 0;
+            } 
+        } 
+    }
+    .center-banner{
+        h2 i{
+            .highlight{
+            bottom: -0.4em;
+            width: 80%;
+            left: 10%; 
+            }
+        }
+    }
+}
+
+
+
+
+
 
 .social-media{
     h2 i{
