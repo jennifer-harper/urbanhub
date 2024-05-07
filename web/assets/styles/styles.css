@@ -462,6 +462,14 @@ svg {
 .tick {
   fill: #BAE2A6;
   margin-right: 0.3em;
+  width: 25px;
+  height: 25px;
+}
+@media (min-width: 220em) {
+  .tick {
+    width: 2vw;
+    height: 2vw;
+  }
 }
 
 .star-banner-wrapper {
@@ -1792,6 +1800,14 @@ footer {
   .solutions-usp .flex-wrap.row.wrap {
     flex-wrap: nowrap;
     justify-content: space-between;
+  }
+}
+@media (min-width: 120em) {
+  .solutions-usp .usp p {
+    margin-bottom: 0;
+  }
+  .solutions-usp .flex-wrap.row.wrap .row {
+    align-items: center;
   }
 }
 
@@ -3857,6 +3873,7 @@ input#honeypooh {
 .contact-form .form-layout div {
   width: 100%;
   font-family: "commuters-sans", sans-serif;
+  font-size: 1em;
 }
 .contact-form .form-layout textarea,
 .contact-form .form-layout input {

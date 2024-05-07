@@ -570,6 +570,12 @@ svg {
 .tick{
     fill:$green-light;
     margin-right:$base-font-size*.3;
+    width: 25px;
+    height: 25px;
+    @media #{$mq-retina}{
+        width: 2vw;
+        height: 2vw;
+    }
 }
 
 .star-banner-wrapper{
@@ -2101,6 +2107,14 @@ footer{
         .flex-wrap.row.wrap{
             flex-wrap:nowrap;
             justify-content: space-between;
+        }
+    }
+    @media #{$mq-large}{
+        .usp p{
+            margin-bottom: 0;
+        }
+        .flex-wrap.row.wrap .row{
+            align-items: center;
         }
     }
 }
@@ -4656,6 +4670,7 @@ input#honeypooh{ display: none; }
         div{
             width: 100%;
             font-family: $body-font;
+            font-size:$base-font-size;
         }
         textarea,
         input{
