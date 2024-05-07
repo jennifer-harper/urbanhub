@@ -2109,7 +2109,7 @@ footer{
             justify-content: space-between;
         }
     }
-    @media #{$mq-large}{
+    @media #{$mq-retina}{
         .usp p{
             margin-bottom: 0;
         }

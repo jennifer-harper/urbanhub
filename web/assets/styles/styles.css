@@ -1802,7 +1802,7 @@ footer {
     justify-content: space-between;
   }
 }
-@media (min-width: 120em) {
+@media (min-width: 220em) {
   .solutions-usp .usp p {
     margin-bottom: 0;
   }
