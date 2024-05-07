@@ -213,6 +213,9 @@ ul.underline-list{
 div{
   p {
     margin: 0 0 $base-spacing;
+    position: relative;
+    z-index: 2;
+    
   }
   &.no-btm-marg{
     p{
@@ -506,79 +509,43 @@ h1 i{
     position: absolute;
     width: 100%;
     left:0;
-    bottom:0;
+    // bottom:0;
     z-index: -1;
     white-space: nowrap;
+    height: 100%;
     svg{
         fill:$green-light;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+        top: -0.1em;
+        z-index: -1;
     }
 }
 
-h1 i{
-    .highlight{
-        bottom: -.16em;
-    }
-}
-h2 i{
-    .highlight{
-        bottom: -.18em;
-    } 
-}
 
-
-.home {
-    h1 i{
-        .highlight{
-            bottom: -.3em;
+.solutionsPage{
+    .zigzag{
+        svg{
+            top:-.3em
         }
     }
-    .section-solutions{
-        h2 i{
-            .highlight{
-                bottom: -.4em;
-            } 
-        }  
-    }
 }
 
-.the-team{
-    .staff-wrapper{
-        h2 i{
-            .highlight{
-                bottom: 0;
-            } 
-        } 
-    }
-    .center-banner{
-        h2 i{
-            .highlight{
-            bottom: -0.4em;
-            width: 80%;
-            left: 10%; 
-            }
+.urbanCommunity .solutions-mask,
+.urbanCommunity .centered-section{
+    .zigzag{
+
+            width: 70%;
+            left: 15%;
+
+        svg{
+            top:-.4em
         }
     }
 }
 
 
-
-
-
-
-.social-media{
-    h2 i{
-        .highlight{
-            bottom: -.15em;
-        } 
-    }  
-}
-
-
-.ourSpace{
-    .highlight{
-        bottom:-1.23vw;
-    }
-}
 
 
 //-------Images-----------//
@@ -1668,6 +1635,9 @@ button{
             }
         }
     }
+
+
+    .illustration-fill,
     .highlight svg{
         fill:$yellow-light
     }
@@ -1676,7 +1646,7 @@ button{
     .tick{
         fill:$yellow-light;
     }
-
+    .star-loader,
     nav .navbar .arrow,
     nav .bx-menu,
     .logo,
@@ -2056,11 +2026,11 @@ footer{
 }
 
 
-.solutions-contrast{
-    .highlight{
-        bottom:-10px;
-    } 
-}
+// .solutions-contrast{
+//     .highlight{
+//         bottom:-10px;
+//     } 
+// }
 
 .solutions-contrast.icon{
     h3{

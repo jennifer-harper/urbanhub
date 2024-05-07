@@ -166,6 +166,8 @@ ul.underline-list li {
 
 div p {
   margin: 0 0 1em;
+  position: relative;
+  z-index: 2;
 }
 div.no-btm-marg p {
   margin-bottom: 0;
@@ -395,44 +397,31 @@ h1 i {
   position: absolute;
   width: 100%;
   left: 0;
-  bottom: 0;
   z-index: -1;
   white-space: nowrap;
+  height: 100%;
 }
 .highlight svg {
   fill: #BAE2A6;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  top: -0.1em;
+  z-index: -1;
 }
 
-h1 i .highlight {
-  bottom: -0.16em;
+.solutionsPage .zigzag svg {
+  top: -0.3em;
 }
 
-h2 i .highlight {
-  bottom: -0.18em;
+.urbanCommunity .solutions-mask .zigzag,
+.urbanCommunity .centered-section .zigzag {
+  width: 70%;
+  left: 15%;
 }
-
-.home h1 i .highlight {
-  bottom: -0.3em;
-}
-.home .section-solutions h2 i .highlight {
-  bottom: -0.4em;
-}
-
-.the-team .staff-wrapper h2 i .highlight {
-  bottom: 0;
-}
-.the-team .center-banner h2 i .highlight {
-  bottom: -0.4em;
-  width: 80%;
-  left: 10%;
-}
-
-.social-media h2 i .highlight {
-  bottom: -0.15em;
-}
-
-.ourSpace .highlight {
-  bottom: -1.23vw;
+.urbanCommunity .solutions-mask .zigzag svg,
+.urbanCommunity .centered-section .zigzag svg {
+  top: -0.4em;
 }
 
 .bg-cover {
@@ -1413,6 +1402,7 @@ button {
 .lightYellowTheme .slider-btn-wrapper .swiper-button-next svg {
   fill: #DB6B34;
 }
+.lightYellowTheme .illustration-fill,
 .lightYellowTheme .highlight svg {
   fill: #EBE198;
 }
@@ -1420,6 +1410,7 @@ button {
 .lightYellowTheme .tick {
   fill: #EBE198;
 }
+.lightYellowTheme .star-loader,
 .lightYellowTheme nav .navbar .arrow,
 .lightYellowTheme nav .bx-menu,
 .lightYellowTheme .logo,
@@ -1733,10 +1724,6 @@ footer {
     max-width: 75%;
     margin-left: 0;
   }
-}
-
-.solutions-contrast .highlight {
-  bottom: -10px;
 }
 
 .solutions-contrast.icon h3 {
