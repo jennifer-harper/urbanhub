@@ -409,6 +409,16 @@ h1 i {
   top: -0.1em;
   z-index: -1;
 }
+.highlight.zigzag svg {
+  top: -0.2em;
+}
+.highlight.other-zig svg {
+  top: -0.5em;
+}
+
+.r-tabs .solutions-contrast .zigzag svg {
+  top: -0.4em;
+}
 
 .solutionsPage .zigzag svg {
   top: -0.3em;
@@ -422,6 +432,23 @@ h1 i {
 .urbanCommunity .solutions-mask .zigzag svg,
 .urbanCommunity .centered-section .zigzag svg {
   top: -0.4em;
+}
+.urbanCommunity .solutions-mask .other-zig,
+.urbanCommunity .centered-section .other-zig {
+  width: 70%;
+  left: 15%;
+}
+.urbanCommunity .solutions-mask .other-zig svg,
+.urbanCommunity .centered-section .other-zig svg {
+  top: -0.8em;
+}
+
+.facilitiesAmenities h1 .highlight,
+.neighbourhood h1 .highlight,
+.centered-section .highlight,
+.center-banner h2 .highlight {
+  width: 65%;
+  left: 16.5%;
 }
 
 .bg-cover {
@@ -1664,6 +1691,11 @@ footer {
 .solutions-wrap nav {
   border-bottom: 1px solid #cbd5d0;
 }
+@media (min-width: 94em) {
+  .solutions-wrap .solutions-contrast .text-center.max-title {
+    max-width: 70%;
+  }
+}
 
 .solutions-mask .content-wrap ul.underline-list {
   max-width: 100%;
@@ -1865,6 +1897,12 @@ footer {
   .section-solutions .align-right {
     text-align: right;
   }
+}
+
+.the-building .centered-section h2,
+.center-banner h2,
+.centered-hero h1 {
+  margin-bottom: 1em;
 }
 
 table, thead, tbody, th, td, tr {

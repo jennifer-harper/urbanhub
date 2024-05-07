@@ -319,6 +319,8 @@ h1,h2,h3,h4,h5,h6 {
             }
         }
     }
+
+
 }
 .centered{
     justify-content: center;
@@ -521,9 +523,25 @@ h1 i{
         top: -0.1em;
         z-index: -1;
     }
+    &.zigzag{
+        svg{
+            top:-.2em
+        }
+    }
+    &.other-zig{
+        svg{
+            top:-0.5em
+        }
+    }
 }
 
-
+.r-tabs .solutions-contrast{
+    .zigzag{
+        svg{
+            top:-.4em
+        }
+    }  
+}
 .solutionsPage{
     .zigzag{
         svg{
@@ -535,13 +553,30 @@ h1 i{
 .urbanCommunity .solutions-mask,
 .urbanCommunity .centered-section{
     .zigzag{
-
-            width: 70%;
-            left: 15%;
-
+        width: 70%;
+        left: 15%;
         svg{
             top:-.4em
         }
+    }
+
+    .other-zig{
+        width: 70%;
+        left: 15%;
+        svg{
+            top:-.8em
+        }
+    }
+}
+
+
+.facilitiesAmenities h1,
+.neighbourhood h1,
+.centered-section,
+.center-banner h2{
+    .highlight{
+        width: 65%;
+        left: 16.5%
     }
 }
 
@@ -1942,6 +1977,13 @@ footer{
     nav{
         border-bottom: 1px solid $grey;
     }
+
+   
+    @media #{$mq-figma}{
+    .solutions-contrast .text-center.max-title {
+        max-width: 70%;
+    }
+    }   
 }
 
 
@@ -2200,6 +2242,12 @@ footer{
         }
     }
 
+}
+
+.the-building .centered-section h2,
+.center-banner h2,
+.centered-hero h1{
+        margin-bottom: $base-font-size;
 }
 
 
