@@ -9,10 +9,7 @@
                         <div class="flex-wrap img-cont">
                             <div class="half">
                                 {% if slide.spaceType %}
-                                    <h3>{{slide.spaceType[0]}}
-                                    {% if slide.dollarSign is defined and slide.dollarSign != '' %}
-                                        , from
-                                    {% endif %}
+                                    <h3>{{slide.spaceType[0]}}{% if slide.dollarSign is defined and slide.dollarSign != '' %}, from{% endif %}
                                     </h3>
                                 {% endif %}
                                 <div class="price-title">                
