@@ -52,7 +52,7 @@ document.addEventListener('keydown', function (event) {
 
 let delayTimer
 
-$('li.x').hover(
+$('li.nav-hover').hover(
   function () {
     // Clear any existing delay timer
     clearTimeout(delayTimer)
