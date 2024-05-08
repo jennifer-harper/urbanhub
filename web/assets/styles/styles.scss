@@ -3141,12 +3141,13 @@ nav {
                 }
                 .content{
                     display: flex;
-                    flex-direction: column;
-                    // align-items: center;
+                    flex-direction: row-reverse;
+                    justify-content:space-between;
                     padding: 1vw 2vw;
                     border-bottom: 1px solid $grey;
                     svg{
                         max-width: 40%;
+                        margin-right: 0;
                     }
                 }
                 &:last-of-type{
@@ -3156,13 +3157,6 @@ nav {
                 }
 
             }
-
-            // &.environment-sub-menu,
-            // &.community-sub-menu{
-            //     svg{
-            //         margin-left: 0
-            //     }
-            // }
         }
 
         .nav-links-wrapper {
@@ -3226,11 +3220,18 @@ nav {
 
 @media (min-width: 600px) {
     nav{
+
        .navbar .links .link .sub-menu{
             .content{
                 border-bottom-width: 0;
                 align-items: center;
                 text-align: center;
+                flex-direction: column;
+                    // justify-content:space-between;
+                    svg{
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
             }
         }
 
@@ -3246,9 +3247,6 @@ nav {
                         flex-basis: 50%;
                     }
                 
-            }
-            svg{
-                margin-left: auto
             }
         }
 
@@ -3279,53 +3277,9 @@ nav {
             }
         }
 
-        .environment-sub-menu,
-        .community-sub-menu{
-            .new-wrapper{
-                display: flex;
-                flex-wrap: wrap;
-                    li{
-                        margin-top: 40px;
-                        width: 50%;
-                        flex-basis: 50%;
-                    }
-                
-            }
-        }
-
     }
 
 }
-
-
-// @media (min-width:900px) and (max-width:1024px){
-//     nav{
-//         .environment-sub-menu,
-//         .community-sub-menu{
-//             .new-wrapper {
-//                 display: flex;
-//                 flex-wrap:wrap;
-//                 justify-content: space-between;
-//                 text-align: center;
-//                 li{
-//                     flex-basis:33.333%;
-//                     width: 33.333%;
-//                 }
-//             }
-//         }
-
-//         .navbar{
-//             .sub-menu.environment-sub-menu,
-//             .sub-menu.community-sub-menu{
-//                 svg{
-//                     margin-left: auto 
-//                 }
-//             }
-//         }
-
-//     }
-
-// }
 
 
 

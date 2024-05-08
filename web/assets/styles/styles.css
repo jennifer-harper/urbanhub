@@ -2666,12 +2666,14 @@ nav .navbar .sub-menu li .header-intro p {
 }
 nav .navbar .sub-menu li .content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
+  justify-content: space-between;
   padding: 1vw 2vw;
   border-bottom: 1px solid #cbd5d0;
 }
 nav .navbar .sub-menu li .content svg {
   max-width: 40%;
+  margin-right: 0;
 }
 nav .navbar .sub-menu li:last-of-type .content {
   border-bottom-width: 0;
@@ -2724,6 +2726,11 @@ nav .hamburger {
     border-bottom-width: 0;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+  }
+  nav .navbar .links .link .sub-menu .content svg {
+    margin-right: auto;
+    margin-left: auto;
   }
   nav .environment-sub-menu .new-wrapper,
   nav .community-sub-menu .new-wrapper {
@@ -2735,10 +2742,6 @@ nav .hamburger {
     margin-top: 40px;
     width: 50%;
     flex-basis: 50%;
-  }
-  nav .environment-sub-menu svg,
-  nav .community-sub-menu svg {
-    margin-left: auto;
   }
   nav .solutions-sub-menu .new-wrapper {
     display: flex;
@@ -2756,17 +2759,6 @@ nav .hamburger {
   }
   nav .solutions-sub-menu .new-wrapper li:nth-of-type(2n), nav .solutions-sub-menu .new-wrapper li:nth-of-type(4n), nav .solutions-sub-menu .new-wrapper li:last-of-type {
     border-right-width: 0;
-  }
-  nav .environment-sub-menu .new-wrapper,
-  nav .community-sub-menu .new-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  nav .environment-sub-menu .new-wrapper li,
-  nav .community-sub-menu .new-wrapper li {
-    margin-top: 40px;
-    width: 50%;
-    flex-basis: 50%;
   }
 }
 @media (min-width: 1025px) {
