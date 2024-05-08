@@ -4,11 +4,11 @@
           <a href="/" class="logo">{% include '_partials/svgs/logo.twig' %}</a>
         </div>
 
-        <div class="nav-links">
+        <div class="nav-links-wrapper">
             <ul class="links">
-                <li class="x"><a href="/">Home</a></li>
+                <li class="link"><a href="/">Home</a></li>
 
-                <li class="x nav-hover">
+                <li class="link nav-hover">
                     <a href="/solutions">Solutions</a>
                     <i class="bx bxs-chevron-down solutions-arrow arrow"></i>
                     <div class="solutions-sub-menu sub-menu">
@@ -97,7 +97,7 @@
                     </div>
                 </li>
 
-                 <li class="x nav-hover">
+                 <li class="link nav-hover">
                     <a href="/urban-community">Community</a>
                     <i class="bx bxs-chevron-down community-arrow arrow"></i>
                     <div class="community-sub-menu sub-menu">
@@ -155,7 +155,7 @@
                     </div>
                 </li>
 
-                <li class="x nav-hover">
+                <li class="link nav-hover">
                     <a href="/urban-environment">Urban Environment</a>
                     <i class="bx bxs-chevron-down environment-arrow arrow"></i>
                     <div class="environment-sub-menu sub-menu">
@@ -216,10 +216,8 @@
                     </div>
                 </li>
 
-
-
-                 <li class="x"><a href="/stories">Stories</a></li>
-                 <li class="x"><a href="/contact-us">Contact</a></li>
+                 <li class="link"><a href="/stories">Stories</a></li>
+                 <li class="link"><a href="/contact-us">Contact</a></li>
             </ul>
                     {% embed '_partials/button' %}
         {% block class %} {{buttonClass}} btn-two{% endblock %}

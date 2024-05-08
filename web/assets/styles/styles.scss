@@ -3165,7 +3165,7 @@ nav {
             }
         }
 
-        .nav-links {
+        .nav-links-wrapper {
             position: fixed;
             left: 0;
             top: -100%;
@@ -3181,7 +3181,7 @@ nav {
         .links{
             display: block;
             margin-top: 20px;
-            .x{
+            .link{
 
                 &:hover {
                     .arrow {
@@ -3223,7 +3223,7 @@ nav {
 
 @media (min-width: 600px) {
     nav{
-       .navbar .links .x .sub-menu{
+       .navbar .links .link .sub-menu{
             .content{
                 border-bottom-width: 0;
                 align-items: center;
@@ -3309,7 +3309,7 @@ nav {
     .navbar{
         background-color: $light;
         justify-content: center;
-        .nav-links {
+        .nav-links-wrapper {
             justify-content: center;
             position: static;
             left: unset;
@@ -3325,7 +3325,7 @@ nav {
         .links{
             display: flex;
             margin-top:0;
-            .x {
+            .link {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -3414,7 +3414,7 @@ nav {
                 // }
             }
 
-            .x:hover{
+            .link:hover{
                 > .arrow{
                     transform: rotate(180deg);
                     transition: all .2s ease-in;
@@ -3438,7 +3438,7 @@ nav {
 
 @media (min-width: 1366px) {
     nav{
-        .navbar .links .x{
+        .navbar .links .link{
             padding-right:15px;
         }
     }
@@ -3450,30 +3450,30 @@ nav {
 @media (max-width: 1024px) {
     nav {
         background-color: $light;
-        .navbar .nav-links.show2 .links .environment-sub-menu,
-        .navbar .nav-links.show1 .links .solutions-sub-menu,
-        .navbar .nav-links.show3 .links .community-sub-menu {
+        .navbar .nav-links-wrapper.show2 .links .environment-sub-menu,
+        .navbar .nav-links-wrapper.show1 .links .solutions-sub-menu,
+        .navbar .nav-links-wrapper.show3 .links .community-sub-menu {
             display: flex;
             flex-direction: column;
         }
 
-        .navbar .nav-links.show1 .links .solutions-sub-menu{
+        .navbar .nav-links-wrapper.show1 .links .solutions-sub-menu{
             margin: 20px 0 40px 0;
         }
 
-        .navbar .nav-links.show2 .links .environment-sub-menu,
-        .navbar .nav-links.show3 .links .community-sub-menu{
+        .navbar .nav-links-wrapper.show2 .links .environment-sub-menu,
+        .navbar .nav-links-wrapper.show3 .links .community-sub-menu{
             margin: 50px 0 0 0;
         }
 
-        .navbar .nav-links.show2 .links .environment-arrow,
-        .navbar .nav-links.show1 .links .solutions-arrow,
+        .navbar .nav-links-wrapper.show2 .links .environment-arrow,
+        .navbar .nav-links-wrapper.show1 .links .solutions-arrow,
         .navbar .nav-links.show3 .links .community-arrow {
             transform: rotate(180deg);
         }
 
         .links {
-            li.x{
+            li.link{
                 padding: 1em;
                 border-bottom: 1px solid $grey;
                 .arrow,
@@ -4120,7 +4120,7 @@ nav {
             fill:$light;
         }
     }
-    nav .navbar .links .x .sub-menu,
+    nav .navbar .links .link .sub-menu,
     nav .navbar .nav-links,
     nav .navbar{
         background-color: $blue-light;
@@ -4130,7 +4130,7 @@ nav {
             }
 
         }
-        .x:hover .solutions-sub-menu  a{
+        .link:hover .solutions-sub-menu  a{
             border-bottom-color:$light;
             border-right-color:$light
         }
@@ -4275,11 +4275,11 @@ nav {
     }
 
     nav .navbar .nav-links,
-    nav .navbar .links .x .sub-menu,   
+    nav .navbar .links .link .sub-menu,   
     nav .navbar{
         background-color: $lime;
     }
-    nav .navbar .links .x .sub-menu .illustration-fill{
+    nav .navbar .links .link .sub-menu .illustration-fill{
         fill:$light;
     }
     .mask-wrapper{
@@ -4287,8 +4287,8 @@ nav {
             fill:$lime;
         }
     }
-    nav .links li.x,
-    nav .navbar .links .x .solutions-sub-menu li {
+    nav .links li.link,
+    nav .navbar .links .link .solutions-sub-menu li {
         border-color:$light;
     }
     h1{
@@ -4875,7 +4875,7 @@ input#honeypooh{ display: none; }
         background-color: $green-light; 
     }
 
-    nav .navbar .links .x .sub-menu,
+    nav .navbar .links .link .sub-menu,
     nav .navbar .nav-links,
     nav .navbar{
         background-color: $green-light;
@@ -4885,17 +4885,17 @@ input#honeypooh{ display: none; }
             }
 
         }
-        .x:hover .solutions-sub-menu  a{
+        .link:hover .solutions-sub-menu  a{
             border-bottom-color:$green-dark;
             border-right-color:$green-dark;
         }
     }
 
-    nav .links li.x{
+    nav .links li.link{
         border-color:$light;
     }
 
-    nav .navbar .links .x .solutions-sub-menu li {
+    nav .navbar .links .link .solutions-sub-menu li {
         border-color:$light;
     } 
 }

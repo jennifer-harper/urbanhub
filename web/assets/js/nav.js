@@ -1,5 +1,5 @@
 let navbar = document.querySelector('.navbar')
-let navLinks = document.querySelector('.nav-links')
+let navLinks = document.querySelector('.nav-links-wrapper')
 // let menuOpenBtn = document.querySelector('.navbar .fa-bars')
 let menuOpenBtn = document.querySelector('.navbar .bx-menu')
 
@@ -38,7 +38,7 @@ jsArrow.onclick = function () {
 
 // Close submenus when clicking outside
 document.addEventListener('click', function (event) {
-  if (!event.target.closest('.nav-links')) {
+  if (!event.target.closest('.nav-links-wrapper')) {
     navLinks.classList.remove('show1', 'show3', 'show2')
   }
 })

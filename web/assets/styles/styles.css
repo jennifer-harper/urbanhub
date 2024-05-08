@@ -2679,7 +2679,7 @@ nav .navbar .sub-menu li:last-of-type .content {
 nav .navbar .sub-menu.environment-sub-menu svg, nav .navbar .sub-menu.community-sub-menu svg {
   margin-left: 0;
 }
-nav .navbar .nav-links {
+nav .navbar .nav-links-wrapper {
   position: fixed;
   left: 0;
   top: -100%;
@@ -2696,11 +2696,11 @@ nav .navbar .links {
   display: block;
   margin-top: 20px;
 }
-nav .navbar .links .x:hover .arrow {
+nav .navbar .links .link:hover .arrow {
   transform: rotate(0deg);
   transition: all 0.5s ease-in;
 }
-nav .navbar .links .x:hover .sub-menu {
+nav .navbar .links .link:hover .sub-menu {
   display: none;
 }
 nav .mobile-nav {
@@ -2724,7 +2724,7 @@ nav .bx-menu.rotate-icon {
   }
 }
 @media (min-width: 600px) {
-  nav .navbar .links .x .sub-menu .content {
+  nav .navbar .links .link .sub-menu .content {
     border-bottom-width: 0;
     align-items: center;
     text-align: center;
@@ -2780,7 +2780,7 @@ nav .bx-menu.rotate-icon {
     background-color: #FAF6F0;
     justify-content: center;
   }
-  nav .navbar .nav-links {
+  nav .navbar .nav-links-wrapper {
     justify-content: center;
     position: static;
     left: unset;
@@ -2795,19 +2795,19 @@ nav .bx-menu.rotate-icon {
     display: flex;
     margin-top: 0;
   }
-  nav .navbar .links .x {
+  nav .navbar .links .link {
     display: flex;
     align-items: center;
     justify-content: space-between;
     list-style: none;
   }
-  nav .navbar .links .x a:not(.sub-menu a) {
+  nav .navbar .links .link a:not(.sub-menu a) {
     padding-left: 20px;
     padding-right: 5px;
     z-index: 10;
     position: relative;
   }
-  nav .navbar .links .x .sub-menu {
+  nav .navbar .links .link .sub-menu {
     position: absolute;
     top: -100vh;
     left: 0;
@@ -2822,52 +2822,52 @@ nav .bx-menu.rotate-icon {
     transition: top 0.25s ease-in;
     transition-delay: 0.25s;
   }
-  nav .navbar .links .x .sub-menu .new-wrapper {
+  nav .navbar .links .link .sub-menu .new-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     width: 100%;
   }
-  nav .navbar .links .x .sub-menu .new-wrapper a {
+  nav .navbar .links .link .sub-menu .new-wrapper a {
     padding: 0;
   }
-  nav .navbar .links .x .sub-menu .content {
+  nav .navbar .links .link .sub-menu .content {
     border-bottom-width: 0;
     text-align: center;
     align-items: center;
   }
-  nav .navbar .links .x .solutions-sub-menu li {
+  nav .navbar .links .link .solutions-sub-menu li {
     flex-basis: 33.33%;
     width: 33.33%;
     border-right: 1px solid #cbd5d0;
     border-bottom: 1px solid #cbd5d0;
   }
-  nav .navbar .links .x .solutions-sub-menu li:nth-of-type(3n), nav .navbar .links .x .solutions-sub-menu li:last-of-type {
+  nav .navbar .links .link .solutions-sub-menu li:nth-of-type(3n), nav .navbar .links .link .solutions-sub-menu li:last-of-type {
     border-right-width: 0;
   }
-  nav .navbar .links .x .solutions-sub-menu li:nth-of-type(4n), nav .navbar .links .x .solutions-sub-menu li:nth-of-type(5n), nav .navbar .links .x .solutions-sub-menu li:last-of-type {
+  nav .navbar .links .link .solutions-sub-menu li:nth-of-type(4n), nav .navbar .links .link .solutions-sub-menu li:nth-of-type(5n), nav .navbar .links .link .solutions-sub-menu li:last-of-type {
     border-bottom-width: 0;
   }
-  nav .navbar .links .x .environment-sub-menu li,
-  nav .navbar .links .x .community-sub-menu li {
+  nav .navbar .links .link .environment-sub-menu li,
+  nav .navbar .links .link .community-sub-menu li {
     flex-basis: 50%;
     width: 50%;
   }
-  nav .navbar .links .x .sub-menu.environment-sub-menu svg,
-  nav .navbar .links .x .sub-menu.community-sub-menu svg {
+  nav .navbar .links .link .sub-menu.environment-sub-menu svg,
+  nav .navbar .links .link .sub-menu.community-sub-menu svg {
     margin-left: auto;
   }
-  nav .navbar .links .x .sub-menu.environment-sub-menu .content,
-  nav .navbar .links .x .sub-menu.community-sub-menu .content {
+  nav .navbar .links .link .sub-menu.environment-sub-menu .content,
+  nav .navbar .links .link .sub-menu.community-sub-menu .content {
     text-align: center;
   }
-  nav .navbar .links .x:hover > .arrow {
+  nav .navbar .links .link:hover > .arrow {
     transform: rotate(180deg);
     transition: all 0.2s ease-in;
     z-index: 10;
     position: relative;
   }
-  nav .navbar .links .x:hover .sub-menu {
+  nav .navbar .links .link:hover .sub-menu {
     transition-delay: 0.25s;
     display: flex;
     top: 80px;
@@ -2876,7 +2876,7 @@ nav .bx-menu.rotate-icon {
   }
 }
 @media (min-width: 1366px) {
-  nav .navbar .links .x {
+  nav .navbar .links .link {
     padding-right: 15px;
   }
 }
@@ -2884,34 +2884,34 @@ nav .bx-menu.rotate-icon {
   nav {
     background-color: #FAF6F0;
   }
-  nav .navbar .nav-links.show2 .links .environment-sub-menu,
-  nav .navbar .nav-links.show1 .links .solutions-sub-menu,
-  nav .navbar .nav-links.show3 .links .community-sub-menu {
+  nav .navbar .nav-links-wrapper.show2 .links .environment-sub-menu,
+  nav .navbar .nav-links-wrapper.show1 .links .solutions-sub-menu,
+  nav .navbar .nav-links-wrapper.show3 .links .community-sub-menu {
     display: flex;
     flex-direction: column;
   }
-  nav .navbar .nav-links.show1 .links .solutions-sub-menu {
+  nav .navbar .nav-links-wrapper.show1 .links .solutions-sub-menu {
     margin: 20px 0 40px 0;
   }
-  nav .navbar .nav-links.show2 .links .environment-sub-menu,
-  nav .navbar .nav-links.show3 .links .community-sub-menu {
+  nav .navbar .nav-links-wrapper.show2 .links .environment-sub-menu,
+  nav .navbar .nav-links-wrapper.show3 .links .community-sub-menu {
     margin: 50px 0 0 0;
   }
-  nav .navbar .nav-links.show2 .links .environment-arrow,
-  nav .navbar .nav-links.show1 .links .solutions-arrow,
+  nav .navbar .nav-links-wrapper.show2 .links .environment-arrow,
+  nav .navbar .nav-links-wrapper.show1 .links .solutions-arrow,
   nav .navbar .nav-links.show3 .links .community-arrow {
     transform: rotate(180deg);
   }
-  nav .links li.x {
+  nav .links li.link {
     padding: 1em;
     border-bottom: 1px solid #cbd5d0;
   }
-  nav .links li.x .arrow,
-  nav .links li.x > a {
+  nav .links li.link .arrow,
+  nav .links li.link > a {
     font-size: 6vw;
     line-height: 1em;
   }
-  nav .links li.x .arrow {
+  nav .links li.link .arrow {
     position: absolute;
     right: 20px;
   }
@@ -3421,23 +3421,23 @@ nav .bx-menu.rotate-icon {
 .the-building #loadingDiv svg.star-loader {
   fill: #FAF6F0;
 }
-.the-building nav .navbar .links .x .sub-menu,
+.the-building nav .navbar .links .link .sub-menu,
 .the-building nav .navbar .nav-links,
 .the-building nav .navbar {
   background-color: #6AC4D1;
 }
-.the-building nav .navbar .links .x .sub-menu .content .illustration-fill,
+.the-building nav .navbar .links .link .sub-menu .content .illustration-fill,
 .the-building nav .navbar .nav-links .content .illustration-fill,
 .the-building nav .navbar .content .illustration-fill {
   fill: #FAF6F0;
 }
-.the-building nav .navbar .links .x .sub-menu .x:hover .solutions-sub-menu a,
-.the-building nav .navbar .nav-links .x:hover .solutions-sub-menu a,
-.the-building nav .navbar .x:hover .solutions-sub-menu a {
+.the-building nav .navbar .links .link .sub-menu .link:hover .solutions-sub-menu a,
+.the-building nav .navbar .nav-links .link:hover .solutions-sub-menu a,
+.the-building nav .navbar .link:hover .solutions-sub-menu a {
   border-bottom-color: #FAF6F0;
   border-right-color: #FAF6F0;
 }
-.the-building nav .navbar .links .x .sub-menu .little-star,
+.the-building nav .navbar .links .link .sub-menu .little-star,
 .the-building nav .navbar .nav-links .little-star,
 .the-building nav .navbar .little-star {
   fill: #253C40;
@@ -3547,18 +3547,18 @@ nav .bx-menu.rotate-icon {
   background-color: #D3E84C;
 }
 .story nav .navbar .nav-links,
-.story nav .navbar .links .x .sub-menu,
+.story nav .navbar .links .link .sub-menu,
 .story nav .navbar {
   background-color: #D3E84C;
 }
-.story nav .navbar .links .x .sub-menu .illustration-fill {
+.story nav .navbar .links .link .sub-menu .illustration-fill {
   fill: #FAF6F0;
 }
 .story .mask-wrapper svg {
   fill: #D3E84C;
 }
-.story nav .links li.x,
-.story nav .navbar .links .x .solutions-sub-menu li {
+.story nav .links li.link,
+.story nav .navbar .links .link .solutions-sub-menu li {
   border-color: #FAF6F0;
 }
 .story h1 {
@@ -4031,37 +4031,37 @@ input#honeypooh {
 .about-you #loadingDiv {
   background-color: #BAE2A6;
 }
-.contact-us nav .navbar .links .x .sub-menu,
+.contact-us nav .navbar .links .link .sub-menu,
 .contact-us nav .navbar .nav-links,
 .contact-us nav .navbar,
-.about-you nav .navbar .links .x .sub-menu,
+.about-you nav .navbar .links .link .sub-menu,
 .about-you nav .navbar .nav-links,
 .about-you nav .navbar {
   background-color: #BAE2A6;
 }
-.contact-us nav .navbar .links .x .sub-menu .content .illustration-fill,
+.contact-us nav .navbar .links .link .sub-menu .content .illustration-fill,
 .contact-us nav .navbar .nav-links .content .illustration-fill,
 .contact-us nav .navbar .content .illustration-fill,
-.about-you nav .navbar .links .x .sub-menu .content .illustration-fill,
+.about-you nav .navbar .links .link .sub-menu .content .illustration-fill,
 .about-you nav .navbar .nav-links .content .illustration-fill,
 .about-you nav .navbar .content .illustration-fill {
   fill: #315844;
 }
-.contact-us nav .navbar .links .x .sub-menu .x:hover .solutions-sub-menu a,
-.contact-us nav .navbar .nav-links .x:hover .solutions-sub-menu a,
-.contact-us nav .navbar .x:hover .solutions-sub-menu a,
-.about-you nav .navbar .links .x .sub-menu .x:hover .solutions-sub-menu a,
-.about-you nav .navbar .nav-links .x:hover .solutions-sub-menu a,
-.about-you nav .navbar .x:hover .solutions-sub-menu a {
+.contact-us nav .navbar .links .link .sub-menu .link:hover .solutions-sub-menu a,
+.contact-us nav .navbar .nav-links .link:hover .solutions-sub-menu a,
+.contact-us nav .navbar .link:hover .solutions-sub-menu a,
+.about-you nav .navbar .links .link .sub-menu .link:hover .solutions-sub-menu a,
+.about-you nav .navbar .nav-links .link:hover .solutions-sub-menu a,
+.about-you nav .navbar .link:hover .solutions-sub-menu a {
   border-bottom-color: #315844;
   border-right-color: #315844;
 }
-.contact-us nav .links li.x,
-.about-you nav .links li.x {
+.contact-us nav .links li.link,
+.about-you nav .links li.link {
   border-color: #FAF6F0;
 }
-.contact-us nav .navbar .links .x .solutions-sub-menu li,
-.about-you nav .navbar .links .x .solutions-sub-menu li {
+.contact-us nav .navbar .links .link .solutions-sub-menu li,
+.about-you nav .navbar .links .link .solutions-sub-menu li {
   border-color: #FAF6F0;
 }
 
