@@ -49,3 +49,24 @@ document.addEventListener('keydown', function (event) {
     navLinks.classList.remove('show1', 'show3', 'show2')
   }
 })
+
+let delayTimer
+
+$('li.x').hover(
+  function () {
+    // Clear any existing delay timer
+    clearTimeout(delayTimer)
+    // Set a new delay for adding the class
+    delayTimer = setTimeout(() => {
+      $('.body-wrapper').addClass('active-nav')
+    }, 250) // Adjust the delay time (in milliseconds) as needed
+  },
+  function () {
+    // Clear any existing delay timer
+    clearTimeout(delayTimer)
+    // Set a new delay for removing the class
+    delayTimer = setTimeout(() => {
+      $('.body-wrapper').removeClass('active-nav')
+    }, 250) // Adjust the delay time (in milliseconds) as needed
+  }
+)
