@@ -1,55 +1,56 @@
 let navbar = document.querySelector('.navbar')
 let navLinks = document.querySelector('.nav-links-wrapper')
-// let menuOpenBtn = document.querySelector('.navbar .fa-bars')
-let menuOpenBtn = document.querySelector('.navbar .bx-menu')
+let menuOpenBtn = document.querySelector('.navbar .hamburger')
 
-// Function to toggle the menu state
+////
+////
+////---------NAVIGATION DROPDOWN----------////
 function toggleMenu() {
   if (navLinks.style.top === '80px') {
     navLinks.style.top = '-100vh' // Close the menu
-    $('.navbar .bx-menu').removeClass('rotate-icon')
+    $('.navbar .hamburger').removeClass('rotate-icon')
   } else {
     navLinks.style.top = '80px' // Open the menu
-    $('.navbar .bx-menu').addClass('rotate-icon')
+    $('.navbar .hamburger').addClass('rotate-icon')
   }
 }
 
 // Use menuOpenBtn to toggle the menu state
 menuOpenBtn.onclick = toggleMenu
 
-//dropdown toggles
-let environmentArrow = document.querySelector('.environment-arrow')
-let htmlcssArrow = document.querySelector('.solutions-arrow')
-let jsArrow = document.querySelector('.community-arrow')
+////
+////
+////---------FOR DROPDOWNS/SUBMENUS ON MOBILE----------////
 
-// Toggle HTML & CSS submenu
-environmentArrow.onclick = function () {
-  navLinks.classList.toggle('show2')
-}
+$('.link').click(function (e) {
+  //e.preventDefault() // Prevent default link behavior
 
-htmlcssArrow.onclick = function () {
-  navLinks.classList.toggle('show1')
-}
-
-// Toggle JavaScript submenu
-jsArrow.onclick = function () {
-  navLinks.classList.toggle('show3')
-}
-
-// Close submenus when clicking outside
-document.addEventListener('click', function (event) {
-  if (!event.target.closest('.nav-links-wrapper')) {
-    navLinks.classList.remove('show1', 'show3', 'show2')
+  // Check if the clicked link already has the active class
+  if ($(this).hasClass('active')) {
+    // If yes, remove the active class
+    $(this).removeClass('active')
+  } else {
+    // If not, remove active class from all links and add it to the clicked link
+    $('.link').removeClass('active')
+    $(this).addClass('active')
   }
 })
 
-// Close submenus when pressing Esc key
-document.addEventListener('keydown', function (event) {
+// Function to remove active class on Escape key press
+$(document).keydown(function (event) {
   if (event.key === 'Escape') {
-    navLinks.classList.remove('show1', 'show3', 'show2')
+    $('.link.active').removeClass('active')
   }
 })
 
+// Function to remove active class when hamburger icon is clicked
+$('.navbar .hamburger').click(function () {
+  $('.link').removeClass('active')
+})
+
+////
+////
+////---------for body when nav hovers----------////
 let delayTimer
 
 $('li.nav-hover').hover(
@@ -70,3 +71,20 @@ $('li.nav-hover').hover(
     }, 250) // Adjust the delay time (in milliseconds) as needed
   }
 )
+
+////
+////
+////---------fix mobile dropdown position----------////
+$(function () {
+  // fix mobile dropdown position
+  var hash = window.location.hash
+  if (hash) {
+    var navHeight = $('nav').innerHeight()
+    $('html, body').animate(
+      {
+        scrollTop: $(hash).offset().top - navHeight,
+      },
+      300
+    )
+  }
+})

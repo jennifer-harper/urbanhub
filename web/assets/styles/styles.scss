@@ -1683,7 +1683,7 @@ button{
     }
     .star-loader,
     nav .navbar .arrow,
-    nav .bx-menu,
+    nav .hamburger,
     .logo,
     .social-media,
     .little-star{
@@ -1711,7 +1711,7 @@ button{
         fill: $purple-light;
     }
     nav .navbar .arrow,
-    nav .bx-menu,
+    nav .hamburger,
     .logo,
     .social-media{
         fill: $purple-dark;
@@ -1791,7 +1791,7 @@ button{
  
     }
     nav .navbar .arrow,
-    nav .bx-menu,
+    nav .hamburger,
     .logo,
     .social-media{
         fill: $blue-dark;
@@ -3157,12 +3157,12 @@ nav {
 
             }
 
-            &.environment-sub-menu,
-            &.community-sub-menu{
-                svg{
-                    margin-left: 0
-                }
-            }
+            // &.environment-sub-menu,
+            // &.community-sub-menu{
+            //     svg{
+            //         margin-left: 0
+            //     }
+            // }
         }
 
         .nav-links-wrapper {
@@ -3202,13 +3202,16 @@ nav {
         // padding: 20px;
         z-index: 20;
     }
-    .bx-menu{
+    .hamburger{
         display: block;
         z-index: 20;
         margin-left: 20px;
-        &.rotate-icon{
-            transform: rotate(90deg);
-        }
+        width: 40px;
+        height:40px;
+        // &.rotate-icon{
+        //     transform: rotate(90deg);
+        //     @include transition;
+        // }
     }
 
 }
@@ -3231,10 +3234,30 @@ nav {
             }
         }
 
+        
+        .environment-sub-menu,
+        .community-sub-menu{
+            .new-wrapper{
+                display: flex;
+                flex-wrap: wrap;
+                    li{
+                        margin-top: 40px;
+                        width: 50%;
+                        flex-basis: 50%;
+                    }
+                
+            }
+            svg{
+                margin-left: auto
+            }
+        }
+
+
+
         .solutions-sub-menu{
             .new-wrapper {
                 display: flex;
-            flex-wrap:wrap;
+                flex-wrap:wrap;
                 li{
                     padding-top: 20px;
                     flex-basis:50%;
@@ -3256,39 +3279,53 @@ nav {
             }
         }
 
-    }
-
-}
-
-
-@media (min-width:900px) and (max-width:1024px){
-    nav{
         .environment-sub-menu,
         .community-sub-menu{
-            .new-wrapper {
+            .new-wrapper{
                 display: flex;
-                flex-wrap:wrap;
-                justify-content: space-between;
-                text-align: center;
-                li{
-                    flex-basis:33.333%;
-                    width: 33.333%;
-                }
-            }
-        }
-
-        .navbar{
-            .sub-menu.environment-sub-menu,
-            .sub-menu.community-sub-menu{
-                svg{
-                    margin-left: auto 
-                }
+                flex-wrap: wrap;
+                    li{
+                        margin-top: 40px;
+                        width: 50%;
+                        flex-basis: 50%;
+                    }
+                
             }
         }
 
     }
 
 }
+
+
+// @media (min-width:900px) and (max-width:1024px){
+//     nav{
+//         .environment-sub-menu,
+//         .community-sub-menu{
+//             .new-wrapper {
+//                 display: flex;
+//                 flex-wrap:wrap;
+//                 justify-content: space-between;
+//                 text-align: center;
+//                 li{
+//                     flex-basis:33.333%;
+//                     width: 33.333%;
+//                 }
+//             }
+//         }
+
+//         .navbar{
+//             .sub-menu.environment-sub-menu,
+//             .sub-menu.community-sub-menu{
+//                 svg{
+//                     margin-left: auto 
+//                 }
+//             }
+//         }
+
+//     }
+
+// }
 
 
 
@@ -3299,7 +3336,7 @@ nav {
         width: unset;
         padding: 0;
     }
-    .bx-menu {
+    .hamburger {
         display: none;
 
     }
@@ -3450,27 +3487,17 @@ nav {
 @media (max-width: 1024px) {
     nav {
         background-color: $light;
-        .navbar .nav-links-wrapper.show2 .links .environment-sub-menu,
-        .navbar .nav-links-wrapper.show1 .links .solutions-sub-menu,
-        .navbar .nav-links-wrapper.show3 .links .community-sub-menu {
-            display: flex;
-            flex-direction: column;
-        }
 
-        .navbar .nav-links-wrapper.show1 .links .solutions-sub-menu{
-            margin: 20px 0 40px 0;
-        }
 
-        .navbar .nav-links-wrapper.show2 .links .environment-sub-menu,
-        .navbar .nav-links-wrapper.show3 .links .community-sub-menu{
-            margin: 50px 0 0 0;
-        }
+    //mobile navigation .click event in js. Desktop based on hover
+      .navbar .nav-links-wrapper ul.links .link.active .sub-menu{
+        display: flex;
+        flex-direction: column;
+    }
 
-        .navbar .nav-links-wrapper.show2 .links .environment-arrow,
-        .navbar .nav-links-wrapper.show1 .links .solutions-arrow,
-        .navbar .nav-links.show3 .links .community-arrow {
-            transform: rotate(180deg);
-        }
+    .navbar .nav-links-wrapper ul.links .link.active .arrow {
+        transform: rotate(180deg);
+    }
 
         .links {
             li.link{
