@@ -2658,6 +2658,9 @@ nav .navbar .sub-menu {
   margin-top: 0;
   display: none;
 }
+nav .navbar .sub-menu li a:hover {
+  color: #424242;
+}
 nav .navbar .sub-menu li .header-intro {
   margin-top: 3vw;
 }
@@ -2695,9 +2698,13 @@ nav .navbar .links {
   display: block;
   margin-top: 20px;
 }
+nav .navbar .links .link:hover > a {
+  color: #424242;
+}
 nav .navbar .links .link:hover .arrow {
   transform: rotate(0deg);
   transition: all 0.5s ease-in;
+  color: #424242;
 }
 nav .navbar .links .link:hover .sub-menu {
   display: none;

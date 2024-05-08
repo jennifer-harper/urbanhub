@@ -3133,6 +3133,9 @@ nav {
             margin-top: 0;
             display: none;
             li{
+                a:hover{
+                    color: $nav-hover;
+                }
                 .header-intro{
                     margin-top:$md;
                     p{
@@ -3172,15 +3175,21 @@ nav {
             height: calc(100vh - 80px);
             overflow: scroll;
         }
+
+
         .links{
             display: block;
             margin-top: 20px;
             .link{
 
                 &:hover {
+                    > a{
+                        color: $nav-hover;
+                    }
                     .arrow {
                         transform: rotate(0deg);
                         transition: all .5s ease-in;
+                        color: $nav-hover;
                     }
                     .sub-menu {
                         display: none;
@@ -3396,13 +3405,6 @@ nav {
                         text-align: center;
                     }
                 }
-
-                // .environment-sub-menu{
-                //     li{
-                //         flex-basis:50%;
-                //         width:50%;
-                //     }
-                // }
             }
 
             .link:hover{
