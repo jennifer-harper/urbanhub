@@ -2701,11 +2701,11 @@ nav .navbar .sub-menu {
   margin-top: 0;
   display: none;
 }
-nav .navbar .sub-menu li a:hover {
-  color: #272641;
-}
 nav .navbar .sub-menu li a:hover .little-star {
-  fill: #272641;
+  animation-name: spin;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 3000ms;
 }
 nav .navbar .sub-menu li .header-intro {
   margin-top: 3vw;
@@ -2744,13 +2744,9 @@ nav .navbar .links {
   display: block;
   margin-top: 20px;
 }
-nav .navbar .links .link:hover > a {
-  color: #272641;
-}
 nav .navbar .links .link:hover .arrow {
   transform: rotate(0deg);
   transition: all 0.5s ease-in;
-  color: #272641;
 }
 nav .navbar .links .link:hover .sub-menu {
   display: none;
@@ -3036,6 +3032,13 @@ nav .hamburger {
   .solutionsPage .r-tabs .r-tabs-accordion-title {
     display: none;
   }
+}
+
+.center-banner .text-center,
+.centered-section .text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home .centered-hero {

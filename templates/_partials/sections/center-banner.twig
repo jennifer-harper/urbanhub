@@ -1,11 +1,11 @@
 <div class="center-banner {% block class %} {% endblock %}">
     <div class="pad-sides pad-top-btm">
         <div class="text-center max-title">
-        {% if entry.heading5 %}
-            {{entry.heading5}}
-        {% endif %}
+            {% if entry.heading5 %}
+                {{entry.heading5}}
+            {% endif %}
 
-        {% if entry.introParagraph3 %}
+            {% if entry.introParagraph3 %}
                 <div class="intro-text">
                     {{entry.introParagraph3}}
                 </div>
@@ -16,7 +16,6 @@
                     {{entry.paragraph3}}
                 </div>
             {% endif %}
-
             <div>
             {% if entry.buttonExternalLink is defined and entry.buttonExternalLink %}
                 {% for block in entry.buttonExternalLink %}
@@ -30,8 +29,8 @@
                         {% endembed %} 
                     {% endif %}
                 {% endfor %}
-                 {% endif %}
-                 </div>
+            {% endif %}
+            </div>
         </div>
     </div>
 </div>

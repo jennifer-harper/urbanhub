@@ -1484,6 +1484,7 @@ button{
         color:$orange;  
     }
 
+
     .bg-orange{
         h1,h2,h3,p, a{
             color:$yellow-light;  
@@ -3195,9 +3196,12 @@ nav {
             display: none;
             li{
                 a:hover{
-                    color: $nav-hover;
+                    // color: $nav-hover;
                     .little-star{
-                        fill:$nav-hover;
+                        animation-name: spin;
+                        animation-iteration-count: 1;
+                        animation-timing-function: linear; 
+                        animation-duration: 3000ms;
                     }
                 }
                 .header-intro{
@@ -3247,13 +3251,13 @@ nav {
             .link{
 
                 &:hover {
-                    > a{
-                        color: $nav-hover;
-                    }
+                    // > a{
+                    //     color: $nav-hover;
+                    // }
                     .arrow {
                         transform: rotate(0deg);
                         transition: all .5s ease-in;
-                        color: $nav-hover;
+                        // color: $nav-hover;
                     }
                     .sub-menu {
                         display: none;
@@ -3636,12 +3640,14 @@ nav {
 }
 
 //--------------- specific pages
-
-// .text-center{
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
+.center-banner,
+.centered-section {
+    .text-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .home{
     .centered-hero{
