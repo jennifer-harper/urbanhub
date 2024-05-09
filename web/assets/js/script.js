@@ -7,13 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Iterate through each button
   buttons.forEach((button) => {
     const animateMe = button.querySelector('.animate')
+
+    gsap.set(animateMe, { xPercent: 0 })
     button.addEventListener('mouseenter', () => {
-      gsap.to(animateMe, { xPercent: 300 })
+      //   gsap.to(animateMe, { xPercent: 300 })
+      let tl = gsap.timeline()
+      tl.to(animateMe, { xPercent: 300, duration: 1 })
+      tl.from(animateMe, { xPercent: -300, duration: 1 })
     })
 
-    button.addEventListener('mouseleave', () => {
-      gsap.to(animateMe, { xPercent: 0 })
-    })
+    // button.addEventListener('mouseleave', () => {
+    //   gsap.to(animateMe, { xPercent: 0 })
+    // })
   })
 })
 
