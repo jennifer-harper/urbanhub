@@ -2395,6 +2395,7 @@ tbody tr:first-of-type td {
   }
   .ourSpaces .hero-animation .roof-wrap .btn.downwards {
     display: flex;
+    max-width: 100px;
   }
 }
 @media (min-width: 85.375em) {

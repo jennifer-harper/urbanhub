@@ -14,7 +14,7 @@
                 {{entry.paragraph4}}
             {% endif %}
         </div>
-
+<div>
             {% for block in entry.button2 %}
             {% if block.type == 'groupFields' %}
             {% set buttonText = block.buttonText ?? 'Enquire now' %}
@@ -26,5 +26,6 @@
             {% endembed %} 
                 {% endif %}
                 {% endfor %}
+                </div>
     </div>
 </div>

@@ -11,9 +11,9 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.set(animateMe, { xPercent: 0 })
     button.addEventListener('mouseenter', () => {
       //   gsap.to(animateMe, { xPercent: 300 })
-      let tl = gsap.timeline()
-      tl.to(animateMe, { xPercent: 300, duration: 1 })
-      tl.from(animateMe, { xPercent: -300, duration: 1 })
+      let tl = gsap.timeline({ defaults: { duration: 0.5, ease: 'circ.out' } })
+      tl.to(animateMe, { xPercent: 250 })
+      tl.from(animateMe, { xPercent: -250 })
     })
 
     // button.addEventListener('mouseleave', () => {

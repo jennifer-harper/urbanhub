@@ -16,6 +16,8 @@
                     {{entry.paragraph3}}
                 </div>
             {% endif %}
+
+            <div>
             {% if entry.buttonExternalLink is defined and entry.buttonExternalLink %}
                 {% for block in entry.buttonExternalLink %}
                     {% if block.type == 'groupFields' %}
@@ -29,6 +31,7 @@
                     {% endif %}
                 {% endfor %}
                  {% endif %}
+                 </div>
         </div>
     </div>
 </div>

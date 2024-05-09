@@ -32,17 +32,17 @@
             </div>
 
             <div class="content pad-all">
-                {% if entry.introParagraph %}
+                {% if entry.introParagraph3 %}
                     <div class="intro-text">
-                        {{entry.introParagraph}}
+                        {{entry.introParagraph3}}
                     </div>
                 {% endif %}
 
-                {% if entry.paragraph %}
-                        {{entry.paragraph}}
+                {% if entry.paragraph3 %}
+                        {{entry.paragraph3}}
                 {% endif %}
 
-                {% set button3 = entry.buildingLink2[0].url ?? '/contact-us' %}
+                {% set button3 = entry.buildingLink3[0].url ?? '/contact-us' %}
                 {% embed '_partials/button' %}
                     {% block class %}blue {% endblock %}
                     {% block title %}Find out more{% endblock %}

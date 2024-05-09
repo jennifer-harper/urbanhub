@@ -16,16 +16,18 @@
             <img class="roof" src="/uploads/images/green-roof.svg" alt="roof shaped block color">
             <img class="base-line" src="uploads/images/uh-hero-roof-single.png" alt="">
         </div>
-        <div class="third">     
+        <div class="third no-flex">     
             <div class="pad-sides ">
                 {% if entry.pageIntroParagraph %}
                         {{entry.pageIntroParagraph}}
                 {% endif %}
 
-                <div class="btn downwards">
-                    <a href="#firstSection">
-                        <div>{% include '_partials/svgs/arrow.twig' %}</div> 
-                    </a>
+                <div class="relative">
+                    <div class="btn downwards">
+                        <a href="#firstSection">
+                            <div>{% include '_partials/svgs/arrow.twig' %}</div> 
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

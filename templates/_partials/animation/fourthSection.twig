@@ -27,14 +27,14 @@
 
         <div class="third">  
                 <div class="content pad-all">
-                    {% if entry.introParagraph %}
+                    {% if entry.introParagraph4 %}
                         <div class="intro-text">
-                            {{entry.introParagraph}}
+                            {{entry.introParagraph4}}
                         </div>
                     {% endif %}
 
-                    {% if entry.paragraph %}
-                            {{entry.paragraph}}
+                    {% if entry.paragraph4 %}
+                            {{entry.paragraph4}}
                     {% endif %}
 
                 {% set button4 = entry.buildingLink4[0].url ?? '/contact-us' %}

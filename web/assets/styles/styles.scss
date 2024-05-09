@@ -2749,6 +2749,7 @@ tbody{
 
         }
 
+
         @media #{$mq-medium}{
             h1{
                 padding-bottom:6vw
@@ -2787,7 +2788,8 @@ tbody{
             flex-direction: column;
             justify-content: space-between;
             .roof-wrap .btn.downwards{
-                display: flex
+                display: flex;
+                max-width: 100px;
             }
         }
 
@@ -3634,6 +3636,12 @@ nav {
 }
 
 //--------------- specific pages
+
+// .text-center{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
 
 .home{
     .centered-hero{
