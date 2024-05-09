@@ -830,6 +830,7 @@ ul li a .social-media {
 }
 .btn span div,
 .btn a div {
+  overflow: hidden;
   background-color: #BAE2A6;
   border-radius: 5vw;
   padding: 0.2em 1em;
@@ -844,6 +845,18 @@ ul li a .social-media {
 .btn a div svg.animate {
   position: absolute;
   top: 10px;
+}
+@media (min-width: 120em) {
+  .btn span div svg.animate,
+  .btn a div svg.animate {
+    top: 13px;
+  }
+}
+@media (min-width: 220em) {
+  .btn span div svg.animate,
+  .btn a div svg.animate {
+    top: 23px;
+  }
 }
 .btn span div svg.fixed,
 .btn a div svg.fixed {
@@ -875,6 +888,9 @@ ul li a .social-media {
 .btn.green-light a div svg {
   fill: #FAF6F0;
 }
+.btn.green-light a div .fixed {
+  fill: #315844;
+}
 .btn.purple a {
   background-color: #272641;
 }
@@ -883,6 +899,9 @@ ul li a .social-media {
 }
 .btn.purple a div svg {
   fill: #272641;
+}
+.btn.purple a div .fixed {
+  fill: #8885D8;
 }
 .btn.purple-light a {
   background-color: #8885D8;
@@ -893,6 +912,9 @@ ul li a .social-media {
 .btn.purple-light a div svg {
   fill: #8885D8;
 }
+.btn.purple-light a div .fixed {
+  fill: #272641;
+}
 .btn.blue a {
   background-color: #253C40;
 }
@@ -901,6 +923,9 @@ ul li a .social-media {
 }
 .btn.blue a div svg {
   fill: #253C40;
+}
+.btn.blue a div .fixed {
+  fill: #6AC4D1;
 }
 .btn.blue-light a {
   background-color: #6AC4D1;
@@ -914,6 +939,9 @@ ul li a .social-media {
 .btn.blue-light a div svg {
   fill: #6AC4D1;
 }
+.btn.blue-light a div .fixed {
+  fill: #253C40;
+}
 .btn.yellow a {
   background-color: #EBE198;
 }
@@ -926,14 +954,8 @@ ul li a .social-media {
 .btn.yellow a div svg {
   fill: #EBE198;
 }
-.btn.brown a {
-  background-color: #582F07;
-}
-.btn.brown a div {
-  background-color: #EFC334;
-}
-.btn.brown a div svg {
-  fill: #582F07;
+.btn.yellow a div .fixed {
+  fill: #DB6B34;
 }
 .btn.orange a {
   background-color: #DB6B34;
@@ -947,6 +969,9 @@ ul li a .social-media {
 .btn.orange a div svg {
   fill: #DB6B34;
 }
+.btn.orange a div .fixed {
+  fill: #EBE198;
+}
 .btn.lime a {
   background-color: #D3E84C;
 }
@@ -958,6 +983,9 @@ ul li a .social-media {
 }
 .btn.lime a div svg {
   fill: #D3E84C;
+}
+.btn.lime a div .fixed {
+  fill: #315844;
 }
 
 button {

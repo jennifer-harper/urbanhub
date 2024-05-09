@@ -951,6 +951,7 @@ ul li a .social-media{
         text-transform: capitalize;
       }
       div{
+        overflow: hidden;
         background-color: $green-light;
         border-radius: $base;
         padding: $base-font-size*.2 $base-font-size*1;
@@ -961,6 +962,12 @@ ul li a .social-media{
           &.animate{
             position: absolute;
             top: 10px;
+            @media #{$mq-large}{
+                top: 13px;
+            }
+            @media #{$mq-retina}{
+                top: 23px;
+            }
           }
           &.fixed{
             fill:transparent;
@@ -1019,6 +1026,9 @@ ul li a .social-media{
             svg{
               fill:$light;
             }
+            .fixed{
+                fill:$green-dark
+            }
           }
         }
       }
@@ -1031,6 +1041,9 @@ ul li a .social-media{
           svg{
             fill:$purple-dark
           }
+          .fixed{
+            fill:$purple-light
+        }
         }
       }
     }
@@ -1042,6 +1055,9 @@ ul li a .social-media{
             background-color: $purple-dark;
             svg{
               fill:$purple-light
+            }
+            .fixed{
+                fill:$purple-dark
             }
           }
         }
@@ -1055,6 +1071,9 @@ ul li a .social-media{
           svg{
             fill:$blue-dark
           }
+          .fixed{
+            fill:$blue-light
+        }
         }
       }
     }
@@ -1069,6 +1088,9 @@ ul li a .social-media{
             background-color: $blue-dark;
             svg{
               fill:$blue-light
+            }
+            .fixed{
+                fill:$blue-dark;
             }
           }
         }
@@ -1085,21 +1107,24 @@ ul li a .social-media{
           svg{
             fill:$yellow-light;
           }
+          .fixed{
+            fill:$orange
+        }
         }
       }
     }
 
-    &.brown{
-        a{
-            background-color: $brown;
-            div{
-                background-color: $yellow;
-                svg{
-                    fill:$brown
-                }
-            }
-        }
-    }
+    // &.brown{
+    //     a{
+    //         background-color: $brown;
+    //         div{
+    //             background-color: $yellow;
+    //             svg{
+    //                 fill:$brown
+    //             }
+    //         }
+    //     }
+    // }
   
     &.orange{
       a{
@@ -1112,6 +1137,9 @@ ul li a .social-media{
           svg{
             fill:$orange;
           }
+          .fixed{
+            fill:$yellow-light;
+        }
         }
       }
     }
@@ -1127,6 +1155,9 @@ ul li a .social-media{
           svg{
             fill:$lime;
           }
+          .fixed{
+            fill:$green-dark
+        }
         }
       }
     }
