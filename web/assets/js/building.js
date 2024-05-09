@@ -1,4 +1,20 @@
 // use a script tag or an external JS file
+
+$(document).ready(function () {
+  $('.downwards a').on('click', function (event) {
+    if (this.hash !== '') {
+      event.preventDefault()
+      const target = $(this.hash)
+      $('html, body').animate(
+        {
+          scrollTop: target.offset().top - 80,
+        },
+        800
+      )
+    }
+  })
+})
+
 document.addEventListener('DOMContentLoaded', (event) => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother, MotionPathPlugin)
   const smoother = ScrollSmoother.create({
@@ -25,7 +41,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         start: 'top top+=' + navHeight,
         end: 'bottom top',
         invalidateOnRefresh: true,
-        markers: marker,
+        // markers: marker,
       },
     })
     gsap.set('.firstSection .content', { yPercent: 150 })

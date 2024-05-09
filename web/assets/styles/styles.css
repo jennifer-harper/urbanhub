@@ -2634,11 +2634,6 @@ tbody tr:first-of-type td {
 .body-wrapper {
   padding-top: 80px;
 }
-@media (min-width: 220em) {
-  .body-wrapper {
-    padding-top: 4.4vw;
-  }
-}
 .body-wrapper.active-nav:after {
   content: "";
   position: absolute;
@@ -2706,10 +2701,10 @@ nav .navbar .sub-menu {
   display: none;
 }
 nav .navbar .sub-menu li a:hover {
-  color: #424242;
+  color: #272641;
 }
 nav .navbar .sub-menu li a:hover .little-star {
-  fill: #424242;
+  fill: #272641;
 }
 nav .navbar .sub-menu li .header-intro {
   margin-top: 3vw;
@@ -2749,12 +2744,12 @@ nav .navbar .links {
   margin-top: 20px;
 }
 nav .navbar .links .link:hover > a {
-  color: #424242;
+  color: #272641;
 }
 nav .navbar .links .link:hover .arrow {
   transform: rotate(0deg);
   transition: all 0.5s ease-in;
-  color: #424242;
+  color: #272641;
 }
 nav .navbar .links .link:hover .sub-menu {
   display: none;

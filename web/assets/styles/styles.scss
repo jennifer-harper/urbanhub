@@ -3119,9 +3119,9 @@ tbody{
 //////////////////
 .body-wrapper{
     padding-top: 80px;
-    @media #{$mq-retina}{
-        padding-top:4.4vw;
-    }
+    // @media #{$mq-retina}{
+    //     padding-top:4.4vw;
+    // }
     &.active-nav{
         &:after{
             content:'';
