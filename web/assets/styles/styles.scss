@@ -3359,7 +3359,8 @@ nav {
 
 
 
-@media (min-width: 1025px) {
+
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
   nav{
     // position: relative;
     .mobile-nav {

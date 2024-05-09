@@ -2814,7 +2814,7 @@ nav .hamburger {
     border-right-width: 0;
   }
 }
-@media (min-width: 1025px) {
+@media (min-width: 1025px) and (hover: hover) and (pointer: fine) {
   nav .mobile-nav {
     width: unset;
     padding: 0;
