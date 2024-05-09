@@ -1,18 +1,3 @@
-$(document).ready(function () {
-  $('.downwards a').on('click', function (event) {
-    if (this.hash !== '') {
-      event.preventDefault()
-      const target = $(this.hash)
-      $('html, body').animate(
-        {
-          scrollTop: target.offset().top - 80,
-        },
-        800
-      )
-    }
-  })
-})
-
 document.addEventListener('DOMContentLoaded', (event) => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother, MotionPathPlugin)
   const smoother = ScrollSmoother.create({
