@@ -2672,7 +2672,7 @@ tbody{
             height: 100%;
             content: '';
             background: url(../../uploads/images/walls.png);
-            background-repeat: no-repeat;
+            background-repeat: repeat-y;
             opacity: 0.9;
 
         }
@@ -2782,7 +2782,7 @@ tbody{
                 }
             }
 
-            height: 99vh;
+            // height: 99vh;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -2828,7 +2828,7 @@ tbody{
         
         @media (min-width:1600px) and (min-height:900px){
            .hero{
-                padding-top:8vw !important
+                padding-top:6vw !important
             }  
         }
 

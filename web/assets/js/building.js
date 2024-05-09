@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   let mm = gsap.matchMedia()
   var navHeight = $('nav').innerHeight()
-  var marker = { startColor: 'green', endColor: 'red', fontSize: '18px', fontWeight: 'bold', indent: 20 }
+  var marker = { startColor: 'green', endColor: 'red', fontSize: '18px', fontWeight: 'bold', indent: 20, zIndex: 2000 }
 
   function firstSection() {
     let tl = gsap.timeline({
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         start: 'top top+=' + navHeight,
         end: 'bottom top',
         invalidateOnRefresh: true,
-        // markers: marker,
+        markers: marker,
       },
     })
     gsap.set('.firstSection .content', { yPercent: 150 })

@@ -2305,7 +2305,7 @@ tbody tr:first-of-type td {
     height: 100%;
     content: "";
     background: url(../../uploads/images/walls.png);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     opacity: 0.9;
   }
 }
@@ -2364,7 +2364,6 @@ tbody tr:first-of-type td {
 }
 @media (min-width: 64em) {
   .ourSpaces .hero-animation {
-    height: 99vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2423,7 +2422,7 @@ tbody tr:first-of-type td {
 }
 @media (min-width: 1600px) and (min-height: 900px) {
   .ourSpaces .hero-animation .hero {
-    padding-top: 8vw !important;
+    padding-top: 6vw !important;
   }
 }
 .ourSpaces .mobile-hide {
