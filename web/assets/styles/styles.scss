@@ -125,6 +125,12 @@ color: $base-font;
   }
 }
 
+@media (hover: none) and (pointer: course) {
+    body{
+        background-color:blue;
+    }
+    }
+
 @media (hover: hover) and (pointer: fine) {
 body{
     background-color:red;
