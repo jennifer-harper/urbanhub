@@ -125,17 +125,7 @@ color: $base-font;
   }
 }
 
-@media (hover: none) and (pointer: course) {
-    body{
-        background-color:blue;
-    }
-    }
 
-@media (hover: hover) and (pointer: fine) {
-body{
-    background-color:red;
-}
-}
 
 //-------PAGE LOAD ANIMATION-----------//
 
@@ -3526,6 +3516,42 @@ nav {
 
 
     //mobile navigation .click event in js. Desktop based on hover
+      .navbar .nav-links-wrapper ul.links .link.active .sub-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .nav-links-wrapper ul.links .link.active .arrow {
+        transform: rotate(180deg);
+    }
+
+        .links {
+            li.link{
+                padding: 1em;
+                border-bottom: 1px solid $grey;
+                .arrow,
+                > a{
+                    font-size: 6vw;
+                    line-height: 1em;
+                }
+                .arrow{
+                    position: absolute;
+                    right: 20px;
+                }
+            }
+        }
+        .btn.btn-one{
+            display:none
+        }
+    }
+}
+
+@media (min-width: 1025px) and (hover: none) and (pointer: coarse) {
+    nav {
+        background-color: $light;
+
+
+    //mobile navigation .click event in js. 
       .navbar .nav-links-wrapper ul.links .link.active .sub-menu{
         display: flex;
         flex-direction: column;
