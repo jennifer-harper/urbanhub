@@ -91,6 +91,11 @@ body {
   }
 }
 
+@media (hover: hover) and (pointer: fine) {
+  body {
+    background-color: red;
+  }
+}
 #loadingDiv {
   display: none;
   background-color: #FAF6F0;
