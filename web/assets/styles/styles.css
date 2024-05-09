@@ -2395,7 +2395,6 @@ tbody tr:first-of-type td {
   }
   .ourSpaces .hero-animation .roof-wrap .btn.downwards {
     display: flex;
-    max-width: 100px;
   }
 }
 @media (min-width: 85.375em) {
@@ -2635,6 +2634,11 @@ tbody tr:first-of-type td {
 .body-wrapper {
   padding-top: 80px;
 }
+@media (min-width: 220em) {
+  .body-wrapper {
+    padding-top: 0vw;
+  }
+}
 .body-wrapper.active-nav:after {
   content: "";
   position: absolute;
@@ -2703,7 +2707,7 @@ nav .navbar .sub-menu {
 }
 nav .navbar .sub-menu li a:hover .little-star {
   animation-name: spin;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-duration: 3000ms;
 }

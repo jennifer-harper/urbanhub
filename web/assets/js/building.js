@@ -27,8 +27,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
   })
 
   let mm = gsap.matchMedia()
-  var navHeight = $('nav').innerHeight()
   var marker = { startColor: 'green', endColor: 'red', fontSize: '18px', fontWeight: 'bold', indent: 20, zIndex: 2000 }
+
+  // Function to recalculate navHeight on window resize
+  function updateNavHeight() {
+    let nav = $('.logo').innerHeight()
+    navHeight = nav + 20
+    console.log(navHeight)
+    ScrollTrigger.refresh()
+  }
+  updateNavHeight()
+  // Call the updateNavHeight function on window resize
+  window.addEventListener('resize', updateNavHeight)
 
   function firstSection() {
     let tl = gsap.timeline({

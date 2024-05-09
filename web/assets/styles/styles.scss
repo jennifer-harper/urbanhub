@@ -2790,7 +2790,6 @@ tbody{
             justify-content: space-between;
             .roof-wrap .btn.downwards{
                 display: flex;
-                max-width: 100px;
             }
         }
 
@@ -3122,9 +3121,9 @@ tbody{
 //////////////////
 .body-wrapper{
     padding-top: 80px;
-    // @media #{$mq-retina}{
-    //     padding-top:4.4vw;
-    // }
+    @media #{$mq-retina}{
+        padding-top:0vw;
+    }
     &.active-nav{
         &:after{
             content:'';
@@ -3199,7 +3198,7 @@ nav {
                     // color: $nav-hover;
                     .little-star{
                         animation-name: spin;
-                        animation-iteration-count: 1;
+                        animation-iteration-count: infinite;
                         animation-timing-function: linear; 
                         animation-duration: 3000ms;
                     }
