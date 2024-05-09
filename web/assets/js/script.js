@@ -1,5 +1,23 @@
-//Team page, add font change to last names
+document.addEventListener('DOMContentLoaded', () => {
+  gsap.registerPlugin(ScrollTrigger)
 
+  // Select all buttons with the .btn class
+  const buttons = document.querySelectorAll('.btn')
+
+  // Iterate through each button
+  buttons.forEach((button) => {
+    const animateMe = button.querySelector('.animate')
+    button.addEventListener('mouseenter', () => {
+      gsap.to(animateMe, { xPercent: 300 })
+    })
+
+    button.addEventListener('mouseleave', () => {
+      gsap.to(animateMe, { xPercent: 0 })
+    })
+  })
+})
+
+//Team page, add font change to last names
 $('.staff-wrapper h3').each(function () {
   var text = $(this).text()
   var words = text.split(' ')

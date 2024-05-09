@@ -936,6 +936,7 @@ ul li a .social-media{
         background-color: $green-dark;
         align-items: center;
         border-radius: 50px;
+        overflow: hidden;
         @include transition;
         @media #{$mq-figma} {
             border-radius: $md;
@@ -953,17 +954,44 @@ ul li a .social-media{
         background-color: $green-light;
         border-radius: $base;
         padding: $base-font-size*.2 $base-font-size*1;
+        position: relative;
         svg{
           fill: $green-dark;
           width: $base-font-size*1.6;
+          &.animate{
+            position: absolute;
+            top: 10px;
+          }
+          &.fixed{
+            fill:transparent;
+          }
         }
       }
     //   &:hover{
-    //     @include transition;
-    //     flex-direction: row-reverse;
-
+    //     div{
+    //         background-color: pink;
+    //         .animate{
+    //             animation-name: move;
+    //             // animation-timing-function: linear; 
+    //             animation-duration: 1000ms;
+    //             animation-iteration-count:1
+    //         }
+    //     }
     //   }
     }
+
+
+
+
+    @keyframes move {
+        from {
+            transform: translateX(0em);
+        }
+        to {
+            transform: translateX(2em);
+        }
+    }
+
 
 
     &.no-marg-top{
@@ -3118,7 +3146,7 @@ nav {
         margin: auto;
         width: 100%;
         padding:10px 20px;
-
+        background-color: $light;
         .arrow {
             text-align: center;
             display: inline-block;
@@ -3135,6 +3163,9 @@ nav {
             li{
                 a:hover{
                     color: $nav-hover;
+                    .little-star{
+                        fill:$nav-hover;
+                    }
                 }
                 .header-intro{
                     margin-top:$md;
@@ -3171,7 +3202,7 @@ nav {
             padding: 20px;
             transition: all 0.5s ease;
             z-index: 10;
-            background-color: $light;
+            background-color: inherit;
             height: calc(100vh - 80px);
             overflow: scroll;
         }
@@ -3575,13 +3606,19 @@ nav {
 
 .home{
     .centered-hero{
-        // min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
        > .pad-all{
             width: 100%;
         }
+
+        .text-center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
         .h1-wrap{
             position: relative;
             // display: flex;
