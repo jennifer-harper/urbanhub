@@ -2634,11 +2634,6 @@ tbody tr:first-of-type td {
 .body-wrapper {
   padding-top: 80px;
 }
-@media (min-width: 220em) {
-  .body-wrapper {
-    padding-top: 4.4vw;
-  }
-}
 .body-wrapper.active-nav:after {
   content: "";
   position: absolute;

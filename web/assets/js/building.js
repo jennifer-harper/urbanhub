@@ -1,4 +1,18 @@
-// use a script tag or an external JS file
+$(document).ready(function () {
+  $('.downwards a').on('click', function (event) {
+    if (this.hash !== '') {
+      event.preventDefault()
+      const target = $(this.hash)
+      $('html, body').animate(
+        {
+          scrollTop: target.offset().top - 80,
+        },
+        800
+      )
+    }
+  })
+})
+
 document.addEventListener('DOMContentLoaded', (event) => {
   gsap.registerPlugin(ScrollTrigger, ScrollSmoother, MotionPathPlugin)
   const smoother = ScrollSmoother.create({
@@ -11,8 +25,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
   })
 
   let mm = gsap.matchMedia()
-  var navHeight = $('nav').innerHeight()
-  var marker = { startColor: 'green', endColor: 'red', fontSize: '18px', fontWeight: 'bold', indent: 20, zIndex: 2000 }
+  var marker = { startColor: 'green', endColor: 'red', fontSize: '18px', fontWeight: 'bold', indent: 20 }
+
+  // Function to recalculate navHeight on window resize
+  function updateNavHeight() {
+    let nav = $('.logo').innerHeight()
+    navHeight = nav + 20
+    console.log(navHeight)
+    ScrollTrigger.refresh()
+  }
+  updateNavHeight()
+  // Call the updateNavHeight function on window resize
+  window.addEventListener('resize', updateNavHeight)
 
   function firstSection() {
     let tl = gsap.timeline({
