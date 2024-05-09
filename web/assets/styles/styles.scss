@@ -3576,8 +3576,12 @@ nav {
                 }
             }
         }
+
+        .btn.btn-two{
+            display:none;
+        }
         .btn.btn-one{
-            display:none
+            display:block;
         }
     }
 }
