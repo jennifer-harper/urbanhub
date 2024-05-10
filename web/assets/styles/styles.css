@@ -544,7 +544,7 @@ ul li a .social-media {
 }
 
 .pad-all {
-  padding: 5vw;
+  padding: 10vw 5vw;
 }
 .pad-all.lg {
   padding: 8vw;
@@ -2981,8 +2981,11 @@ nav .hamburger {
     position: absolute;
     right: 20px;
   }
-  nav .btn.btn-one {
+  nav .btn.btn-two {
     display: none;
+  }
+  nav .btn.btn-one {
+    display: block;
   }
 }
 /* Accordion responsive breakpoint */

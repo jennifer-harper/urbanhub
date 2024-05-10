@@ -670,7 +670,7 @@ ul li a .social-media{
 
 //-------Padding-----------//
 .pad-all{
-  padding:$base;
+  padding:$base*2 $base;
     &.lg{
         padding:$lg;
     }
