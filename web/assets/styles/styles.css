@@ -3566,9 +3566,6 @@ nav .hamburger {
   }
 }
 
-.urbanEnvironment .social-media {
-  border-top-width: 0;
-}
 .urbanEnvironment .star-banner-wrapper {
   padding-top: 0;
 }
@@ -4429,13 +4426,17 @@ input#honeypooh {
   .solutions-usp {
     padding-top: 0;
   }
-  .solutions-mask:not(.contact-us .solutions-mask,
+  .solutions-mask:not(.urbanEnvironment .solutions-mask,
+  .urbanCommunity .solutions-mask,
+  .contact-us .solutions-mask,
   .facilitiesAmenities .solutions-mask,
   .culture-events .solutions-mask,
   .neighbourhood .solutions-mask) .pad-all.no-btm {
     padding-bottom: 20px;
     padding-top: 0;
   }
+  .urbanEnvironment .solutions-mask .pad-all.no-btm,
+  .urbanCommunity .solutions-mask .pad-all.no-btm,
   .culture-events .solutions-mask .facilitiesAmenities .solutions-mask .pad-all.no-btm,
   .contact-us .solutions-mask .pad-all.no-btm {
     padding-top: 0;
@@ -4452,6 +4453,9 @@ input#honeypooh {
   }
 }
 @media (min-width: 1024px) {
+  .urbanEnvironment .social-media {
+    border-top-width: 0;
+  }
   .contact-us .contact-title {
     border-top-width: 0;
   }

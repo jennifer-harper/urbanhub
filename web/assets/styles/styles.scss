@@ -4292,9 +4292,7 @@ nav {
 }
 
 .urbanEnvironment{
-    .social-media{
-        border-top-width:0;
-    }
+
 
 
     .star-banner-wrapper{
@@ -5374,7 +5372,12 @@ input#honeypooh{ display: none; }
         .solutions-usp{
             padding-top:0;
         }
-        .solutions-mask:not(.contact-us .solutions-mask, 
+
+
+        .solutions-mask:not(
+            .urbanEnvironment  .solutions-mask,
+            .urbanCommunity .solutions-mask,
+        .contact-us .solutions-mask, 
         .facilitiesAmenities .solutions-mask, 
         .culture-events .solutions-mask, 
         .neighbourhood .solutions-mask){
@@ -5383,6 +5386,8 @@ input#honeypooh{ display: none; }
                 padding-top: 0;
             }
         }
+        .urbanEnvironment  .solutions-mask,
+        .urbanCommunity .solutions-mask,
         .culture-events .solutions-mask
         .facilitiesAmenities .solutions-mask,
         .contact-us .solutions-mask{
@@ -5415,6 +5420,11 @@ input#honeypooh{ display: none; }
     }
 
     @media (min-width:1024px){
+        .urbanEnvironment{
+            .social-media{
+                border-top-width:0;
+            }
+        }
         .contact-us{
             .contact-title{
                 border-top-width:0;
