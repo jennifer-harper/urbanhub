@@ -544,13 +544,10 @@ ul li a .social-media {
 }
 
 .pad-all {
-  padding: 10vw 5vw;
+  padding: 15vw 5vw;
 }
 .pad-all.lg {
   padding: 8vw;
-}
-.pad-all.sm {
-  padding: 2.3076923077vw;
 }
 .pad-all.for-sm {
   padding: 2.6923076923vw;
@@ -566,6 +563,19 @@ ul li a .social-media {
 }
 .pad-all.no-right {
   padding-right: 0;
+}
+@media (min-width: 48em) {
+  .pad-all {
+    padding: 8.5vw 5vw;
+  }
+  .pad-all.sm {
+    padding: 2.3076923077vw;
+  }
+}
+@media (min-width: 64em) {
+  .pad-all {
+    padding: 5vw 5vw;
+  }
 }
 @media (min-width: 94em) {
   .pad-all {
@@ -644,8 +654,8 @@ ul li a .social-media {
 }
 
 .pad-top-btm {
-  padding-top: 5vw;
-  padding-bottom: 5vw;
+  padding-top: 15vw;
+  padding-bottom: 15vw;
 }
 .pad-top-btm.no-top {
   padding-top: 0;
@@ -656,6 +666,18 @@ ul li a .social-media {
 .pad-top-btm.top-btm-lg {
   padding-top: 8vw;
   padding-bottom: 8vw;
+}
+@media (min-width: 48em) {
+  .pad-top-btm {
+    padding-top: 8.5vw;
+    padding-bottom: 8.5vw;
+  }
+}
+@media (min-width: 48em) {
+  .pad-top-btm {
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+  }
 }
 
 .border-right {
@@ -1318,6 +1340,7 @@ button {
 .orangeTheme .tick {
   fill: #EBE198;
 }
+.orangeTheme nav .hamburger svg,
 .orangeTheme .logo,
 .orangeTheme .social-media,
 .orangeTheme .little-star {
@@ -1486,7 +1509,7 @@ button {
 }
 .lightYellowTheme .star-loader,
 .lightYellowTheme nav .navbar .arrow,
-.lightYellowTheme nav .hamburger,
+.lightYellowTheme nav .hamburger svg,
 .lightYellowTheme .logo,
 .lightYellowTheme .social-media,
 .lightYellowTheme .little-star {
@@ -1511,7 +1534,7 @@ button {
   fill: #8885D8;
 }
 .purpleTheme nav .navbar .arrow,
-.purpleTheme nav .hamburger,
+.purpleTheme nav .hamburger svg,
 .purpleTheme .logo,
 .purpleTheme .social-media {
   fill: #272641;
@@ -1574,7 +1597,7 @@ button {
   fill: #253C40;
 }
 .lightBlueTheme nav .navbar .arrow,
-.lightBlueTheme nav .hamburger,
+.lightBlueTheme nav .hamburger svg,
 .lightBlueTheme .logo,
 .lightBlueTheme .social-media {
   fill: #253C40;
@@ -1926,14 +1949,22 @@ footer {
 }
 
 .section-solutions .align-right {
-  margin-top: 20px;
-  text-align: left;
+  margin-top: 20vw;
+  text-align: right;
 }
 .section-solutions .align-right img {
-  max-width: 20vw;
+  max-width: 70vw;
   margin-left: 10px;
 }
 @media (min-width: 48em) {
+  .section-solutions .align-right {
+    margin-top: 0vw;
+    text-align: right;
+  }
+  .section-solutions .align-right img {
+    max-width: 70vw;
+    margin-left: 10px;
+  }
   .section-solutions .half .flex-wrap.no-btm {
     flex-direction: row;
     justify-content: space-between;
@@ -2728,6 +2759,9 @@ nav .navbar .sub-menu li .content svg {
   max-width: 40%;
   margin-right: 0;
 }
+nav .navbar .sub-menu li .content:first-of-type {
+  padding-top: 40px;
+}
 nav .navbar .sub-menu li:last-of-type .content {
   border-bottom-width: 0;
 }
@@ -3023,7 +3057,7 @@ nav .hamburger {
 
 .r-tabs-accordion-title .mobile-only {
   font-size: 1.3em;
-  padding: 2.5vw 5vw;
+  padding: 4.5vw 5vw;
   border-bottom: 1px solid #cbd5d0;
   position: relative;
 }
@@ -3693,7 +3727,9 @@ nav .hamburger {
 .facilitiesAmenities .tabs-facilities {
   border-top: 1px solid #cbd5d0;
 }
+.solutionsPage .tabs-facilities .r-tabs-state-active a.r-tabs-anchor .mobile-only,
 .solutionsPage .tabs-facilities li.r-tabs-tab.r-tabs-state-active,
+.facilitiesAmenities .tabs-facilities .r-tabs-state-active a.r-tabs-anchor .mobile-only,
 .facilitiesAmenities .tabs-facilities li.r-tabs-tab.r-tabs-state-active {
   background-color: #BAE2A6;
 }
@@ -4356,6 +4392,69 @@ input#honeypooh {
 .virtual .tour-wrapper {
   max-width: 890px;
   margin: 0 auto;
+}
+
+.culture-events .pad-all.sm {
+  padding: 2.3076923077vw;
+}
+
+.swiper-button-prev .fixed,
+.swiper-button-next .fixed {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .solutions-wrap .solutions-contrast h2 {
+    margin-bottom: 0;
+  }
+  .slider-btn-wrapper {
+    margin-top: 30px;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+  .facilitiesAmenities .r-tabs .border-color-contrast {
+    flex-direction: column-reverse;
+  }
+  .facilitiesAmenities .r-tabs .border-color-contrast img {
+    margin-bottom: 20px;
+  }
+  .neighbourhood .google-maps {
+    height: 300px;
+  }
+  .solutions-wrap .hero-solutions {
+    padding-bottom: 15vw;
+  }
+}
+@media (max-width: 1023px) {
+  .solutions-usp {
+    padding-top: 0;
+  }
+  .solutions-mask:not(.contact-us .solutions-mask,
+  .facilitiesAmenities .solutions-mask,
+  .culture-events .solutions-mask,
+  .neighbourhood .solutions-mask) .pad-all.no-btm {
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+  .culture-events .solutions-mask .facilitiesAmenities .solutions-mask .pad-all.no-btm,
+  .contact-us .solutions-mask .pad-all.no-btm {
+    padding-top: 0;
+  }
+  .contact-us .contact-title h2 {
+    margin-bottom: 0;
+  }
+  .facilitiesAmenities .flex-align-center,
+  .tabs .flex-align-center {
+    align-items: flex-start;
+  }
+  .solutions-wrap .hero-solutions {
+    padding-bottom: 10vw;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-us .contact-title {
+    border-top-width: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
