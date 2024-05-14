@@ -1,13 +1,16 @@
-dateModified: 1715045782
+dateModified: 1715724380
 email:
-  fromEmail: jennifer@ambitious.co.nz
-  fromName: urbanhub
+  fromEmail: accounts@ambitious.co.nz
+  fromName: 'UrbanHub Website'
   replyToEmail: null
   template: null
   transportSettings:
-    messageStream: ''
-    token: $POSTMARK
-  transportType: craftcms\postmark\Adapter
+    host: smtp.mailgun.org
+    password: Itsasecret12!@
+    port: '587'
+    useAuthentication: '1'
+    username: postmaster@mg.urbanhub.co.nz
+  transportType: craft\mail\transportadapters\Smtp
 fs:
   hardDisk:
     hasUrls: true
@@ -276,6 +279,10 @@ meta:
     fe621405-1666-4bdb-aa36-961848155562: 'Event Heading' # Event Heading
     ff742c41-cefa-4113-81ed-c15b4712b984: 'Intro Paragraph' # Intro Paragraph
 plugins:
+  async-queue:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   ckeditor:
     edition: standard
     enabled: true
@@ -290,7 +297,7 @@ plugins:
       prependSender: 'On behalf of'
       prependSubject: 'New message from urbanhub'
       successFlashMessage: 'Your message has been sent.'
-      toEmail: jennifer@ambitious.co.nz
+      toEmail: accounts@ambitious.co.nz
   contact-form-honeypot:
     edition: standard
     enabled: true
@@ -309,6 +316,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.1
+  webhooks:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.4.0
 system:
   edition: solo
   live: true

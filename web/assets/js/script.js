@@ -22,6 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+// gsap.set('animate', { xPercent: 0 })
+
+// gsap.utils.toArray('.btn').forEach((container) => {
+//   const animateMe = container.querySelector('.animate')
+//   let tl = gsap.timeline({
+//     defaults: {
+//       duration: 0.5,
+//       ease: 'circ.out',
+//     },
+//     paused: true,
+//   })
+//   tl.to(animateMe, { xPercent: 250 })
+//   tl.from(animateMe, { xPercent: -250 })
+//   container.addEventListener('mouseenter', () => tl.play())
+//   container.addEventListener('mouseleave', () => tl.kill())
+// })
+
 //Team page, add font change to last names
 $('.staff-wrapper h3').each(function () {
   var text = $(this).text()

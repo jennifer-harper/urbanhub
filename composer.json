@@ -6,7 +6,9 @@
     "craftcms/contact-form-honeypot": "2.1.0",
     "craftcms/feed-me": "5.4.0",
     "craftcms/postmark": "3.1.0",
+    "craftcms/webhooks": "3.1.0",
     "fortrabbit/craft-copy": "^2.4",
+    "ostark/craft-async-queue": "3.2.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
   "require-dev": {
