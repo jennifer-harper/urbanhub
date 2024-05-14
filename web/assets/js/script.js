@@ -1,43 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger)
 
-  // Select all buttons with the .btn class
-  const buttons = document.querySelectorAll('.btn')
+  gsap.set('.animate', { xPercent: 0 })
+  gsap.utils.toArray('.btn').forEach((container) => {
+    const animateMe = container.querySelector('.animate')
 
-  // Iterate through each button
-  buttons.forEach((button) => {
-    const animateMe = button.querySelector('.animate')
-
-    gsap.set(animateMe, { xPercent: 0 })
-    button.addEventListener('mouseenter', () => {
-      //   gsap.to(animateMe, { xPercent: 300 })
-      let tl = gsap.timeline({ defaults: { duration: 0.5, ease: 'circ.out' } })
-      tl.to(animateMe, { xPercent: 250 })
-      tl.from(animateMe, { xPercent: -250 })
+    let tl = gsap.timeline({
+      defaults: {
+        duration: 0.5,
+        ease: 'circ.out',
+      },
+      paused: true,
     })
-
-    // button.addEventListener('mouseleave', () => {
-    //   gsap.to(animateMe, { xPercent: 0 })
-    // })
+    tl.to(animateMe, { x: 0, duration: 0 })
+    tl.to(animateMe, { xPercent: 250 })
+    tl.to(animateMe, { opacity: 0, duration: 0 })
+    tl.to(animateMe, { xPercent: -250, duration: 0.2 })
+    tl.to(animateMe, { opacity: 1, duration: 0 })
+    tl.to(animateMe, { xPercent: 0, duration: 0.2 })
+    container.addEventListener('mouseleave', () => tl.play())
+    container.addEventListener('mouseenter', () => tl.restart())
   })
 })
-
-// gsap.set('animate', { xPercent: 0 })
-
-// gsap.utils.toArray('.btn').forEach((container) => {
-//   const animateMe = container.querySelector('.animate')
-//   let tl = gsap.timeline({
-//     defaults: {
-//       duration: 0.5,
-//       ease: 'circ.out',
-//     },
-//     paused: true,
-//   })
-//   tl.to(animateMe, { xPercent: 250 })
-//   tl.from(animateMe, { xPercent: -250 })
-//   container.addEventListener('mouseenter', () => tl.play())
-//   container.addEventListener('mouseleave', () => tl.kill())
-// })
 
 //Team page, add font change to last names
 $('.staff-wrapper h3').each(function () {
