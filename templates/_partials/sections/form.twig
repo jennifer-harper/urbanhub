@@ -28,7 +28,7 @@
     <div class="form-layout flex-wrap">
         <div>
             <label for="phone">Mobile Number *</label>
-            <input id="phone" type="tel" name="message[Phone]" value="" required autocomplete="tel-local" placeholder="Enter mobile number">
+            <input id="phone" type="tel" name="message[Phone]" value="" required autocomplete="tel-local" placeholder="Enter mobile number" pattern="[0-9]+">
             {{ message ? _self.errorList(message.getErrors('message[Phone]')) }}
         </div>
 
@@ -45,8 +45,8 @@
     </div>
 
     <div class="form-layout dropdown">
-            <label for="workspace">What type of workspace are you looking for? *</label>
-            <select id="workspace" name="message[Workspace]" required>
+            <label for="workspace">What type of workspace are you looking for?</label>
+            <select id="workspace" name="message[Workspace]">
                 <option value="" class="placeholder" selected disabled>Select an option</option>
                 <option value="urbanSuite">UrbanSuite</option>
                 <option value="urbanStudio">UrbanStudio</option>
@@ -84,3 +84,20 @@
     </button>
 </form>
 
+<script>
+  (function(){
+    var dropdowns = document.querySelectorAll('select');
+    
+    for(var i=0; i <= dropdowns.length - 1; i++) {
+      dropdowns[i].addEventListener('change', function(e) {
+        dataLayer.push({
+          'event': 'dropdownChanged',
+          'fieldValue': e.target.options[e.target.selectedIndex].text,
+          'fieldName': e.target.name
+        });
+      });
+    }
+    
+  })();
+  
+</script>
