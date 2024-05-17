@@ -3750,6 +3750,7 @@ nav {
 
 .facilitiesAmenities,
 .home{
+
     @media only screen and (min-width:1024px) {
         .r-tabs .r-tabs-nav {
             display: flex;
@@ -3758,8 +3759,18 @@ nav {
         .r-tabs .r-tabs-accordion-title {
             display: none;
         }
+        .r-tabs-accordion-title{
+            height:50px;
+        }
+    }
+
+    @media only screen and (min-width:3800px) {
+        .r-tabs-accordion-title{
+            height:100px;
+        }
     }
 }
+
 .solutionsPage{
     @media only screen and (min-width:920px) {
         .r-tabs .r-tabs-nav {

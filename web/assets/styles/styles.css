@@ -3138,6 +3138,16 @@ nav .hamburger {
   .home .r-tabs .r-tabs-accordion-title {
     display: none;
   }
+  .facilitiesAmenities .r-tabs-accordion-title,
+  .home .r-tabs-accordion-title {
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 3800px) {
+  .facilitiesAmenities .r-tabs-accordion-title,
+  .home .r-tabs-accordion-title {
+    height: 100px;
+  }
 }
 
 @media only screen and (min-width: 920px) {
