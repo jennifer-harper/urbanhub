@@ -22,7 +22,7 @@ $(document).ready(function () {
     var offsetTop = $(target).offset().top // Calculate the top offset position of the target tab content
 
     var navBar = $('.navbar').outerHeight()
-    var tabss = $('.r-tabs-accordion-title.r-tabs-state-active').outerHeight()
+    var tabss = $('.r-tabs-state-active').outerHeight()
     var navHeight = navBar + tabss
 
     $('html, body').animate(
