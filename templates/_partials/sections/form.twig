@@ -28,7 +28,7 @@
     <div class="form-layout flex-wrap">
         <div>
             <label for="phone">Mobile Number *</label>
-            <input id="phone" type="tel" name="message[Phone]" value="" required autocomplete="tel-local" placeholder="Enter mobile number" pattern="[0-9]+">
+            <input id="phone" type="tel" name="message[Phone]" pattern="[0-9 ]+" value="" required autocomplete="tel-local" placeholder="Enter mobile number" oninvalid="setCustomErrorMessage(this)" oninput="clearCustomErrorMessage(this)">
             {{ message ? _self.errorList(message.getErrors('message[Phone]')) }}
         </div>
 
@@ -44,20 +44,20 @@
         </div>
     </div>
 
+
+
     <div class="form-layout dropdown">
             <label for="workspace">What type of workspace are you looking for?</label>
             <select id="workspace" name="message[Workspace]">
                 <option value="" class="placeholder" selected disabled>Select an option</option>
-                <option value="urbanSuite">UrbanSuite</option>
-                <option value="urbanStudio">UrbanStudio</option>
-                <option value="urbanDesk">UrbanDesk</option>
-                <option value="urbanMeet">UrbanMeet</option>
-                <option value="urbanClub">UrbanClub</option>
-                <option value="urbanLease">UrbanLease</option>
-                <option value="unknown">I'm not sure</option>
+                <option value="Traditional_Lease">Traditional Lease</option>
+                <option value="Serviced_Office">Serviced Office</option>
+                <option value="Meetings_Conferences">Meetings & Conferences</option>
+                <option value="Coworking_HotDesk">Coworking & Hot Desk</option>
+                <option value="Membership_VirtualSpace">Membership or Virtual Services</option>
+                <option value="Other">Other</option>
             </select>
     </div>
-
 
     <div class="form-layout message">
         <label  for="message">Message *</label>
@@ -84,20 +84,38 @@
     </button>
 </form>
 
+
+
 <script>
-  (function(){
-    var dropdowns = document.querySelectorAll('select');
-    
-    for(var i=0; i <= dropdowns.length - 1; i++) {
-      dropdowns[i].addEventListener('change', function(e) {
-        dataLayer.push({
-          'event': 'dropdownChanged',
-          'fieldValue': e.target.options[e.target.selectedIndex].text,
-          'fieldName': e.target.name
+
+    {# Add dropdown options to data layer for google tracking #}
+    (function(){
+        var dropdowns = document.querySelectorAll('select');
+        
+        for(var i=0; i <= dropdowns.length - 1; i++) {
+        dropdowns[i].addEventListener('change', function(e) {
+            dataLayer.push({
+            'event': 'dropdownChanged',
+            'fieldValue': e.target.options[e.target.selectedIndex].text,
+            'fieldName': e.target.name
+            });
         });
-      });
+        }
+        
+    })();
+
+
+{# Change error message for numbers, must include numbers #}
+    function setCustomErrorMessage(input) {
+        if (input.validity.patternMismatch) {
+            input.setCustomValidity('Please enter only numbers.');
+        } else {
+            input.setCustomValidity('');
+        }
     }
-    
-  })();
+
+    function clearCustomErrorMessage(input) {
+        input.setCustomValidity('');
+    }
   
 </script>
