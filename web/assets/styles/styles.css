@@ -91,6 +91,24 @@ body {
   }
 }
 
+.nav-active {
+  overflow-y: hidden;
+  touch-action: none;
+  -ms-touch-action: none;
+  height: 100vh;
+}
+.nav-active footer:before,
+.nav-active main:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 #loadingDiv {
   display: none;
   background-color: #FAF6F0;

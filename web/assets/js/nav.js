@@ -9,9 +9,11 @@ function toggleMenu() {
   if (navLinks.style.top === '80px') {
     navLinks.style.top = '-100vh' // Close the menu
     $('.navbar .hamburger').removeClass('rotate-icon')
+    $('body').removeClass('nav-active')
   } else {
     navLinks.style.top = '80px' // Open the menu
     $('.navbar .hamburger').addClass('rotate-icon')
+    $('body').addClass('nav-active')
   }
 }
 
@@ -59,7 +61,7 @@ $('li.nav-hover').hover(
     clearTimeout(delayTimer)
     // Set a new delay for adding the class
     delayTimer = setTimeout(() => {
-      $('.body-wrapper').addClass('active-nav')
+      $('body').addClass('nav-active')
     }, 250) // Adjust the delay time (in milliseconds) as needed
   },
   function () {
@@ -67,7 +69,7 @@ $('li.nav-hover').hover(
     clearTimeout(delayTimer)
     // Set a new delay for removing the class
     delayTimer = setTimeout(() => {
-      $('.body-wrapper').removeClass('active-nav')
+      $('body').removeClass('nav-active')
     }, 250) // Adjust the delay time (in milliseconds) as needed
   }
 )
@@ -75,16 +77,16 @@ $('li.nav-hover').hover(
 ////
 ////
 ////---------fix mobile dropdown position----------////
-$(function () {
-  // fix mobile dropdown position
-  var hash = window.location.hash
-  if (hash) {
-    var navHeight = $('nav').innerHeight()
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top - navHeight,
-      },
-      300
-    )
-  }
-})
+// $(function () {
+//   // fix mobile dropdown position
+//   var hash = window.location.hash
+//   if (hash) {
+//     var navHeight = $('nav').innerHeight()
+//     $('html, body').animate(
+//       {
+//         scrollTop: $(hash).offset().top - navHeight,
+//       },
+//       300
+//     )
+//   }
+// })
