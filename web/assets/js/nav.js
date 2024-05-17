@@ -73,20 +73,3 @@ $('li.nav-hover').hover(
     }, 250) // Adjust the delay time (in milliseconds) as needed
   }
 )
-
-////
-////
-////---------fix mobile dropdown position----------////
-$(function () {
-  // fix mobile dropdown position
-  var hash = window.location.hash
-  if (hash) {
-    var navHeight = $('nav').innerHeight()
-    $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top - navHeight,
-      },
-      300
-    )
-  }
-})
