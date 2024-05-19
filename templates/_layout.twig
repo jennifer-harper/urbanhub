@@ -10,7 +10,7 @@
       <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
       {% do craft.app.view.registerCssFile('@web/assets/styles/styles.css') %}
 
-        <!-- Google Tag Manager -->
+        {# <!-- Google Tag Manager -->
         <script>
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
@@ -26,7 +26,7 @@
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;         
             a.appendChild(r);     
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
+        </script> #}
     {% endblock %}
 </head>
 
@@ -94,7 +94,9 @@ data-key="0oUJtnbMl1Gp2Sqe48o8" id="chat_js_lib"></script>
     {% if craft.app.request.segment(1) not in ['about-you', 'explore-our-spaces'] %}
         <script type="module" src="/assets/js/footer.js"></script>
     {% endif %}
-
+    <script>
+    document.cookie = "cookieName=cookieValue; SameSite=None; Secure";
+    </script>
 
   {% endblock %}
 
