@@ -43,7 +43,7 @@ $('.link').click(function (e) {
   if (activeLink) {
     let rect = activeLink.getBoundingClientRect()
     let navLinksRect = navLinks.getBoundingClientRect()
-    let scrollTop = rect.top + window.scrollY - navLinksRect.top
+    let scrollTop = rect.top + navLinks.scrollTop - navLinksRect.top
     navLinks.scrollTo({ top: scrollTop, behavior: 'smooth' })
   }
 })
