@@ -12,7 +12,6 @@ function toggleMenu() {
     $('body').removeClass('nav-active')
   } else {
     navLinks.style.top = '80px' // Open the menu
-    navLinks.scrollTop = 0
     $('.navbar .hamburger').addClass('rotate-icon')
     $('body').addClass('nav-active')
   }
@@ -25,8 +24,9 @@ menuOpenBtn.onclick = toggleMenu
 ////
 ////---------FOR DROPDOWNS/SUBMENUS ON MOBILE----------////
 
+// Ensure that the event listener is attached properly
 $('.link').click(function (e) {
-  //e.preventDefault() // Prevent default link behavior
+  //e.preventDefault(); // Prevent default link behavior
 
   // Check if the clicked link already has the active class
   if ($(this).hasClass('active')) {
@@ -37,8 +37,18 @@ $('.link').click(function (e) {
     $('.link').removeClass('active')
     $(this).addClass('active')
   }
+
+  // Scroll to the active link
+  let activeLink = document.querySelector('.nav-links-wrapper .link.active')
+  if (activeLink) {
+    let rect = activeLink.getBoundingClientRect()
+    let navLinksRect = navLinks.getBoundingClientRect()
+    let scrollTop = rect.top + window.scrollY - navLinksRect.top
+    navLinks.scrollTo({ top: scrollTop, behavior: 'smooth' })
+  }
 })
 
+////////////////////////////////////////////////////////////////////////
 // Function to remove active class on Escape key press
 $(document).keydown(function (event) {
   if (event.key === 'Escape') {

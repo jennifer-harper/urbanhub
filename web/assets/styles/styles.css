@@ -3143,7 +3143,7 @@ nav .hamburger {
     height: 60px;
   }
 }
-@media only screen and (min-width: 3800px) {
+@media only screen and (min-width: 1920px) {
   .facilitiesAmenities .r-tabs-accordion-title,
   .home .r-tabs-accordion-title {
     height: 100px;
