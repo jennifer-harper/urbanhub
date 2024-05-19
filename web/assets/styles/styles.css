@@ -3027,7 +3027,7 @@ nav .hamburger {
   }
   nav .links li.link .arrow,
   nav .links li.link > a {
-    font-size: 4vw;
+    font-size: 6vw;
     line-height: 1em;
   }
   nav .links li.link .arrow {
@@ -3055,7 +3055,7 @@ nav .hamburger {
   }
   nav .links li.link .arrow,
   nav .links li.link > a {
-    font-size: 6vw;
+    font-size: 4vw;
     line-height: 1em;
   }
   nav .links li.link .arrow {
