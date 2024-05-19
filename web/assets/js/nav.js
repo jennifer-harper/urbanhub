@@ -12,6 +12,7 @@ function toggleMenu() {
     $('body').removeClass('nav-active')
   } else {
     navLinks.style.top = '80px' // Open the menu
+    navLinks.scrollTop = 0
     $('.navbar .hamburger').addClass('rotate-icon')
     $('body').addClass('nav-active')
   }
