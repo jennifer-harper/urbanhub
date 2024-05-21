@@ -1,0 +1,94 @@
+{# {{ craft.freeform.form("contactForm").render() }} #}
+
+<div class="contact-form">
+    {% set demoFormHandle = "contactForm" %}
+    {% set form = freeform.form(demoFormHandle) %}
+    {% if form %}
+        {{ form.renderTag({
+            returnUrl: "/thank-you",
+            disable: ["submitButtons"]
+            
+        }) }}
+
+            {# Display any general errors upon submit #}
+            <div class="form-heading-errors">
+                {% if form.hasErrors %}
+                    <div class="freeform-form-has-errors">
+                        {{ "There was an error submitting this form"|t }}
+
+                        {% if form.errors|length %}
+                            <ul>
+                                {% for error in form.errors %}
+                                    <li>{{ error }}</li>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+
+            {# Set up your needed form page fields #}
+            {% set firstName = form.get("firstName") %}
+            {% set lastName = form.get("lastName") %}
+            {% set email = form.get("email") %}
+            {% set mobile = form.get("mobile") %}
+            {% set workspace = form.get("workspace") %}
+            {% set message = form.get("message") %}
+
+            <div class="form-layout flex-wrap">
+                <div>
+                    <label>{{ firstName.label }}*</label>
+                    <input name="firstName" value="{{ firstName.value }}" required />
+                    {{ firstName.renderErrors() }}
+                </div>
+
+                <div>
+                    <label>{{ lastName.label }}*</label>
+                    <input type="text" name="lastName" value="{{ lastName.value }}" required/>
+                    {{ lastName.renderErrors() }}
+                </div>
+            </div>
+
+            <div class="form-layout flex-wrap">
+                <div>
+                    <label>{{ email.label }}*</label>
+                    <input typle="email" name="email" value="{{ email.value }}" required />
+                    {{ email.renderErrors() }}
+                </div>
+
+                <div>
+                    <label>{{ mobile.label }}*</label>
+                    <input typle="tel" name="mobile" value="{{ mobile.value }}" required/>
+                    {{ mobile.renderErrors() }}
+                </div>
+            </div>
+
+             <div class="form-layout dropdown">
+                <label for="workspace">{{ workspace.label }}*</label>
+                <select name="workspace" id="workspace" required>
+                    <option value="" disabled selected>Select an option</option>
+                    {% for option in workspace.options %}
+                        <option value="{{ option.value }}" {{ option.value in workspace.value ? "selected" }}>{{ option.label }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-layout message">
+                <label>{{ message.label }}*</label>
+                <textarea rows="5" cols="40" id="message" name="message" value="{{ message.value }}" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">       
+                <span>
+                    <p>Submit</p>
+                    <div>{% include '_partials/svgs/arrow.twig' %}</div> 
+                </span>
+            </button>
+        {{ form.renderClosingTag }}
+    {% else %}
+
+ <!-- Thank you page content -->
+
+    {% endif %}
+
+</div>

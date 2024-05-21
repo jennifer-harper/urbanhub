@@ -1,0 +1,20 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: " greenTheme svgStyle" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %} 
+{% set page = craft.entries().section('testPage').all() %} 
+
+{% set buttonClass = "green-light" %}
+{% set buttonClassContrast = "green" %}
+
+{% set main = "bg-green-light" %}
+{% set contrast = "bg-green-dark" %}
+{% set footer = "bg-green-dark" %}
+
+
+
+{% block content %}
+
+   {% include '_partials/sections/form-copy.twig' %}
+
+{% endblock %}

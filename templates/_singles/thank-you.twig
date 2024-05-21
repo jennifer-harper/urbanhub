@@ -20,23 +20,11 @@
         </div>
 
             <div class="max">
-
-
-                {% if craft.app.session.hasFlash('notice') %}
-                <span>{{ craft.app.request.getQueryParam('from') }}</span>
                 <div class="intro-text">
                 {% if entry.introParagraph %}
                 {{entry.introParagraph}}
                 {% endif %}
                 </div>
-                {% if entry.paragraph %}
-                {{entry.paragraph}}
-                {% endif %}
-                {% elseif craft.app.session.hasFlash('error') %}
-                <p class="message error">{{ craft.app.session.getFlash('error') }}</p>
-                {% endif %}
-
-
             </div>
 
             <div>
