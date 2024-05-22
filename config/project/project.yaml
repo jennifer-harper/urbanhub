@@ -1,4 +1,4 @@
-dateModified: 1716332696
+dateModified: 1716347143
 email:
   fromEmail: accounts@ambitious.co.nz
   fromName: 'UrbanHub Website'
@@ -551,10 +551,6 @@ plugins:
       useQueueForIntegrations: true
       useQueueForNotifications: true
       validateCustomTemplates: true
-  freeform:
-    edition: express
-    enabled: false
-    schemaVersion: 5.1.0
   postmark:
     edition: standard
     enabled: true
