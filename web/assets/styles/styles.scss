@@ -4964,117 +4964,7 @@ nav {
 
 input#honeypooh{ display: none; }
 
-.contact-form{
-    margin-top: 2em;
-    .form-layout{
 
-        select,
-        textarea,
-        input,
-        div{
-            width: 100%;
-            font-family: $body-font;
-            font-size:$base-font-size;
-            color:$base-font;
-        }
-
-        option,
-        select,
-        textarea,
-        input{
-            padding: $base-font-size*.7 0;
-            border-width:0;
-            border-bottom-color:$grey !important;
-            border-bottom: 1px solid;
-            border-radius: 0;
-            background-color: transparent;
-            outline-color:$green-light;
-            outline-width: 1px;
-            // &::placeholder{
-            //     color:#000
-            // }
-        }
-        select option.placeholder{
-            margin-left: 20px;
-        }
-        
-        
-        // label,
-        // input{
-        //     padding-left: 10px;
-        // }
-
-        &.message,
-        div{
-            margin-top:20px;
-        }
-    }
-
-    .form-layout.dropdown {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    
-    @media #{$mq-small}{
-        .flex-wrap{
-            flex-direction: row;
-        }
-        .form-layout{
-            margin-bottom: 3vw;
-            &.message,
-            div{
-                margin-top: 0;
-            }
-            div:first-of-type{
-                margin-right: 20px;
-            }
-            div:last-of-type{
-                margin-left: 20px;
-            }
-        }
-    }
-
-    @media #{$mq-medium}{
-        .flex-wrap{
-            flex-direction: column;
-        }
-        .form-layout{
-            margin-bottom:0;
-            &.message,
-            div{
-                margin-top: 20px;
-            }
-            div:first-of-type{
-                margin-right: 0px;
-            }
-            div:last-of-type{
-                margin-left: 0px;
-            }
-        }
-    }
-
-    @media #{$mq-desktop}{
-        .flex-wrap{
-            flex-direction: row;
-        }
-        .form-layout{
-            margin-bottom: 3vw;
-            &.message,
-            div{
-                margin-top: 0;
-            }
-            div:first-of-type{
-                margin-right: 20px;
-            }
-            div:last-of-type{
-                margin-left: 20px;
-            }
-        }
-    }
-
-}
 
 .contact-us,
 .about-you{
@@ -5499,6 +5389,193 @@ input#honeypooh{ display: none; }
         .contact-us{
             .contact-title{
                 border-top-width:0;
+            }
+        }
+    }
+
+
+    .grecaptcha-badge{
+        z-index: 2;
+    }
+
+
+    .contact-form{
+        margin-top: 2em;
+        .form-layout{
+    
+            select,
+            textarea,
+            input,
+            div{
+                width: 100%;
+                font-family: $body-font;
+                font-size:$base-font-size;
+                color:$base-font;
+            }
+    
+            option,
+            select,
+            textarea,
+            input{
+                padding: $base-font-size*.7 0;
+                border-width:0;
+                border-bottom-color:$grey !important;
+                border-bottom: 1px solid;
+                border-radius: 0;
+                background-color: transparent;
+                outline-color:$green-light;
+                outline-width: 1px;
+                // &::placeholder{
+                //     color:#000
+                // }
+            }
+            select option.placeholder{
+                margin-left: 20px;
+            }
+            
+            
+            // label,
+            // input{
+            //     padding-left: 10px;
+            // }
+    
+            &.message,
+            div{
+                margin-top:20px;
+            }
+        }
+    
+        .form-layout.dropdown {
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        
+        @media #{$mq-small}{
+            .flex-wrap{
+                flex-direction: row;
+            }
+            .form-layout{
+                margin-bottom: 3vw;
+                &.message,
+                div{
+                    margin-top: 0;
+                }
+                div:first-of-type{
+                    margin-right: 20px;
+                }
+                div:last-of-type{
+                    margin-left: 20px;
+                }
+            }
+        }
+    
+        @media #{$mq-medium}{
+            .flex-wrap{
+                flex-direction: column;
+            }
+            .form-layout{
+                margin-bottom:0;
+                &.message,
+                div{
+                    margin-top: 20px;
+                }
+                div:first-of-type{
+                    margin-right: 0px;
+                }
+                div:last-of-type{
+                    margin-left: 0px;
+                }
+            }
+        }
+    
+        @media #{$mq-desktop}{
+            .flex-wrap{
+                flex-direction: row;
+            }
+            .form-layout{
+                margin-bottom: 3vw;
+                &.message,
+                div{
+                    margin-top: 0;
+                }
+                div:first-of-type{
+                    margin-right: 20px;
+                }
+                div:last-of-type{
+                    margin-left: 20px;
+                }
+            }
+        }
+    
+    }
+
+    #my-form{
+        .my-container{
+            > div{
+                display: flex;
+                flex-wrap: wrap;
+
+                .my-row{
+                    width: 50%;
+                }
+
+                .my-row:nth-of-type(5),
+                .my-row:last-of-type{
+                    width: 100%;
+                }
+            }
+
+
+            select,
+            textarea,
+            input,
+            div{
+                font-family: $body-font;
+                font-size:$base-font-size;
+                color:$base-font;
+            }
+    
+            option,
+            select,
+            textarea,
+            input{
+                padding: $base-font-size*.7 0;
+                border-width:0;
+                border-bottom-color:$grey !important;
+                border-bottom: 1px solid;
+                border-radius: 0;
+                background-color: transparent;
+                outline-color:$green-light;
+                outline-width: 1px;
+                width: 100%;
+ 
+            }
+            [data-error-message],
+            .fui-alert{
+                color:$orange;
+            }
+
+            .my-field-wrapper{
+                padding: $base-font-size;
+                div{
+                    width: 100%;
+                }
+
+            }
+
+
+            .my-submit{
+                padding:$base-font-size*.7 $base-font-size*2;
+                background-color: $green-light;
+                color:$green-dark;
+                @include transition;
+                &:hover{
+                    @include transition;
+                    background-color:$green-dark;
+                    color:$white;
+                }
             }
         }
     }

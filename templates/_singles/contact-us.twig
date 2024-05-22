@@ -19,7 +19,7 @@
   {% for entry in page %} 
 
   <div class="flex-wrap bg-green-light pad-sides hero">
-    <div class="pad-all no-left half flex-wrap col flex-jc-sb">
+    <div class="pad-all no-left half flex-wrap col">
         {% if entry.pageTitle %}
             {{entry.pageTitle}}
         {% endif %}
@@ -41,8 +41,7 @@
         {% if entry.paragraph2 %}
             {{entry.paragraph2}}
         {% endif %}
-          {% include '_partials/sections/form.twig' %}
-             {# {% include '_partials/sections/form-copy.twig' %} #}
+        {% include '_partials/forms/formie.twig' %}
     </div>
   </div>
 
