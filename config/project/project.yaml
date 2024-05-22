@@ -1,6 +1,6 @@
-dateModified: 1716347143
+dateModified: 1716350356
 email:
-  fromEmail: accounts@ambitious.co.nz
+  fromEmail: enquiry@urbanhuboffices.co.nz
   fromName: 'UrbanHub Website'
   replyToEmail: null
   template: null
@@ -293,7 +293,7 @@ plugins:
     schemaVersion: 3.0.0.0
   contact-form:
     edition: standard
-    enabled: true
+    enabled: false
     schemaVersion: 1.0.0
     settings:
       allowAttachments: ''
@@ -304,7 +304,7 @@ plugins:
       toEmail: accounts@ambitious.co.nz
   contact-form-honeypot:
     edition: standard
-    enabled: true
+    enabled: false
     schemaVersion: 1.0.0
     settings:
       honeypotParam: honeypooh
@@ -348,10 +348,10 @@ plugins:
                         - recaptcha
                       -
                         - secretKey
-                        - 6LdRAOMpAAAAALnyzCJ7KNA0QzD0NHsZabtwao7v
+                        - $RECAPT_SECRETKEY
                       -
                         - siteKey
-                        - 6LdRAOMpAAAAADCyi7iTvp2a-6eav-xp9buT3UUK
+                        - $RECAPT_SITEKEY
                       -
                         - type
                         - v3
@@ -546,7 +546,7 @@ plugins:
       spamBehaviour: showSuccess
       spamBehaviourMessage: ''
       spamEmailNotifications: false
-      spamKeywords: ''
+      spamKeywords: "SEO\r\nhttp\r\ntraffic\r\ncrypto"
       spamLimit: 500
       useQueueForIntegrations: true
       useQueueForNotifications: true
