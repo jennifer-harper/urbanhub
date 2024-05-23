@@ -4527,7 +4527,26 @@ input#honeypooh {
   flex-wrap: wrap;
 }
 #my-form .my-container > div .my-row {
-  width: 50%;
+  width: 100%;
+}
+@media (min-width: 48em) {
+  #my-form .my-container > div .my-row {
+    width: 50%;
+  }
+  #my-form .my-container > div .my-row:nth-of-type(5),
+  #my-form .my-container > div .my-row:last-of-type {
+    width: 100%;
+  }
+}
+@media (min-width: 64em) {
+  #my-form .my-container > div .my-row {
+    width: 100%;
+  }
+}
+@media (min-width: 85.375em) {
+  #my-form .my-container > div .my-row {
+    width: 50%;
+  }
 }
 #my-form .my-container > div .my-row:nth-of-type(5),
 #my-form .my-container > div .my-row:last-of-type {

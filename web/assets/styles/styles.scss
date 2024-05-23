@@ -5518,8 +5518,29 @@ input#honeypooh{ display: none; }
                 flex-wrap: wrap;
 
                 .my-row{
-                    width: 50%;
+                    width: 100%;
                 }
+
+                @media #{$mq-small}{
+                    .my-row{
+                        width: 50%;
+                    }
+                    .my-row:nth-of-type(5),
+                    .my-row:last-of-type{
+                        width: 100%;
+                    }
+                }
+                @media #{$mq-medium}{
+                    .my-row{
+                        width: 100%;
+                    }
+                }
+                @media #{$mq-desktop}{
+                    .my-row{
+                        width: 50%;
+                    }
+                }
+
 
                 .my-row:nth-of-type(5),
                 .my-row:last-of-type{
