@@ -2442,6 +2442,7 @@ tbody tr:first-of-type td {
 }
 @media (min-width: 64em) {
   .ourSpaces .hero-animation {
+    height: 100svh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -2469,22 +2470,24 @@ tbody tr:first-of-type td {
   .ourSpaces .hero-animation .roof-wrap .third .pad-sides {
     display: block;
     padding-top: 0;
-    padding-bottom: 0;
   }
   .ourSpaces .hero-animation .roof-wrap .btn.downwards {
     display: flex;
   }
 }
 @media (min-width: 85.375em) {
+  .ourSpaces .hero-animation .hero {
+    padding-top: 6vw;
+  }
   .ourSpaces .hero-animation .hero .hero-cloud {
-    margin-top: -1vw;
+    margin-top: 2vw;
   }
   .ourSpaces .hero-animation .hero-antenna {
     width: 20%;
     top: -69%;
   }
   .ourSpaces .hero-animation h1 {
-    padding-top: 4vw;
+    font-size: 8em;
   }
 }
 @media (min-width: 94em) {
