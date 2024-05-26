@@ -240,6 +240,7 @@ div{
     position: relative;
     z-index: 2;
     text-wrap: balance;
+
     
   }
   &.no-btm-marg{
@@ -1477,7 +1478,7 @@ button{
                 white-space: nowrap;
             }
             .price{
-                font-weight: 600;
+                // font-weight: 600;
                 font-size:40px;
                 line-height: 1em;
                 font-family:$header-font;
