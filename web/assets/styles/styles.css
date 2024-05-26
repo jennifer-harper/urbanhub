@@ -2442,7 +2442,7 @@ tbody tr:first-of-type td {
 }
 @media (min-width: 64em) {
   .ourSpaces .hero-animation {
-    height: 100svh;
+    height: calc(100svh - 80px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;

@@ -2874,7 +2874,7 @@ tbody{
                 }
             }
 
-            height: 100svh;
+            height: calc(100svh - 80px);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
