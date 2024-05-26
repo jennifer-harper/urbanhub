@@ -4711,12 +4711,12 @@ nav {
             }
 
         }
-        @media #{$mq-figma}{
-            h3,
-            .align-right img{
-                max-width: 50%;
-            }
-        }
+        // @media #{$mq-figma}{
+        //     h3,
+        //     .align-right img{
+        //         max-width: 75%;
+        //     }
+        // }
     }
     .events-title{
         @media #{$mq-small}{

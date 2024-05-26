@@ -3889,12 +3889,6 @@ nav .hamburger {
 .culture-events .icon .align-right img {
   max-width: 25%;
 }
-@media (min-width: 94em) {
-  .culture-events .icon h3,
-  .culture-events .icon .align-right img {
-    max-width: 50%;
-  }
-}
 @media (min-width: 48em) {
   .culture-events .events-title {
     display: flex;
