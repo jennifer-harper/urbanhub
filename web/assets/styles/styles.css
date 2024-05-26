@@ -2069,6 +2069,10 @@ table, td, th {
   border-collapse: collapse;
 }
 
+th {
+  font-weight: 400;
+}
+
 tbody tr td {
   border-top-width: 0;
   padding: 0.5em;

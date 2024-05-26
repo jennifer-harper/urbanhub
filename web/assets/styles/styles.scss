@@ -110,7 +110,7 @@ body {
   margin: 0;
   overflow-x: hidden; 
   background-color:$light;
-color: $base-font;
+    color: $base-font;
   font-family: $body-font;
 //   font-weight: 400;
   font-size: $base-font-size;
@@ -2437,6 +2437,9 @@ table{
 }
 table, td, th {
     border-collapse: collapse;
+}
+th{
+    font-weight: 400;
 }
 
 
