@@ -2487,6 +2487,7 @@ tbody tr:first-of-type td {
     top: -69%;
   }
   .ourSpaces .hero-animation h1 {
+    padding-top: 3vw;
     font-size: 8em;
   }
 }
