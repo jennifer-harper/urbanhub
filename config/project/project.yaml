@@ -1,4 +1,4 @@
-dateModified: 1716350606
+dateModified: 1716759720
 email:
   fromEmail: enquiry@urbanhuboffices.co.nz
   fromName: 'UrbanHub Website'
@@ -293,7 +293,7 @@ plugins:
     schemaVersion: 3.0.0.0
   contact-form:
     edition: standard
-    enabled: true
+    enabled: false
     schemaVersion: 1.0.0
     settings:
       allowAttachments: ''
@@ -304,7 +304,7 @@ plugins:
       toEmail: accounts@ambitious.co.nz
   contact-form-honeypot:
     edition: standard
-    enabled: true
+    enabled: false
     schemaVersion: 1.0.0
     settings:
       honeypotParam: honeypooh
@@ -553,7 +553,7 @@ plugins:
       validateCustomTemplates: true
   postmark:
     edition: standard
-    enabled: true
+    enabled: false
     schemaVersion: 2.0.1
   webhooks:
     edition: standard

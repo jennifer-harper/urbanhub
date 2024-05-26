@@ -1,0 +1,43 @@
+    {% set form = craft.formie.forms({ handle: 'contactForm' }).one() %}
+    {{ craft.formie.renderForm('contactForm', {
+        themeConfig: {
+            resetClasses: true,
+
+            form: {
+                attributes: {
+                    id: 'my-form',
+                },
+            },
+
+
+
+            fieldContainer:{
+                attributes: {
+                    class: 'my-field-wrapper',
+                },
+            },
+
+
+
+            fieldInput: {
+                attributes: {
+                    class: 'my-input',
+                },
+            },
+            submitButton: {
+                attributes: {
+                      class: 'my-submit',
+                  },
+              },
+              page:{
+                attributes: {
+                      class: 'my-container',
+                  },
+              },
+            row:{
+                attributes: {
+                      class: 'my-row',
+                  },
+              },
+        },
+    }) }}
