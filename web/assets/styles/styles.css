@@ -186,6 +186,7 @@ div p {
   margin: 0 0 1em;
   position: relative;
   z-index: 2;
+  text-wrap: balance;
 }
 div.no-btm-marg p {
   margin-bottom: 0;
