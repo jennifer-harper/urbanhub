@@ -1886,6 +1886,9 @@ footer {
     flex-basis: 50%;
     width: 50%;
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 @media (min-width: 94em) {
@@ -3889,7 +3892,7 @@ nav .hamburger {
 .culture-events .icon .align-right img {
   max-width: 25%;
 }
-@media (min-width: 85.375em) {
+@media (min-width: 94em) {
   .culture-events .icon h3,
   .culture-events .icon .align-right img {
     max-width: 50%;

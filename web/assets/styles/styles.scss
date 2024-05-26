@@ -2230,6 +2230,9 @@ footer{
             flex-basis:50%;
             width: 50%;
             max-width: 50%;
+            display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         }
     }
     @media #{$mq-figma}{
@@ -4708,7 +4711,7 @@ nav {
             }
 
         }
-        @media #{$mq-desktop}{
+        @media #{$mq-figma}{
             h3,
             .align-right img{
                 max-width: 50%;
