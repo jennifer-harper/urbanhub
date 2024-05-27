@@ -4707,16 +4707,11 @@ nav {
     .icon{
         .align-right{
             img{
-                max-width: 25%;
+                max-width: 50%;
             }
 
         }
-        // @media #{$mq-figma}{
-        //     h3,
-        //     .align-right img{
-        //         max-width: 75%;
-        //     }
-        // }
+
     }
     .events-title{
         @media #{$mq-small}{

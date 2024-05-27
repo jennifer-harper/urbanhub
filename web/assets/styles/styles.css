@@ -3887,7 +3887,7 @@ nav .hamburger {
 }
 
 .culture-events .icon .align-right img {
-  max-width: 25%;
+  max-width: 50%;
 }
 @media (min-width: 48em) {
   .culture-events .events-title {
