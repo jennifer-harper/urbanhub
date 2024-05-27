@@ -1172,6 +1172,9 @@ button {
   }
 }
 @media (min-width: 85.375em) {
+  .mask-wrapper {
+    min-height: 90vh;
+  }
   .mask-wrapper .other.top {
     left: -20%;
     width: 70%;

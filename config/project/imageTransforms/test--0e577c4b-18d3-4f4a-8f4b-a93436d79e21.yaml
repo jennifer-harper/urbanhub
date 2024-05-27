@@ -1,0 +1,11 @@
+fill: null
+format: jpg
+handle: test
+height: 800
+interlace: none
+mode: stretch
+name: test
+position: center-center
+quality: 100
+upscale: true
+width: null
