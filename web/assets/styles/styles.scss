@@ -2756,11 +2756,11 @@ tbody{
         flex-direction: column;
         justify-content: space-between;
     }
-    .content{
-        .intro-text{
-            font-weight: 600;
-        }
-    }
+    // .content{
+    //     .intro-text{
+    //         font-weight: 600;
+    //     }
+    // }
 
     @media #{$mq-small}{
         .two-thirds:not(.hero-animation .two-thirds):after{
@@ -5275,18 +5275,18 @@ input#honeypooh{ display: none; }
 
 ///////allllllll
 
-    .culture-events{
-        .pad-all.sm{
-            padding:calc($md/1.3);
-        }
-    }
+
     .swiper-button-prev,
     .swiper-button-next{
     .fixed{display:none}
     }
 
     @media (max-width:767px){
-
+    // .culture-events{
+    //     .pad-all.sm{
+    //         padding:calc($md/1.3);
+    //     }
+    // }
         .solutions-wrap{
             .solutions-contrast{
                 h2{
@@ -5593,6 +5593,7 @@ input#honeypooh{ display: none; }
                 padding:$base-font-size*.7 $base-font-size*2;
                 background-color: $green-light;
                 color:$green-dark;
+                border-radius:8vw;
                 @include transition;
                 &:hover{
                     @include transition;

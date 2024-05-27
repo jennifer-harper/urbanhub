@@ -2376,9 +2376,6 @@ tbody tr:first-of-type td {
   flex-direction: column;
   justify-content: space-between;
 }
-.ourSpaces .content .intro-text {
-  font-weight: 600;
-}
 @media (min-width: 48em) {
   .ourSpaces .two-thirds:not(.hero-animation .two-thirds):after {
     width: 6px;
@@ -4357,10 +4354,6 @@ input#honeypooh {
   margin: 0 auto;
 }
 
-.culture-events .pad-all.sm {
-  padding: 2.3076923077vw;
-}
-
 .swiper-button-prev .fixed,
 .swiper-button-next .fixed {
   display: none;
@@ -4588,6 +4581,7 @@ input#honeypooh {
   padding: 0.7em 2em;
   background-color: #BAE2A6;
   color: #315844;
+  border-radius: 8vw;
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
