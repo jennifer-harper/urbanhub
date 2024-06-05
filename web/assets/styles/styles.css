@@ -3186,6 +3186,16 @@ nav .hamburger {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 94em) {
+  .home .centered-hero .text-center.max-hero p:not(.btn p) {
+    max-width: 38vw;
+  }
+}
+@media (min-width: 120em) {
+  .home .centered-hero .text-center.max-hero p:not(.btn p) {
+    max-width: 35vw;
+  }
+}
 .home .centered-hero .h1-wrap {
   position: relative;
 }

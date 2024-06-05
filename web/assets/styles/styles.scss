@@ -3818,6 +3818,23 @@ nav {
             align-items: center;
         }
 
+        .text-center{
+            @media #{$mq-figma}{
+                &.max-hero{
+                    p:not(.btn p){
+                        max-width: 38vw;
+                    }
+                }
+            }
+            @media #{$mq-large}{
+                &.max-hero{
+                    p:not(.btn p){
+                        max-width: 35vw;
+                    }
+                }
+            }
+        }
+
         .h1-wrap{
             position: relative;
             // display: flex;
@@ -3867,7 +3884,11 @@ nav {
             .intro-text p{
                 font-size:$base-font-size*1.7;
             }
+
+
+
         }
+
 
     }
 
