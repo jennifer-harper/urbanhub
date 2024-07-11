@@ -1,23 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
   gsap.registerPlugin(ScrollTrigger)
 
+  //Buttons
   gsap.set('.animate', { xPercent: 0 })
   gsap.utils.toArray('.btn').forEach((container) => {
     const animateMe = container.querySelector('.animate')
 
     let tl = gsap.timeline({
       defaults: {
-        duration: 0.5,
+        duration: 0,
         ease: 'circ.out',
       },
       paused: true,
     })
-    tl.to(animateMe, { x: 0, duration: 0 })
-    tl.to(animateMe, { xPercent: 250 })
-    tl.to(animateMe, { opacity: 0, duration: 0 })
-    tl.to(animateMe, { xPercent: -250, duration: 0.2 })
-    tl.to(animateMe, { opacity: 1, duration: 0 })
-    tl.to(animateMe, { xPercent: 0, duration: 0.2 })
+    tl.to(animateMe, { x: 0 })
+    tl.to(animateMe, { xPercent: 200, duration: 0.3 })
+    tl.to(animateMe, { opacity: 0 })
+    tl.to(animateMe, { xPercent: -50, opacity: 1 })
+    tl.to(animateMe, { xPercent: 0, duration: 0.1 })
     container.addEventListener('mouseleave', () => tl.play())
     container.addEventListener('mouseenter', () => tl.restart())
   })
