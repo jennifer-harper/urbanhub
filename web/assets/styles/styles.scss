@@ -3389,13 +3389,7 @@ nav {
 
 }
 
-@media (min-width: 1024px) and (max-width:1100px){
-    nav{
-        li a{
-            font-size:14px;
-        }
-    }
-}
+
 
 @media (min-width: 600px) {
     nav{
@@ -3687,7 +3681,14 @@ nav {
     }
 }
 
-
+@media (min-width: 1024px) and (max-width:1100px){
+    nav .navbar .links .link a{
+            font-size:14px;
+           &:not(.sub-menu a){
+            padding-right:0;
+           }
+    }
+}
 
 //tabs related
 // ALL TABS, WORKING CODE -- add specific tab design under page class
