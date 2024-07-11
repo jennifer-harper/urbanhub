@@ -2,7 +2,7 @@ enabled: true
 handle: zapier
 name: zapier
 settings:
-  webhook: 'https://hooks.zapier.com/hooks/catch/7113971/3jcq36r/'
+  webhook: $ZAPIER
 sortOrder: 1
 tokenId: null
 type: verbb\formie\integrations\webhooks\Zapier
