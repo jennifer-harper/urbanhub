@@ -4640,4 +4640,24 @@ input#honeypooh {
   color: #fff;
 }
 
+.block-text {
+  text-wrap: pretty;
+  word-wrap: break-word;
+}
+@media (min-width: 64em) {
+  .block-text {
+    display: block;
+  }
+}
+
+.last-two-words {
+  text-wrap: nowrap;
+}
+
+.home .feature-pad h2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 /*# sourceMappingURL=styles.css.map */

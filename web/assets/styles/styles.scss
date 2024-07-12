@@ -5686,3 +5686,22 @@ input#honeypooh{ display: none; }
     // .mobile-nav{
     //     background-color: red;
     // }
+
+
+    //TEXT BASED CHANGES/ALIGNMENT
+    .block-text{
+        text-wrap: pretty;
+        word-wrap: break-word;
+        @media #{$mq-medium}{
+            display: block;
+        }
+    }
+    .last-two-words{
+        text-wrap: nowrap;
+    }
+
+    .home .feature-pad h2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
