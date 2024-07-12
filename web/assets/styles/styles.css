@@ -80,12 +80,12 @@ body {
   font-size: 1em;
   line-height: 1.5em;
 }
-@media (min-width: 120em) {
+@media (min-width: 125em) {
   body {
     font-size: 1.3em;
   }
 }
-@media (min-width: 220em) {
+@media (min-width: 240em) {
   body {
     font-size: 2.2em;
   }
@@ -191,7 +191,7 @@ div p {
 div.no-btm-marg p {
   margin-bottom: 0;
 }
-@media (min-width: 120em) {
+@media (min-width: 125em) {
   div p {
     margin-bottom: 2em;
   }
@@ -260,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 36vw;
   }
 }
-@media (min-width: 120em) {
+@media (min-width: 125em) {
   .text-center.max-title {
     max-width: 55%;
   }
@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  line-height: 0.8em;
+  line-height: 0.93em;
   font-size: 50px;
 }
 
@@ -469,6 +469,14 @@ h1 i {
   left: 16.5%;
 }
 
+.home h1 .highlight {
+  width: 90%;
+  left: 5%;
+}
+.home h1 .highlight svg {
+  top: -0.3em;
+}
+
 .bg-cover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -527,7 +535,7 @@ svg {
   width: 25px;
   height: 25px;
 }
-@media (min-width: 220em) {
+@media (min-width: 240em) {
   .tick {
     width: 2vw;
     height: 2vw;
@@ -886,13 +894,13 @@ ul li a .social-media {
   position: absolute;
   top: 10px;
 }
-@media (min-width: 120em) {
+@media (min-width: 125em) {
   .btn span div svg.animate,
   .btn a div svg.animate {
     top: 13px;
   }
 }
-@media (min-width: 220em) {
+@media (min-width: 240em) {
   .btn span div svg.animate,
   .btn a div svg.animate {
     top: 23px;
@@ -1952,7 +1960,7 @@ footer {
     max-width: 28vw;
   }
 }
-@media (min-width: 120em) {
+@media (min-width: 125em) {
   .table-banner.dark .small-col {
     margin-left: auto;
     max-width: 22.5vw;
@@ -1968,7 +1976,7 @@ footer {
     justify-content: space-between;
   }
 }
-@media (min-width: 220em) {
+@media (min-width: 240em) {
   .solutions-usp .usp p {
     margin-bottom: 0;
   }
@@ -2499,7 +2507,7 @@ tbody tr:first-of-type td {
     width: 50%;
   }
 }
-@media (min-width: 120em) {
+@media (min-width: 125em) {
   .ourSpaces .hero-animation .hero .hero-cloud {
     margin-top: 0vw;
   }
@@ -2594,7 +2602,7 @@ tbody tr:first-of-type td {
     margin-right: 3vw;
   }
 }
-@media (min-width: 220em) {
+@media (min-width: 240em) {
   .ourSpaces .secondSection .relative .ceiling {
     top: -16px;
   }
@@ -2709,7 +2717,7 @@ tbody tr:first-of-type td {
     max-width: 60%;
   }
 }
-@media (min-width: 120em) {
+@media (min-width: 125em) {
   .ourSpaces .fifthSection h2 {
     max-width: 100%;
   }
@@ -2718,7 +2726,7 @@ tbody tr:first-of-type td {
 .body-wrapper {
   padding-top: 80px;
 }
-@media (min-width: 220em) {
+@media (min-width: 240em) {
   .body-wrapper {
     padding-top: 0vw;
   }
@@ -2734,7 +2742,7 @@ tbody tr:first-of-type td {
   left: 0;
 }
 
-@media (min-width: 220em) {
+@media (min-width: 240em) {
   .home .body-wrapper {
     padding-top: 6.5vw;
   }
@@ -2759,11 +2767,11 @@ nav ul {
 nav .btn {
   z-index: 10;
 }
-nav .logo {
+nav .logo svg {
   width: 100px;
 }
 @media (min-width: 94em) {
-  nav .logo {
+  nav .logo svg {
     width: 6vw;
   }
 }
@@ -2775,6 +2783,7 @@ nav .navbar {
   width: 100%;
   padding: 10px 20px;
   background-color: #FAF6F0;
+  justify-content: space-between;
 }
 nav .navbar .arrow {
   text-align: center;
@@ -2933,7 +2942,7 @@ nav .hamburger {
     list-style: none;
   }
   nav .navbar .links .link a:not(.sub-menu a) {
-    padding-left: 20px;
+    padding-left: 5px;
     padding-right: 5px;
     z-index: 10;
     position: relative;
@@ -3070,12 +3079,36 @@ nav .hamburger {
     display: block;
   }
 }
-@media (min-width: 1024px) and (max-width: 1100px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
+  nav .navbar .links .link {
+    padding: 0 0.5vw;
+  }
   nav .navbar .links .link a {
-    font-size: 14px;
+    font-size: 13px;
   }
   nav .navbar .links .link a:not(.sub-menu a) {
-    padding-right: 0;
+    padding-left: 5px;
+  }
+  nav .btn a p {
+    font-size: 12px;
+  }
+  nav .navbar {
+    padding: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  nav .navbar .links .link {
+    padding: 0 0.3em;
+  }
+}
+@media (min-width: 1400px) {
+  nav .navbar .links .link {
+    padding: 0 0.5em;
+  }
+}
+@media (min-width: 1600px) {
+  nav .navbar .links .link {
+    padding: 0 1em;
   }
 }
 /* Accordion responsive breakpoint */
@@ -3209,7 +3242,7 @@ nav .hamburger {
   margin-top: -5vw;
   margin-left: -6vw;
 }
-@media (min-width: 120em) {
+@media (min-width: 125em) {
   .home .centered-hero .h1-wrap .hero-special div img {
     margin-left: -10vw;
   }
@@ -3232,6 +3265,9 @@ nav .hamburger {
   line-height: 1em;
   font-family: "eina_semiboldregular", sans-serif;
   margin-bottom: 1em;
+}
+.home .centered-hero .intro-text p span {
+  display: block;
 }
 @media (min-width: 64em) {
   .home .centered-hero .intro-text p {
@@ -3664,7 +3700,7 @@ nav .hamburger {
     max-width: 36vw;
   }
 }
-@media (min-width: 120em) {
+@media (min-width: 125em) {
   .stories .text-center.max-hero .intro-text p {
     max-width: 25vw;
   }

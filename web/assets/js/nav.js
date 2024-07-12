@@ -84,3 +84,17 @@ $('li.nav-hover').hover(
     }, 250) // Adjust the delay time (in milliseconds) as needed
   }
 )
+
+function logoSize() {
+  var btnWidth = $('nav .btn-one').outerWidth() // Get the outer width of .nav .btn
+  $('.mobile-nav a').css('width', btnWidth + 'px') // Set the width of .mobile-nav to btnWidth
+  console.log(btnWidth)
+}
+
+$(window).on('resize', function () {
+  logoSize()
+})
+
+$(document).ready(function () {
+  logoSize()
+})

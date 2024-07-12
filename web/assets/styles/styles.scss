@@ -376,7 +376,7 @@ h1,h2,h3,h4,h5,h6 {
 
 //-------font size-----------//
 h1{
-  line-height: $base-font-size*0.8;
+  line-height: $base-font-size*0.93;
   font-size: 50px;
 }
 
@@ -603,6 +603,14 @@ h1 i{
         width: 65%;
         left: 16.5%
     }
+}
+
+.home h1 .highlight{
+ width: 90%;
+ left:5%;
+ svg{
+    top: -.3em;
+ }
 }
 
 
@@ -3266,7 +3274,7 @@ nav {
     .btn{
         z-index: 10;
     }
-    .logo{
+    .logo  svg{
         width: 100px;
         @media #{$mq-figma}{
             width: 6vw;
@@ -3280,6 +3288,7 @@ nav {
         width: 100%;
         padding:10px 20px;
         background-color: $light;
+        justify-content: space-between;
         .arrow {
             text-align: center;
             display: inline-block;
@@ -3498,7 +3507,7 @@ nav {
 
                 //top level nav
                 a:not(.sub-menu a){
-                    padding-left: 20px; 
+                    padding-left: 5px; 
                     padding-right:5px;
                     z-index: 10;
                     position: relative;
@@ -3681,14 +3690,40 @@ nav {
     }
 }
 
-@media (min-width: 1024px) and (max-width:1100px){
-    nav .navbar .links .link a{
-            font-size:14px;
+@media (min-width: 1024px) and (max-width:1200px){
+    nav .navbar .links .link {
+        padding: 0 .5vw;
+        a{
+            font-size:13px;
            &:not(.sub-menu a){
-            padding-right:0;
+            padding-left:5px;
            }
+        }
+    }
+    nav .btn a p{
+        font-size:12px;
+    }
+   nav .navbar{
+        padding: 10px;
     }
 }
+
+@media (min-width: 1200px){
+    nav .navbar .links .link {
+        padding: 0 .3em;
+    }
+}
+@media (min-width: 1400px){
+    nav .navbar .links .link {
+        padding: 0 .5em;
+    }
+}
+@media (min-width: 1600px){
+    nav .navbar .links .link {
+        padding: 0 1em;
+    }
+}
+
 
 //tabs related
 // ALL TABS, WORKING CODE -- add specific tab design under page class
@@ -3874,6 +3909,9 @@ nav {
             line-height: 1em;
             font-family:$header-font;
             margin-bottom: $base-font-size;
+            span{
+                display: block;
+            }
         }
         @media #{$mq-medium}{
             .intro-text p{
@@ -5620,3 +5658,31 @@ input#honeypooh{ display: none; }
             }
         }
     }
+
+
+    // nav .navbar .links{
+    //     background-color: grey;
+    //     &::after{
+    //         content: '';
+    //         position: absolute;
+    //         width: 1px;
+    //         background-color: red;
+    //         left: 50%;
+    //         top: 0;
+    //         height: 100%;
+    //     }
+    // }
+
+    // body:after{
+    //     content: '';
+    //     position: absolute;
+    //     width: 1px;
+    //     background-color: black;
+    //     left: 50%;
+    //     top: 0;
+    //     height: 100%;
+    // }
+
+    // .mobile-nav{
+    //     background-color: red;
+    // }

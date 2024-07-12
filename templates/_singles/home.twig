@@ -94,5 +94,20 @@
     <script src="/assets/js/jquery.tabs.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script  type="module" src="/assets/js/sliders.js"></script>
+
+    <script>
+        $('.home .centered-hero .intro-text p').each(function () {
+            // Split the content by <br> tags
+            var parts = $(this).html().split('<br>')
+
+            // Create spans for each part
+            var htmlContent = ''
+            for (var i = 0; i < parts.length; i++) {
+                htmlContent += '<span>' + parts[i].trim() + '</span> '
+            }
+            // Update the HTML content of the <p> element
+            $(this).html(htmlContent.trim())
+        })
+    </script>
 {% endblock %}
 
