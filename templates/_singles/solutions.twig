@@ -15,7 +15,9 @@
 
 {% block content %} 
   {% for entry in page %} 
-    {% include '_partials/sections/solutions-mask.twig' %}
+    {% embed '_partials/sections/solutions-mask.twig' %}
+    {% block other %}other {% endblock other %}
+    {% endembed %}
     {% include '_partials/sections/solutions-tables.twig' %}
     {% include '_partials/footer/contact-section.twig' %}
   {% endfor %} 
@@ -26,4 +28,22 @@
     <script src="/assets/js/jquery-2.1.0.min.js"></script>
     <script src="/assets/js/jquery.responsiveTabs.js" type="text/javascript"></script>
     <script src="/assets/js/jquery.tabs.js"></script>
+    <script>
+
+
+        $('h1').each(function () {
+            // Split the content by <br> tags
+            var parts = $(this).html().split('<br>')
+
+            // Create spans for each part
+            var htmlContent = ''
+            for (var i = 0; i < parts.length; i++) {
+                htmlContent += '<span>' + parts[i].trim() + '</span> '
+            }
+            // Update the HTML content of the <p> element
+            $(this).html(htmlContent.trim())
+        })
+
+    </script>
 {% endblock %}
+

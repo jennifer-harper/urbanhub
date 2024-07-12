@@ -97,6 +97,7 @@
     <script  type="module" src="/assets/js/sliders.js"></script>
 
     <script>
+    //split h1 bases on line breaks
         $('.home .centered-hero .intro-text p').each(function () {
             // Split the content by <br> tags
             var parts = $(this).html().split('<br>')
@@ -110,28 +111,11 @@
             $(this).html(htmlContent.trim())
         })
 
+        //break text after swipe
         $('.just-title-home h2').html(function(_, html) {
             return html.replace(/<\/i>([^<]*)$/, '</i> <span class="block-text">$1</span>');
         });
 
-        $('.just-title-home h2 span').html(function(_, html) {
-            // Get the text content
-            var text = $(this).text().trim();
-            
-            // Split the text into an array of words
-            var words = text.split(/\s+/);
-            
-            // Get the last two words
-            var lastTwoWords = words.slice(-2).join(' ');
-            
-            // Get the rest of the words
-            var restOfSentence = words.slice(0, -2).join(' ');
-
-            // Reconstruct the sentence with the last two words wrapped in a span
-            var updatedHtml = restOfSentence + ' <span class="last-two-words">' + lastTwoWords + '</span>';
-
-            return updatedHtml;
-        });
     </script>
 {% endblock %}
 

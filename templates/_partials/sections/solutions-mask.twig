@@ -13,7 +13,7 @@
             </div>
     {% endif %}
 
-    <div class="pad-all half flex-wrap col center-style no-btm"> 
+    <div class="pad-all half flex-wrap col center-style no-btm {% block other %} {% endblock other %}"> 
         {% if entry.pageName2 %}
             <div class="header-intro">
                 {{entry.pageName2}}
@@ -25,51 +25,50 @@
         {% if entry.heading %}
             {{entry.heading}}
         {% endif %}
-        {% if entry.introParagraph %}
-            <div class="intro-text">
-                {{entry.introParagraph}}
-            </div>
-        {% endif %}
 
-        <div class="flex-wrap inner just-cont-space-btw">
-            {% if entry.paragraph %}
-                <div class="content-wrap">
-                    {{entry.paragraph}}
 
-                    {% if entry.lists is defined and entry.lists %}
-                        <ul class="underline-list">
-                        {% for block in entry.lists %}
-                        {% if block.type == 'groupFields' %}
-                        {% if block.listPoint %}
-                            <li>{{block.listPoint}}</li>
+            {% if entry.introParagraph %}
+                <div class="intro-text">
+                    {{entry.introParagraph}}
+                </div>
+            {% endif %}
+            <div class="flex-wrap inner just-cont-space-btw">
+                {% if entry.paragraph %}
+                    <div class="content-wrap">
+                        {{entry.paragraph}}
+
+                        {% if entry.lists is defined and entry.lists %}
+                            <ul class="underline-list">
+                            {% for block in entry.lists %}
+                            {% if block.type == 'groupFields' %}
+                            {% if block.listPoint %}
+                                <li>{{block.listPoint}}</li>
+                            {% endif %}
+                            {% endif %}                           
+                            {% endfor %}
+                            </ul>
                         {% endif %}
-                        {% endif %}                           
+                    </div>
+                {% endif %}
+                {% if entry.heroButton is defined and entry.heroButton %}
+                    <div class="button-wrap">
+                        {% for block in entry.heroButton %}
+                            {% if block.type == 'groupFields' %}
+                                {% set buttonText = block.buttonText ?? 'Enquire now' %}
+                                {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
+                                {% embed '_partials/button' %}
+                                    {% block class %}{{ buttonClass }}{% endblock %}
+                                    {% block title %}{{ buttonText }}{% endblock %}
+                                    {% block url %}{{ buttonPageLink }}{% endblock %}
+                                {% endembed %}
+                            {% endif %}
                         {% endfor %}
-                        </ul>
-                    {% endif %}
-                </div>
-            {% endif %}
-
-            {% if entry.heroButton is defined and entry.heroButton %}
-                <div class="button-wrap">
-                    {% for block in entry.heroButton %}
-                        {% if block.type == 'groupFields' %}
-                            {% set buttonText = block.buttonText ?? 'Enquire now' %}
-                            {% set buttonPageLink = block.buttonPageLink[0].url ?? '/contact-us' %}
-                            {% embed '_partials/button' %}
-                                {% block class %}{{ buttonClass }}{% endblock %}
-                                {% block title %}{{ buttonText }}{% endblock %}
-                                {% block url %}{{ buttonPageLink }}{% endblock %}
-                            {% endembed %}
-                        {% endif %}
-                    {% endfor %}
-                </div>
-            {% else %}
-
-                <div class="flex-wrap star-wrap">
-                    {% include '_partials/svgs/little-star.twig' %}
-                </div>
-            {% endif %}
+                    </div>
+                {% else %}
+                    <div class="flex-wrap star-wrap">
+                        {% include '_partials/svgs/little-star.twig' %}
+                    </div>
+                {% endif %}
 
         </div>
     </div>
