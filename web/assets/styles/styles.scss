@@ -226,6 +226,7 @@ ul {
 .underline-list-slider ul,
 ul.underline-list{
     li{
+        text-wrap:pretty;
         padding: $base-font-size 0;
         border-bottom: 1px solid;
         border-color:$green-dark;
@@ -241,9 +242,9 @@ div{
     z-index: 2;
     text-wrap: pretty;
 
-    @media #{$mq-figma}{
-        text-wrap: balance;
-    }
+    // @media #{$mq-figma}{
+    //     text-wrap: balance;
+    // }
   }
 
 
@@ -610,7 +611,13 @@ h1 i{
     }
 }
 
-
+.urbanStudio h1 {
+    .highlight{
+        svg{
+            top:-.1em
+        }
+    }
+}
 
 .urbanDesk h1 {
     .highlight{
@@ -5759,11 +5766,11 @@ input#honeypooh{ display: none; }
         display: block;
     }  
 
-    .solutions-mask .center-style .intro-text p{
-        @media(min-width:1500px){
-         text-wrap:pretty;
-        }
-    } 
+    // .solutions-mask .center-style .intro-text p{
+    //     @media(min-width:1500px){
+    //      text-wrap:pretty;
+    //     }
+    // } 
 
 
 
@@ -5778,7 +5785,7 @@ input#honeypooh{ display: none; }
     }
 
     //all solutions subpages
-    .solutions-wrap{
+.solutions-wrap{
     .solutions-mask {
         .center-style{
             justify-content: flex-end;
@@ -5795,7 +5802,13 @@ input#honeypooh{ display: none; }
     .slider-intro h2{
         text-wrap: balance;
     }
+
+    .solutions-contrast h2{
+        @media (max-width:400px){
+            font-size:50px;
+        }
     }
+}
 
 .contact-us,
     .neighbourhood,
