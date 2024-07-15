@@ -4858,6 +4858,9 @@ nav {
         .form-wrapper{
             padding:3vw;
         }
+        .flex-wrap.col{
+            justify-content: space-between;
+        }
         @media #{$mq-medium}{
             p:not(.btn p){
                 max-width: 80%;
