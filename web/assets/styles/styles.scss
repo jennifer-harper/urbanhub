@@ -568,6 +568,12 @@ h1 i{
         }
     }
 }
+.slider-intro,
+.addons{
+    .highlight.zigzag svg{
+        top: -0.25em;
+    }
+}
 
 .r-tabs .solutions-contrast{
     .zigzag{
@@ -606,6 +612,19 @@ h1 i{
 
 
 
+.urbanDesk h1 {
+    .highlight{
+        width: 65%;
+        left: 12%
+    }
+}
+
+.urbanSuite h1{
+    .highlight{
+        width: 80%;
+        left:10%
+    }
+}
 
 .facilitiesAmenities h1,
 .neighbourhood h1,
@@ -617,12 +636,7 @@ h1 i{
     }
 }
 
-.urbanDesk h1 {
-    .highlight{
-        width: 65%;
-        left: 12%
-    }
-}
+
 
 .home h1 .highlight{
  width: 90%;
@@ -2181,9 +2195,6 @@ footer{
     @media #{$mq-medium}{
         .star-wrap{
             min-width: 6vw;
-        }
-        p:last-of-type:not(.btn p){
-            margin-right: $md;
         }
     }
 
@@ -5750,7 +5761,6 @@ input#honeypooh{ display: none; }
 
     .solutions-mask .center-style .intro-text p{
         @media(min-width:1500px){
-         max-width: 90%;
          text-wrap:pretty;
         }
     } 

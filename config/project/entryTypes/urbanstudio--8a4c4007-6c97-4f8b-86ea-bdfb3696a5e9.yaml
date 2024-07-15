@@ -326,18 +326,6 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            elementCondition: null
-            fieldUid: 94ae2f64-db35-47c0-907e-b853e95b3ce5 # Heading
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: bacca309-a4d4-469a-a420-23b997c74ae8
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dismissible: false
             elementCondition: null
             style: tip

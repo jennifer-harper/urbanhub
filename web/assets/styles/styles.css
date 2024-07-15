@@ -412,6 +412,11 @@ h1 i {
   top: -0.5em;
 }
 
+.slider-intro .highlight.zigzag svg,
+.addons .highlight.zigzag svg {
+  top: -0.25em;
+}
+
 .r-tabs .solutions-contrast .zigzag svg {
   top: -0.4em;
 }
@@ -439,17 +444,22 @@ h1 i {
   top: -0.8em;
 }
 
+.urbanDesk h1 .highlight {
+  width: 65%;
+  left: 12%;
+}
+
+.urbanSuite h1 .highlight {
+  width: 80%;
+  left: 10%;
+}
+
 .facilitiesAmenities h1 .highlight,
 .neighbourhood h1 .highlight,
 .centered-section .highlight,
 .center-banner h2 .highlight {
   width: 65%;
   left: 16.5%;
-}
-
-.urbanDesk h1 .highlight {
-  width: 65%;
-  left: 12%;
 }
 
 .home h1 .highlight {
@@ -1823,9 +1833,6 @@ footer {
 @media (min-width: 64em) {
   .solutions-mask .star-wrap {
     min-width: 6vw;
-  }
-  .solutions-mask p:last-of-type:not(.btn p) {
-    margin-right: 3vw;
   }
 }
 @media (min-width: 94em) {
@@ -4648,7 +4655,6 @@ h1 span {
 
 @media (min-width: 1500px) {
   .solutions-mask .center-style .intro-text p {
-    max-width: 90%;
     text-wrap: pretty;
   }
 }
