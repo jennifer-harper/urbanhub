@@ -449,6 +449,20 @@ h1 i {
   left: 12%;
 }
 
+.urbanClub h1 .highlight {
+  width: 90%;
+  left: 5%;
+}
+.urbanClub h1 .highlight svg {
+  top: -0.15em;
+}
+.urbanClub .solutions-mask .highlight.zigzag svg {
+  top: -0.29em;
+}
+.urbanClub .solutions-banner .highlight.other-zig {
+  left: 15%;
+}
+
 .urbanSuite h1 .highlight {
   width: 80%;
   left: 10%;

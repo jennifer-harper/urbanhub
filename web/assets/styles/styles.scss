@@ -611,6 +611,8 @@ h1 i{
     }
 }
 
+
+
 .urbanStudio h1 {
     .highlight{
         svg{
@@ -619,12 +621,37 @@ h1 i{
     }
 }
 
+
 .urbanDesk h1 {
     .highlight{
         width: 65%;
         left: 12%
     }
 }
+.urbanClub {
+    h1{
+        .highlight{
+            width: 90%;
+            left:5%;
+            svg{
+                top:-.15em
+            }
+        }
+    }
+    .solutions-mask{
+        .highlight.zigzag svg {
+            top: -0.29em;
+        }
+    }
+    .solutions-banner{
+        .highlight.other-zig{
+            left:15%;
+        }
+    }
+
+
+}
+
 
 .urbanSuite h1{
     .highlight{
