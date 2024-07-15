@@ -1,4 +1,4 @@
-dateModified: 1720996065
+dateModified: 1721009405
 email:
   fromEmail: enquiry@urbanhuboffices.co.nz
   fromName: 'UrbanHub Website'
@@ -316,12 +316,12 @@ plugins:
   feed-me:
     edition: standard
     enabled: true
-    schemaVersion: 5.1.0.0
+    schemaVersion: 5.1.1
   formie:
     edition: standard
     enabled: true
     licenseKey: 2K8RQKNPI7C3W5PLGAXT09TH
-    schemaVersion: 2.0.15
+    schemaVersion: 2.0.16
     settings:
       ajaxTimeout: 10
       alertEmails: null

@@ -230,42 +230,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-center {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media (min-width: 64em) {
   .text-center.max-title p:not(.btn p), .text-center.max-hero p:not(.btn p) {
     max-width: 50vw;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-@media (min-width: 85.375em) {
-  .text-center.max-title, .text-center.max-hero {
-    max-width: 75%;
-  }
-  .text-center.max-title, .text-center.max-hero {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .text-center.max-title p:not(.btn p), .text-center.max-hero p:not(.btn p) {
-    max-width: 50vw;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 94em) {
-  .text-center.max-title {
-    max-width: 55%;
-  }
-  .text-center.max-title p:not(.btn p), .text-center.max-hero p:not(.btn p) {
-    max-width: 36vw;
-  }
-}
-@media (min-width: 125em) {
-  .text-center.max-title {
-    max-width: 55%;
-  }
-  .text-center.max-title p:not(.btn p), .text-center.max-hero p:not(.btn p) {
-    max-width: 40vw;
   }
 }
 
@@ -297,16 +269,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   line-height: 0.93em;
-  font-size: 50px;
+  font-size: 65px;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 55px;
   line-height: 0.9em;
 }
 
 h3 {
   font-size: 30px;
+  text-wrap: balance;
 }
 
 .intro-text {
@@ -367,7 +340,7 @@ h3 {
     font-size: 4.4em;
   }
 }
-@media (min-width: 94em) {
+@media (min-width: 85.375em) {
   h1 {
     font-size: 7.5em;
   }
@@ -424,7 +397,7 @@ h1 i {
   position: absolute;
   left: 0;
   z-index: -1;
-  top: -0.1em;
+  top: -0.2em;
   z-index: -1;
 }
 .highlight.zigzag svg {
@@ -798,8 +771,6 @@ ul li a .social-media {
     flex-basis: 25%;
     min-width: 25%;
   }
-}
-@media (min-width: 94em) {
   .flex-wrap .inner {
     flex-direction: row;
     align-items: flex-end;
@@ -1830,6 +1801,9 @@ footer {
 .solutions-mask .content-wrap p:last-of-type {
   margin-bottom: 0;
 }
+.solutions-mask .center-style {
+  justify-content: space-between;
+}
 .solutions-mask .center-style.other {
   justify-content: flex-end;
 }
@@ -1842,11 +1816,6 @@ footer {
   }
   .solutions-mask p:last-of-type:not(.btn p) {
     margin-right: 3vw;
-  }
-}
-@media (min-width: 94em) {
-  .solutions-mask .inner p:last-of-type:not(.btn p) {
-    max-width: 30vw;
   }
 }
 
@@ -2029,10 +1998,6 @@ footer {
     margin-top: 0vw;
     text-align: right;
   }
-  .section-solutions .align-right img {
-    max-width: 70vw;
-    margin-left: 10px;
-  }
   .section-solutions .half .flex-wrap.no-btm {
     flex-direction: row;
     justify-content: space-between;
@@ -2043,6 +2008,9 @@ footer {
   .section-solutions .align-right {
     text-align: right;
   }
+}
+.section-solutions .feature-pad p {
+  max-width: 80%;
 }
 
 .the-building .centered-section h2,
@@ -3233,11 +3201,6 @@ nav .hamburger {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 94em) {
-  .home .centered-hero .text-center.max-hero p:not(.btn p) {
-    max-width: 42vw;
-  }
-}
 .home .centered-hero .h1-wrap {
   position: relative;
 }
@@ -3313,11 +3276,6 @@ nav .hamburger {
   }
   .home .just-title-home h2 {
     text-align: left;
-  }
-}
-@media (min-width: 85.375em) {
-  .home .just-title-home h2 {
-    max-width: 60%;
   }
 }
 
@@ -3694,27 +3652,14 @@ nav .hamburger {
 .urbanCommunity .solutions-contrast h2 {
   margin-bottom: 0;
 }
-@media (min-width: 64em) {
+@media (max-width: 500px) {
   .urbanCommunity .solutions-mask h2 {
-    font-size: 3.5em;
+    font-size: 45px;
   }
 }
 
 .stories h1 i {
   font-family: "eina_semiboldregular", sans-serif;
-}
-@media (min-width: 94em) {
-  .stories .text-center.max-hero p:last-of-type {
-    max-width: 34vw;
-  }
-  .stories .text-center.max-hero .intro-text p {
-    max-width: 36vw;
-  }
-}
-@media (min-width: 125em) {
-  .stories .text-center.max-hero .intro-text p {
-    max-width: 25vw;
-  }
 }
 
 .blog-feed h2 {
@@ -4469,7 +4414,6 @@ input#honeypooh {
   }
 }
 @media (min-width: 1024px) {
-  .urbanCommunity .social-media,
   .urbanEnvironment .social-media {
     border-top-width: 0;
   }
@@ -4665,16 +4609,29 @@ input#honeypooh {
   text-wrap: nowrap;
 }
 
-.home .feature-pad h2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+@media (min-width: 500px) {
+  h2 span,
+  .col h3 span {
+    display: block;
+  }
 }
-.home .just-title-home h2 {
-  text-wrap: balance;
+
+@media (min-width: 600px) {
+  .max-hero p span,
+  .max-hero .intro-text p span {
+    display: block;
+  }
 }
-.home .just-title-home h2 i {
-  text-wrap: nowrap;
+
+h1 span {
+  display: block;
+}
+
+@media (min-width: 1500px) {
+  .solutions-mask .center-style .intro-text p {
+    max-width: 90%;
+    text-wrap: pretty;
+  }
 }
 
 .solutionsPage h1 {
@@ -4686,9 +4643,35 @@ input#honeypooh {
   }
 }
 
+.solutions-wrap .solutions-mask .center-style {
+  justify-content: flex-end;
+}
 @media (min-width: 85.375em) {
-  .solutions-wrap .hero-solutions .mask-wrapper {
-    min-height: 60vh;
+  .solutions-wrap .flex-wrap.star-wrap {
+    flex-direction: row;
+  }
+}
+.solutions-wrap .solutions-contrast h2,
+.solutions-wrap .slider-intro h2 {
+  text-wrap: balance;
+}
+
+.neighbourhood .solutions-mask .center-style,
+.story .solutions-mask .center-style,
+.solutions-wrap.urbanClub .solutions-mask .center-style {
+  justify-content: center;
+}
+
+.urbanCommunity .solutions-mask .center-style {
+  justify-content: flex-end;
+}
+.urbanCommunity .solutions-mask .center-style .inner {
+  padding-top: 6vw;
+}
+
+@media (max-width: 480px) {
+  .neighbourhood h1 {
+    font-size: 48px;
   }
 }
 

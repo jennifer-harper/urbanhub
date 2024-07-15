@@ -293,6 +293,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .text-center{
     text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+    
     @media #{$mq-medium}{
         &.max-title,
         &.max-hero{
@@ -300,51 +303,52 @@ h1,h2,h3,h4,h5,h6 {
                 max-width: 50vw;
                 margin-left: auto;
                 margin-right:auto;
+                
             }
         }
     }
 
-    @media #{$mq-desktop}{
-        &.max-title,
-        &.max-hero{
-            max-width:75%;
+    // @media #{$mq-desktop}{
+    //     &.max-title,
+    //     &.max-hero{
+    //         max-width:75%;
 
-        }
-        &.max-title,
-        &.max-hero{
-            margin-left: auto;
-            margin-right:auto;
-            p:not(.btn p){
-                max-width: 50vw;
-                margin-left: auto;
-                margin-right:auto;
-            }
-        }
-    }
+    //     }
+    //     &.max-title,
+    //     &.max-hero{
+    //         margin-left: auto;
+    //         margin-right:auto;
+    //         p:not(.btn p){
+    //             max-width: 50vw;
+    //             margin-left: auto;
+    //             margin-right:auto;
+    //         }
+    //     }
+    // }
 
-    @media #{$mq-figma}{
-        &.max-title{
-            max-width:55%;
-        }
-        &.max-title,
-        &.max-hero{
-            p:not(.btn p){
-                max-width: 36vw;
-            }
-        }
-    }
+    // @media #{$mq-figma}{
+    //     &.max-title{
+    //         max-width:55%;
+    //     }
+    //     &.max-title,
+    //     &.max-hero{
+    //         p:not(.btn p){
+    //             max-width: 36vw;
+    //         }
+    //     }
+    // }
 
-    @media #{$mq-large}{
-        &.max-title{
-            max-width:55%;
-        }
-        &.max-title,
-        &.max-hero{
-            p:not(.btn p){
-                max-width: 40vw;
-            }
-        }
-    }
+    // @media #{$mq-large}{
+    //     &.max-title{
+    //         max-width:55%;
+    //     }
+    //     &.max-title,
+    //     &.max-hero{
+    //         p:not(.btn p){
+    //             max-width: 40vw;
+    //         }
+    //     }
+    // }
 
 
 }
@@ -377,16 +381,17 @@ h1,h2,h3,h4,h5,h6 {
 //-------font size-----------//
 h1{
   line-height: $base-font-size*0.93;
-  font-size: 50px;
+  font-size: 65px;
 }
 
 h2{ 
-  font-size: 40px;
+  font-size: 55px;
   line-height: $base-font-size*0.9;
 }
 
 h3{
   font-size: 30px;
+  text-wrap: balance;
 }
 
 //intros
@@ -463,7 +468,7 @@ h3{
   }
 
 
-@media #{$mq-figma} {
+@media #{$mq-desktop} {
     h1{
         font-size:$base-font-size*7.5; 
     }
@@ -545,7 +550,7 @@ h1 i{
         position: absolute;
         left: 0;
         z-index: -1;
-        top: -0.1em;
+        top: -0.2em;
         z-index: -1;
     }
     &.zigzag{
@@ -931,14 +936,13 @@ ul li a .social-media{
             flex-basis: 25%;
             min-width: 25%;
         }
-    }
-
-    @media #{$mq-figma} {
         .inner{
             flex-direction: row;
             align-items: flex-end;
         }
     }
+
+
 }
 
 .col{
@@ -2150,7 +2154,7 @@ footer{
         }
     }
     .center-style{
-        // justify-content: space-between;
+        justify-content: space-between;
         &.other{
             justify-content: flex-end;
             .inner{
@@ -2169,11 +2173,11 @@ footer{
         }
     }
 
-    @media #{$mq-figma}{
-       .inner p:last-of-type:not(.btn p){
-           max-width: 30vw;
-        }
-    }
+    // @media #{$mq-figma}{
+    //    .inner p:last-of-type:not(.btn p){
+    //        max-width: 25vw;
+    //     }
+    // }
 }
 
 .hero-style{
@@ -2402,10 +2406,6 @@ footer{
         .align-right{
             margin-top: 0vw;
             text-align: right;
-            img{
-                max-width: 70vw;
-                margin-left: 10px;
-            }
         }
         .half .flex-wrap.no-btm{
             flex-direction: row;
@@ -2418,6 +2418,9 @@ footer{
         .align-right{
             text-align: right;
         }
+    }
+    .feature-pad p{
+        max-width: 80%;
     }
 
 }
@@ -3869,13 +3872,13 @@ nav {
         }
 
         .text-center{
-            @media #{$mq-figma}{
-                &.max-hero{
-                    p:not(.btn p){
-                        max-width: 42vw;
-                    }
-                }
-            }
+            // @media #{$mq-figma}{
+            //     &.max-hero{
+            //         p:not(.btn p){
+            //             max-width: 42vw;
+            //         }
+            //     }
+            // }
 
         }
 
@@ -3967,12 +3970,6 @@ nav {
                 text-align: left;
             } 
             align-items: flex-end;
-        }
-
-        @media #{$mq-desktop}{
-        h2 {
-                max-width: 60%;
-            }
         }
     }
 }
@@ -4439,9 +4436,6 @@ nav {
 }
 
 .urbanEnvironment{
-
-
-
     .star-banner-wrapper{
         padding-top:0;
     }
@@ -4457,11 +4451,12 @@ nav {
     .solutions-contrast h2{
         margin-bottom: 0;
     }
-    @media #{$mq-medium}{
+    @media (max-width:500px){
         .solutions-mask h2{
-            font-size:$base-font-size*3.5;
+            font-size: 45px;
         }
     }
+
 }
 
 
@@ -4472,20 +4467,20 @@ nav {
         font-family: $header-font;
     }
 
-    @media #{$mq-figma}{
-        .text-center.max-hero p:last-of-type{
-            max-width: 34vw;
-        }
+    // @media #{$mq-figma}{
+    //     .text-center.max-hero p:last-of-type{
+    //         max-width: 34vw;
+    //     }
 
-        .text-center.max-hero .intro-text p{
-            max-width: 36vw;
-        }
-    }
-    @media #{$mq-large}{
-        .text-center.max-hero .intro-text p{
-            max-width: 25vw;
-        }
-    }
+    //     .text-center.max-hero .intro-text p{
+    //         max-width: 36vw;
+    //     }
+    // }
+    // @media #{$mq-large}{
+    //     .text-center.max-hero .intro-text p{
+    //         max-width: 25vw;
+    //     }
+    // }
 }
 
 .blog-feed{
@@ -4921,6 +4916,7 @@ nav {
         height: 100% !important;
     }
 }
+
 .neighbourhood{
     .google-maps{
 
@@ -5451,7 +5447,6 @@ input#honeypooh{ display: none; }
     }
 
     @media (min-width:1024px){
-        .urbanCommunity,
         .urbanEnvironment{
             .social-media{
                 border-top-width:0;
@@ -5714,20 +5709,37 @@ input#honeypooh{ display: none; }
         text-wrap: nowrap;
     }
 
-    .home {
-        .feature-pad h2 {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-        .just-title-home h2{
-            text-wrap:balance;
-            i{
-                text-wrap: nowrap;
-            }
+
+
+    h2 span,
+    .col h3 span{
+        @media (min-width:500px){
+            display: block;
         }
     }
 
+    .max-hero p span,
+    .max-hero .intro-text p span{
+        @media (min-width:600px){
+            display: block;
+        } 
+
+    }
+
+    h1 span{
+        display: block;
+    }  
+
+    .solutions-mask .center-style .intro-text p{
+        @media(min-width:1500px){
+         max-width: 90%;
+         text-wrap:pretty;
+        }
+    } 
+
+
+
+    //solutions Page
     .solutionsPage h1{
         text-wrap: balance;
         @media #{$mq-medium}{
@@ -5737,9 +5749,57 @@ input#honeypooh{ display: none; }
         }
     }
 
-
-    .solutions-wrap .hero-solutions .mask-wrapper{
+    //all solutions subpages
+    .solutions-wrap{
+    .solutions-mask {
+        .center-style{
+            justify-content: flex-end;
+        } 
+    }
+    .flex-wrap.star-wrap{
         @media #{$mq-desktop}{
-            min-height: 60vh;
+            flex-direction: row;
         }
     }
+
+
+    .solutions-contrast h2,
+    .slider-intro h2{
+        text-wrap: balance;
+    }
+    }
+
+
+    .neighbourhood,
+    .story,
+    .solutions-wrap.urbanClub{
+        .solutions-mask {
+            .center-style{
+                justify-content: center;
+            } 
+        }
+    }
+
+    .urbanCommunity{
+        .solutions-mask {
+            .center-style{
+                justify-content: flex-end;
+                .inner{
+                    padding-top: 6vw;
+                }
+            } 
+        }
+    }
+
+
+    .neighbourhood{
+        @media (max-width:480px){
+            h1{
+                font-size: 48px;
+            }
+        }
+    }
+
+
+
+

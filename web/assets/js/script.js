@@ -23,6 +23,28 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+// All solutions-wrap pages (solutions subpages)
+$('h2, h1, .col h3, .max-hero p').each(function () {
+  var content = $(this).html()
+
+  // Check if <br> is present in the content
+  if (content.includes('<br>')) {
+    // Split the content by <br> tags
+    var parts = content.split('<br>')
+
+    // Create spans for each part
+    var htmlContent = ''
+    for (var i = 0; i < parts.length; i++) {
+      // Remove &nbsp; entities and trim whitespace
+      var cleanedPart = parts[i].replace(/&nbsp;/g, '').trim()
+      htmlContent += '<span>' + cleanedPart + '</span> '
+    }
+
+    // Update the HTML content of the element
+    $(this).html(htmlContent.trim())
+  }
+})
+
 //Team page, add font change to last names
 $('.staff-wrapper h3').each(function () {
   var text = $(this).text()

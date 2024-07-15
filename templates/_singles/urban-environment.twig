@@ -26,10 +26,12 @@
     {% endembed %}
     
 
-
     {% embed '_partials/sections/solutions-mask.twig' %}
+    {% block other %}other {% endblock other %}
+    {% endembed %}
+
     
-{% endembed %}
+
 
    {% include '_partials/footer/social-media.twig' %}
     {% include '_partials/footer/contact-section.twig' %}

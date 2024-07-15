@@ -48,3 +48,21 @@
   {% endfor %} 
 {% endblock %}
 
+{% block scripts %}
+{{ parent() }}
+    <script>
+        $('.section-solutions h2').each(function () {
+            // Split the content by <br> tags
+            var parts = $(this).html().split('<br>')
+
+            // Create spans for each part
+            var htmlContent = ''
+            for (var i = 0; i < parts.length; i++) {
+                htmlContent += '<span>' + parts[i].trim() + '</span> '
+            }
+            // Update the HTML content of the <p> element
+            $(this).html(htmlContent.trim())
+        })
+
+    </script>
+{% endblock %}

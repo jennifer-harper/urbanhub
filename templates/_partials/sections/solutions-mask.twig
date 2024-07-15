@@ -14,6 +14,7 @@
     {% endif %}
 
     <div class="pad-all half flex-wrap col center-style no-btm {% block other %} {% endblock other %}"> 
+        <div>
         {% if entry.pageName2 %}
             <div class="header-intro">
                 {{entry.pageName2}}
@@ -27,12 +28,14 @@
         {% endif %}
 
 
-            {% if entry.introParagraph %}
-                <div class="intro-text">
-                    {{entry.introParagraph}}
-                </div>
-            {% endif %}
-            <div class="flex-wrap inner just-cont-space-btw">
+        {% if entry.introParagraph %}
+            <div class="intro-text">
+                {{entry.introParagraph}}
+            </div>
+        {% endif %}
+        </div>
+        
+        <div class="flex-wrap inner just-cont-space-btw">
                 {% if entry.paragraph %}
                     <div class="content-wrap">
                         {{entry.paragraph}}
