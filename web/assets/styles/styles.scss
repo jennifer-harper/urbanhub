@@ -239,10 +239,14 @@ div{
     margin: 0 0 $base-spacing;
     position: relative;
     z-index: 2;
-    text-wrap: balance;
+    text-wrap: pretty;
 
-    
+    @media #{$mq-figma}{
+        text-wrap: balance;
+    }
   }
+
+
   &.no-btm-marg{
     p{
         margin-bottom: 0;
@@ -555,7 +559,7 @@ h1 i{
     }
     &.zigzag{
         svg{
-            top:-.25em
+            top:-.2em
         }
     }
     &.other-zig{
@@ -2183,11 +2187,11 @@ footer{
         }
     }
 
-    // @media #{$mq-figma}{
-    //    .inner p:last-of-type:not(.btn p){
-    //        max-width: 25vw;
-    //     }
-    // }
+    @media #{$mq-figma}{
+        .star-wrap{
+            min-width: 10vw;
+        }
+    }
 }
 
 .hero-style{
