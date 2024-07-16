@@ -686,11 +686,11 @@ h1 i{
 
 
 .urbanMeet {
-   .solutions-mask .highlight .zigzag{
-    width: 90%;
+   .solutions-mask .highlight.zigzag{
+    width: 85%;
     left:5%;
          svg{
-            top:-0.2em
+            top:-0.3em
         }
     }
     .center-banner h2{
@@ -701,14 +701,19 @@ h1 i{
     }
 
     .solutions-banner h2{
+        i{
+            text-wrap: nowrap;
+        }
         .highlight{
             width: 55%;
             left: 12%;
         }
     }
 
-    .table-banner.dark .highlight svg{
-        top:-.1em
+    .table-banner.dark{
+        .highlight svg{
+            top:-.1em
+        }
     }
 }
 

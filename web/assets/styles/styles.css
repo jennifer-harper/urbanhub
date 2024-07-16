@@ -488,16 +488,19 @@ h1 i {
   top: -0.3em;
 }
 
-.urbanMeet .solutions-mask .highlight .zigzag {
-  width: 90%;
+.urbanMeet .solutions-mask .highlight.zigzag {
+  width: 85%;
   left: 5%;
 }
-.urbanMeet .solutions-mask .highlight .zigzag svg {
-  top: -0.2em;
+.urbanMeet .solutions-mask .highlight.zigzag svg {
+  top: -0.3em;
 }
 .urbanMeet .center-banner h2 .highlight {
   width: 85%;
   left: 5%;
+}
+.urbanMeet .solutions-banner h2 i {
+  text-wrap: nowrap;
 }
 .urbanMeet .solutions-banner h2 .highlight {
   width: 55%;
