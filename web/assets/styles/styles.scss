@@ -639,8 +639,12 @@ h1 i{
         }
     }
     .solutions-mask{
-        .highlight.zigzag svg {
-            top: -0.29em;
+        .highlight.zigzag {
+            width: 90%;
+            left: 5%;
+            svg {
+                top: -0.29em;
+            }
         }
     }
     .solutions-banner{
@@ -652,7 +656,7 @@ h1 i{
 
 }
 
-
+.urbanMeet h1,
 .urbanSuite h1{
     .highlight{
         width: 80%;
@@ -662,8 +666,7 @@ h1 i{
 
 .facilitiesAmenities h1,
 .neighbourhood h1,
-.centered-section,
-.center-banner h2{
+.centered-section{
     .highlight{
         width: 65%;
         left: 16.5%
@@ -681,6 +684,31 @@ h1 i{
 }
 
 
+
+.urbanMeet {
+    .highlight{
+        &.zigzag{
+            top:-0.2em
+        }
+    }
+    .center-banner h2{
+        .highlight{
+            width: 85%;
+            left: 5%
+        }
+    }
+
+    .solutions-banner h2{
+        .highlight{
+            width: 55%;
+            left: 12%;
+        }
+    }
+
+    .table-banner.dark .highlight svg{
+        top:-.1em
+    }
+}
 
 
 //-------Images-----------//
@@ -5868,6 +5896,8 @@ input#honeypooh{ display: none; }
         }
     }
 
-
+.solutions-banner h2{
+    text-wrap: balance;
+}
 
 

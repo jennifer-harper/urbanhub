@@ -456,6 +456,10 @@ h1 i {
 .urbanClub h1 .highlight svg {
   top: -0.15em;
 }
+.urbanClub .solutions-mask .highlight.zigzag {
+  width: 90%;
+  left: 5%;
+}
 .urbanClub .solutions-mask .highlight.zigzag svg {
   top: -0.29em;
 }
@@ -463,6 +467,7 @@ h1 i {
   left: 15%;
 }
 
+.urbanMeet h1 .highlight,
 .urbanSuite h1 .highlight {
   width: 80%;
   left: 10%;
@@ -470,8 +475,7 @@ h1 i {
 
 .facilitiesAmenities h1 .highlight,
 .neighbourhood h1 .highlight,
-.centered-section .highlight,
-.center-banner h2 .highlight {
+.centered-section .highlight {
   width: 65%;
   left: 16.5%;
 }
@@ -482,6 +486,21 @@ h1 i {
 }
 .home h1 .highlight svg {
   top: -0.3em;
+}
+
+.urbanMeet .highlight.zigzag {
+  top: -0.2em;
+}
+.urbanMeet .center-banner h2 .highlight {
+  width: 85%;
+  left: 5%;
+}
+.urbanMeet .solutions-banner h2 .highlight {
+  width: 55%;
+  left: 12%;
+}
+.urbanMeet .table-banner.dark .highlight svg {
+  top: -0.1em;
 }
 
 .bg-cover {
@@ -4712,6 +4731,10 @@ h1 span {
   .neighbourhood h1 {
     font-size: 48px;
   }
+}
+
+.solutions-banner h2 {
+  text-wrap: balance;
 }
 
 /*# sourceMappingURL=styles.css.map */
