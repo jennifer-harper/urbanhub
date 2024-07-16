@@ -4781,4 +4781,15 @@ h1 span {
   }
 }
 
+@media (min-width: 94em) {
+  .the-building .centered-hero .text-center p:not(.btn p) {
+    max-width: 30vw;
+  }
+}
+@media (min-width: 94em) {
+  .the-building .centered-section .text-center.max-title p:not(.btn p) {
+    max-width: 30vw;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
