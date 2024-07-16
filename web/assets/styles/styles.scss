@@ -6014,7 +6014,7 @@ input#honeypooh{ display: none; }
     .centered-hero{
         @media #{$mq-figma}{
             .text-center p:not(.btn p){
-                max-width: 30vw;
+                max-width: 35vw;
             }
         }
     }
