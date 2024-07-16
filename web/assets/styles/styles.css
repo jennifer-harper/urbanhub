@@ -505,6 +505,11 @@ h1 i {
   top: -0.2em;
 }
 
+.stories .highlight.other-zig {
+  width: 80%;
+  left: 10%;
+}
+
 .bg-cover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
