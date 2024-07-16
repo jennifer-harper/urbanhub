@@ -5938,6 +5938,10 @@ input#honeypooh{ display: none; }
 
     //all solutions subpages
 .solutions-wrap{
+
+    .hero-solutions .intro-text p{
+        text-wrap: balance;
+    }
     .solutions-mask {
         .center-style{
             justify-content: flex-end;

@@ -4722,6 +4722,9 @@ h1 span {
   }
 }
 
+.solutions-wrap .hero-solutions .intro-text p {
+  text-wrap: balance;
+}
 .solutions-wrap .solutions-mask .center-style {
   justify-content: flex-end;
 }
