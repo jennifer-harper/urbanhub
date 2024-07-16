@@ -5908,10 +5908,10 @@ input#honeypooh{ display: none; }
     .intro-text p span,
     .max-hero p span,
     .max-hero .intro-text p span{
-        @media (min-width:600px){
+        @media (min-width:1600px){
             display: block;
         } 
-
+        text-wrap:balance;
     }
 
     h1 span{

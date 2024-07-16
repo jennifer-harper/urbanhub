@@ -4701,7 +4701,12 @@ input#honeypooh {
   }
 }
 
-@media (min-width: 600px) {
+.intro-text p span,
+.max-hero p span,
+.max-hero .intro-text p span {
+  text-wrap: balance;
+}
+@media (min-width: 1600px) {
   .intro-text p span,
   .max-hero p span,
   .max-hero .intro-text p span {
