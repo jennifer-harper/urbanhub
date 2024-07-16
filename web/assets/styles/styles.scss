@@ -3857,7 +3857,7 @@ nav {
     }
 }
 
-@media (min-width: 1024px) and (max-width:1200px){
+@media (min-width: 1024px) and (max-width:1200px) and (hover: hover) and (pointer: fine) {
     nav .navbar .links .link {
         padding: 0 .5vw;
         a{
@@ -3875,17 +3875,17 @@ nav {
     }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) and (hover: hover) and (pointer: fine) {
     nav .navbar .links .link {
         padding: 0 .3em;
     }
 }
-@media (min-width: 1400px){
+@media (min-width: 1400px) and (hover: hover) and (pointer: fine) {
     nav .navbar .links .link {
         padding: 0 .5em;
     }
 }
-@media (min-width: 1600px){
+@media (min-width: 1600px) and (hover: hover) and (pointer: fine) {
     nav .navbar .links .link {
         padding: 0 1em;
     }
@@ -4924,7 +4924,10 @@ nav {
             }
 
         }
+    }
 
+    .solutions-contrast .third .little-star{
+        fill:$blue-light;
     }
     .events-title{
         @media #{$mq-small}{
