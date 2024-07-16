@@ -7,24 +7,6 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "eloquia_displaylight";
-  src: url("../fonts/eloquiadisplay-light-webfont.woff2") format("woff2"), url("../fonts/eloquiadisplay-light-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "eloquia_displaymedium";
-  src: url("../fonts/eloquiadisplay-medium-webfont.woff2") format("woff2"), url("../fonts/eloquiadisplay-medium-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "eloquia_displayregular";
-  src: url("../fonts/eloquiadisplay-regular-webfont.woff2") format("woff2"), url("../fonts/eloquiadisplay-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "reckless_neuemedium";
   src: url("../fonts/recklessneue-medium-webfont.woff2") format("woff2"), url("../fonts/recklessneue-medium-webfont.woff") format("woff");
   font-weight: normal;
@@ -33,24 +15,6 @@
 @font-face {
   font-family: "reckless_regular";
   src: url("../fonts/recklessneue-regular-webfont.woff2") format("woff2"), url("../fonts/recklessneue-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "tobiasregular";
-  src: url("../fonts/tobias-regular-webfont.woff2") format("woff2"), url("../fonts/tobias-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "vanguard_demi_bold";
-  src: url("../fonts/vanguardcf-demibold-webfont.woff2") format("woff2"), url("../fonts/vanguardcf-demibold-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: "vanguard_medium";
-  src: url("../fonts/vanguardcf-medium-webfont.woff2") format("woff2"), url("../fonts/vanguardcf-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -508,6 +472,37 @@ h1 i {
 }
 .urbanMeet .table-banner.dark .highlight svg {
   top: -0.1em;
+}
+
+.urbanCommunity h1 .highlight {
+  width: 80%;
+  left: 10%;
+}
+.urbanCommunity h1 .highlight svg {
+  top: -0.2em;
+}
+.urbanCommunity .section-solutions h2 .highlight svg {
+  top: -0.1em;
+}
+
+.urbanEnvironment .section-solutions .half:last-of-type h2 .highlight {
+  width: 80%;
+  left: 8%;
+}
+.urbanEnvironment .solutions-mask h2 .highlight {
+  width: 80%;
+  left: 9%;
+}
+
+.the-team h2 .highlight svg {
+  top: -0.1em;
+}
+.the-team .center-banner h2 .highlight {
+  width: 80%;
+  left: 10%;
+}
+.the-team .center-banner h2 .highlight svg {
+  top: -0.2em;
 }
 
 .bg-cover {
