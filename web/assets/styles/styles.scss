@@ -5905,6 +5905,7 @@ input#honeypooh{ display: none; }
         }
     }
 
+    .content-wrap p span,
     .intro-text p span,
     .max-hero p span,
     .max-hero .intro-text p span{
@@ -6009,4 +6010,14 @@ input#honeypooh{ display: none; }
     text-wrap: balance;
 }
 
+
+.the-team{
+    .center-banner{
+        @media #{$mq-figma}{
+            .text-center.max-title p:not(.btn p){
+                max-width: 41vw;
+            }
+        }
+    }
+}
 

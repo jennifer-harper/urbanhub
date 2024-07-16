@@ -4696,12 +4696,14 @@ input#honeypooh {
   }
 }
 
+.content-wrap p span,
 .intro-text p span,
 .max-hero p span,
 .max-hero .intro-text p span {
   text-wrap: balance;
 }
 @media (min-width: 1600px) {
+  .content-wrap p span,
   .intro-text p span,
   .max-hero p span,
   .max-hero .intro-text p span {
@@ -4771,6 +4773,12 @@ h1 span {
 
 .solutions-banner h2 {
   text-wrap: balance;
+}
+
+@media (min-width: 94em) {
+  .the-team .center-banner .text-center.max-title p:not(.btn p) {
+    max-width: 41vw;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
