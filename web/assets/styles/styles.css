@@ -2082,8 +2082,7 @@ footer {
 }
 
 .the-building .centered-section h2,
-.center-banner h2,
-.centered-hero h1 {
+.center-banner h2 {
   margin-bottom: 1em;
 }
 
@@ -3719,8 +3718,8 @@ nav .hamburger {
   padding-top: 0;
 }
 .urbanEnvironment h1 i .highlight {
-  bottom: -30px;
-  left: -10px;
+  bottom: -0.4em;
+  left: 0em;
 }
 
 .urbanCommunity .solutions-contrast h2 {

@@ -2599,8 +2599,7 @@ footer{
 }
 
 .the-building .centered-section h2,
-.center-banner h2,
-.centered-hero h1{
+.center-banner h2{
         margin-bottom: $base-font-size;
 }
 
@@ -4613,8 +4612,8 @@ nav {
     }
 
     h1 i .highlight{
-        bottom:-30px;
-        left:-10px;
+        bottom: -.4em;
+    left: 0em;
     }
 
 }
