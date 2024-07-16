@@ -2333,6 +2333,9 @@ footer{
 .hero-style{
     .content-wrap{
         margin-top: $base;
+        @media #{$mq-desktop}{
+            padding-right: 5vw;
+        }
     }
 }
 .solutions-banner{
@@ -5959,6 +5962,14 @@ input#honeypooh{ display: none; }
             h1{
                 font-size: 48px;
             }
+        }
+        .solutions-mask.dark{
+            .flex-wrap .flex-wrap .flex-wrap{
+                padding-left: 10vw;
+            }
+          .intro-text p{
+            font-size:30px
+          }  
         }
     }
 

@@ -1879,6 +1879,11 @@ footer {
 .hero-style .content-wrap {
   margin-top: 5vw;
 }
+@media (min-width: 85.375em) {
+  .hero-style .content-wrap {
+    padding-right: 5vw;
+  }
+}
 
 .solutions-banner .intro-text p {
   font-family: "eina_semiboldregular", sans-serif;
@@ -4736,6 +4741,12 @@ h1 span {
   .neighbourhood h1 {
     font-size: 48px;
   }
+}
+.neighbourhood .solutions-mask.dark .flex-wrap .flex-wrap .flex-wrap {
+  padding-left: 10vw;
+}
+.neighbourhood .solutions-mask.dark .intro-text p {
+  font-size: 30px;
 }
 
 .solutions-banner h2 {
