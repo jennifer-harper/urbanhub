@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 // All solutions-wrap pages (solutions subpages)
-$('h2, h1, .col h3, .max-hero p').each(function () {
+$('h2, h1, .col h3, .max-hero p, .intro-text p').each(function () {
   var content = $(this).html()
 
   // Check if <br> is present in the content
