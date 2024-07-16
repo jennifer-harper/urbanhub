@@ -313,6 +313,17 @@ h1,h2,h3,h4,h5,h6 {
         }
     }
 
+    @media #{$mq-desktop}{
+        &.max-title,
+        &.max-hero{
+            p:not(.btn p){
+                max-width: 30vw;
+
+                
+            }
+        }
+    }
+
     // @media #{$mq-desktop}{
     //     &.max-title,
     //     &.max-hero{
@@ -2337,6 +2348,15 @@ footer{
             padding-right: 5vw;
         }
     }
+}
+
+.solutions-mask{
+    .content-wrap{
+
+        @media #{$mq-desktop}{
+            padding-right: 5vw;
+        }
+    } 
 }
 .solutions-banner{
     .intro-text p{
@@ -4587,6 +4607,13 @@ nav {
             }
         }
     }
+    @media #{$mq-figma}{
+        .solutions-mask .intro-text{
+            max-width: 80%;
+        }
+
+    }
+
 }
 
 .urbanEnvironment{
