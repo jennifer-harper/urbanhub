@@ -510,6 +510,10 @@ h1 i {
   left: 10%;
 }
 
+.culture-events h1 .highlight svg {
+  top: -0.1em;
+}
+
 .bg-cover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
