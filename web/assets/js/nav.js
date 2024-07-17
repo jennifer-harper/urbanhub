@@ -88,7 +88,7 @@ $('li.nav-hover').hover(
 function logoSize() {
   var btnWidth = $('nav .btn-one').outerWidth() // Get the outer width of .nav .btn
   $('.mobile-nav a').css('width', btnWidth + 'px') // Set the width of .mobile-nav to btnWidth
-  console.log(btnWidth)
+  //   console.log(btnWidth)
 }
 
 $(window).on('resize', function () {
